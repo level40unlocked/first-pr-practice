@@ -12,8 +12,14 @@ A tiny practice project for learning the GitHub first-PR workflow.
 python greet.py
 ```
 
-This will recieve a name and print a greeting to the console.
+This will print a greeting to the console.
 
 ## Running
 
 Just run the script directly with Python 3.
+
+## Tests
+
+```bash
+python -m unittest test_greet.py
+```
