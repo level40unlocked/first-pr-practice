@@ -1,0 +1,17 @@
+.map-page h2 {
+  margin: 0 0 0.2rem;
+}
+
+.map-page__hint {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.map-page__container {
+  height: 65vh;
+  min-height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}

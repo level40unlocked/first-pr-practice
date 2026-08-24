@@ -1,0 +1,100 @@
+.detail-page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.detail-page__back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.detail-page__hero {
+  height: 220px;
+  border-radius: 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0.7rem;
+}
+
+.detail-page__type {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.detail-page h1 {
+  margin: 1rem 0 0.2rem;
+  font-size: 1.5rem;
+}
+
+.detail-page__location {
+  color: var(--text-muted);
+  margin: 0 0 0.4rem;
+}
+
+.detail-page__price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin: 0 0 1rem;
+}
+
+.detail-page__stats {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.2rem;
+}
+
+.detail-page__stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.detail-page__stats .label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.detail-page__stats .value {
+  font-weight: 700;
+}
+
+.detail-page section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-page section h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-page__map {
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.detail-page__call {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: var(--brand);
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
