@@ -1,0 +1,163 @@
+const resources = {
+  en: {
+    translation: {
+      appName: 'VietHome',
+      tagline: 'Find your home in Vietnam',
+      nav: {
+        listings: 'Listings',
+        map: 'Map Search',
+      },
+      filters: {
+        title: 'Filters',
+        city: 'City',
+        allCities: 'All cities',
+        propertyType: 'Property type',
+        allTypes: 'All types',
+        minPrice: 'Min price (USD)',
+        maxPrice: 'Max price (USD)',
+        reset: 'Reset filters',
+        resultsCount: '{{count}} property found',
+        resultsCount_other: '{{count}} properties found',
+      },
+      propertyType: {
+        apartment: 'Apartment',
+        house: 'House',
+        villa: 'Villa',
+        land: 'Land',
+      },
+      card: {
+        bedrooms: '{{count}} bed',
+        bedrooms_other: '{{count}} beds',
+        bathrooms: '{{count}} bath',
+        bathrooms_other: '{{count}} baths',
+        area: '{{area}} m²',
+        viewDetails: 'View details',
+      },
+      detail: {
+        back: 'Back to listings',
+        overview: 'Overview',
+        price: 'Price',
+        area: 'Area',
+        bedrooms: 'Bedrooms',
+        bathrooms: 'Bathrooms',
+        location: 'Location',
+        contact: 'Contact',
+        call: 'Call',
+        notFound: 'Property not found.',
+      },
+      map: {
+        title: 'Search on map',
+        hint: 'Click a marker to see property details',
+      },
+      footer: {
+        note: 'Demo data for practice purposes only — not real listings.',
+      },
+    },
+  },
+  vi: {
+    translation: {
+      appName: 'VietHome',
+      tagline: 'Tìm ngôi nhà của bạn tại Việt Nam',
+      nav: {
+        listings: 'Danh sách',
+        map: 'Tìm trên bản đồ',
+      },
+      filters: {
+        title: 'Bộ lọc',
+        city: 'Thành phố',
+        allCities: 'Tất cả thành phố',
+        propertyType: 'Loại bất động sản',
+        allTypes: 'Tất cả loại',
+        minPrice: 'Giá tối thiểu (USD)',
+        maxPrice: 'Giá tối đa (USD)',
+        reset: 'Đặt lại bộ lọc',
+        resultsCount: 'Tìm thấy {{count}} bất động sản',
+      },
+      propertyType: {
+        apartment: 'Căn hộ',
+        house: 'Nhà phố',
+        villa: 'Biệt thự',
+        land: 'Đất nền',
+      },
+      card: {
+        bedrooms: '{{count}} phòng ngủ',
+        bathrooms: '{{count}} phòng tắm',
+        area: '{{area}} m²',
+        viewDetails: 'Xem chi tiết',
+      },
+      detail: {
+        back: 'Quay lại danh sách',
+        overview: 'Tổng quan',
+        price: 'Giá',
+        area: 'Diện tích',
+        bedrooms: 'Phòng ngủ',
+        bathrooms: 'Phòng tắm',
+        location: 'Vị trí',
+        contact: 'Liên hệ',
+        call: 'Gọi điện',
+        notFound: 'Không tìm thấy bất động sản.',
+      },
+      map: {
+        title: 'Tìm kiếm trên bản đồ',
+        hint: 'Nhấp vào điểm đánh dấu để xem chi tiết',
+      },
+      footer: {
+        note: 'Dữ liệu demo chỉ dùng để luyện tập — không phải bất động sản thật.',
+      },
+    },
+  },
+  ko: {
+    translation: {
+      appName: 'VietHome',
+      tagline: '베트남에서 나만의 집을 찾아보세요',
+      nav: {
+        listings: '매물 목록',
+        map: '지도 검색',
+      },
+      filters: {
+        title: '필터',
+        city: '도시',
+        allCities: '전체 도시',
+        propertyType: '매물 유형',
+        allTypes: '전체 유형',
+        minPrice: '최소 가격 (USD)',
+        maxPrice: '최대 가격 (USD)',
+        reset: '필터 초기화',
+        resultsCount: '매물 {{count}}건',
+      },
+      propertyType: {
+        apartment: '아파트',
+        house: '주택',
+        villa: '빌라',
+        land: '토지',
+      },
+      card: {
+        bedrooms: '침실 {{count}}개',
+        bathrooms: '욕실 {{count}}개',
+        area: '{{area}} m²',
+        viewDetails: '상세보기',
+      },
+      detail: {
+        back: '목록으로 돌아가기',
+        overview: '개요',
+        price: '가격',
+        area: '면적',
+        bedrooms: '침실',
+        bathrooms: '욕실',
+        location: '위치',
+        contact: '연락처',
+        call: '전화하기',
+        notFound: '매물을 찾을 수 없습니다.',
+      },
+      map: {
+        title: '지도에서 검색',
+        hint: '마커를 클릭하면 매물 상세정보를 볼 수 있습니다',
+      },
+      footer: {
+        note: '연습용 데모 데이터입니다 — 실제 매물이 아닙니다.',
+      },
+    },
+  },
+};
+
+export default resources;
