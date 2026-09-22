@@ -119,14 +119,6 @@ def envelope_follow(amplitudes, attack=0.6, release=0.15):
 # Frame composition
 # ---------------------------------------------------------------------------
 
-def blend_mouth_overlay(mouths, openness):
-    """Interpolate between the closed/mid/open overlays for an in-between mouth shape."""
-    openness = max(0.0, min(1.0, openness))
-    if openness <= 0.5:
-        return Image.blend(mouths["closed"], mouths["mid"], openness * 2)
-    return Image.blend(mouths["mid"], mouths["open"], (openness - 0.5) * 2)
-
-
 def compose_frame(base_image, mouth_overlay):
     """Paste a mouth overlay onto the base character image and return an RGB PIL Image."""
     if mouth_overlay.size != base_image.size:
@@ -268,8 +260,8 @@ def create_talking_video(output_path, character_dir=None, audio_path=None, fps=2
 
         with imageio.get_writer(str(silent_video_path), fps=fps, macro_block_size=None) as writer:
             for openness in envelope:
-                mouth = blend_mouth_overlay(mouths, openness)
-                frame = compose_frame(base, mouth)
+                state = select_mouth_state(openness)
+                frame = compose_frame(base, mouths[state])
                 writer.append_data(np.asarray(frame))
 
         _mux_audio(silent_video_path, audio_path, output_path)
