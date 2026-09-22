@@ -93,6 +93,13 @@ class EnvelopeFollowTests(unittest.TestCase):
         envelope = envelope_follow([0.0] * 5)
         self.assertTrue(all(v == 0.0 for v in envelope))
 
+    def test_higher_speed_reacts_faster(self):
+        amplitudes = [1.0] + [0.0] * 5
+        slow = envelope_follow(amplitudes, attack=0.5, release=0.2, speed=1.0)
+        fast = envelope_follow(amplitudes, attack=0.5, release=0.2, speed=2.0)
+        self.assertGreater(fast[0], slow[0])
+        self.assertLess(fast[3], slow[3])
+
 
 class ComposeFrameTests(unittest.TestCase):
     def test_composed_frame_matches_base_size(self):

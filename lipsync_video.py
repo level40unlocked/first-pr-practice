@@ -98,14 +98,18 @@ def select_mouth_state(amplitude, low_threshold=0.15, high_threshold=0.45):
     return "open"
 
 
-def envelope_follow(amplitudes, attack=0.6, release=0.15):
+def envelope_follow(amplitudes, attack=0.85, release=0.45, speed=1.0):
     """Smooth per-frame amplitude into a mouth-openness envelope (0-1).
 
     A high ``attack`` makes the mouth snap open quickly when sound starts;
-    a low ``release`` makes it close more gradually afterwards, which reads
-    as more natural than switching mouth shapes on the raw, jittery
-    amplitude.
+    a lower ``release`` makes it close more gradually afterwards, which
+    reads as more natural than switching mouth shapes on the raw, jittery
+    amplitude. ``speed`` scales both coefficients up or down (e.g. ``2.0``
+    makes the mouth react about twice as fast; values are capped at 1.0).
     """
+    attack = min(1.0, attack * speed)
+    release = min(1.0, release * speed)
+
     envelope = []
     level = 0.0
     for amplitude in amplitudes:
@@ -237,7 +241,7 @@ def _mux_audio(silent_video_path, audio_path, output_path):
     )
 
 
-def create_talking_video(output_path, character_dir=None, audio_path=None, fps=24):
+def create_talking_video(output_path, character_dir=None, audio_path=None, fps=24, speed=1.0):
     """Render a talking-head video and save it to ``output_path``.
 
     If ``character_dir`` or ``audio_path`` are omitted, a placeholder
@@ -255,7 +259,7 @@ def create_talking_video(output_path, character_dir=None, audio_path=None, fps=2
             generate_placeholder_audio(audio_path)
 
         amplitudes = analyze_amplitude(audio_path, fps)
-        envelope = envelope_follow(amplitudes)
+        envelope = envelope_follow(amplitudes, speed=speed)
         silent_video_path = tmp_dir / "silent.mp4"
 
         with imageio.get_writer(str(silent_video_path), fps=fps, macro_block_size=None) as writer:
@@ -285,6 +289,11 @@ def parse_args():
     )
     parser.add_argument("-o", "--output", default="talking.mp4", help="Path to the output video file")
     parser.add_argument("-f", "--fps", type=int, default=24, help="Frames per second")
+    parser.add_argument(
+        "-s", "--speed", type=float, default=1.0,
+        help="How fast the mouth reacts to volume changes. 1.0 is the default pace; "
+             "higher is snappier (e.g. 2.0 reacts about twice as fast).",
+    )
     return parser.parse_args()
 
 
@@ -295,6 +304,7 @@ def main():
         character_dir=args.character_dir,
         audio_path=args.audio,
         fps=args.fps,
+        speed=args.speed,
     )
     print(f"Saved talking video to {output}")
 
