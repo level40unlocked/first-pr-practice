@@ -103,19 +103,19 @@ def _audio_duration(audio_path):
             Path(tmp_to_clean).unlink(missing_ok=True)
 
 
-def create_pose_video(output_path, pose_dir=None, audio_path=None, fps=8, step_frames=4, duration=None):
-    """Render a simple pose-cycling video and save it to ``output_path``.
+def render_pose_video(output_path, poses, audio_path=None, fps=8, step_frames=4, duration=None):
+    """Render a video that cycles through an already-built list of pose images.
 
-    If ``pose_dir`` is omitted, a built-in placeholder walk cycle is used.
-    Duration comes from ``audio_path`` if given, otherwise from
-    ``duration``, otherwise from three full cycles through the poses.
+    This is the shared assembly step behind ``create_pose_video`` (poses
+    loaded from a folder or placeholder) and other pose sources such as
+    ``body_wiggle.py`` (poses derived from a single image). Duration comes
+    from ``audio_path`` if given, otherwise from ``duration``, otherwise
+    from three full cycles through the poses.
     """
     import imageio.v2 as imageio
 
     tmp_dir = Path(tempfile.mkdtemp(prefix="pose_"))
     try:
-        poses = load_poses(pose_dir) if pose_dir else generate_placeholder_poses()
-
         if audio_path:
             duration = _audio_duration(audio_path)
         elif duration is None:
@@ -135,6 +135,15 @@ def create_pose_video(output_path, pose_dir=None, audio_path=None, fps=8, step_f
         return Path(output_path)
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
+
+
+def create_pose_video(output_path, pose_dir=None, audio_path=None, fps=8, step_frames=4, duration=None):
+    """Render a simple pose-cycling video and save it to ``output_path``.
+
+    If ``pose_dir`` is omitted, a built-in placeholder walk cycle is used.
+    """
+    poses = load_poses(pose_dir) if pose_dir else generate_placeholder_poses()
+    return render_pose_video(output_path, poses, audio_path=audio_path, fps=fps, step_frames=step_frames, duration=duration)
 
 
 def parse_args():

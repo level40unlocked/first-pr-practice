@@ -11,6 +11,9 @@ A tiny practice project for learning the GitHub first-PR workflow.
   swapping mouth shapes in sync with the volume of an audio track.
 - `pose_video.py` - turns a small set of drawn poses (e.g. a 2-pose walk
   cycle) into a short video by cycling through them on a fixed cadence.
+- `body_wiggle.py` - animates a single 2D character image with a simple
+  whole-body bounce/rock cycle, without cutting the artwork or generating
+  any extra images.
 
 ## Usage
 
@@ -107,6 +110,31 @@ python pose_video.py -p path/to/pose_dir -o walking.mp4 --step-frames 4
 to the next — higher is slower/choppier, lower is faster. Pass `-a` to mux
 in an audio track (also sets the video's duration to match).
 
+### Making a single character image wiggle (no cutting, no extra AI calls)
+
+Cutting a real, detailed character illustration into limb pieces and
+rotating them (like `pose_video.py`'s poses would need for a real walk
+cycle) turns out to be fragile in practice — fingers get clipped, legs
+cross, seams show at the shoulders. Generating a separate AI image per pose
+avoids that but costs money and the character can drift between
+generations. `body_wiggle.py` avoids both problems: it never cuts the
+artwork at all. It moves the *entire* image as one rigid piece — a small
+bounce/rock cycle (vertical shift + a slight tilt, pivoting near the feet)
+— derived from a single source image with plain PIL rotate/paste calls.
+Since nothing is ever cut apart, there's nothing that can look disjointed.
+It works best on art with a flat, uniform background color, which fills in
+whatever edge the shift/rotation exposes.
+
+```bash
+python body_wiggle.py path/to/character.png -o wiggle.mp4
+```
+
+`--amplitude` (vertical bounce in pixels), `--tilt` (lean angle in
+degrees), and `--sway` (horizontal shift in pixels) control how strong the
+effect is; `--step-frames` and `-a`/audio work the same as in
+`pose_video.py`, since both share the same rendering code
+(`render_pose_video`).
+
 ## Running
 
 Just run the script directly with Python 3.
@@ -118,4 +146,5 @@ python -m unittest test_greet.py
 python -m unittest test_animate_image.py
 python -m unittest test_lipsync_video.py
 python -m unittest test_pose_video.py
+python -m unittest test_body_wiggle.py
 ```
