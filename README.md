@@ -39,10 +39,13 @@ be greater than `1.0`), and `--no-ease` to disable the ease-in-out timing.
 ### Making a 2D character talk (lip-sync)
 
 `lipsync_video.py` is a rule-based lip-sync: it has no AI model. It reads
-three drawn mouth shapes (`closed`, `mid`, `open`) and, for every frame,
-blends between them based on how loud the audio is at that moment. Loudness
-is smoothed with an envelope follower (mouth snaps open quickly, closes more
-gradually) so the motion reads as continuous rather than a hard 3-way switch.
+three drawn mouth shapes (`closed`, `mid`, `open`) and picks one per frame
+based on how loud the audio is at that moment. Loudness is smoothed with an
+envelope follower (mouth snaps open quickly, closes more gradually) before
+picking the shape, so state changes land at natural moments in the speech
+instead of chattering on raw, jittery amplitude. Mouth shapes are switched,
+not cross-faded — blending two differently-shaped overlays would show both
+shapes translucently at once.
 
 Try it immediately with no assets of your own — it generates a placeholder
 character and a placeholder speech-like audio track automatically:
