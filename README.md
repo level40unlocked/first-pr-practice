@@ -38,9 +38,11 @@ be greater than `1.0`), and `--no-ease` to disable the ease-in-out timing.
 
 ### Making a 2D character talk (lip-sync)
 
-`lipsync_video.py` is a "phase 1", rule-based lip-sync: it has no AI model,
-it just switches between a few drawn mouth shapes (`closed`, `mid`, `open`)
-based on how loud the audio is at each moment.
+`lipsync_video.py` is a rule-based lip-sync: it has no AI model. It reads
+three drawn mouth shapes (`closed`, `mid`, `open`) and, for every frame,
+blends between them based on how loud the audio is at that moment. Loudness
+is smoothed with an envelope follower (mouth snaps open quickly, closes more
+gradually) so the motion reads as continuous rather than a hard 3-way switch.
 
 Try it immediately with no assets of your own — it generates a placeholder
 character and a placeholder speech-like audio track automatically:
@@ -63,6 +65,16 @@ The character folder must contain four PNGs, all the same canvas size:
 - `mouth_closed.png`, `mouth_mid.png`, `mouth_open.png` - transparent
   overlays with just the mouth drawn in each shape, positioned exactly
   where it should appear on `base.png`
+
+`assets/sample_character/` is a real example built from an AI-generated 2D
+portrait: the mouth line in the original artwork was located, patched out
+with a soft skin-colored patch to make `base.png`, and the three mouth
+overlays were hand-drawn at that same position to match the art style. Try
+it with:
+
+```bash
+python lipsync_video.py -c assets/sample_character -a path/to/speech.mp3 -o talking.mp4
+```
 
 ## Running
 

@@ -9,8 +9,10 @@ import numpy as np
 from lipsync_video import (
     MOUTH_STATES,
     analyze_amplitude,
+    blend_mouth_overlay,
     compose_frame,
     create_talking_video,
+    envelope_follow,
     generate_placeholder_audio,
     generate_placeholder_character,
     select_mouth_state,
@@ -78,6 +80,36 @@ class PlaceholderAssetTests(unittest.TestCase):
             with wave.open(path, "rb") as wav_file:
                 duration = wav_file.getnframes() / wav_file.getframerate()
             self.assertAlmostEqual(duration, 0.5, places=2)
+
+
+class EnvelopeFollowTests(unittest.TestCase):
+    def test_rises_quickly_and_falls_slowly(self):
+        amplitudes = [1.0] + [0.0] * 10
+        envelope = envelope_follow(amplitudes, attack=0.6, release=0.15)
+        self.assertAlmostEqual(envelope[0], 0.6)
+        # release is slower than attack, so it should still be above zero for a while
+        self.assertGreater(envelope[3], 0.1)
+
+    def test_stays_at_zero_for_silence(self):
+        envelope = envelope_follow([0.0] * 5)
+        self.assertTrue(all(v == 0.0 for v in envelope))
+
+
+class BlendMouthOverlayTests(unittest.TestCase):
+    def test_zero_openness_matches_closed_mouth(self):
+        _, mouths = generate_placeholder_character(size=64)
+        blended = blend_mouth_overlay(mouths, 0.0)
+        self.assertEqual(np.asarray(blended).tolist(), np.asarray(mouths["closed"]).tolist())
+
+    def test_full_openness_matches_open_mouth(self):
+        _, mouths = generate_placeholder_character(size=64)
+        blended = blend_mouth_overlay(mouths, 1.0)
+        self.assertEqual(np.asarray(blended).tolist(), np.asarray(mouths["open"]).tolist())
+
+    def test_mid_openness_matches_mid_mouth(self):
+        _, mouths = generate_placeholder_character(size=64)
+        blended = blend_mouth_overlay(mouths, 0.5)
+        self.assertEqual(np.asarray(blended).tolist(), np.asarray(mouths["mid"]).tolist())
 
 
 class ComposeFrameTests(unittest.TestCase):

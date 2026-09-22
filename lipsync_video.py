@@ -98,9 +98,34 @@ def select_mouth_state(amplitude, low_threshold=0.15, high_threshold=0.45):
     return "open"
 
 
+def envelope_follow(amplitudes, attack=0.6, release=0.15):
+    """Smooth per-frame amplitude into a mouth-openness envelope (0-1).
+
+    A high ``attack`` makes the mouth snap open quickly when sound starts;
+    a low ``release`` makes it close more gradually afterwards, which reads
+    as more natural than switching mouth shapes on the raw, jittery
+    amplitude.
+    """
+    envelope = []
+    level = 0.0
+    for amplitude in amplitudes:
+        coeff = attack if amplitude > level else release
+        level += (amplitude - level) * coeff
+        envelope.append(level)
+    return envelope
+
+
 # ---------------------------------------------------------------------------
 # Frame composition
 # ---------------------------------------------------------------------------
+
+def blend_mouth_overlay(mouths, openness):
+    """Interpolate between the closed/mid/open overlays for an in-between mouth shape."""
+    openness = max(0.0, min(1.0, openness))
+    if openness <= 0.5:
+        return Image.blend(mouths["closed"], mouths["mid"], openness * 2)
+    return Image.blend(mouths["mid"], mouths["open"], (openness - 0.5) * 2)
+
 
 def compose_frame(base_image, mouth_overlay):
     """Paste a mouth overlay onto the base character image and return an RGB PIL Image."""
@@ -238,12 +263,13 @@ def create_talking_video(output_path, character_dir=None, audio_path=None, fps=2
             generate_placeholder_audio(audio_path)
 
         amplitudes = analyze_amplitude(audio_path, fps)
+        envelope = envelope_follow(amplitudes)
         silent_video_path = tmp_dir / "silent.mp4"
 
         with imageio.get_writer(str(silent_video_path), fps=fps, macro_block_size=None) as writer:
-            for amplitude in amplitudes:
-                state = select_mouth_state(amplitude)
-                frame = compose_frame(base, mouths[state])
+            for openness in envelope:
+                mouth = blend_mouth_overlay(mouths, openness)
+                frame = compose_frame(base, mouth)
                 writer.append_data(np.asarray(frame))
 
         _mux_audio(silent_video_path, audio_path, output_path)
