@@ -9,6 +9,8 @@ A tiny practice project for learning the GitHub first-PR workflow.
   simple pan/zoom (Ken Burns) animation.
 - `lipsync_video.py` - turns a 2D character into a short "talking" video by
   swapping mouth shapes in sync with the volume of an audio track.
+- `pose_video.py` - turns a small set of drawn poses (e.g. a 2-pose walk
+  cycle) into a short video by cycling through them on a fixed cadence.
 
 ## Usage
 
@@ -79,6 +81,32 @@ it with:
 python lipsync_video.py -c assets/sample_character -a path/to/speech.mp3 -o talking.mp4
 ```
 
+### Making a 2D character move (simple pose cycling)
+
+`pose_video.py` is for movement that doesn't need to look smooth or
+rigged — just enough to read as "this character is moving on screen," like
+a stiff walk cycle. There's no rotation, no rigging, no interpolation: it
+just cycles through a small set of complete, already-drawn poses (the same
+trick as `lipsync_video.py`'s mouth-shape switching, applied to whole-body
+poses).
+
+Try it immediately with a built-in placeholder 2-pose walk cycle:
+
+```bash
+python pose_video.py -o walking.mp4
+```
+
+To use your own poses, pass a folder of `pose_*.png` files (all the same
+size, cycled in sorted filename order, e.g. `pose_01.png`, `pose_02.png`):
+
+```bash
+python pose_video.py -p path/to/pose_dir -o walking.mp4 --step-frames 4
+```
+
+`--step-frames` controls how many frames each pose holds before switching
+to the next — higher is slower/choppier, lower is faster. Pass `-a` to mux
+in an audio track (also sets the video's duration to match).
+
 ## Running
 
 Just run the script directly with Python 3.
@@ -89,4 +117,5 @@ Just run the script directly with Python 3.
 python -m unittest test_greet.py
 python -m unittest test_animate_image.py
 python -m unittest test_lipsync_video.py
+python -m unittest test_pose_video.py
 ```
