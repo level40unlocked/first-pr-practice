@@ -143,14 +143,33 @@ effect is; `--step-frames` and `-a`/audio work the same as in
 Rotating a limb cut out of a detailed illustration turns out to be
 fragile (see `body_wiggle.py` above) because a limb's outline changes
 shape as it rotates, so any resampling error shows up as a visible seam.
-A **circle** doesn't have this problem: its silhouette is identical at
-every rotation angle, so a circular head layer can nod/tilt freely with
-zero seam risk, while the body underneath stays completely still.
+`talking_head_video.py` avoids that by keeping the head a separate layer
+from a completely static body, and it composites the current mouth shape
+onto the head *first*, then rotates/shifts that whole head+mouth piece as
+one unit and pastes it onto the body — so the mouth always rides along
+with the head's motion instead of drifting off-face.
 
-`talking_head_video.py` composites the current mouth shape onto the head
-*first*, then rotates/shifts that whole head+mouth piece as one unit and
-pastes it onto the static body — so the mouth always rides along with the
-head's motion instead of drifting off-face.
+The best results come from generating the head and body as **two
+separate "no-neck" pieces from the start**, rather than cutting a head
+out of one merged illustration after the fact:
+
+- generate a head-only image: face + hair, cropped tight at the jaw,
+  nothing below it (no neck, no shoulders)
+- generate a body-only image: shoulders/torso wearing a high collar
+  (e.g. a turtleneck) that closes off where the neck would be, so there's
+  no neck skin drawn anywhere — no head, no chin, no face
+- paste the head so its jaw sits just inside the collar opening
+
+Since neither piece ever *had* a neck to misalign, the head can nod at
+any angle with no post-hoc patching. `assets/sample_character_v3/` is
+built this way (two separate AI-generated images, composited once by
+code). Earlier `assets/sample_character_v2/` shows the fallback for when
+you only have one already-merged illustration to work with: a mediapipe
+face-landmarker traces the actual jaw contour (smoothed into a circular
+top for zero-seam rotation), and the leftover neck skin below it is
+recolored to match the collar. Both work with the same script and folder
+format — v3 just needs less correction because nothing was fused in the
+first place.
 
 Try it immediately with a built-in placeholder head/body character:
 
@@ -166,17 +185,15 @@ python talking_head_video.py -c path/to/character_dir -a path/to/speech.mp3 -o t
 
 The character folder needs:
 
-- `body.png` - the full character with the head region erased (filled
-  with the surrounding background color)
-- `head.png` - a **circular** cutout of just the head (feathered edge),
-  with everywhere outside the circle transparent
+- `body.png` - the character with no head/neck, on a canvas with a flat
+  background above the collar for the head to sit in
+- `head.png` - a cutout of just the head (feathered edge), with
+  everywhere outside it transparent
 - `mouth_closed.png`, `mouth_mid.png`, `mouth_open.png` - mouth overlays
   cropped to the same canvas and position as `head.png`
 - `head_meta.txt` - one line, `... box=(left, top, right, bottom)`,
-  giving the head circle's position on `body.png`
+  giving the head's position on `body.png`
 
-`assets/sample_character_v2/` is `assets/sample_character/` split this
-way — same source art, just restructured into a movable head layer.
 `--nod-step-frames` and `--nod-amplitude` control how often and how far
 the head tilts; `-s`/`--speed` controls mouth reaction speed, same as
 `lipsync_video.py`.
