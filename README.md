@@ -14,6 +14,9 @@ A tiny practice project for learning the GitHub first-PR workflow.
 - `body_wiggle.py` - animates a single 2D character image with a simple
   whole-body bounce/rock cycle, without cutting the artwork or generating
   any extra images.
+- `talking_head_video.py` - like `lipsync_video.py`, but the head also
+  nods/tilts independently of a static body, using a circular head layer
+  that never shows a seam no matter the angle.
 
 ## Usage
 
@@ -135,6 +138,49 @@ effect is; `--step-frames` and `-a`/audio work the same as in
 `pose_video.py`, since both share the same rendering code
 (`render_pose_video`).
 
+### Making the head nod independently of the body (no seams, no extra AI calls)
+
+Rotating a limb cut out of a detailed illustration turns out to be
+fragile (see `body_wiggle.py` above) because a limb's outline changes
+shape as it rotates, so any resampling error shows up as a visible seam.
+A **circle** doesn't have this problem: its silhouette is identical at
+every rotation angle, so a circular head layer can nod/tilt freely with
+zero seam risk, while the body underneath stays completely still.
+
+`talking_head_video.py` composites the current mouth shape onto the head
+*first*, then rotates/shifts that whole head+mouth piece as one unit and
+pastes it onto the static body — so the mouth always rides along with the
+head's motion instead of drifting off-face.
+
+Try it immediately with a built-in placeholder head/body character:
+
+```bash
+python talking_head_video.py -o talking_head.mp4 -a path/to/speech.mp3
+```
+
+To use your own character, pass a folder built with a head/body split:
+
+```bash
+python talking_head_video.py -c path/to/character_dir -a path/to/speech.mp3 -o talking_head.mp4
+```
+
+The character folder needs:
+
+- `body.png` - the full character with the head region erased (filled
+  with the surrounding background color)
+- `head.png` - a **circular** cutout of just the head (feathered edge),
+  with everywhere outside the circle transparent
+- `mouth_closed.png`, `mouth_mid.png`, `mouth_open.png` - mouth overlays
+  cropped to the same canvas and position as `head.png`
+- `head_meta.txt` - one line, `... box=(left, top, right, bottom)`,
+  giving the head circle's position on `body.png`
+
+`assets/sample_character_v2/` is `assets/sample_character/` split this
+way — same source art, just restructured into a movable head layer.
+`--nod-step-frames` and `--nod-amplitude` control how often and how far
+the head tilts; `-s`/`--speed` controls mouth reaction speed, same as
+`lipsync_video.py`.
+
 ## Running
 
 Just run the script directly with Python 3.
@@ -147,4 +193,5 @@ python -m unittest test_animate_image.py
 python -m unittest test_lipsync_video.py
 python -m unittest test_pose_video.py
 python -m unittest test_body_wiggle.py
+python -m unittest test_talking_head_video.py
 ```
