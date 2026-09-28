@@ -14,10 +14,14 @@
    ↓
 [대본 생성] Claude → 영문 대본 + 한국어 번역 + 화면 지시 + 팩트체크 목록 (.md)
    ↓   (모델도 민감하다고 판단하면 다시 ⚠️ review로)
-[사람 검수] 팩트체크 후 제작
+[사람 검수] 팩트체크
+   ↓
+[음성] 콘텐츠 축별 목소리 자동 배정 (Skye / Miles / Fenrir)
+   ↓
+[편집] 배경 이미지 + 내레이션 + 단어 강조 자막 → 1080×1920 쇼츠 mp4
 ```
 
-다음 단계(아직 없음): TTS 음성 → 영상 편집·자막 → 썸네일·메타데이터 → 유튜브 업로드 → 성과 분석.
+다음 단계(아직 없음): 배경 영상·이미지 자동 수집 → 썸네일·메타데이터 → 유튜브 업로드 → 성과 분석.
 
 ## 설치
 
@@ -48,6 +52,26 @@ python -m korea_decoded write --limit 3         # 상위 3개 주제 대본 생�
 python -m korea_decoded write --dry-run         # API 호출 없이 프롬프트만 확인
 ```
 
+### 음성, 편집 (팩트체크가 끝난 대본만)
+
+```bash
+pip install -r requirements-media.txt
+python -m korea_decoded voice <uid> [<uid> ...]       # 축별 목소리로 내레이션 생성
+python -m korea_decoded voice <uid> --voice miles     # 목소리 직접 지정
+python -m korea_decoded render <uid> --images <폴더>  # 폴더 속 이미지를 이름순으로 배경에 사용
+```
+
+| 목소리 | 엔진 | 담당 콘텐츠 축 | 비용 |
+|---|---|---|---|
+| **Skye** (메인) | Higgsfield · Seed Speech | 사회, 여행, 미지정 | 유료 (크레딧) |
+| Miles | Higgsfield · ElevenLabs | 경제·돈 | 유료 (크레딧) |
+| Fenrir | Kokoro (오픈소스) | 기업·기술 | 무료 |
+
+첫 실행 전 준비:
+- **Higgsfield:** `HF_KEY` 환경변수, 그리고 `config/channel.toml`의 `[higgsfield].tts_application`에 음성 생성 API 경로를 넣어야 합니다 (https://docs.higgsfield.ai 에서 확인).
+- **Kokoro:** 모델 파일 2개를 `models/`에 받아두세요 (https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0).
+- **폰트:** Montserrat ExtraBold를 `assets/fonts/`에 넣으면 샘플 영상과 같은 자막이 나옵니다. 없으면 기본 폰트를 씁니다.
+
 생성된 대본은 `output/scripts/`에, DB는 `data/korea_decoded.db`에 저장됩니다.
 
 ## 운영 방침 바꾸기 (코드 수정 불필요)
@@ -59,6 +83,7 @@ python -m korea_decoded write --dry-run         # API 호출 없이 프롬프트
 | 수집할 서브레딧, RSS, 네이버 검색어 | `config/channel.toml` → `[sources]` |
 | 대본 톤, 구조, 규칙 | `prompts/script_system.md` |
 | 톤 기준 예시 대본 | `examples/*.md` (승인한 대본을 추가할수록 톤이 안정됨) |
+| 목소리 배정, 엔진 | `config/channel.toml` → `[voice_assignment]`, `[voices.*]` |
 | 모델, 사고 강도 | 환경변수 `KD_MODEL` (기본 `claude-opus-5`), `KD_EFFORT` (기본 `high`) |
 
 ## 민감도 규칙

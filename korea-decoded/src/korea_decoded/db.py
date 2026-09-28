@@ -2,7 +2,7 @@
 
 Topic status flow:
     new ──────────────┐
-                      ├──> scripted
+                      ├──> scripted ─(human fact-check)─> voiced ─> rendered
     review ─> approved┘
           └─> rejected
 """
@@ -27,11 +27,17 @@ CREATE TABLE IF NOT EXISTS topics (
     sensitivity_reason TEXT NOT NULL DEFAULT '',
     status TEXT NOT NULL,
     script_path TEXT,
+    voice TEXT,
+    audio_path TEXT,
+    video_path TEXT,
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 """
 
-STATUSES = ("new", "review", "approved", "rejected", "scripted")
+STATUSES = ("new", "review", "approved", "rejected", "scripted", "voiced", "rendered")
+
+# Columns added after the first release; connect() adds them to older databases.
+_ADDED_COLUMNS = {"voice": "TEXT", "audio_path": "TEXT", "video_path": "TEXT"}
 
 
 def connect(path: Path) -> sqlite3.Connection:
@@ -39,6 +45,11 @@ def connect(path: Path) -> sqlite3.Connection:
     conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
     conn.execute(SCHEMA)
+    existing = {row["name"] for row in conn.execute("PRAGMA table_info(topics)")}
+    for name, kind in _ADDED_COLUMNS.items():
+        if name not in existing:
+            conn.execute(f"ALTER TABLE topics ADD COLUMN {name} {kind}")
+    conn.commit()
     return conn
 
 
@@ -77,3 +88,19 @@ def set_status(conn: sqlite3.Connection, uid: str, status: str, script_path: str
     )
     conn.commit()
     return cur.rowcount == 1
+
+
+def get_topic(conn: sqlite3.Connection, uid: str):
+    return conn.execute("SELECT * FROM topics WHERE uid = ?", (uid,)).fetchone()
+
+
+def update_media(conn: sqlite3.Connection, uid: str, status: str, **paths) -> None:
+    """Sets status plus any of voice / audio_path / video_path."""
+    if status not in STATUSES:
+        raise ValueError(f"unknown status: {status}")
+    allowed = set(_ADDED_COLUMNS)
+    if not set(paths) <= allowed:
+        raise ValueError(f"unknown fields: {set(paths) - allowed}")
+    sets = ", ".join(["status = ?"] + [f"{k} = ?" for k in paths])
+    conn.execute(f"UPDATE topics SET {sets} WHERE uid = ?", (status, *paths.values(), uid))
+    conn.commit()

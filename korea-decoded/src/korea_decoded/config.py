@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import os
 import tomllib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -33,6 +33,15 @@ class ChannelConfig:
     reddit_timeframe: str
     rss_feeds: tuple[str, ...]
     naver_queries: tuple[str, ...]
+    # Media stages. Kept as plain dicts: each provider reads its own keys.
+    voices: dict = field(default_factory=dict)
+    voice_assignment: dict = field(default_factory=dict)
+    higgsfield: dict = field(default_factory=dict)
+    kokoro: dict = field(default_factory=dict)
+    editor: dict = field(default_factory=dict)
+
+    def voice_for(self, pillar: str | None) -> str:
+        return self.voice_assignment.get(pillar or "", self.voice_assignment.get("default", "skye"))
 
 
 def load_config(path: Path = CONFIG_PATH) -> ChannelConfig:
@@ -56,4 +65,9 @@ def load_config(path: Path = CONFIG_PATH) -> ChannelConfig:
         reddit_timeframe=raw["sources"]["reddit_timeframe"],
         rss_feeds=tuple(raw["sources"]["rss_feeds"]),
         naver_queries=tuple(raw["sources"]["naver_queries"]),
+        voices=raw.get("voices", {}),
+        voice_assignment=raw.get("voice_assignment", {}),
+        higgsfield=raw.get("higgsfield", {}),
+        kokoro=raw.get("kokoro", {}),
+        editor=raw.get("editor", {}),
     )

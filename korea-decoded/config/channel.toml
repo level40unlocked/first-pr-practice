@@ -70,3 +70,43 @@ rss_feeds = [
 
 # 네이버 뉴스 검색 API 검색어 (NAVER_CLIENT_ID/SECRET 필요)
 naver_queries = ["외국인 한국 문화", "K-푸드 해외 반응", "삼성 반도체", "서울 생활비", "한국 여행 외국인"]
+
+# ── 음성 ──────────────────────────────────────────────
+# 메인은 Skye. 콘텐츠 축별로 서브 목소리를 배정합니다.
+[voice_assignment]
+default = "skye"            # 아래에 없는 축, 또는 축이 정해지지 않은 주제
+society = "skye"
+travel = "skye"
+economy_money = "miles"     # 차분하고 신뢰감 있는 톤 → 돈, 경제
+business_tech = "fenrir"    # 빠르고 에너지 있는 톤 → 기업, 기술
+
+[voices.skye]
+provider = "higgsfield"
+variant = "seed_speech"     # elevenlabs | minimax | seed_speech
+voice_id = "1fb253b8-928b-4d29-a349-f242a71eaddf"
+
+[voices.miles]
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "e18664a7-ee4f-5273-acf8-533eb24cd366"
+
+[voices.fenrir]
+provider = "kokoro"         # 무료, 내 PC에서 실행
+voice = "am_fenrir"
+speed = 1.05
+
+[higgsfield]
+# Higgsfield API의 음성 생성(text2speech_v2) 애플리케이션 경로.
+# 문서(https://docs.higgsfield.ai)에서 확인해 채워주세요. 비어 있으면 Higgsfield 목소리는 에러로 멈춥니다.
+tts_application = ""
+
+[kokoro]
+# 모델 파일 (약 350MB): https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
+model_path = "models/kokoro-v1.0.onnx"
+voices_path = "models/voices-v1.0.bin"
+
+# ── 편집 ──────────────────────────────────────────────
+[editor]
+# Montserrat ExtraBold 권장 (Google Fonts, OFL 라이선스). 없으면 Pillow 기본 폰트로 대체됩니다.
+font_path = "assets/fonts/Montserrat-ExtraBold.ttf"
+whisper_model = "base.en"

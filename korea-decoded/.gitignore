@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 data/
 output/
+models/
+assets/fonts/*.ttf
