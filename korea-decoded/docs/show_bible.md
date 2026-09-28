@@ -205,6 +205,12 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - [롱폼 41초](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/4cf5b49b-fd01-4044-ac99-e63d9dd12e1d.mp4), [쇼츠](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/bda8278b-31d1-4456-87a3-d23c218f70fe.mp4). 샷: 앵커 단독 → 앵커+화면 → 화면 크게 → 투샷 → 화자 클로즈업 ×4. 렌더링 약 5분
 - 샌드박스를 재시작하면 `pip install opencv-python-headless`가 먼저 필요
 
+### YouTube 업로드 설정 현황 (2026-09-28)
+- Google Cloud 프로젝트 "Four Eyes Report", YouTube Data API v3 사용 설정, OAuth 앱 "Four Eyes Report Uploader" (테스트 상태, 범위 youtube / youtube.readonly / youtube.upload)
+- 환경 변수 `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`, `YOUTUBE_REFRESH_TOKEN` 등록 후 새 세션에서 테스트
+- ⚠️ **2026-10-05 전후:** refresh token 7일 만료 → OAuth Playground에서 재발급. 이때 **클라이언트 보안 비밀번호도 재설정** (첫 발급 때 캡처로 노출됨)
+- 첫 업로드 테스트: 첫 완성본 롱폼을 **비공개**로 (`python -m korea_decoded upload ... --privacy private`)
+
 ### 다음 할 일 (순서대로)
 1. 첫 완성본 연출 피드백 반영
 2. 전문가 8명 중 확정 → 애니메이션용 원본(머리·몸통·참고) 제작
