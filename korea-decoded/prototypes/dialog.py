@@ -26,7 +26,8 @@ class Puppet:
         rig = nr.analyze_head(head)
         ref = nr.remove_bg(Image.open(spec["ref"]))
         widths = nr.fg_widths(ref)
-        ratio = max(widths[: int(len(widths) * 0.4)]) / max(widths[-40:])
+        # Measured from the reference sheet unless set per character (hair buns inflate the measurement).
+        ratio = spec.get("head_ratio") or max(widths[: int(len(widths) * 0.4)]) / max(widths[-40:])
         shoulders = spec.get("shoulders", 520)
         sb = shoulders / max(nr.fg_widths(body)[-40:])
         self.body = body.resize((int(body.width * sb), int(body.height * sb)), Image.LANCZOS)

@@ -14,7 +14,9 @@
    "ref": "p_ref.png",
    "x": 630,
    "label": "DR. JIYOUNG",
-   "energy": 1.8
+   "energy": 1.8,
+   "head_ratio": 0.66,
+   "shoulders": 470
   }
  },
  "lines": [

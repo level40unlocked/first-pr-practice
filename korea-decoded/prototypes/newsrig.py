@@ -87,19 +87,27 @@ def analyze_head(head):
     mx, ey = (lx + rx) / 2, (ly + ry) / 2
     sep = rx - lx
     band = slice(int(mx - 0.15 * sep), int(mx + 0.15 * sep))
-    col_alpha = alpha[:, band].any(axis=1)
-    chin = int(np.nonzero(col_alpha)[0].max())
-    start = int(ey + 1.3 * r)
-    rows = [y for y in range(start, chin - 4) if dark[y, band].any()]
+    lens_skin = np.median(rgb[int(ly) - 3:int(ly) + 3, int(lx) - 3:int(lx) + 3].reshape(-1, 3), axis=0)
+    # Jawline: the lowest face-skin pixel under the nose line (the outline below it is the chin).
+    is_skin = (np.abs(rgb - lens_skin).sum(axis=2) < 70) & alpha
+    skin_rows = [y for y in range(int(ey + r), h) if is_skin[y, band].any()]
+    chin = skin_rows[-1] if skin_rows else int(np.nonzero(alpha[:, band].any(axis=1))[0].max())
+    # Nose: first dark run between the glasses and the lower part of the face (never the jawline).
+    wide = slice(int(mx - 0.25 * sep), int(mx + 0.25 * sep))
+    stop = int(chin - 0.25 * (chin - ey))
+    rows = [y for y in range(int(ey + 1.25 * r), stop) if dark[y, wide].any()]
     nose_bottom = None
-    if rows:  # first contiguous dark run below the glasses = nose
+    if rows:
         nose_bottom = rows[0]
         for y in rows[1:]:
             if y - nose_bottom > 3:
                 break
             nose_bottom = y
-    mouth_y = nose_bottom + 0.42 * (chin - nose_bottom) if nose_bottom else ey + 0.62 * (chin - ey)
-    lens_skin = np.median(rgb[int(ly) - 3:int(ly) + 3, int(lx) - 3:int(lx) + 3].reshape(-1, 3), axis=0)
+    if nose_bottom:
+        mouth_y = nose_bottom + 0.45 * (chin - nose_bottom)
+    else:  # faint or missing nose: same eye-to-chin proportion as the validated anchor
+        mouth_y = ey + 0.66 * (chin - ey)
+    mouth_y = min(mouth_y, chin - 0.12 * (chin - ey))
     return {"eyes": [(lx, ly), (rx, ry)], "r": r, "sep": sep, "mouth": (mx, mouth_y),
             "mouth_w": 0.42 * sep, "chin": chin, "nose_bottom": nose_bottom,
             "skin": tuple(int(v) for v in lens_skin)}
