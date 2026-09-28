@@ -30,10 +30,10 @@
 
 1. **Google Cloud 프로젝트 만들기:** console.cloud.google.com → 상단 프로젝트 선택 → 새 프로젝트 (예: `four-eyes-report`)
 2. **API 켜기:** API 및 서비스 → 라이브러리 → "YouTube Data API v3" → 사용
-3. **OAuth 동의 화면 (Google 인증 플랫폼):** 사용자 유형 **외부** → 앱 이름 "Four Eyes Report Uploader", 지원 이메일 입력 → 범위에 `youtube.upload`, `youtube.readonly` 추가 → 테스트 사용자에 채널 소유 구글 계정 추가
-4. **게시 상태를 "프로덕션"으로 전환:** "테스트" 상태로 두면 refresh token이 7일마다 만료됨. 본인만 쓰는 앱이라 구글의 앱 검증은 없어도 되고, 로그인 때 "확인되지 않은 앱" 경고만 넘기면 됨
+3. **OAuth 동의 화면 (Google 인증 플랫폼):** 사용자 유형 **외부** → 앱 이름 "Four Eyes Report Uploader", 지원 이메일 입력 → 범위에 `youtube.upload`, `youtube.readonly`, `youtube`(채널 설정 관리) 추가. **앱 로고는 올리지 않기** (올리면 구글 인증 심사 대상) → 테스트 사용자에 채널 소유 구글 계정 추가
+4. **게시 상태:** "테스트" 상태에서는 refresh token이 7일마다 만료됨. 게시(프로덕션)하려면 브랜딩에 홈페이지와 개인정보처리방침이 필요할 수 있고, 그 주소의 도메인을 승인된 도메인으로 등록해야 함 (우리 소유 도메인만. youtube.com 같은 남의 도메인 금지). 도메인이 생기기 전까지는 테스트 상태 + 테스트 사용자(채널 계정)로 운영하고 7일마다 토큰 재발급
 5. **OAuth 클라이언트 만들기:** 사용자 인증 정보 → OAuth 클라이언트 ID → 유형 **웹 애플리케이션** → 승인된 리디렉션 URI에 `https://developers.google.com/oauthplayground` 추가 → 클라이언트 ID와 보안 비밀 복사
-6. **refresh token 받기 (브라우저만으로):** developers.google.com/oauthplayground → 오른쪽 위 톱니바퀴 → "Use your own OAuth credentials" 체크 → 5번의 ID와 비밀 입력 → 왼쪽 입력칸에 `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly` 입력 → Authorize APIs → **채널 계정으로 로그인** (브랜드 계정 채널이면 해당 채널 선택) → "Exchange authorization code for tokens" → **Refresh token** 복사
+6. **refresh token 받기 (브라우저만으로):** developers.google.com/oauthplayground → 오른쪽 위 톱니바퀴 → "Use your own OAuth credentials" 체크 → 5번의 ID와 비밀 입력 → 왼쪽 입력칸에 `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/youtube` 입력 → Authorize APIs → **채널 계정으로 로그인** (브랜드 계정 채널이면 해당 채널 선택) → "Exchange authorization code for tokens" → **Refresh token** 복사
 7. **클라우드 환경에 등록:** `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`, `YOUTUBE_REFRESH_TOKEN` (채팅에 붙여넣지 않기)
 8. **API 감사 신청:** "YouTube API Services Audit and Quota Extension Form" 제출. 통과 전에는 API로 올린 영상이 비공개로 고정됨. 몇 주 걸릴 수 있으니 빨리 신청
 9. **채널 전화번호 인증:** YouTube 스튜디오에서. 커스텀 썸네일과 15분 넘는 영상에 필요
