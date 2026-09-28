@@ -45,15 +45,27 @@ def parse_rss(xml_text: str, source: str) -> list[RawTopic]:
     return topics
 
 
+# Some news sites refuse requests without a browser-like User-Agent.
+BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36"
+
+
 class RssCollector:
-    def __init__(self, feeds: list[str], session: requests.Session | None = None):
+    def __init__(self, feeds: list[str], session: requests.Session | None = None, log=print):
         self.feeds = feeds
         self.session = session or requests.Session()
+        self.log = log
 
     def collect(self) -> list[RawTopic]:
-        topics = []
+        """Reads every feed; one broken feed is reported and skipped, not fatal."""
+        topics, errors = [], []
         for url in self.feeds:
-            resp = self.session.get(url, timeout=20)
-            resp.raise_for_status()
-            topics.extend(parse_rss(resp.text, source=f"rss:{url}"))
+            try:
+                resp = self.session.get(url, timeout=20, headers={"User-Agent": BROWSER_UA})
+                resp.raise_for_status()
+                topics.extend(parse_rss(resp.text, source=f"rss:{url}"))
+            except (requests.RequestException, ET.ParseError) as e:
+                errors.append(e)
+                self.log(f"  rss: skipped {url} ({e})")
+        if errors and not topics:
+            raise errors[0]
         return topics
