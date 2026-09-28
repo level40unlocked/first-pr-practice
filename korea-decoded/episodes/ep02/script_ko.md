@@ -15,7 +15,7 @@
 | 1 | K | Good evening. I'm Master K, and this is the Four Eyes Report. Our top story tonight: a shark. In a canal. In the middle of a city. | 안녕하세요, 마스터 K입니다. 포 아이즈 리포트, 오늘의 톱뉴스는… 상어입니다. 도심 한복판 수로에 있는. | 뉴스 앵커의 진지한 톱뉴스 톤으로 '상어'를 발표하는 것 자체가 개그. 마침표로 끊어 읽는 리듬이 핵심 |
 | 2 | K 🖼️s1 | Ten days ago, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed. | 열흘 전, 3.5미터짜리 상어가 부산 북항의 좁은 수로로 들어왔습니다. 그리고… 그냥 눌러앉았습니다. | 'just... stayed' 한 박자 멈춤. 사람처럼 묘사하는 의인화가 이 꼭지 전체의 뼈대 |
 | 3 | K | Officials tried to guide it back to the sea. The shark declined. | 당국이 바다로 돌려보내려 했지만, 상어가 거절했습니다. | 'declined(정중히 거절했다)'는 사람이나 회사에 쓰는 말. 상어에게 쓰니 웃김. 영어권에서 잘 먹히는 과장 없는 건조한 개그 |
-| 4 | Kangfree | It DECLINED? Core, a shark cannot decline things. | 거절했다고요? 코어, 상어는 뭘 거절할 수가 없어요. | Dr. Kangfree가 시청자 대신 태클. 'Core' 호칭 반복 개그 |
+| 4 | Kangfree | It DECLINED? Core, a shark cannot decline things. | 거절했다고요? 코어, 상어는 뭘 거절할 수가 없어요. | Dr. Kangfree가 시청자 대신 태클. 'Core' 호칭 개그는 이 에피소드에서 여기 한 번만 |
 | 5 | K | It's K. And technically, it can. It simply did not leave. | K입니다. 그리고 엄밀히 말하면 할 수 있습니다. 그냥 안 나갔으니까요. | K의 고정 개그 두 개(이름 정정 + 'Technically')를 한 줄에. 반복 시청자에게 보상 |
 | 6 | K 🖼️s1 | So Korea did what Korea does. It gave the shark a nickname: Bukang-i. That's 'North Port', plus a cute little 'ee' on the end. | 그래서 한국은 한국다운 일을 했습니다. 상어한테 별명을 붙였죠. 부캉이. '북항'에 귀여운 '이'를 붙인 겁니다. | 한국어 애칭 접미사 '-이'를 설명하는 '한국 해설' 포인트. 외국인이 몰랐던 걸 알게 되는 만족감 |
 | 7 | Kangfree | Wait. WAIT. It has a nickname? Does it have a FANDOM? | 잠깐, 잠깐만요. 별명이 있다고요? 팬덤도 있어요? | Kangfree 말버릇 'Wait. WAIT.' + K-POP 팬덤 문화를 아는 시청자용 연결 |
@@ -84,12 +84,12 @@
 | 4 | K 🖼️s1 크게 | It is about a festival. This weekend is the fifteenth Gangnam Festival: a one-kilometer street parade, giant character balloons, and a traditional Korean marching band leading the way. | 축제 얘기입니다. 이번 주말 제15회 강남페스티벌이 열립니다. 1km 거리 퍼레이드, 거대한 캐릭터 풍선, 그리고 맨 앞에는 전통 취타대가 섭니다. | K가 말춤 질문을 무시하고 사실만 읽는 무표정 개그 |
 | 5 | K | And on Sunday, a K-pop concert closed out by the man who taught the entire planet to say 'Gangnam'. Psy. | 그리고 일요일 K-POP 콘서트의 마지막 무대는, 전 세계에 '강남'이라는 단어를 가르친 사람이 장식합니다. 싸이. | 셋리스트는 발표되지 않았으므로 어떤 곡을 부른다고 말하지 않음 |
 | 6 | Kangfree | Psy. In Gangnam. That is the biggest home game in music history! | 싸이가 강남에서요? 음악 역사상 최대의 홈경기네요! | 스포츠 용어 'home game'을 공연에 씀. 영어권에서 바로 통하는 비유 |
-| 7 | K 🖼️s2 | Let's look at the numbers. Thirteen thousand free concert tickets. Gone almost immediately. | 숫자를 보시죠. 무료 콘서트 티켓 1만 3천 장. 거의 즉시 마감됐습니다. |  |
+| 7 | K 🖼️s2 | Thirteen thousand free concert tickets. Gone almost immediately. | 무료 콘서트 티켓 1만 3천 장. 거의 즉시 마감됐습니다. |  |
 | 8 | Kangfree | Free?! I would have fought someone for those. | 공짜라고요?! 저 같으면 싸워서라도 구했어요. |  |
 | 9 | K | This is a serious news program. We do not fight for tickets. We refresh the page calmly, like adults. | 여기는 진지한 뉴스 프로그램입니다. 우리는 티켓 때문에 싸우지 않습니다. 어른답게 차분히 새로고침합니다. | K의 고정 대사 'This is a serious news program' + 티켓팅 새로고침은 K-POP 팬이면 다 아는 경험 |
 | 10 | K 🖼️s1 | Organizers even studied New York's Macy's Thanksgiving Day Parade and Japan's Nebuta Festival. The goal: when people think 'K-festival', they think Gangnam. | 주최 측은 뉴욕 메이시스 추수감사절 퍼레이드와 일본 네부타 축제까지 참고했습니다. 목표는 'K-페스티벌' 하면 강남이 떠오르게 하는 것. | 미국 시청자가 아는 메이시스 퍼레이드를 넣어 '우리 것과 비교'하는 재미 |
-| 11 | Kangfree | Core. Admit it. You're going. | 코어, 인정하세요. 가실 거죠? |  |
-| 12 | K | It's K. And I have... prior commitments. | K입니다. 그리고 저는… 선약이 있습니다. | 뻔한 거짓말로 들리는 한 박자 쉼. K가 몰래 즐기는 캐릭터(K-드라마 보고 우는 설정)와 연결 |
+| 11 | Kangfree | Admit it. You're going. | 인정하세요. 가실 거죠? |  |
+| 12 | K | I have... prior commitments. | 저는… 선약이 있습니다. | 뻔한 거짓말로 들리는 한 박자 쉼. K가 몰래 즐기는 캐릭터(K-드라마 보고 우는 설정)와 연결 |
 | 13 | K | K's Take: Fourteen years after one song put Gangnam on the world map, Gangnam is still trying to live up to it. Honestly? Respect. | K의 한마디: 노래 한 곡이 강남을 세계 지도에 올린 지 14년. 강남은 아직도 그 이름값을 하려고 노력 중입니다. 솔직히? 존경합니다. | [운영자 확인] 초안 |
 
 **설명 화면**
@@ -121,8 +121,8 @@
 | 8 | Kangfree | Five point FIVE? Who has half a subscription? | 5.5개요? 누가 구독을 반 개 해요? | 평균값을 문자 그대로 받아들이는 고전적인 숫자 개그 |
 | 9 | K | Technically, it's an average. Nobody has half a subscription. ...Probably. | 엄밀히 말하면 평균입니다. 구독을 반 개 하는 사람은 없습니다. …아마도요. | 정확성에 집착하는 K가 끝에 자신 없어지는 반전 |
 | 10 | K 🖼️s1 | Now Samsung wants hotels, hospitals and public offices to subscribe too. There's even a plan for newlyweds and people who move a lot, with cleaning visits at night and on holidays. | 이제 삼성은 호텔, 병원, 공공기관까지 구독 고객으로 삼으려 합니다. 신혼부부와 이사가 잦은 사람을 위해 밤이나 휴일에 청소하러 오는 상품도 있습니다. |  |
-| 11 | Kangfree | Night cleaning visits? Core, that's not a subscription. That's a love language. | 밤에 청소하러 와 준다고요? 코어, 그건 구독이 아니라 사랑의 언어예요. | 'love language(사랑의 언어)'는 영어권 유행어. 5번의 연애 비유 콜백 |
-| 12 | K | It's K. K's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized. | K입니다. K의 한마디: 한국에선 세탁기에도 케어 플랜이 붙습니다. 이게 미래인지, 그냥 엄청나게 꼼꼼한 건지는 아직 판단 중입니다. | [운영자 확인] 초안 |
+| 11 | Kangfree | Night cleaning visits? That's not a subscription. That's a love language. | 밤에 청소하러 와 준다고요? 그건 구독이 아니라 사랑의 언어예요. | 'love language(사랑의 언어)'는 영어권 유행어. 5번의 연애 비유 콜백 |
+| 12 | K | K's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized. | K의 한마디: 한국에선 세탁기에도 케어 플랜이 붙습니다. 이게 미래인지, 그냥 엄청나게 꼼꼼한 건지는 아직 판단 중입니다. | [운영자 확인] 초안 |
 | 13 | K | You can also subscribe to this channel. No six-year contract. | 이 채널도 구독하실 수 있습니다. 6년 약정은 없습니다. | 구독 주제로 채널 구독을 유도하는 마무리. 6년 계약 콜백 |
 | 14 | K | That's all for tonight. Stay curious. Keep your lenses clean. | 오늘은 여기까지입니다. 계속 궁금해하세요. 렌즈는 깨끗하게. | 확정된 클로징 멘트 |
 
