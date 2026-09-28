@@ -59,3 +59,11 @@ def test_kokoro_writes_wav(tmp_path):
 def test_kokoro_missing_model_files_fail_clearly(tmp_path):
     with pytest.raises(TTSError, match="model files missing"):
         KokoroTTS(tmp_path / "nope.onnx", tmp_path / "nope.bin", "am_fenrir")
+
+
+def test_for_speech_fixes_names_the_voice_would_misread():
+    from korea_decoded.tts import for_speech
+    rules = {"Master K": "Master Kay"}
+    assert for_speech("Good evening, I'm Master K.", rules) == "Good evening, I'm Master Kay."
+    assert for_speech("Master Kim and Master Kay stay as they are.", rules) == "Master Kim and Master Kay stay as they are."
+    assert load_config().pronunciation["Master K"] == "Master Kay"

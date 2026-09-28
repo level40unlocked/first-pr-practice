@@ -148,3 +148,7 @@ ai_application = "bytedance/seedream/v4/text-to-image"
 [visuals.ai_arguments]
 resolution = "2K"
 aspect_ratio = "9:16"
+
+# 음성이 잘못 읽는 이름 교정: 대본 표기 = "음성이 읽을 표기"
+[pronunciation]
+"Master K" = "Master Kay"

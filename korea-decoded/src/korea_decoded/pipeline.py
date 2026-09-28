@@ -9,6 +9,7 @@ from korea_decoded import db, scoring, sensitivity
 from korea_decoded.config import PROJECT_ROOT, ChannelConfig
 from korea_decoded.models import RawTopic, ShortScript
 from korea_decoded.scriptwriter import ScriptWriter, render_markdown, slugify
+from korea_decoded.tts import for_speech
 
 
 def ingest(conn: sqlite3.Connection, topics: list[RawTopic], config: ChannelConfig) -> dict:
@@ -90,7 +91,7 @@ def voice_topic(conn: sqlite3.Connection, uid: str, config: ChannelConfig, out_d
         raise PipelineError(f"topic {uid} is '{topic['status']}', not scripted")
     script = load_script(topic)
     voice = voice or config.voice_for(script.pillar or topic["pillar"])
-    text = " ".join(line.en for line in script.lines)
+    text = for_speech(" ".join(line.en for line in script.lines), config.pronunciation)
     out_dir.mkdir(parents=True, exist_ok=True)
     audio_path = build_tts(voice, config).synthesize(text, out_dir / f"{uid}-{voice}")
     db.update_media(conn, uid, "voiced", voice=voice, audio_path=str(audio_path))

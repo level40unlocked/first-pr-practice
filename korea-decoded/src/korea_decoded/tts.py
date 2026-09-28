@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import re
+
 from pathlib import Path
 from typing import Protocol
 
@@ -97,6 +99,13 @@ class KokoroTTS:
         out_path.parent.mkdir(parents=True, exist_ok=True)
         sf.write(out_path, samples, sample_rate)
         return out_path
+
+
+def for_speech(text: str, pronunciation: dict) -> str:
+    """Rewrites names the voice would misread ("Master K" -> "Master Kay"); whole words only."""
+    for written, spoken in sorted(pronunciation.items(), key=lambda kv: -len(kv[0])):
+        text = re.sub(rf"(?<!\w){re.escape(written)}(?!\w)", spoken, text)
+    return text
 
 
 def build_tts(voice_name: str, config: ChannelConfig) -> TTS:
