@@ -18,6 +18,30 @@ import newsrig as nr
 W, H, FPS, SW, SH = nr.W, nr.H, nr.FPS, nr.SW, nr.SH
 COLLAR_Y, DESK_Y = 520, 800
 
+# News desks (sub-categories). Each gets its own badge colour; experts per desk come later.
+CATEGORIES = {
+    "current_affairs": ("CURRENT AFFAIRS", (214, 40, 57)),
+    "kpop": ("K-POP & ENTERTAINMENT", (236, 72, 153)),
+    "hidden_korea": ("HIDDEN KOREA", (124, 58, 237)),
+    "korea_vs_world": ("KOREA VS WORLD", (37, 99, 235)),
+    "money_business": ("MONEY & BUSINESS", (22, 163, 74)),
+    "tech": ("TECH", (8, 145, 178)),
+    "food_life": ("K-FOOD & LIFE", (234, 88, 12)),
+    "travel": ("TRAVEL", (13, 148, 136)),
+}
+
+
+def category_badge(draw, x, y, key, size=30, anchor="left"):
+    """Draws a rounded category pill; returns its right edge."""
+    label, color = CATEGORIES[key]
+    f = nr.font(size)
+    tw = draw.textlength(label, font=f)
+    h, pad = int(size * 1.7), int(size * 0.7)
+    x0 = x if anchor == "left" else x - (tw + 2 * pad) / 2
+    draw.rounded_rectangle((x0, y, x0 + tw + 2 * pad, y + h), h // 4, fill=color)
+    draw.text((x0 + pad, y + h / 2), label, font=f, fill=nr.WHITE, anchor="lm")
+    return x0 + tw + 2 * pad
+
 
 class Puppet:
     def __init__(self, spec):
@@ -138,14 +162,18 @@ def main():
     o.ellipse((288, 66, 306, 84), fill=nr.WHITE)
     o.text((316, 75), "LIVE", font=nr.font(30), fill=nr.WHITE, anchor="lm")
     o.rectangle((240, 930, 1680, 1030), fill=nr.WHITE)
-    o.rectangle((240, 930, 520, 1030), fill=nr.YELLOW)
-    o.text((380, 980), "PANEL", font=nr.font(40), fill=nr.BLACK, anchor="mm")
+    category = scene.get("category", "hidden_korea")
+    cat_color = CATEGORIES[category][1]
+    category_badge(o, 436, 50, category)  # next to LIVE, same height
+    o.rectangle((240, 930, 520, 1030), fill=cat_color)
+    o.text((380, 980), "PANEL", font=nr.font(40), fill=nr.WHITE, anchor="mm")
     o.text((550, 980), scene["headline"], font=nr.font(38), fill=nr.BLACK, anchor="lm")
 
     short_static = Image.new("RGB", (SW, SH), nr.NAVY)
     sd = ImageDraw.Draw(short_static)
     sd.text((SW / 2, 140), nr.CHANNEL, font=nr.font(44), fill=nr.YELLOW, anchor="mm")
-    sd.multiline_text((SW / 2, 380), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
+    category_badge(sd, SW / 2, 200, category, size=36, anchor="center")
+    sd.multiline_text((SW / 2, 420), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
     sd.ellipse((110, 1640, 250, 1780), fill=nr.YELLOW)
     sd.text((180, 1710), "CN", font=nr.font(56), fill=nr.NAVY, anchor="mm")

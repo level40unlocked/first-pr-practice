@@ -98,3 +98,21 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 - 음성: 아나운서 Miles(ElevenLabs), 지영 박사 Skye(Seed Speech)
 - 한 책상에 두 명. 말하는 사람 쪽으로 카메라가 당겨지고, 듣는 사람은 말하는 사람을 보며 끄덕임. 방송 그래픽은 고정
 - 샘플: [롱폼](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/68a5d7d8-53e6-4b3a-81ce-838923ebbed9.mp4), [쇼츠](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/b93ed0b0-1212-4586-8a97-5892d5dcfda8.mp4)
+
+## 뉴스 데스크 (세부 카테고리)
+
+모든 꼭지에 카테고리 배지를 붙입니다. 롱폼은 왼쪽 위 LIVE 옆, 쇼츠는 채널 이름 아래. 하단 자막바 태그도 카테고리 색을 따릅니다.
+나중에 데스크마다 전문가 캐릭터를 추가합니다 (예: K-POP 데스크 전문 패널).
+
+| 키 | 배지 | 색 | 비고 |
+|---|---|---|---|
+| current_affairs | CURRENT AFFAIRS (시사) | 빨강 | 민감도 ⚠️ 검토 대상이 많음 |
+| kpop | K-POP & ENTERTAINMENT | 핑크 | 뮤직비디오·방송 영상 사용 금지 (저작권). 그래픽으로 재구성 |
+| hidden_korea | HIDDEN KOREA (한국의 숨겨진 비밀) | 보라 | |
+| korea_vs_world | KOREA VS WORLD | 파랑 | 비교 포맷 |
+| money_business | MONEY & BUSINESS | 초록 | 광고 단가 높음 |
+| tech | TECH | 청록 | |
+| food_life | K-FOOD & LIFE | 주황 | |
+| travel | TRAVEL | 틸 | |
+
+패널 v3 크기: head_ratio 0.74, shoulders 500 (입 위치 수정 후 확정 대기)

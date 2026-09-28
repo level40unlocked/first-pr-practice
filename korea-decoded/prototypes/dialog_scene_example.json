@@ -15,8 +15,8 @@
    "x": 630,
    "label": "DR. JIYOUNG",
    "energy": 1.8,
-   "head_ratio": 0.66,
-   "shoulders": 470
+   "head_ratio": 0.74,
+   "shoulders": 500
   }
  },
  "lines": [
@@ -48,5 +48,6 @@
  "headline": "Korean convenience stores have a ramen machine",
  "hook": "A ramen MACHINE?!\nOnly in Korea",
  "out_long": "dialog_long.mp4",
- "out_short": "dialog_short.mp4"
+ "out_short": "dialog_short.mp4",
+ "category": "food_life"
 }
