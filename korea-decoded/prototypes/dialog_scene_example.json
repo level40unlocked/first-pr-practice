@@ -1,0 +1,50 @@
+{
+ "characters": {
+  "anchor": {
+   "head": "a_head.png",
+   "body": "a_body.png",
+   "ref": "a_ref.png",
+   "x": 1290,
+   "label": "MINSU PARK",
+   "energy": 1.0
+  },
+  "panel": {
+   "head": "p_head.png",
+   "body": "p_body.png",
+   "ref": "p_ref.png",
+   "x": 630,
+   "label": "DR. JIYOUNG",
+   "energy": 1.8
+  }
+ },
+ "lines": [
+  {
+   "who": "anchor",
+   "audio": "line1.mp3"
+  },
+  {
+   "who": "panel",
+   "audio": "line2.mp3"
+  },
+  {
+   "who": "anchor",
+   "audio": "line3.mp3"
+  },
+  {
+   "who": "panel",
+   "audio": "line4.mp3"
+  },
+  {
+   "who": "anchor",
+   "audio": "line5.mp3"
+  },
+  {
+   "who": "panel",
+   "audio": "line6.mp3"
+  }
+ ],
+ "headline": "Korean convenience stores have a ramen machine",
+ "hook": "A ramen MACHINE?!\nOnly in Korea",
+ "out_long": "dialog_long.mp4",
+ "out_short": "dialog_short.mp4"
+}
