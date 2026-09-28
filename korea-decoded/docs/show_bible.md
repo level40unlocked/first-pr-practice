@@ -195,8 +195,12 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - 파일을 base64나 텍스트 조각으로 샌드박스에 넘기지 않는다
 - 클라우드 환경 네트워크 허용 목록에 `upload.higgsfield.ai`, cloudfront 두 곳, 뉴스·Reddit·네이버·구글 API 도메인을 추가해 둠
 
+### 첫 완성본 (2026-09-28)
+- [롱폼 41초](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/4cf5b49b-fd01-4044-ac99-e63d9dd12e1d.mp4), [쇼츠](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/bda8278b-31d1-4456-87a3-d23c218f70fe.mp4). 샷: 앵커 단독 → 앵커+화면 → 화면 크게 → 투샷 → 화자 클로즈업 ×4. 렌더링 약 5분
+- 샌드박스를 재시작하면 `pip install opencv-python-headless`가 먼저 필요
+
 ### 다음 할 일 (순서대로)
-1. 실제 캐릭터와 목소리로 첫 완성본(롱폼 + 쇼츠) 렌더링 → 연출 피드백 반영
+1. 첫 완성본 연출 피드백 반영
 2. 전문가 8명 중 확정 → 애니메이션용 원본(머리·몸통·참고) 제작
 3. **뉴스 데스크 모듈**: 한국 뉴스·Reddit·트렌드 수집 → 같은 사건 묶기 → 외국인 관심도 채점 → 민감도(⚠️) → 아침 브리핑(후보 10개 + 추천 각도) → 운영자가 선택하고 "내 생각 한 줄" 입력
 4. 에피소드 대본 형식(앵커·패널 대화, 꼭지별 screen/big/shot 지시)으로 대본 생성기 확장
