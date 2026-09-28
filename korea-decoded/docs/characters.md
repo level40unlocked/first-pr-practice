@@ -14,7 +14,7 @@
 | 성격 | 차분함, 무표정 유머(deadpan), 정확성 집착. 겉은 쿨하지만 사소한 것에 크게 흔들림 |
 | 말버릇 | "Let's look at the numbers." / "Technically…" / 이상하게 정확한 숫자 ("fifty-one point six percent") / 괄호 속 TMI |
 | 오프닝 | "Good evening, I'm Master K. This is the Four Eyes Report." |
-| 클로징 | "Stay curious. Keep your lenses clean." (확정 대기) |
+| 클로징 | "Stay curious. Keep your lenses clean." ✅ 확정 |
 | 반복 개그 | ① "Core" 정정 ("It's K. It has always been K.") ② "This is a serious news program." (아무도 안 믿음) ③ 팩트를 말하기 전에 안경을 고쳐 씀 ④ 몰래 K-드라마를 보고 우는데 절대 인정 안 함 |
 | 역할 | 사실 전달, 진행, 꼭지 마무리. 운영자의 관점은 **"K's Take"** 코너로 전함 |
 | 약점 | 요리를 못함, 즉흥 상황에 약함, 지영 박사의 에너지에 늘 밀림 |
@@ -50,5 +50,5 @@
 ## 정해야 할 것
 - ~~지영 박사의 이름~~ → Stella Jiyeong Kang 확정, 해외 거주(교포) 설정 유지
 - 기존 녹음 대사 "Doctor Jiyoung, please stay calm."은 다음 녹음 때 "Dr. Kang, please stay calm."으로 교체
-- 클로징 멘트 확정
+- ~~클로징 멘트~~ → 확정
 - 전문가 8명의 아이덴티티 (확정된 캐릭터부터)
