@@ -209,7 +209,7 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - Google Cloud 프로젝트 "Four Eyes Report", YouTube Data API v3 사용 설정, OAuth 앱 "Four Eyes Report Uploader" (테스트 상태, 범위 youtube / youtube.readonly / youtube.upload)
 - 환경 변수 `YOUTUBE_CLIENT_ID`, `YOUTUBE_CLIENT_SECRET`, `YOUTUBE_REFRESH_TOKEN` 등록 후 새 세션에서 테스트
 - ⚠️ **2026-10-05 전후:** refresh token 7일 만료 → OAuth Playground에서 재발급. 이때 **클라이언트 보안 비밀번호도 재설정** (첫 발급 때 캡처로 노출됨)
-- 첫 업로드 테스트: 첫 완성본 롱폼을 **비공개**로 (`python -m korea_decoded upload ... --privacy private`)
+- ✅ 첫 업로드 테스트 성공 (2026-09-28): 첫 완성본 롱폼 41초를 **비공개**로 올림 → https://youtu.be/zCXqmUFMBKQ (채널 FourEyesReport, privacyStatus private, 처리 중). 명령: `pip install -r requirements.txt` 후 `PYTHONPATH=src python -m korea_decoded upload <mp4> --title ... --description <txt> --tags ... --privacy private`. 썸네일은 아직 테스트 안 함
 
 ### 다음 할 일 (순서대로)
 1. 첫 완성본 연출 피드백 반영
