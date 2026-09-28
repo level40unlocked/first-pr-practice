@@ -134,6 +134,28 @@ def broadcast_overlay(scene):
     return img
 
 
+def bands(layer):
+    """Splits a mostly transparent full-frame layer into (piece, (x, y)) row bands, so pasting it
+    each frame only touches the pixels that have graphics."""
+    alpha = np.asarray(layer)[..., 3] > 0
+    rows = np.nonzero(alpha.any(axis=1))[0]
+    out, start = [], None
+    for k, y in enumerate(rows):
+        if start is None:
+            start = y
+        if k == len(rows) - 1 or rows[k + 1] != y + 1:
+            cols = np.nonzero(alpha[start:y + 1].any(axis=0))[0]
+            box = (int(cols.min()), int(start), int(cols.max()) + 1, int(y) + 1)
+            out.append((layer.crop(box), box[:2]))
+            start = None
+    return out
+
+
+def paste_bands(img, pieces):
+    for piece, xy in pieces:
+        img.paste(piece, xy, piece)
+
+
 def ticker_strip(items):
     """Pre-rendered UP NEXT text, repeated back to back for a seamless loop."""
     f = nr.font(24)
@@ -165,8 +187,9 @@ def main():
         t += len(s) / 16000 + gap
     audio = np.concatenate(parts + [silence(0.6)])
     duration = len(audio) / 16000
+    wav = scene["out_long"].rsplit(".", 1)[0] + ".wav"  # one per segment, so segments can render side by side
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", "16000", "-ac", "1", "-i", "-",
-                    "episode.wav"], input=audio.tobytes(), check=True)
+                    wav], input=audio.tobytes(), check=True)
     n = int(duration * FPS)
 
     shots = plan_shots(lines, anchor_key)
@@ -179,7 +202,7 @@ def main():
         e = nr.envelope(ln["samples"], int(len(ln["samples"]) / 16000 * FPS))
         envs[ln["who"]][i0:i0 + len(e)] = e[: max(0, n - i0)]
 
-    words = scene.get("words") or nr.transcribe("episode.wav")
+    words = scene.get("words") or nr.transcribe(wav)
     groups, cur = [], []
     for w in words:
         cur.append(w)
@@ -190,11 +213,24 @@ def main():
         groups.append(cur)
 
     bg = world_background()
-    desks = {"all": desk_layer(puppets.values()), "anchor": desk_layer([puppets[anchor_key]])}
-    over = broadcast_overlay(scene)
+    desks = {"all": bands(desk_layer(puppets.values())), "anchor": bands(desk_layer([puppets[anchor_key]]))}
+    over = bands(broadcast_overlay(scene))
     ticker, ticker_w = ticker_strip(scene.get("up_next", ["More stories after this"]))
     bug = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     nr.logo_mark(bug, 1800, 78, 76)  # long form only: sits outside the Shorts crop
+    bd = ImageDraw.Draw(bug)
+    bd.rectangle((0, 1040, 190, 1080), fill=nr.YELLOW)
+    bd.text((95, 1060), "UP NEXT", font=nr.font(24), fill=nr.NAVY, anchor="mm")
+    bug = bands(bug)
+
+    # Shorts: the whole segment, or only the lines in "short": {"from": i, "to": j}; false for none
+    short_spec = scene.get("short", {})
+    if short_spec is False:
+        s_from = s_to = None
+    else:
+        a_line = lines[short_spec.get("from", 0)]
+        b_line = lines[short_spec.get("to", len(lines) - 1)]
+        s_from, s_to = max(0.0, a_line["start"] - 0.4), min(duration, b_line["end"] + 0.6)
 
     short_static = Image.new("RGB", (SW, SH), nr.BRAND_NAVY)
     sd = ImageDraw.Draw(short_static)
@@ -243,13 +279,15 @@ def main():
             target[2] += min(0.06, 0.015 * (held - 4))
         return target
 
-    def ff(path, w, h):
+    def ff(path, w, h, start=0.0):
         return subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
-                                 "-r", str(FPS), "-i", "-", "-i", "episode.wav", "-c:v", "libx264", "-preset",
-                                 "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest", path],
-                                stdin=subprocess.PIPE)
+                                 "-r", str(FPS), "-i", "-", "-ss", f"{start:.3f}", "-i", wav, "-c:v", "libx264",
+                                 "-preset", "superfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac",
+                                 "-ar", "48000", "-shortest", path], stdin=subprocess.PIPE)
 
-    lp, sp = ff(scene["out_long"], W, H), ff(scene["out_short"], SW, SH)
+    lp = ff(scene["out_long"], W, H)
+    sp = ff(scene["out_short"], SW, SH, s_from) if s_from is not None else None
+    box_cache = {}
     cam = cam_target(lines[0], 0)
     rect, alpha = list(SCREEN_OTS), 0.0
     shown_screen, prev_line = None, None
@@ -293,42 +331,41 @@ def main():
                 nod = 2.5 * math.sin(since / 0.6 * math.pi) if since < 0.6 else 0.0
             elif k == anchor_key and ln["shot"] in ("anchor_screen", "screen_full") and t - ln["start"] < 0.7:
                 g = (-0.8, 0.1)  # glance at the screen, then back to camera
-            shifted = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-            p.draw(shifted, t, g, dg.lid_at(t, blinks[k]), envs[k][i], nod)
-            world.paste(shifted, (OX, 0), shifted)
-        desk = desks["anchor" if anchor_cam else "all"]
-        world.paste(desk, (0, 0), desk)
+            p.draw(world, t, g, dg.lid_at(t, blinks[k]), envs[k][i], nod, ox=OX)
+        paste_bands(world, desks["anchor" if anchor_cam else "all"])
 
         cw, ch = W / cam[2], H / cam[2]
         cx = min(max(cam[0], cw / 2), WORLD_W - cw / 2)
         cy = min(max(cam[1], ch / 2), H - ch / 2)
         view = world.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize(
-            (W, H), Image.BICUBIC)
+            (W, H), Image.BILINEAR)
         if shown_screen is not None and alpha > 0.02:
-            box = screen_layer(shown_screen["img"], rect, alpha, shown_screen.get("label", ""),
-                               shown_screen.get("credit", ""))
-            view.paste(box, (0, 0), box)
-        view.paste(over, (0, 0), over)
+            key = (id(shown_screen), tuple(round(v) for v in rect), round(alpha, 2))
+            if key not in box_cache:  # the box only changes while it slides or fades
+                box_cache.clear()
+                box_cache[key] = bands(screen_layer(shown_screen["img"], rect, alpha, shown_screen.get("label", ""),
+                                                    shown_screen.get("credit", "")))
+            paste_bands(view, box_cache[key])
+        paste_bands(view, over)
 
-        crop = view.crop((240, 0, 1680, 1080)).resize((1080, 810), Image.BILINEAR)
-        sframe = short_static.copy()
-        sframe.paste(crop, (0, 600))
-        grp = next((g for g in groups if g[0]["s"] <= t <= g[-1]["e"] + 0.15), None)
-        if grp:
-            nr.draw_caption(sframe, grp, t)
-        sp.stdin.write(np.asarray(sframe).tobytes())
+        if sp is not None and s_from <= t <= s_to:
+            crop = view.crop((240, 0, 1680, 1080)).resize((1080, 810), Image.BILINEAR)
+            sframe = short_static.copy()
+            sframe.paste(crop, (0, 600))
+            grp = next((g for g in groups if g[0]["s"] <= t <= g[-1]["e"] + 0.15), None)
+            if grp:
+                nr.draw_caption(sframe, grp, t)
+            sp.stdin.write(np.asarray(sframe).tobytes())
 
-        view.paste(bug, (0, 0), bug)
         off = int(t * 110) % ticker_w
         view.paste(ticker.crop((off, 0, off + W - 190, 40)), (190, 1040))
-        vd = ImageDraw.Draw(view)
-        vd.rectangle((0, 1040, 190, 1080), fill=nr.YELLOW)
-        vd.text((95, 1060), "UP NEXT", font=nr.font(24), fill=nr.NAVY, anchor="mm")
+        paste_bands(view, bug)
         lp.stdin.write(np.asarray(view).tobytes())
 
     for p in (lp, sp):
-        p.stdin.close()
-        p.wait()
+        if p is not None:
+            p.stdin.close()
+            p.wait()
     print(json.dumps({"duration": round(duration, 2),
                       "shots": [(l["who"], l["shot"], round(l["start"], 2)) for l in lines]}))
 

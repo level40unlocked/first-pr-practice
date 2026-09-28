@@ -69,19 +69,22 @@ class Puppet:
         self.pivot = (self.x, COLLAR_Y + int(0.03 * self.head.height))
         self.info = {"ratio": round(ratio, 3), "eyes": [tuple(round(v) for v in e) for e in rig["eyes"]]}
 
-    def draw(self, frame, t, gaze, lid, env, nod):
+    def draw(self, frame, t, gaze, lid, env, nod, ox=0):
+        """Draws body and head onto frame; ox shifts the character (a wider studio canvas)."""
         mouth = "closed" if env < 0.15 else ("mid" if env < 0.45 else "open")
         face = nr.face_layer(self.head, self.rig, gaze, lid, mouth)
         angle = (1.4 * math.sin(2 * math.pi * t / 3.9 + self.x) + 2.4 * self.energy * env
                  * math.sin(2 * math.pi * t * 1.2) + nod)
         angle += 2.5 * gaze[0] * -1  # lean toward where the eyes look
         cx, chin = face.width / 2, self.rig["chin"]
-        canvas = Image.new("RGBA", (face.width * 2, face.height * 2), (0, 0, 0, 0))
-        canvas.paste(face, (face.width // 2, face.height // 2))
-        rot = canvas.rotate(angle, resample=Image.BICUBIC, center=(face.width // 2 + cx, face.height // 2 + chin))
-        frame.paste(self.body, self.body_pos, self.body)
-        hx = int(self.pivot[0] - (face.width // 2 + cx))
-        hy = int(self.pivot[1] - (face.height // 2 + chin) - 8 * self.energy * env)
+        # the head only tilts a few degrees about the chin, so a small margin keeps the corners
+        pad = int(0.15 * max(face.size)) + 2
+        canvas = Image.new("RGBA", (face.width + 2 * pad, face.height + 2 * pad), (0, 0, 0, 0))
+        canvas.paste(face, (pad, pad))
+        rot = canvas.rotate(angle, resample=Image.BILINEAR, center=(pad + cx, pad + chin))
+        frame.paste(self.body, (self.body_pos[0] + ox, self.body_pos[1]), self.body)
+        hx = int(self.pivot[0] + ox - (pad + cx))
+        hy = int(self.pivot[1] - (pad + chin) - 8 * self.energy * env)
         frame.paste(rot, (hx, hy), rot)
 
 

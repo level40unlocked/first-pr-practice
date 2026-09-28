@@ -158,7 +158,13 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 - 앵커 단독 카메라(solo, screen, full)와 데스크 카메라(two_shot, close, wide)를 오갈 때는 컷, 같은 카메라 안에서는 부드러운 이동
 - 같은 샷이 4초를 넘으면 천천히 줌인
 - 롱폼 전용: 오른쪽 위 로고, 맨 아래 UP NEXT 티커 (쇼츠 크롭 밖)
-- 예시 대본: `prototypes/segment_example.json`
+- 예시 대본: `prototypes/segment_example.json` (꼭지 하나), `prototypes/episode_example.json` (에피소드)
+
+### 에피소드 렌더링 (`prototypes/render_episode.py`)
+- 에피소드 파일 = 공통(episode, characters, anchor) + `segments` 목록. 꼭지마다 category, desk, headline, hook, screens, lines, `short`
+- `short`: `{"from": 줄번호, "to": 줄번호}`이면 그 구간만 쇼츠로, `false`면 쇼츠 없음, 생략하면 꼭지 전체
+- TOPIC n/N, UP NEXT 티커(남은 꼭지 제목), 파일 이름은 자동. 꼭지별로 동시에 렌더링하고 롱폼은 이어 붙임 (재인코딩 없음)
+- 속도: 최적화 후 영상 길이의 약 4배(로컬 4코어, 쇼츠 포함). 3꼭지 병렬이면 한 꼭지 시간과 비슷. 샌드박스 백그라운드 작업은 15분 제한이 있으니 에피소드가 길면 꼭지를 몇 개씩 나눠 실행
 
 ## 이어받기 메모 (2026-09-28 기준)
 

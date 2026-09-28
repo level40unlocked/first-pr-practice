@@ -1,0 +1,39 @@
+"""Shot planning and episode splitting for the prototype renderer (prototypes/episode.py, render_episode.py)."""
+import sys
+from pathlib import Path
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "prototypes"))
+pytest.importorskip("cv2")
+
+import episode  # noqa: E402
+import render_episode  # noqa: E402
+
+
+def test_shots_follow_news_grammar():
+    lines = [{"who": "anchor"}, {"who": "anchor", "screen": "s1"}, {"who": "anchor", "screen": "s2", "big": True},
+             {"who": "panel"}, {"who": "anchor"}, {"who": "panel"}]
+    assert episode.plan_shots(lines) == ["anchor_solo", "anchor_screen", "screen_full",
+                                         "two_shot", "speaker_close", "speaker_close"]
+
+
+def test_a_line_can_force_its_shot():
+    lines = [{"who": "anchor", "shot": "wide"}, {"who": "panel", "shot": "speaker_close"}]
+    assert episode.plan_shots(lines) == ["wide", "speaker_close"]
+    with pytest.raises(ValueError):
+        episode.plan_shots([{"who": "anchor", "shot": "drone"}])
+
+
+def test_split_fills_topic_ticker_and_cast():
+    ep = {"episode": 3, "characters": {"anchor": {}, "panel": {}, "chef": {}},
+          "segments": [{"headline": "A", "lines": [{"who": "anchor"}, {"who": "panel"}]},
+                       {"headline": "B", "lines": [{"who": "anchor"}]},
+                       {"headline": "C", "lines": [{"who": "chef"}]}]}
+    scenes = render_episode.split_episode(ep, "ep3")
+    assert [s["topic"] for s in scenes] == [[1, 3], [2, 3], [3, 3]]
+    assert scenes[0]["up_next"] == ["B", "C"]
+    assert scenes[2]["up_next"] == ["Thanks for watching"]
+    assert set(scenes[1]["characters"]) == {"anchor"}  # only who appears, plus the anchor
+    assert set(scenes[2]["characters"]) == {"anchor", "chef"}
+    assert scenes[1]["out_long"] == "ep3_s2_long.mp4"
