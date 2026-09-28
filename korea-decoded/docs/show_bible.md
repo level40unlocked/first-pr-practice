@@ -247,6 +247,10 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - 아직: 브랜딩 워터마크(`fer_logo_mark.png`), 영어 자막 업로드(토큰에 `youtube.force-ssl` 범위 필요. 현재 토큰은 403. 재발급 때 Playground 범위에 추가)
 - 운영 원칙: 첫 영상들은 한국 지인·커뮤니티보다 영어권 커뮤니티에 먼저 공유. 공개 시간은 KST 오전 8~10시(미 동부 전날 저녁)
 
+### EP.2 대본 초안 (2026-09-28)
+- `episodes/ep02/script.json`(렌더링 입력) + `script_ko.md`(번역·개그 해설·사실 확인 체크리스트). 꼭지: 부캉이(travel) / 태풍 없는 여름(current_affairs, ⚠️ review) / 강남페스티벌(kpop) / 삼성 AI 구독(money_business)
+- 출연은 Master K + Dr. Kangfree만. K's Take는 운영자 확인 전 초안. 음성·설명 화면 이미지 아직 없음
+
 ### 다음 할 일 (순서대로)
 1. 첫 완성본 연출 피드백 반영
 2. 전문가 8명 중 확정 → 애니메이션용 원본(머리·몸통·참고) 제작

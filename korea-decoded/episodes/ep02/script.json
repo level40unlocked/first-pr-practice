@@ -1,0 +1,409 @@
+{
+ "episode": 2,
+ "name": "ep02",
+ "anchor": "anchor",
+ "outro_ticker": "Thanks for watching. See you next episode",
+ "characters": {
+  "anchor": {
+   "head": "a_head.png",
+   "body": "a_body.png",
+   "ref": "a_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "panel": {
+   "head": "p_head.png",
+   "body": "p_body.png",
+   "ref": "p_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500
+  }
+ },
+ "segments": [
+  {
+   "category": "travel",
+   "desk": "BUSAN",
+   "headline": "A shark moved into a Busan canal and half a million people came to see it",
+   "hook": "A shark got stuck in a Busan canal.\nHalf a million people showed up",
+   "screens": {
+    "s1": {
+     "image": "bukang_canal.png",
+     "label": "BUSAN NORTH PORT",
+     "credit": "AI-generated image"
+    },
+    "s2": {
+     "image": "bukang_numbers.png",
+     "label": "BY THE NUMBERS",
+     "credit": "Source: Busan Infrastructure Corp. via Yonhap"
+    }
+   },
+   "lines": [
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_01.mp3",
+     "text": "Good evening. I'm Master K, and this is the Four Eyes Report. Our top story tonight: a shark. In a canal. In the middle of a city."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_02.mp3",
+     "screen": "s1",
+     "text": "Ten days ago, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_03.mp3",
+     "text": "Officials tried to guide it back to the sea. The shark declined."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_bukang_04.mp3",
+     "text": "It DECLINED? Core, a shark cannot decline things."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_05.mp3",
+     "text": "It's K. And technically, it can. It simply did not leave."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_06.mp3",
+     "screen": "s1",
+     "text": "So Korea did what Korea does. It gave the shark a nickname: Bukang-i. That's 'North Port', plus a cute little 'ee' on the end."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_bukang_07.mp3",
+     "text": "Wait. WAIT. It has a nickname? Does it have a FANDOM?"
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_08.mp3",
+     "screen": "s2",
+     "big": true,
+     "text": "Let's look at the numbers. Five hundred sixty-eight thousand, eight hundred visitors. Over the Chuseok holiday, one hundred forty thousand people came in a single day."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_09.mp3",
+     "screen": "s2",
+     "text": "On a normal holiday, this park gets about two thousand. That is a fiftyfold increase. For one shark."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_bukang_10.mp3",
+     "text": "Half a million people in ten days? That's not a shark. That's a stadium tour."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_11.mp3",
+     "text": "The good news: scientists say Bukang-i is calm and healthy. Starting Tuesday morning, boats and water pumps will gently guide it back out to sea."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_bukang_12.mp3",
+     "text": "So it's the farewell tour."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_bukang_13.mp3",
+     "text": "K's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Bukang-i, safe travels."
+    }
+   ],
+   "short": {
+    "from": 2,
+    "to": 10
+   }
+  },
+  {
+   "category": "current_affairs",
+   "desk": "WEATHER",
+   "headline": "No typhoon hit Korea this summer, and that is not all good news",
+   "hook": "Korea had ZERO typhoons this year.\nWhy scientists are worried",
+   "screens": {
+    "s1": {
+     "image": "typhoon_map.png",
+     "label": "THE BOUNCERS",
+     "credit": "Illustration based on KIOST report"
+    },
+    "s2": {
+     "image": "typhoon_ocean.png",
+     "label": "WHY IT MATTERS",
+     "credit": "Source: KIOST, Korea Herald"
+    }
+   },
+   "lines": [
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_01.mp3",
+     "text": "Next: the weather. Or rather, the weather that never showed up."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_02.mp3",
+     "screen": "s1",
+     "text": "This year, not a single typhoon has made landfall in Korea. Not one."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_typhoon_03.mp3",
+     "text": "That's amazing! A free summer! Why do you look worried?"
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_04.mp3",
+     "text": "I always look like this. But yes, I'm worried."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_05.mp3",
+     "screen": "s1",
+     "big": true,
+     "text": "For three summers now, two giant high-pressure systems, one from the Pacific and one from Tibet, have parked around Korea like bouncers outside a club."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_06.mp3",
+     "screen": "s1",
+     "text": "In August, Typhoon Dolphin crossed the Pacific, saw the line at the door, and went to Shanghai instead."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_typhoon_07.mp3",
+     "text": "Rejected at the door. Brutal."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_08.mp3",
+     "screen": "s2",
+     "text": "Here's the catch. Typhoons stir up the ocean. They mix cold, oxygen-rich water from below with the warm water on top. Scientists call them the ocean's ventilation system."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_typhoon_09.mp3",
+     "text": "So the ocean spent all summer in a stuffy room with the windows shut."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_10.mp3",
+     "screen": "s2",
+     "text": "Exactly. And fish farms are feeling it. Along the southern coast, about seven point seven million farmed fish have died this year. Rainfall is down about fifteen percent, and parts of the country are in drought."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_typhoon_11.mp3",
+     "text": "Okay. That's not a free summer at all."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_12.mp3",
+     "text": "And experts warn: fewer typhoons can mean stronger ones later. Warm water is fuel."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_typhoon_13.mp3",
+     "text": "K's Take: A quiet summer isn't always a good summer. Sometimes the calm is the story."
+    }
+   ],
+   "short": {
+    "from": 2,
+    "to": 9
+   }
+  },
+  {
+   "category": "kpop",
+   "desk": "SEOUL",
+   "headline": "Gangnam wants to be the world's K-festival, and Psy is closing the show",
+   "hook": "Gangnam is throwing a street festival.\nGuess who's headlining",
+   "screens": {
+    "s1": {
+     "image": "gangnam_parade.png",
+     "label": "GANGNAM FESTIVAL",
+     "credit": "AI-generated image"
+    },
+    "s2": {
+     "image": "gangnam_numbers.png",
+     "label": "BY THE NUMBERS",
+     "credit": "Source: Gangnam-gu Office via Korea Herald"
+    }
+   },
+   "lines": [
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_01.mp3",
+     "text": "Our next story comes from a neighborhood you already know. Even if you think you don't."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_02.mp3",
+     "screen": "s1",
+     "text": "Gangnam. Yes. That Gangnam."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_gangnam_03.mp3",
+     "text": "Wait. Is this about the horse dance? Please tell me this is about the horse dance."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_04.mp3",
+     "screen": "s1",
+     "big": true,
+     "text": "It is about a festival. This weekend is the fifteenth Gangnam Festival: a one-kilometer street parade, giant character balloons, and a traditional Korean marching band leading the way."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_05.mp3",
+     "text": "And on Sunday, a K-pop concert closed out by the man who taught the entire planet to say 'Gangnam'. Psy."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_gangnam_06.mp3",
+     "text": "Psy. In Gangnam. That is the biggest home game in music history!"
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_07.mp3",
+     "screen": "s2",
+     "text": "Let's look at the numbers. Thirteen thousand free concert tickets. Gone almost immediately."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_gangnam_08.mp3",
+     "text": "Free?! I would have fought someone for those."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_09.mp3",
+     "text": "This is a serious news program. We do not fight for tickets. We refresh the page calmly, like adults."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_10.mp3",
+     "screen": "s1",
+     "text": "Organizers even studied New York's Macy's Thanksgiving Day Parade and Japan's Nebuta Festival. The goal: when people think 'K-festival', they think Gangnam."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_gangnam_11.mp3",
+     "text": "Core. Admit it. You're going."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_12.mp3",
+     "text": "It's K. And I have... prior commitments."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_gangnam_13.mp3",
+     "text": "K's Take: Fourteen years after one song put Gangnam on the world map, Gangnam is still trying to live up to it. Honestly? Respect."
+    }
+   ],
+   "short": {
+    "from": 2,
+    "to": 9
+   }
+  },
+  {
+   "category": "money_business",
+   "desk": "MONEY",
+   "headline": "In Korea, you can subscribe to your air conditioner",
+   "hook": "In Korea you can SUBSCRIBE\nto your air conditioner",
+   "screens": {
+    "s1": {
+     "image": "samsung_sub.png",
+     "label": "APPLIANCE SUBSCRIPTIONS",
+     "credit": "Illustration"
+    },
+    "s2": {
+     "image": "samsung_numbers.png",
+     "label": "BY THE NUMBERS",
+     "credit": "Source: Samsung Electronics via Yonhap, Korea Herald"
+    }
+   },
+   "lines": [
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_01.mp3",
+     "text": "Finally tonight, a money story. In Korea, you can subscribe to... your air conditioner."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_samsung_02.mp3",
+     "text": "Like Netflix? For an air conditioner?"
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_03.mp3",
+     "screen": "s1",
+     "text": "Sort of. Samsung says its appliance subscription business is now approaching one trillion won in sales. That's about seven hundred forty million dollars."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_04.mp3",
+     "screen": "s1",
+     "text": "You pay monthly, and for the whole contract, engineers take care of maintenance, repairs and check-ups. It's less like streaming, and more like a very long rental."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_samsung_05.mp3",
+     "text": "So I don't own the fridge. The fridge and I are... in a relationship."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_06.mp3",
+     "text": "A six-year relationship. With scheduled check-ins."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_07.mp3",
+     "screen": "s2",
+     "big": true,
+     "text": "Let's look at the numbers. Ninety-four point eight percent of Koreans used a subscription service this year. The average person has five point five."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_samsung_08.mp3",
+     "text": "Five point FIVE? Who has half a subscription?"
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_09.mp3",
+     "text": "Technically, it's an average. Nobody has half a subscription. ...Probably."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_10.mp3",
+     "screen": "s1",
+     "text": "Now Samsung wants hotels, hospitals and public offices to subscribe too. There's even a plan for newlyweds and people who move a lot, with cleaning visits at night and on holidays."
+    },
+    {
+     "who": "panel",
+     "audio": "ep02_samsung_11.mp3",
+     "text": "Night cleaning visits? Core, that's not a subscription. That's a love language."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_12.mp3",
+     "text": "It's K. K's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_13.mp3",
+     "text": "You can also subscribe to this channel. No six-year contract."
+    },
+    {
+     "who": "anchor",
+     "audio": "ep02_samsung_14.mp3",
+     "text": "That's all for tonight. Stay curious. Keep your lenses clean."
+    }
+   ],
+   "short": {
+    "from": 1,
+    "to": 9
+   }
+  }
+ ]
+}
