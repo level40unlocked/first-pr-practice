@@ -402,7 +402,7 @@ def main():
 
     short_static = Image.new("RGB", (SW, SH), BRAND_NAVY)
     sd = ImageDraw.Draw(short_static)
-    sd.multiline_text((SW / 2, 330), HOOK, font=font(72), fill=WHITE, anchor="mm", align="center", spacing=18)
+    sd.multiline_text((SW / 2, 300), HOOK, font=font(72), fill=WHITE, anchor="mm", align="center", spacing=18)
     shorts_promo(short_static, sd)
 
     def ff(path, w, h):

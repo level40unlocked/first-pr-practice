@@ -171,8 +171,8 @@ def main():
 
     short_static = Image.new("RGB", (SW, SH), nr.BRAND_NAVY)
     sd = ImageDraw.Draw(short_static)
-    category_badge(sd, SW / 2, 130, category, size=36, anchor="center")
-    sd.multiline_text((SW / 2, 370), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
+    # the category already shows inside the video (next to LIVE), so the top margin is just the hook
+    sd.multiline_text((SW / 2, 300), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
     nr.shorts_promo(short_static, sd)
 
