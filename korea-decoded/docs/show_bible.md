@@ -35,6 +35,14 @@
 | B | 감자 앵커 | 대머리 감자 몸통, 작은 정장과 넥타이, 가운데 몰린 이목구비, 작은 동그란 안경 | 무표정하게 진지한데 생긴 게 감자라는 부조화 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073036_e6d43c8a-6558-4abc-a4d3-627bc83dbdf0.png) |
 | C | 지영 박사 (Dr. Jiyoung) | 거대한 동그란 안경, 연필 꽂은 똥머리, 터틀넥 | 통계만 나오면 과하게 신남. A와 반대 에너지 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073036_298846a8-8aef-45ac-a7f5-835510f983dd.png) |
 
+### 멋진 너드 후보 (전형적인 너드 대신 "똑똑한데 스타일 좋은" 방향)
+
+| | 컨셉 | 외모 | 성격 | 컨셉 이미지 |
+|---|---|---|---|---|
+| D | 비밀을 아는 남자 | 언더컷 머리, 얇은 금테 원형 안경, 검은 터틀넥에 차콜 블레이저 | 여유로운 반쯤 미소, 한쪽 눈썹을 올리며 "사실 이건 말이죠…" | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073318_c7dba179-93f3-4804-b404-d3b4ebad94ac.png) |
+| E | 해커 | 헝클어진 검은 머리, 투명 뿔테 사각 안경, 큰 후드티, 목에 헤드폰 | 무표정 시크, 태블릿으로 데이터를 띄움 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073318_d1358a3d-cffb-43a0-8361-dc1e45e92b4e.png) |
+| F | 샤프한 브리퍼 | 매끈한 단발, 대모갑 캣아이 안경, 모크넥 위에 크림색 오버핏 블레이저 | 자신만만한 미소, 안경을 고쳐 쓰며 팩트 투척 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073318_0a9641f0-8f64-4584-875f-2194bdcc7a25.png) |
+
 ## 고정 패널 아이디어
 
 | 패널 | 캐릭터 | 역할 |
