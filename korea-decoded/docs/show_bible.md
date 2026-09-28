@@ -84,3 +84,17 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 ## 캐릭터 움직임 (아나운서, 패널 공통)
 
 입(소리에 맞춰 모양 교체), 눈 깜빡임, 눈동자 미세 이동(설명 화면이 나오면 그쪽을 봄), 고개 방향 살짝. 부품 순서: 몸통 → 머리(눈, 입 없는 얼굴) → 흰자 → 눈동자 → 눈꺼풀 → 안경 → 입.
+
+## ✅ 애니메이션 방식 검증 (프로토타입)
+
+### 아나운서 단독 (`prototypes/newsrig.py`): "거의 완벽" 평가
+- AI 원본 3장: 머리(눈과 입이 없는 얼굴, 목 없음), 몸통(머리와 목 없음. 손은 책상에 가려짐), 정면 참고 이미지(머리와 몸 비율 계산용)
+- 코드가 안경알 두 개, 코, 턱 위치를 찾아서 눈, 눈동자, 눈꺼풀, 입을 직접 그림
+- A6 원본: 머리 `497d2899-66fc-40ea-8b60-1d4815c18eb6`, 몸통 `480e7f2e-bde1-49fe-ad18-dfc5d2599626`, 참고 `5d746f9a-6b07-4adb-9eec-3936cf68fecf` (Higgsfield job)
+- 샘플: [롱폼](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/5ca55bff-bbd0-400b-8ee3-fdcb9ca9b3b5.mp4), [쇼츠](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/0210d11e-6202-42d2-803a-986a4bf0e7c7.mp4)
+
+### 아나운서 + 패널 대화 (`prototypes/dialog.py`)
+- 패널: C(지영 박사). 원본: 머리 `c67fcd43-9c73-473c-b29f-4be8a1cd81e5`, 몸통 `ec8bd826-58a3-4d75-bff3-18cce3c5a521`, 참고 `2a93c3aa-974e-40fb-b63a-26662d2f9796`
+- 음성: 아나운서 Miles(ElevenLabs), 지영 박사 Skye(Seed Speech)
+- 한 책상에 두 명. 말하는 사람 쪽으로 카메라가 당겨지고, 듣는 사람은 말하는 사람을 보며 끄덕임. 방송 그래픽은 고정
+- 샘플: [롱폼](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/68a5d7d8-53e6-4b3a-81ce-838923ebbed9.mp4), [쇼츠](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/b93ed0b0-1212-4586-8a97-5892d5dcfda8.mp4)
