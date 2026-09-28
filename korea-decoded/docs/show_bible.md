@@ -35,6 +35,14 @@
 | B | 감자 앵커 | 대머리 감자 몸통, 작은 정장과 넥타이, 가운데 몰린 이목구비, 작은 동그란 안경 | 무표정하게 진지한데 생긴 게 감자라는 부조화 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073036_e6d43c8a-6558-4abc-a4d3-627bc83dbdf0.png) |
 | C | 지영 박사 (Dr. Jiyoung) | 거대한 동그란 안경, 연필 꽂은 똥머리, 터틀넥 | 통계만 나오면 과하게 신남. A와 반대 에너지 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073036_298846a8-8aef-45ac-a7f5-835510f983dd.png) |
 
+### A 변형 (A 이미지를 참조로 같은 인물을 조금씩 바꿈)
+
+| | 변화 | 컨셉 이미지 |
+|---|---|---|
+| A1 | 조금 더 멋있게: 결 있는 버섯머리, 뻐드렁니 제거, 자신감 있는 표정. 테이프 안경과 빨간 나비넥타이는 유지 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073711_0f2a177f-15b6-4b61-af77-b28fb9613379.png) |
+| A2 | 색 변경: 남색 가디건, 노란 나비넥타이 (영상 자막의 남색·노랑과 맞춤), 펜 주머니 제거 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073711_b220736f-ea84-4018-9cde-bc96a40de6ff.png) |
+| A3 | 더 병맛: 눈이 거대해 보이는 더 큰 안경, 정수리에 삐죽 솟은 머리카락 한 가닥, 진지한 굵은 눈썹 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073713_a774b41d-dad9-49a9-bc40-3b9f75ffa526.png) |
+
 ### 멋진 너드 후보 (전형적인 너드 대신 "똑똑한데 스타일 좋은" 방향)
 
 | | 컨셉 | 외모 | 성격 | 컨셉 이미지 |
