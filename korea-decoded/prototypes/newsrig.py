@@ -34,7 +34,10 @@ def glasses_logo(draw, cx, cy, size, color):
     for sx in (-1, 1):
         x = cx + sx * r * 1.25
         draw.ellipse((x - r, cy - r, x + r, cy + r), outline=color, width=w)
-    draw.arc((cx - r * 0.35, cy - r * 0.55, cx + r * 0.35, cy + r * 0.05), 200, 340, fill=color, width=w)
+    # bridge: a gentle upward curve joining the inner rims
+    half = r * 0.45
+    pts = [(cx + half * t, cy - r * 0.18 - r * 0.22 * (1 - t * t)) for t in np.linspace(-1, 1, 12)]
+    draw.line(pts, fill=color, width=w, joint="curve")
 
 def font(size):
     try:

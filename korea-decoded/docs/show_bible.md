@@ -7,7 +7,9 @@
 - 태그라인: **Through our lenses.** 브랜드(이름, 로고, 배너 문구)에는 Korea를 넣지 않고, 영상 제목·썸네일·채널 설명에서 한국을 강조한다. 나중에 방향이 바뀌면 데스크를 추가하는 식으로 확장
 - 대외 문구(배너, 채널 설명, 영상 속 멘트)에서는 "nerd"라는 말을 쓰지 않는다. 안경 캐릭터로 보여주면 충분
 - 프로필 사진: 앵커(A6) 얼굴
-- 배너 후보 (2688×1520 생성본. 업로드 전에 2560×1440으로 맞춤): [단체샷](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_112710_7aa944cd-4ae7-469c-82bf-7f847001db55.png), [미니멀](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_112721_53397e26-5652-4dee-b59c-8eb542b9f7c4.png)
+- 배너(확정): 단체샷. 업로드용 2560×1440 파일: [다운로드](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/d9fec721-91b1-43b5-bf7a-151aa04349be.png) (원본 job `7aa944cd-4ae7-469c-82bf-7f847001db55`)
+- 영상 로고: 미니멀 배너의 노란 원 안경 마크. 렌더러는 코드로 그리고(`glasses_logo`), 파일은 `assets/brand/` (`watermark_150.png`는 유튜브 브랜딩 워터마크용, `logo_mark_800.png`는 큰 버전). 다시 만들 때: `python prototypes/brand_assets.py`
+- 미니멀 배너 원본(참고): job `53397e26-5652-4dee-b59c-8eb542b9f7c4`
 - 애니메이션 방식: `claude/2d-image-animation-automation-xzu38n` 브랜치의 연구 참고 (Plan A: 몸 고정 + 머리 독립 레이어, 입 모양 교체, 캐릭터 디자인 10원칙)
 
 ## 제작 구조
