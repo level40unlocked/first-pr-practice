@@ -4,6 +4,10 @@
 
 - 채널 이름: **Four Eyes Report** (핸들 `@FourEyesReport`). 앵커와 전문가 전원이 안경을 쓰는 방송국이라는 자기 개그. 카테고리는 "K-POP Desk"처럼 Desk로 부름
 - 로고: 노란 원 안에 남색 동그란 안경 (코드로 그림: `prototypes/newsrig.py`의 `glasses_logo`)
+- 태그라인: **Through our lenses.** 브랜드(이름, 로고, 배너 문구)에는 Korea를 넣지 않고, 영상 제목·썸네일·채널 설명에서 한국을 강조한다. 나중에 방향이 바뀌면 데스크를 추가하는 식으로 확장
+- 대외 문구(배너, 채널 설명, 영상 속 멘트)에서는 "nerd"라는 말을 쓰지 않는다. 안경 캐릭터로 보여주면 충분
+- 프로필 사진: 앵커(A6) 얼굴
+- 배너 후보 (2688×1520 생성본. 업로드 전에 2560×1440으로 맞춤): [단체샷](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_112710_7aa944cd-4ae7-469c-82bf-7f847001db55.png), [미니멀](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_112721_53397e26-5652-4dee-b59c-8eb542b9f7c4.png)
 - 애니메이션 방식: `claude/2d-image-animation-automation-xzu38n` 브랜치의 연구 참고 (Plan A: 몸 고정 + 머리 독립 레이어, 입 모양 교체, 캐릭터 디자인 10원칙)
 
 ## 제작 구조
