@@ -1,7 +1,7 @@
-# Korea Decoded 채널 설정. 코드 수정 없이 이 파일만 바꿔서 운영 방침을 조정합니다.
+# Four Eyes Report 채널 설정. 코드 수정 없이 이 파일만 바꿔서 운영 방침을 조정합니다.
 
 [channel]
-name = "Korea Decoded"
+name = "Four Eyes Report"
 language = "en"
 translation_language = "ko"
 tone = "casual"

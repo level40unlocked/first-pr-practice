@@ -20,11 +20,21 @@ SW, SH = 1080, 1920
 NAVY, NAVY2 = (12, 20, 42), (28, 44, 86)
 YELLOW, WHITE, BLACK, RED = (255, 212, 0), (255, 255, 255), (15, 15, 20), (220, 38, 38)
 FONT = "/usr/share/fonts/truetype/higgsfield/Montserrat-ExtraBold.ttf"
-CHANNEL = "CHANNEL NAME"
+CHANNEL = "FOUR EYES REPORT"
+HANDLE = "@FourEyesReport"
 HEADLINE = "Korean convenience stores are NOT boring"
 SCREEN_LABEL = "CONVENIENCE STORES"
 HOOK = "Korea's convenience stores\nare on another level"
 
+
+
+def glasses_logo(draw, cx, cy, size, color):
+    """Channel mark: a pair of round glasses, size = width of the badge it sits in."""
+    r, w = size * 0.2, max(3, round(size * 0.05))
+    for sx in (-1, 1):
+        x = cx + sx * r * 1.25
+        draw.ellipse((x - r, cy - r, x + r, cy + r), outline=color, width=w)
+    draw.arc((cx - r * 0.35, cy - r * 0.55, cx + r * 0.35, cy + r * 0.05), 200, 340, fill=color, width=w)
 
 def font(size):
     try:
@@ -335,9 +345,9 @@ def main():
     sd.text((SW / 2, 140), CHANNEL, font=font(44), fill=YELLOW, anchor="mm")
     sd.multiline_text((SW / 2, 380), HOOK, font=font(72), fill=WHITE, anchor="mm", align="center", spacing=18)
     sd.ellipse((110, 1640, 250, 1780), fill=YELLOW)
-    sd.text((180, 1710), "CN", font=font(56), fill=NAVY, anchor="mm")
+    glasses_logo(sd, 180, 1710, 140, NAVY)
     sd.text((290, 1670), CHANNEL, font=font(48), fill=WHITE, anchor="lm")
-    sd.text((290, 1740), "Full episode on the channel  >", font=font(34), fill=(190, 200, 225), anchor="lm")
+    sd.text((290, 1740), f"{HANDLE}  |  Full episode on the channel  >", font=font(34), fill=(190, 200, 225), anchor="lm")
     sd.rounded_rectangle((300, 1800, 780, 1870), 35, fill=RED)
     sd.text((540, 1835), "SUBSCRIBE", font=font(36), fill=WHITE, anchor="mm")
 

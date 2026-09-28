@@ -176,9 +176,9 @@ def main():
     sd.multiline_text((SW / 2, 420), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
     sd.ellipse((110, 1640, 250, 1780), fill=nr.YELLOW)
-    sd.text((180, 1710), "CN", font=nr.font(56), fill=nr.NAVY, anchor="mm")
+    nr.glasses_logo(sd, 180, 1710, 140, nr.NAVY)
     sd.text((290, 1670), nr.CHANNEL, font=nr.font(48), fill=nr.WHITE, anchor="lm")
-    sd.text((290, 1740), "Full episode on the channel  >", font=nr.font(34), fill=(190, 200, 225), anchor="lm")
+    sd.text((290, 1740), f"{nr.HANDLE}  |  Full episode on the channel  >", font=nr.font(34), fill=(190, 200, 225), anchor="lm")
     sd.rounded_rectangle((300, 1800, 780, 1870), 35, fill=nr.RED)
     sd.text((540, 1835), "SUBSCRIBE", font=nr.font(36), fill=nr.WHITE, anchor="mm")
 

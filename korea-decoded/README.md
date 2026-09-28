@@ -1,6 +1,6 @@
-# Korea Decoded: 자동화 파이프라인
+# Four Eyes Report: 자동화 파이프라인
 
-해외 시청자에게 한국을 설명하는 얼굴 없는 유튜브 채널 **Korea Decoded**의 자료 수집 → 대본 생성 파이프라인입니다.
+한국 이야기를 병맛 애니메이션 뉴스쇼로 전하는 유튜브 채널 **Four Eyes Report** (`@FourEyesReport`)의 자료 수집 → 대본 생성 파이프라인입니다.
 (현재는 `first-pr-practice` 저장소에 임시로 있으며, 나중에 별도 저장소로 옮길 예정입니다. 이 폴더를 통째로 옮기면 됩니다.)
 
 ## 지금 되는 것 (Phase 1)

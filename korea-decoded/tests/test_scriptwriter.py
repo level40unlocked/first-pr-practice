@@ -30,7 +30,7 @@ def fake_client(stop_reason="end_turn", text=None):
 
 def test_system_prompt_includes_all_approved_examples():
     prompt = build_system_prompt(CONFIG)
-    assert "Korea Decoded" in prompt
+    assert "Four Eyes Report" in prompt
     for title in ("Jeonse", "Suneung", "Naver", "Convenience", "Baby Comeback"):
         assert title in prompt
 

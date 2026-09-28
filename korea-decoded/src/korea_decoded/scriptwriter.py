@@ -29,7 +29,7 @@ def build_user_message(topic) -> str:
     pillar = topic["pillar"] or "unassigned (pick the closest pillar or 'society')"
     countries = topic["countries"] if "countries" in topic.keys() else ""
     return (
-        "Write a Korea Decoded Short about this topic.\n\n"
+        "Write a Four Eyes Report Short about this topic.\n\n"
         f"Title: {topic['title']}\n"
         f"Source: {topic['source']} ({topic['url']})\n"
         f"Suggested pillar: {pillar}\n"

@@ -151,7 +151,7 @@ def _split_hook(hook: str) -> list[list[tuple[str, tuple]]]:
 
 
 def render(audio_path: Path, image_paths: list[Path], out_path: Path, words: list[Word],
-           line_word_counts: list[int], hook_text: str, channel_name: str = "Korea Decoded",
+           line_word_counts: list[int], hook_text: str, channel_name: str = "Four Eyes Report",
            font_path: Path | None = None) -> Path:
     from moviepy import AudioFileClip, CompositeVideoClip, ImageClip
 

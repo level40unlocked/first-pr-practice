@@ -2,7 +2,8 @@
 
 2D 애니메이션 병맛 뉴스쇼. 외국인이 흥미를 가질 한국 이야기를 너드 아나운서가 진지하게 브리핑하고, 가끔 패널 대화와 토론이 붙는 형식.
 
-- 채널 이름: 미정 (Korea Decoded는 동명 채널이 많아 보류)
+- 채널 이름: **Four Eyes Report** (핸들 `@FourEyesReport`). 앵커와 전문가 전원이 안경을 쓰는 방송국이라는 자기 개그. 카테고리는 "K-POP Desk"처럼 Desk로 부름
+- 로고: 노란 원 안에 남색 동그란 안경 (코드로 그림: `prototypes/newsrig.py`의 `glasses_logo`)
 - 애니메이션 방식: `claude/2d-image-animation-automation-xzu38n` 브랜치의 연구 참고 (Plan A: 몸 고정 + 머리 독립 레이어, 입 모양 교체, 캐릭터 디자인 10원칙)
 
 ## 제작 구조

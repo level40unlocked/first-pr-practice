@@ -158,7 +158,7 @@ def cmd_render(args, conn, config) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="korea_decoded", description="Korea Decoded pipeline")
+    parser = argparse.ArgumentParser(prog="korea_decoded", description="Four Eyes Report pipeline")
     sub = parser.add_subparsers(dest="command", required=True)
 
     p = sub.add_parser("collect", help="fetch topics from sources")
