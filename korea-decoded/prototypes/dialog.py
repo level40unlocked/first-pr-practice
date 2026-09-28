@@ -59,7 +59,8 @@ class Puppet:
         self.head = head.resize((int(head.width * sh), int(head.height * sh)), Image.LANCZOS)
         self.rig = {**rig, "eyes": [(x * sh, y * sh) for x, y in rig["eyes"]], "r": rig["r"] * sh,
                     "sep": rig["sep"] * sh, "mouth": (rig["mouth"][0] * sh, rig["mouth"][1] * sh),
-                    "mouth_w": rig["mouth_w"] * sh, "chin": rig["chin"] * sh}
+                    "mouth_w": rig["mouth_w"] * sh, "chin": rig["chin"] * sh,
+                    "white_lens": spec.get("white_lens", False)}
         self.x = spec["x"]
         self.label = spec["label"]
         self.energy = spec.get("energy", 1.0)

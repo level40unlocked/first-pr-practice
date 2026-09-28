@@ -215,11 +215,66 @@ def draw_eye(d, img_size, cx, cy, r, gaze, lid, skin):
     return None, None
 
 
+def lens_masks(head, rig):
+    """The empty inside of each lens as a boolean mask, found on this (already resized) head. Cached in rig."""
+    cached = rig.get("_lens")
+    if cached and cached[0] == head.size:
+        return cached[1]
+    a = np.asarray(head)
+    dark = (a[..., :3].astype(int).sum(2) < 220) | (a[..., 3] == 0)
+    _, labels = cv2.connectedComponents((~dark).astype(np.uint8), connectivity=4)
+    masks = []
+    for ex, ey in rig["eyes"]:
+        m = labels == labels[int(ey), int(ex)]
+        masks.append(cv2.dilate(m.astype(np.uint8), np.ones((3, 3), np.uint8)).astype(bool))  # cover the edge fringe
+    rig["_lens"] = (head.size, masks)
+    return masks
+
+
+def draw_white_lenses(img, rig, gaze, lid):
+    """Concept-art eyes: the whole lens is white with a round pupil; blinking pulls skin down over the lens."""
+    arr = np.asarray(img).copy()
+    pupils = []
+    for (ex, ey), m in zip(rig["eyes"], lens_masks(img, rig)):
+        ys, xs = np.nonzero(m)
+        top, bottom, left, right = ys.min(), ys.max(), xs.min(), xs.max()
+        arr[m] = WHITE + (255,)
+        pr = 0.26 * rig["r"]
+        cx, cy = (left + right) / 2, (top + bottom) / 2
+        px = cx + max(-1, min(1, gaze[0])) * 0.5 * ((right - left) / 2 - pr)
+        py = cy + max(-1, min(1, gaze[1])) * 0.4 * ((bottom - top) / 2 - pr)
+        edge = None
+        if lid > 0:
+            line_y = top + 0.8 * (bottom - top) * lid
+            edge = (bottom if lid >= 0.99 else line_y, line_y)
+        pupils.append((px, py, pr, m, edge))
+    out = Image.fromarray(arr)
+    d = ImageDraw.Draw(out)
+    for px, py, pr, m, edge in pupils:
+        d.ellipse((px - pr, py - pr, px + pr, py + pr), fill=BLACK)
+        d.ellipse((px - pr * 0.05, py - pr * 0.6, px + pr * 0.35, py - pr * 0.2), fill=WHITE)
+    if any(p[4] is not None for p in pupils):
+        arr = np.asarray(out).copy()
+        lw = max(2, int(0.07 * rig["r"]))
+        for px, py, pr, m, edge in pupils:
+            if edge is None:
+                continue
+            rows = np.arange(m.shape[0])[:, None]
+            cover, line_y = edge  # a closed lid's line sits above the frame so it stays visible
+            arr[m & (rows <= cover)] = tuple(rig["skin"]) + (255,)
+            line = m & (np.abs(rows - line_y) <= lw / 2)  # lid edge, clipped to the lens
+            arr[line] = BLACK + (255,)
+        out = Image.fromarray(arr)
+    return out
+
+
 def face_layer(head, rig, gaze, lid, mouth):
     img = head.copy()
+    if rig.get("white_lens"):
+        img = draw_white_lenses(img, rig, gaze, lid)
     d = ImageDraw.Draw(img)
     lids = []
-    for (ex, ey) in rig["eyes"]:
+    for (ex, ey) in ([] if rig.get("white_lens") else rig["eyes"]):
         m, info = draw_eye(d, img.size, ex, ey, rig["r"], gaze, lid, rig["skin"])
         if m is not None:
             lids.append((m, info))
