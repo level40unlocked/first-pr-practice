@@ -158,20 +158,18 @@ def main():
         d.text((p.x, DESK_Y + 55), p.label, font=f, fill=nr.BLACK, anchor="mm")
     over = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     o = ImageDraw.Draw(over)
-    o.rounded_rectangle((270, 50, 420, 100), 12, fill=nr.RED)
-    o.ellipse((288, 66, 306, 84), fill=nr.WHITE)
-    o.text((316, 75), "LIVE", font=nr.font(30), fill=nr.WHITE, anchor="lm")
+    tag_right = nr.episode_tag(o, 270, 50, scene.get("episode", 1))
     o.rectangle((240, 930, 1680, 1030), fill=nr.WHITE)
     category = scene.get("category", "hidden_korea")
     cat_color = CATEGORIES[category][1]
-    category_badge(o, 436, 50, category)  # next to LIVE, same height
+    category_badge(o, tag_right + 16, 50, category)  # next to the episode tag, same height
     o.rectangle((240, 930, 520, 1030), fill=cat_color)
     o.text((380, 980), "PANEL", font=nr.font(40), fill=nr.WHITE, anchor="mm")
     o.text((550, 980), scene["headline"], font=nr.font(38), fill=nr.BLACK, anchor="lm")
 
     short_static = Image.new("RGB", (SW, SH), nr.BRAND_NAVY)
     sd = ImageDraw.Draw(short_static)
-    # the category already shows inside the video (next to LIVE), so the top margin is just the hook
+    # the category already shows inside the video (next to the episode tag), so the top margin is just the hook
     sd.multiline_text((SW / 2, 300), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
     nr.shorts_promo(short_static, sd)

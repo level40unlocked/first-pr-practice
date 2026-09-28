@@ -32,6 +32,7 @@ BRAND_NAVY = (4, 39, 87)  # background of the minimal banner / promo strip
 LOGO_PATH = os.environ.get("FER_LOGO", os.path.join(os.path.dirname(os.path.abspath(__file__)), "fer_logo_mark.png"))
 HEADLINE = "Korean convenience stores are NOT boring"
 SCREEN_LABEL = "CONVENIENCE STORES"
+EPISODE = 1
 HOOK = "Korea's convenience stores\nare on another level"
 
 
@@ -51,6 +52,16 @@ def shorts_promo(canvas, draw):
               fill=(190, 200, 225), anchor="mm")
     draw.rounded_rectangle((SW / 2 - 200, 1838, SW / 2 + 200, 1898), 30, fill=RED)
     draw.text((SW / 2, 1868), "SUBSCRIBE", font=font(34), fill=WHITE, anchor="mm")
+
+
+def episode_tag(draw, x, y, episode, h=50):
+    """Top-left broadcast tag, e.g. "EP.12" (brand yellow; we never claim to be live). Returns right edge."""
+    f = font(30)
+    text = f"EP.{episode}"
+    w = draw.textlength(text, font=f) + 40
+    draw.rounded_rectangle((x, y, x + w, y + h), 12, fill=YELLOW)
+    draw.text((x + w / 2, y + h / 2), text, font=f, fill=NAVY, anchor="mm")
+    return x + w
 
 def logo_mark(canvas, cx, cy, size):
     """Pastes the channel mark centered at (cx, cy); code-drawn fallback if the file is missing."""
@@ -293,10 +304,7 @@ def desk_layer():
 def overlay_layer():
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle((270, 50, 420, 100), 12, fill=RED)
-    d.ellipse((288, 66, 306, 84), fill=WHITE)
-    d.text((316, 75), "LIVE", font=font(30), fill=WHITE, anchor="lm")
-    d.text((1650, 75), "12:34 KST", font=font(30), fill=WHITE, anchor="rm")
+    episode_tag(d, 270, 50, EPISODE)
     d.rectangle((240, 930, 1680, 1030), fill=(255, 255, 255))
     d.rectangle((240, 930, 520, 1030), fill=YELLOW)
     d.text((380, 980), "BREAKING", font=font(40), fill=BLACK, anchor="mm")

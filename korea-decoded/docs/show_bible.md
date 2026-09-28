@@ -9,7 +9,9 @@
 - 프로필 사진: 앵커(A6) 얼굴
 - 배너(확정): 단체샷. 업로드용 2560×1440 파일: [다운로드](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/d9fec721-91b1-43b5-bf7a-151aa04349be.png) (원본 job `7aa944cd-4ae7-469c-82bf-7f847001db55`)
 - 영상 로고: **미니멀 배너의 노란 원 안경 마크를 잘라낸 것** (배경 투명 PNG): [fer_logo_mark.png](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/ce946036-9821-419d-aae2-d107a3aef417.png). 렌더러는 `prototypes/fer_logo_mark.png` 또는 환경변수 `FER_LOGO`의 파일을 붙이고, 없으면 같은 모양을 코드로 그림. 유튜브 브랜딩 워터마크에도 이 파일을 사용
-- 인트로·엔딩 카드용 미니멀 배너 (1920×1080): [fer_title_card_1920x1080.png](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/0f81c53f-8be5-4e35-8919-9e34acffd12e.png)
+- 인트로·엔딩 카드용 미니멀 배너 (1920×1080): [fer_title_card_1920x1080.png](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/866e97c9-3565-4b49-8ecf-279d89e6710b.png)
+- 쇼츠 하단 배너: `prototypes/fer_promo_strip.png` (미니멀 배너에서 로고·이름·태그라인·스카이라인 부분)
+- **"LIVE" 표시는 쓰지 않는다** (라이브가 아닌데 라이브처럼 보이면 오해를 부르는 메타데이터 문제). 영상 왼쪽 위는 에피소드 태그 `EP.n` + 카테고리 배지. 시계 없음. 제목·썸네일에도 LIVE 금지
 - 미니멀 배너 원본(참고): job `53397e26-5652-4dee-b59c-8eb542b9f7c4`
 - 애니메이션 방식: `claude/2d-image-animation-automation-xzu38n` 브랜치의 연구 참고 (Plan A: 몸 고정 + 머리 독립 레이어, 입 모양 교체, 캐릭터 디자인 10원칙)
 
