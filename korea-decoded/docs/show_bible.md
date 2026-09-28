@@ -142,6 +142,13 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 | food_life | 푸드 셰프 | 50대 통통한 셰프. 주황 반다나, 큰 검은 원형 안경, 하이넥 셰프복 + 주황 스카프, 쇠젓가락, 라면 그릇 | 음식 얘기에 황홀. 항상 배고픔 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_6068923f-3ebd-4b71-bbc2-60fcf7b9a9eb.png) |
 | travel | 여행 백패커 | 활발한 젊은 여성. 웨이브 머리에 머스터드 비니, 대모갑 원형 안경, 턱까지 채운 틸색 바람막이, 카메라, 지도 | "저 거기 가봤어요!" 현장파 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_0672aa18-1557-4d65-bb85-efe2500ff30c.png) |
 
+### 스포츠 겸임 비교 심판: 애니메이션용 원본 (2026-09-28)
+- KOREA VS WORLD 비교 심판을 스포츠 담당으로 겸임하는 안. 컨셉 `d2d5cb84-8332-485d-8a9f-df2405c4d4d4`를 참조로 gpt_image_2_5, 1:1, 회색 배경
+- 원본: [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_165107_c5e59c4d-2984-453a-91ca-ccf2153ac3b4.png) `c5e59c4d-2984-453a-91ca-ccf2153ac3b4`, [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_165106_2fa7ec12-1a53-4cb8-bd68-810fb8ddb92b.png) `2fa7ec12-1a53-4cb8-bd68-810fb8ddb92b`, [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_165107_7d92559c-197b-48c5-8466-b9bda1657d77.png) `7d92559c-197b-48c5-8466-b9bda1657d77`
+- `newsrig.analyze_head`로 확인: 안경알 두 개 안에 눈, 코 아래 입, 눈 깜빡임 정상. 원본 해상도 1024 (Kangfree는 2048)
+- 판정 패들은 손이 책상에 가려져서 몸통에서 뺌. 필요하면 설명 화면 그래픽으로
+- 남은 것: 이름·성격·말버릇, 목소리, 실제 대사로 렌더링 테스트
+
 ## 샷 자동 편집 (`prototypes/episode.py`)
 
 줄마다 샷을 자동으로 정하고, 대본 줄에 `"shot"`을 적으면 그게 우선한다.
