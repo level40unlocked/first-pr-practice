@@ -21,6 +21,7 @@ SW, SH = 1080, 1920
 NAVY, NAVY2 = (12, 20, 42), (28, 44, 86)
 YELLOW, WHITE, BLACK, RED = (255, 212, 0), (255, 255, 255), (15, 15, 20), (220, 38, 38)
 FONT = "/usr/share/fonts/truetype/higgsfield/Montserrat-ExtraBold.ttf"
+FONT_VARIABLE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "fonts", "Montserrat-Variable.ttf")
 CHANNEL = "FOUR EYES REPORT"
 HANDLE = "@FourEyesReport"
 # Channel mark cut from the minimal banner (Higgsfield media ce946036-...). Put the file next to this
@@ -73,10 +74,33 @@ def glasses_logo(draw, cx, cy, size, color):
     draw.line(pts, fill=color, width=w, joint="curve")
 
 def font(size):
+    """Montserrat ExtraBold, the rounded geometric face of the logo wordmark."""
+    try:
+        f = ImageFont.truetype(FONT_VARIABLE, size)
+        f.set_variation_by_axes([800])
+        return f
+    except (OSError, ValueError):
+        pass
     try:
         return ImageFont.truetype(FONT, size)
     except OSError:
         return ImageFont.load_default(size)
+
+
+CAPTION_Y = 1235  # Shorts: lower part of the video (600..1410), above the lower third and YouTube's UI
+
+
+def draw_caption(canvas, words, t, y=CAPTION_Y):
+    """Word-by-word Shorts caption; the word being spoken is yellow."""
+    draw = ImageDraw.Draw(canvas)
+    f = font(60)
+    parts = [(w["w"].upper(), YELLOW if w["s"] <= t <= w["e"] + 0.05 else WHITE) for w in words]
+    gap = 20
+    total = sum(draw.textlength(p, font=f) for p, _ in parts) + gap * (len(parts) - 1)
+    x = (SW - total) / 2
+    for p, c in parts:
+        draw.text((x, y), p, font=f, fill=c, anchor="lm", stroke_width=6, stroke_fill=BLACK)
+        x += draw.textlength(p, font=f) + gap
 
 
 # ── asset prep ────────────────────────────────────────────────────────────
@@ -434,14 +458,7 @@ def main():
         sframe.paste(crop, (0, 600))
         grp = next((g for g in caption_groups if g[0]["s"] <= t <= g[-1]["e"] + 0.15), None)
         if grp:
-            sdraw = ImageDraw.Draw(sframe)
-            f = font(58)
-            parts = [(w["w"].upper(), YELLOW if w["s"] <= t <= w["e"] + 0.05 else WHITE) for w in grp]
-            total = sum(sdraw.textlength(p, font=f) for p, _ in parts) + 20 * (len(parts) - 1)
-            x = (SW - total) / 2
-            for p, c in parts:
-                sdraw.text((x, 1500), p, font=f, fill=c, anchor="lm", stroke_width=5, stroke_fill=BLACK)
-                x += sdraw.textlength(p, font=f) + 20
+            draw_caption(sframe, grp, t)
         short_p.stdin.write(np.asarray(sframe).tobytes())
 
     for p in (long_p, short_p):

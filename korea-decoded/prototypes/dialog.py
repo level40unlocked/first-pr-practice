@@ -244,14 +244,7 @@ def main():
         sframe.paste(crop, (0, 600))
         grp = next((g for g in groups if g[0]["s"] <= t <= g[-1]["e"] + 0.15), None)
         if grp:
-            s = ImageDraw.Draw(sframe)
-            f = nr.font(58)
-            parts_ = [(w["w"].upper(), nr.YELLOW if w["s"] <= t <= w["e"] + 0.05 else nr.WHITE) for w in grp]
-            total = sum(s.textlength(p, font=f) for p, _ in parts_) + 20 * (len(parts_) - 1)
-            x = (SW - total) / 2
-            for p_, c in parts_:
-                s.text((x, 1500), p_, font=f, fill=c, anchor="lm", stroke_width=5, stroke_fill=nr.BLACK)
-                x += s.textlength(p_, font=f) + 20
+            nr.draw_caption(sframe, grp, t)
         sp.stdin.write(np.asarray(sframe).tobytes())
 
     for p in (lp, sp):
