@@ -42,9 +42,17 @@ class ChannelConfig:
     countries: dict = field(default_factory=dict)  # code -> lowercase names
     visuals: dict = field(default_factory=dict)
     pronunciation: dict = field(default_factory=dict)  # written -> how the voice should say it
+    cast: dict = field(default_factory=dict)  # character key -> {name, label, voice}
 
     def voice_for(self, pillar: str | None) -> str:
         return self.voice_assignment.get(pillar or "", self.voice_assignment.get("default", "skye"))
+
+    def voice_for_character(self, who: str) -> str:
+        """The fixed voice of a cast member (episode lines are voiced per character, not per pillar)."""
+        try:
+            return self.cast[who]["voice"]
+        except KeyError:
+            raise KeyError(f"'{who}' has no voice in [cast.{who}]") from None
 
 
 def load_config(path: Path = CONFIG_PATH) -> ChannelConfig:
@@ -79,4 +87,5 @@ def load_config(path: Path = CONFIG_PATH) -> ChannelConfig:
         countries=countries,
         visuals=raw.get("visuals", {}),
         pronunciation=raw.get("pronunciation", {}),
+        cast=raw.get("cast", {}),
     )

@@ -18,7 +18,7 @@
 | 반복 개그 | ① "Core" 정정 ("It's K. It has always been K.") ② "This is a serious news program." (아무도 안 믿음) ③ 팩트를 말하기 전에 안경을 고쳐 씀 ④ 몰래 K-드라마를 보고 우는데 절대 인정 안 함 |
 | 역할 | 사실 전달, 진행, 꼭지 마무리. 운영자의 관점은 **"K's Take"** 코너로 전함 |
 | 약점 | 요리를 못함, 즉흥 상황에 약함, Dr. Kangfree의 에너지에 늘 밀림 |
-| 목소리 | 30대 초반 남성. 맑고 약간 빠른 말투, 또박또박한 자음, 건조한 톤. 데이터 얘기가 나오면 살짝 높아지고 빨라짐. 자연스러운 북미 영어 |
+| 목소리 | ✅ **Miles** (ElevenLabs, `e18664a7-ee4f-5273-acf8-533eb24cd366`). 목표 느낌: 30대 초반 남성. 맑고 약간 빠른 말투, 또박또박한 자음, 건조한 톤. 데이터 얘기가 나오면 살짝 높아지고 빨라짐. 자연스러운 북미 영어 |
 | 표기·발음 규칙 | 대본·자막·이름표는 **Master K** / 패널 대사는 **Core** / 음성 생성 때 "Master K"는 자동으로 "Master Kay"로 바뀜 (`config/channel.toml`의 `[pronunciation]`) |
 
 ## 패널: Dr. Kangfree (캉프리 박사) · C ✅ 이름 확정
@@ -33,7 +33,7 @@
 | 말버릇 | "Wait. WAIT." / "That is SO Korean. I love it." / "I have a chart for this!" |
 | 반복 개그 | ① 어디선가 차트를 꺼냄 ② 머리에 꽂은 연필을 찾다가 못 찾음 ③ 흥분하면 바로 "I'm booking a flight to Seoul!" |
 | 역할 | 리액션, 사람 이야기와 맥락 보충, 외국인 시청자 입장에서 질문 |
-| 목소리 | 30대 여성. 밝고 빠르고 표정이 풍부한 톤, 잘 웃음, 흥분하면 목소리가 커짐. 자연스러운 북미 영어 |
+| 목소리 | ✅ **Skye** (Seed Speech, `1fb253b8-928b-4d29-a349-f242a71eaddf`). 목표 느낌: 30대 여성. 밝고 빠르고 표정이 풍부한 톤, 잘 웃음, 흥분하면 목소리가 커짐. 자연스러운 북미 영어 |
 
 ## 두 사람의 관계
 - 대학원 시절 같은 연구실 선후배. K는 "정리하는 사람", Dr. Kangfree는 "어지르는 사람". Dr. Kangfree가 "Core" 별명을 가장 열심히 퍼뜨림
@@ -50,4 +50,5 @@
 - ~~패널 이름~~ → Dr. Kangfree 확정, 해외 거주(교포) 설정 유지
 - 기존 녹음 대사 "Doctor Jiyoung, please stay calm."은 다음 녹음 때 "Dr. Kangfree, please stay calm."으로 교체
 - ~~클로징 멘트~~ → 확정
+- ~~목소리~~ → Master K = Miles, Dr. Kangfree = Skye 확정 (`config/channel.toml`의 `[cast.*]`). 캐릭터 느낌은 대사와 연출로 살리고, 채널이 자리 잡으면 전용 목소리 검토
 - 전문가 8명의 아이덴티티 (확정된 캐릭터부터)

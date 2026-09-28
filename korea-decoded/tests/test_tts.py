@@ -67,3 +67,12 @@ def test_for_speech_fixes_names_the_voice_would_misread():
     assert for_speech("Good evening, I'm Master K.", rules) == "Good evening, I'm Master Kay."
     assert for_speech("Master Kim and Master Kay stay as they are.", rules) == "Master Kim and Master Kay stay as they are."
     assert load_config().pronunciation["Master K"] == "Master Kay"
+
+
+def test_each_cast_member_has_a_fixed_voice():
+    config = load_config()
+    assert config.voice_for_character("anchor") == "miles"
+    assert config.voice_for_character("panel") == "skye"
+    assert config.cast["anchor"]["label"] == "MASTER K"
+    with pytest.raises(KeyError):
+        config.voice_for_character("nobody")
