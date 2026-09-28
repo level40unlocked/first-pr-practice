@@ -66,3 +66,16 @@ def test_rejects_long_titles_and_missing_credentials(monkeypatch):
         monkeypatch.delenv(name, raising=False)
     with pytest.raises(YouTubeError, match="YOUTUBE_CLIENT_ID"):
         credentials_from_env()
+
+
+def test_cli_upload_without_credentials_fails_cleanly(tmp_path, monkeypatch, capsys):
+    from korea_decoded import cli
+    for name in ("YOUTUBE_CLIENT_ID", "YOUTUBE_CLIENT_SECRET", "YOUTUBE_REFRESH_TOKEN"):
+        monkeypatch.delenv(name, raising=False)
+    monkeypatch.setattr(cli, "DB_PATH", tmp_path / "t.db")
+    video = tmp_path / "v.mp4"
+    video.write_bytes(b"x")
+    desc = tmp_path / "d.txt"
+    desc.write_text("hello", encoding="utf-8")
+    assert cli.main(["upload", str(video), "--title", "T", "--description", str(desc)]) == 1
+    assert "YOUTUBE_CLIENT_ID" in capsys.readouterr().err

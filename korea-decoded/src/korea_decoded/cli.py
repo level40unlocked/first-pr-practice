@@ -160,6 +160,7 @@ def cmd_render(args, conn, config) -> int:
 def cmd_upload(args, conn, config) -> int:
     import json as _json
     from datetime import datetime
+    from pathlib import Path
 
     from korea_decoded.youtube import VideoMeta, YouTubeError, YouTubeUploader
 
