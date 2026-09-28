@@ -7,6 +7,7 @@ usage: python3 newsrig.py --head head.png --body body.png --ref ref.png --audio 
 import argparse
 import json
 import math
+import os
 import random
 import re
 import subprocess
@@ -22,11 +23,26 @@ YELLOW, WHITE, BLACK, RED = (255, 212, 0), (255, 255, 255), (15, 15, 20), (220, 
 FONT = "/usr/share/fonts/truetype/higgsfield/Montserrat-ExtraBold.ttf"
 CHANNEL = "FOUR EYES REPORT"
 HANDLE = "@FourEyesReport"
+# Channel mark cut from the minimal banner (Higgsfield media ce946036-...). Put the file next to this
+# script or point FER_LOGO at it; without it the renderer falls back to a code-drawn mark.
+LOGO_URL = "https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/ce946036-9821-419d-aae2-d107a3aef417.png"
+LOGO_PATH = os.environ.get("FER_LOGO", os.path.join(os.path.dirname(os.path.abspath(__file__)), "fer_logo_mark.png"))
 HEADLINE = "Korean convenience stores are NOT boring"
 SCREEN_LABEL = "CONVENIENCE STORES"
 HOOK = "Korea's convenience stores\nare on another level"
 
 
+
+
+def logo_mark(canvas, cx, cy, size):
+    """Pastes the channel mark centered at (cx, cy); code-drawn fallback if the file is missing."""
+    if os.path.exists(LOGO_PATH):
+        mark = Image.open(LOGO_PATH).convert("RGBA").resize((size, size), Image.LANCZOS)
+        canvas.paste(mark, (round(cx - size / 2), round(cy - size / 2)), mark)
+        return
+    draw = ImageDraw.Draw(canvas)
+    draw.ellipse((cx - size / 2, cy - size / 2, cx + size / 2, cy + size / 2), fill=YELLOW)
+    glasses_logo(draw, cx, cy, size, NAVY)
 
 def glasses_logo(draw, cx, cy, size, color):
     """Channel mark: a pair of round glasses, size = width of the badge it sits in."""
@@ -347,8 +363,7 @@ def main():
     sd = ImageDraw.Draw(short_static)
     sd.text((SW / 2, 140), CHANNEL, font=font(44), fill=YELLOW, anchor="mm")
     sd.multiline_text((SW / 2, 380), HOOK, font=font(72), fill=WHITE, anchor="mm", align="center", spacing=18)
-    sd.ellipse((110, 1640, 250, 1780), fill=YELLOW)
-    glasses_logo(sd, 180, 1710, 140, NAVY)
+    logo_mark(short_static, 180, 1710, 140)
     sd.text((290, 1670), CHANNEL, font=font(48), fill=WHITE, anchor="lm")
     sd.text((290, 1740), f"{HANDLE}  |  Full episode on the channel  >", font=font(34), fill=(190, 200, 225), anchor="lm")
     sd.rounded_rectangle((300, 1800, 780, 1870), 35, fill=RED)
