@@ -102,7 +102,7 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 ## 뉴스 데스크 (세부 카테고리)
 
 모든 꼭지에 카테고리 배지를 붙입니다. 롱폼은 왼쪽 위 LIVE 옆, 쇼츠는 채널 이름 아래. 하단 자막바 태그도 카테고리 색을 따릅니다.
-나중에 데스크마다 전문가 캐릭터를 추가합니다 (예: K-POP 데스크 전문 패널).
+데스크마다 전문가 캐릭터를 둡니다 (아래 후보).
 
 | 키 | 배지 | 색 | 비고 |
 |---|---|---|---|
@@ -116,3 +116,18 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 | travel | TRAVEL | 틸 | |
 
 패널 크기 확정: head_ratio 0.74, shoulders 500 (지영 박사 기준, 사용자 OK)
+
+### 데스크별 전문가 후보 (1차 컨셉)
+
+리그가 안경알 안에 눈을 그리므로 모두 안경을 쓰고, 목은 옷깃으로 가리고, 코는 선명하게 그리도록 요청했습니다. 그림체는 A6를 참고했습니다.
+
+| 데스크 | 역할 | 외모 | 성격, 개그 장치 | 컨셉 이미지 |
+|---|---|---|---|---|
+| current_affairs | 시사 베테랑 특파원 | 50대 후반 여성. 은발 단발, 얇은 사각 돋보기 안경, 진홍 블레이저 + 검은 터틀넥, 포스트잇 붙은 서류 더미 | 모든 스캔들을 다 봐서 무심함. 건조한 한마디 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094129_c4a8bc6c-056f-4293-8608-8e5a3ff4a8c1.png) |
+| kpop | K-POP 분석가 | 전 아이돌 연습생 청년. 파스텔 핑크 머리, 큰 투명테 원형 안경, 하이넥 무대 재킷, 하트 응원봉 | 과몰입 팬보이. 컴백 얘기만 나오면 폭주 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094130_975942f9-8016-45b9-91bf-ddc2871896dd.png) |
+| hidden_korea | 비밀 기록 연구가 | 30대 여성. 비녀로 묶은 긴 머리, 작은 금테 원형 안경, 보라색 한복풍 재킷, 두루마리 | 음모론 폭로하듯 속삭이며 "사실은…" | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094130_5aabf690-98af-4b1f-b6b6-98ac98eb843e.png) |
+| korea_vs_world | 비교 심판 | 갈색 피부 청년. 곱슬머리, 파란 사각 안경, 파란 하프집업, 심판 호루라기, 점수판 | 스포츠 중계처럼 한국 vs 세계 판정 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094130_d2d5cb84-8332-485d-8a9f-df2405c4d4d4.png) |
+| money_business | 머니 애널리스트 | 40대 남성. 올백 머리, 얇은 금테 사각 안경, 초록 조끼 + 크림 터틀넥, 행커치프, 복고 계산기 | 모든 주제를 결국 돈 얘기로 끌고 감 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094129_b35c18d3-ba65-4127-82d5-0321defeb384.png) |
+| tech | 테크·로봇 전문가 | 젊은 여성. 청록 브릿지 픽시컷, 굵은 청록테 안경, 하이넥 테크웨어, 어깨 위 작은 로봇 | 무표정 천재. 로봇이 대신 리액션 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_35bc69bf-8144-48e8-8632-7b5e6d0d057b.png) |
+| food_life | 푸드 셰프 | 50대 통통한 셰프. 주황 반다나, 큰 검은 원형 안경, 하이넥 셰프복 + 주황 스카프, 쇠젓가락, 라면 그릇 | 음식 얘기에 황홀. 항상 배고픔 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_6068923f-3ebd-4b71-bbc2-60fcf7b9a9eb.png) |
+| travel | 여행 백패커 | 활발한 젊은 여성. 웨이브 머리에 머스터드 비니, 대모갑 원형 안경, 턱까지 채운 틸색 바람막이, 카메라, 지도 | "저 거기 가봤어요!" 현장파 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_0672aa18-1557-4d65-bb85-efe2500ff30c.png) |
