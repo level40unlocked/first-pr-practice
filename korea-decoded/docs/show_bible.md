@@ -115,4 +115,4 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 | food_life | K-FOOD & LIFE | 주황 | |
 | travel | TRAVEL | 틸 | |
 
-패널 v3 크기: head_ratio 0.74, shoulders 500 (입 위치 수정 후 확정 대기)
+패널 크기 확정: head_ratio 0.74, shoulders 500 (지영 박사 기준, 사용자 OK)
