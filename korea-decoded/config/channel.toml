@@ -1,0 +1,72 @@
+# Korea Decoded 채널 설정. 코드 수정 없이 이 파일만 바꿔서 운영 방침을 조정합니다.
+
+[channel]
+name = "Korea Decoded"
+language = "en"
+translation_language = "ko"
+tone = "casual"
+target_seconds = 50
+
+# 콘텐츠 축과 비중. 주제 점수 계산에 weight가 곱해집니다.
+[pillars.business_tech]
+label = "Korean Business & Tech"
+weight = 1.35
+keywords = ["samsung", "hyundai", "lg", "sk hynix", "naver", "kakao", "coupang", "chaebol",
+            "semiconductor", "chip", "startup", "tech", "internet", "app",
+            "삼성", "현대", "네이버", "카카오", "쿠팡", "반도체", "재벌", "스타트업"]
+
+[pillars.economy_money]
+label = "Korean Economy & Money"
+weight = 1.30
+keywords = ["salary", "rent", "jeonse", "apartment", "price", "cost", "won", "economy",
+            "tax", "pension", "housing", "birth rate",
+            "연봉", "월세", "전세", "아파트", "물가", "경제", "세금", "연금", "집값", "출산"]
+
+[pillars.society]
+label = "Korean Society Explained"
+weight = 1.15
+keywords = ["culture", "school", "suneung", "work", "age", "drinking", "food", "convenience store",
+            "etiquette", "why do koreans",
+            "문화", "학교", "수능", "직장", "음식", "편의점", "예절"]
+
+[pillars.travel]
+label = "Korea Travel"
+weight = 1.05
+keywords = ["travel", "trip", "tourist", "seoul", "busan", "jeju", "subway", "visa", "t-money",
+            "여행", "관광", "서울", "부산", "제주", "지하철"]
+
+# 민감도 규칙
+# - 아래 키워드가 들어간 주제는 "review"로 분류되어 자동 제작 대기열에서 빠집니다.
+# - review 주제는 사람이 approve 하기 전까지 대본을 만들지 않습니다.
+[sensitivity]
+negative_keywords = [
+  # 범죄, 사기, 사건사고
+  "fraud", "scam", "crime", "murder", "killed", "assault", "arrest", "prison", "trafficking",
+  "disaster", "tragedy", "accident", "crash", "fire", "death", "died",
+  "사기", "범죄", "살인", "폭행", "구속", "체포", "참사", "사고", "화재", "사망",
+  # 스캔들, 비리, 정치 갈등
+  "scandal", "corruption", "bribery", "impeach", "protest", "martial law", "lawsuit",
+  "스캔들", "비리", "부패", "뇌물", "탄핵", "시위", "계엄", "소송",
+  # 사회 문제 (민감도 높음)
+  "suicide", "depression", "bullying", "abuse", "discrimination", "racism", "inequality",
+  "birth rate", "fertility", "dark side", "problem with", "worst",
+  "자살", "우울", "왕따", "학폭", "학대", "갑질", "차별", "양극화", "저출산", "출산율", "n포",
+  # 외교, 안보 갈등
+  "missile", "nuclear", "war", "dispute",
+  "미사일", "핵무기", "북핵", "전쟁", "분쟁",
+]
+
+# 자동 수집 소스
+[sources]
+# 외국인이 실제로 궁금해하는 것 (수요 측)
+reddit_subreddits = ["korea", "southkorea", "Living_in_Korea", "koreatravel"]
+reddit_timeframe = "week"  # hour, day, week, month, year, all
+
+# 한국 뉴스 RSS (소재 측). 주소는 언론사 사정으로 바뀔 수 있으니 주기적으로 확인하세요.
+rss_feeds = [
+  "https://en.yna.co.kr/RSS/news.xml",
+  "https://www.koreaherald.com/rss/newsAll",
+]
+
+# 네이버 뉴스 검색 API 검색어 (NAVER_CLIENT_ID/SECRET 필요)
+naver_queries = ["외국인 한국 문화", "K-푸드 해외 반응", "삼성 반도체", "서울 생활비", "한국 여행 외국인"]
