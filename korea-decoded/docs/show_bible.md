@@ -159,3 +159,47 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 - 같은 샷이 4초를 넘으면 천천히 줌인
 - 롱폼 전용: 오른쪽 위 로고, 맨 아래 UP NEXT 티커 (쇼츠 크롭 밖)
 - 예시 대본: `prototypes/segment_example.json`
+
+## 이어받기 메모 (2026-09-28 기준)
+
+### 확정된 것
+- 채널: **Four Eyes Report** (`@FourEyesReport`), 태그라인 "Through our lenses.", 브랜드에는 Korea를 넣지 않음. 대외 문구에 "nerd", "LIVE", "BREAKING" 금지
+- 방향: 실제 한국 뉴스를 모아 외국인이 흥미를 갖도록 각색하고 **채널 운영자의 관점(한 줄 코멘트)**을 더한 병맛 애니메이션 뉴스쇼. 롱폼(5꼭지, TOPIC n/5)이 원본이고 꼭지별로 쇼츠를 잘라냄
+- 앵커 A6 (민수 박, 목소리 Miles/ElevenLabs `e18664a7-ee4f-5273-acf8-533eb24cd366`), 패널 지영 박사 (목소리 Skye/Seed Speech `1fb253b8-928b-4d29-a349-f242a71eaddf`, head_ratio 0.74, shoulders 500)
+- 글꼴: Poppins Bold (`assets/fonts/Poppins-Bold.ttf`, OFL). 쇼츠 배경은 브랜드 남색 (4, 39, 87)
+- 쇼츠: 위 여백은 훅 제목만, 가운데 영상(롱폼 중앙 1440×1080을 1080×810으로), 자막은 영상 안 아래쪽(y=1235), 아래 여백은 배너 띠(`prototypes/fer_promo_strip.png`) + 핸들
+- 롱폼: 왼쪽 위 EP.n + 카테고리, 오른쪽 위 로고(쇼츠 영역 밖), TOPIC n/N 자막바, 맨 아래 UP NEXT 티커(쇼츠 영역 밖), 설명 화면 아래 출처 표기
+- 샷은 `prototypes/episode.py`가 자동으로 정함 (위 "샷 자동 편집" 표)
+
+### 첫 완성본 재료 (`prototypes/segment_example.json` 순서대로)
+| 파일명 | 내용 | 주소 |
+|---|---|---|
+| a_head / a_body / a_ref.png | A6 머리·몸통·참고 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_074351_497d2899-66fc-40ea-8b60-1d4815c18eb6.png), [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_074350_480e7f2e-bde1-49fe-ad18-dfc5d2599626.png), [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_074351_5d746f9a-6b07-4adb-9eec-3936cf68fecf.png) |
+| p_head / p_body / p_ref.png | 지영 박사 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_084541_c67fcd43-9c73-473c-b29f-4be8a1cd81e5.png), [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_084541_ec8bd826-58a3-4d75-bff3-18cce3c5a521.png), [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_084541_2a93c3aa-974e-40fb-b63a-26662d2f9796.png) |
+| store_street.png / ramen_station.png | 설명 화면 | [s1](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_022533_b7aa6412-3dcd-4be2-9e45-87b4aa9cdeff.png), [s2](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_022533_547434ab-132c-4cc7-ac68-689e57cedf8d.png) |
+| l1.mp3 | 앵커: Good evening. This is the Four Eyes Report… | [l1](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_121054_9749dded-0bfd-4b90-b7f6-ece59757dd9d.mp3) |
+| l2.mp3 | 앵커: Korea has over fifty thousand of them… | [l2](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_121055_a108a222-c44e-42cb-b12f-7fab30207b6d.mp3) |
+| l3.mp3 | 앵커: And inside some of them… a ramen cooking machine. | [l3](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_121054_02b3b80d-3194-4ff2-80b3-c6c8648cb8b8.mp3) |
+| l4.mp3 | 지영: Wait. A machine? That cooks ramen? For you?! | [l4](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_084544_89293f8a-e36f-43d7-a216-7d35bfdf62b5.mp3) |
+| l5.mp3 | 앵커: Statistically speaking, yes. You press one button. | [l5](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_084544_09e71b4f-0099-4c8c-abb7-d68abb0c1694.mp3) |
+| l6.mp3 | 지영: I have been boiling water like a caveman… | [l6](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_084545_37b38a26-8df5-4523-a364-f8f57041a35c.mp3) |
+| l7.mp3 | 앵커: Doctor Jiyoung, please stay calm. This is a serious news program. | [l7](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_121053_a1a7739a-97b8-4ea5-90da-176b0069116c.mp3) |
+| l8.mp3 | 지영: I am NOT calm! I'm booking a flight to Seoul! | [l8](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_084543_d08a3703-8f79-43e7-bceb-a2f0b404eb4a.mp3) |
+| fer_logo_mark.png | 영상 로고 | [logo](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/ce946036-9821-419d-aae2-d107a3aef417.png) |
+
+### 렌더링 방법
+Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌린다.
+1. `episode.py`, `dialog.py`, `newsrig.py`, `fer_promo_strip.png`, `Poppins-Bold.ttf`를 `media_upload`로 올리고, 로컬에서 PUT(`If-None-Match: *` 헤더 포함) 후 `media_confirm`
+2. 샌드박스에서 위 파일과 재료를 curl로 받아 같은 폴더에 두고 `python3 episode.py segment_example.json` (긴 작업은 `background: true`)
+3. 결과 mp4를 `media_upload` 주소로 PUT해서 공유
+- 파일을 base64나 텍스트 조각으로 샌드박스에 넘기지 않는다
+- 클라우드 환경 네트워크 허용 목록에 `upload.higgsfield.ai`, cloudfront 두 곳, 뉴스·Reddit·네이버·구글 API 도메인을 추가해 둠
+
+### 다음 할 일 (순서대로)
+1. 실제 캐릭터와 목소리로 첫 완성본(롱폼 + 쇼츠) 렌더링 → 연출 피드백 반영
+2. 전문가 8명 중 확정 → 애니메이션용 원본(머리·몸통·참고) 제작
+3. **뉴스 데스크 모듈**: 한국 뉴스·Reddit·트렌드 수집 → 같은 사건 묶기 → 외국인 관심도 채점 → 민감도(⚠️) → 아침 브리핑(후보 10개 + 추천 각도) → 운영자가 선택하고 "내 생각 한 줄" 입력
+4. 에피소드 대본 형식(앵커·패널 대화, 꼭지별 screen/big/shot 지시)으로 대본 생성기 확장
+5. 썸네일, 제목·설명 자동 생성, 유튜브 업로드(비공개 → 확인 후 공개), Google API 감사 신청
+6. 새 저장소 `level40unlocked/four-eyes-report`로 이전 (운영자가 GitHub에서 빈 비공개 저장소를 만든 뒤)
+7. 쇼츠의 가짜 SUBSCRIBE 그림을 "New episodes every week" 같은 문구로 바꿀지 결정 대기
