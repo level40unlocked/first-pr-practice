@@ -66,7 +66,9 @@ class Puppet:
         alpha = np.asarray(self.body)[..., 3] > 0
         collar_top = int(np.nonzero(alpha.any(axis=1))[0].min())
         self.body_pos = (self.x - self.body.width // 2, COLLAR_Y - collar_top)
-        self.pivot = (self.x, COLLAR_Y + int(0.03 * self.head.height))
+        # How far the chin sinks below the top of the collar, as a share of head height. Tall stand-up
+        # collars need more, or the collar reads as a long neck.
+        self.pivot = (self.x, COLLAR_Y + int(spec.get("chin_drop", 0.03) * self.head.height))
         self.info = {"ratio": round(ratio, 3), "eyes": [tuple(round(v) for v in e) for e in rig["eyes"]]}
 
     def draw(self, frame, t, gaze, lid, env, nod, ox=0):

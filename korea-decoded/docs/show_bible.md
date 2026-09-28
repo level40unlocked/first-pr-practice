@@ -146,6 +146,7 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 - KOREA VS WORLD 비교 심판을 스포츠 담당으로 겸임하는 안. 컨셉 `d2d5cb84-8332-485d-8a9f-df2405c4d4d4`를 참조로 gpt_image_2_5, 1:1, 회색 배경
 - 원본: [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_165107_c5e59c4d-2984-453a-91ca-ccf2153ac3b4.png) `c5e59c4d-2984-453a-91ca-ccf2153ac3b4`, [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_165106_2fa7ec12-1a53-4cb8-bd68-810fb8ddb92b.png) `2fa7ec12-1a53-4cb8-bd68-810fb8ddb92b`, [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_165107_7d92559c-197b-48c5-8466-b9bda1657d77.png) `7d92559c-197b-48c5-8466-b9bda1657d77`
 - `newsrig.analyze_head`로 확인: 안경알 두 개 안에 눈, 코 아래 입, 눈 깜빡임 정상. 원본 해상도 1024 (Kangfree는 2048)
+- 목 위치: 스탠드업 칼라가 높아서 기본값(턱을 칼라 위 3%)이면 칼라가 긴 목처럼 보여 얼굴이 떠 보임 → 캐릭터 설정 `"chin_drop": 0.16` (턱을 머리 높이의 16%만큼 칼라 안으로. `dialog.py`, 기본 0.03)
 - 판정 패들은 손이 책상에 가려져서 몸통에서 뺌. 필요하면 설명 화면 그래픽으로
 - 남은 것: 이름·성격·말버릇, 목소리, 실제 대사로 렌더링 테스트
 
