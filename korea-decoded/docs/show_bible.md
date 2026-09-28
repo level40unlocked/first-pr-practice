@@ -141,3 +141,21 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 | tech | 테크·로봇 전문가 | 젊은 여성. 청록 브릿지 픽시컷, 굵은 청록테 안경, 하이넥 테크웨어, 어깨 위 작은 로봇 | 무표정 천재. 로봇이 대신 리액션 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_35bc69bf-8144-48e8-8632-7b5e6d0d057b.png) |
 | food_life | 푸드 셰프 | 50대 통통한 셰프. 주황 반다나, 큰 검은 원형 안경, 하이넥 셰프복 + 주황 스카프, 쇠젓가락, 라면 그릇 | 음식 얘기에 황홀. 항상 배고픔 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_6068923f-3ebd-4b71-bbc2-60fcf7b9a9eb.png) |
 | travel | 여행 백패커 | 활발한 젊은 여성. 웨이브 머리에 머스터드 비니, 대모갑 원형 안경, 턱까지 채운 틸색 바람막이, 카메라, 지도 | "저 거기 가봤어요!" 현장파 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_0672aa18-1557-4d65-bb85-efe2500ff30c.png) |
+
+## 샷 자동 편집 (`prototypes/episode.py`)
+
+줄마다 샷을 자동으로 정하고, 대본 줄에 `"shot"`을 적으면 그게 우선한다.
+
+| 샷 | 화면 | 자동 규칙 |
+|---|---|---|
+| anchor_solo | 앵커 클로즈업 | 꼭지 첫 줄, 자료 없는 앵커 멘트 |
+| anchor_screen | 왼쪽 설명 화면 + 오른쪽 앵커 | 앵커 줄에 `screen`이 있을 때 |
+| screen_full | 설명 화면을 크게 | `screen` + `"big": true` |
+| two_shot | 앵커와 패널 함께 (설명 화면 없음) | 패널의 첫 대사 |
+| speaker_close | 말하는 사람 쪽으로 줌 | 대화 중 |
+| wide | 데스크 전체 | 직접 지정할 때 |
+
+- 앵커 단독 카메라(solo, screen, full)와 데스크 카메라(two_shot, close, wide)를 오갈 때는 컷, 같은 카메라 안에서는 부드러운 이동
+- 같은 샷이 4초를 넘으면 천천히 줌인
+- 롱폼 전용: 오른쪽 위 로고, 맨 아래 UP NEXT 티커 (쇼츠 크롭 밖)
+- 예시 대본: `prototypes/segment_example.json`
