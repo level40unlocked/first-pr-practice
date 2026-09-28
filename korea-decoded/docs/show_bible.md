@@ -43,6 +43,14 @@
 | A2 | 색 변경: 남색 가디건, 노란 나비넥타이 (영상 자막의 남색·노랑과 맞춤), 펜 주머니 제거 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073711_b220736f-ea84-4018-9cde-bc96a40de6ff.png) |
 | A3 | 더 병맛: 눈이 거대해 보이는 더 큰 안경, 정수리에 삐죽 솟은 머리카락 한 가닥, 진지한 굵은 눈썹 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073713_a774b41d-dad9-49a9-bc40-3b9f75ffa526.png) |
 
+### A 멋진 버전 (A와 A1을 참조로, 같은 인물을 더 멋있게)
+
+| | 멋 단계 | 바뀐 점 | 컨셉 이미지 |
+|---|---|---|---|
+| A4 | ★ | 테이프 없는 세련된 검은 사각 안경, 옆 가르마의 결 있는 머리, 짙은 빨강 니트 타이, 남색 수트 재킷, 차분하고 똑똑한 미소 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073946_2faa2e6f-4551-4a2c-ba12-da7b7c8ee746.png) |
+| A5 | ★★ | 두꺼운 검은 안경은 유지하되 세련되게, 살짝 헝클어진 버섯머리, 느슨하게 맨 노란 나비넥타이, 남색 가디건, 한쪽 눈썹을 올린 영리한 미소 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073947_71ee645f-b9a3-4623-89d7-26f9638c48e0.png) |
+| A6 | ★★★ | 굵은 검은 원형 안경, 볼륨 있게 넘긴 머리, 검은 터틀넥에 차콜 블레이저, 옷깃 핀, 테크 발표자 같은 여유 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_073946_281fc82c-c07b-4983-b2c2-67f29bc8c322.png) |
+
 ### 멋진 너드 후보 (전형적인 너드 대신 "똑똑한데 스타일 좋은" 방향)
 
 | | 컨셉 | 외모 | 성격 | 컨셉 이미지 |
