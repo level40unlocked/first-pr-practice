@@ -7,9 +7,9 @@ stricter of the two wins.
 
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass
 
+from korea_decoded import textmatch
 from korea_decoded.models import Sensitivity
 
 
@@ -27,15 +27,7 @@ class SensitivityResult:
 
 def classify(text: str, negative_keywords: tuple[str, ...]) -> SensitivityResult:
     lowered = text.lower()
-    matched = []
-    for kw in negative_keywords:
-        if kw.isascii():
-            # Word boundaries so "war" doesn't match "software" or "award".
-            if re.search(rf"\b{re.escape(kw)}\b", lowered):
-                matched.append(kw)
-        elif kw in lowered:
-            # Korean has no word boundaries between particles, so substring match.
-            matched.append(kw)
+    matched = [kw for kw in negative_keywords if textmatch.contains(lowered, kw)]
     return SensitivityResult(level="review" if matched else "go", matched=tuple(matched))
 
 

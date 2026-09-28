@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS topics (
     engagement INTEGER NOT NULL DEFAULT 0,
     published_at TEXT NOT NULL DEFAULT '',
     pillar TEXT,
+    countries TEXT NOT NULL DEFAULT '',
     score REAL NOT NULL DEFAULT 0,
     sensitivity TEXT NOT NULL,
     sensitivity_reason TEXT NOT NULL DEFAULT '',
@@ -37,7 +38,9 @@ CREATE TABLE IF NOT EXISTS topics (
 STATUSES = ("new", "review", "approved", "rejected", "scripted", "voiced", "rendered")
 
 # Columns added after the first release; connect() adds them to older databases.
-_ADDED_COLUMNS = {"voice": "TEXT", "audio_path": "TEXT", "video_path": "TEXT"}
+_ADDED_COLUMNS = {"voice": "TEXT", "audio_path": "TEXT", "video_path": "TEXT",
+                  "countries": "TEXT NOT NULL DEFAULT ''"}
+_MEDIA_FIELDS = {"voice", "audio_path", "video_path"}
 
 
 def connect(path: Path) -> sqlite3.Connection:
@@ -98,9 +101,8 @@ def update_media(conn: sqlite3.Connection, uid: str, status: str, **paths) -> No
     """Sets status plus any of voice / audio_path / video_path."""
     if status not in STATUSES:
         raise ValueError(f"unknown status: {status}")
-    allowed = set(_ADDED_COLUMNS)
-    if not set(paths) <= allowed:
-        raise ValueError(f"unknown fields: {set(paths) - allowed}")
+    if not set(paths) <= _MEDIA_FIELDS:
+        raise ValueError(f"unknown fields: {set(paths) - _MEDIA_FIELDS}")
     sets = ", ".join(["status = ?"] + [f"{k} = ?" for k in paths])
     conn.execute(f"UPDATE topics SET {sets} WHERE uid = ?", (status, *paths.values(), uid))
     conn.commit()

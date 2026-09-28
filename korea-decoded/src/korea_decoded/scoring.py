@@ -3,20 +3,28 @@
 from __future__ import annotations
 
 import math
-import re
 
+from korea_decoded import textmatch
 from korea_decoded.config import ChannelConfig, Pillar
 from korea_decoded.models import RawTopic
 
 
 def _keyword_hits(text: str, pillar: Pillar) -> int:
-    hits = 0
-    for kw in pillar.keywords:
-        if kw.isascii():
-            hits += bool(re.search(rf"\b{re.escape(kw)}\b", text))
-        else:
-            hits += kw in text
-    return hits
+    return sum(textmatch.contains(text, kw) for kw in pillar.keywords)
+
+
+def detect_countries(topic: RawTopic, config: ChannelConfig) -> list[str]:
+    """Country codes mentioned in the topic, for "Korea vs X" comparisons."""
+    text = f"{topic.title} {topic.summary}".lower()
+    # Longest names first, removed once matched, so "인도네시아" doesn't also count as "인도".
+    names = sorted(((n, code) for code, ns in config.countries.items() for n in ns), key=lambda x: -len(x[0]))
+    found = []
+    for name, code in names:
+        if textmatch.contains(text, name):
+            text = textmatch.remove(text, name)
+            if code not in found:
+                found.append(code)
+    return sorted(found)
 
 
 def detect_pillar(topic: RawTopic, config: ChannelConfig) -> Pillar | None:

@@ -8,7 +8,8 @@
 ```
 [수집] Reddit · 뉴스 RSS · 네이버 뉴스
    ↓
-[점수화] 콘텐츠 축(기업·기술 > 경제·돈 > 사회 > 여행) 가중치 × 반응도
+[점수화] 콘텐츠 축(기업·기술 > 경제·돈 > 한국 vs 세계 > 사회 > 여행) 가중치 × 반응도
+   ↓   (언급된 나라도 표시 → "한국 vs 미국" 같은 비교 소재)
    ↓
 [민감도 분류] 🟢 go → 제작 대기열 / ⚠️ review → 사람이 승인해야 진행
    ↓
@@ -79,6 +80,7 @@ python -m korea_decoded render <uid> --images <폴더>  # 폴더 속 이미지�
 | 바꾸고 싶은 것 | 파일 |
 |---|---|
 | 콘텐츠 축 비중, 키워드 | `config/channel.toml` → `[pillars.*]` |
+| 비교 대상 나라 | `config/channel.toml` → `[countries]` |
 | ⚠️ 민감 키워드 | `config/channel.toml` → `[sensitivity]` |
 | 수집할 서브레딧, RSS, 네이버 검색어 | `config/channel.toml` → `[sources]` |
 | 대본 톤, 구조, 규칙 | `prompts/script_system.md` |

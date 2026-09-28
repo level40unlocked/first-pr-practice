@@ -10,6 +10,7 @@ def make_script(sensitivity="go"):
         title="Why Naver Beat Google",
         hook_text="Google isn't #1 here",
         pillar="business_tech",
+        target_countries=[],
         sensitivity=sensitivity,
         sensitivity_reason="neutral tech history" if sensitivity == "go" else "touches a scandal",
         lines=[ScriptLine(en="Google wins everywhere.", ko="구글은 어디서나 이겨.", visual="world map")],
@@ -115,3 +116,12 @@ def test_connect_migrates_old_databases(tmp_path):
     conn = db.connect(tmp_path / "old.db")
     cols = {r["name"] for r in conn.execute("PRAGMA table_info(topics)")}
     assert {"voice", "audio_path", "video_path"} <= cols
+
+
+def test_comparison_topics_get_the_comparison_pillar_and_countries(tmp_path):
+    conn = db.connect(tmp_path / "t.db")
+    pipeline.ingest(conn, [RawTopic(source="t", title="Korea vs Japan: convenience store showdown",
+                                    url="https://x/10")], CONFIG)
+    row = db.list_topics(conn)[0]
+    assert row["pillar"] == "korea_vs_world"
+    assert row["countries"] == "JP"

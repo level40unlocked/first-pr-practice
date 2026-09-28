@@ -31,3 +31,9 @@ def test_korean_core_word_is_not_nuclear():
 def test_stricter_prefers_review():
     assert stricter("go", "review") == "review"
     assert stricter("go", "go") == "go"
+
+
+def test_keywords_ending_in_punctuation_still_match():
+    from korea_decoded import textmatch
+    assert textmatch.contains("prices in the u.s. are higher", "u.s.")
+    assert not textmatch.contains("a ukulele lesson", "uk")

@@ -39,6 +39,7 @@ class ChannelConfig:
     higgsfield: dict = field(default_factory=dict)
     kokoro: dict = field(default_factory=dict)
     editor: dict = field(default_factory=dict)
+    countries: dict = field(default_factory=dict)  # code -> lowercase names
 
     def voice_for(self, pillar: str | None) -> str:
         return self.voice_assignment.get(pillar or "", self.voice_assignment.get("default", "skye"))
@@ -47,12 +48,15 @@ class ChannelConfig:
 def load_config(path: Path = CONFIG_PATH) -> ChannelConfig:
     with open(path, "rb") as f:
         raw = tomllib.load(f)
+    countries = {code: [n.lower() for n in names] for code, names in raw.get("countries", {}).items()}
+    country_names = [n for names in countries.values() for n in names]
     pillars = tuple(
         Pillar(
             key=key,
             label=p["label"],
             weight=float(p["weight"]),
-            keywords=tuple(k.lower() for k in p["keywords"]),
+            keywords=tuple(k.lower() for k in p["keywords"])
+            + (tuple(country_names) if p.get("include_countries") else ()),
         )
         for key, p in raw["pillars"].items()
     )
@@ -70,4 +74,5 @@ def load_config(path: Path = CONFIG_PATH) -> ChannelConfig:
         higgsfield=raw.get("higgsfield", {}),
         kokoro=raw.get("kokoro", {}),
         editor=raw.get("editor", {}),
+        countries=countries,
     )

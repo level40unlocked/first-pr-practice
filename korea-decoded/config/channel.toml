@@ -35,6 +35,32 @@ weight = 1.05
 keywords = ["travel", "trip", "tourist", "seoul", "busan", "jeju", "subway", "visa", "t-money",
             "여행", "관광", "서울", "부산", "제주", "지하철"]
 
+# 한국 vs 세계 비교 포맷. 시청자가 "우리나라는?" 하고 클릭하게 만드는 축.
+# include_countries = true 이면 아래 [countries]의 나라 이름도 이 축의 키워드로 쓰입니다.
+[pillars.korea_vs_world]
+label = "Korea vs the World"
+weight = 1.25
+include_countries = true
+keywords = ["vs", "versus", "compared", "comparison", "difference", "foreigner", "abroad",
+            "비교", "외국인", "해외", "차이"]
+
+# 비교 대상 나라 (유튜브 시청자가 많은 영어권, 신흥 시장 위주). 코드 = 표기 이름들.
+[countries]
+US = ["america", "american", "americans", "united states", "u.s.", "미국"]
+GB = ["uk", "britain", "british", "england", "영국"]
+CA = ["canada", "canadian", "캐나다"]
+AU = ["australia", "australian", "호주"]
+IN = ["india", "indian", "indians", "인도"]
+PH = ["philippines", "filipino", "필리핀"]
+ID = ["indonesia", "indonesian", "인도네시아"]
+VN = ["vietnam", "vietnamese", "베트남"]
+JP = ["japan", "japanese", "일본"]
+CN = ["china", "chinese", "중국"]
+BR = ["brazil", "brazilian", "브라질"]
+MX = ["mexico", "mexican", "멕시코"]
+DE = ["germany", "german", "독일"]
+FR = ["france", "french", "프랑스"]
+
 # 민감도 규칙
 # - 아래 키워드가 들어간 주제는 "review"로 분류되어 자동 제작 대기열에서 빠집니다.
 # - review 주제는 사람이 approve 하기 전까지 대본을 만들지 않습니다.
@@ -79,6 +105,7 @@ society = "skye"
 travel = "skye"
 economy_money = "miles"     # 차분하고 신뢰감 있는 톤 → 돈, 경제
 business_tech = "fenrir"    # 빠르고 에너지 있는 톤 → 기업, 기술
+korea_vs_world = "skye"
 
 [voices.skye]
 provider = "higgsfield"

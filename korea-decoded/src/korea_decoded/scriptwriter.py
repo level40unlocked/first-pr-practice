@@ -28,11 +28,13 @@ def build_system_prompt(config: ChannelConfig, examples_dir: Path = EXAMPLES_DIR
 
 def build_user_message(topic) -> str:
     pillar = topic["pillar"] or "unassigned (pick the closest pillar or 'society')"
+    countries = topic["countries"] if "countries" in topic.keys() else ""
     return (
         "Write a Korea Decoded Short about this topic.\n\n"
         f"Title: {topic['title']}\n"
         f"Source: {topic['source']} ({topic['url']})\n"
         f"Suggested pillar: {pillar}\n"
+        f"Countries mentioned: {countries or '(none)'}\n"
         f"Context: {topic['summary'] or '(none)'}\n\n"
         "The source is a starting point, not a script: find the angle a curious "
         "foreigner would find surprising, and explain it."
@@ -84,7 +86,8 @@ def render_markdown(script: ShortScript, topic) -> str:
     """Same layout as the files in examples/, plus visuals and the fact-check list."""
     out = [
         f"# {script.title}",
-        f"pillar: {script.pillar} | sensitivity: {script.sensitivity}",
+        f"pillar: {script.pillar} | sensitivity: {script.sensitivity}"
+        + (f" | vs: {', '.join(script.target_countries)}" if script.target_countries else ""),
         f"hook_text: {script.hook_text}",
         f"source: {topic['url']}",
     ]

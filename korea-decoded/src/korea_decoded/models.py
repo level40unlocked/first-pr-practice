@@ -49,6 +49,10 @@ class ShortScript(BaseModel):
     title: str = Field(description="YouTube title, under 70 characters")
     hook_text: str = Field(description="Big on-screen text for the first 2 seconds")
     pillar: str
+    target_countries: list[str] = Field(
+        description="ISO 3166 alpha-2 codes of the countries this Short compares Korea with "
+        "(their viewers are the target audience); empty if it is not a comparison"
+    )
     sensitivity: Sensitivity
     sensitivity_reason: str = Field(description="Why the topic is or isn't sensitive")
     lines: list[ScriptLine]

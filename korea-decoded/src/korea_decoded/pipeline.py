@@ -27,6 +27,7 @@ def ingest(conn: sqlite3.Connection, topics: list[RawTopic], config: ChannelConf
             engagement=t.engagement,
             published_at=t.published_at,
             pillar=pillar.key if pillar else None,
+            countries=",".join(scoring.detect_countries(t, config)),
             score=scoring.score(t, pillar),
             sensitivity=check.level,
             sensitivity_reason=check.reason,
