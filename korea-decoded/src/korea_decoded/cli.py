@@ -157,6 +157,35 @@ def cmd_render(args, conn, config) -> int:
     return 0
 
 
+def cmd_upload(args, conn, config) -> int:
+    import json as _json
+    from datetime import datetime
+
+    from korea_decoded.youtube import VideoMeta, YouTubeError, YouTubeUploader
+
+    try:
+        meta = VideoMeta(
+            title=args.title,
+            description=Path(args.description).read_text(encoding="utf-8") if args.description else "",
+            tags=args.tags or [],
+            privacy=args.privacy,
+            publish_at=datetime.fromisoformat(args.publish_at) if args.publish_at else None,
+        )
+        if args.dry_run:
+            print(_json.dumps(meta.body(), ensure_ascii=False, indent=2))
+            return 0
+        uploader = YouTubeUploader.from_env()
+        video_id = uploader.upload(Path(args.video), meta)
+        if args.thumbnail:
+            uploader.set_thumbnail(video_id, Path(args.thumbnail))
+    except (YouTubeError, ValueError) as e:
+        print(e, file=sys.stderr)
+        return 1
+    print(f"📺 https://youtu.be/{video_id} ({meta.privacy}"
+          f"{', goes public ' + meta.body()['status']['publishAt'] if meta.publish_at else ''})")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="korea_decoded", description="Four Eyes Report pipeline")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -201,6 +230,17 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--images", help="folder of background images in name order "
                    "(default: the folder `visuals` filled)")
     p.set_defaults(func=cmd_render)
+
+    p = sub.add_parser("upload", help="upload a video to YouTube (private or scheduled)")
+    p.add_argument("video")
+    p.add_argument("--title", required=True)
+    p.add_argument("--description", help="text file with the description")
+    p.add_argument("--tags", nargs="*")
+    p.add_argument("--privacy", default="private", choices=["private", "unlisted", "public"])
+    p.add_argument("--publish-at", help="scheduled release, e.g. 2026-10-01T18:00+09:00 (stays private until then)")
+    p.add_argument("--thumbnail", help="custom thumbnail image (the channel must be phone-verified)")
+    p.add_argument("--dry-run", action="store_true", help="print the request body without uploading")
+    p.set_defaults(func=cmd_upload)
 
     args = parser.parse_args(argv)
     config = load_config()
