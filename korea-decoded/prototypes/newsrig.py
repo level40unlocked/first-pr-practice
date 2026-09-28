@@ -21,7 +21,10 @@ SW, SH = 1080, 1920
 NAVY, NAVY2 = (12, 20, 42), (28, 44, 86)
 YELLOW, WHITE, BLACK, RED = (255, 212, 0), (255, 255, 255), (15, 15, 20), (220, 38, 38)
 FONT = "/usr/share/fonts/truetype/higgsfield/Montserrat-ExtraBold.ttf"
-FONT_VARIABLE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "fonts", "Montserrat-Variable.ttf")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+# Poppins Bold (OFL): rounded geometric face close to the logo wordmark. Looked up next to this script
+# first (how the render sandbox gets it), then in the repo's assets/fonts.
+FONT_FILES = [os.path.join(_HERE, "Poppins-Bold.ttf"), os.path.join(_HERE, "..", "assets", "fonts", "Poppins-Bold.ttf")]
 CHANNEL = "FOUR EYES REPORT"
 HANDLE = "@FourEyesReport"
 # Channel mark cut from the minimal banner (Higgsfield media ce946036-...). Put the file next to this
@@ -85,17 +88,13 @@ def glasses_logo(draw, cx, cy, size, color):
     draw.line(pts, fill=color, width=w, joint="curve")
 
 def font(size):
-    """Montserrat ExtraBold, the rounded geometric face of the logo wordmark."""
-    try:
-        f = ImageFont.truetype(FONT_VARIABLE, size)
-        f.set_variation_by_axes([800])
-        return f
-    except (OSError, ValueError):
-        pass
-    try:
-        return ImageFont.truetype(FONT, size)
-    except OSError:
-        return ImageFont.load_default(size)
+    """Poppins Bold; the sandbox's Montserrat, then Pillow's default, if it is missing."""
+    for path in FONT_FILES + [FONT]:
+        try:
+            return ImageFont.truetype(path, size)
+        except OSError:
+            continue
+    return ImageFont.load_default(size)
 
 
 CAPTION_Y = 1235  # Shorts: lower part of the video (600..1410), above the lower third and YouTube's UI

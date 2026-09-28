@@ -6,3 +6,4 @@ data/
 output/
 models/
 assets/fonts/*.ttf
+!assets/fonts/Poppins-Bold.ttf
