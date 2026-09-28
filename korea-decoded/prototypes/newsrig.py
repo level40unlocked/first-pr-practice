@@ -146,7 +146,7 @@ def analyze_head(head):
         cx, cy = cent[i]
         if not (0.002 * h * w < area < 0.08 * h * w):
             continue
-        if not (0.65 < bw / bh < 1.5 and area / (bw * bh) > 0.55):
+        if not (0.65 < bw / bh < 1.8 and area / (bw * bh) > 0.55):
             continue
         if not (0.2 * h < cy < 0.75 * h and abs(cx - w / 2) < 0.32 * w):
             continue

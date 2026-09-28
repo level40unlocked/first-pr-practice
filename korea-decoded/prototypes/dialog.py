@@ -65,7 +65,9 @@ class Puppet:
         self.label = spec["label"]
         self.energy = spec.get("energy", 1.0)
         alpha = np.asarray(self.body)[..., 3] > 0
-        collar_top = int(np.nonzero(alpha.any(axis=1))[0].min())
+        # Collar line from the middle of the body only, so a prop on a shoulder can't raise it.
+        mid = alpha[:, int(0.4 * alpha.shape[1]):int(0.6 * alpha.shape[1])]
+        collar_top = int(np.nonzero(mid.any(axis=1))[0].min())
         self.body_pos = (self.x - self.body.width // 2, COLLAR_Y - collar_top)
         # How far the chin sinks below the top of the collar, as a share of head height. Tall stand-up
         # collars need more, or the collar reads as a long neck.

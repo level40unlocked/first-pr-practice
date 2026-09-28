@@ -152,6 +152,23 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 - 판정 패들은 손이 책상에 가려져서 몸통에서 뺌. 필요하면 설명 화면 그래픽으로
 - 남은 것: 이름·성격·말버릇, 목소리, 실제 대사로 렌더링 테스트
 
+### 데스크 전문가 7명: 애니메이션용 원본 (2026-09-28)
+- 각 컨셉 이미지를 참조로 gpt_image_2_5, 1:1, 회색 배경. 공통 설정 `"shoulders": 520, "white_lens": true` (흰 안경알은 데스크 전문가 전원 + Whistle Joe에 적용, Master K·Dr. Kangfree는 기존 방식)
+- 리그 확인: 7명 모두 안경알·코·턱 인식, 눈 뜸/반쯤/감기 정상, Master K 옆에 앉혀 머리 크기 비교
+- 다시 뽑은 것: 시사 베테랑 머리(가는 돋보기 안경이라 안경알 인식 실패 → 중간 크기 사각 안경), K-POP 머리(입이 그려져 있었음)
+- 시사 베테랑의 ref는 가는 돋보기 안경 그대로 (크기 비율 계산에만 쓰므로 문제없음)
+- 리그 수정: 안경알 가로세로 비율 허용 1.5 → 1.8 (`newsrig.analyze_head`), 칼라 위치를 몸통 가운데에서만 잼 (`dialog.Puppet`, 테크 전문가 어깨 로봇 때문). 기존 캐릭터 결과는 그대로
+
+| 데스크 | head | body | ref | 추가 설정 |
+|---|---|---|---|---|
+| 시사 베테랑 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_172010_98ee6a07-7734-4753-96e6-0b5a91fde7f6.png) | [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_54cc1983-d650-4b56-a2e3-90463392b6fd.png) | [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171718_8d457ae0-b9ec-4ace-9d67-ec5b28ae22d2.png) | "head_ratio" 자동(0.72) |
+| K-POP 분석가 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_172010_d4b4123a-4902-4444-bfdf-8765f698db2d.png) | [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171719_f3663c92-2286-4259-bfab-6e1f6805358e.png) | [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_4cffa2cb-d2e4-4ddd-833c-0797fdb0dcdb.png) | 자동(0.69) |
+| 비밀 기록 연구가 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_e1cc0cfa-b1c4-4ac3-a9c4-ef07c7d09d49.png) | [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_a7ab925d-7875-472e-b1eb-7c393c5fb22e.png) | [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_d3176932-0ab2-4cff-9de7-194e23534230.png) | 자동(0.66) |
+| 머니 애널리스트 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_26dfccdd-4424-4ea7-825c-ed2c250642dc.png) | [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_94549376-7493-4a34-a337-93751110c81e.png) | [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171717_74bdfdab-b788-4cc4-b816-ac961492bd97.png) | "head_ratio": 0.68 |
+| 테크·로봇 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171816_e03fc864-ae7f-4f00-a0cf-bd654a896fba.png) | [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171816_318c95ef-dae2-4a30-977e-f5a4b2f1f8ab.png) | [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171816_cea28273-31a5-4b36-b0d5-3dac4b1ebcdf.png) | "head_ratio": 0.68, "chin_drop": 0.08 |
+| K-푸드 셰프 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171816_0bd12c40-1b8c-4b10-a8eb-5cfd71abb7a1.png) | [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171816_8f82a8f8-16f4-4463-81c1-dc2a894701b9.png) | [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171817_fb596434-ab49-4e73-94fd-962ea517bfad.png) | "head_ratio": 0.74, "chin_drop": 0.16 |
+| 여행 백패커 | [head](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171816_ba5318d0-494b-4d31-b8ba-bf2f109d7cf6.png) | [body](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171849_209a0f95-d747-44fb-b7c3-1fd811e83c7d.png) | [ref](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_171816_94e6999f-cd85-4a0b-ac2b-818200c55a79.png) | 자동(0.73) |
+
 ## 샷 자동 편집 (`prototypes/episode.py`)
 
 줄마다 샷을 자동으로 정하고, 대본 줄에 `"shot"`을 적으면 그게 우선한다.
