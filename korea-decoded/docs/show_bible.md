@@ -171,7 +171,7 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 ### 확정된 것
 - 채널: **Four Eyes Report** (`@FourEyesReport`), 태그라인 "Through our lenses.", 브랜드에는 Korea를 넣지 않음. 대외 문구에 "nerd", "LIVE", "BREAKING" 금지
 - 방향: 실제 한국 뉴스를 모아 외국인이 흥미를 갖도록 각색하고 **채널 운영자의 관점(한 줄 코멘트)**을 더한 병맛 애니메이션 뉴스쇼. 롱폼(5꼭지, TOPIC n/5)이 원본이고 꼭지별로 쇼츠를 잘라냄
-- 앵커 A6 (**Master K**, 애칭 "Core", `docs/characters.md` 참고, 목소리 Miles/ElevenLabs `e18664a7-ee4f-5273-acf8-533eb24cd366`), 패널 지영 박사 (목소리 Skye/Seed Speech `1fb253b8-928b-4d29-a349-f242a71eaddf`, head_ratio 0.74, shoulders 500)
+- 앵커 A6 (**Master K**, 애칭 "Core", `docs/characters.md` 참고, 목소리 Miles/ElevenLabs `e18664a7-ee4f-5273-acf8-533eb24cd366`), 패널 **Dr. Stella Jiyeong Kang** (이름표 DR. STELLA KANG, 목소리 Skye/Seed Speech `1fb253b8-928b-4d29-a349-f242a71eaddf`, head_ratio 0.74, shoulders 500)
 - 글꼴: Poppins Bold (`assets/fonts/Poppins-Bold.ttf`, OFL). 쇼츠 배경은 브랜드 남색 (4, 39, 87)
 - 쇼츠: 위 여백은 훅 제목만, 가운데 영상(롱폼 중앙 1440×1080을 1080×810으로), 자막은 영상 안 아래쪽(y=1235), 아래 여백은 배너 띠(`prototypes/fer_promo_strip.png`) + 핸들
 - 롱폼: 왼쪽 위 EP.n + 카테고리, 오른쪽 위 로고(쇼츠 영역 밖), TOPIC n/N 자막바, 맨 아래 UP NEXT 티커(쇼츠 영역 밖), 설명 화면 아래 출처 표기
