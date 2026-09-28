@@ -169,17 +169,12 @@ def main():
     o.text((380, 980), "PANEL", font=nr.font(40), fill=nr.WHITE, anchor="mm")
     o.text((550, 980), scene["headline"], font=nr.font(38), fill=nr.BLACK, anchor="lm")
 
-    short_static = Image.new("RGB", (SW, SH), nr.NAVY)
+    short_static = Image.new("RGB", (SW, SH), nr.BRAND_NAVY)
     sd = ImageDraw.Draw(short_static)
-    sd.text((SW / 2, 140), nr.CHANNEL, font=nr.font(44), fill=nr.YELLOW, anchor="mm")
-    category_badge(sd, SW / 2, 200, category, size=36, anchor="center")
-    sd.multiline_text((SW / 2, 420), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
+    category_badge(sd, SW / 2, 130, category, size=36, anchor="center")
+    sd.multiline_text((SW / 2, 370), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
-    nr.logo_mark(short_static, 180, 1710, 140)
-    sd.text((290, 1670), nr.CHANNEL, font=nr.font(48), fill=nr.WHITE, anchor="lm")
-    sd.text((290, 1740), f"{nr.HANDLE}  |  Full episode on the channel  >", font=nr.font(34), fill=(190, 200, 225), anchor="lm")
-    sd.rounded_rectangle((300, 1800, 780, 1870), 35, fill=nr.RED)
-    sd.text((540, 1835), "SUBSCRIBE", font=nr.font(36), fill=nr.WHITE, anchor="mm")
+    nr.shorts_promo(short_static, sd)
 
     blinks = {k: blink_schedule(duration, i * 11 + 3) for i, k in enumerate(puppets)}
     rnd = random.Random(5)

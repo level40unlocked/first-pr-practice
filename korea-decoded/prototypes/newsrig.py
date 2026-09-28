@@ -26,6 +26,8 @@ HANDLE = "@FourEyesReport"
 # Channel mark cut from the minimal banner (Higgsfield media ce946036-...). Put the file next to this
 # script or point FER_LOGO at it; without it the renderer falls back to a code-drawn mark.
 LOGO_URL = "https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/ce946036-9821-419d-aae2-d107a3aef417.png"
+PROMO_STRIP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fer_promo_strip.png")
+BRAND_NAVY = (4, 39, 87)  # background of the minimal banner / promo strip
 LOGO_PATH = os.environ.get("FER_LOGO", os.path.join(os.path.dirname(os.path.abspath(__file__)), "fer_logo_mark.png"))
 HEADLINE = "Korean convenience stores are NOT boring"
 SCREEN_LABEL = "CONVENIENCE STORES"
@@ -33,6 +35,21 @@ HOOK = "Korea's convenience stores\nare on another level"
 
 
 
+
+
+def shorts_promo(canvas, draw):
+    """Bottom margin of a Short (below the video, y >= 1410): banner strip, handle, subscribe."""
+    if os.path.exists(PROMO_STRIP):
+        strip = Image.open(PROMO_STRIP).convert("RGB")
+        strip = strip.resize((SW, round(strip.height * SW / strip.width)), Image.LANCZOS)
+        canvas.paste(strip, (0, 1425))
+    else:
+        logo_mark(canvas, 180, 1600, 140)
+        draw.text((290, 1600), CHANNEL, font=font(48), fill=WHITE, anchor="lm")
+    draw.text((SW / 2, 1805), f"{HANDLE}  |  Full episode on the channel  >", font=font(34),
+              fill=(190, 200, 225), anchor="mm")
+    draw.rounded_rectangle((SW / 2 - 200, 1838, SW / 2 + 200, 1898), 30, fill=RED)
+    draw.text((SW / 2, 1868), "SUBSCRIBE", font=font(34), fill=WHITE, anchor="mm")
 
 def logo_mark(canvas, cx, cy, size):
     """Pastes the channel mark centered at (cx, cy); code-drawn fallback if the file is missing."""
@@ -359,15 +376,10 @@ def main():
     if cur:
         caption_groups.append(cur)
 
-    short_static = Image.new("RGB", (SW, SH), NAVY)
+    short_static = Image.new("RGB", (SW, SH), BRAND_NAVY)
     sd = ImageDraw.Draw(short_static)
-    sd.text((SW / 2, 140), CHANNEL, font=font(44), fill=YELLOW, anchor="mm")
-    sd.multiline_text((SW / 2, 380), HOOK, font=font(72), fill=WHITE, anchor="mm", align="center", spacing=18)
-    logo_mark(short_static, 180, 1710, 140)
-    sd.text((290, 1670), CHANNEL, font=font(48), fill=WHITE, anchor="lm")
-    sd.text((290, 1740), f"{HANDLE}  |  Full episode on the channel  >", font=font(34), fill=(190, 200, 225), anchor="lm")
-    sd.rounded_rectangle((300, 1800, 780, 1870), 35, fill=RED)
-    sd.text((540, 1835), "SUBSCRIBE", font=font(36), fill=WHITE, anchor="mm")
+    sd.multiline_text((SW / 2, 330), HOOK, font=font(72), fill=WHITE, anchor="mm", align="center", spacing=18)
+    shorts_promo(short_static, sd)
 
     def ff(path, w, h):
         return subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
