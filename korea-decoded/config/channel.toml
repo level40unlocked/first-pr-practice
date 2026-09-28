@@ -137,3 +137,14 @@ voices_path = "models/voices-v1.0.bin"
 # Montserrat ExtraBold 권장 (Google Fonts, OFL 라이선스). 없으면 Pillow 기본 폰트로 대체됩니다.
 font_path = "assets/fonts/Montserrat-ExtraBold.ttf"
 whisper_model = "base.en"
+
+# ── 배경 이미지 ────────────────────────────────────────
+# 대본 한 줄 = 이미지 한 장. 출처 우선순위: 스톡 사진(무료) → AI 이미지(유료) → 텍스트 카드(무료, 항상 성공)
+[visuals]
+allow_ai = true   # false 로 두면 크레딧을 쓰지 않고 스톡 사진과 텍스트 카드만 씁니다
+# Higgsfield SDK 문서에 예시로 나오는 이미지 생성 경로입니다.
+ai_application = "bytedance/seedream/v4/text-to-image"
+
+[visuals.ai_arguments]
+resolution = "2K"
+aspect_ratio = "9:16"

@@ -2,20 +2,19 @@
 
 from __future__ import annotations
 
-import os
 import re
 from pathlib import Path
 
 import anthropic
 
 from korea_decoded.config import EXAMPLES_DIR, PROMPTS_DIR, ChannelConfig
+from korea_decoded.llm import LLMError, structured_call
 from korea_decoded.models import ShortScript
 
-DEFAULT_MODEL = "claude-opus-5"
 
 
-class ScriptError(RuntimeError):
-    pass
+# Kept as the name callers catch; the shared LLM helper raises it.
+ScriptError = LLMError
 
 
 def build_system_prompt(config: ChannelConfig, examples_dir: Path = EXAMPLES_DIR) -> str:
@@ -45,36 +44,11 @@ class ScriptWriter:
     def __init__(self, config: ChannelConfig, client: anthropic.Anthropic | None = None):
         self.config = config
         self.client = client or anthropic.Anthropic()
-        self.model = os.environ.get("KD_MODEL", DEFAULT_MODEL)
         self.system_prompt = build_system_prompt(config)
 
     def write(self, topic) -> ShortScript:
-        response = self.client.beta.messages.create(
-            model=self.model,
-            max_tokens=16000,
-            # If the model declines, the API retries on Anthropic's recommended fallback model.
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
-            thinking={"type": "adaptive"},
-            output_config={
-                "effort": os.environ.get("KD_EFFORT", "high"),
-                "format": {"type": "json_schema", "schema": ShortScript.model_json_schema()},
-            },
-            # The system prompt (rules + approved examples) is identical for every
-            # topic, so cache it.
-            system=[
-                {"type": "text", "text": self.system_prompt, "cache_control": {"type": "ephemeral"}}
-            ],
-            messages=[{"role": "user", "content": build_user_message(topic)}],
-        )
-        if response.stop_reason == "refusal":
-            raise ScriptError(f"model declined topic {topic['uid']}")
-        if response.stop_reason == "max_tokens":
-            raise ScriptError(f"output truncated for topic {topic['uid']}")
-        text = next((b.text for b in response.content if b.type == "text"), None)
-        if text is None:
-            raise ScriptError(f"no text in response for topic {topic['uid']}")
-        return ShortScript.model_validate_json(text)
+        return structured_call(self.client, self.system_prompt, build_user_message(topic), ShortScript,
+                               label=f"topic {topic['uid']}")
 
 
 def slugify(text: str) -> str:

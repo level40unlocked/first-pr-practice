@@ -40,6 +40,7 @@ class ChannelConfig:
     kokoro: dict = field(default_factory=dict)
     editor: dict = field(default_factory=dict)
     countries: dict = field(default_factory=dict)  # code -> lowercase names
+    visuals: dict = field(default_factory=dict)
 
     def voice_for(self, pillar: str | None) -> str:
         return self.voice_assignment.get(pillar or "", self.voice_assignment.get("default", "skye"))
@@ -75,4 +76,5 @@ def load_config(path: Path = CONFIG_PATH) -> ChannelConfig:
         kokoro=raw.get("kokoro", {}),
         editor=raw.get("editor", {}),
         countries=countries,
+        visuals=raw.get("visuals", {}),
     )

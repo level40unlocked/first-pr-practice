@@ -111,15 +111,39 @@ def cmd_voice(args, conn, config) -> int:
     return 1 if failed else 0
 
 
+def cmd_visuals(args, conn, config) -> int:
+    from korea_decoded import visuals
+    from korea_decoded.config import PROJECT_ROOT
+
+    sources = visuals.build_sources(config)
+    if not sources:
+        print("no PEXELS_API_KEY and AI images disabled: every scene will be a text card")
+    font = PROJECT_ROOT / config.editor.get("font_path", "assets/fonts/Montserrat-ExtraBold.ttf")
+    failed = False
+    for uid in args.uids:
+        try:
+            paths, credits = pipeline.visuals_topic(conn, uid, OUTPUT_DIR / "visuals",
+                                                    visuals.VisualPlanner(), sources, font)
+        except Exception as e:
+            print(f"{uid}: {e}", file=sys.stderr)
+            failed = True
+            continue
+        counts = {s: sum(c.source == s for c in credits) for s in ("stock", "ai", "card")}
+        print(f"🖼️ {uid}: {len(paths)} images (stock {counts['stock']}, ai {counts['ai']}, "
+              f"card {counts['card']}) -> {OUTPUT_DIR / 'visuals' / uid}")
+    return 1 if failed else 0
+
+
 def cmd_render(args, conn, config) -> int:
     from pathlib import Path
 
     from korea_decoded import editor
+    from korea_decoded.visuals import existing_images
 
-    images = sorted(p for p in Path(args.images).iterdir()
-                    if p.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp"))
+    folder = Path(args.images) if args.images else OUTPUT_DIR / "visuals" / args.uid
+    images = existing_images(folder)
     if not images:
-        print(f"no images in {args.images}", file=sys.stderr)
+        print(f"no images in {folder} (run `visuals {args.uid}` or pass --images)", file=sys.stderr)
         return 1
     model = config.editor.get("whisper_model", "base.en")
     try:
@@ -168,9 +192,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--voice", help="override the pillar's voice, e.g. skye / miles / fenrir")
     p.set_defaults(func=cmd_voice)
 
+    p = sub.add_parser("visuals", help="find one background image per script line")
+    p.add_argument("uids", nargs="+")
+    p.set_defaults(func=cmd_visuals)
+
     p = sub.add_parser("render", help="render a narrated topic into a vertical Short")
     p.add_argument("uid")
-    p.add_argument("--images", required=True, help="folder of background images, used in name order")
+    p.add_argument("--images", help="folder of background images in name order "
+                   "(default: the folder `visuals` filled)")
     p.set_defaults(func=cmd_render)
 
     args = parser.parse_args(argv)

@@ -19,10 +19,13 @@
    ↓
 [음성] 콘텐츠 축별 목소리 자동 배정 (Skye / Miles / Fenrir)
    ↓
+[배경] 대본 한 줄 = 이미지 한 장. Claude가 줄마다 출처 결정
+       스톡 사진(Pexels, 무료) → AI 이미지(Higgsfield, 유료) → 텍스트 카드(무료, 항상 성공)
+   ↓
 [편집] 배경 이미지 + 내레이션 + 단어 강조 자막 → 1080×1920 쇼츠 mp4
 ```
 
-다음 단계(아직 없음): 배경 영상·이미지 자동 수집 → 썸네일·메타데이터 → 유튜브 업로드 → 성과 분석.
+다음 단계(아직 없음): 썸네일·메타데이터 → 유튜브 업로드 → 성과 분석.
 
 ## 설치
 
@@ -59,8 +62,12 @@ python -m korea_decoded write --dry-run         # API 호출 없이 프롬프트
 pip install -r requirements-media.txt
 python -m korea_decoded voice <uid> [<uid> ...]       # 축별 목소리로 내레이션 생성
 python -m korea_decoded voice <uid> --voice miles     # 목소리 직접 지정
-python -m korea_decoded render <uid> --images <폴더>  # 폴더 속 이미지를 이름순으로 배경에 사용
+python -m korea_decoded visuals <uid> [<uid> ...]     # 줄마다 배경 이미지 자동 수집
+python -m korea_decoded render <uid>                  # visuals 결과로 영상 렌더링
+python -m korea_decoded render <uid> --images <폴더>  # 직접 고른 이미지로 렌더링 (이름순)
 ```
+
+배경 이미지는 `output/visuals/<uid>/`에 저장되고, 같은 폴더의 `credits.json`에 사진 출처(작가, 링크)가 기록됩니다. 마음에 안 드는 이미지는 같은 번호 파일로 바꿔 넣고 `render`만 다시 돌리면 됩니다.
 
 | 목소리 | 엔진 | 담당 콘텐츠 축 | 비용 |
 |---|---|---|---|
@@ -70,6 +77,8 @@ python -m korea_decoded render <uid> --images <폴더>  # 폴더 속 이미지�
 
 첫 실행 전 준비:
 - **Higgsfield:** `HF_KEY` 환경변수, 그리고 `config/channel.toml`의 `[higgsfield].tts_application`에 음성 생성 API 경로를 넣어야 합니다 (https://docs.higgsfield.ai 에서 확인).
+- **Pexels:** `PEXELS_API_KEY` (무료, https://www.pexels.com/api/). 없으면 스톡 사진 대신 AI 이미지나 텍스트 카드를 씁니다.
+- **AI 이미지:** `config/channel.toml`의 `[visuals].allow_ai = false`로 두면 크레딧을 쓰지 않습니다.
 - **Kokoro:** 모델 파일 2개를 `models/`에 받아두세요 (https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0).
 - **폰트:** Montserrat ExtraBold를 `assets/fonts/`에 넣으면 샘플 영상과 같은 자막이 나옵니다. 없으면 기본 폰트를 씁니다.
 

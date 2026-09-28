@@ -91,6 +91,7 @@ def voice_topic(conn: sqlite3.Connection, uid: str, config: ChannelConfig, out_d
     script = load_script(topic)
     voice = voice or config.voice_for(script.pillar or topic["pillar"])
     text = " ".join(line.en for line in script.lines)
+    out_dir.mkdir(parents=True, exist_ok=True)
     audio_path = build_tts(voice, config).synthesize(text, out_dir / f"{uid}-{voice}")
     db.update_media(conn, uid, "voiced", voice=voice, audio_path=str(audio_path))
     return voice, audio_path
@@ -115,3 +116,16 @@ def render_topic(conn: sqlite3.Connection, uid: str, image_paths: list[Path], ou
     )
     db.update_media(conn, uid, "rendered", video_path=str(video_path))
     return video_path
+
+
+def visuals_topic(conn: sqlite3.Connection, uid: str, out_dir: Path, planner, sources: dict,
+                  font_path: Path | None = None, log=print):
+    """Plans and fetches one background image per script line into out_dir/<uid>/."""
+    from korea_decoded import visuals
+
+    topic = db.get_topic(conn, uid)
+    if topic is None:
+        raise PipelineError(f"unknown topic: {uid}")
+    script = load_script(topic)
+    plan = planner.plan(script)
+    return visuals.gather(plan, out_dir / uid, sources, font_path, log=log)
