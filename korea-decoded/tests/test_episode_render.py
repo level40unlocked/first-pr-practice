@@ -73,3 +73,14 @@ def test_recognized_word_timings_win_over_the_estimate():
     lines = [{"text": "Hello, world.", "start": 2.0, "end": 3.0, "words": [["Hello,", 0.1, 0.4], ["world.", 0.5, 0.9]]}]
     words = episode.estimate_words(lines)
     assert [(w["w"], w["s"], w["e"]) for w in words] == [("Hello,", 2.1, 2.4), ("world.", 2.5, 2.9)]
+
+
+def test_long_caption_groups_shrink_to_stay_on_screen():
+    import newsrig
+    from PIL import Image
+    canvas = Image.new("RGB", (newsrig.SW, newsrig.SH))
+    words = [{"w": w, "s": 0, "e": 1} for w in ("a", "three-and-a-half-meter", "shark")]
+    newsrig.draw_caption(canvas, words, 0.5)
+    band = canvas.crop((0, newsrig.CAPTION_Y - 50, newsrig.SW, newsrig.CAPTION_Y + 50))
+    left, right = band.crop((0, 0, 10, 100)), band.crop((newsrig.SW - 10, 0, newsrig.SW, 100))
+    assert left.getextrema() == ((0, 0),) * 3 and right.getextrema() == ((0, 0),) * 3  # nothing touches the edges

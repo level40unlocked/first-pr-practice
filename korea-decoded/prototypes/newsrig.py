@@ -103,10 +103,14 @@ CAPTION_Y = 1235  # Shorts: lower part of the video (600..1410), above the lower
 def draw_caption(canvas, words, t, y=CAPTION_Y):
     """Word-by-word Shorts caption; the word being spoken is yellow."""
     draw = ImageDraw.Draw(canvas)
-    f = font(60)
     parts = [(w["w"].upper(), YELLOW if w["s"] <= t <= w["e"] + 0.05 else WHITE) for w in words]
-    gap = 20
-    total = sum(draw.textlength(p, font=f) for p, _ in parts) + gap * (len(parts) - 1)
+    gap, size = 20, 60
+    while True:  # long words ("THREE-AND-A-HALF-METER") shrink the whole group so it stays on screen
+        f = font(size)
+        total = sum(draw.textlength(p, font=f) for p, _ in parts) + gap * (len(parts) - 1)
+        if total <= SW - 60 or size <= 36:
+            break
+        size -= 2
     x = (SW - total) / 2
     for p, c in parts:
         draw.text((x, y), p, font=f, fill=c, anchor="lm", stroke_width=6, stroke_fill=BLACK)
