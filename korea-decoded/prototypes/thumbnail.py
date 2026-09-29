@@ -63,6 +63,19 @@ def name_tag(hangul, roman, size=74):
     return img
 
 
+def stamp(text, size=46, color=(220, 38, 38)):
+    """Rubber-stamp label ("REAL NEWS"): bold red text in a double outline, tilted."""
+    f = nr.font(size)
+    probe = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    w, h = int(probe.textlength(text, font=f)) + size, int(size * 1.6)
+    img = Image.new("RGBA", (w + 12, h + 12), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((6, 6, w + 6, h + 6), 10, fill=(255, 255, 255, 235), outline=color, width=6)
+    d.rounded_rectangle((13, 13, w - 1, h - 1), 6, outline=color, width=2)
+    d.text(((w + 12) / 2, (h + 12) / 2), text, font=f, fill=color, anchor="mm")
+    return img.rotate(8, expand=True, resample=Image.BICUBIC)
+
+
 def backdrop(path):
     img = Image.open(path).convert("RGB")
     s = max(TW / img.width, TH / img.height)
@@ -142,6 +155,11 @@ def make(spec):
         size -= 4
         f = nr.font(size)
     y = TH - 40 - len(lines) * size * 1.02
+    if spec.get("stamp"):  # {"text": "REAL NEWS"}: sits just above the headline's left edge
+        st = stamp(spec["stamp"]["text"], spec["stamp"].get("size", 46))
+        left = TW - 110 - max(d.textlength(t, font=f) for t in lines)
+        shadowed(canvas, st, (int(left) - 10, int(y - st.height + 14)), radius=6, offset=(3, 5))
+        d = ImageDraw.Draw(canvas)
     for t in lines:
         d.text((TW - 110, y), t, font=f, fill=tuple(spec.get("text_color", nr.YELLOW)), anchor="ra",
                stroke_width=max(6, size // 12), stroke_fill=nr.BLACK)
