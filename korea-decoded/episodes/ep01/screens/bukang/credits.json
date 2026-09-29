@@ -42,12 +42,13 @@
   "retrieved": "2026-09-29"
  },
  "bukang_farewell.png": {
-  "line": 14,
+  "line": 13,
   "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
   "license": "AI-generated for this channel",
   "higgsfield_job": "75a4543e-820e-465e-bfb4-bebf71585d1f",
   "on_screen_credit": "AI-generated illustration",
-  "note": "Farewell tour gag. Only use after the rescue actually happened",
-  "retrieved": "2026-09-29"
+  "note": "Shown on the 'Starting Tuesday morning, boats and water pumps will gently guide it back out to sea' line and the 'farewell tour' reply, labelled as the planned rescue. If the rescue result is known at upload, update the line and label (e.g. BACK AT SEA)",
+  "retrieved": "2026-09-29",
+  "on_screen_label": "THE PLAN: BACK TO SEA"
  }
 }
