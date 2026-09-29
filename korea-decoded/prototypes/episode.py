@@ -16,7 +16,7 @@ import subprocess
 import sys
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
 
 import dialog as dg
 import newsrig as nr
@@ -68,7 +68,25 @@ def plan_shots(lines, anchor="anchor"):
     return shots
 
 
-def world_background():
+def studio_backdrop(path, dim=0.8, blur=1.5, top=0.0):
+    """A studio picture (e.g. a skyline window) as the set wall: fills the world width, shifted up by
+    `top` (share of the spare height), softened and dimmed so the hosts and screens stay in front."""
+    img = Image.open(path).convert("RGB")
+    s = max(WORLD_W / img.width, H / img.height)
+    img = img.resize((round(img.width * s), round(img.height * s)), Image.LANCZOS)
+    x0 = (img.width - WORLD_W) // 2
+    y0 = int((img.height - H) * top)
+    img = img.crop((x0, y0, x0 + WORLD_W, y0 + H))
+    if blur:
+        img = img.filter(ImageFilter.GaussianBlur(blur))
+    return ImageEnhance.Brightness(img).enhance(dim)
+
+
+def world_background(scene=None):
+    spec = (scene or {}).get("background")
+    if spec:
+        spec = {"image": spec} if isinstance(spec, str) else spec
+        return studio_backdrop(spec["image"], spec.get("dim", 0.8), spec.get("blur", 1.5), spec.get("top", 0.0))
     bg = Image.new("RGB", (WORLD_W, H))
     d = ImageDraw.Draw(bg)
     for y in range(H):
@@ -363,7 +381,7 @@ def main():
     if cur:
         groups.append(cur)
 
-    bg = world_background()
+    bg = world_background(scene)
     desks = {"all": bands(desk_layer(puppets.values())), "anchor": bands(desk_layer([puppets[anchor_key]]))}
     over = bands(broadcast_overlay(scene))
     ticker, ticker_w = ticker_strip(scene.get("up_next", ["More stories after this"]))

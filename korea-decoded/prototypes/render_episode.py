@@ -32,6 +32,7 @@ def split_episode(ep, name):
             "characters": {k: v for k, v in ep["characters"].items()
                            if k == ep.get("anchor", "anchor") or any(l["who"] == k for l in seg["lines"])},
             "topic": [i + 1, total],
+            **({"background": ep["background"]} if ep.get("background") else {}),
             "up_next": later,
             **seg,
             "out_long": f"{name}_s{i + 1}_long.mp4",
