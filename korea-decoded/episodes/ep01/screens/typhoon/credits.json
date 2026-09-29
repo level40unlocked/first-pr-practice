@@ -1,0 +1,99 @@
+{
+ "track_map.png": {
+  "line": 4,
+  "title": "2026 West Pacific typhoon tracks",
+  "creator": "Four Eyes Report (make_track_map.py)",
+  "license": "own work; data public domain",
+  "source_page": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+  "on_screen_credit": "Data: IBTrACS (NOAA NCEI)",
+  "note": "Coastlines: Natural Earth (public domain)",
+  "retrieved": "2026-09-29"
+ },
+ "dolphin_iss_1.jpg": {
+  "line": 8,
+  "title": "Typhoon Dolphin from the ISS, Aug. 2, 2026 (iss075e0001816)",
+  "creator": "NASA",
+  "license": "NASA media, generally not copyrighted (NASA media usage guidelines)",
+  "source_page": "https://images.nasa.gov/details/iss075e0001816",
+  "on_screen_credit": "Photo: NASA",
+  "retrieved": "2026-09-29"
+ },
+ "dolphin_iss_2.jpg": {
+  "line": 8,
+  "title": "Typhoon Dolphin from the ISS, Aug. 2, 2026 (iss075e0001818)",
+  "creator": "NASA",
+  "license": "NASA media, generally not copyrighted (NASA media usage guidelines)",
+  "source_page": "https://images.nasa.gov/details/iss075e0001818",
+  "on_screen_credit": "Photo: NASA",
+  "retrieved": "2026-09-29"
+ },
+ "stormy_sea.jpg": {
+  "line": 10,
+  "title": "Stormy Sea",
+  "creator": "SYLFTCunningLinguist",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://www.flickr.com/photos/10165797@N08/2544387679",
+  "file_url": "https://live.staticflickr.com/3147/2544387679_d8a3b8b67b_b.jpg",
+  "on_screen_credit": "Photo: SYLFTCunningLinguist (BY 2.0)",
+  "note": "",
+  "retrieved": "2026-09-29"
+ },
+ "calm_ocean.jpg": {
+  "line": 10,
+  "title": "Blue ocean surface (Unsplash)",
+  "creator": "Lionello DelPiccolo liodp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+  "source_page": "https://commons.wikimedia.org/w/index.php?curid=62082228",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Blue_ocean_surface_%28Unsplash%29.jpg",
+  "on_screen_credit": "Photo: Lionello DelPiccolo liodp (CC0 1.0)",
+  "note": "",
+  "retrieved": "2026-09-29"
+ },
+ "sea_farms_south_korea.jpg": {
+  "line": 12,
+  "title": "Seaweed Farms in South Korea",
+  "creator": "NASA Goddard Photo and Video",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://www.flickr.com/photos/24662369@N07/17320902662",
+  "file_url": "https://live.staticflickr.com/8701/17320902662_f4bbde1521_b.jpg",
+  "on_screen_credit": "Photo: NASA Goddard Photo and Video (BY 2.0)",
+  "note": "NASA Earth Observatory image via NASA Goddard Flickr. Shows seaweed farms: caption as 'sea farms', not fish farms",
+  "retrieved": "2026-09-29"
+ },
+ "sea_farms_south_korea_detail.jpg": {
+  "line": 12,
+  "title": "Seaweed Farms in South Korea [detail]",
+  "creator": "NASA Goddard Photo and Video",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://www.flickr.com/photos/24662369@N07/17322757055",
+  "file_url": "https://live.staticflickr.com/7723/17322757055_f2d02172b1_b.jpg",
+  "on_screen_credit": "Photo: NASA Goddard Photo and Video (BY 2.0)",
+  "note": "",
+  "retrieved": "2026-09-29"
+ },
+ "drought.jpg": {
+  "line": 12,
+  "title": "drought",
+  "creator": "bartoszjanusz",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_page": "https://www.flickr.com/photos/68782296@N04/6254892683",
+  "file_url": "https://live.staticflickr.com/6228/6254892683_c63d3c0dd9_b.jpg",
+  "on_screen_credit": "Photo: bartoszjanusz (CC0 1.0)",
+  "note": "Generic drought photo, not Korea: don't caption it as Korea",
+  "retrieved": "2026-09-29"
+ },
+ "hinnamnor_2022_airs.jpg": {
+  "line": 14,
+  "title": "AIRS Images Typhoon Hinnamnor Ahead of Landfall, Sept. 5, 2022 (PIA25521)",
+  "creator": "NASA/JPL-Caltech",
+  "license": "NASA media, generally not copyrighted (NASA media usage guidelines)",
+  "source_page": "https://images.nasa.gov/details/PIA25521",
+  "on_screen_credit": "Image: NASA/JPL-Caltech",
+  "retrieved": "2026-09-29"
+ }
+}
