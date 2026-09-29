@@ -43,7 +43,8 @@ HOOK = "Korea's convenience stores\nare on another level"
 
 
 def shorts_promo(canvas, draw):
-    """Bottom margin of a Short (below the video, y >= 1410): banner strip, handle, subscribe."""
+    """Bottom margin of a Short (below the video, y >= 1410): banner strip and handle. No fake SUBSCRIBE
+    button: the end card and YouTube's own button do that job."""
     if os.path.exists(PROMO_STRIP):
         strip = Image.open(PROMO_STRIP).convert("RGB")
         strip = strip.resize((SW, round(strip.height * SW / strip.width)), Image.LANCZOS)
@@ -53,8 +54,6 @@ def shorts_promo(canvas, draw):
         draw.text((290, 1600), CHANNEL, font=font(48), fill=WHITE, anchor="lm")
     draw.text((SW / 2, 1805), f"{HANDLE}  |  Full episode on the channel  >", font=font(34),
               fill=(190, 200, 225), anchor="mm")
-    draw.rounded_rectangle((SW / 2 - 200, 1838, SW / 2 + 200, 1898), 30, fill=RED)
-    draw.text((SW / 2, 1868), "SUBSCRIBE", font=font(34), fill=WHITE, anchor="mm")
 
 
 def episode_tag(draw, x, y, episode, h=50):
