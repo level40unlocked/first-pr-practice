@@ -1,0 +1,21 @@
+{
+ "background": "../../assets/studio/seoul_dusk.jpg",
+ "picture": "screens/bukang/bukang_staycation.png",
+ "character": {
+  "head": "cast/a_head.png",
+  "body": "cast/a_body.png",
+  "ref": "cast/a_ref.png",
+  "label": "MASTER K",
+  "mouth": "open",
+  "gaze": [
+   0.8,
+   0.0
+  ]
+ },
+ "text": [
+  "IT WON'T",
+  "LEAVE"
+ ],
+ "character_height": 820,
+ "character_x": -70
+}
