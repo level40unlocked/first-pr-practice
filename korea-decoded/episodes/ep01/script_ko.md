@@ -54,7 +54,7 @@
 | 5 | Kangfree | That's amazing! A free summer! Why do you look worried? | 대박! 공짜 여름이네요! 근데 왜 걱정하는 얼굴이에요? | 시청자의 첫 반응을 대신 말함 |
 | 6 | K | I always look like this. But yes, I'm worried. | 저는 원래 이 얼굴입니다. 하지만 네, 걱정됩니다. | 무표정 캐릭터의 자기 개그. 영어권에서 흔히 먹히는 deadpan 셀프 디스 |
 | 7 | K 🖼️s1 크게 | For three summers now, two giant high-pressure systems, one from the Pacific and one from Tibet, have parked around Korea like bouncers outside a club. | 3년째 여름마다, 태평양과 티베트에서 온 거대한 고기압 두 개가 클럽 앞 경비원처럼 한반도를 막고 있습니다. | 어려운 기상 개념을 '클럽 경비원(bouncer)'으로 바꾼 비유. 이 꼭지의 핵심 이미지 |
-| 8 | K 🖼️s1 | In August, Typhoon Dolphin crossed the Pacific, saw the line at the door, and went to Shanghai instead. | 8월에는 태풍 돌핀이 태평양을 건너오다가, 입구 줄을 보고는 상하이로 가버렸습니다. | 경비원 비유를 이어서 태풍을 입장 못 한 손님처럼 묘사 |
+| 8 | K 🖼️s1 | In August, Typhoon Dolphin crossed the Pacific, saw the line at the door, and headed toward Shanghai instead. | 8월에는 태풍 돌핀이 태평양을 건너오다가, 입구 줄을 보고는 상하이 쪽으로 방향을 틀었습니다. | 경비원 비유를 이어서 태풍을 입장 못 한 손님처럼 묘사 |
 | 9 | Kangfree | Rejected at the door. Brutal. | 입구컷. 잔인하네요. | 짧은 리액션 펀치 |
 | 10 | K 🖼️s2 | Here's the catch. Typhoons stir up the ocean. They mix cold, oxygen-rich water from below with the warm water on top. Scientists call them the ocean's ventilation system. | 문제는 이겁니다. 태풍은 바다를 휘저어서, 아래의 차갑고 산소 많은 물을 위의 따뜻한 물과 섞어 줍니다. 과학자들은 태풍을 바다의 환기 장치라고 부릅니다. | 여기서부터 톤 전환. 정보 전달 |
 | 11 | Kangfree | So the ocean spent all summer in a stuffy room with the windows shut. | 그러니까 바다가 여름 내내 창문 닫힌 답답한 방에 있었던 거네요. | Kangfree가 비유로 정리해 주는 역할. 가벼운 톤은 여기까지 |
@@ -72,6 +72,7 @@
 
 - [ ] '올해 상륙 태풍 0개'는 9/28 기준. 업로드 시점에 태풍이 상륙했으면 꼭지 전체 재검토 (기상청)
 - [ ] 3년 평균 2.33개, 장기 평균 대비 28.6% 감소, 북태평양·티베트 고기압, 8월 태풍 돌핀이 상하이 쪽으로 (한국해양과학기술원, 코리아헤럴드 2026-09-28)
+- [ ] IBTrACS 확인: 돌핀은 날짜변경선 부근(178°E)에서 발생해 상하이 남쪽 저장성(27.9°N 119.7°E)에 상륙. 그래서 '상하이로 갔다'가 아니라 '상하이 쪽으로'. 올해 한국에 가장 가까이 온 태풍은 바비(약 376km)
 - [ ] 경남 남해안 양식 물고기 773만 마리·전복 109만 마리 폐사, 252억 원 (경남도, 코리아헤럴드). 원인이 태풍 공백만인지는 기사에서도 단정하지 않으므로 '피해를 보고 있다' 수준으로만 표현함
 - [ ] 강수량 832.8mm로 평년의 84.8%, 34개 시군 기상 가뭄 (코리아헤럴드 인용 보도)
 
