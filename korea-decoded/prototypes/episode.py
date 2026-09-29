@@ -513,13 +513,19 @@ def main():
                                       ease(fade))
             piece, xy = screen_piece(content, rect, alpha, scr.get("label", ""), scr.get("credit", ""))
             view.paste(piece, xy, piece)
-        paste_bands(view, over)
-
+        short_crop = None
         if sp is not None and s_from <= t <= s_to:
             goal_x = SHORT_X.get(ln["shot"], (W - SHORT_W) / 2)
             short_x = goal_x if cut else short_x + (goal_x - short_x) * 0.2  # pans with the screen box
             x0 = int(round(short_x))
-            crop = view.crop((x0, 0, x0 + SHORT_W, 1080)).resize((1080, 810), Image.BILINEAR)
+            short_crop = view.crop((x0, 0, x0 + SHORT_W, 1080))
+            # tags and lower third are laid out for the centered crop; keep them fixed in the Short
+            for piece, (px, py) in over:
+                short_crop.paste(piece, (px - (W - SHORT_W) // 2, py), piece)
+        paste_bands(view, over)
+
+        if short_crop is not None:
+            crop = short_crop.resize((1080, 810), Image.BILINEAR)
             sframe = short_static.copy()
             sframe.paste(crop, (0, 600))
             grp = next((g for g in groups if g[0]["s"] <= t <= g[-1]["e"] + 0.15), None)
