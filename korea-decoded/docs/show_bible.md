@@ -277,8 +277,8 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 
 ### ✅ EP.1 업로드 (2026-09-29)
 - https://youtu.be/q_aIvuGfsEc · 비공개 예약, **2026-10-01(목) 03:00 KST 자동 공개** (미 동부 9/30 오후 2시). 그물 작전(이르면 10/2) 전이라 대본 "as early as Friday"가 맞음. EP.2부터는 매주 금요일 03:00 KST
-- 제목 "A Shark Moved Into a Busan Canal. Half a Million People Came." · 카테고리 Entertainment(24) · 언어 en · 아동용 아님 · 설명 `episodes/ep01/youtube_description.txt`(챕터 0:20/2:11/3:45/5:16, 출처, 사진 저작자, AI 표기)
-- 기본 썸네일 **M** 적용됨(API, 2026-09-29 교체·확인). A/B 테스트 후보 K·L·M(REAL NEWS 도장 + 명예홍보대사 이름표)은 Studio "테스트 및 비교"에서 운영자가 등록
+- 제목 "This Shark Refused to Leave Busan. Now It's an Honorary Ambassador." (9/29 API로 변경, 원래 "A Shark Moved Into a Busan Canal. Half a Million People Came.") · 카테고리 Entertainment(24) · 언어 en · 아동용 아님 · 설명 `episodes/ep01/youtube_description.txt`(챕터 0:20/2:11/3:45/5:16, 출처, 사진 저작자, AI 표기)
+- 기본 썸네일 **M** 적용됨(API, 2026-09-29 교체·확인). A/B 테스트는 한 번에 하나만: 제목 A/B 추천(1번 + 2번 "A Shark Moved Into a Busan Canal, Refused Rescue, and Got a Government Job" + 3번 대체 "This Shark Won't Leave Busan — and the City Just Made It an Ambassador"). 썸네일 후보 K·L·M. Studio "테스트 및 비교"에서 운영자가 등록
 - 영어 자막 `episodes/ep01/ep01_en.srt`: 현재 토큰에 `youtube.force-ssl` 범위가 없어 API 업로드 불가 → Studio에서 직접 올림(토큰 재발급 때 범위 추가)
 - 공개 후: 고정 댓글, 레딧(`promo.md`), 쇼츠 4개 10/2부터 하루 1개
 
