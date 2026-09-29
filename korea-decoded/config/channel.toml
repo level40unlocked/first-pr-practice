@@ -112,6 +112,11 @@ provider = "higgsfield"
 variant = "seed_speech"     # elevenlabs | minimax | seed_speech
 voice_id = "1fb253b8-928b-4d29-a349-f242a71eaddf"
 
+[voices.juno]                # Dr. Kangfree (2026-09-29, Skye 대신: 억양이 가장 큼). 앵커보다 약 5.7 dB 작게 나와서 올려서 씀
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "a3ce02fe-4d3e-55bc-b4d4-a4801b9acdb4"
+
 [voices.miles]
 provider = "higgsfield"
 variant = "elevenlabs"
@@ -167,4 +172,4 @@ voice = "miles"
 [cast.panel]
 name = "Dr. Kangfree"
 label = "DR. KANGFREE"
-voice = "skye"
+voice = "juno"

@@ -37,9 +37,10 @@
  {
   "index": 5,
   "file": "ep01_bukang_06.mp3",
-  "job": "165bc440-44d6-4271-9333-ee772a6755ef",
-  "seconds": 4.0,
-  "tts_text": "It declined? Core, a shark cannot decline things."
+  "job": "86898880-117a-4cf9-8dd0-6f1e022d499e",
+  "seconds": 4.48,
+  "tts_text": "It declined?! Core, a shark cannot decline things.",
+  "voice": "juno"
  },
  {
   "index": 6,
@@ -51,9 +52,10 @@
  {
   "index": 7,
   "file": "ep01_bukang_08.mp3",
-  "job": "52d2fa3e-5b77-4207-888c-109bb49b162c",
-  "seconds": 2.04,
-  "tts_text": "What kind of shark is it, anyway?"
+  "job": "d7823cd3-d739-49d3-b2a0-bb570fe041ce",
+  "seconds": 1.92,
+  "tts_text": "What kind of shark is it, anyway?",
+  "voice": "juno"
  },
  {
   "index": 8,
@@ -72,9 +74,10 @@
  {
   "index": 10,
   "file": "ep01_bukang_11.mp3",
-  "job": "e1048edd-1075-4ae8-ab64-5cac7dd8288e",
-  "seconds": 4.44,
-  "tts_text": "Wait. Wait. It has a nickname? Does it have a fandom?"
+  "job": "8438301e-da4a-49c6-b4ea-124e68572e86",
+  "seconds": 4.08,
+  "tts_text": "Wait. Wait! It has a nickname? Does it have a fandom?!",
+  "voice": "juno"
  },
  {
   "index": 11,
@@ -93,9 +96,10 @@
  {
   "index": 13,
   "file": "ep01_bukang_14.mp3",
-  "job": "7a4ac868-d909-4369-88f8-3ecd3b048349",
-  "seconds": 5.06,
-  "tts_text": "Half a million people in ten days? That's not a shark. That's a stadium tour."
+  "job": "542ca5ff-8aee-4eec-9240-1a87b9c25007",
+  "seconds": 5.52,
+  "tts_text": "Half a million people in ten days? That's not a shark. That's a stadium tour!",
+  "voice": "juno"
  },
  {
   "index": 14,
@@ -107,9 +111,10 @@
  {
   "index": 15,
   "file": "ep01_bukang_16.mp3",
-  "job": "a2030a9d-b26e-4e03-9925-267495d10e56",
-  "seconds": 2.04,
-  "tts_text": "So it's the farewell tour."
+  "job": "406b1f4f-9c73-4a99-8680-616323afd765",
+  "seconds": 1.6,
+  "tts_text": "So it's the farewell tour.",
+  "voice": "juno"
  },
  {
   "index": 16,
@@ -121,9 +126,10 @@
  {
   "index": 17,
   "file": "ep01_typhoon_01.mp3",
-  "job": "ea766246-a6a6-432b-9a0a-b5243e9f104a",
-  "seconds": 4.82,
-  "tts_text": "Okay. A shark that won't leave. What's next, weather that won't arrive?"
+  "job": "42dc0c70-9b89-480d-814f-dfa7dce6ecf0",
+  "seconds": 5.12,
+  "tts_text": "Okay. A shark that won't leave. What's next, weather that won't arrive?",
+  "voice": "juno"
  },
  {
   "index": 18,
@@ -149,9 +155,10 @@
  {
   "index": 21,
   "file": "ep01_typhoon_05.mp3",
-  "job": "1d94547c-972a-4cb8-9dc9-9d0684c640e5",
-  "seconds": 3.64,
-  "tts_text": "That's amazing! A free summer! Why do you look worried?"
+  "job": "fbc81348-fe72-4d05-ae17-c5cf3945cd7d",
+  "seconds": 4.08,
+  "tts_text": "That's amazing! A free summer! Why do you look worried?",
+  "voice": "juno"
  },
  {
   "index": 22,
@@ -177,9 +184,10 @@
  {
   "index": 25,
   "file": "ep01_typhoon_09.mp3",
-  "job": "59f60e63-24a6-4a85-bf9f-a352b35ddc48",
-  "seconds": 2.83,
-  "tts_text": "Rejected at the door. Brutal."
+  "job": "7304388e-a0fc-4aa3-a587-d7b83658fdc6",
+  "seconds": 2.16,
+  "tts_text": "Rejected at the door. Brutal.",
+  "voice": "juno"
  },
  {
   "index": 26,
@@ -191,9 +199,10 @@
  {
   "index": 27,
   "file": "ep01_typhoon_11.mp3",
-  "job": "89125003-2c92-4332-9f83-25b56de15424",
-  "seconds": 4.27,
-  "tts_text": "So the ocean spent all summer in a stuffy room with the windows shut."
+  "job": "88807123-876d-4e6c-ba2a-f819f11e40c2",
+  "seconds": 3.36,
+  "tts_text": "So the ocean spent all summer in a stuffy room with the windows shut.",
+  "voice": "juno"
  },
  {
   "index": 28,
@@ -205,9 +214,10 @@
  {
   "index": 29,
   "file": "ep01_typhoon_13.mp3",
-  "job": "a4f2d51e-48cd-4d31-b52a-cb7f0995279b",
-  "seconds": 2.66,
-  "tts_text": "Okay. That's not a free summer at all."
+  "job": "8c9f82dd-0f31-404a-b841-1c9b8d6e9649",
+  "seconds": 2.32,
+  "tts_text": "Okay. That's not a free summer at all.",
+  "voice": "juno"
  },
  {
   "index": 30,
@@ -226,9 +236,10 @@
  {
   "index": 32,
   "file": "ep01_gangnam_01.mp3",
-  "job": "2207f031-82cd-4d74-98ef-e3ce8f66d944",
-  "seconds": 2.66,
-  "tts_text": "Can we please talk about something happy now?"
+  "job": "e1ef8d6f-9635-408a-b57b-3116b8eb5354",
+  "seconds": 2.48,
+  "tts_text": "Can we please talk about something happy now?",
+  "voice": "juno"
  },
  {
   "index": 33,
@@ -240,9 +251,10 @@
  {
   "index": 34,
   "file": "ep01_gangnam_03.mp3",
-  "job": "335247cb-da12-4d8c-a93d-2decc17eb714",
-  "seconds": 1.22,
-  "tts_text": "Perfect."
+  "job": "88a3f9d2-c9f9-446a-ba76-664357a6995a",
+  "seconds": 0.64,
+  "tts_text": "Perfect.",
+  "voice": "juno"
  },
  {
   "index": 35,
@@ -262,9 +274,10 @@
  {
   "index": 37,
   "file": "ep01_gangnam_06.mp3",
-  "job": "36a819d8-e88a-43a5-b5ef-59bd91939d81",
-  "seconds": 4.84,
-  "tts_text": "Wait. Is this about the horse dance? Please tell me this is about the horse dance."
+  "job": "b659bc63-10c7-47b0-a137-137304bebf35",
+  "seconds": 4.64,
+  "tts_text": "Wait. Is this about the horse dance? Please tell me this is about the horse dance.",
+  "voice": "juno"
  },
  {
   "index": 38,
@@ -283,9 +296,10 @@
  {
   "index": 40,
   "file": "ep01_gangnam_09.mp3",
-  "job": "0a93945d-f26f-4f92-b1ea-b14847868df7",
-  "seconds": 4.63,
-  "tts_text": "Sigh. In Gangnam. That is the biggest home game in music history!"
+  "job": "9721f3fa-f272-4630-9e6a-95bd8cded0b6",
+  "seconds": 5.6,
+  "tts_text": "Sigh. In Gangnam. That is the biggest home game in music history!",
+  "voice": "juno"
  },
  {
   "index": 41,
@@ -297,9 +311,10 @@
  {
   "index": 42,
   "file": "ep01_gangnam_11.mp3",
-  "job": "09dcbe10-240a-4c10-ad59-145dc700686f",
-  "seconds": 2.66,
-  "tts_text": "Free?! I would have fought someone for those."
+  "job": "f7f184d2-e8ed-4340-917c-d944e29f88c8",
+  "seconds": 2.72,
+  "tts_text": "Free?! I would have fought someone for those.",
+  "voice": "juno"
  },
  {
   "index": 43,
@@ -319,9 +334,10 @@
  {
   "index": 45,
   "file": "ep01_gangnam_14.mp3",
-  "job": "7954bc47-82ed-482f-b820-83b419230e97",
-  "seconds": 2.25,
-  "tts_text": "Admit it. You're going."
+  "job": "3eb52a85-daf6-4603-8d87-27d09989a78a",
+  "seconds": 2.0,
+  "tts_text": "Admit it. You're going.",
+  "voice": "juno"
  },
  {
   "index": 46,
@@ -354,9 +370,10 @@
  {
   "index": 50,
   "file": "ep01_samsung_03.mp3",
-  "job": "429d1155-63a7-4896-a65d-7b7aaf951f5d",
-  "seconds": 2.85,
-  "tts_text": "Like Netflix? For an air conditioner?"
+  "job": "c798b9eb-d77a-451c-b526-7c02a68a2dfa",
+  "seconds": 2.64,
+  "tts_text": "Like Netflix? For an air conditioner?",
+  "voice": "juno"
  },
  {
   "index": 51,
@@ -375,9 +392,10 @@
  {
   "index": 53,
   "file": "ep01_samsung_06.mp3",
-  "job": "aca07dd5-982e-4533-aaee-5de1f41cea62",
-  "seconds": 4.65,
-  "tts_text": "So I don't own the fridge. The fridge and I are... in a relationship."
+  "job": "6ae096d1-4a6b-403e-980c-e571d8b468ba",
+  "seconds": 5.2,
+  "tts_text": "So I don't own the fridge. The fridge and I are... in a relationship.",
+  "voice": "juno"
  },
  {
   "index": 54,
@@ -396,9 +414,10 @@
  {
   "index": 56,
   "file": "ep01_samsung_09.mp3",
-  "job": "4b282166-ec6d-4789-869f-b46e940e881b",
-  "seconds": 3.48,
-  "tts_text": "Five point five? Who has half a subscription?"
+  "job": "9e369011-5587-444c-ae9a-498743ba1b61",
+  "seconds": 3.36,
+  "tts_text": "Five point five?! Who has half a subscription?",
+  "voice": "juno"
  },
  {
   "index": 57,
@@ -417,9 +436,10 @@
  {
   "index": 59,
   "file": "ep01_samsung_12.mp3",
-  "job": "f365b158-0a70-4ebe-bc80-2c1a57196c82",
-  "seconds": 4.44,
-  "tts_text": "Night cleaning visits? That's not a subscription. That's a love language."
+  "job": "1ebf8151-83eb-486b-8098-0042fe954623",
+  "seconds": 4.56,
+  "tts_text": "Night cleaning visits? That's not a subscription. That's a love language.",
+  "voice": "juno"
  },
  {
   "index": 60,
@@ -446,9 +466,10 @@
  {
   "index": 63,
   "file": "ep01_samsung_16.mp3",
-  "job": "957d3aa7-ff66-496a-870c-ed30e32d22c2",
-  "seconds": 2.04,
-  "tts_text": "So what are you doing this weekend?"
+  "job": "1b1d7f78-6224-4c38-8ff1-7b7fb441c7f6",
+  "seconds": 1.36,
+  "tts_text": "So what are you doing this weekend?",
+  "voice": "juno"
  },
  {
   "index": 64,

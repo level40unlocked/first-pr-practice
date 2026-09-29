@@ -106,7 +106,7 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 
 ### 아나운서 + 패널 대화 (`prototypes/dialog.py`)
 - 패널: C(지영 박사). 원본: 머리 `c67fcd43-9c73-473c-b29f-4be8a1cd81e5`, 몸통 `ec8bd826-58a3-4d75-bff3-18cce3c5a521`, 참고 `2a93c3aa-974e-40fb-b63a-26662d2f9796`
-- 음성: 아나운서 Miles(ElevenLabs), 지영 박사 Skye(Seed Speech)
+- 음성: 아나운서 Miles(ElevenLabs), 강프리 박사 Juno(ElevenLabs, Skye에서 교체)
 - 한 책상에 두 명. 말하는 사람 쪽으로 카메라가 당겨지고, 듣는 사람은 말하는 사람을 보며 끄덕임. 방송 그래픽은 고정
 - 샘플: [롱폼](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/68a5d7d8-53e6-4b3a-81ce-838923ebbed9.mp4), [쇼츠](https://d2ol7oe51mr4n9.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/b93ed0b0-1212-4586-8a97-5892d5dcfda8.mp4)
 
@@ -199,7 +199,7 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 ### 확정된 것
 - 채널: **Four Eyes Report** (`@FourEyesReport`), 태그라인 "Through our lenses.", 브랜드에는 Korea를 넣지 않음. 대외 문구에 "nerd", "LIVE", "BREAKING" 금지
 - 방향: 실제 한국 뉴스를 모아 외국인이 흥미를 갖도록 각색하고 **채널 운영자의 관점(한 줄 코멘트)**을 더한 병맛 애니메이션 뉴스쇼. 롱폼(5꼭지, TOPIC n/5)이 원본이고 꼭지별로 쇼츠를 잘라냄
-- 앵커 A6 (**Master K**, 애칭 "Core", `docs/characters.md` 참고, 목소리 Miles/ElevenLabs `e18664a7-ee4f-5273-acf8-533eb24cd366`), 패널 **Dr. Kangfree** (이름표 DR. KANGFREE, 목소리 Skye/Seed Speech `1fb253b8-928b-4d29-a349-f242a71eaddf`, head_ratio 0.74, shoulders 500)
+- 앵커 A6 (**Master K**, 애칭 "Core", `docs/characters.md` 참고, 목소리 Miles/ElevenLabs `e18664a7-ee4f-5273-acf8-533eb24cd366`), 패널 **Dr. Kangfree** (이름표 DR. KANGFREE, 목소리 Juno/ElevenLabs `a3ce02fe-4d3e-55bc-b4d4-a4801b9acdb4` (2026-09-29 Skye에서 교체), head_ratio 0.74, shoulders 500)
 - 글꼴: Poppins Bold (`assets/fonts/Poppins-Bold.ttf`, OFL). 쇼츠 배경은 브랜드 남색 (4, 39, 87)
 - 쇼츠: 위 여백은 훅 제목만, 가운데 영상(롱폼 중앙 1440×1080을 1080×810으로), 자막은 영상 안 아래쪽(y=1235), 아래 여백은 배너 띠(`prototypes/fer_promo_strip.png`) + 핸들
 - 롱폼: 왼쪽 위 EP.n + 카테고리, 오른쪽 위 로고(쇼츠 영역 밖), TOPIC n/N 자막바, 맨 아래 UP NEXT 티커(쇼츠 영역 밖), 설명 화면 아래 출처 표기
@@ -264,7 +264,7 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 ### EP.1 제작 흐름 (2026-09-29, 이 순서대로 하면 다시 만들 수 있음)
 1. 대본: `episodes/ep01/build_script.py`가 대사·번역·화면 계획(SCREEN_DEFS, LINE_PLAN)에서 `script.json`과 `script_ko.md`를 만든다. 정의만 되고 안 쓰인 화면, credits.json에 없는 파일은 에러
 2. 화면: `episodes/ep01/screens/<꼭지>/`에 사진·일러스트, 파일마다 `credits.json`(라이선스, 화면 출처 표기). 숫자 카드는 렌더러가 그리고 숫자가 올라감. 지도는 `make_track_map.py`, `make_route_map.py`
-3. 음성: Higgsfield text2speech_v2 (앵커 Miles/ElevenLabs, 패널 Skye/Seed Speech). 발음 규칙은 `config/channel.toml` [pronunciation] (Master K, K's Take, It's K, Bukang-i, Psy→Sigh, Chuseok). job ID는 `audio/jobs.json`
+3. 음성: Higgsfield text2speech_v2 (앵커 Miles/ElevenLabs, 패널 Juno/ElevenLabs, Skye에서 교체). 발음 규칙은 `config/channel.toml` [pronunciation] (Master K, K's Take, It's K, Bukang-i, Psy→Sigh, Chuseok). job ID는 `audio/jobs.json`
 4. 음성 검수: Higgsfield 샌드박스의 faster-whisper(small.en)로 65줄 전부 받아쓰기 → 대본과 비교. EP.1에서 3줄 다시 생성("Gangnam"이 "Gundam"으로 들림, K's Take 뭉개짐, Nebuta). 받아쓴 단어 시간은 `audio/asr_words.json` → 쇼츠 자막 타이밍
 5. 렌더: `cd episodes/ep01 && ./cast/fetch.sh && python3 ../../prototypes/render_episode.py script.json --jobs 4` (이 컨테이너에서 가능: `pip install imageio-ffmpeg` 후 ffmpeg 링크)
 - 네트워크: 한국 정부 사이트와 위키미디어 대량 다운로드는 이 컨테이너 IP에서 막힘 → Higgsfield 샌드박스(미국)를 거쳐 받음
@@ -277,3 +277,6 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 5. 썸네일, 제목·설명 자동 생성, 유튜브 업로드(비공개 → 확인 후 공개), Google API 감사 신청
 6. 새 저장소 `level40unlocked/four-eyes-report`로 이전 (운영자가 GitHub에서 빈 비공개 저장소를 만든 뒤)
 7. EP.2 대본은 8분 이상으로 (5꼭지 또는 4꼭지 + 고정 코너)
+8. **패널 여러 명 연출 테스트** (운영자 요청 2026-09-29):
+   - 패널 2~3명이 한꺼번에 나오는 회차를 고려해 데스크(테이블) 폭과 자리 배치 다시 잡기. 지금 데스크는 앵커 + 패널 1명 기준
+   - 마스터 K와 패널을 나란히 잡는 **분할 화면**(좌우 2분할, 원격 인터뷰처럼) 샷 추가 후 테스트 렌더

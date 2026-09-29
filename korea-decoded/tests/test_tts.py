@@ -72,7 +72,7 @@ def test_for_speech_fixes_names_the_voice_would_misread():
 def test_each_cast_member_has_a_fixed_voice():
     config = load_config()
     assert config.voice_for_character("anchor") == "miles"
-    assert config.voice_for_character("panel") == "skye"
+    assert config.voice_for_character("panel") == "juno"
     assert config.cast["anchor"]["label"] == "MASTER K"
     with pytest.raises(KeyError):
         config.voice_for_character("nobody")

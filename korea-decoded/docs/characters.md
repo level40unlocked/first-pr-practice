@@ -33,7 +33,7 @@
 | 말버릇 | "Wait. WAIT." / "That is SO Korean. I love it." / "I have a chart for this!" |
 | 반복 개그 | ① 어디선가 차트를 꺼냄 ② 머리에 꽂은 연필을 찾다가 못 찾음 ③ 흥분하면 바로 "I'm booking a flight to Seoul!" |
 | 역할 | 리액션, 사람 이야기와 맥락 보충, 외국인 시청자 입장에서 질문 |
-| 목소리 | ✅ **Skye** (Seed Speech, `1fb253b8-928b-4d29-a349-f242a71eaddf`). 목표 느낌: 30대 여성. 밝고 빠르고 표정이 풍부한 톤, 잘 웃음, 흥분하면 목소리가 커짐. 자연스러운 북미 영어 |
+| 목소리 | ✅ **Juno** (ElevenLabs, `a3ce02fe-4d3e-55bc-b4d4-a4801b9acdb4`, 2026-09-29 교체). 목표 느낌: 30대 여성. 밝고 빠르고 표정이 풍부한 톤, 잘 웃음, 흥분하면 목소리가 커짐. 자연스러운 북미 영어. 처음 쓴 Skye(Seed Speech)는 억양이 너무 평평해서(음높이 변화 3.0반음, Juno 4.7) 운영자 피드백으로 교체. 앵커보다 약 5.7 dB 작게 나오므로 음량을 올려서 쓴다 |
 
 ## 데스크 전문가: Whistle Joe (휘슬 조) · KOREA VS WORLD + 스포츠 ✅ 이름 확정
 
@@ -87,5 +87,5 @@
 - ~~패널 이름~~ → Dr. Kangfree 확정, 해외 거주(교포) 설정 유지
 - 기존 녹음 대사 "Doctor Jiyoung, please stay calm."은 다음 녹음 때 "Dr. Kangfree, please stay calm."으로 교체
 - ~~클로징 멘트~~ → 확정
-- ~~목소리~~ → Master K = Miles, Dr. Kangfree = Skye 확정 (`config/channel.toml`의 `[cast.*]`). 캐릭터 느낌은 대사와 연출로 살리고, 채널이 자리 잡으면 전용 목소리 검토
+- ~~목소리~~ → Master K = Miles, Dr. Kangfree = Juno 확정 (Skye에서 교체) (`config/channel.toml`의 `[cast.*]`). 캐릭터 느낌은 대사와 연출로 살리고, 채널이 자리 잡으면 전용 목소리 검토
 - 전문가 8명의 아이덴티티 (확정된 캐릭터부터)
