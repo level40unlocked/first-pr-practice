@@ -248,6 +248,7 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - 설명 원문: "Korea's stories, decoded for the rest of the world. / Four Eyes Report is an animated news show where a very serious anchor and a panel of experts break down what's happening in Korea — from convenience stores that cook your ramen to the numbers behind K-pop — so you get the context without the homework. / Through our lenses." (업로드 주기가 정해지면 "New episodes every week" 추가)
 - 운영자가 직접 할 일: **전화번호 인증** (2026-09-29 API 조회 `longUploadsStatus: eligible` = 미인증. 맞춤 썸네일·15분 초과 업로드에 필요. 오래 쓸 본인 명의 번호로, 회사 번호는 피함), 채널 이름 `FourEyesReport` → `Four Eyes Report` (API로 못 바꿈, Studio → 맞춤설정 → 기본 정보)
 - 아직: 브랜딩 워터마크(`fer_logo_mark.png`), 영어 자막 업로드(토큰에 `youtube.force-ssl` 범위 필요. 현재 토큰은 403. 재발급 때 Playground 범위에 추가)
+- 마케팅 운영: `docs/marketing.md` (매주 일정·규칙·3개월 우선순위). 에피소드마다 `promo.md`(레딧·고정 댓글·틱톡/릴스 캡션 초안)를 Claude가 만듦
 - 운영 원칙: 첫 영상들은 한국 지인·커뮤니티보다 영어권 커뮤니티에 먼저 공유. 공개 일정(운영자 확정 2026-09-29): **롱폼 매주 금요일 KST 새벽 3~4시 예약 공개** (미 동부 오후 2~3시, 서부 오전 11시, 영국 저녁 7~8시 = 미국 저녁 피크 2~3시간 전). 서머타임 끝난 뒤(영국 10/25, 미국 11/1)엔 KST 4~5시. 쇼츠는 롱폼 다음 날부터 하루 1개. 롱폼 주 1회를 8~10편 유지한 뒤 분석 보고 주 2회 검토. 매 편에 날짜와 무관한 꼭지 1개를 넣어 여유분 확보
 
 ### EP.1 대본 초안 (2026-09-29, 정식 첫 에피소드)
