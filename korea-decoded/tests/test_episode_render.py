@@ -67,3 +67,9 @@ def test_caption_timing_is_spread_over_each_line():
     words = episode.estimate_words(lines)
     assert [w["w"] for w in words] == ["Hello,", "world.", "Bye"]
     assert words[0]["s"] == 1.0 and abs(words[1]["e"] - 2.0) < 1e-9 and words[2]["s"] == 3.0
+
+
+def test_recognized_word_timings_win_over_the_estimate():
+    lines = [{"text": "Hello, world.", "start": 2.0, "end": 3.0, "words": [["Hello,", 0.1, 0.4], ["world.", 0.5, 0.9]]}]
+    words = episode.estimate_words(lines)
+    assert [(w["w"], w["s"], w["e"]) for w in words] == [("Hello,", 2.1, 2.4), ("world.", 2.5, 2.9)]

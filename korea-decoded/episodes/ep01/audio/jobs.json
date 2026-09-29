@@ -1,0 +1,392 @@
+[
+ {
+  "index": 0,
+  "file": "ep01_bukang_01.mp3",
+  "job": "adbe73d7-e9d0-4792-91b7-d3d938244de8",
+  "seconds": 10.4
+ },
+ {
+  "index": 1,
+  "file": "ep01_bukang_02.mp3",
+  "job": "95433f98-736c-473c-8268-660c63f44a23",
+  "seconds": 9.6
+ },
+ {
+  "index": 2,
+  "file": "ep01_bukang_03.mp3",
+  "job": "0e4eba1a-8c64-4e61-b192-359a0c7e43a1",
+  "seconds": 5.04
+ },
+ {
+  "index": 3,
+  "file": "ep01_bukang_04.mp3",
+  "job": "84cce4b8-604d-41d7-b0a8-8234d4bf7f08",
+  "seconds": 9.36
+ },
+ {
+  "index": 4,
+  "file": "ep01_bukang_05.mp3",
+  "job": "73ab8285-65e5-4859-8482-f524b3a67102",
+  "seconds": 4.24
+ },
+ {
+  "index": 5,
+  "file": "ep01_bukang_06.mp3",
+  "job": "165bc440-44d6-4271-9333-ee772a6755ef",
+  "seconds": 4.0
+ },
+ {
+  "index": 6,
+  "file": "ep01_bukang_07.mp3",
+  "job": "4126b1f8-665d-4f83-9080-09116d29c386",
+  "seconds": 4.88
+ },
+ {
+  "index": 7,
+  "file": "ep01_bukang_08.mp3",
+  "job": "52d2fa3e-5b77-4207-888c-109bb49b162c",
+  "seconds": 2.04
+ },
+ {
+  "index": 8,
+  "file": "ep01_bukang_09.mp3",
+  "job": "dbf83677-036b-4881-a151-d891af3d9691",
+  "seconds": 5.52
+ },
+ {
+  "index": 9,
+  "file": "ep01_bukang_10.mp3",
+  "job": "23c7df61-8495-415a-9e4b-c2f400bfd626",
+  "seconds": 9.76
+ },
+ {
+  "index": 10,
+  "file": "ep01_bukang_11.mp3",
+  "job": "e1048edd-1075-4ae8-ab64-5cac7dd8288e",
+  "seconds": 4.44
+ },
+ {
+  "index": 11,
+  "file": "ep01_bukang_12.mp3",
+  "job": "7c514cdb-f45c-4e4e-a4be-b15bca1f9d2c",
+  "seconds": 11.2
+ },
+ {
+  "index": 12,
+  "file": "ep01_bukang_13.mp3",
+  "job": "c8c050fa-6e4a-4ced-a9a4-60c56e2b666b",
+  "seconds": 8.32
+ },
+ {
+  "index": 13,
+  "file": "ep01_bukang_14.mp3",
+  "job": "7a4ac868-d909-4369-88f8-3ecd3b048349",
+  "seconds": 5.06
+ },
+ {
+  "index": 14,
+  "file": "ep01_bukang_15.mp3",
+  "job": "6e39f47e-7c13-46a5-a9df-b1a729c117ef",
+  "seconds": 10.4
+ },
+ {
+  "index": 15,
+  "file": "ep01_bukang_16.mp3",
+  "job": "a2030a9d-b26e-4e03-9925-267495d10e56",
+  "seconds": 2.04
+ },
+ {
+  "index": 16,
+  "file": "ep01_bukang_17.mp3",
+  "job": "1d2376c9-b7cd-4cc4-815d-ab0144e908c1",
+  "seconds": 10.72
+ },
+ {
+  "index": 17,
+  "file": "ep01_typhoon_01.mp3",
+  "job": "ea766246-a6a6-432b-9a0a-b5243e9f104a",
+  "seconds": 4.82
+ },
+ {
+  "index": 18,
+  "file": "ep01_typhoon_02.mp3",
+  "job": "562e927e-55d6-4df4-8404-a881ff5aa24d",
+  "seconds": 1.28
+ },
+ {
+  "index": 19,
+  "file": "ep01_typhoon_03.mp3",
+  "job": "60d657d3-a622-4e72-88ff-688776de9228",
+  "seconds": 4.32
+ },
+ {
+  "index": 20,
+  "file": "ep01_typhoon_04.mp3",
+  "job": "0d2ba5d0-0db5-43ab-ad81-efa68c116b09",
+  "seconds": 5.28
+ },
+ {
+  "index": 21,
+  "file": "ep01_typhoon_05.mp3",
+  "job": "1d94547c-972a-4cb8-9dc9-9d0684c640e5",
+  "seconds": 3.64
+ },
+ {
+  "index": 22,
+  "file": "ep01_typhoon_06.mp3",
+  "job": "0ae752ae-986d-4961-8b09-6a9dfa0b3439",
+  "seconds": 3.2
+ },
+ {
+  "index": 23,
+  "file": "ep01_typhoon_07.mp3",
+  "job": "fd72deef-2715-4e21-83c0-685e56e31dd8",
+  "seconds": 8.96
+ },
+ {
+  "index": 24,
+  "file": "ep01_typhoon_08.mp3",
+  "job": "4caedbdc-fece-4599-b1d4-dcda2ca8239c",
+  "seconds": 7.44
+ },
+ {
+  "index": 25,
+  "file": "ep01_typhoon_09.mp3",
+  "job": "59f60e63-24a6-4a85-bf9f-a352b35ddc48",
+  "seconds": 2.83
+ },
+ {
+  "index": 26,
+  "file": "ep01_typhoon_10.mp3",
+  "job": "127bd225-8df1-4fc2-9543-3363e6f990a0",
+  "seconds": 12.96
+ },
+ {
+  "index": 27,
+  "file": "ep01_typhoon_11.mp3",
+  "job": "89125003-2c92-4332-9f83-25b56de15424",
+  "seconds": 4.27
+ },
+ {
+  "index": 28,
+  "file": "ep01_typhoon_12.mp3",
+  "job": "9253af32-cde3-4c34-98cc-3fbb849f7e06",
+  "seconds": 12.72
+ },
+ {
+  "index": 29,
+  "file": "ep01_typhoon_13.mp3",
+  "job": "a4f2d51e-48cd-4d31-b52a-cb7f0995279b",
+  "seconds": 2.66
+ },
+ {
+  "index": 30,
+  "file": "ep01_typhoon_14.mp3",
+  "job": "458d6265-7e8a-49bf-919b-7c0b5932c141",
+  "seconds": 6.48
+ },
+ {
+  "index": 31,
+  "file": "ep01_typhoon_15.mp3",
+  "job": "60b54b4a-6968-4451-a2d4-568599a104d5",
+  "seconds": 7.36
+ },
+ {
+  "index": 32,
+  "file": "ep01_gangnam_01.mp3",
+  "job": "2207f031-82cd-4d74-98ef-e3ce8f66d944",
+  "seconds": 2.66
+ },
+ {
+  "index": 33,
+  "file": "ep01_gangnam_02.mp3",
+  "job": "12ea8309-033f-4b28-8b2f-451b8ff27e49",
+  "seconds": 1.52
+ },
+ {
+  "index": 34,
+  "file": "ep01_gangnam_03.mp3",
+  "job": "335247cb-da12-4d8c-a93d-2decc17eb714",
+  "seconds": 1.22
+ },
+ {
+  "index": 35,
+  "file": "ep01_gangnam_04.mp3",
+  "job": "0d74c12a-316c-438e-9d4c-9a11a4554fcc",
+  "seconds": 5.28
+ },
+ {
+  "index": 36,
+  "file": "ep01_gangnam_05.mp3",
+  "job": "c1a72624-23d0-4265-a8e0-2bcf75dc5989",
+  "seconds": 3.04
+ },
+ {
+  "index": 37,
+  "file": "ep01_gangnam_06.mp3",
+  "job": "36a819d8-e88a-43a5-b5ef-59bd91939d81",
+  "seconds": 4.84
+ },
+ {
+  "index": 38,
+  "file": "ep01_gangnam_07.mp3",
+  "job": "ae91dba7-c0c6-4073-88dd-c757ce6bcfc0",
+  "seconds": 12.24
+ },
+ {
+  "index": 39,
+  "file": "ep01_gangnam_08.mp3",
+  "job": "4f4f43e9-73c6-43cd-b222-44d189a97788",
+  "seconds": 8.08
+ },
+ {
+  "index": 40,
+  "file": "ep01_gangnam_09.mp3",
+  "job": "0a93945d-f26f-4f92-b1ea-b14847868df7",
+  "seconds": 4.63
+ },
+ {
+  "index": 41,
+  "file": "ep01_gangnam_10.mp3",
+  "job": "5548ad1b-9746-41ae-be9f-60623bb9bdfb",
+  "seconds": 4.64
+ },
+ {
+  "index": 42,
+  "file": "ep01_gangnam_11.mp3",
+  "job": "09dcbe10-240a-4c10-ad59-145dc700686f",
+  "seconds": 2.66
+ },
+ {
+  "index": 43,
+  "file": "ep01_gangnam_12.mp3",
+  "job": "acda239a-803a-4cb5-ae4b-12253060c3a6",
+  "seconds": 7.76
+ },
+ {
+  "index": 44,
+  "file": "ep01_gangnam_13.mp3",
+  "job": "18828fbb-f2aa-4c3d-89bd-c99a4894b8e0",
+  "seconds": 11.68
+ },
+ {
+  "index": 45,
+  "file": "ep01_gangnam_14.mp3",
+  "job": "7954bc47-82ed-482f-b820-83b419230e97",
+  "seconds": 2.25
+ },
+ {
+  "index": 46,
+  "file": "ep01_gangnam_15.mp3",
+  "job": "1fa8923a-1fb7-4059-a548-7227ccae9d4e",
+  "seconds": 2.72
+ },
+ {
+  "index": 47,
+  "file": "ep01_gangnam_16.mp3",
+  "job": "e69fbad6-27d8-4478-b7f9-525be9a14b61",
+  "seconds": 10.0
+ },
+ {
+  "index": 48,
+  "file": "ep01_samsung_01.mp3",
+  "job": "027aba07-82fa-4704-85dc-093f47f650e8",
+  "seconds": 1.92
+ },
+ {
+  "index": 49,
+  "file": "ep01_samsung_02.mp3",
+  "job": "c1cdcf84-4543-4011-8063-11657778f797",
+  "seconds": 7.76
+ },
+ {
+  "index": 50,
+  "file": "ep01_samsung_03.mp3",
+  "job": "429d1155-63a7-4896-a65d-7b7aaf951f5d",
+  "seconds": 2.85
+ },
+ {
+  "index": 51,
+  "file": "ep01_samsung_04.mp3",
+  "job": "678efaa1-5bdf-415a-820d-9b718b15096c",
+  "seconds": 10.64
+ },
+ {
+  "index": 52,
+  "file": "ep01_samsung_05.mp3",
+  "job": "30dd1961-cb71-4ee4-b4f6-c6ed92540152",
+  "seconds": 9.84
+ },
+ {
+  "index": 53,
+  "file": "ep01_samsung_06.mp3",
+  "job": "aca07dd5-982e-4533-aaee-5de1f41cea62",
+  "seconds": 4.65
+ },
+ {
+  "index": 54,
+  "file": "ep01_samsung_07.mp3",
+  "job": "762192e0-6833-49c8-a4d1-920758f9d10c",
+  "seconds": 3.68
+ },
+ {
+  "index": 55,
+  "file": "ep01_samsung_08.mp3",
+  "job": "4f210f00-0fe5-45d3-a628-dab95cf0df93",
+  "seconds": 10.0
+ },
+ {
+  "index": 56,
+  "file": "ep01_samsung_09.mp3",
+  "job": "4b282166-ec6d-4789-869f-b46e940e881b",
+  "seconds": 3.48
+ },
+ {
+  "index": 57,
+  "file": "ep01_samsung_10.mp3",
+  "job": "527982ae-5bdb-4aa8-8f7a-cd422af6d47d",
+  "seconds": 5.68
+ },
+ {
+  "index": 58,
+  "file": "ep01_samsung_11.mp3",
+  "job": "7476aec2-bddd-4921-bc3c-deb880f6c70a",
+  "seconds": 12.4
+ },
+ {
+  "index": 59,
+  "file": "ep01_samsung_12.mp3",
+  "job": "f365b158-0a70-4ebe-bc80-2c1a57196c82",
+  "seconds": 4.44
+ },
+ {
+  "index": 60,
+  "file": "ep01_samsung_13.mp3",
+  "job": "faf822d8-07a1-4008-a1ad-dda2c4582737",
+  "seconds": 10.96
+ },
+ {
+  "index": 61,
+  "file": "ep01_samsung_14.mp3",
+  "job": "e74f1804-64d8-4af2-b9e4-2ee0ff6ced6e",
+  "seconds": 3.92
+ },
+ {
+  "index": 62,
+  "file": "ep01_samsung_15.mp3",
+  "job": "39c625f6-cd9b-4643-a303-89bf25c502b5",
+  "seconds": 4.16
+ },
+ {
+  "index": 63,
+  "file": "ep01_samsung_16.mp3",
+  "job": "957d3aa7-ff66-496a-870c-ed30e32d22c2",
+  "seconds": 2.04
+ },
+ {
+  "index": 64,
+  "file": "ep01_samsung_17.mp3",
+  "job": "6d9019a1-afbe-436b-9f9f-3e4c8de3d9ca",
+  "seconds": 2.48
+ }
+]

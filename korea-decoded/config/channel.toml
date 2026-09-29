@@ -152,6 +152,11 @@ aspect_ratio = "9:16"
 # 음성이 잘못 읽는 이름 교정: 대본 표기 = "음성이 읽을 표기"
 [pronunciation]
 "Master K" = "Master Kay"
+"K's Take" = "Kay's Take"
+"It's K" = "It's Kay"
+"Bukang-i" = "Boo-kahng-ee"
+"Psy" = "Sigh"
+"Chuseok" = "Choo-suk"
 
 # 출연진: 캐릭터마다 목소리 고정 (에피소드 대본의 "who"와 같은 키)
 [cast.anchor]

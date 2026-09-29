@@ -273,9 +273,13 @@ def ticker_strip(items):
 
 
 def estimate_words(lines):
-    """Caption timing from the script: each line's words spread over its audio, weighted by length."""
+    """Caption timing. A line with "words" (recognized timings, seconds from the line's start, as
+    [word, start, end]) uses them; otherwise its script words are spread over its audio by length."""
     words = []
     for ln in lines:
+        if ln.get("words"):
+            words += [{"w": w, "s": ln["start"] + s0, "e": ln["start"] + e0} for w, s0, e0 in ln["words"]]
+            continue
         toks = ln["text"].split()
         if not toks:
             continue
