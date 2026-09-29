@@ -171,6 +171,7 @@ def cmd_upload(args, conn, config) -> int:
             tags=args.tags or [],
             privacy=args.privacy,
             publish_at=datetime.fromisoformat(args.publish_at) if args.publish_at else None,
+            category_id=args.category,
         )
         if args.dry_run:
             print(_json.dumps(meta.body(), ensure_ascii=False, indent=2))
@@ -240,6 +241,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--privacy", default="private", choices=["private", "unlisted", "public"])
     p.add_argument("--publish-at", help="scheduled release, e.g. 2026-10-01T18:00+09:00 (stays private until then)")
     p.add_argument("--thumbnail", help="custom thumbnail image (the channel must be phone-verified)")
+    p.add_argument("--category", default="25", help="YouTube category id (25 News & Politics, 24 Entertainment)")
     p.add_argument("--dry-run", action="store_true", help="print the request body without uploading")
     p.set_defaults(func=cmd_upload)
 

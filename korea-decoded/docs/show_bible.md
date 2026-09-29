@@ -275,6 +275,13 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 5. 렌더: `cd episodes/ep01 && ./cast/fetch.sh && python3 ../../prototypes/render_episode.py script.json --jobs 4` (이 컨테이너에서 가능: `pip install imageio-ffmpeg` 후 ffmpeg 링크)
 - 네트워크: 한국 정부 사이트와 위키미디어 대량 다운로드는 이 컨테이너 IP에서 막힘 → Higgsfield 샌드박스(미국)를 거쳐 받음
 
+### ✅ EP.1 업로드 (2026-09-29)
+- https://youtu.be/q_aIvuGfsEc · 비공개 예약, **2026-10-01(목) 03:00 KST 자동 공개** (미 동부 9/30 오후 2시). 그물 작전(이르면 10/2) 전이라 대본 "as early as Friday"가 맞음. EP.2부터는 매주 금요일 03:00 KST
+- 제목 "A Shark Moved Into a Busan Canal. Half a Million People Came." · 카테고리 Entertainment(24) · 언어 en · 아동용 아님 · 설명 `episodes/ep01/youtube_description.txt`(챕터 0:20/2:11/3:45/5:16, 출처, 사진 저작자, AI 표기)
+- 썸네일 G 적용됨(API). J·I는 Studio "테스트 및 비교"에서 운영자가 추가
+- 영어 자막 `episodes/ep01/ep01_en.srt`: 현재 토큰에 `youtube.force-ssl` 범위가 없어 API 업로드 불가 → Studio에서 직접 올림(토큰 재발급 때 범위 추가)
+- 공개 후: 고정 댓글, 레딧(`promo.md`), 쇼츠 4개 10/2부터 하루 1개
+
 ### 다음 할 일 (순서대로)
 1. 첫 완성본 연출 피드백 반영
 2. 전문가 8명 중 확정 → 애니메이션용 원본(머리·몸통·참고) 제작
