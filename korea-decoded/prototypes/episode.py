@@ -144,6 +144,15 @@ def end_card(last, t):
     return frame
 
 
+OUT_SR = 48000  # soundtrack sample rate (YouTube's native rate)
+
+
+def load_audio_hq(path):
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-t", "60", "-ac", "1", "-ar", str(OUT_SR),
+                          "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, np.float32)
+
+
 def ease(u):
     u = min(max(u, 0.0), 1.0)
     return u * u * (3 - 2 * u)
@@ -361,9 +370,15 @@ def main():
         t += len(s) / 16000 + gap
     audio = np.concatenate(parts + [silence(0.6)])
     duration = len(audio) / 16000
+    # The 16 kHz copy above only drives timing and mouth shapes; the soundtrack keeps full quality.
+    track = np.zeros(int(duration * OUT_SR) + OUT_SR, np.float32)
+    for ln in lines:
+        s = load_audio_hq(ln["audio"])
+        i0 = int(round(ln["start"] * OUT_SR))
+        track[i0:i0 + len(s)] += s[:len(track) - i0]
     wav = scene["out_long"].rsplit(".", 1)[0] + ".wav"  # one per segment, so segments can render side by side
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", "16000", "-ac", "1", "-i", "-",
-                    wav], input=audio.tobytes(), check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(OUT_SR), "-ac", "1", "-i", "-",
+                    wav], input=track[:int(duration * OUT_SR)].tobytes(), check=True)
     n = int(duration * FPS)
 
     shots = plan_shots(lines, anchor_key)
@@ -464,7 +479,7 @@ def main():
         return subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
                                  "-r", str(FPS), "-i", "-", "-ss", f"{start:.3f}", "-i", wav, "-c:v", "libx264",
                                  "-preset", "superfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac",
-                                 "-ar", "48000", "-shortest", *af, path], stdin=subprocess.PIPE)
+                                 "-ar", str(OUT_SR), "-b:a", "192k", "-shortest", *af, path], stdin=subprocess.PIPE)
 
     lp = ff(scene["out_long"], W, H)
     sp = ff(scene["out_short"], SW, SH, s_from, s_to - s_from) if s_from is not None else None

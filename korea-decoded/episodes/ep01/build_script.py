@@ -443,6 +443,7 @@ def build():
     ep = {
         "episode": 1, "name": "ep01", "anchor": "anchor",
         "outro_ticker": "Thanks for watching. See you next episode",
+        "background": {"image": "../../assets/studio/seoul_dusk.jpg", "dim": 0.8, "blur": 1.5},
         "characters": {
             "anchor": {"head": "cast/a_head.png", "body": "cast/a_body.png", "ref": "cast/a_ref.png", "x": 1290,
                        "label": "MASTER K"},
