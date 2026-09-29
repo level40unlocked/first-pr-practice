@@ -251,7 +251,14 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - 이전의 "첫 완성본"(편의점 라면 41초)은 렌더링 테스트이고, 정식 EP.1은 이 대본
 - `episodes/ep01/script.json`(렌더링 입력) + `script_ko.md`(번역·개그 해설·사실 확인 체크리스트). 꼭지: 부캉이(travel) / 태풍 없는 여름(current_affairs, ⚠️ review) / 강남페스티벌(kpop) / 삼성 AI 구독(money_business)
 - 오프닝: "Hello, world." 고정 + 이번 회 한 줄 + 이름 소개 + 오늘의 메뉴. 꼭지 사이·클로징 뒤 잡담 4개(쇼츠 구간 밖)
-- 출연은 Master K + Dr. Kangfree만. K's Take는 운영자 확인 전 초안. 음성·설명 화면 이미지 아직 없음
+- 출연은 Master K + Dr. Kangfree만. K's Take는 운영자 확인 전 초안
+
+### EP.1 렌더 완성 (2026-09-29, 3차 렌더)
+- 롱폼 418.3초(약 7분), 65줄, 설명 화면 45개. 쇼츠 4개: 47.7 / 52.0 / 51.1 / 56.3초 (모두 60초 이하)
+- 출력은 git 제외(`*.mp4`, `preview/`). 미리보기는 `episodes/ep01/preview/`에 720p로 줄여서 만든다
+- 검수에서 고친 것: 쇼츠 구간 1칸 밀림(1부터 세는 번호 → 0부터로 변환), 쇼츠 훅 문구 넘침(글자 자동 축소), 60초 넘는 쇼츠, K's Take를 앵커 단독 샷으로, Psy 카드 크게, 긴 자막 묶음 넘침(자동 축소), 태풍 경로가 실제 도착지(저장성)와 달라 대사를 "headed toward Shanghai"로, 강남 경로를 실제 도로(OSM) 모양으로
+- 음성 크기: 두 목소리 평균 -14.7 dB로 맞음
+- 아직 운영자 결정 필요: K's Take 문구, 태풍 꼭지 민감도, 날짜 따라 바뀌는 대사(부캉이 구조 결과, 페스티벌 날짜), 가전 일러스트의 빨간 재생 버튼 모양, 쇼츠 SUBSCRIBE 그림, 유튜브 비공개 업로드 여부
 
 ### EP.1 제작 흐름 (2026-09-29, 이 순서대로 하면 다시 만들 수 있음)
 1. 대본: `episodes/ep01/build_script.py`가 대사·번역·화면 계획(SCREEN_DEFS, LINE_PLAN)에서 `script.json`과 `script_ko.md`를 만든다. 정의만 되고 안 쓰인 화면, credits.json에 없는 파일은 에러
