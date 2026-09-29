@@ -253,6 +253,14 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - 오프닝: "Hello, world." 고정 + 이번 회 한 줄 + 이름 소개 + 오늘의 메뉴. 꼭지 사이·클로징 뒤 잡담 4개(쇼츠 구간 밖)
 - 출연은 Master K + Dr. Kangfree만. K's Take는 운영자 확인 전 초안. 음성·설명 화면 이미지 아직 없음
 
+### EP.1 제작 흐름 (2026-09-29, 이 순서대로 하면 다시 만들 수 있음)
+1. 대본: `episodes/ep01/build_script.py`가 대사·번역·화면 계획(SCREEN_DEFS, LINE_PLAN)에서 `script.json`과 `script_ko.md`를 만든다. 정의만 되고 안 쓰인 화면, credits.json에 없는 파일은 에러
+2. 화면: `episodes/ep01/screens/<꼭지>/`에 사진·일러스트, 파일마다 `credits.json`(라이선스, 화면 출처 표기). 숫자 카드는 렌더러가 그리고 숫자가 올라감. 지도는 `make_track_map.py`, `make_route_map.py`
+3. 음성: Higgsfield text2speech_v2 (앵커 Miles/ElevenLabs, 패널 Skye/Seed Speech). 발음 규칙은 `config/channel.toml` [pronunciation] (Master K, K's Take, It's K, Bukang-i, Psy→Sigh, Chuseok). job ID는 `audio/jobs.json`
+4. 음성 검수: Higgsfield 샌드박스의 faster-whisper(small.en)로 65줄 전부 받아쓰기 → 대본과 비교. EP.1에서 3줄 다시 생성("Gangnam"이 "Gundam"으로 들림, K's Take 뭉개짐, Nebuta). 받아쓴 단어 시간은 `audio/asr_words.json` → 쇼츠 자막 타이밍
+5. 렌더: `cd episodes/ep01 && ./cast/fetch.sh && python3 ../../prototypes/render_episode.py script.json --jobs 4` (이 컨테이너에서 가능: `pip install imageio-ffmpeg` 후 ffmpeg 링크)
+- 네트워크: 한국 정부 사이트와 위키미디어 대량 다운로드는 이 컨테이너 IP에서 막힘 → Higgsfield 샌드박스(미국)를 거쳐 받음
+
 ### 다음 할 일 (순서대로)
 1. 첫 완성본 연출 피드백 반영
 2. 전문가 8명 중 확정 → 애니메이션용 원본(머리·몸통·참고) 제작
