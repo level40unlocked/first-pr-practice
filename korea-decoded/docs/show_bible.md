@@ -280,7 +280,10 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 - 제목 "This Shark Refused to Leave Busan. Now It's an Honorary Ambassador." (9/29 API로 변경, 원래 "A Shark Moved Into a Busan Canal. Half a Million People Came.") · 카테고리 Entertainment(24) · 언어 en · 아동용 아님 · 설명 `episodes/ep01/youtube_description.txt`(챕터 0:20/2:11/3:45/5:16, 출처, 사진 저작자, AI 표기)
 - 기본 썸네일 **M** 적용됨(API, 2026-09-29 교체·확인). A/B 테스트는 한 번에 하나만: 제목 A/B 추천(1번 + 2번 "A Shark Moved Into a Busan Canal, Refused Rescue, and Got a Government Job" + 3번 대체 "This Shark Won't Leave Busan — and the City Just Made It an Ambassador"). 썸네일 후보 K·L·M. Studio "테스트 및 비교"에서 운영자가 등록
 - 영어 자막 `episodes/ep01/ep01_en.srt`: 현재 토큰에 `youtube.force-ssl` 범위가 없어 API 업로드 불가 → Studio에서 직접 올림(토큰 재발급 때 범위 추가)
-- 공개 후: 고정 댓글, 레딧(`promo.md`), 쇼츠 4개 10/2부터 하루 1개
+- ✅ 쇼츠 4개 예약 업로드 (매일 08:00 KST = 미 동부 전날 19:00, 카테고리 Entertainment, 설명에 롱폼 링크·출처·#Shorts, `episodes/ep01/shorts_meta/`)
+  - 10/2(금) 상어 https://youtu.be/Dm0-U8f2Wbg · 10/3(토, 강남 축제 첫날) 강남 https://youtu.be/xKtdSttW_TM · 10/4(일) 태풍 https://youtu.be/U6NnZqlbLag · 10/5(월) 에어컨 구독 https://youtu.be/DuZr9hhxYbQ
+  - 운영자: Studio에서 쇼츠마다 "관련 동영상" = EP.1 롱폼 지정 (API 미지원)
+- 공개 후: 고정 댓글, 레딧(`promo.md`)
 
 ### 다음 할 일 (순서대로)
 1. 첫 완성본 연출 피드백 반영
