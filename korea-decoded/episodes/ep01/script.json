@@ -81,8 +81,9 @@
       "title": "BY THE NUMBERS",
       "stats": [
        {
-        "value": 568800,
-        "label": "visitors since Sept. 19"
+        "value": 600000,
+        "prefix": "about ",
+        "label": "visitors, Sept. 18-28"
        },
        {
         "value": 140000,
@@ -91,7 +92,7 @@
       ]
      },
      "label": "BY THE NUMBERS",
-     "credit": "Source: Busan Infrastructure Corp. via Yonhap"
+     "credit": "Source: Busan City; Busan Infrastructure Corp. via Yonhap"
     },
     "fifty": {
      "card": {
@@ -112,9 +113,26 @@
      "label": "BY THE NUMBERS",
      "credit": "Source: Busan Infrastructure Corp. via Yonhap"
     },
+    "rescue": {
+     "card": {
+      "title": "TUESDAY, SEPT. 29",
+      "stats": [
+       {
+        "value": 5,
+        "label": "boats with water cannons"
+       },
+       {
+        "value": 0,
+        "label": "sharks removed"
+       }
+      ]
+     },
+     "label": "RESCUE ATTEMPT #1",
+     "credit": "Source: Busan Coast Guard via Hankook Ilbo"
+    },
     "farewell": {
      "image": "screens/bukang/bukang_farewell.png",
-     "label": "THE PLAN: BACK TO SEA",
+     "label": "THE NEXT PLAN: BACK TO SEA",
      "credit": "AI-generated illustration"
     }
    },
@@ -456,107 +474,107 @@
      "who": "anchor",
      "audio": "audio/ep01_bukang_04.mp3",
      "screen": "canal",
-     "text": "Ten days ago, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed.",
+     "text": "On September 18th, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed.",
      "words": [
       [
-       "Ten",
+       "On",
        0.0,
-       0.34
+       0.22
       ],
       [
-       "days",
-       0.34,
-       0.64
+       "September",
+       0.22,
+       0.54
       ],
       [
-       "ago,",
-       0.64,
-       1.1
+       "18th,",
+       0.54,
+       1.32
       ],
       [
        "a",
-       1.5,
-       1.58
+       1.46,
+       1.54
       ],
       [
        "three-and-a-half-meter",
-       1.58,
-       2.66
+       1.54,
+       2.5
       ],
       [
        "shark",
-       2.66,
-       3.14
+       2.5,
+       2.96
       ],
       [
        "swam",
-       3.14,
-       3.62
+       2.96,
+       3.48
       ],
       [
        "into",
-       3.62,
-       3.92
+       3.48,
+       3.72
       ],
       [
        "a",
-       3.92,
-       4.1
+       3.72,
+       3.88
       ],
       [
        "narrow",
-       4.1,
-       4.42
+       3.88,
+       4.18
       ],
       [
        "canal",
-       4.42,
-       4.88
+       4.18,
+       4.64
       ],
       [
        "at",
-       4.88,
-       5.2
+       4.64,
+       4.96
       ],
       [
        "Busan's",
-       5.2,
-       5.9
+       4.96,
+       5.52
       ],
       [
        "North",
-       5.9,
-       6.12
+       5.52,
+       5.68
       ],
       [
        "Port.",
-       6.12,
-       6.5
+       5.68,
+       6.08
       ],
       [
        "And",
-       6.98,
-       7.18
+       6.52,
+       6.82
       ],
       [
        "then",
-       7.18,
-       7.38
+       6.82,
+       7.02
       ],
       [
        "it",
-       7.38,
-       7.56
+       7.02,
+       7.22
       ],
       [
        "just...",
-       7.56,
-       8.27
+       7.22,
+       7.52
       ],
       [
        "stayed.",
-       8.27,
-       8.98
+       7.52,
+       8.56
       ]
      ]
     },
@@ -1043,137 +1061,127 @@
      "audio": "audio/ep01_bukang_12.mp3",
      "screen": "visitors",
      "big": true,
-     "text": "Let's look at the numbers. Five hundred sixty-eight thousand, eight hundred visitors. Over the Chuseok holiday, one hundred forty thousand people came in a single day.",
+     "text": "Let's look at the numbers. Nearly six hundred thousand visitors. Over the Chuseok holiday, one hundred forty thousand people came in a single day.",
      "words": [
       [
        "Let's",
        0.0,
-       0.36
+       0.4
       ],
       [
        "look",
-       0.36,
-       0.48
+       0.4,
+       0.54
       ],
       [
        "at",
-       0.48,
-       0.64
+       0.54,
+       0.7
       ],
       [
        "the",
-       0.64,
-       0.76
+       0.7,
+       0.82
       ],
       [
        "numbers.",
-       0.76,
-       1.18
+       0.82,
+       1.2
       ],
       [
-       "Five",
-       1.18,
-       1.65
+       "Nearly",
+       2.2,
+       2.2
       ],
       [
-       "hundred",
-       1.65,
-       2.12
-      ],
-      [
-       "sixty-eight",
-       2.12,
-       2.59
-      ],
-      [
-       "thousand,",
-       2.59,
-       3.06
-      ],
-      [
-       "eight",
-       3.06,
-       3.53
+       "six",
+       2.2,
+       2.6
       ],
       [
        "hundred",
-       3.53,
-       4.0
-      ],
-      [
-       "visitors.",
-       4.0,
-       4.74
-      ],
-      [
-       "Over",
-       5.92,
-       6.14
-      ],
-      [
-       "the",
-       6.14,
-       6.34
-      ],
-      [
-       "Chuseok",
-       6.34,
-       6.82
-      ],
-      [
-       "holiday,",
-       6.82,
-       7.24
-      ],
-      [
-       "one",
-       7.24,
-       7.67
-      ],
-      [
-       "hundred",
-       7.67,
-       8.1
-      ],
-      [
-       "forty",
-       8.1,
-       8.53
+       2.6,
+       3.0
       ],
       [
        "thousand",
-       8.53,
-       8.96
+       3.0,
+       3.4
+      ],
+      [
+       "visitors.",
+       3.4,
+       3.78
+      ],
+      [
+       "Over",
+       4.6,
+       4.86
+      ],
+      [
+       "the",
+       4.86,
+       5.06
+      ],
+      [
+       "Chuseok",
+       5.06,
+       5.58
+      ],
+      [
+       "holiday,",
+       5.58,
+       6.02
+      ],
+      [
+       "one",
+       6.02,
+       6.47
+      ],
+      [
+       "hundred",
+       6.47,
+       6.93
+      ],
+      [
+       "forty",
+       6.93,
+       7.38
+      ],
+      [
+       "thousand",
+       7.38,
+       7.84
       ],
       [
        "people",
-       8.96,
-       9.32
+       7.84,
+       8.12
       ],
       [
        "came",
-       9.32,
-       9.66
+       8.12,
+       8.5
       ],
       [
        "in",
-       9.66,
-       9.82
+       8.5,
+       8.7
       ],
       [
        "a",
-       9.82,
-       10.02
+       8.7,
+       8.88
       ],
       [
        "single",
-       10.02,
-       10.3
+       8.88,
+       9.18
       ],
       [
        "day.",
-       10.3,
-       10.8
+       9.18,
+       9.66
       ]
      ]
     },
@@ -1279,370 +1287,459 @@
     {
      "who": "panel",
      "audio": "audio/ep01_bukang_14.mp3",
-     "text": "Half a million people in ten days? That's not a shark. That's a stadium tour.",
+     "text": "Six hundred thousand people in ten days? That's not a shark. That's a stadium tour.",
      "words": [
       [
-       "Half",
+       "Six",
        0.0,
-       0.22
-      ],
-      [
-       "a",
-       0.22,
        0.38
       ],
       [
-       "million",
+       "hundred",
        0.38,
-       0.54
+       0.76
+      ],
+      [
+       "thousand",
+       0.76,
+       1.14
       ],
       [
        "people",
-       0.54,
-       0.98
+       1.14,
+       1.5
       ],
       [
        "in",
-       0.98,
-       1.28
+       1.5,
+       1.86
       ],
       [
        "ten",
-       1.28,
-       1.58
+       1.86,
+       2.16
       ],
       [
        "days?",
-       1.58,
-       1.92
+       2.16,
+       2.62
       ],
       [
        "That's",
-       2.48,
-       2.88
+       3.08,
+       3.5
       ],
       [
        "not",
-       2.88,
-       3.0
+       3.5,
+       3.64
       ],
       [
        "a",
-       3.0,
-       3.18
+       3.64,
+       3.86
       ],
       [
        "shark.",
-       3.18,
-       3.36
+       3.86,
+       4.0
       ],
       [
        "That's",
-       3.72,
-       4.02
+       4.42,
+       4.74
       ],
       [
        "a",
-       4.02,
-       4.24
+       4.74,
+       4.94
       ],
       [
        "stadium",
-       4.24,
-       4.62
+       4.94,
+       5.4
       ],
       [
        "tour.",
-       4.62,
-       4.92
+       5.4,
+       5.74
       ]
      ]
     },
     {
      "who": "anchor",
      "audio": "audio/ep01_bukang_15.mp3",
-     "screen": "farewell",
-     "text": "The good news: scientists say Bukang-i is calm and healthy. Starting Tuesday morning, boats and water pumps will gently guide it back out to sea.",
+     "screen": "rescue",
+     "big": true,
+     "text": "On Tuesday, five boats with water cannons spent hours trying to guide it back to sea. Bukang-i swam behind the boats. Every single time.",
      "words": [
       [
-       "The",
+       "On",
        0.0,
-       0.22
+       0.32
       ],
       [
-       "good",
-       0.22,
-       0.44
+       "Tuesday,",
+       0.32,
+       0.74
       ],
       [
-       "news:",
-       0.44,
-       0.88
-      ],
-      [
-       "scientists",
-       1.42,
-       1.82
-      ],
-      [
-       "say",
-       1.82,
-       2.12
-      ],
-      [
-       "Bukang-i",
-       2.12,
-       2.78
-      ],
-      [
-       "is",
-       2.78,
-       3.04
-      ],
-      [
-       "calm",
-       3.04,
-       3.44
-      ],
-      [
-       "and",
-       3.44,
-       3.76
-      ],
-      [
-       "healthy.",
-       3.76,
-       4.18
-      ],
-      [
-       "Starting",
-       5.0,
-       5.34
-      ],
-      [
-       "Tuesday",
-       5.34,
-       5.74
-      ],
-      [
-       "morning,",
-       5.74,
-       6.34
+       "five",
+       1.2,
+       1.44
       ],
       [
        "boats",
-       6.86,
-       7.0
+       1.44,
+       1.8
       ],
       [
-       "and",
-       7.0,
-       7.24
+       "with",
+       1.8,
+       2.02
       ],
       [
        "water",
-       7.24,
-       7.56
+       2.02,
+       2.38
       ],
       [
-       "pumps",
-       7.56,
-       7.92
+       "cannons",
+       2.38,
+       2.7
       ],
       [
-       "will",
-       7.92,
-       8.12
+       "spent",
+       2.7,
+       3.1
       ],
       [
-       "gently",
-       8.12,
-       8.56
+       "hours",
+       3.1,
+       3.6
       ],
       [
-       "guide",
-       8.56,
-       8.92
-      ],
-      [
-       "it",
-       8.92,
-       9.08
-      ],
-      [
-       "back",
-       9.08,
-       9.34
-      ],
-      [
-       "out",
-       9.34,
-       9.58
+       "trying",
+       3.6,
+       4.0
       ],
       [
        "to",
-       9.58,
-       9.78
+       4.0,
+       4.18
+      ],
+      [
+       "guide",
+       4.18,
+       4.42
+      ],
+      [
+       "it",
+       4.42,
+       4.58
+      ],
+      [
+       "back",
+       4.58,
+       4.78
+      ],
+      [
+       "to",
+       4.78,
+       5.0
       ],
       [
        "sea.",
-       9.78,
-       10.02
+       5.0,
+       5.28
+      ],
+      [
+       "Bukang-i",
+       6.06,
+       6.58
+      ],
+      [
+       "swam",
+       6.58,
+       6.94
+      ],
+      [
+       "behind",
+       6.94,
+       7.28
+      ],
+      [
+       "the",
+       7.28,
+       7.44
+      ],
+      [
+       "boats.",
+       7.44,
+       7.84
+      ],
+      [
+       "Every",
+       7.84,
+       8.66
+      ],
+      [
+       "single",
+       8.66,
+       9.1
+      ],
+      [
+       "time.",
+       9.1,
+       9.68
       ]
      ]
     },
     {
      "who": "panel",
      "audio": "audio/ep01_bukang_16.mp3",
-     "text": "So it's the farewell tour.",
+     "text": "It declined. AGAIN.",
      "words": [
       [
-       "So",
+       "It",
        0.0,
-       0.22
+       0.24
       ],
       [
-       "it's",
-       0.22,
-       0.5
-      ],
-      [
-       "the",
-       0.5,
+       "declined.",
+       0.24,
        0.72
       ],
       [
-       "farewell",
-       0.72,
-       1.24
-      ],
-      [
-       "tour.",
-       1.24,
-       1.66
+       "AGAIN.",
+       1.38,
+       1.68
       ]
      ]
     },
     {
      "who": "anchor",
      "audio": "audio/ep01_bukang_17.mp3",
+     "screen": "farewell",
+     "text": "So Busan made it an honorary ambassador. Next plan: a custom-made net, as early as Friday.",
+     "words": [
+      [
+       "So",
+       0.0,
+       0.3
+      ],
+      [
+       "Busan",
+       0.3,
+       0.84
+      ],
+      [
+       "made",
+       0.84,
+       1.1
+      ],
+      [
+       "it",
+       1.1,
+       1.28
+      ],
+      [
+       "an",
+       1.28,
+       1.5
+      ],
+      [
+       "honorary",
+       1.5,
+       1.98
+      ],
+      [
+       "ambassador.",
+       1.98,
+       2.78
+      ],
+      [
+       "Next",
+       3.84,
+       4.08
+      ],
+      [
+       "plan:",
+       4.08,
+       4.44
+      ],
+      [
+       "a",
+       4.92,
+       4.98
+      ],
+      [
+       "custom-made",
+       4.98,
+       5.7
+      ],
+      [
+       "net,",
+       5.7,
+       6.08
+      ],
+      [
+       "as",
+       6.08,
+       6.5
+      ],
+      [
+       "early",
+       6.5,
+       6.84
+      ],
+      [
+       "as",
+       6.84,
+       7.06
+      ],
+      [
+       "Friday.",
+       7.06,
+       7.32
+      ]
+     ]
+    },
+    {
+     "who": "anchor",
+     "audio": "audio/ep01_bukang_18.mp3",
      "shot": "anchor_solo",
-     "text": "K's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Bukang-i, safe travels.",
+     "text": "K's Take: Only in Korea does a lost shark refuse a rescue, draw six hundred thousand fans, and land a government job. Bukang-i, take your time.",
      "words": [
       [
        "K's",
        0.0,
-       0.46
+       0.5
       ],
       [
        "Take:",
-       0.46,
-       0.76
+       0.5,
+       0.8
       ],
       [
        "Only",
-       1.66,
-       1.8
+       1.74,
+       1.9
       ],
       [
        "in",
-       1.8,
-       2.08
+       1.9,
+       2.16
       ],
       [
        "Korea",
-       2.08,
-       2.44
+       2.16,
+       2.56
       ],
       [
        "does",
-       2.44,
+       2.56,
        2.88
       ],
       [
        "a",
        2.88,
-       3.04
+       3.1
       ],
       [
        "lost",
-       3.04,
-       3.36
+       3.1,
+       3.4
       ],
       [
        "shark",
-       3.36,
-       3.82
+       3.4,
+       3.86
       ],
       [
-       "get",
-       3.82,
-       4.18
+       "refuse",
+       3.86,
+       4.42
       ],
       [
        "a",
-       4.18,
-       4.34
-      ],
-      [
-       "name,",
-       4.34,
+       4.42,
        4.66
       ],
       [
-       "half",
-       5.12,
-       5.34
+       "rescue,",
+       4.66,
+       5.1
       ],
       [
-       "a",
-       5.34,
-       5.5
-      ],
-      [
-       "million",
+       "draw",
        5.5,
-       5.72
+       5.84
+      ],
+      [
+       "six",
+       5.84,
+       6.19
+      ],
+      [
+       "hundred",
+       6.19,
+       6.55
+      ],
+      [
+       "thousand",
+       6.55,
+       6.9
       ],
       [
        "fans,",
-       5.72,
-       6.24
+       6.9,
+       7.4
       ],
       [
        "and",
-       6.64,
-       6.88
+       7.8,
+       8.04
+      ],
+      [
+       "land",
+       8.04,
+       8.36
       ],
       [
        "a",
-       6.88,
-       7.06
+       8.36,
+       8.66
       ],
       [
-       "proper",
-       7.06,
-       7.36
+       "government",
+       8.66,
+       8.96
       ],
       [
-       "send-off.",
-       7.36,
-       8.56
+       "job.",
+       8.96,
+       9.6
       ],
       [
        "Bukang-i,",
-       8.56,
-       9.76
+       10.8,
+       11.48
       ],
       [
-       "safe",
-       9.76,
-       10.04
+       "take",
+       11.74,
+       12.02
       ],
       [
-       "travels.",
-       10.04,
-       10.5
+       "your",
+       12.02,
+       12.28
+      ],
+      [
+       "time.",
+       12.28,
+       12.64
       ]
      ]
     }

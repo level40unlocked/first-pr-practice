@@ -23,9 +23,10 @@
  {
   "index": 3,
   "file": "ep01_bukang_04.mp3",
-  "job": "84cce4b8-604d-41d7-b0a8-8234d4bf7f08",
-  "seconds": 9.36,
-  "tts_text": "Ten days ago, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed."
+  "job": "b1ca654e-5c11-4ae2-abef-6b9cb60a391f",
+  "seconds": 8.96,
+  "tts_text": "On September 18th, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed.",
+  "voice": "miles"
  },
  {
   "index": 4,
@@ -82,9 +83,10 @@
  {
   "index": 11,
   "file": "ep01_bukang_12.mp3",
-  "job": "7c514cdb-f45c-4e4e-a4be-b15bca1f9d2c",
-  "seconds": 11.2,
-  "tts_text": "Let's look at the numbers. Five hundred sixty-eight thousand, eight hundred visitors. Over the Choo-suk holiday, one hundred forty thousand people came in a single day."
+  "job": "cc4d00b1-48ea-4cbd-b6dd-ca1c286ea06c",
+  "seconds": 10.0,
+  "tts_text": "Let's look at the numbers. Nearly six hundred thousand visitors. Over the Choo-suk holiday, one hundred forty thousand people came in a single day.",
+  "voice": "miles"
  },
  {
   "index": 12,
@@ -96,32 +98,34 @@
  {
   "index": 13,
   "file": "ep01_bukang_14.mp3",
-  "job": "b0330d44-1809-4d6b-9d9f-be959eb50727",
-  "seconds": 5.2,
-  "tts_text": "Half a million people in ten days? That's not a shark. That's a stadium tour!",
+  "job": "b6597aa5-a191-42ba-abcf-d95a1337a110",
+  "seconds": 6.0,
+  "tts_text": "Six hundred thousand people in ten days? That's not a shark. That's a stadium tour!",
   "voice": "chloe"
  },
  {
   "index": 14,
   "file": "ep01_bukang_15.mp3",
-  "job": "6e39f47e-7c13-46a5-a9df-b1a729c117ef",
-  "seconds": 10.4,
-  "tts_text": "The good news: scientists say Boo-kahng-ee is calm and healthy. Starting Tuesday morning, boats and water pumps will gently guide it back out to sea."
+  "job": "9860f00e-7f90-4f0f-a384-b26b5a203570",
+  "seconds": 9.84,
+  "tts_text": "On Tuesday, five boats with water cannons spent hours trying to guide it back to sea. Boo-kahng-ee swam behind the boats. Every single time.",
+  "voice": "miles"
  },
  {
   "index": 15,
   "file": "ep01_bukang_16.mp3",
-  "job": "fac02f17-8ce3-4f41-abea-89af1d6d51c1",
-  "seconds": 1.92,
-  "tts_text": "So it's the farewell tour.",
+  "job": "f190d1a4-b820-465c-bcca-3af2bba18203",
+  "seconds": 2.0,
+  "tts_text": "It declined... again?!",
   "voice": "chloe"
  },
  {
   "index": 16,
   "file": "ep01_bukang_17.mp3",
-  "job": "1d2376c9-b7cd-4cc4-815d-ab0144e908c1",
-  "seconds": 10.72,
-  "tts_text": "Kay's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Boo-kahng-ee, safe travels."
+  "job": "93019e3f-241f-4d20-818b-153ddb18c0e5",
+  "seconds": 7.52,
+  "tts_text": "So Busan made it an honorary ambassador. Next plan: a custom-made net, as early as Friday.",
+  "voice": "miles"
  },
  {
   "index": 17,
@@ -477,5 +481,13 @@
   "job": "6d9019a1-afbe-436b-9f9f-3e4c8de3d9ca",
   "seconds": 2.48,
   "tts_text": "Refreshing pages. Calmly."
+ },
+ {
+  "index": 65,
+  "file": "ep01_bukang_18.mp3",
+  "job": "c172edb2-2e75-47d6-9e67-9d48addf98d3",
+  "seconds": 12.8,
+  "tts_text": "Kay's Take: Only in Korea does a lost shark refuse a rescue, draw six hundred thousand fans, and land a government job. Boo-kahng-ee, take your time.",
+  "voice": "miles"
  }
 ]

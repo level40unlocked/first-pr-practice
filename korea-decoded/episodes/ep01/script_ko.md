@@ -15,7 +15,7 @@
 | 1 | K |  | Hello, world. Some news is big. Some news is weird. Tonight, most of it is both. I'm Master K, and this is the Four Eyes Report. | 헬로, 월드. 큰 뉴스가 있고, 이상한 뉴스가 있습니다. 오늘은 대부분 둘 다입니다. 마스터 K, 포 아이즈 리포트입니다. | 고정 인사 'Hello, world'(프로그래밍 첫 출력 문장, 세계 시청자에게 하는 인사) + 이번 회 한 줄 |
 | 2 | K | menu_shark → menu_typhoon → menu_psy → menu_fridge (크게) | Coming up: a shark that won't leave, a typhoon that never came, Psy, and a refrigerator you can date. Let's begin. | 오늘은 떠나지 않는 상어, 오지 않은 태풍, 싸이, 그리고 사귈 수 있는 냉장고. 시작하겠습니다. | 오늘의 메뉴. 뒤에 나올 꼭지를 미리 알려 끝까지 보게 함 |
 | 3 | K |  | Our top story: a shark. In a canal. In the middle of a city. | 오늘의 톱뉴스는… 상어입니다. 도심 한복판 수로에 있는. | 진지한 톱뉴스 톤으로 '상어'를 발표하는 것 자체가 개그. 마침표로 끊어 읽는 리듬이 핵심 |
-| 4 | K | canal | Ten days ago, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed. | 열흘 전, 3.5미터짜리 상어가 부산 북항의 좁은 수로로 들어왔습니다. 그리고… 그냥 눌러앉았습니다. | 'just... stayed' 한 박자 멈춤. 사람처럼 묘사하는 의인화가 이 꼭지 전체의 뼈대 |
+| 4 | K | canal | On September 18th, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed. | 9월 18일, 3.5미터짜리 상어가 부산 북항의 좁은 수로로 들어왔습니다. 그리고… 그냥 눌러앉았습니다. | 'just... stayed' 한 박자 멈춤. 사람처럼 묘사하는 의인화가 이 꼭지 전체의 뼈대 |
 | 5 | K | requiem | Officials tried to guide it back to the sea. The shark declined. | 당국이 바다로 돌려보내려 했지만, 상어가 거절했습니다. | 'declined(정중히 거절했다)'는 사람이나 회사에 쓰는 말. 상어에게 쓰니 웃김. 영어권에서 잘 먹히는 과장 없는 건조한 개그 |
 | 6 | Kangfree |  | It DECLINED? Core, a shark cannot decline things. | 거절했다고요? 코어, 상어는 뭘 거절할 수가 없어요. | Dr. Kangfree가 시청자 대신 태클. 'Core' 호칭 개그는 이 에피소드에서 여기 한 번만 |
 | 7 | K |  | It's K. And technically, it can. It simply did not leave. | K입니다. 그리고 엄밀히 말하면 할 수 있습니다. 그냥 안 나갔으니까요. | K의 고정 개그 두 개(이름 정정 + 'Technically')를 한 줄에. 반복 시청자에게 보상 |
@@ -23,12 +23,13 @@
 | 9 | K | dusky | Probably a dusky shark. Or a copper shark. It declined to comment. | 아마 흑상어요. 아니면 무태상어. 본인이 답변을 거절했습니다. | 5번 'The shark declined' 콜백. 종은 보도상 '추정'이라 Probably로 말함 |
 | 10 | K | staycation (크게) | So Korea did what Korea does. It gave the shark a nickname: Bukang-i. That's 'North Port', plus a cute little 'ee' on the end. | 그래서 한국은 한국다운 일을 했습니다. 상어한테 별명을 붙였죠. 부캉이. '북항'에 귀여운 '이'를 붙인 겁니다. | 한국어 애칭 접미사 '-이'를 설명하는 '한국 해설' 포인트. 외국인이 몰랐던 걸 알게 되는 만족감 |
 | 11 | Kangfree |  | Wait. WAIT. It has a nickname? Does it have a FANDOM? | 잠깐, 잠깐만요. 별명이 있다고요? 팬덤도 있어요? | Kangfree 말버릇 'Wait. WAIT.' + K-POP 팬덤 문화를 아는 시청자용 연결 |
-| 12 | K | visitors (크게) | Let's look at the numbers. Five hundred sixty-eight thousand, eight hundred visitors. Over the Chuseok holiday, one hundred forty thousand people came in a single day. | 숫자를 보시죠. 방문객 56만 8,800명. 추석 연휴에는 하루에만 14만 명이 왔습니다. | K가 이상할 만큼 정확한 숫자를 끝까지 읽는 캐릭터 개그. 팬덤 질문에 숫자로 '그렇다'고 답하는 구조 |
+| 12 | K | visitors (크게) | Let's look at the numbers. Nearly six hundred thousand visitors. Over the Chuseok holiday, one hundred forty thousand people came in a single day. | 숫자를 보시죠. 방문객 거의 60만 명. 추석 연휴에는 하루에만 14만 명이 왔습니다. | 팬덤 질문에 숫자로 '그렇다'고 답하는 구조 (9/28까지 약 60만 명) |
 | 13 | K | fifty (크게) | On a normal holiday, this park gets about two thousand. That is a fiftyfold increase. For one shark. | 이 공원은 평소 휴일에 2천 명 정도 옵니다. 50배입니다. 상어 한 마리 때문에. | 'For one shark.' 짧은 마무리 펀치 |
-| 14 | Kangfree |  | Half a million people in ten days? That's not a shark. That's a stadium tour. | 열흘에 50만 명? 그건 상어가 아니라 스타디움 투어예요. | 상어를 월드투어 도는 아이돌에 빗댐. 쇼츠 댓글 유도용 한 줄 |
-| 15 | K | farewell | The good news: scientists say Bukang-i is calm and healthy. Starting Tuesday morning, boats and water pumps will gently guide it back out to sea. | 다행히 전문가들은 부캉이가 건강하고 안정적이라고 합니다. 화요일 아침부터 배와 양수기로 조심스럽게 바다로 안내할 예정입니다. | 동물이 위험한 상황이라 여기서 개그를 멈추고 안심시키는 정보. 동물 걱정하는 시청자 배려 |
-| 16 | Kangfree |  | So it's the farewell tour. | 그럼 이제 고별 투어네요. | 앞의 '스타디움 투어'를 받는 콜백. 짧아서 웃음이 남음 |
-| 17 | K | anchor_solo | K's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Bukang-i, safe travels. | K의 한마디: 길 잃은 상어가 이름, 50만 팬, 제대로 된 배웅까지 받는 건 한국뿐입니다. 부캉이, 잘 가. | [운영자 확인] K's Take는 운영자 관점 자리. 초안이니 바꿔 주세요 |
+| 14 | Kangfree |  | Six hundred thousand people in ten days? That's not a shark. That's a stadium tour. | 열흘에 60만 명? 그건 상어가 아니라 스타디움 투어예요. | 상어를 월드투어 도는 아이돌에 빗댐. 쇼츠 댓글 유도용 한 줄 |
+| 15 | K | rescue (크게) | On Tuesday, five boats with water cannons spent hours trying to guide it back to sea. Bukang-i swam behind the boats. Every single time. | 화요일, 물대포를 단 배 다섯 척이 몇 시간 동안 부캉이를 바다로 몰았습니다. 부캉이는 배 뒤로 돌아갔습니다. 매번. | 9/29 1차 구조 실패(5척, 오전·오후 두 차례). 'Every single time.' 짧게 끊는 펀치 |
+| 16 | Kangfree |  | It declined. AGAIN. | 또 거절했대요. | 5번 'The shark declined' 콜백. 에피소드 안에서 쌓아 온 개그의 결말 |
+| 17 | K | farewell | So Busan made it an honorary ambassador. Next plan: a custom-made net, as early as Friday. | 그래서 부산시는 부캉이를 명예홍보대사로 임명했습니다. 다음 작전은 맞춤 제작 그물, 빠르면 금요일입니다. | 명예홍보대사 위촉(9/29)과 다음 시도(이르면 10/2). 업로드 시점엔 결과 전일 수 있어 'as early as'로 |
+| 18 | K | anchor_solo | K's Take: Only in Korea does a lost shark refuse a rescue, draw six hundred thousand fans, and land a government job. Bukang-i, take your time. | K의 한마디: 구조를 거부하고, 60만 팬을 모으고, 공직까지 얻는 상어는 한국에만 있습니다. 부캉이, 천천히 가. | [운영자 확인] K's Take는 운영자 관점 자리. 초안이니 바꿔 주세요 |
 
 **설명 화면**
 
@@ -42,13 +43,16 @@
 | `requiem` | screens/bukang/requiem_shark_underwater.jpg | FILE PHOTO | Photo: laszlo-photo (CC BY 2.0) |
 | `dusky` | screens/bukang/dusky_shark_illustration.jpg | DUSKY SHARK (ILLUSTRATION) | Illustration: Queensland State Archives (public domain) |
 | `staycation` | screens/bukang/bukang_staycation.png | MEET BUKANG-I | AI-generated illustration |
-| `visitors` | 숫자 카드: 568800 visitors since Sept. 19 / 140000 in a single day over Chuseok | BY THE NUMBERS | Source: Busan Infrastructure Corp. via Yonhap |
+| `visitors` | 숫자 카드: 600000 visitors, Sept. 18-28 / 140000 in a single day over Chuseok | BY THE NUMBERS | Source: Busan City; Busan Infrastructure Corp. via Yonhap |
 | `fifty` | 숫자 카드: 2000 visitors on a normal holiday / 50 this Chuseok | BY THE NUMBERS | Source: Busan Infrastructure Corp. via Yonhap |
-| `farewell` | screens/bukang/bukang_farewell.png | THE PLAN: BACK TO SEA | AI-generated illustration |
+| `rescue` | 숫자 카드: 5 boats with water cannons / 0 sharks removed | RESCUE ATTEMPT #1 | Source: Busan Coast Guard via Hankook Ilbo |
+| `farewell` | screens/bukang/bukang_farewell.png | THE NEXT PLAN: BACK TO SEA | AI-generated illustration |
 
 **업로드 전 사실 확인**
 
-- [ ] 구조 작전 결과(9/29 화요일 오전 10시 시작 예정): 업로드 전에 결과를 확인하고 11~13번 대사를 과거형이나 결과로 바꿀 것. 연합뉴스 후속 보도
+- [ ] 9/29 1차 구조 실패: 구조정·모터보트 등 5척, 오전 11시~12시 40분 + 오후 2시 30분부터 약 1시간, 오후 3시 20분께 중단. 국립수산과학원 '물 펌프 효과 없음'. 다음 시도 이르면 10/2 맞춤 그물 (파이낸셜뉴스·한국일보 2026-09-29)
+- [ ] 9/29 부산시 명예홍보대사 위촉, 인스타 설문 8,200명 중 91% 찬성. 9/18 첫 등장 후 9/28까지 관람객 약 60만 명 (한국일보 2026-09-29)
+- [ ] ⚠️ 업로드 직전: 10/2 그물 작전 결과 확인. 성공했으면 17·18번 대사 수정
 - [ ] 3.5m, 9/18 첫 발견, 9/19부터 568,800명, 추석 4일 483,000명·하루 최다 140,000명, 평소 약 2,000명(부산시설공단 발표, 연합뉴스 2026-09-28)
 - [ ] '부캉이' = 북항 + '-이' (연합뉴스)
 - [ ] 종: 무태상어(copper shark) 또는 흑상어(dusky shark)로 추정 (서울신문 등). 확정되면 대사 수정
