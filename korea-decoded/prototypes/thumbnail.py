@@ -123,7 +123,13 @@ def make(spec):
         b = badge(spec["badge"])
         shadowed(canvas, b, (px + 10, max(12, py + (pic.height - flat.height) // 2 - 22)), radius=8, offset=(4, 6))
     # character: left, big, cut by the bottom edge
-    ch = character(spec["character"])
+    if spec.get("character_image"):  # a drawn reaction pose (transparent PNG) instead of the rig
+        ch = Image.open(spec["character_image"]).convert("RGBA")
+        if ch.getchannel("A").getextrema()[0] == 255:  # no transparency: cut out the flat background
+            ch = nr.remove_bg(ch).convert("RGBA")
+        ch = ch.crop(ch.getbbox())
+    else:
+        ch = character(spec["character"])
     s = spec.get("character_height", 700) / ch.height
     ch = ch.resize((round(ch.width * s), round(ch.height * s)), Image.LANCZOS)
     shadowed(canvas, ch, (spec.get("character_x", -20), TH - ch.height + 150), radius=18, offset=(0, 0))
