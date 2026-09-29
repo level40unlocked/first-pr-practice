@@ -107,9 +107,10 @@ END_CARD = 2.5  # seconds a Short holds its "full episode on the channel" card a
 def end_card(last, t):
     """The Short's closing card over its frozen last frame; fades in over 0.35 s."""
     u = ease(min(1.0, t / 0.35))
-    frame = Image.blend(last, Image.new("RGB", last.size, nr.BRAND_NAVY), 0.82 * u)
+    frame = Image.blend(last, Image.new("RGB", last.size, nr.BRAND_NAVY), 0.6 * u)
     card = Image.new("RGBA", last.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(card)
+    d.rectangle((0, 600, SW, 1410), fill=nr.BRAND_NAVY)  # hide the frozen caption and screen behind the text
     cx = SW / 2
     d.text((cx, 760), "WANT THE FULL STORY?", font=nr.font(64), fill=nr.YELLOW, anchor="mm")
     d.text((cx, 870), "Full episode on our channel", font=nr.font(50), fill=nr.WHITE, anchor="mm")
