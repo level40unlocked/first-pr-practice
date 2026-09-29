@@ -243,10 +243,10 @@ Higgsfield 샌드박스(`sandbox_exec`, ffmpeg·faster-whisper 있음)에서 돌
 
 ### 채널 설정 (2026-09-28, API로 적용)
 - 대상: 영미권 시청자. 유튜브 추천은 운영자 국적이 아니라 영상 언어·메타데이터·초반 시청자로 정해짐
-- 적용함: 채널 설명(영어), 키워드, 채널 기본 언어 `en`, 국가 `KR`(거주 국가. 수익화·세금용이라 노출 지역과 무관, 미국으로 바꾸지 않음). 배너는 유지 확인
+- 적용함: 채널 설명(영어), 키워드, 채널 기본 언어 `en`, 국가 `KR`(거주 국가. 수익화·세금용이라 노출 지역과 무관, 미국으로 바꾸지 않음). 운영자 확인(2026-09-29): 세금상 **한국 거주자** → KR 유지 (근무는 베트남). 배너는 유지 확인
 - 업로드 코드가 영상마다 언어 `en`, 카테고리 News & Politics, 아동용 아님을 넣음 → Studio 업로드 기본 설정은 안 바꿔도 됨
 - 설명 원문: "Korea's stories, decoded for the rest of the world. / Four Eyes Report is an animated news show where a very serious anchor and a panel of experts break down what's happening in Korea — from convenience stores that cook your ramen to the numbers behind K-pop — so you get the context without the homework. / Through our lenses." (업로드 주기가 정해지면 "New episodes every week" 추가)
-- 운영자가 직접 할 일: 채널 이름 `FourEyesReport` → `Four Eyes Report` (API로 못 바꿈, Studio → 맞춤설정 → 기본 정보)
+- 운영자가 직접 할 일: **전화번호 인증** (2026-09-29 API 조회 `longUploadsStatus: eligible` = 미인증. 맞춤 썸네일·15분 초과 업로드에 필요. 오래 쓸 본인 명의 번호로, 회사 번호는 피함), 채널 이름 `FourEyesReport` → `Four Eyes Report` (API로 못 바꿈, Studio → 맞춤설정 → 기본 정보)
 - 아직: 브랜딩 워터마크(`fer_logo_mark.png`), 영어 자막 업로드(토큰에 `youtube.force-ssl` 범위 필요. 현재 토큰은 403. 재발급 때 Playground 범위에 추가)
 - 운영 원칙: 첫 영상들은 한국 지인·커뮤니티보다 영어권 커뮤니티에 먼저 공유. 공개 시간은 KST 오전 8~10시(미 동부 전날 저녁)
 
