@@ -97,3 +97,18 @@ def test_short_end_card_fades_in_over_the_last_frame():
     done = episode.end_card(last, 1.0)
     assert done.getpixel((10, 10)) != (200, 0, 0)
     assert done.getpixel((episode.SW // 2, 1000))[:3] != done.getpixel((10, 10))  # the handle badge is drawn
+
+
+def test_frown_mood_changes_the_face_and_a_line_can_override_it():
+    import numpy as np
+    from PIL import Image
+    import newsrig as nr
+    head = Image.new("RGBA", (400, 400), (240, 200, 170, 255))
+    rig = {"eyes": [(140, 200), (260, 200)], "r": 30, "sep": 120, "mouth": (200, 300), "mouth_w": 80,
+           "chin": 360, "skin": (240, 200, 170), "mood": "frown"}
+    frown = np.asarray(nr.face_layer(head, rig, (0, 0), 0, "closed"))
+    plain = np.asarray(nr.face_layer(head, rig, (0, 0), 0, "closed", mood="neutral"))
+    assert (frown != plain).any()
+    brow_row = frown[150:175, 100:180]  # above the left eye: brows only on the frown
+    assert (brow_row[..., :3].sum(axis=2) < 100).any()
+    assert not (plain[150:175, 100:180][..., :3].sum(axis=2) < 100).any()

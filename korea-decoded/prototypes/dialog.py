@@ -60,7 +60,7 @@ class Puppet:
         self.rig = {**rig, "eyes": [(x * sh, y * sh) for x, y in rig["eyes"]], "r": rig["r"] * sh,
                     "sep": rig["sep"] * sh, "mouth": (rig["mouth"][0] * sh, rig["mouth"][1] * sh),
                     "mouth_w": rig["mouth_w"] * sh, "chin": rig["chin"] * sh,
-                    "white_lens": spec.get("white_lens", False)}
+                    "white_lens": spec.get("white_lens", False), "mood": spec.get("mood")}
         self.x = spec["x"]
         self.label = spec["label"]
         self.energy = spec.get("energy", 1.0)
@@ -74,10 +74,11 @@ class Puppet:
         self.pivot = (self.x, COLLAR_Y + int(spec.get("chin_drop", 0.03) * self.head.height))
         self.info = {"ratio": round(ratio, 3), "eyes": [tuple(round(v) for v in e) for e in rig["eyes"]]}
 
-    def draw(self, frame, t, gaze, lid, env, nod, ox=0):
-        """Draws body and head onto frame; ox shifts the character (a wider studio canvas)."""
+    def draw(self, frame, t, gaze, lid, env, nod, ox=0, mood=None):
+        """Draws body and head onto frame; ox shifts the character (a wider studio canvas); mood overrides
+        the character's default expression for this frame."""
         mouth = "closed" if env < 0.15 else ("mid" if env < 0.45 else "open")
-        face = nr.face_layer(self.head, self.rig, gaze, lid, mouth)
+        face = nr.face_layer(self.head, self.rig, gaze, lid, mouth, mood)
         angle = (1.4 * math.sin(2 * math.pi * t / 3.9 + self.x) + 2.4 * self.energy * env
                  * math.sin(2 * math.pi * t * 1.2) + nod)
         angle += 2.5 * gaze[0] * -1  # lean toward where the eyes look

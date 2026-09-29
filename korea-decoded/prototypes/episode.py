@@ -533,7 +533,8 @@ def main():
                 nod = 2.5 * math.sin(since / 0.6 * math.pi) if since < 0.6 else 0.0
             elif k == anchor_key and ln["shot"] in SCREEN_SHOTS and t - ln["start"] < 0.7:
                 g = (0.8, 0.1)  # glance at the screen (to the anchor's right), then back to camera
-            p.draw(world, t, g, dg.lid_at(t, blinks[k]), envs[k][i], nod, ox=OX)
+            # a line can set expressions, e.g. "mood": {"chef": "neutral"} for the moment the food wins him over
+            p.draw(world, t, g, dg.lid_at(t, blinks[k]), envs[k][i], nod, ox=OX, mood=(ln.get("mood") or {}).get(k))
         paste_bands(world, desks["anchor" if anchor_cam else "all"])
 
         cw, ch = W / cam[2], H / cam[2]

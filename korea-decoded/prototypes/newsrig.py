@@ -271,7 +271,48 @@ def draw_white_lenses(img, rig, gaze, lid):
     return out
 
 
-def face_layer(head, rig, gaze, lid, mouth):
+def eye_boxes(img, rig):
+    """(left, top, right, bottom) of each eye: the whole lens for white-lens rigs, else the drawn eye."""
+    if rig.get("white_lens"):
+        out = []
+        for m in lens_masks(img, rig):
+            ys, xs = np.nonzero(m)
+            out.append((xs.min(), ys.min(), xs.max(), ys.max()))
+        return out
+    return [(ex - rig["r"], ey - rig["r"], ex + rig["r"], ey + rig["r"]) for ex, ey in rig["eyes"]]
+
+
+def draw_frown(img, rig):
+    """Scowl: lids slanting down toward the nose and heavy brows angled the same way."""
+    arr = np.asarray(img).copy()
+    boxes = eye_boxes(img, rig)
+    mid = sum(ex for ex, _ in rig["eyes"]) / 2
+    lines = []
+    masks = lens_masks(img, rig) if rig.get("white_lens") else [None] * len(boxes)
+    for (l, t, r, b), (ex, _), m in zip(boxes, rig["eyes"], masks):
+        h = b - t
+        outer, inner = (l, r) if ex < mid else (r, l)
+        y_out, y_in = t + 0.08 * h, t + 0.45 * h  # lid line: high at the outside, low near the nose
+        if m is not None:
+            yy, xx = np.mgrid[0:arr.shape[0], 0:arr.shape[1]]
+            line_y = y_out + (xx - outer) * (y_in - y_out) / (inner - outer)
+            arr[m & (yy < line_y)] = tuple(rig["skin"]) + (255,)
+        lines.append(((outer, y_out), (inner, y_in), (outer, t - 0.30 * h), (inner, t - 0.02 * h)))
+    out = Image.fromarray(arr)
+    d = ImageDraw.Draw(out)
+    lw = max(4, int(0.13 * rig["r"]))
+    bw = max(7, int(0.28 * rig["r"]))
+    for lid_a, lid_b, brow_a, brow_b in lines:
+        d.line((lid_a, lid_b), fill=BLACK, width=lw)
+        d.line((brow_a, brow_b), fill=BLACK, width=bw)
+        for x, y in (brow_a, brow_b):
+            d.ellipse((x - bw / 2, y - bw / 2, x + bw / 2, y + bw / 2), fill=BLACK)
+    return out
+
+
+def face_layer(head, rig, gaze, lid, mouth, mood=None):
+    """mood: None/"neutral", or "frown" (scowl; a closed mouth turns down). Defaults to rig["mood"]."""
+    mood = mood or rig.get("mood")
     img = head.copy()
     if rig.get("white_lens"):
         img = draw_white_lenses(img, rig, gaze, lid)
@@ -291,10 +332,14 @@ def face_layer(head, rig, gaze, lid, mouth):
         t = max(-1, min(1, (edge - cy) / ry))
         half = rx * math.sqrt(max(0, 1 - t * t))
         d.line((cx - half - lw, edge, cx + half + lw, edge), fill=BLACK, width=lw)
+    if mood == "frown":
+        img = draw_frown(img, rig)
     d = ImageDraw.Draw(img)
     mx, my = rig["mouth"]
     mw, lw = rig["mouth_w"], max(3, int(0.06 * rig["r"]))
-    if mouth == "closed":
+    if mouth == "closed" and mood == "frown":
+        d.arc((mx - mw * 0.4, my - mw * 0.02, mx + mw * 0.4, my + mw * 0.3), 205, 335, fill=BLACK, width=lw)
+    elif mouth == "closed":
         d.arc((mx - mw / 2, my - mw * 0.25, mx + mw / 2, my + mw * 0.12), 20, 160, fill=BLACK, width=lw)
     else:
         oh = mw * (0.26 if mouth == "mid" else 0.46)
