@@ -8,7 +8,7 @@ SEGMENTS = [
  {
   "key": "bukang", "category": "travel", "desk": "BUSAN",
   "headline": "A shark moved into a Busan canal and half a million people came to see it",
-  "hook": "A shark got stuck in a Busan canal.\nHalf a million people showed up",
+  "hook": "A shark got stuck in a Busan canal.\nIt refused to leave",
   "sensitivity": "go",
   "screens": {
    "s1": {"image": "bukang_canal.png", "label": "BUSAN NORTH PORT", "credit": "AI-generated image",
@@ -68,7 +68,7 @@ SEGMENTS = [
     "K의 한마디: 길 잃은 상어가 이름, 50만 팬, 제대로 된 배웅까지 받는 건 한국뿐입니다. 부캉이, 잘 가.",
     "[운영자 확인] K's Take는 운영자 관점 자리. 초안이니 바꿔 주세요", {}),
   ],
-  "short": {"from": 4, "to": 14},
+  "short": {"from": 4, "to": 11},
   "fact_checks": [
    "구조 작전 결과(9/29 화요일 오전 10시 시작 예정): 업로드 전에 결과를 확인하고 11~13번 대사를 과거형이나 결과로 바꿀 것. 연합뉴스 후속 보도",
    "3.5m, 9/18 첫 발견, 9/19부터 568,800명, 추석 4일 483,000명·하루 최다 140,000명, 평소 약 2,000명(부산시설공단 발표, 연합뉴스 2026-09-28)",
@@ -262,7 +262,7 @@ SEGMENTS = [
    ("anchor", "Refreshing pages. Calmly.",
     "새로고침합니다. 차분하게.", "[잡담] 3꼭지 티켓팅 개그 콜백. K가 사실 강남 콘서트에 가고 싶다는 암시", {}),
   ],
-  "short": {"from": 2, "to": 10},
+  "short": {"from": 2, "to": 9},
   "fact_checks": [
    "누적 매출 약 1조 원(연합뉴스 7억 3,400만 달러, 코리아헤럴드 7억 4,000만 달러로 환산이 조금 다름) → '약 7억 4천만 달러'. 삼성 발표 2026-09-28",
    "94.8%, 1인 평균 5.5개, 월 41,853원은 삼성이 인용한 조사 (연합뉴스). 조사 출처명 확인하면 화면 출처에 추가",
@@ -344,7 +344,7 @@ SCREEN_DEFS = {
     "samsung": {
         "aircon": pic("samsung/wall_air_conditioner.jpg", "SUBSCRIBE TO... THIS"),
         "trillion": card("BY THE NUMBERS", "Source: Samsung Electronics via Yonhap",
-                         [{"value": "1 TRILLION WON", "label": "in appliance subscription sales, almost"},
+                         [{"value": "1 TRILLION WON", "label": "nearly, in appliance subscription sales"},
                           {"value": 740, "prefix": "$", "suffix": " million", "label": "in US dollars"}]),
         "concept": pic("samsung/appliance_subscriptions.png", "HOW IT WORKS"),
         "repair": pic("samsung/appliance_repairman.jpg", "HOW IT WORKS"),
@@ -364,20 +364,21 @@ LINE_PLAN = {
     "bukang": {2: {"screen": ["menu_shark", "menu_typhoon", "menu_psy", "menu_fridge"], "big": True},
                4: {"screen": "canal"}, 5: {"screen": "requiem"}, 9: {"screen": "dusky"},
                10: {"screen": "staycation", "big": True}, 12: {"screen": "visitors", "big": True},
-               13: {"screen": "fifty", "big": True}, 15: {"screen": "farewell"}},
+               13: {"screen": "fifty", "big": True}, 15: {"screen": "farewell"},
+               17: {"shot": "anchor_solo"}},
     "typhoon": {4: {"screen": ["tracks", "zero"], "big": True, "screen_split": [0.55]},
                 7: {"screen": "bouncers", "big": True}, 8: {"screen": ["dolphin2", "dolphin1"], "big": True},
                 10: {"screen": ["stormy", "calm"]}, 11: {"screen": "stuffy"},
                 12: {"screen": ["seafarms", "fish", "drought"], "big": True, "screen_split": [0.25, 0.7]},
-                14: {"screen": "hinnamnor"}},
+                14: {"screen": "hinnamnor"}, 15: {"shot": "anchor_solo"}},
     "gangnam": {4: {"screen": ["street", "rodeo"]}, 5: {"screen": "station", "big": True},
-                7: {"screen": ["route", "band", "parade"], "big": True}, 8: {"screen": "psy"},
+                7: {"screen": ["route", "band", "parade"], "big": True}, 8: {"screen": "psy", "big": True},
                 10: {"screen": "tickets", "big": True}, 12: {"screen": "frenzy", "big": True},
-                13: {"screen": ["nebuta1", "nebuta2", "dosan"]}},
+                13: {"screen": ["nebuta1", "nebuta2", "dosan"]}, 16: {"shot": "anchor_solo"}},
     "samsung": {2: {"screen": "aircon"}, 4: {"screen": "trillion", "big": True},
                 5: {"screen": ["concept", "repair", "fridge"]}, 6: {"screen": "date"},
                 8: {"screen": "subs", "big": True}, 11: {"screen": ["hotel", "hospital", "moving"]},
-                15: {"shot": "wide"}},
+                13: {"shot": "anchor_solo"}, 15: {"shot": "wide"}},
 }
 
 

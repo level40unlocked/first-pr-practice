@@ -357,7 +357,10 @@ def main():
 
     short_static = Image.new("RGB", (SW, SH), nr.BRAND_NAVY)
     sd = ImageDraw.Draw(short_static)
-    sd.multiline_text((SW / 2, 300), scene["hook"], font=nr.font(72), fill=nr.WHITE, anchor="mm",
+    hook_size = 72  # shrink until the widest hook line fits with a margin
+    while hook_size > 36 and max(sd.textlength(t, font=nr.font(hook_size)) for t in scene["hook"].split("\n")) > SW - 100:
+        hook_size -= 2
+    sd.multiline_text((SW / 2, 300), scene["hook"], font=nr.font(hook_size), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
     nr.shorts_promo(short_static, sd)
 

@@ -8,7 +8,7 @@
 ## 꼭지 1. A shark moved into a Busan canal and half a million people came to see it
 
 - 카테고리 `travel` · 민감도 **go**
-- 쇼츠 훅: A shark got stuck in a Busan canal. / Half a million people showed up · 쇼츠 구간: 4~14번 줄
+- 쇼츠 훅: A shark got stuck in a Busan canal. / It refused to leave · 쇼츠 구간: 4~11번 줄
 
 | # | 누가 | 화면 | 대사 (EN) | 번역 | 왜 웃긴가 / 메모 |
 |---|---|---|---|---|---|
@@ -28,7 +28,7 @@
 | 14 | Kangfree |  | Half a million people in ten days? That's not a shark. That's a stadium tour. | 열흘에 50만 명? 그건 상어가 아니라 스타디움 투어예요. | 상어를 월드투어 도는 아이돌에 빗댐. 쇼츠 댓글 유도용 한 줄 |
 | 15 | K | farewell | The good news: scientists say Bukang-i is calm and healthy. Starting Tuesday morning, boats and water pumps will gently guide it back out to sea. | 다행히 전문가들은 부캉이가 건강하고 안정적이라고 합니다. 화요일 아침부터 배와 양수기로 조심스럽게 바다로 안내할 예정입니다. | 동물이 위험한 상황이라 여기서 개그를 멈추고 안심시키는 정보. 동물 걱정하는 시청자 배려 |
 | 16 | Kangfree |  | So it's the farewell tour. | 그럼 이제 고별 투어네요. | 앞의 '스타디움 투어'를 받는 콜백. 짧아서 웃음이 남음 |
-| 17 | K |  | K's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Bukang-i, safe travels. | K의 한마디: 길 잃은 상어가 이름, 50만 팬, 제대로 된 배웅까지 받는 건 한국뿐입니다. 부캉이, 잘 가. | [운영자 확인] K's Take는 운영자 관점 자리. 초안이니 바꿔 주세요 |
+| 17 | K | anchor_solo | K's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Bukang-i, safe travels. | K의 한마디: 길 잃은 상어가 이름, 50만 팬, 제대로 된 배웅까지 받는 건 한국뿐입니다. 부캉이, 잘 가. | [운영자 확인] K's Take는 운영자 관점 자리. 초안이니 바꿔 주세요 |
 
 **설명 화면**
 
@@ -39,7 +39,7 @@
 | `menu_psy` | screens/gangnam/gangnam_parade.png | TONIGHT | AI-generated illustration |
 | `menu_fridge` | screens/samsung/fridge_date.png | TONIGHT | AI-generated illustration |
 | `canal` | screens/bukang/bukang_canal.png | BUSAN NORTH PORT | AI-generated illustration |
-| `requiem` | screens/bukang/requiem_shark_underwater.jpg | FILE PHOTO | Photo: laszlo-photo (BY 2.0) |
+| `requiem` | screens/bukang/requiem_shark_underwater.jpg | FILE PHOTO | Photo: laszlo-photo (CC BY 2.0) |
 | `dusky` | screens/bukang/dusky_shark_illustration.jpg | DUSKY SHARK (ILLUSTRATION) | Illustration: Queensland State Archives (public domain) |
 | `staycation` | screens/bukang/bukang_staycation.png | MEET BUKANG-I | AI-generated illustration |
 | `visitors` | 숫자 카드: 568800 visitors since Sept. 19 / 140000 in a single day over Chuseok | BY THE NUMBERS | Source: Busan Infrastructure Corp. via Yonhap |
@@ -75,7 +75,7 @@
 | 12 | K | seafarms → fish → drought (크게) | Exactly. And fish farms are feeling it. Along the southern coast, about seven point seven million farmed fish have died this year. Rainfall is down about fifteen percent, and parts of the country are in drought. | 맞습니다. 양식장도 피해를 보고 있습니다. 남해안에서 올해 양식 물고기 약 773만 마리가 폐사했고, 강수량은 평년보다 15% 정도 적어 일부 지역은 가뭄입니다. | 피해 사실은 개그 없이 전달 |
 | 13 | Kangfree |  | Okay. That's not a free summer at all. | 그렇다면… 전혀 공짜 여름이 아니었네요. | 3번 대사('free summer')를 뒤집는 콜백. 웃음이 아니라 여운 |
 | 14 | K | hinnamnor | And experts warn: fewer typhoons can mean stronger ones later. Warm water is fuel. | 그리고 전문가들은 태풍이 줄면 나중에 오는 태풍이 더 강해질 수 있다고 경고합니다. 따뜻한 바닷물은 연료니까요. |  |
-| 15 | K |  | K's Take: A quiet summer isn't always a good summer. Sometimes the calm is the story. | K의 한마디: 조용한 여름이 늘 좋은 여름은 아닙니다. 때로는 그 고요함이 뉴스입니다. | [운영자 확인] 초안 |
+| 15 | K | anchor_solo | K's Take: A quiet summer isn't always a good summer. Sometimes the calm is the story. | K의 한마디: 조용한 여름이 늘 좋은 여름은 아닙니다. 때로는 그 고요함이 뉴스입니다. | [운영자 확인] 초안 |
 
 **설명 화면**
 
@@ -86,10 +86,10 @@
 | `bouncers` | screens/typhoon/bouncers.png | THE BOUNCERS | AI-generated illustration |
 | `dolphin1` | screens/typhoon/dolphin_iss_1.jpg | TYPHOON DOLPHIN, AUG. 2 | Photo: NASA |
 | `dolphin2` | screens/typhoon/dolphin_iss_2.jpg | TYPHOON DOLPHIN, AUG. 2 | Photo: NASA |
-| `stormy` | screens/typhoon/stormy_sea.jpg | WHY IT MATTERS | Photo: SYLFTCunningLinguist (BY 2.0) |
+| `stormy` | screens/typhoon/stormy_sea.jpg | WHY IT MATTERS | Photo: SYLFTCunningLinguist (CC BY 2.0) |
 | `calm` | screens/typhoon/calm_ocean.jpg | WHY IT MATTERS | Photo: Lionello DelPiccolo liodp (CC0 1.0) |
 | `stuffy` | screens/typhoon/stuffy_room.png | THE OCEAN, THIS SUMMER | AI-generated illustration |
-| `seafarms` | screens/typhoon/sea_farms_south_korea.jpg | SEA FARMS, SOUTH COAST | Photo: NASA Goddard Photo and Video (BY 2.0) |
+| `seafarms` | screens/typhoon/sea_farms_south_korea.jpg | SEA FARMS, SOUTH COAST | Photo: NASA Goddard Photo and Video (CC BY 2.0) |
 | `fish` | 숫자 카드: 7730000 farmed fish died this year / 15 rainfall vs. normal (Mar.-Sept.) | SOUTHERN COAST, 2026 | Source: South Gyeongsang Province, KMA |
 | `drought` | screens/typhoon/drought.jpg | DROUGHT | Photo: bartoszjanusz (CC0 1.0) |
 | `hinnamnor` | screens/typhoon/hinnamnor_2022_airs.jpg | TYPHOON HINNAMNOR, 2022 | Image: NASA/JPL-Caltech |
@@ -116,7 +116,7 @@
 | 5 | K | station (크게) | Gangnam. Yes. That Gangnam. | 강남. 네. 그 강남입니다. | 전 세계가 아는 '강남스타일'을 이름만으로 떠올리게 함. 노래나 가사는 쓰지 않음(저작권) |
 | 6 | Kangfree |  | Wait. Is this about the horse dance? Please tell me this is about the horse dance. | 잠깐, 말춤 얘기예요? 제발 말춤 얘기라고 해줘요. | 시청자 대부분이 떠올릴 것을 대신 말함 |
 | 7 | K | route → band → parade (크게) | It is about a festival. This weekend is the fifteenth Gangnam Festival: a one-kilometer street parade, giant character balloons, and a traditional Korean marching band leading the way. | 축제 얘기입니다. 이번 주말 제15회 강남페스티벌이 열립니다. 1km 거리 퍼레이드, 거대한 캐릭터 풍선, 그리고 맨 앞에는 전통 취타대가 섭니다. | K가 말춤 질문을 무시하고 사실만 읽는 무표정 개그 |
-| 8 | K | psy | And on Sunday, a K-pop concert closed out by the man who taught the entire planet to say 'Gangnam'. Psy. | 그리고 일요일 K-POP 콘서트의 마지막 무대는, 전 세계에 '강남'이라는 단어를 가르친 사람이 장식합니다. 싸이. | 셋리스트는 발표되지 않았으므로 어떤 곡을 부른다고 말하지 않음 |
+| 8 | K | psy (크게) | And on Sunday, a K-pop concert closed out by the man who taught the entire planet to say 'Gangnam'. Psy. | 그리고 일요일 K-POP 콘서트의 마지막 무대는, 전 세계에 '강남'이라는 단어를 가르친 사람이 장식합니다. 싸이. | 셋리스트는 발표되지 않았으므로 어떤 곡을 부른다고 말하지 않음 |
 | 9 | Kangfree |  | Psy. In Gangnam. That is the biggest home game in music history! | 싸이가 강남에서요? 음악 역사상 최대의 홈경기네요! | 스포츠 용어 'home game'을 공연에 씀. 영어권에서 바로 통하는 비유 |
 | 10 | K | tickets (크게) | Thirteen thousand free concert tickets. Gone almost immediately. | 무료 콘서트 티켓 1만 3천 장. 거의 즉시 마감됐습니다. |  |
 | 11 | Kangfree |  | Free?! I would have fought someone for those. | 공짜라고요?! 저 같으면 싸워서라도 구했어요. |  |
@@ -124,24 +124,24 @@
 | 13 | K | nebuta1 → nebuta2 → dosan | Organizers even studied New York's Macy's Thanksgiving Day Parade and Japan's Nebuta Festival. The goal: when people think 'K-festival', they think Gangnam. | 주최 측은 뉴욕 메이시스 추수감사절 퍼레이드와 일본 네부타 축제까지 참고했습니다. 목표는 'K-페스티벌' 하면 강남이 떠오르게 하는 것. | 미국 시청자가 아는 메이시스 퍼레이드를 넣어 '우리 것과 비교'하는 재미 |
 | 14 | Kangfree |  | Admit it. You're going. | 인정하세요. 가실 거죠? |  |
 | 15 | K |  | I have... prior commitments. | 저는… 선약이 있습니다. | 뻔한 거짓말로 들리는 한 박자 쉼. K가 몰래 즐기는 캐릭터(K-드라마 보고 우는 설정)와 연결 |
-| 16 | K |  | K's Take: Fourteen years after one song put Gangnam on the world map, Gangnam is still trying to live up to it. Honestly? Respect. | K의 한마디: 노래 한 곡이 강남을 세계 지도에 올린 지 14년. 강남은 아직도 그 이름값을 하려고 노력 중입니다. 솔직히? 존경합니다. | [운영자 확인] 초안 |
+| 16 | K | anchor_solo | K's Take: Fourteen years after one song put Gangnam on the world map, Gangnam is still trying to live up to it. Honestly? Respect. | K의 한마디: 노래 한 곡이 강남을 세계 지도에 올린 지 14년. 강남은 아직도 그 이름값을 하려고 노력 중입니다. 솔직히? 존경합니다. | [운영자 확인] 초안 |
 
 **설명 화면**
 
 | 키 | 파일 / 카드 | 라벨 | 출처 표기 |
 |---|---|---|---|
-| `street` | screens/gangnam/gangnam_street_2009.jpg | GANGNAM, SEOUL | Photo: Joop (BY 2.0) |
-| `rodeo` | screens/gangnam/apgujeong_rodeo_night.jpg | GANGNAM, SEOUL | Photo: sellyourseoul (BY 2.0) |
+| `street` | screens/gangnam/gangnam_street_2009.jpg | GANGNAM, SEOUL | Photo: Joop (CC BY 2.0) |
+| `rodeo` | screens/gangnam/apgujeong_rodeo_night.jpg | GANGNAM, SEOUL | Photo: sellyourseoul (CC BY 2.0) |
 | `station` | screens/gangnam/gangnam_station_sign.jpg | YES. THAT GANGNAM. | Photo: Aspere (CC0 1.0) |
 | `route` | screens/gangnam/gangnam_route.png | PARADE ROUTE | Map © OpenStreetMap contributors |
-| `band` | screens/gangnam/korean_marching_band.jpg | TRADITIONAL MARCHING BAND (FILE PHOTO) | Photo: Prayitno / Thank you for (12 millions +) view (BY 2.0) |
+| `band` | screens/gangnam/korean_marching_band.jpg | TRADITIONAL MARCHING BAND (FILE PHOTO) | Photo: Prayitno (CC BY 2.0) |
 | `parade` | screens/gangnam/gangnam_parade.png | GANGNAM FESTIVAL | AI-generated illustration |
 | `psy` | 숫자 카드: K-POP CONCERT with ZEROBASEONE and KiiiKiii / PSY closing the show | SUNDAY | Source: Gangnam-gu Office via Korea Herald |
 | `tickets` | 숫자 카드: 13000 free concert tickets, gone almost immediately | BY THE NUMBERS | Source: Gangnam-gu Office via Korea Herald |
 | `frenzy` | screens/gangnam/ticket_frenzy.png | TICKETING, CALMLY | AI-generated illustration |
-| `nebuta1` | screens/gangnam/nebuta_lantern.jpg | NEBUTA FESTIVAL, JAPAN (FILE PHOTO) | Photo: sodai gomi (BY 2.0) |
-| `nebuta2` | screens/gangnam/nebuta_float.jpg | NEBUTA FESTIVAL, JAPAN (FILE PHOTO) | Photo: x768 (BY 2.0) |
-| `dosan` | screens/gangnam/dosan_park_gate.jpg | DOSAN PARK, THE FINISH LINE | Photo: pcamp (BY 2.0) |
+| `nebuta1` | screens/gangnam/nebuta_lantern.jpg | NEBUTA FESTIVAL, JAPAN (FILE PHOTO) | Photo: sodai gomi (CC BY 2.0) |
+| `nebuta2` | screens/gangnam/nebuta_float.jpg | NEBUTA FESTIVAL, JAPAN (FILE PHOTO) | Photo: x768 (CC BY 2.0) |
+| `dosan` | screens/gangnam/dosan_park_gate.jpg | DOSAN PARK, THE FINISH LINE | Photo: pcamp (CC BY 2.0) |
 
 **업로드 전 사실 확인**
 
@@ -153,7 +153,7 @@
 ## 꼭지 4. In Korea, you can subscribe to your air conditioner
 
 - 카테고리 `money_business` · 민감도 **go**
-- 쇼츠 훅: In Korea you can SUBSCRIBE / to your air conditioner · 쇼츠 구간: 2~10번 줄
+- 쇼츠 훅: In Korea you can SUBSCRIBE / to your air conditioner · 쇼츠 구간: 2~9번 줄
 
 | # | 누가 | 화면 | 대사 (EN) | 번역 | 왜 웃긴가 / 메모 |
 |---|---|---|---|---|---|
@@ -169,7 +169,7 @@
 | 10 | K |  | Technically, it's an average. Nobody has half a subscription. ...Probably. | 엄밀히 말하면 평균입니다. 구독을 반 개 하는 사람은 없습니다. …아마도요. | 정확성에 집착하는 K가 끝에 자신 없어지는 반전 |
 | 11 | K | hotel → hospital → moving | Now Samsung wants hotels, hospitals and public offices to subscribe too. There's even a plan for newlyweds and people who move a lot, with cleaning visits at night and on holidays. | 이제 삼성은 호텔, 병원, 공공기관까지 구독 고객으로 삼으려 합니다. 신혼부부와 이사가 잦은 사람을 위해 밤이나 휴일에 청소하러 오는 상품도 있습니다. |  |
 | 12 | Kangfree |  | Night cleaning visits? That's not a subscription. That's a love language. | 밤에 청소하러 와 준다고요? 그건 구독이 아니라 사랑의 언어예요. | 'love language(사랑의 언어)'는 영어권 유행어. 5번의 연애 비유 콜백 |
-| 13 | K |  | K's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized. | K의 한마디: 한국에선 세탁기에도 케어 플랜이 붙습니다. 이게 미래인지, 그냥 엄청나게 꼼꼼한 건지는 아직 판단 중입니다. | [운영자 확인] 초안 |
+| 13 | K | anchor_solo | K's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized. | K의 한마디: 한국에선 세탁기에도 케어 플랜이 붙습니다. 이게 미래인지, 그냥 엄청나게 꼼꼼한 건지는 아직 판단 중입니다. | [운영자 확인] 초안 |
 | 14 | K |  | You can also subscribe to this channel. No six-year contract. | 이 채널도 구독하실 수 있습니다. 6년 약정은 없습니다. | 구독 주제로 채널 구독을 유도하는 마무리. 6년 계약 콜백 |
 | 15 | K | wide | That's all for tonight. Stay curious. Keep your lenses clean. | 오늘은 여기까지입니다. 계속 궁금해하세요. 렌즈는 깨끗하게. | 확정된 클로징 멘트 |
 | 16 | Kangfree |  | So what are you doing this weekend? | 주말에 뭐 해요? | [잡담] 클로징 뒤 한마디 |
@@ -179,16 +179,16 @@
 
 | 키 | 파일 / 카드 | 라벨 | 출처 표기 |
 |---|---|---|---|
-| `aircon` | screens/samsung/wall_air_conditioner.jpg | SUBSCRIBE TO... THIS | Photo: Link576 (BY 2.0) |
-| `trillion` | 숫자 카드: 1 TRILLION WON in appliance subscription sales, almost / 740 in US dollars | BY THE NUMBERS | Source: Samsung Electronics via Yonhap |
+| `aircon` | screens/samsung/wall_air_conditioner.jpg | SUBSCRIBE TO... THIS | Photo: Link576 (CC BY 2.0) |
+| `trillion` | 숫자 카드: 1 TRILLION WON nearly, in appliance subscription sales / 740 in US dollars | BY THE NUMBERS | Source: Samsung Electronics via Yonhap |
 | `concept` | screens/samsung/appliance_subscriptions.png | HOW IT WORKS | AI-generated illustration |
-| `repair` | screens/samsung/appliance_repairman.jpg | HOW IT WORKS | Photo: Wonderlane (BY 2.0) |
-| `fridge` | screens/samsung/refrigerator.jpg | HOW IT WORKS | Photo: Joanna Bourne (BY 2.0) |
+| `repair` | screens/samsung/appliance_repairman.jpg | HOW IT WORKS | Photo: Wonderlane (CC BY 2.0) |
+| `fridge` | screens/samsung/refrigerator.jpg | HOW IT WORKS | Photo: Joanna Bourne (CC BY 2.0) |
 | `date` | screens/samsung/fridge_date.png | A SIX-YEAR RELATIONSHIP | AI-generated illustration |
 | `subs` | 숫자 카드: 94.8 of Koreans used a subscription this year / 5.5 subscriptions per person, on average | BY THE NUMBERS | Source: survey cited by Samsung Electronics |
-| `hotel` | screens/samsung/hotel_room.jpg | NEXT: HOTELS | Photo: espensorvik (BY 2.0) |
+| `hotel` | screens/samsung/hotel_room.jpg | NEXT: HOTELS | Photo: espensorvik (CC BY 2.0) |
 | `hospital` | screens/samsung/hospital_corridor.jpg | HOSPITALS | Photo: Kojotisko (CC0 1.0) |
-| `moving` | screens/samsung/moving_boxes.jpg | NEWLYWEDS AND MOVERS | Photo: DoNotLick (BY 2.0) |
+| `moving` | screens/samsung/moving_boxes.jpg | NEWLYWEDS AND MOVERS | Photo: DoNotLick (CC BY 2.0) |
 
 **업로드 전 사실 확인**
 

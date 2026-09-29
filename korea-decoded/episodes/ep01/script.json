@@ -27,7 +27,7 @@
    "category": "travel",
    "desk": "BUSAN",
    "headline": "A shark moved into a Busan canal and half a million people came to see it",
-   "hook": "A shark got stuck in a Busan canal.\nHalf a million people showed up",
+   "hook": "A shark got stuck in a Busan canal.\nIt refused to leave",
    "screens": {
     "menu_shark": {
      "image": "screens/bukang/bukang_staycation.png",
@@ -57,7 +57,7 @@
     "requiem": {
      "image": "screens/bukang/requiem_shark_underwater.jpg",
      "label": "FILE PHOTO",
-     "credit": "Photo: laszlo-photo (BY 2.0)"
+     "credit": "Photo: laszlo-photo (CC BY 2.0)"
     },
     "dusky": {
      "image": "screens/bukang/dusky_shark_illustration.jpg",
@@ -1520,6 +1520,7 @@
     {
      "who": "anchor",
      "audio": "audio/ep01_bukang_17.mp3",
+     "shot": "anchor_solo",
      "text": "K's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Bukang-i, safe travels.",
      "words": [
       [
@@ -1642,7 +1643,7 @@
    ],
    "short": {
     "from": 3,
-    "to": 13
+    "to": 10
    }
   },
   {
@@ -1705,7 +1706,7 @@
     "stormy": {
      "image": "screens/typhoon/stormy_sea.jpg",
      "label": "WHY IT MATTERS",
-     "credit": "Photo: SYLFTCunningLinguist (BY 2.0)"
+     "credit": "Photo: SYLFTCunningLinguist (CC BY 2.0)"
     },
     "calm": {
      "image": "screens/typhoon/calm_ocean.jpg",
@@ -1721,7 +1722,7 @@
     "seafarms": {
      "image": "screens/typhoon/sea_farms_south_korea.jpg",
      "label": "SEA FARMS, SOUTH COAST",
-     "credit": "Photo: NASA Goddard Photo and Video (BY 2.0)"
+     "credit": "Photo: NASA Goddard Photo and Video (CC BY 2.0)"
     },
     "fish": {
      "card": {
@@ -2926,6 +2927,7 @@
     {
      "who": "anchor",
      "audio": "audio/ep01_typhoon_15.mp3",
+     "shot": "anchor_solo",
      "text": "K's Take: A quiet summer isn't always a good summer. Sometimes the calm is the story.",
      "words": [
       [
@@ -3025,12 +3027,12 @@
     "street": {
      "image": "screens/gangnam/gangnam_street_2009.jpg",
      "label": "GANGNAM, SEOUL",
-     "credit": "Photo: Joop (BY 2.0)"
+     "credit": "Photo: Joop (CC BY 2.0)"
     },
     "rodeo": {
      "image": "screens/gangnam/apgujeong_rodeo_night.jpg",
      "label": "GANGNAM, SEOUL",
-     "credit": "Photo: sellyourseoul (BY 2.0)"
+     "credit": "Photo: sellyourseoul (CC BY 2.0)"
     },
     "station": {
      "image": "screens/gangnam/gangnam_station_sign.jpg",
@@ -3047,7 +3049,7 @@
     "band": {
      "image": "screens/gangnam/korean_marching_band.jpg",
      "label": "TRADITIONAL MARCHING BAND (FILE PHOTO)",
-     "credit": "Photo: Prayitno / Thank you for (12 millions +) view (BY 2.0)"
+     "credit": "Photo: Prayitno (CC BY 2.0)"
     },
     "parade": {
      "image": "screens/gangnam/gangnam_parade.png",
@@ -3093,17 +3095,17 @@
     "nebuta1": {
      "image": "screens/gangnam/nebuta_lantern.jpg",
      "label": "NEBUTA FESTIVAL, JAPAN (FILE PHOTO)",
-     "credit": "Photo: sodai gomi (BY 2.0)"
+     "credit": "Photo: sodai gomi (CC BY 2.0)"
     },
     "nebuta2": {
      "image": "screens/gangnam/nebuta_float.jpg",
      "label": "NEBUTA FESTIVAL, JAPAN (FILE PHOTO)",
-     "credit": "Photo: x768 (BY 2.0)"
+     "credit": "Photo: x768 (CC BY 2.0)"
     },
     "dosan": {
      "image": "screens/gangnam/dosan_park_gate.jpg",
      "label": "DOSAN PARK, THE FINISH LINE",
-     "credit": "Photo: pcamp (BY 2.0)"
+     "credit": "Photo: pcamp (CC BY 2.0)"
     }
    },
    "lines": [
@@ -3552,6 +3554,7 @@
      "who": "anchor",
      "audio": "audio/ep01_gangnam_08.mp3",
      "screen": "psy",
+     "big": true,
      "text": "And on Sunday, a K-pop concert closed out by the man who taught the entire planet to say 'Gangnam'. Psy.",
      "words": [
       [
@@ -4102,6 +4105,7 @@
     {
      "who": "anchor",
      "audio": "audio/ep01_gangnam_16.mp3",
+     "shot": "anchor_solo",
      "text": "K's Take: Fourteen years after one song put Gangnam on the world map, Gangnam is still trying to live up to it. Honestly? Respect.",
      "words": [
       [
@@ -4241,7 +4245,7 @@
     "aircon": {
      "image": "screens/samsung/wall_air_conditioner.jpg",
      "label": "SUBSCRIBE TO... THIS",
-     "credit": "Photo: Link576 (BY 2.0)"
+     "credit": "Photo: Link576 (CC BY 2.0)"
     },
     "trillion": {
      "card": {
@@ -4249,7 +4253,7 @@
       "stats": [
        {
         "value": "1 TRILLION WON",
-        "label": "in appliance subscription sales, almost"
+        "label": "nearly, in appliance subscription sales"
        },
        {
         "value": 740,
@@ -4270,12 +4274,12 @@
     "repair": {
      "image": "screens/samsung/appliance_repairman.jpg",
      "label": "HOW IT WORKS",
-     "credit": "Photo: Wonderlane (BY 2.0)"
+     "credit": "Photo: Wonderlane (CC BY 2.0)"
     },
     "fridge": {
      "image": "screens/samsung/refrigerator.jpg",
      "label": "HOW IT WORKS",
-     "credit": "Photo: Joanna Bourne (BY 2.0)"
+     "credit": "Photo: Joanna Bourne (CC BY 2.0)"
     },
     "date": {
      "image": "screens/samsung/fridge_date.png",
@@ -4306,7 +4310,7 @@
     "hotel": {
      "image": "screens/samsung/hotel_room.jpg",
      "label": "NEXT: HOTELS",
-     "credit": "Photo: espensorvik (BY 2.0)"
+     "credit": "Photo: espensorvik (CC BY 2.0)"
     },
     "hospital": {
      "image": "screens/samsung/hospital_corridor.jpg",
@@ -4316,7 +4320,7 @@
     "moving": {
      "image": "screens/samsung/moving_boxes.jpg",
      "label": "NEWLYWEDS AND MOVERS",
-     "credit": "Photo: DoNotLick (BY 2.0)"
+     "credit": "Photo: DoNotLick (CC BY 2.0)"
     }
    },
    "lines": [
@@ -5313,6 +5317,7 @@
     {
      "who": "anchor",
      "audio": "audio/ep01_samsung_13.mp3",
+     "shot": "anchor_solo",
      "text": "K's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized.",
      "words": [
       [
@@ -5624,7 +5629,7 @@
    ],
    "short": {
     "from": 1,
-    "to": 9
+    "to": 8
    }
   }
  ]
