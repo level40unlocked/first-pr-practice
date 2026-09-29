@@ -261,13 +261,18 @@ def screen_at(ln, t):
     return keys[k], since, prev, since / FADE
 
 
-def broadcast_overlay(scene):
-    """Graphics that stay fixed while the camera moves and also show in the Shorts crop."""
+TAG_X_LONG = 80  # EP/category tag at the long form's left edge, mirroring the logo on the right
+TAG_X_SHORT = (W - SHORT_W) // 2 + 30  # inside the Short's crop
+
+
+def broadcast_overlay(scene, tag_x=TAG_X_LONG):
+    """Graphics that stay fixed while the camera moves; the Short gets its own copy with the tag
+    moved inside its crop."""
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     category = scene.get("category", "hidden_korea")
     label, color = dg.CATEGORIES[category]
-    right = nr.episode_tag(d, 270, 50, scene.get("episode", 1))
+    right = nr.episode_tag(d, tag_x, 50, scene.get("episode", 1))
     dg.category_badge(d, right + 16, 50, category)
     d.rectangle((240, 930, 1680, 1030), fill=nr.WHITE)
     d.rectangle((240, 930, 520, 1030), fill=color)
@@ -384,6 +389,7 @@ def main():
     bg = world_background(scene)
     desks = {"all": bands(desk_layer(puppets.values())), "anchor": bands(desk_layer([puppets[anchor_key]]))}
     over = bands(broadcast_overlay(scene))
+    over_short = bands(broadcast_overlay(scene, TAG_X_SHORT))
     ticker, ticker_w = ticker_strip(scene.get("up_next", ["More stories after this"]))
     bug = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     nr.logo_mark(bug, 1800, 78, 76)  # long form only: sits outside the Shorts crop
@@ -538,7 +544,7 @@ def main():
             x0 = int(round(short_x))
             short_crop = view.crop((x0, 0, x0 + SHORT_W, 1080))
             # tags and lower third are laid out for the centered crop; keep them fixed in the Short
-            for piece, (px, py) in over:
+            for piece, (px, py) in over_short:
                 short_crop.paste(piece, (px - (W - SHORT_W) // 2, py), piece)
         paste_bands(view, over)
 
