@@ -398,7 +398,47 @@ def screen_specs(key):
     return out
 
 
+ASR = {}
+
+
+def norm(w):
+    return "".join(c for c in w.lower() if c.isalnum())
+
+
+def align_words(text, asr):
+    """Script words with times from speech recognition: words the recognizer heard the same get its
+    times; the rest (numbers it wrote as digits, names it misheard) share the gap between them."""
+    import difflib
+    toks = text.split()
+    if not asr:
+        return None
+    a, b = [norm(t) for t in toks], [norm(w[0]) for w in asr]
+    times = [None] * len(toks)
+    for blk in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        for k in range(blk.size):
+            times[blk.a + k] = (asr[blk.b + k][1], asr[blk.b + k][2])
+    end = asr[-1][2]
+    k = 0
+    while k < len(toks):
+        if times[k] is not None:
+            k += 1
+            continue
+        j = k
+        while j < len(toks) and times[j] is None:
+            j += 1
+        t0 = times[k - 1][1] if k > 0 else 0.0
+        t1 = times[j][0] if j < len(toks) else end
+        step = max(t1 - t0, 0.05) / (j - k)
+        for m in range(k, j):
+            times[m] = (t0 + step * (m - k), t0 + step * (m - k + 1))
+        k = j
+    return [[t, round(s0, 2), round(e0, 2)] for t, (s0, e0) in zip(toks, times)]
+
+
 def build():
+    global ASR
+    path = os.path.join(OUT, "audio", "asr_words.json")
+    ASR = json.load(open(path)) if os.path.exists(path) else {}
     ep = {
         "episode": 1, "name": "ep01", "anchor": "anchor",
         "outro_ticker": "Thanks for watching. See you next episode",
@@ -431,7 +471,12 @@ def build():
                 if k not in specs:
                     raise SystemExit(f"{seg['key']} line {i}: unknown screen {k}")
                 used.add(k)
-            lines.append({"who": who, "audio": f"audio/ep01_{seg['key']}_{i:02d}.mp3", **extra, "text": text})
+            audio = f"ep01_{seg['key']}_{i:02d}.mp3"
+            line = {"who": who, "audio": f"audio/{audio}", **extra, "text": text}
+            timed = align_words(text, ASR.get(audio))
+            if timed:
+                line["words"] = timed
+            lines.append(line)
             name = "K" if who == "anchor" else "Kangfree"
             shown = " → ".join(keys) + (" (크게)" if extra.get("big") else "") if keys else extra.get("shot", "")
             md.append(f"| {i} | {name} | {shown} | {text} | {ko} | {note} |")

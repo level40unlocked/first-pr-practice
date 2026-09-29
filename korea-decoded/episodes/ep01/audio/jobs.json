@@ -3,390 +3,458 @@
   "index": 0,
   "file": "ep01_bukang_01.mp3",
   "job": "adbe73d7-e9d0-4792-91b7-d3d938244de8",
-  "seconds": 10.4
+  "seconds": 10.4,
+  "tts_text": "Hello, world. Some news is big. Some news is weird. Tonight, most of it is both. I'm Master Kay, and this is the Four Eyes Report."
  },
  {
   "index": 1,
   "file": "ep01_bukang_02.mp3",
   "job": "95433f98-736c-473c-8268-660c63f44a23",
-  "seconds": 9.6
+  "seconds": 9.6,
+  "tts_text": "Coming up: a shark that won't leave, a typhoon that never came, Sigh, and a refrigerator you can date. Let's begin."
  },
  {
   "index": 2,
   "file": "ep01_bukang_03.mp3",
   "job": "0e4eba1a-8c64-4e61-b192-359a0c7e43a1",
-  "seconds": 5.04
+  "seconds": 5.04,
+  "tts_text": "Our top story: a shark. In a canal. In the middle of a city."
  },
  {
   "index": 3,
   "file": "ep01_bukang_04.mp3",
   "job": "84cce4b8-604d-41d7-b0a8-8234d4bf7f08",
-  "seconds": 9.36
+  "seconds": 9.36,
+  "tts_text": "Ten days ago, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed."
  },
  {
   "index": 4,
   "file": "ep01_bukang_05.mp3",
   "job": "73ab8285-65e5-4859-8482-f524b3a67102",
-  "seconds": 4.24
+  "seconds": 4.24,
+  "tts_text": "Officials tried to guide it back to the sea. The shark declined."
  },
  {
   "index": 5,
   "file": "ep01_bukang_06.mp3",
   "job": "165bc440-44d6-4271-9333-ee772a6755ef",
-  "seconds": 4.0
+  "seconds": 4.0,
+  "tts_text": "It declined? Core, a shark cannot decline things."
  },
  {
   "index": 6,
   "file": "ep01_bukang_07.mp3",
   "job": "4126b1f8-665d-4f83-9080-09116d29c386",
-  "seconds": 4.88
+  "seconds": 4.88,
+  "tts_text": "It's Kay. And technically, it can. It simply did not leave."
  },
  {
   "index": 7,
   "file": "ep01_bukang_08.mp3",
   "job": "52d2fa3e-5b77-4207-888c-109bb49b162c",
-  "seconds": 2.04
+  "seconds": 2.04,
+  "tts_text": "What kind of shark is it, anyway?"
  },
  {
   "index": 8,
   "file": "ep01_bukang_09.mp3",
   "job": "dbf83677-036b-4881-a151-d891af3d9691",
-  "seconds": 5.52
+  "seconds": 5.52,
+  "tts_text": "Probably a dusky shark. Or a copper shark. It declined to comment."
  },
  {
   "index": 9,
   "file": "ep01_bukang_10.mp3",
   "job": "23c7df61-8495-415a-9e4b-c2f400bfd626",
-  "seconds": 9.76
+  "seconds": 9.76,
+  "tts_text": "So Korea did what Korea does. It gave the shark a nickname: Boo-kahng-ee. That's 'North Port', plus a cute little 'ee' on the end."
  },
  {
   "index": 10,
   "file": "ep01_bukang_11.mp3",
   "job": "e1048edd-1075-4ae8-ab64-5cac7dd8288e",
-  "seconds": 4.44
+  "seconds": 4.44,
+  "tts_text": "Wait. Wait. It has a nickname? Does it have a fandom?"
  },
  {
   "index": 11,
   "file": "ep01_bukang_12.mp3",
   "job": "7c514cdb-f45c-4e4e-a4be-b15bca1f9d2c",
-  "seconds": 11.2
+  "seconds": 11.2,
+  "tts_text": "Let's look at the numbers. Five hundred sixty-eight thousand, eight hundred visitors. Over the Choo-suk holiday, one hundred forty thousand people came in a single day."
  },
  {
   "index": 12,
   "file": "ep01_bukang_13.mp3",
   "job": "c8c050fa-6e4a-4ced-a9a4-60c56e2b666b",
-  "seconds": 8.32
+  "seconds": 8.32,
+  "tts_text": "On a normal holiday, this park gets about two thousand. That is a fiftyfold increase. For one shark."
  },
  {
   "index": 13,
   "file": "ep01_bukang_14.mp3",
   "job": "7a4ac868-d909-4369-88f8-3ecd3b048349",
-  "seconds": 5.06
+  "seconds": 5.06,
+  "tts_text": "Half a million people in ten days? That's not a shark. That's a stadium tour."
  },
  {
   "index": 14,
   "file": "ep01_bukang_15.mp3",
   "job": "6e39f47e-7c13-46a5-a9df-b1a729c117ef",
-  "seconds": 10.4
+  "seconds": 10.4,
+  "tts_text": "The good news: scientists say Boo-kahng-ee is calm and healthy. Starting Tuesday morning, boats and water pumps will gently guide it back out to sea."
  },
  {
   "index": 15,
   "file": "ep01_bukang_16.mp3",
   "job": "a2030a9d-b26e-4e03-9925-267495d10e56",
-  "seconds": 2.04
+  "seconds": 2.04,
+  "tts_text": "So it's the farewell tour."
  },
  {
   "index": 16,
   "file": "ep01_bukang_17.mp3",
   "job": "1d2376c9-b7cd-4cc4-815d-ab0144e908c1",
-  "seconds": 10.72
+  "seconds": 10.72,
+  "tts_text": "Kay's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Boo-kahng-ee, safe travels."
  },
  {
   "index": 17,
   "file": "ep01_typhoon_01.mp3",
   "job": "ea766246-a6a6-432b-9a0a-b5243e9f104a",
-  "seconds": 4.82
+  "seconds": 4.82,
+  "tts_text": "Okay. A shark that won't leave. What's next, weather that won't arrive?"
  },
  {
   "index": 18,
   "file": "ep01_typhoon_02.mp3",
   "job": "562e927e-55d6-4df4-8404-a881ff5aa24d",
-  "seconds": 1.28
+  "seconds": 1.28,
+  "tts_text": "...Did you read my script?"
  },
  {
   "index": 19,
   "file": "ep01_typhoon_03.mp3",
   "job": "60d657d3-a622-4e72-88ff-688776de9228",
-  "seconds": 4.32
+  "seconds": 4.32,
+  "tts_text": "Next: the weather. Or rather, the weather that never showed up."
  },
  {
   "index": 20,
   "file": "ep01_typhoon_04.mp3",
   "job": "0d2ba5d0-0db5-43ab-ad81-efa68c116b09",
-  "seconds": 5.28
+  "seconds": 5.28,
+  "tts_text": "This year, not a single typhoon has made landfall in Korea. Not one."
  },
  {
   "index": 21,
   "file": "ep01_typhoon_05.mp3",
   "job": "1d94547c-972a-4cb8-9dc9-9d0684c640e5",
-  "seconds": 3.64
+  "seconds": 3.64,
+  "tts_text": "That's amazing! A free summer! Why do you look worried?"
  },
  {
   "index": 22,
   "file": "ep01_typhoon_06.mp3",
   "job": "0ae752ae-986d-4961-8b09-6a9dfa0b3439",
-  "seconds": 3.2
+  "seconds": 3.2,
+  "tts_text": "I always look like this. But yes, I'm worried."
  },
  {
   "index": 23,
   "file": "ep01_typhoon_07.mp3",
   "job": "fd72deef-2715-4e21-83c0-685e56e31dd8",
-  "seconds": 8.96
+  "seconds": 8.96,
+  "tts_text": "For three summers now, two giant high-pressure systems, one from the Pacific and one from Tibet, have parked around Korea like bouncers outside a club."
  },
  {
   "index": 24,
   "file": "ep01_typhoon_08.mp3",
   "job": "4caedbdc-fece-4599-b1d4-dcda2ca8239c",
-  "seconds": 7.44
+  "seconds": 7.44,
+  "tts_text": "In August, Typhoon Dolphin crossed the Pacific, saw the line at the door, and headed toward Shanghai instead."
  },
  {
   "index": 25,
   "file": "ep01_typhoon_09.mp3",
   "job": "59f60e63-24a6-4a85-bf9f-a352b35ddc48",
-  "seconds": 2.83
+  "seconds": 2.83,
+  "tts_text": "Rejected at the door. Brutal."
  },
  {
   "index": 26,
   "file": "ep01_typhoon_10.mp3",
   "job": "127bd225-8df1-4fc2-9543-3363e6f990a0",
-  "seconds": 12.96
+  "seconds": 12.96,
+  "tts_text": "Here's the catch. Typhoons stir up the ocean. They mix cold, oxygen-rich water from below with the warm water on top. Scientists call them the ocean's ventilation system."
  },
  {
   "index": 27,
   "file": "ep01_typhoon_11.mp3",
   "job": "89125003-2c92-4332-9f83-25b56de15424",
-  "seconds": 4.27
+  "seconds": 4.27,
+  "tts_text": "So the ocean spent all summer in a stuffy room with the windows shut."
  },
  {
   "index": 28,
   "file": "ep01_typhoon_12.mp3",
   "job": "9253af32-cde3-4c34-98cc-3fbb849f7e06",
-  "seconds": 12.72
+  "seconds": 12.72,
+  "tts_text": "Exactly. And fish farms are feeling it. Along the southern coast, about seven point seven million farmed fish have died this year. Rainfall is down about fifteen percent, and parts of the country are in drought."
  },
  {
   "index": 29,
   "file": "ep01_typhoon_13.mp3",
   "job": "a4f2d51e-48cd-4d31-b52a-cb7f0995279b",
-  "seconds": 2.66
+  "seconds": 2.66,
+  "tts_text": "Okay. That's not a free summer at all."
  },
  {
   "index": 30,
   "file": "ep01_typhoon_14.mp3",
   "job": "458d6265-7e8a-49bf-919b-7c0b5932c141",
-  "seconds": 6.48
+  "seconds": 6.48,
+  "tts_text": "And experts warn: fewer typhoons can mean stronger ones later. Warm water is fuel."
  },
  {
   "index": 31,
   "file": "ep01_typhoon_15.mp3",
   "job": "60b54b4a-6968-4451-a2d4-568599a104d5",
-  "seconds": 7.36
+  "seconds": 7.36,
+  "tts_text": "Kay's Take: A quiet summer isn't always a good summer. Sometimes the calm is the story."
  },
  {
   "index": 32,
   "file": "ep01_gangnam_01.mp3",
   "job": "2207f031-82cd-4d74-98ef-e3ce8f66d944",
-  "seconds": 2.66
+  "seconds": 2.66,
+  "tts_text": "Can we please talk about something happy now?"
  },
  {
   "index": 33,
   "file": "ep01_gangnam_02.mp3",
   "job": "12ea8309-033f-4b28-8b2f-451b8ff27e49",
-  "seconds": 1.52
+  "seconds": 1.52,
+  "tts_text": "I have Sigh."
  },
  {
   "index": 34,
   "file": "ep01_gangnam_03.mp3",
   "job": "335247cb-da12-4d8c-a93d-2decc17eb714",
-  "seconds": 1.22
+  "seconds": 1.22,
+  "tts_text": "Perfect."
  },
  {
   "index": 35,
   "file": "ep01_gangnam_04.mp3",
   "job": "0d74c12a-316c-438e-9d4c-9a11a4554fcc",
-  "seconds": 5.28
+  "seconds": 5.28,
+  "tts_text": "Our next story comes from a neighborhood you already know. Even if you think you don't."
  },
  {
   "index": 36,
   "file": "ep01_gangnam_05.mp3",
-  "job": "c1a72624-23d0-4265-a8e0-2bcf75dc5989",
-  "seconds": 3.04
+  "job": "0e0e9515-ee61-44d8-98ff-7aeec7d52da2",
+  "seconds": 3.04,
+  "note": "regenerated after speech-recognition check",
+  "tts_text": "Gangnam. Yes. That Gangnam."
  },
  {
   "index": 37,
   "file": "ep01_gangnam_06.mp3",
   "job": "36a819d8-e88a-43a5-b5ef-59bd91939d81",
-  "seconds": 4.84
+  "seconds": 4.84,
+  "tts_text": "Wait. Is this about the horse dance? Please tell me this is about the horse dance."
  },
  {
   "index": 38,
   "file": "ep01_gangnam_07.mp3",
   "job": "ae91dba7-c0c6-4073-88dd-c757ce6bcfc0",
-  "seconds": 12.24
+  "seconds": 12.24,
+  "tts_text": "It is about a festival. This weekend is the fifteenth Gangnam Festival: a one-kilometer street parade, giant character balloons, and a traditional Korean marching band leading the way."
  },
  {
   "index": 39,
   "file": "ep01_gangnam_08.mp3",
   "job": "4f4f43e9-73c6-43cd-b222-44d189a97788",
-  "seconds": 8.08
+  "seconds": 8.08,
+  "tts_text": "And on Sunday, a K-pop concert closed out by the man who taught the entire planet to say 'Gangnam'. Sigh."
  },
  {
   "index": 40,
   "file": "ep01_gangnam_09.mp3",
   "job": "0a93945d-f26f-4f92-b1ea-b14847868df7",
-  "seconds": 4.63
+  "seconds": 4.63,
+  "tts_text": "Sigh. In Gangnam. That is the biggest home game in music history!"
  },
  {
   "index": 41,
   "file": "ep01_gangnam_10.mp3",
   "job": "5548ad1b-9746-41ae-be9f-60623bb9bdfb",
-  "seconds": 4.64
+  "seconds": 4.64,
+  "tts_text": "Thirteen thousand free concert tickets. Gone almost immediately."
  },
  {
   "index": 42,
   "file": "ep01_gangnam_11.mp3",
   "job": "09dcbe10-240a-4c10-ad59-145dc700686f",
-  "seconds": 2.66
+  "seconds": 2.66,
+  "tts_text": "Free?! I would have fought someone for those."
  },
  {
   "index": 43,
   "file": "ep01_gangnam_12.mp3",
   "job": "acda239a-803a-4cb5-ae4b-12253060c3a6",
-  "seconds": 7.76
+  "seconds": 7.76,
+  "tts_text": "This is a serious news program. We do not fight for tickets. We refresh the page calmly, like adults."
  },
  {
   "index": 44,
   "file": "ep01_gangnam_13.mp3",
-  "job": "18828fbb-f2aa-4c3d-89bd-c99a4894b8e0",
-  "seconds": 11.68
+  "job": "50edf039-f86a-4737-969c-a91f54904e43",
+  "seconds": 11.68,
+  "note": "regenerated after speech-recognition check",
+  "tts_text": "Organizers even studied New York's Macy's Thanksgiving Day Parade and Japan's Nebuta Festival. The goal: when people think 'K-festival', they think Gangnam."
  },
  {
   "index": 45,
   "file": "ep01_gangnam_14.mp3",
   "job": "7954bc47-82ed-482f-b820-83b419230e97",
-  "seconds": 2.25
+  "seconds": 2.25,
+  "tts_text": "Admit it. You're going."
  },
  {
   "index": 46,
   "file": "ep01_gangnam_15.mp3",
   "job": "1fa8923a-1fb7-4059-a548-7227ccae9d4e",
-  "seconds": 2.72
+  "seconds": 2.72,
+  "tts_text": "I have... prior commitments."
  },
  {
   "index": 47,
   "file": "ep01_gangnam_16.mp3",
   "job": "e69fbad6-27d8-4478-b7f9-525be9a14b61",
-  "seconds": 10.0
+  "seconds": 10.0,
+  "tts_text": "Kay's Take: Fourteen years after one song put Gangnam on the world map, Gangnam is still trying to live up to it. Honestly? Respect."
  },
  {
   "index": 48,
   "file": "ep01_samsung_01.mp3",
   "job": "027aba07-82fa-4704-85dc-093f47f650e8",
-  "seconds": 1.92
+  "seconds": 1.92,
+  "tts_text": "Speaking of prior commitments..."
  },
  {
   "index": 49,
   "file": "ep01_samsung_02.mp3",
   "job": "c1cdcf84-4543-4011-8063-11657778f797",
-  "seconds": 7.76
+  "seconds": 7.76,
+  "tts_text": "Finally tonight, a money story. In Korea, you can subscribe to... your air conditioner."
  },
  {
   "index": 50,
   "file": "ep01_samsung_03.mp3",
   "job": "429d1155-63a7-4896-a65d-7b7aaf951f5d",
-  "seconds": 2.85
+  "seconds": 2.85,
+  "tts_text": "Like Netflix? For an air conditioner?"
  },
  {
   "index": 51,
   "file": "ep01_samsung_04.mp3",
   "job": "678efaa1-5bdf-415a-820d-9b718b15096c",
-  "seconds": 10.64
+  "seconds": 10.64,
+  "tts_text": "Sort of. Samsung says its appliance subscription business is now approaching one trillion won in sales. That's about seven hundred forty million dollars."
  },
  {
   "index": 52,
   "file": "ep01_samsung_05.mp3",
   "job": "30dd1961-cb71-4ee4-b4f6-c6ed92540152",
-  "seconds": 9.84
+  "seconds": 9.84,
+  "tts_text": "You pay monthly, and for the whole contract, engineers take care of maintenance, repairs and check-ups. It's less like streaming, and more like a very long rental."
  },
  {
   "index": 53,
   "file": "ep01_samsung_06.mp3",
   "job": "aca07dd5-982e-4533-aaee-5de1f41cea62",
-  "seconds": 4.65
+  "seconds": 4.65,
+  "tts_text": "So I don't own the fridge. The fridge and I are... in a relationship."
  },
  {
   "index": 54,
   "file": "ep01_samsung_07.mp3",
   "job": "762192e0-6833-49c8-a4d1-920758f9d10c",
-  "seconds": 3.68
+  "seconds": 3.68,
+  "tts_text": "A six-year relationship. With scheduled check-ins."
  },
  {
   "index": 55,
   "file": "ep01_samsung_08.mp3",
   "job": "4f210f00-0fe5-45d3-a628-dab95cf0df93",
-  "seconds": 10.0
+  "seconds": 10.0,
+  "tts_text": "Let's look at the numbers. Ninety-four point eight percent of Koreans used a subscription service this year. The average person has five point five."
  },
  {
   "index": 56,
   "file": "ep01_samsung_09.mp3",
   "job": "4b282166-ec6d-4789-869f-b46e940e881b",
-  "seconds": 3.48
+  "seconds": 3.48,
+  "tts_text": "Five point five? Who has half a subscription?"
  },
  {
   "index": 57,
   "file": "ep01_samsung_10.mp3",
   "job": "527982ae-5bdb-4aa8-8f7a-cd422af6d47d",
-  "seconds": 5.68
+  "seconds": 5.68,
+  "tts_text": "Technically, it's an average. Nobody has half a subscription. ...Probably."
  },
  {
   "index": 58,
   "file": "ep01_samsung_11.mp3",
   "job": "7476aec2-bddd-4921-bc3c-deb880f6c70a",
-  "seconds": 12.4
+  "seconds": 12.4,
+  "tts_text": "Now Samsung wants hotels, hospitals and public offices to subscribe too. There's even a plan for newlyweds and people who move a lot, with cleaning visits at night and on holidays."
  },
  {
   "index": 59,
   "file": "ep01_samsung_12.mp3",
   "job": "f365b158-0a70-4ebe-bc80-2c1a57196c82",
-  "seconds": 4.44
+  "seconds": 4.44,
+  "tts_text": "Night cleaning visits? That's not a subscription. That's a love language."
  },
  {
   "index": 60,
   "file": "ep01_samsung_13.mp3",
-  "job": "faf822d8-07a1-4008-a1ad-dda2c4582737",
-  "seconds": 10.96
+  "job": "9c6113c7-3b9c-4b4f-9aa8-ab0ef3f21eb0",
+  "seconds": 10.96,
+  "note": "regenerated after speech-recognition check",
+  "tts_text": "Kay's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized."
  },
  {
   "index": 61,
   "file": "ep01_samsung_14.mp3",
   "job": "e74f1804-64d8-4af2-b9e4-2ee0ff6ced6e",
-  "seconds": 3.92
+  "seconds": 3.92,
+  "tts_text": "You can also subscribe to this channel. No six-year contract."
  },
  {
   "index": 62,
   "file": "ep01_samsung_15.mp3",
   "job": "39c625f6-cd9b-4643-a303-89bf25c502b5",
-  "seconds": 4.16
+  "seconds": 4.16,
+  "tts_text": "That's all for tonight. Stay curious. Keep your lenses clean."
  },
  {
   "index": 63,
   "file": "ep01_samsung_16.mp3",
   "job": "957d3aa7-ff66-496a-870c-ed30e32d22c2",
-  "seconds": 2.04
+  "seconds": 2.04,
+  "tts_text": "So what are you doing this weekend?"
  },
  {
   "index": 64,
   "file": "ep01_samsung_17.mp3",
   "job": "6d9019a1-afbe-436b-9f9f-3e4c8de3d9ca",
-  "seconds": 2.48
+  "seconds": 2.48,
+  "tts_text": "Refreshing pages. Calmly."
  }
 ]
