@@ -95,5 +95,23 @@
   "source_page": "https://images.nasa.gov/details/PIA25521",
   "on_screen_credit": "Image: NASA/JPL-Caltech",
   "retrieved": "2026-09-29"
+ },
+ "bouncers.png": {
+  "line": 7,
+  "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
+  "license": "AI-generated for this channel",
+  "higgsfield_job": "f625e477-7e11-403e-a0b8-ca02d8143e28",
+  "on_screen_credit": "AI-generated illustration",
+  "note": "Two high-pressure systems as club bouncers guarding the Korean peninsula. Code adds labels NORTH PACIFIC HIGH / TIBETAN HIGH",
+  "retrieved": "2026-09-29"
+ },
+ "stuffy_room.png": {
+  "line": 11,
+  "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
+  "license": "AI-generated for this channel",
+  "higgsfield_job": "fe39556b-8dce-4357-983c-82e0b7675f02",
+  "on_screen_credit": "AI-generated illustration",
+  "note": "The ocean as a sweaty character in a shut room",
+  "retrieved": "2026-09-29"
  }
 }

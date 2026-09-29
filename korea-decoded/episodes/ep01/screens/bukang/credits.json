@@ -22,5 +22,32 @@
   "on_screen_credit": "Photo: laszlo-photo (BY 2.0)",
   "note": "Generic requiem shark, species not confirmed. Label 'File photo', never as Bukang-i",
   "retrieved": "2026-09-29"
+ },
+ "bukang_canal.png": {
+  "line": 4,
+  "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
+  "license": "AI-generated for this channel",
+  "higgsfield_job": "30f151bb-790e-44c4-9f15-6ee735160ff0",
+  "on_screen_credit": "AI-generated illustration",
+  "note": "Canal at a waterfront park with a crowd; not a photo of the real site",
+  "retrieved": "2026-09-29"
+ },
+ "bukang_staycation.png": {
+  "line": 5,
+  "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
+  "license": "AI-generated for this channel",
+  "higgsfield_job": "3677bf56-bdd9-42a6-a60b-005b2a270f12",
+  "on_screen_credit": "AI-generated illustration",
+  "note": "Gag: shark on a staycation (the nickname plays on 호캉스)",
+  "retrieved": "2026-09-29"
+ },
+ "bukang_farewell.png": {
+  "line": 14,
+  "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
+  "license": "AI-generated for this channel",
+  "higgsfield_job": "75a4543e-820e-465e-bfb4-bebf71585d1f",
+  "on_screen_credit": "AI-generated illustration",
+  "note": "Farewell tour gag. Only use after the rescue actually happened",
+  "retrieved": "2026-09-29"
  }
 }
