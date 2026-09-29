@@ -19,7 +19,8 @@
    "label": "DR. KANGFREE",
    "energy": 1.8,
    "head_ratio": 0.74,
-   "shoulders": 500
+   "shoulders": 500,
+   "chin_drop": 0.12
   }
  },
  "segments": [

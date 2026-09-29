@@ -14,8 +14,12 @@ import render_episode  # noqa: E402
 def test_shots_follow_news_grammar():
     lines = [{"who": "anchor"}, {"who": "anchor", "screen": "s1"}, {"who": "anchor", "screen": "s2", "big": True},
              {"who": "panel"}, {"who": "anchor"}, {"who": "panel"}]
-    assert episode.plan_shots(lines) == ["anchor_solo", "anchor_screen", "screen_full",
+    assert episode.plan_shots(lines) == ["wide", "anchor_screen", "screen_full",
                                          "two_shot", "speaker_close", "speaker_close"]
+
+
+def test_anchor_alone_opens_on_the_anchor():
+    assert episode.plan_shots([{"who": "anchor"}, {"who": "anchor"}]) == ["anchor_solo", "anchor_solo"]
 
 
 def test_a_line_can_force_its_shot():
@@ -40,8 +44,8 @@ def test_split_fills_topic_ticker_and_cast():
 
 
 def test_a_panel_line_with_a_visual_plays_over_the_full_screen():
-    lines = [{"who": "anchor"}, {"who": "panel", "screen": "s1"}]
-    assert episode.plan_shots(lines) == ["anchor_solo", "screen_full"]
+    lines = [{"who": "anchor", "screen": "s0"}, {"who": "panel", "screen": "s1"}]
+    assert episode.plan_shots(lines) == ["anchor_screen", "screen_full"]
 
 
 def test_screens_inside_one_line_switch_in_order_and_crossfade():
@@ -84,3 +88,12 @@ def test_long_caption_groups_shrink_to_stay_on_screen():
     band = canvas.crop((0, newsrig.CAPTION_Y - 50, newsrig.SW, newsrig.CAPTION_Y + 50))
     left, right = band.crop((0, 0, 10, 100)), band.crop((newsrig.SW - 10, 0, newsrig.SW, 100))
     assert left.getextrema() == ((0, 0),) * 3 and right.getextrema() == ((0, 0),) * 3  # nothing touches the edges
+
+
+def test_short_end_card_fades_in_over_the_last_frame():
+    from PIL import Image
+    last = Image.new("RGB", (episode.SW, episode.SH), (200, 0, 0))
+    assert episode.end_card(last, 0.0).getpixel((10, 10)) == (200, 0, 0)
+    done = episode.end_card(last, 1.0)
+    assert done.getpixel((10, 10)) != (200, 0, 0)
+    assert done.getpixel((episode.SW // 2, 1000))[:3] != done.getpixel((10, 10))  # the handle badge is drawn

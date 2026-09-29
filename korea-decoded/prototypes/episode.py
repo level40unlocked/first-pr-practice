@@ -34,10 +34,11 @@ SCREEN_FULL = (300, 128, 1620, 885)  # big, below the top tags, above the lower 
 
 
 def plan_shots(lines, anchor="anchor"):
-    """Picks a shot per line. Rules: open on the anchor alone; news lines with a visual get the
-    explainer screen (a "big" visual goes full screen); a panel's first line is a two-shot that brings
+    """Picks a shot per line. Rules: open on the whole desk when anyone else is on it (so nobody pops in
+    later), otherwise on the anchor alone; news lines with a visual get the explainer screen (a "big" visual goes full screen); a panel's first line is a two-shot that brings
     them in; after that the camera pushes in on whoever speaks."""
     shots, seen = [], set()
+    has_guests = any(ln["who"] != anchor for ln in lines)
     for i, ln in enumerate(lines):
         who = ln["who"]
         if ln.get("shot"):
@@ -46,6 +47,8 @@ def plan_shots(lines, anchor="anchor"):
             shot = "screen_full" if ln.get("big") else "anchor_screen"
         elif ln.get("screen"):  # a panel line over a visual: the voice plays over the full screen
             shot = "screen_full"
+        elif i == 0 and who == anchor and has_guests:
+            shot = "wide"
         elif who == anchor:
             talking_to_panel = i > 0 and lines[i - 1]["who"] != anchor
             shot = "speaker_close" if talking_to_panel else "anchor_solo"
@@ -96,6 +99,25 @@ def fit_cover(img, w, h):
 
 KB_SECONDS = 7.0  # Ken Burns: how long a slow push/pan takes to reach its end point
 FADE = 0.3  # crossfade between screens inside one line
+
+
+END_CARD = 2.5  # seconds a Short holds its "full episode on the channel" card after the last line
+
+
+def end_card(last, t):
+    """The Short's closing card over its frozen last frame; fades in over 0.35 s."""
+    u = ease(min(1.0, t / 0.35))
+    frame = Image.blend(last, Image.new("RGB", last.size, nr.BRAND_NAVY), 0.82 * u)
+    card = Image.new("RGBA", last.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(card)
+    cx = SW / 2
+    d.text((cx, 760), "WANT THE FULL STORY?", font=nr.font(64), fill=nr.YELLOW, anchor="mm")
+    d.text((cx, 870), "Full episode on our channel", font=nr.font(50), fill=nr.WHITE, anchor="mm")
+    d.rounded_rectangle((cx - 330, 950, cx + 330, 1050), 50, fill=nr.YELLOW)
+    d.text((cx, 1000), nr.HANDLE, font=nr.font(48), fill=nr.NAVY, anchor="mm")
+    card.putalpha(card.getchannel("A").point(lambda a: int(a * u)))
+    frame.paste(card, (0, 0), card)
+    return frame
 
 
 def ease(u):
@@ -405,14 +427,17 @@ def main():
             target[2] += min(0.06, 0.015 * (held - 4))
         return target
 
-    def ff(path, w, h, start=0.0):
+    def ff(path, w, h, start=0.0, audio_len=None):
+        # audio_len: keep that much of the track, then silence (a Short's end card must not play the next line)
+        af = ["-af", f"atrim=0:{audio_len:.3f},apad"] if audio_len is not None else []
         return subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
                                  "-r", str(FPS), "-i", "-", "-ss", f"{start:.3f}", "-i", wav, "-c:v", "libx264",
                                  "-preset", "superfast", "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac",
-                                 "-ar", "48000", "-shortest", path], stdin=subprocess.PIPE)
+                                 "-ar", "48000", "-shortest", *af, path], stdin=subprocess.PIPE)
 
     lp = ff(scene["out_long"], W, H)
-    sp = ff(scene["out_short"], SW, SH, s_from) if s_from is not None else None
+    sp = ff(scene["out_short"], SW, SH, s_from, s_to - s_from) if s_from is not None else None
+    last_short = None
     cam = cam_target(lines[0], 0)
     rect, alpha = list(SCREEN_OTS), 0.0
     shown_screen, prev_line = None, None
@@ -489,12 +514,16 @@ def main():
             if grp:
                 nr.draw_caption(sframe, grp, t)
             sp.stdin.write(np.asarray(sframe).tobytes())
+            last_short = sframe
 
         off = int(t * 110) % ticker_w
         view.paste(ticker.crop((off, 0, off + W - 190, 40)), (190, 1040))
         paste_bands(view, bug)
         lp.stdin.write(np.asarray(view).tobytes())
 
+    if sp is not None and last_short is not None:
+        for i in range(int(END_CARD * FPS)):
+            sp.stdin.write(np.asarray(end_card(last_short, i / FPS)).tobytes())
     for p in (lp, sp):
         if p is not None:
             p.stdin.close()

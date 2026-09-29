@@ -447,7 +447,8 @@ def build():
             "anchor": {"head": "cast/a_head.png", "body": "cast/a_body.png", "ref": "cast/a_ref.png", "x": 1290,
                        "label": "MASTER K"},
             "panel": {"head": "cast/p_head.png", "body": "cast/p_body.png", "ref": "cast/p_ref.png", "x": 630,
-                      "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500},
+                      "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500,
+                      "chin_drop": 0.12},
         },
         "segments": [],
     }
