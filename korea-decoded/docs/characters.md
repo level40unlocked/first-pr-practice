@@ -13,7 +13,7 @@
 | 나이, 배경 | 31세. 서울 출신, 해외에서 공부하고 돌아옴(그래서 영어가 유창함). 통계 연구원으로 일하다가 "숫자를 사람 말로 번역하는 사람"이 되고 싶어 앵커가 됨 |
 | 성격 | 차분함, 무표정 유머(deadpan), 정확성 집착. 겉은 쿨하지만 사소한 것에 크게 흔들림 |
 | 말버릇 | "Let's look at the numbers." / "Technically…" / 이상하게 정확한 숫자 ("fifty-one point six percent") / 괄호 속 TMI |
-| 오프닝 | "Good evening, I'm Master K. This is the Four Eyes Report." |
+| 오프닝 | ✅ **"Hello, world."** 고정 (프로그래밍 첫 출력 문장 + 세계 시청자에게 하는 인사, 시간대를 타지 않음) → 이번 회 한 줄(선택) → "I'm Master K, and this is the Four Eyes Report." → 오늘의 메뉴("Coming up: …"). 아래 "오프닝 한 줄 후보" 참고 |
 | 클로징 | "Stay curious. Keep your lenses clean." ✅ 확정 |
 | 반복 개그 | ① "Core" 정정 ("It's K. It has always been K.") ② "This is a serious news program." (아무도 안 믿음) ③ 팩트를 말하기 전에 안경을 고쳐 씀 ④ 몰래 K-드라마를 보고 우는데 절대 인정 안 함 |
 | 역할 | 사실 전달, 진행, 꼭지 마무리. 운영자의 관점은 **"K's Take"** 코너로 전함 |
@@ -53,6 +53,23 @@
 - 대학원 시절 같은 연구실 선후배. K는 "정리하는 사람", Dr. Kangfree는 "어지르는 사람". Dr. Kangfree가 "Core" 별명을 가장 열심히 퍼뜨림
 - K는 Dr. Kangfree를 진정시키려 하지만 결국 같이 흥분함 (쇼의 기본 개그 구조: **무표정 vs 폭주**)
 - 서로 진심으로 존중함. 말싸움은 하되 비꼬거나 무시하지 않음
+
+## 오프닝 한 줄 후보 ("Hello, world." 뒤에 붙임, 매회 바꿈)
+1. Some news is big. Some news is weird. Tonight, most of it is both. (EP.1 사용)
+2. The world keeps asking, "What is going on in Korea?" We have answers. And graphs.
+3. From Seoul, where the news is fast, the internet is faster, and we are... thorough.
+4. Korea made a lot of headlines this week. We read all of them. Including the footnotes.
+5. If it happened in Korea this week and made us say "wait, what?", it's on tonight's show.
+6. You bring the curiosity. We bring the glasses.
+7. We've cleaned our lenses, checked our facts, and hidden Dr. Kangfree's coffee. (Kangfree: "You did WHAT?")
+8. We're not the fastest news in Korea. But we do have the thickest glasses.
+9. Other channels bring you the news first. We bring it second, with charts.
+10. Tonight I've prepared forty-one charts. We will use three.
+- 가끔 변주 (에피소드당 한 번): "Hello, world. And hello, Bukang-i." 같은 주제 인사 / Kangfree: "Why do you always say it like a computer booting up?" K: "Because I am fully loaded."
+
+## 잡담 규칙
+- 꼭지 사이 연결, 무거운 꼭지 뒤 분위기 전환, 클로징 뒤 한마디에 넣음. 한 번에 10~20초, 에피소드당 3~5번
+- 쇼츠 구간 밖에만. 앞 꼭지의 개그를 이어받는 콜백이면 가장 좋음
 
 ## 반복 개그 사용 규칙
 - 고정 개그(Core ↔ "It's K" 정정, "This is a serious news program", "Wait. WAIT.", "I'm booking a flight to Seoul!", Joe의 호루라기 등)는 **한 에피소드에 각각 한 번**까지. 자주 나오면 뻔해짐 (EP.2 초안 피드백)
