@@ -58,13 +58,16 @@ Illustrations marked "AI-generated illustration" on screen are AI-generated. Cha
 | 댓글 | 켬, 부적절 가능성 있는 댓글 검토 대기 | |
 | 재생목록 | "Four Eyes Report — Full Episodes" | |
 
-## 4. 썸네일 (1280×720, 2MB 이하)
+## 4. 썸네일 ✅ 확정 (2026-09-29)
 
-- 휴대폰에서 작게 봐도 읽히게 **요소 3개 이하**: 캐릭터 얼굴 1 + 핵심 그림 1 + 큰 글자 3~4단어
-- 추천 안 A: 왼쪽 Master K 놀란 얼굴(입 벌림), 오른쪽 선글라스 상어(이미 있는 AI 그림), 노란 큰 글자 **"IT WON'T LEAVE"**, 배경 서울 노을
-- 안 B: Kangfree가 놀라서 가리키는 포즈 + 상어 + **"570,000 FANS?!"**
-- 채널 공통 틀: 노랑·남색, 오른쪽 위 작은 안경 로고. 에피소드 번호는 넣지 않음
-- ⚠️ 맞춤 썸네일은 **채널 전화번호 인증**(Studio → 설정 → 채널 → 기능 사용 자격)이 있어야 올릴 수 있음
+"테스트 및 비교"(A/B)에 3개 등록. 문구·그림은 같고 캐릭터·포즈만 다름 → 어떤 캐릭터가 클릭을 부르는지 비교
+1. `thumbs/thumb_G.jpg` Master K 놀람 + 수로 상어 + **"A SHARK IN THE CITY?!"** (기본)
+2. `thumbs/thumb_J.jpg` Kangfree 가리키기 포즈 + 같은 그림·문구
+3. `thumbs/thumb_I.jpg` Kangfree 양손 볼 OMG 포즈 + 같은 그림·문구
+
+- 공통: 🇰🇷 BUSAN, KOREA 배지, 상어 위 "부캉이 / BUKANG-I" 이름표(썸네일 그림 속 한글은 필요할 때만), 서울 노을 배경, 오른쪽 위 안경 로고
+- 다시 만들기: `cd episodes/ep01 && python3 ../../prototypes/thumbnail.py thumbs/thumb_G.json thumbs/thumb_G.jpg`
+- 결과(클릭률)는 1~2주 뒤 확인해서 EP.2 썸네일 기본 캐릭터·포즈 결정
 
 ## 5. 최종 화면 · 카드
 
