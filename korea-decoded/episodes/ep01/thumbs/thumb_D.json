@@ -1,0 +1,36 @@
+{
+ "background": "../../assets/studio/seoul_dusk.jpg",
+ "badge": "BUSAN, KOREA",
+ "character_height": 820,
+ "character_x": -70,
+ "picture_y": 80,
+ "picture": "screens/bukang/bukang_canal.png",
+ "character": {
+  "head": "cast/a_head.png",
+  "body": "cast/a_body.png",
+  "ref": "cast/a_ref.png",
+  "label": "MASTER K",
+  "mouth": "open",
+  "gaze": [
+   0.8,
+   0.0
+  ]
+ },
+ "tag": {
+  "hangul": "부캉이",
+  "roman": "BUKANG-I",
+  "at": [
+   0.48,
+   0.62
+  ]
+ },
+ "text": [
+  "IT WON'T",
+  "LEAVE"
+ ],
+ "picture_size": [
+  640,
+  380
+ ],
+ "text_size": 100
+}

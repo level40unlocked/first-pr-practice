@@ -8,14 +8,59 @@ spec: {"background": "...jpg", "picture": "...png", "character": {<Puppet spec>,
 Paths are relative to the current directory, like the episode scripts.
 """
 import json
+import os
 import sys
 
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 import dialog as dg
 import newsrig as nr
 
 TW, TH = 1280, 720
+_HERE = os.path.dirname(os.path.abspath(__file__))
+HANGUL_FONT = os.path.join(_HERE, "..", "assets", "fonts", "BlackHanSans-Regular.ttf")  # OFL
+EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+
+
+def flag_kr(h):
+    """South Korean flag at height h (color emoji glyph, rendered at its native size and scaled)."""
+    f = ImageFont.truetype(EMOJI_FONT, 109)
+    img = Image.new("RGBA", (160, 160), (0, 0, 0, 0))
+    ImageDraw.Draw(img).text((0, 0), "\U0001F1F0\U0001F1F7", font=f, embedded_color=True)
+    img = img.crop(img.getbbox())
+    return img.resize((round(img.width * h / img.height), h), Image.LANCZOS)
+
+
+def badge(text, h=58):
+    """Location chip: flag + white text on navy, e.g. "BUSAN, KOREA"."""
+    f = nr.font(int(h * 0.55))
+    fl = flag_kr(int(h * 0.62))
+    probe = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    w = int(probe.textlength(text, font=f)) + fl.width + int(h * 0.9)
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), h // 2, fill=nr.NAVY + (240,), outline=nr.WHITE, width=3)
+    img.alpha_composite(fl, (int(h * 0.35), (h - fl.height) // 2))
+    d.text((int(h * 0.35) + fl.width + int(h * 0.2), h / 2), text, font=f, fill=nr.WHITE, anchor="lm")
+    return img
+
+
+def name_tag(hangul, roman, size=74):
+    """Yellow sticker with a hangul name and its romanization, with a pointer at the bottom middle."""
+    fk, fr = ImageFont.truetype(HANGUL_FONT, size), nr.font(int(size * 0.34))
+    probe = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    w = int(max(probe.textlength(hangul, font=fk), probe.textlength(roman, font=fr))) + size
+    h = int(size * 1.55)
+    tip = int(size * 0.35)
+    img = Image.new("RGBA", (w + 8, h + tip + 8), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((4, 4, w + 4, h + 4), 18, fill=nr.YELLOW, outline=nr.BLACK, width=5)
+    cx = (w + 8) // 2
+    d.polygon([(cx - tip, h), (cx + tip, h), (cx, h + tip + 2)], fill=nr.YELLOW, outline=nr.BLACK)
+    d.rectangle((cx - tip + 4, h - 2, cx + tip - 4, h + 3), fill=nr.YELLOW)
+    d.text((cx, 4 + size * 0.62), hangul, font=fk, fill=nr.BLACK, anchor="mm")
+    d.text((cx, 4 + size * 1.25), roman, font=fr, fill=nr.BLACK, anchor="mm")
+    return img
 
 
 def backdrop(path):
@@ -59,8 +104,24 @@ def shadowed(canvas, piece, xy, radius=14, offset=(10, 14)):
 def make(spec):
     canvas = backdrop(spec["background"]).convert("RGBA")
     # picture: right side, tilted a little so it reads as a "photo" card
-    pic = framed(spec["picture"], 660, 400).rotate(-3, expand=True, resample=Image.BICUBIC)
-    shadowed(canvas, pic, (TW - pic.width - 30, 70))
+    pw, ph = spec.get("picture_size", (660, 400))
+    flat = framed(spec["picture"], pw, ph)
+    tag = spec.get("tag")  # {"hangul": "부캉이", "roman": "BUKANG-I", "at": [0.47, 0.6]} (share of the picture)
+    if tag:  # stuck on the picture so it tilts with it; the pointer lands on "at"
+        nt = name_tag(tag["hangul"], tag["roman"], tag.get("size", 74))
+        tx = int(12 + tag["at"][0] * pw - nt.width / 2)
+        ty = int(12 + tag["at"][1] * ph - nt.height)
+        pad = max(0, -ty)
+        big = Image.new("RGBA", (flat.width, flat.height + pad), (0, 0, 0, 0))
+        big.alpha_composite(flat, (0, pad))
+        big.alpha_composite(nt, (max(0, min(tx, flat.width - nt.width)), ty + pad))
+        flat = big
+    pic = flat.rotate(-3, expand=True, resample=Image.BICUBIC)
+    px, py = TW - pic.width - 30, spec.get("picture_y", 70)
+    shadowed(canvas, pic, (px, py))
+    if spec.get("badge"):
+        b = badge(spec["badge"])
+        shadowed(canvas, b, (px + 10, max(12, py + (pic.height - flat.height) // 2 - 22)), radius=8, offset=(4, 6))
     # character: left, big, cut by the bottom edge
     ch = character(spec["character"])
     s = spec.get("character_height", 700) / ch.height
