@@ -5,16 +5,16 @@
  "outro_ticker": "Thanks for watching. See you next episode",
  "characters": {
   "anchor": {
-   "head": "a_head.png",
-   "body": "a_body.png",
-   "ref": "a_ref.png",
+   "head": "cast/a_head.png",
+   "body": "cast/a_body.png",
+   "ref": "cast/a_ref.png",
    "x": 1290,
    "label": "MASTER K"
   },
   "panel": {
-   "head": "p_head.png",
-   "body": "p_body.png",
-   "ref": "p_ref.png",
+   "head": "cast/p_head.png",
+   "body": "cast/p_body.png",
+   "ref": "cast/p_ref.png",
    "x": 630,
    "label": "DR. KANGFREE",
    "energy": 1.8,
@@ -29,102 +29,196 @@
    "headline": "A shark moved into a Busan canal and half a million people came to see it",
    "hook": "A shark got stuck in a Busan canal.\nHalf a million people showed up",
    "screens": {
-    "s1": {
-     "image": "bukang_canal.png",
-     "label": "BUSAN NORTH PORT",
-     "credit": "AI-generated image"
+    "menu_shark": {
+     "image": "screens/bukang/bukang_staycation.png",
+     "label": "TONIGHT",
+     "credit": "AI-generated illustration"
     },
-    "s2": {
-     "image": "bukang_numbers.png",
+    "menu_typhoon": {
+     "image": "screens/typhoon/bouncers.png",
+     "label": "TONIGHT",
+     "credit": "AI-generated illustration"
+    },
+    "menu_psy": {
+     "image": "screens/gangnam/gangnam_parade.png",
+     "label": "TONIGHT",
+     "credit": "AI-generated illustration"
+    },
+    "menu_fridge": {
+     "image": "screens/samsung/fridge_date.png",
+     "label": "TONIGHT",
+     "credit": "AI-generated illustration"
+    },
+    "canal": {
+     "image": "screens/bukang/bukang_canal.png",
+     "label": "BUSAN NORTH PORT",
+     "credit": "AI-generated illustration"
+    },
+    "requiem": {
+     "image": "screens/bukang/requiem_shark_underwater.jpg",
+     "label": "FILE PHOTO",
+     "credit": "Photo: laszlo-photo (BY 2.0)"
+    },
+    "dusky": {
+     "image": "screens/bukang/dusky_shark_illustration.jpg",
+     "label": "DUSKY SHARK (ILLUSTRATION)",
+     "credit": "Illustration: Queensland State Archives (public domain)",
+     "kb": "left"
+    },
+    "staycation": {
+     "image": "screens/bukang/bukang_staycation.png",
+     "label": "MEET BUKANG-I",
+     "credit": "AI-generated illustration"
+    },
+    "visitors": {
+     "card": {
+      "title": "BY THE NUMBERS",
+      "stats": [
+       {
+        "value": 568800,
+        "label": "visitors since Sept. 19"
+       },
+       {
+        "value": 140000,
+        "label": "in a single day over Chuseok"
+       }
+      ]
+     },
      "label": "BY THE NUMBERS",
      "credit": "Source: Busan Infrastructure Corp. via Yonhap"
+    },
+    "fifty": {
+     "card": {
+      "title": "BY THE NUMBERS",
+      "stats": [
+       {
+        "value": 2000,
+        "prefix": "about ",
+        "label": "visitors on a normal holiday"
+       },
+       {
+        "value": 50,
+        "prefix": "x",
+        "label": "this Chuseok"
+       }
+      ]
+     },
+     "label": "BY THE NUMBERS",
+     "credit": "Source: Busan Infrastructure Corp. via Yonhap"
+    },
+    "farewell": {
+     "image": "screens/bukang/bukang_farewell.png",
+     "label": "THE PLAN: BACK TO SEA",
+     "credit": "AI-generated illustration"
     }
    },
    "lines": [
     {
      "who": "anchor",
-     "audio": "ep01_bukang_01.mp3",
+     "audio": "audio/ep01_bukang_01.mp3",
      "text": "Hello, world. Some news is big. Some news is weird. Tonight, most of it is both. I'm Master K, and this is the Four Eyes Report."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_02.mp3",
+     "audio": "audio/ep01_bukang_02.mp3",
+     "screen": [
+      "menu_shark",
+      "menu_typhoon",
+      "menu_psy",
+      "menu_fridge"
+     ],
+     "big": true,
      "text": "Coming up: a shark that won't leave, a typhoon that never came, Psy, and a refrigerator you can date. Let's begin."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_03.mp3",
+     "audio": "audio/ep01_bukang_03.mp3",
      "text": "Our top story: a shark. In a canal. In the middle of a city."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_04.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_bukang_04.mp3",
+     "screen": "canal",
      "text": "Ten days ago, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_05.mp3",
+     "audio": "audio/ep01_bukang_05.mp3",
+     "screen": "requiem",
      "text": "Officials tried to guide it back to the sea. The shark declined."
     },
     {
      "who": "panel",
-     "audio": "ep01_bukang_06.mp3",
+     "audio": "audio/ep01_bukang_06.mp3",
      "text": "It DECLINED? Core, a shark cannot decline things."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_07.mp3",
+     "audio": "audio/ep01_bukang_07.mp3",
      "text": "It's K. And technically, it can. It simply did not leave."
     },
     {
+     "who": "panel",
+     "audio": "audio/ep01_bukang_08.mp3",
+     "text": "What kind of shark is it, anyway?"
+    },
+    {
      "who": "anchor",
-     "audio": "ep01_bukang_08.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_bukang_09.mp3",
+     "screen": "dusky",
+     "text": "Probably a dusky shark. Or a copper shark. It declined to comment."
+    },
+    {
+     "who": "anchor",
+     "audio": "audio/ep01_bukang_10.mp3",
+     "screen": "staycation",
+     "big": true,
      "text": "So Korea did what Korea does. It gave the shark a nickname: Bukang-i. That's 'North Port', plus a cute little 'ee' on the end."
     },
     {
      "who": "panel",
-     "audio": "ep01_bukang_09.mp3",
+     "audio": "audio/ep01_bukang_11.mp3",
      "text": "Wait. WAIT. It has a nickname? Does it have a FANDOM?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_10.mp3",
-     "screen": "s2",
+     "audio": "audio/ep01_bukang_12.mp3",
+     "screen": "visitors",
      "big": true,
      "text": "Let's look at the numbers. Five hundred sixty-eight thousand, eight hundred visitors. Over the Chuseok holiday, one hundred forty thousand people came in a single day."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_11.mp3",
-     "screen": "s2",
+     "audio": "audio/ep01_bukang_13.mp3",
+     "screen": "fifty",
+     "big": true,
      "text": "On a normal holiday, this park gets about two thousand. That is a fiftyfold increase. For one shark."
     },
     {
      "who": "panel",
-     "audio": "ep01_bukang_12.mp3",
+     "audio": "audio/ep01_bukang_14.mp3",
      "text": "Half a million people in ten days? That's not a shark. That's a stadium tour."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_13.mp3",
+     "audio": "audio/ep01_bukang_15.mp3",
+     "screen": "farewell",
      "text": "The good news: scientists say Bukang-i is calm and healthy. Starting Tuesday morning, boats and water pumps will gently guide it back out to sea."
     },
     {
      "who": "panel",
-     "audio": "ep01_bukang_14.mp3",
+     "audio": "audio/ep01_bukang_16.mp3",
      "text": "So it's the farewell tour."
     },
     {
      "who": "anchor",
-     "audio": "ep01_bukang_15.mp3",
+     "audio": "audio/ep01_bukang_17.mp3",
      "text": "K's Take: Only in Korea does a lost shark get a name, half a million fans, and a proper send-off. Bukang-i, safe travels."
     }
    ],
    "short": {
-    "from": 4,
-    "to": 12
+    "from": 3,
+    "to": 13
    }
   },
   {
@@ -133,103 +227,219 @@
    "headline": "No typhoon hit Korea this summer, and that is not all good news",
    "hook": "Korea had ZERO typhoons this year.\nWhy scientists are worried",
    "screens": {
-    "s1": {
-     "image": "typhoon_map.png",
-     "label": "THE BOUNCERS",
-     "credit": "Illustration based on KIOST report"
+    "tracks": {
+     "image": "screens/typhoon/track_map.png",
+     "label": "2026 TYPHOON TRACKS",
+     "credit": "Data: IBTrACS (NOAA NCEI)",
+     "kb": "in"
     },
-    "s2": {
-     "image": "typhoon_ocean.png",
+    "zero": {
+     "card": {
+      "title": "THIS YEAR SO FAR",
+      "stats": [
+       {
+        "value": 26,
+        "label": "storm tracks in the West Pacific"
+       },
+       {
+        "value": 0,
+        "label": "landfalls in Korea"
+       }
+      ]
+     },
+     "label": "KOREA, 2026",
+     "credit": "Source: Korea Meteorological Administration"
+    },
+    "bouncers": {
+     "image": "screens/typhoon/bouncers.png",
+     "label": "THE BOUNCERS",
+     "credit": "AI-generated illustration",
+     "kb": "in",
+     "overlays": [
+      {
+       "text": "TIBETAN HIGH",
+       "x": 0.2,
+       "y": 0.07
+      },
+      {
+       "text": "NORTH PACIFIC HIGH",
+       "x": 0.72,
+       "y": 0.07
+      }
+     ]
+    },
+    "dolphin1": {
+     "image": "screens/typhoon/dolphin_iss_1.jpg",
+     "label": "TYPHOON DOLPHIN, AUG. 2",
+     "credit": "Photo: NASA"
+    },
+    "dolphin2": {
+     "image": "screens/typhoon/dolphin_iss_2.jpg",
+     "label": "TYPHOON DOLPHIN, AUG. 2",
+     "credit": "Photo: NASA"
+    },
+    "stormy": {
+     "image": "screens/typhoon/stormy_sea.jpg",
      "label": "WHY IT MATTERS",
-     "credit": "Source: KIOST, Korea Herald"
+     "credit": "Photo: SYLFTCunningLinguist (BY 2.0)"
+    },
+    "calm": {
+     "image": "screens/typhoon/calm_ocean.jpg",
+     "label": "WHY IT MATTERS",
+     "credit": "Photo: Lionello DelPiccolo liodp (CC0 1.0)"
+    },
+    "stuffy": {
+     "image": "screens/typhoon/stuffy_room.png",
+     "label": "THE OCEAN, THIS SUMMER",
+     "credit": "AI-generated illustration",
+     "kb": "in"
+    },
+    "seafarms": {
+     "image": "screens/typhoon/sea_farms_south_korea.jpg",
+     "label": "SEA FARMS, SOUTH COAST",
+     "credit": "Photo: NASA Goddard Photo and Video (BY 2.0)"
+    },
+    "fish": {
+     "card": {
+      "title": "THE COST",
+      "stats": [
+       {
+        "value": 7730000,
+        "label": "farmed fish died this year"
+       },
+       {
+        "value": 15,
+        "prefix": "-",
+        "suffix": "%",
+        "label": "rainfall vs. normal (Mar.-Sept.)"
+       }
+      ]
+     },
+     "label": "SOUTHERN COAST, 2026",
+     "credit": "Source: South Gyeongsang Province, KMA"
+    },
+    "drought": {
+     "image": "screens/typhoon/drought.jpg",
+     "label": "DROUGHT",
+     "credit": "Photo: bartoszjanusz (CC0 1.0)"
+    },
+    "hinnamnor": {
+     "image": "screens/typhoon/hinnamnor_2022_airs.jpg",
+     "label": "TYPHOON HINNAMNOR, 2022",
+     "credit": "Image: NASA/JPL-Caltech"
     }
    },
    "lines": [
     {
      "who": "panel",
-     "audio": "ep01_typhoon_01.mp3",
+     "audio": "audio/ep01_typhoon_01.mp3",
      "text": "Okay. A shark that won't leave. What's next, weather that won't arrive?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_02.mp3",
+     "audio": "audio/ep01_typhoon_02.mp3",
      "text": "...Did you read my script?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_03.mp3",
+     "audio": "audio/ep01_typhoon_03.mp3",
      "text": "Next: the weather. Or rather, the weather that never showed up."
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_04.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_typhoon_04.mp3",
+     "screen": [
+      "tracks",
+      "zero"
+     ],
+     "big": true,
+     "screen_split": [
+      0.55
+     ],
      "text": "This year, not a single typhoon has made landfall in Korea. Not one."
     },
     {
      "who": "panel",
-     "audio": "ep01_typhoon_05.mp3",
+     "audio": "audio/ep01_typhoon_05.mp3",
      "text": "That's amazing! A free summer! Why do you look worried?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_06.mp3",
+     "audio": "audio/ep01_typhoon_06.mp3",
      "text": "I always look like this. But yes, I'm worried."
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_07.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_typhoon_07.mp3",
+     "screen": "bouncers",
      "big": true,
      "text": "For three summers now, two giant high-pressure systems, one from the Pacific and one from Tibet, have parked around Korea like bouncers outside a club."
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_08.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_typhoon_08.mp3",
+     "screen": [
+      "dolphin2",
+      "dolphin1"
+     ],
+     "big": true,
      "text": "In August, Typhoon Dolphin crossed the Pacific, saw the line at the door, and headed toward Shanghai instead."
     },
     {
      "who": "panel",
-     "audio": "ep01_typhoon_09.mp3",
+     "audio": "audio/ep01_typhoon_09.mp3",
      "text": "Rejected at the door. Brutal."
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_10.mp3",
-     "screen": "s2",
+     "audio": "audio/ep01_typhoon_10.mp3",
+     "screen": [
+      "stormy",
+      "calm"
+     ],
      "text": "Here's the catch. Typhoons stir up the ocean. They mix cold, oxygen-rich water from below with the warm water on top. Scientists call them the ocean's ventilation system."
     },
     {
      "who": "panel",
-     "audio": "ep01_typhoon_11.mp3",
+     "audio": "audio/ep01_typhoon_11.mp3",
+     "screen": "stuffy",
      "text": "So the ocean spent all summer in a stuffy room with the windows shut."
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_12.mp3",
-     "screen": "s2",
+     "audio": "audio/ep01_typhoon_12.mp3",
+     "screen": [
+      "seafarms",
+      "fish",
+      "drought"
+     ],
+     "big": true,
+     "screen_split": [
+      0.25,
+      0.7
+     ],
      "text": "Exactly. And fish farms are feeling it. Along the southern coast, about seven point seven million farmed fish have died this year. Rainfall is down about fifteen percent, and parts of the country are in drought."
     },
     {
      "who": "panel",
-     "audio": "ep01_typhoon_13.mp3",
+     "audio": "audio/ep01_typhoon_13.mp3",
      "text": "Okay. That's not a free summer at all."
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_14.mp3",
+     "audio": "audio/ep01_typhoon_14.mp3",
+     "screen": "hinnamnor",
      "text": "And experts warn: fewer typhoons can mean stronger ones later. Warm water is fuel."
     },
     {
      "who": "anchor",
-     "audio": "ep01_typhoon_15.mp3",
+     "audio": "audio/ep01_typhoon_15.mp3",
      "text": "K's Take: A quiet summer isn't always a good summer. Sometimes the calm is the story."
     }
    ],
    "short": {
-    "from": 4,
-    "to": 11
+    "from": 3,
+    "to": 10
    }
   },
   {
@@ -238,107 +448,197 @@
    "headline": "Gangnam wants to be the world's K-festival, and Psy is closing the show",
    "hook": "Gangnam is throwing a street festival.\nGuess who's headlining",
    "screens": {
-    "s1": {
-     "image": "gangnam_parade.png",
-     "label": "GANGNAM FESTIVAL",
-     "credit": "AI-generated image"
+    "street": {
+     "image": "screens/gangnam/gangnam_street_2009.jpg",
+     "label": "GANGNAM, SEOUL",
+     "credit": "Photo: Joop (BY 2.0)"
     },
-    "s2": {
-     "image": "gangnam_numbers.png",
+    "rodeo": {
+     "image": "screens/gangnam/apgujeong_rodeo_night.jpg",
+     "label": "GANGNAM, SEOUL",
+     "credit": "Photo: sellyourseoul (BY 2.0)"
+    },
+    "station": {
+     "image": "screens/gangnam/gangnam_station_sign.jpg",
+     "label": "YES. THAT GANGNAM.",
+     "credit": "Photo: Aspere (CC0 1.0)",
+     "kb": "in"
+    },
+    "route": {
+     "image": "screens/gangnam/gangnam_route.png",
+     "label": "PARADE ROUTE",
+     "credit": "Map © OpenStreetMap contributors",
+     "kb": "in"
+    },
+    "band": {
+     "image": "screens/gangnam/korean_marching_band.jpg",
+     "label": "TRADITIONAL MARCHING BAND (FILE PHOTO)",
+     "credit": "Photo: Prayitno / Thank you for (12 millions +) view (BY 2.0)"
+    },
+    "parade": {
+     "image": "screens/gangnam/gangnam_parade.png",
+     "label": "GANGNAM FESTIVAL",
+     "credit": "AI-generated illustration"
+    },
+    "psy": {
+     "card": {
+      "title": "SUNDAY NIGHT",
+      "stats": [
+       {
+        "value": "K-POP CONCERT",
+        "label": "with ZEROBASEONE and KiiiKiii"
+       },
+       {
+        "value": "PSY",
+        "label": "closing the show"
+       }
+      ]
+     },
+     "label": "SUNDAY",
+     "credit": "Source: Gangnam-gu Office via Korea Herald"
+    },
+    "tickets": {
+     "card": {
+      "title": "BY THE NUMBERS",
+      "stats": [
+       {
+        "value": 13000,
+        "label": "free concert tickets, gone almost immediately"
+       }
+      ]
+     },
      "label": "BY THE NUMBERS",
      "credit": "Source: Gangnam-gu Office via Korea Herald"
+    },
+    "frenzy": {
+     "image": "screens/gangnam/ticket_frenzy.png",
+     "label": "TICKETING, CALMLY",
+     "credit": "AI-generated illustration",
+     "kb": "in"
+    },
+    "nebuta1": {
+     "image": "screens/gangnam/nebuta_lantern.jpg",
+     "label": "NEBUTA FESTIVAL, JAPAN (FILE PHOTO)",
+     "credit": "Photo: sodai gomi (BY 2.0)"
+    },
+    "nebuta2": {
+     "image": "screens/gangnam/nebuta_float.jpg",
+     "label": "NEBUTA FESTIVAL, JAPAN (FILE PHOTO)",
+     "credit": "Photo: x768 (BY 2.0)"
+    },
+    "dosan": {
+     "image": "screens/gangnam/dosan_park_gate.jpg",
+     "label": "DOSAN PARK, THE FINISH LINE",
+     "credit": "Photo: pcamp (BY 2.0)"
     }
    },
    "lines": [
     {
      "who": "panel",
-     "audio": "ep01_gangnam_01.mp3",
+     "audio": "audio/ep01_gangnam_01.mp3",
      "text": "Can we please talk about something happy now?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_02.mp3",
+     "audio": "audio/ep01_gangnam_02.mp3",
      "text": "I have Psy."
     },
     {
      "who": "panel",
-     "audio": "ep01_gangnam_03.mp3",
+     "audio": "audio/ep01_gangnam_03.mp3",
      "text": "Perfect."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_04.mp3",
+     "audio": "audio/ep01_gangnam_04.mp3",
+     "screen": [
+      "street",
+      "rodeo"
+     ],
      "text": "Our next story comes from a neighborhood you already know. Even if you think you don't."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_05.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_gangnam_05.mp3",
+     "screen": "station",
+     "big": true,
      "text": "Gangnam. Yes. That Gangnam."
     },
     {
      "who": "panel",
-     "audio": "ep01_gangnam_06.mp3",
+     "audio": "audio/ep01_gangnam_06.mp3",
      "text": "Wait. Is this about the horse dance? Please tell me this is about the horse dance."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_07.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_gangnam_07.mp3",
+     "screen": [
+      "route",
+      "band",
+      "parade"
+     ],
      "big": true,
      "text": "It is about a festival. This weekend is the fifteenth Gangnam Festival: a one-kilometer street parade, giant character balloons, and a traditional Korean marching band leading the way."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_08.mp3",
+     "audio": "audio/ep01_gangnam_08.mp3",
+     "screen": "psy",
      "text": "And on Sunday, a K-pop concert closed out by the man who taught the entire planet to say 'Gangnam'. Psy."
     },
     {
      "who": "panel",
-     "audio": "ep01_gangnam_09.mp3",
+     "audio": "audio/ep01_gangnam_09.mp3",
      "text": "Psy. In Gangnam. That is the biggest home game in music history!"
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_10.mp3",
-     "screen": "s2",
+     "audio": "audio/ep01_gangnam_10.mp3",
+     "screen": "tickets",
+     "big": true,
      "text": "Thirteen thousand free concert tickets. Gone almost immediately."
     },
     {
      "who": "panel",
-     "audio": "ep01_gangnam_11.mp3",
+     "audio": "audio/ep01_gangnam_11.mp3",
      "text": "Free?! I would have fought someone for those."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_12.mp3",
+     "audio": "audio/ep01_gangnam_12.mp3",
+     "screen": "frenzy",
+     "big": true,
      "text": "This is a serious news program. We do not fight for tickets. We refresh the page calmly, like adults."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_13.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_gangnam_13.mp3",
+     "screen": [
+      "nebuta1",
+      "nebuta2",
+      "dosan"
+     ],
      "text": "Organizers even studied New York's Macy's Thanksgiving Day Parade and Japan's Nebuta Festival. The goal: when people think 'K-festival', they think Gangnam."
     },
     {
      "who": "panel",
-     "audio": "ep01_gangnam_14.mp3",
+     "audio": "audio/ep01_gangnam_14.mp3",
      "text": "Admit it. You're going."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_15.mp3",
+     "audio": "audio/ep01_gangnam_15.mp3",
      "text": "I have... prior commitments."
     },
     {
      "who": "anchor",
-     "audio": "ep01_gangnam_16.mp3",
+     "audio": "audio/ep01_gangnam_16.mp3",
      "text": "K's Take: Fourteen years after one song put Gangnam on the world map, Gangnam is still trying to live up to it. Honestly? Respect."
     }
    ],
    "short": {
-    "from": 5,
-    "to": 12
+    "from": 4,
+    "to": 11
    }
   },
   {
@@ -347,112 +647,194 @@
    "headline": "In Korea, you can subscribe to your air conditioner",
    "hook": "In Korea you can SUBSCRIBE\nto your air conditioner",
    "screens": {
-    "s1": {
-     "image": "samsung_sub.png",
-     "label": "APPLIANCE SUBSCRIPTIONS",
-     "credit": "Illustration"
+    "aircon": {
+     "image": "screens/samsung/wall_air_conditioner.jpg",
+     "label": "SUBSCRIBE TO... THIS",
+     "credit": "Photo: Link576 (BY 2.0)"
     },
-    "s2": {
-     "image": "samsung_numbers.png",
+    "trillion": {
+     "card": {
+      "title": "BY THE NUMBERS",
+      "stats": [
+       {
+        "value": "1 TRILLION WON",
+        "label": "in appliance subscription sales, almost"
+       },
+       {
+        "value": 740,
+        "prefix": "$",
+        "suffix": " million",
+        "label": "in US dollars"
+       }
+      ]
+     },
      "label": "BY THE NUMBERS",
-     "credit": "Source: Samsung Electronics via Yonhap, Korea Herald"
+     "credit": "Source: Samsung Electronics via Yonhap"
+    },
+    "concept": {
+     "image": "screens/samsung/appliance_subscriptions.png",
+     "label": "HOW IT WORKS",
+     "credit": "AI-generated illustration"
+    },
+    "repair": {
+     "image": "screens/samsung/appliance_repairman.jpg",
+     "label": "HOW IT WORKS",
+     "credit": "Photo: Wonderlane (BY 2.0)"
+    },
+    "fridge": {
+     "image": "screens/samsung/refrigerator.jpg",
+     "label": "HOW IT WORKS",
+     "credit": "Photo: Joanna Bourne (BY 2.0)"
+    },
+    "date": {
+     "image": "screens/samsung/fridge_date.png",
+     "label": "A SIX-YEAR RELATIONSHIP",
+     "credit": "AI-generated illustration",
+     "kb": "in"
+    },
+    "subs": {
+     "card": {
+      "title": "BY THE NUMBERS",
+      "stats": [
+       {
+        "value": 94.8,
+        "decimals": 1,
+        "suffix": "%",
+        "label": "of Koreans used a subscription this year"
+       },
+       {
+        "value": 5.5,
+        "decimals": 1,
+        "label": "subscriptions per person, on average"
+       }
+      ]
+     },
+     "label": "BY THE NUMBERS",
+     "credit": "Source: survey cited by Samsung Electronics"
+    },
+    "hotel": {
+     "image": "screens/samsung/hotel_room.jpg",
+     "label": "NEXT: HOTELS",
+     "credit": "Photo: espensorvik (BY 2.0)"
+    },
+    "hospital": {
+     "image": "screens/samsung/hospital_corridor.jpg",
+     "label": "HOSPITALS",
+     "credit": "Photo: Kojotisko (CC0 1.0)"
+    },
+    "moving": {
+     "image": "screens/samsung/moving_boxes.jpg",
+     "label": "NEWLYWEDS AND MOVERS",
+     "credit": "Photo: DoNotLick (BY 2.0)"
     }
    },
    "lines": [
     {
      "who": "anchor",
-     "audio": "ep01_samsung_01.mp3",
+     "audio": "audio/ep01_samsung_01.mp3",
      "text": "Speaking of prior commitments..."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_02.mp3",
+     "audio": "audio/ep01_samsung_02.mp3",
+     "screen": "aircon",
      "text": "Finally tonight, a money story. In Korea, you can subscribe to... your air conditioner."
     },
     {
      "who": "panel",
-     "audio": "ep01_samsung_03.mp3",
+     "audio": "audio/ep01_samsung_03.mp3",
      "text": "Like Netflix? For an air conditioner?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_04.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_samsung_04.mp3",
+     "screen": "trillion",
+     "big": true,
      "text": "Sort of. Samsung says its appliance subscription business is now approaching one trillion won in sales. That's about seven hundred forty million dollars."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_05.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_samsung_05.mp3",
+     "screen": [
+      "concept",
+      "repair",
+      "fridge"
+     ],
      "text": "You pay monthly, and for the whole contract, engineers take care of maintenance, repairs and check-ups. It's less like streaming, and more like a very long rental."
     },
     {
      "who": "panel",
-     "audio": "ep01_samsung_06.mp3",
+     "audio": "audio/ep01_samsung_06.mp3",
+     "screen": "date",
      "text": "So I don't own the fridge. The fridge and I are... in a relationship."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_07.mp3",
+     "audio": "audio/ep01_samsung_07.mp3",
      "text": "A six-year relationship. With scheduled check-ins."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_08.mp3",
-     "screen": "s2",
+     "audio": "audio/ep01_samsung_08.mp3",
+     "screen": "subs",
      "big": true,
      "text": "Let's look at the numbers. Ninety-four point eight percent of Koreans used a subscription service this year. The average person has five point five."
     },
     {
      "who": "panel",
-     "audio": "ep01_samsung_09.mp3",
+     "audio": "audio/ep01_samsung_09.mp3",
      "text": "Five point FIVE? Who has half a subscription?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_10.mp3",
+     "audio": "audio/ep01_samsung_10.mp3",
      "text": "Technically, it's an average. Nobody has half a subscription. ...Probably."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_11.mp3",
-     "screen": "s1",
+     "audio": "audio/ep01_samsung_11.mp3",
+     "screen": [
+      "hotel",
+      "hospital",
+      "moving"
+     ],
      "text": "Now Samsung wants hotels, hospitals and public offices to subscribe too. There's even a plan for newlyweds and people who move a lot, with cleaning visits at night and on holidays."
     },
     {
      "who": "panel",
-     "audio": "ep01_samsung_12.mp3",
+     "audio": "audio/ep01_samsung_12.mp3",
      "text": "Night cleaning visits? That's not a subscription. That's a love language."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_13.mp3",
+     "audio": "audio/ep01_samsung_13.mp3",
      "text": "K's Take: In Korea, even your washing machine comes with a care plan. We're still deciding whether that's the future, or just very, very organized."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_14.mp3",
+     "audio": "audio/ep01_samsung_14.mp3",
      "text": "You can also subscribe to this channel. No six-year contract."
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_15.mp3",
+     "audio": "audio/ep01_samsung_15.mp3",
+     "shot": "wide",
      "text": "That's all for tonight. Stay curious. Keep your lenses clean."
     },
     {
      "who": "panel",
-     "audio": "ep01_samsung_16.mp3",
+     "audio": "audio/ep01_samsung_16.mp3",
      "text": "So what are you doing this weekend?"
     },
     {
      "who": "anchor",
-     "audio": "ep01_samsung_17.mp3",
+     "audio": "audio/ep01_samsung_17.mp3",
      "text": "Refreshing pages. Calmly."
     }
    ],
    "short": {
-    "from": 2,
-    "to": 10
+    "from": 1,
+    "to": 9
    }
   }
  ]
