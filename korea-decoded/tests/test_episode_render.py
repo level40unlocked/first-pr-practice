@@ -37,3 +37,33 @@ def test_split_fills_topic_ticker_and_cast():
     assert set(scenes[1]["characters"]) == {"anchor"}  # only who appears, plus the anchor
     assert set(scenes[2]["characters"]) == {"anchor", "chef"}
     assert scenes[1]["out_long"] == "ep3_s2_long.mp4"
+
+
+def test_a_panel_line_with_a_visual_plays_over_the_full_screen():
+    lines = [{"who": "anchor"}, {"who": "panel", "screen": "s1"}]
+    assert episode.plan_shots(lines) == ["anchor_solo", "screen_full"]
+
+
+def test_screens_inside_one_line_switch_in_order_and_crossfade():
+    ln = {"screen": ["a", "b", "c"], "start": 10.0, "end": 16.0}
+    assert episode.screen_at(ln, 10.5)[0] == "a"
+    key, since, prev, fade = episode.screen_at(ln, 12.1)  # b starts at 12.0
+    assert (key, prev) == ("b", "a") and 0 < fade < 1
+    assert episode.screen_at(ln, 15.9)[:3:2] == ("c", None)
+    split = {"screen": ["a", "b"], "screen_split": [0.25], "start": 0.0, "end": 8.0}
+    assert episode.screen_at(split, 2.5)[0] == "b"
+
+
+def test_number_card_counts_up_and_formats():
+    assert episode.fmt_number(568800, {}) == "568,800"
+    assert episode.fmt_number(94.8, {"decimals": 1, "suffix": "%"}) == "94.8%"
+    card = {"title": "BY THE NUMBERS", "stats": [{"value": 100, "label": "x"}]}
+    before, after = episode.card_image(card, 660, 371, 0.0), episode.card_image(card, 660, 371, 3.0)
+    assert before.size == (660, 371) and before.tobytes() != after.tobytes()
+
+
+def test_caption_timing_is_spread_over_each_line():
+    lines = [{"text": "Hello, world.", "start": 1.0, "end": 2.0}, {"text": "Bye", "start": 3.0, "end": 3.5}]
+    words = episode.estimate_words(lines)
+    assert [w["w"] for w in words] == ["Hello,", "world.", "Bye"]
+    assert words[0]["s"] == 1.0 and abs(words[1]["e"] - 2.0) < 1e-9 and words[2]["s"] == 3.0

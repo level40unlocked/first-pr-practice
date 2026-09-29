@@ -29,7 +29,8 @@ DESK_Y = dg.DESK_Y
 SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide")
 ANCHOR_CAMERA = {"anchor_solo", "anchor_screen", "screen_full"}  # the panel is not in this camera's view
 SCREEN_OTS = (300, 250, 1060, 678)  # explainer box beside the anchor (view coords, 16:9)
-SCREEN_FULL = (300, 130, 1620, 873)  # big, below the top tags, above the lower third, inside the Shorts crop
+SCREEN_FULL = (300, 128, 1620, 885)  # big, below the top tags, above the lower third, inside the Shorts crop;
+# the bottom edge also hides the nameplates on the desk
 
 
 def plan_shots(lines, anchor="anchor"):
@@ -43,6 +44,8 @@ def plan_shots(lines, anchor="anchor"):
             shot = ln["shot"]
         elif who == anchor and ln.get("screen"):
             shot = "screen_full" if ln.get("big") else "anchor_screen"
+        elif ln.get("screen"):  # a panel line over a visual: the voice plays over the full screen
+            shot = "screen_full"
         elif who == anchor:
             talking_to_panel = i > 0 and lines[i - 1]["who"] != anchor
             shot = "speaker_close" if talking_to_panel else "anchor_solo"
@@ -91,26 +94,125 @@ def fit_cover(img, w, h):
     return img.crop((l, t, l + w, t + h))
 
 
-def screen_layer(img, rect, alpha, label, credit):
-    """Explainer box (white frame, label bar, credit line) drawn at rect with global alpha."""
-    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    if alpha < 0.02:
-        return layer
+KB_SECONDS = 7.0  # Ken Burns: how long a slow push/pan takes to reach its end point
+FADE = 0.3  # crossfade between screens inside one line
+
+
+def ease(u):
+    u = min(max(u, 0.0), 1.0)
+    return u * u * (3 - 2 * u)
+
+
+def prepare_screen(key, spec):
+    """Loads one screen: a picture (with baked-in text overlays) or a number card."""
+    out = {**spec, "key": key}
+    if "card" in spec:
+        return out
+    img = Image.open(spec["image"]).convert("RGB")
+    img = fit_cover(img, 1650, 929)  # a bit bigger than the full-size box, room for the slow push
+    if spec.get("overlays"):
+        d = ImageDraw.Draw(img)
+        for o in spec["overlays"]:
+            d.text((o["x"] * img.width, o["y"] * img.height), o["text"], font=nr.font(o.get("size", 44)),
+                   fill=o.get("color", nr.WHITE), anchor=o.get("anchor", "mm"),
+                   stroke_width=o.get("stroke", 6), stroke_fill=o.get("stroke_color", nr.NAVY))
+    out["img"] = img
+    # direction of the slow move: explicit, or picked from the key so neighbours differ
+    moves = ("in", "out", "left", "right")
+    out["kb"] = spec.get("kb", moves[sum(map(ord, key)) % 4])
+    return out
+
+
+def ken_burns(src, w, h, u, move):
+    """Crop of src for progress u (0..1): push in, pull out, or pan, then scaled to w x h."""
+    u = ease(u)
+    sw, sh = src.size
+    if move == "in":
+        z, fx = 1.0 + 0.14 * u, 0.5
+    elif move == "out":
+        z, fx = 1.14 - 0.14 * u, 0.5
+    elif move == "left":
+        z, fx = 1.12, 0.62 - 0.24 * u
+    else:
+        z, fx = 1.12, 0.38 + 0.24 * u
+    cw = min(sw, sh * w / h) / z
+    ch = cw * h / w
+    x0 = (sw - cw) * fx
+    y0 = (sh - ch) * 0.5
+    return src.resize((w, h), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch))
+
+
+def fmt_number(v, st):
+    dec = st.get("decimals", 0)
+    txt = f"{v:,.{dec}f}"
+    return f"{st.get('prefix', '')}{txt}{st.get('suffix', '')}"
+
+
+def card_image(card, w, h, t):
+    """Number card on the brand navy: title, then stats that count up one after another."""
+    img = Image.new("RGB", (w, h), nr.BRAND_NAVY)
+    d = ImageDraw.Draw(img)
+    s = w / 1320  # layout was designed at full-screen size
+    if card.get("title"):
+        d.text((w / 2, 70 * s), card["title"], font=nr.font(int(40 * s)), fill=nr.YELLOW, anchor="mm")
+    stats = card["stats"]
+    top, bottom = (140 if card.get("title") else 60) * s, h - 50 * s
+    row = (bottom - top) / len(stats)
+    for k, st in enumerate(stats):
+        u = ease((t - 0.25 - 0.45 * k) / 1.1)
+        if u <= 0:
+            continue
+        cy = top + row * (k + 0.5)
+        big = int(min(row * 0.55, 150 * s))
+        value = st["value"] * u if isinstance(st["value"], (int, float)) else st["value"]
+        text = fmt_number(value, st) if isinstance(value, (int, float)) else value
+        d.text((w / 2, cy - row * 0.12), text, font=nr.font(big), fill=nr.WHITE, anchor="mm")
+        if st.get("label"):
+            d.text((w / 2, cy + big * 0.55), st["label"], font=nr.font(int(34 * s)), fill=(190, 200, 225),
+                   anchor="mm")
+    return img
+
+
+def screen_content(scr, w, h, t_local):
+    if "card" in scr:
+        return card_image(scr["card"], w, h, t_local)
+    return ken_burns(scr["img"], w, h, t_local / KB_SECONDS, scr["kb"])
+
+
+def screen_piece(content, rect, alpha, label, credit):
+    """Explainer box (white frame, label bar, credit line) as one RGBA piece and its position."""
     x0, y0, x1, y1 = (int(round(v)) for v in rect)
-    d = ImageDraw.Draw(layer)
-    d.rectangle((x0 - 8, y0 - 8, x1 + 8, y1 + 8), fill=nr.WHITE)
-    layer.paste(fit_cover(img, x1 - x0, y1 - y0).convert("RGBA"), (x0, y0))
-    if label and y0 > 200:  # the label bar would cover the top tags when the box is full size
+    w, h = x1 - x0, y1 - y0
+    top = 60 if (label and y0 > 200) else 8  # the label bar would cover the top tags when full size
+    piece = Image.new("RGBA", (w + 16 + 400, h + 16 + top - 8 + 50), (0, 0, 0, 0))
+    d = ImageDraw.Draw(piece)
+    ox, oy = 8, top
+    d.rectangle((0, oy - 8, w + 16, oy + h + 8), fill=nr.WHITE)
+    piece.paste(content.resize((w, h), Image.BILINEAR) if content.size != (w, h) else content, (ox, oy))
+    if top > 8:
         f = nr.font(28)
-        d.rectangle((x0 - 8, y0 - 52, x0 + d.textlength(label, font=f) + 30, y0 - 8), fill=nr.YELLOW)
-        d.text((x0 + 10, y0 - 30), label, font=f, fill=nr.BLACK, anchor="lm")
+        d.rectangle((0, 0, d.textlength(label, font=f) + 38, 44), fill=nr.YELLOW)
+        d.text((18, 22), label, font=f, fill=nr.BLACK, anchor="lm")
     if credit:
-        d.text((x0, y1 + 30), credit, font=nr.font(22), fill=(190, 200, 225), anchor="lm")
+        d.text((ox, oy + h + 30), credit, font=nr.font(22), fill=(190, 200, 225), anchor="lm")
     if alpha < 0.999:
-        a = np.asarray(layer).copy()
+        a = np.asarray(piece).copy()
         a[..., 3] = (a[..., 3] * alpha).astype(np.uint8)
-        layer = Image.fromarray(a)
-    return layer
+        piece = Image.fromarray(a)
+    return piece, (x0 - 8, y0 - top)
+
+
+def screen_at(ln, t):
+    """(current screen key, seconds it has been up, previous key, crossfade progress) inside one line.
+    A line's "screen" is one key or a list; "screen_split" gives the switch points as fractions."""
+    keys = ln["screen"] if isinstance(ln["screen"], list) else [ln["screen"]]
+    span = max(ln["end"] - ln["start"], 0.1)
+    cuts = ln.get("screen_split") or [k / len(keys) for k in range(1, len(keys))]
+    starts = [ln["start"] - 0.15] + [ln["start"] + c * span for c in cuts]
+    k = max(i for i, s0 in enumerate(starts) if t >= s0 or i == 0)
+    since = t - starts[k]
+    prev = keys[k - 1] if k > 0 and since < FADE else None
+    return keys[k], since, prev, since / FADE
 
 
 def broadcast_overlay(scene):
@@ -170,11 +272,28 @@ def ticker_strip(items):
     return strip, tw
 
 
+def estimate_words(lines):
+    """Caption timing from the script: each line's words spread over its audio, weighted by length."""
+    words = []
+    for ln in lines:
+        toks = ln["text"].split()
+        if not toks:
+            continue
+        span = ln["end"] - ln["start"]
+        weights = [len(w) + 2 for w in toks]
+        total, acc = sum(weights), 0
+        for w, wt in zip(toks, weights):
+            s0 = ln["start"] + span * acc / total
+            acc += wt
+            words.append({"w": w, "s": s0, "e": ln["start"] + span * acc / total})
+    return words
+
+
 def main():
     scene = json.load(open(sys.argv[1]))
     puppets = {k: dg.Puppet(v) for k, v in scene["characters"].items()}
     anchor_key = scene.get("anchor", "anchor")
-    screens = {k: {**v, "img": Image.open(v["image"]).convert("RGB")} for k, v in scene.get("screens", {}).items()}
+    screens = {k: prepare_screen(k, v) for k, v in scene.get("screens", {}).items()}
 
     # Timeline: lines back to back with a short gap, one audio track.
     gap = scene.get("gap", 0.35)
@@ -202,7 +321,7 @@ def main():
         e = nr.envelope(ln["samples"], int(len(ln["samples"]) / 16000 * FPS))
         envs[ln["who"]][i0:i0 + len(e)] = e[: max(0, n - i0)]
 
-    words = scene.get("words") or nr.transcribe(wav)
+    words = scene.get("words") or estimate_words(lines)
     groups, cur = [], []
     for w in words:
         cur.append(w)
@@ -287,7 +406,6 @@ def main():
 
     lp = ff(scene["out_long"], W, H)
     sp = ff(scene["out_short"], SW, SH, s_from) if s_from is not None else None
-    box_cache = {}
     cam = cam_target(lines[0], 0)
     rect, alpha = list(SCREEN_OTS), 0.0
     shown_screen, prev_line = None, None
@@ -309,10 +427,14 @@ def main():
 
         # explainer screen: slides between beside-anchor and full frame, fades when not used
         if ln.get("screen") and ln["shot"] in ("anchor_screen", "screen_full"):
-            shown_screen = screens[ln["screen"]]
+            key, since, prev_key, fade = screen_at(ln, t)
+            shown_screen = (key, since, prev_key, fade)
             goal, goal_a = (SCREEN_FULL if ln["shot"] == "screen_full" else SCREEN_OTS), 1.0
         else:
             goal, goal_a = rect, 0.0
+            if shown_screen is not None:  # keep the last picture moving while it fades out
+                key, since, prev_key, fade = shown_screen
+                shown_screen = (key, since + 1 / FPS, None, 1.0)
         rect = [r + (g - r) * 0.2 for r, g in zip(rect, goal)]
         alpha += (goal_a - alpha) * (0.3 if goal_a else 0.5)
         if not anchor_cam:
@@ -340,12 +462,16 @@ def main():
         view = world.crop((int(cx - cw / 2), int(cy - ch / 2), int(cx + cw / 2), int(cy + ch / 2))).resize(
             (W, H), Image.BILINEAR)
         if shown_screen is not None and alpha > 0.02:
-            key = (id(shown_screen), tuple(round(v) for v in rect), round(alpha, 2))
-            if key not in box_cache:  # the box only changes while it slides or fades
-                box_cache.clear()
-                box_cache[key] = bands(screen_layer(shown_screen["img"], rect, alpha, shown_screen.get("label", ""),
-                                                    shown_screen.get("credit", "")))
-            paste_bands(view, box_cache[key])
+            key, since, prev_key, fade = shown_screen
+            scr = screens[key]
+            w_box, h_box = int(round(rect[2] - rect[0])), int(round(rect[3] - rect[1]))
+            content = screen_content(scr, w_box, h_box, since)
+            if prev_key is not None and fade < 1:
+                old_scr = screens[prev_key]
+                content = Image.blend(screen_content(old_scr, w_box, h_box, since + KB_SECONDS * 0.5), content,
+                                      ease(fade))
+            piece, xy = screen_piece(content, rect, alpha, scr.get("label", ""), scr.get("credit", ""))
+            view.paste(piece, xy, piece)
         paste_bands(view, over)
 
         if sp is not None and s_from <= t <= s_to:

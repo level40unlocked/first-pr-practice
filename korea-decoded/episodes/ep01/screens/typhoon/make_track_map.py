@@ -46,6 +46,5 @@ ex,ey=xy(*dol[-1]); d.ellipse((ex-12,ey-12,ex+12,ey+12),fill=DOL)
 sx,sy=xy(121.5,31.2); d.ellipse((sx-8,sy-8,sx+8,sy+8),fill="white"); d.text((sx-10,sy-58),"Shanghai",font=F(34),fill="white",anchor="ra")
 kx,ky=xy(127.8,36.3); d.text((kx+40,ky-20),"KOREA",font=F(40),fill=KOR)
 dx,dy=xy(*dol[len(dol)//3]); d.text((dx-60,dy-70),"Typhoon Dolphin",font=F(38),fill=DOL)
-d.text((40,H-70),"2026 typhoon tracks, West Pacific  |  Data: IBTrACS (NOAA NCEI)",font=F(28),fill=(200,210,230))
-d.text((40,30),"26 storm tracks. 0 landfalls in Korea.",font=F(56),fill="white")
+# Title and source go on the screen's label bar and credit line, where a slow zoom can't crop them.
 im.save("track_map.png"); print("ok", len(tracks))
