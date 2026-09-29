@@ -22,21 +22,26 @@ import dialog as dg
 import newsrig as nr
 
 W, H, FPS, SW, SH = nr.W, nr.H, nr.FPS, nr.SW, nr.SH
-WORLD_W = 2400  # studio wider than the frame so a centered close-up of the anchor stays inside it
+WORLD_W = 2700  # studio wider than the frame: room for the anchor close-up and the screen beside the anchor
 OX = (WORLD_W - W) // 2  # scene x (0..1920) -> world x
 DESK_Y = dg.DESK_Y
 
 SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide")
-ANCHOR_CAMERA = {"anchor_solo", "anchor_screen", "screen_full"}  # the panel is not in this camera's view
-SCREEN_OTS = (300, 250, 1060, 678)  # explainer box beside the anchor (view coords, 16:9)
+ANCHOR_CAMERA = {"anchor_solo"}  # the anchor close-up; every other shot keeps the whole desk in view
+SCREEN_SHOTS = ("anchor_screen", "screen_full")
+SCREEN_OTS = (1190, 230, 1880, 618)  # explainer box to the anchor's right (view coords, 16:9), the panel stays
+ANCHOR_VIEW_X = 930  # where the anchor sits in the view during screen shots
+SHORT_W = 1440  # a Short shows this much of the 1920-wide view
+SHORT_X = {"anchor_screen": 480}  # left edge of the Short's crop per shot (anchor + side screen); else centered
 SCREEN_FULL = (300, 128, 1620, 885)  # big, below the top tags, above the lower third, inside the Shorts crop;
 # the bottom edge also hides the nameplates on the desk
 
 
 def plan_shots(lines, anchor="anchor"):
     """Picks a shot per line. Rules: open on the whole desk when anyone else is on it (so nobody pops in
-    later), otherwise on the anchor alone; news lines with a visual get the explainer screen (a "big" visual goes full screen); a panel's first line is a two-shot that brings
-    them in; after that the camera pushes in on whoever speaks."""
+    later), otherwise on the anchor alone; news lines with a visual get the explainer screen to the
+    anchor's right with the panel still at the desk (a "big" visual goes full screen); a panel's first
+    line is a two-shot that brings them in; after that the camera pushes in on whoever speaks."""
     shots, seen = [], set()
     has_guests = any(ln["who"] != anchor for ln in lines)
     for i, ln in enumerate(lines):
@@ -413,9 +418,10 @@ def main():
         shot, p = ln["shot"], puppets[ln["who"]]
         if shot == "anchor_solo":
             target = [ax, 480, 1.25]
-        elif shot in ("anchor_screen", "screen_full"):
-            z = 1.05
-            target = [ax - 370 / z, 540, z]
+        elif shot == "anchor_screen":
+            target = [ax - ANCHOR_VIEW_X + W / 2, 540, 1.0]
+        elif shot == "screen_full":  # desk center, so the big screen covers everyone instead of cutting a face
+            target = [WORLD_W / 2, 540, 1.0]
         elif shot == "two_shot":
             others = [q.x + OX for k, q in puppets.items()]
             target = [(min(others) + max(others)) / 2, 520, 1.1]
@@ -424,7 +430,7 @@ def main():
         else:  # wide
             target = [WORLD_W / 2, 540, 1.0]
         held = t - (ln["start"] - 0.15)
-        if held > 4 and shot != "screen_full":  # slow push so a long shot doesn't sit still
+        if held > 4 and shot not in SCREEN_SHOTS:  # the side screen is laid out for this exact framing  # slow push so a long shot doesn't sit still
             target[2] += min(0.06, 0.015 * (held - 4))
         return target
 
@@ -441,6 +447,7 @@ def main():
     last_short = None
     cam = cam_target(lines[0], 0)
     rect, alpha = list(SCREEN_OTS), 0.0
+    short_x = (W - SHORT_W) / 2
     shown_screen, prev_line = None, None
     base_gaze = {k: (0.0, 0.0) for k in puppets}
     for i in range(n):
@@ -452,14 +459,15 @@ def main():
 
         # camera: cut when switching between the anchor camera and the desk camera, otherwise ease
         tx, ty, tz = cam_target(ln, t)
-        if prev_line is not None and ln is not prev_line and (prev_line["shot"] in ANCHOR_CAMERA) != anchor_cam:
+        cut = prev_line is not None and ln is not prev_line and (prev_line["shot"] in ANCHOR_CAMERA) != anchor_cam
+        if cut:
             cam = [tx, ty, tz]
         a = 0.14
         cam = [cam[0] + (tx - cam[0]) * a, cam[1] + (ty - cam[1]) * a, cam[2] + (tz - cam[2]) * a]
         prev_line = ln
 
         # explainer screen: slides between beside-anchor and full frame, fades when not used
-        if ln.get("screen") and ln["shot"] in ("anchor_screen", "screen_full"):
+        if ln.get("screen") and ln["shot"] in SCREEN_SHOTS:
             key, since, prev_key, fade = screen_at(ln, t)
             shown_screen = (key, since, prev_key, fade)
             goal, goal_a = (SCREEN_FULL if ln["shot"] == "screen_full" else SCREEN_OTS), 1.0
@@ -470,7 +478,7 @@ def main():
                 shown_screen = (key, since + 1 / FPS, None, 1.0)
         rect = [r + (g - r) * 0.2 for r, g in zip(rect, goal)]
         alpha += (goal_a - alpha) * (0.3 if goal_a else 0.5)
-        if not anchor_cam:
+        if cut:
             alpha = 0.0  # a camera cut takes the box with it
 
         world = bg.copy()
@@ -484,8 +492,8 @@ def main():
                 g = (0.85 if other.x > p.x else -0.85, 0.05)  # listeners look at the speaker
                 since = t - spk["start"]
                 nod = 2.5 * math.sin(since / 0.6 * math.pi) if since < 0.6 else 0.0
-            elif k == anchor_key and ln["shot"] in ("anchor_screen", "screen_full") and t - ln["start"] < 0.7:
-                g = (-0.8, 0.1)  # glance at the screen, then back to camera
+            elif k == anchor_key and ln["shot"] in SCREEN_SHOTS and t - ln["start"] < 0.7:
+                g = (0.8, 0.1)  # glance at the screen (to the anchor's right), then back to camera
             p.draw(world, t, g, dg.lid_at(t, blinks[k]), envs[k][i], nod, ox=OX)
         paste_bands(world, desks["anchor" if anchor_cam else "all"])
 
@@ -508,7 +516,10 @@ def main():
         paste_bands(view, over)
 
         if sp is not None and s_from <= t <= s_to:
-            crop = view.crop((240, 0, 1680, 1080)).resize((1080, 810), Image.BILINEAR)
+            goal_x = SHORT_X.get(ln["shot"], (W - SHORT_W) / 2)
+            short_x = goal_x if cut else short_x + (goal_x - short_x) * 0.2  # pans with the screen box
+            x0 = int(round(short_x))
+            crop = view.crop((x0, 0, x0 + SHORT_W, 1080)).resize((1080, 810), Image.BILINEAR)
             sframe = short_static.copy()
             sframe.paste(crop, (0, 600))
             grp = next((g for g in groups if g[0]["s"] <= t <= g[-1]["e"] + 0.15), None)
