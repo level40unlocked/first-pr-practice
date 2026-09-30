@@ -27,7 +27,7 @@ CAST = {  # key: rig spec + nameplate
     "chef": {"label": "CHEF CLAMSAY", **EXPERT, "head_ratio": 0.74, "chin_drop": 0.16, "mood": "frown"},
     "news": {"label": "NEWS", **EXPERT},
     "kpop": {"label": "K-POP", **EXPERT},
-    "hidden": {"label": "HISTORY", **EXPERT},
+    "hidden": {"label": "DR. H", **EXPERT},
     "money": {"label": "MONEY", **EXPERT, "head_ratio": 0.68},
     "tech": {"label": "BILL DUSK", **EXPERT, "head_ratio": 0.68, "chin_drop": 0.08},
     "travel": {"label": "TRAVEL", **EXPERT},
