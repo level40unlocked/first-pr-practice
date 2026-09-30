@@ -10,7 +10,7 @@ toward the camera in the middle, so Master K (centre) is nearest and the ends si
 """
 import sys
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 import dialog as dg
 import episode as ep
@@ -118,14 +118,43 @@ def along(points, s):
     return points[-1]
 
 
+FLOOR_Y = 625  # where the window wall meets the studio floor
+
+
+def stage(img, cx):
+    """Window wall base, glossy floor with a faint reflection of the skyline, a soft spotlight and the
+    table's shadow, so the set and the city behind it read as one room."""
+    w = img.width
+    # faint mirror of the skyline on the polished floor
+    refl = img.crop((0, FLOOR_Y - 260, w, FLOOR_Y)).transpose(Image.FLIP_TOP_BOTTOM).filter(ImageFilter.GaussianBlur(8))
+    floor = Image.new("RGBA", (w, H - FLOOR_Y))
+    fd = ImageDraw.Draw(floor)
+    for y in range(floor.height):  # darker far away, a little lighter toward the camera
+        t = y / floor.height
+        fd.line((0, y, w, y), fill=(int(20 + 14 * t), int(26 + 18 * t), int(46 + 26 * t), 255))
+    fade = Image.linear_gradient("L").resize((w, 260)).point(lambda v: int((255 - v) * 0.22))
+    floor.paste(refl.convert("RGBA"), (0, 0), fade)
+    img.alpha_composite(floor, (0, FLOOR_Y))
+    glow = Image.new("RGBA", img.size, (0, 0, 0, 0))  # soft spotlight on the floor around the table
+    ImageDraw.Draw(glow).ellipse((cx - 1000, 660, cx + 1000, 1130), fill=(90, 120, 190, 70))
+    img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(60)))
+    shadow = Image.new("RGBA", img.size, (0, 0, 0, 0))  # the table's shadow
+    ImageDraw.Draw(shadow).ellipse((cx - 820, 930, cx + 820, 1060), fill=(0, 0, 0, 150))
+    img.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(30)))
+    d = ImageDraw.Draw(img)  # wall base under the window, with a thin light strip
+    d.rectangle((0, FLOOR_Y - 34, w, FLOOR_Y), fill=(22, 27, 46))
+    d.line((0, FLOOR_Y - 34, w, FLOOR_Y - 34), fill=(110, 135, 190), width=3)
+    d.line((0, FLOOR_Y, w, FLOOR_Y), fill=(12, 15, 28), width=2)
+
+
 def make_debate():
     w, cx = nr.W, nr.W // 2
     bg = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 0.75, 2.0)
     x0 = (bg.width - w) // 2
     img = bg.crop((x0, 0, x0 + w, H)).convert("RGBA")
     d = ImageDraw.Draw(img)
-    d.rectangle((0, 610, w, H), fill=(26, 34, 58))  # stage floor
-    d.ellipse((cx - 1050, 640, cx + 1050, 1180), fill=(34, 46, 78))  # lit circle under the table
+    stage(img, cx)
+    d = ImageDraw.Draw(img)
     far = [HEX[5], HEX[0], HEX[1], HEX[2]]  # the far half of the table edge, left to right
     length = sum(((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** 0.5 for a, b in zip(far, far[1:]))
     k_at = DEBATE.index("k")
@@ -166,6 +195,10 @@ def make_debate():
         tw = d.textlength(label, font=f)
         d.rounded_rectangle((nx - tw / 2 - 6, ny - 12, nx + tw / 2 + 6, ny + 12), 5, fill=nr.YELLOW)
         d.text((nx, ny), label, font=f, fill=nr.BLACK, anchor="mm")
+    vignette = Image.new("L", img.size, 0)
+    ImageDraw.Draw(vignette).ellipse((-300, -250, w + 300, H + 350), fill=255)
+    dark = Image.new("RGBA", img.size, (6, 8, 18, 255))
+    img = Image.composite(img, dark, vignette.filter(ImageFilter.GaussianBlur(160)).point(lambda v: 70 + v * 185 // 255))
     # frame it tighter: less empty sky above the set
     return img.crop((120, 135, 1800, 1080)).resize((w, H), Image.LANCZOS).convert("RGB")
 
