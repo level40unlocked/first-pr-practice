@@ -37,6 +37,7 @@ LINES = [
     (22, "anchor", "Stay curious. Keep your lenses clean."),
 ]
 STILL_LINES = {1, 19, 20, 22}  # over the picture of the whole cast
+CLOSE_UP = {9, 13, 14, 15}  # the punchlines get their own close-up; every other line keeps all three on screen
 # name tags that pop onto the cast picture during line 19 (x, y = share of the picture)
 TAGS = [("PROF. INDOOR", 0.085, 0.50), ("BILL DUSK", 0.178, 0.56), ("MAX RISE", 0.275, 0.50),
         ("MS. NONFIC", 0.36, 0.56), ("DR. H", 0.42, 0.50), ("WHISTLE JOE", 0.70, 0.56), ("OFFBEAT", 0.91, 0.50)]
@@ -44,12 +45,12 @@ TAGS = [("PROF. INDOOR", 0.085, 0.50), ("BILL DUSK", 0.178, 0.56), ("MAX RISE", 
 CAST = "../../cast/"
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
-              "x": 520, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
+              "x": 600, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
     "chef": {"head": CAST + "chef_head.png", "body": CAST + "chef_body.png", "ref": CAST + "chef_ref.png",
              "x": 960, "label": "CHEF CLAMSAY", "shoulders": 520, "white_lens": True, "head_ratio": 0.74,
              "chin_drop": 0.16, "mood": "frown"},
     "anchor": {"head": CAST + "k_head.png", "body": CAST + "k_body.png", "ref": CAST + "k_ref.png",
-               "x": 1400, "label": "MASTER K"},
+               "x": 1320, "label": "MASTER K"},
 }
 
 
@@ -63,6 +64,10 @@ def build():
               "words": asr[str(n)]["words"]}
         if n in STILL_LINES:
             ln["shot"] = "still"
+        elif n in CLOSE_UP:
+            ln["shot"] = "speaker_close"
+        else:
+            ln["shot"] = "two_shot"  # the desk camera on all three
         if n == 13:
             ln["mood"] = {"chef": "neutral"}  # the noodles win him over, for one line
         if n == 19:

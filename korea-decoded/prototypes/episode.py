@@ -437,7 +437,9 @@ def main():
     sd.multiline_text((SW / 2, 300), scene["hook"], font=nr.font(hook_size), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
     where = scene.get("full_episode_where")  # e.g. "on YouTube" for a Reels / TikTok copy
-    nr.shorts_promo(short_static, sd, where or "on the channel")
+    card = scene.get("end_card")  # a video with no full episode behind it (the channel intro) says what to do instead
+    nr.shorts_promo(short_static, sd, where or "on the channel",
+                    f"{nr.HANDLE}  |  {card['line']}  >" if card else None)
 
     still_img = None  # a picture for "still" shots (bigger than the frame, room for the slow push)
     if scene.get("still"):
@@ -453,12 +455,12 @@ def main():
         if tags:
             img = still_img.copy()
             td = ImageDraw.Draw(img)
-            tf = nr.font(30)
+            tf = nr.font(44)  # big enough to read in a Short, where the picture is only 1080 px wide
             for at, tg in tags:
                 if t >= at:
                     tx_, ty_ = tg["x"] * img.width, tg["y"] * img.height
                     tw_ = td.textlength(tg["text"], font=tf)
-                    td.rounded_rectangle((tx_ - tw_ / 2 - 14, ty_ - 22, tx_ + tw_ / 2 + 14, ty_ + 22), 9,
+                    td.rounded_rectangle((tx_ - tw_ / 2 - 16, ty_ - 32, tx_ + tw_ / 2 + 16, ty_ + 32), 11,
                                          fill=nr.YELLOW, outline=nr.BLACK, width=3)
                     td.text((tx_, ty_), tg["text"], font=tf, fill=nr.BLACK, anchor="mm")
         z = 1.0 + min(0.06, 0.012 * max(0.0, t - (ln["start"] - 0.15)))
