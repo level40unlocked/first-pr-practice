@@ -9,7 +9,7 @@
 | 이름 | `Four Eyes Report` |
 | 사용자 이름 | `foureyesreport` (가입 때 정한 것 그대로) |
 | 소개 | 아래 A안 복사 |
-| 링크 | 유튜브 채널 주소 (링크 추가 → 제목 `YouTube`) |
+| 링크 | `https://www.youtube.com/@foureyesreport` (링크 추가 → 제목 `YouTube`) |
 | 카테고리 | Digital creator, **프로필에 표시 끄기** |
 | 프로필에 계정 추천 표시 | **켜 두기** (노출 경로) |
 
