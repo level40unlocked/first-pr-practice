@@ -137,7 +137,7 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 | 데스크 | 역할 | 외모 | 성격, 개그 장치 | 컨셉 이미지 |
 |---|---|---|---|---|
 | current_affairs | 시사 베테랑 특파원 → **Ms. Nonfic** (`characters.md`) | 50대 후반 여성. 은발 단발, 얇은 사각 돋보기 안경, 진홍 블레이저 + 검은 터틀넥, 포스트잇 붙은 서류 더미 | 모든 스캔들을 다 봐서 무심함. 건조한 한마디 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094129_c4a8bc6c-056f-4293-8608-8e5a3ff4a8c1.png) |
-| kpop | K-POP 분석가 | 전 아이돌 연습생 청년. 파스텔 핑크 머리, 큰 투명테 원형 안경, 하이넥 무대 재킷, 하트 응원봉 | 과몰입 팬보이. 컴백 얘기만 나오면 폭주 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094130_975942f9-8016-45b9-91bf-ddc2871896dd.png) |
+| kpop | K-POP 분석가 → **Offbeat** (`characters.md`) | 전 아이돌 연습생 청년. 파스텔 핑크 머리, 큰 투명테 원형 안경, 하이넥 무대 재킷, 하트 응원봉 | 과몰입 팬보이. 컴백 얘기만 나오면 폭주 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094130_975942f9-8016-45b9-91bf-ddc2871896dd.png) |
 | hidden_korea | 비밀 기록 연구가 → **Dr. H** (`characters.md`) | 30대 여성. 비녀로 묶은 긴 머리, 작은 금테 원형 안경, 보라색 한복풍 재킷, 두루마리 | 음모론 폭로하듯 속삭이며 "사실은…" | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094130_5aabf690-98af-4b1f-b6b6-98ac98eb843e.png) |
 | korea_vs_world | 비교 심판 | 갈색 피부 청년. 곱슬머리, 파란 사각 안경, 파란 하프집업, 심판 호루라기, 점수판 | 스포츠 중계처럼 한국 vs 세계 판정 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094130_d2d5cb84-8332-485d-8a9f-df2405c4d4d4.png) |
 | money_business | 머니 애널리스트 → **Max Rise** (`characters.md`) | 40대 남성. 올백 머리, 얇은 금테 사각 안경, 초록 조끼 + 크림 터틀넥, 행커치프, 복고 계산기 | 모든 주제를 결국 돈 얘기로 끌고 감 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094129_b35c18d3-ba65-4127-82d5-0321defeb384.png) |
