@@ -127,8 +127,9 @@ FADE = 0.3  # crossfade between screens inside one line
 END_CARD = 2.5  # seconds a Short holds its "full episode on the channel" card after the last line
 
 
-def end_card(last, t):
-    """The Short's closing card over its frozen last frame; fades in over 0.35 s."""
+def end_card(last, t, where="on our channel"):
+    """The Short's closing card over its frozen last frame; fades in over 0.35 s. `where` names the place of
+    the full episode ("on YouTube" when the clip is posted on another platform)."""
     u = ease(min(1.0, t / 0.35))
     frame = Image.blend(last, Image.new("RGB", last.size, nr.BRAND_NAVY), 0.6 * u)
     card = Image.new("RGBA", last.size, (0, 0, 0, 0))
@@ -136,7 +137,7 @@ def end_card(last, t):
     d.rectangle((0, 600, SW, 1410), fill=nr.BRAND_NAVY)  # hide the frozen caption and screen behind the text
     cx = SW / 2
     d.text((cx, 760), "WANT THE FULL STORY?", font=nr.font(64), fill=nr.YELLOW, anchor="mm")
-    d.text((cx, 870), "Full episode on our channel", font=nr.font(50), fill=nr.WHITE, anchor="mm")
+    d.text((cx, 870), f"Full episode {where}", font=nr.font(50), fill=nr.WHITE, anchor="mm")
     d.rounded_rectangle((cx - 330, 950, cx + 330, 1050), 50, fill=nr.YELLOW)
     d.text((cx, 1000), nr.HANDLE, font=nr.font(48), fill=nr.NAVY, anchor="mm")
     card.putalpha(card.getchannel("A").point(lambda a: int(a * u)))
@@ -429,7 +430,8 @@ def main():
         hook_size -= 2
     sd.multiline_text((SW / 2, 300), scene["hook"], font=nr.font(hook_size), fill=nr.WHITE, anchor="mm",
                       align="center", spacing=18)
-    nr.shorts_promo(short_static, sd)
+    where = scene.get("full_episode_where")  # e.g. "on YouTube" for a Reels / TikTok copy
+    nr.shorts_promo(short_static, sd, where or "on the channel")
 
     blinks = {k: dg.blink_schedule(duration, i * 11 + 3) for i, k in enumerate(puppets)}
     rnd = random.Random(5)
@@ -581,7 +583,7 @@ def main():
 
     if sp is not None and last_short is not None:
         for i in range(int(END_CARD * FPS)):
-            sp.stdin.write(np.asarray(end_card(last_short, i / FPS)).tobytes())
+            sp.stdin.write(np.asarray(end_card(last_short, i / FPS, where or "on our channel")).tobytes())
     for p in (lp, sp):
         if p is not None:
             p.stdin.close()

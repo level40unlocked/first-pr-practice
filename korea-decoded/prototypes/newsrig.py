@@ -42,7 +42,7 @@ HOOK = "Korea's convenience stores\nare on another level"
 
 
 
-def shorts_promo(canvas, draw):
+def shorts_promo(canvas, draw, where="on the channel"):
     """Bottom margin of a Short (below the video, y >= 1410): banner strip and handle. No fake SUBSCRIBE
     button: the end card and YouTube's own button do that job."""
     if os.path.exists(PROMO_STRIP):
@@ -52,7 +52,7 @@ def shorts_promo(canvas, draw):
     else:
         logo_mark(canvas, 180, 1600, 140)
         draw.text((290, 1600), CHANNEL, font=font(48), fill=WHITE, anchor="lm")
-    draw.text((SW / 2, 1805), f"{HANDLE}  |  Full episode on the channel  >", font=font(34),
+    draw.text((SW / 2, 1805), f"{HANDLE}  |  Full episode {where}  >", font=font(34),
               fill=(190, 200, 225), anchor="mm")
 
 

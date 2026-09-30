@@ -1,0 +1,657 @@
+{
+ "episode": 1,
+ "anchor": "anchor",
+ "characters": {
+  "anchor": {
+   "head": "cast/a_head.png",
+   "body": "cast/a_body.png",
+   "ref": "cast/a_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "panel": {
+   "head": "cast/p_head.png",
+   "body": "cast/p_body.png",
+   "ref": "cast/p_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  }
+ },
+ "topic": [
+  1,
+  4
+ ],
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "up_next": [
+  "No typhoon hit Korea this summer, and that is not all good news",
+  "Gangnam wants to be the world's K-festival, and Psy is closing the show",
+  "In Korea, you can subscribe to your air conditioner"
+ ],
+ "category": "travel",
+ "desk": "BUSAN",
+ "headline": "A shark moved into a Busan canal and half a million people came to see it",
+ "hook": "A shark got stuck in a Busan canal.\nIt refused to leave",
+ "screens": {
+  "canal": {
+   "image": "screens/bukang/bukang_canal.png",
+   "label": "BUSAN NORTH PORT",
+   "credit": "AI-generated illustration"
+  },
+  "requiem": {
+   "image": "screens/bukang/requiem_shark_underwater.jpg",
+   "label": "FILE PHOTO",
+   "credit": "Photo: laszlo-photo (CC BY 2.0)"
+  },
+  "dusky": {
+   "image": "screens/bukang/dusky_shark_illustration.jpg",
+   "label": "DUSKY SHARK (ILLUSTRATION)",
+   "credit": "Illustration: Queensland State Archives (public domain)",
+   "kb": "left"
+  },
+  "staycation": {
+   "image": "screens/bukang/bukang_staycation.png",
+   "label": "MEET BUKANG-I",
+   "credit": "AI-generated illustration"
+  }
+ },
+ "lines": [
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_04.mp3",
+   "screen": "canal",
+   "text": "On September 18th, a three-and-a-half-meter shark swam into a narrow canal at Busan's North Port. And then it just... stayed.",
+   "words": [
+    [
+     "On",
+     0.0,
+     0.22
+    ],
+    [
+     "September",
+     0.22,
+     0.54
+    ],
+    [
+     "18th,",
+     0.54,
+     1.32
+    ],
+    [
+     "a",
+     1.46,
+     1.54
+    ],
+    [
+     "three-and-a-half-meter",
+     1.54,
+     2.5
+    ],
+    [
+     "shark",
+     2.5,
+     2.96
+    ],
+    [
+     "swam",
+     2.96,
+     3.48
+    ],
+    [
+     "into",
+     3.48,
+     3.72
+    ],
+    [
+     "a",
+     3.72,
+     3.88
+    ],
+    [
+     "narrow",
+     3.88,
+     4.18
+    ],
+    [
+     "canal",
+     4.18,
+     4.64
+    ],
+    [
+     "at",
+     4.64,
+     4.96
+    ],
+    [
+     "Busan's",
+     4.96,
+     5.52
+    ],
+    [
+     "North",
+     5.52,
+     5.68
+    ],
+    [
+     "Port.",
+     5.68,
+     6.08
+    ],
+    [
+     "And",
+     6.52,
+     6.82
+    ],
+    [
+     "then",
+     6.82,
+     7.02
+    ],
+    [
+     "it",
+     7.02,
+     7.22
+    ],
+    [
+     "just...",
+     7.22,
+     7.52
+    ],
+    [
+     "stayed.",
+     7.52,
+     8.56
+    ]
+   ]
+  },
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_05.mp3",
+   "screen": "requiem",
+   "text": "Officials tried to guide it back to the sea. The shark declined.",
+   "words": [
+    [
+     "Officials",
+     0.0,
+     0.5
+    ],
+    [
+     "tried",
+     0.5,
+     0.86
+    ],
+    [
+     "to",
+     0.86,
+     1.04
+    ],
+    [
+     "guide",
+     1.04,
+     1.34
+    ],
+    [
+     "it",
+     1.34,
+     1.52
+    ],
+    [
+     "back",
+     1.52,
+     1.72
+    ],
+    [
+     "to",
+     1.72,
+     1.94
+    ],
+    [
+     "the",
+     1.94,
+     2.08
+    ],
+    [
+     "sea.",
+     2.08,
+     2.4
+    ],
+    [
+     "The",
+     2.92,
+     3.16
+    ],
+    [
+     "shark",
+     3.16,
+     3.46
+    ],
+    [
+     "declined.",
+     3.46,
+     4.04
+    ]
+   ]
+  },
+  {
+   "who": "panel",
+   "audio": "audio/ep01_bukang_06.mp3",
+   "text": "It DECLINED? Core, a shark cannot decline things.",
+   "words": [
+    [
+     "It",
+     0.0,
+     0.2
+    ],
+    [
+     "DECLINED?",
+     0.2,
+     0.6
+    ],
+    [
+     "Core,",
+     1.34,
+     1.44
+    ],
+    [
+     "a",
+     1.64,
+     1.74
+    ],
+    [
+     "shark",
+     1.74,
+     1.98
+    ],
+    [
+     "cannot",
+     1.98,
+     2.4
+    ],
+    [
+     "decline",
+     2.4,
+     2.88
+    ],
+    [
+     "things.",
+     2.88,
+     3.2
+    ]
+   ]
+  },
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_07.mp3",
+   "text": "It's K. And technically, it can. It simply did not leave.",
+   "words": [
+    [
+     "It's",
+     0.0,
+     0.32
+    ],
+    [
+     "K.",
+     0.32,
+     0.6
+    ],
+    [
+     "And",
+     1.02,
+     1.38
+    ],
+    [
+     "technically,",
+     1.38,
+     2.0
+    ],
+    [
+     "it",
+     2.0,
+     2.54
+    ],
+    [
+     "can.",
+     2.54,
+     2.88
+    ],
+    [
+     "It",
+     3.3,
+     3.44
+    ],
+    [
+     "simply",
+     3.44,
+     3.68
+    ],
+    [
+     "did",
+     3.68,
+     3.96
+    ],
+    [
+     "not",
+     3.96,
+     4.2
+    ],
+    [
+     "leave.",
+     4.2,
+     4.54
+    ]
+   ]
+  },
+  {
+   "who": "panel",
+   "audio": "audio/ep01_bukang_08.mp3",
+   "text": "What kind of shark is it, anyway?",
+   "words": [
+    [
+     "What",
+     0.0,
+     0.22
+    ],
+    [
+     "kind",
+     0.22,
+     0.4
+    ],
+    [
+     "of",
+     0.4,
+     0.52
+    ],
+    [
+     "shark",
+     0.52,
+     0.72
+    ],
+    [
+     "is",
+     0.72,
+     1.0
+    ],
+    [
+     "it,",
+     1.0,
+     1.16
+    ],
+    [
+     "anyway?",
+     1.16,
+     1.4
+    ]
+   ]
+  },
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_09.mp3",
+   "screen": "dusky",
+   "text": "Probably a dusky shark. Or a copper shark. It declined to comment.",
+   "words": [
+    [
+     "Probably",
+     0.0,
+     0.46
+    ],
+    [
+     "a",
+     0.46,
+     0.66
+    ],
+    [
+     "dusky",
+     0.66,
+     0.94
+    ],
+    [
+     "shark.",
+     0.94,
+     1.34
+    ],
+    [
+     "Or",
+     1.34,
+     2.28
+    ],
+    [
+     "a",
+     2.28,
+     2.64
+    ],
+    [
+     "copper",
+     2.64,
+     2.92
+    ],
+    [
+     "shark.",
+     2.92,
+     3.56
+    ],
+    [
+     "It",
+     3.56,
+     4.3
+    ],
+    [
+     "declined",
+     4.3,
+     4.7
+    ],
+    [
+     "to",
+     4.7,
+     5.0
+    ],
+    [
+     "comment.",
+     5.0,
+     5.34
+    ]
+   ]
+  },
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_10.mp3",
+   "screen": "staycation",
+   "big": true,
+   "text": "So Korea did what Korea does. It gave the shark a nickname: Bukang-i. That's 'North Port', plus a cute little 'ee' on the end.",
+   "words": [
+    [
+     "So",
+     0.0,
+     0.26
+    ],
+    [
+     "Korea",
+     0.26,
+     0.6
+    ],
+    [
+     "did",
+     0.6,
+     0.94
+    ],
+    [
+     "what",
+     0.94,
+     1.2
+    ],
+    [
+     "Korea",
+     1.2,
+     1.5
+    ],
+    [
+     "does.",
+     1.5,
+     2.0
+    ],
+    [
+     "It",
+     2.48,
+     2.66
+    ],
+    [
+     "gave",
+     2.66,
+     2.86
+    ],
+    [
+     "the",
+     2.86,
+     3.06
+    ],
+    [
+     "shark",
+     3.06,
+     3.26
+    ],
+    [
+     "a",
+     3.26,
+     3.42
+    ],
+    [
+     "nickname:",
+     3.42,
+     3.82
+    ],
+    [
+     "Bukang-i.",
+     4.86,
+     5.44
+    ],
+    [
+     "That's",
+     5.84,
+     6.42
+    ],
+    [
+     "'North",
+     6.42,
+     6.86
+    ],
+    [
+     "Port',",
+     6.86,
+     7.28
+    ],
+    [
+     "plus",
+     7.28,
+     7.92
+    ],
+    [
+     "a",
+     7.92,
+     8.14
+    ],
+    [
+     "cute",
+     8.14,
+     8.32
+    ],
+    [
+     "little",
+     8.32,
+     8.56
+    ],
+    [
+     "'ee'",
+     8.56,
+     8.88
+    ],
+    [
+     "on",
+     8.88,
+     9.1
+    ],
+    [
+     "the",
+     9.1,
+     9.22
+    ],
+    [
+     "end.",
+     9.22,
+     9.5
+    ]
+   ]
+  },
+  {
+   "who": "panel",
+   "audio": "audio/ep01_bukang_11.mp3",
+   "text": "Wait. WAIT. It has a nickname? Does it have a FANDOM?",
+   "words": [
+    [
+     "Wait.",
+     0.0,
+     0.4
+    ],
+    [
+     "WAIT.",
+     0.9,
+     1.08
+    ],
+    [
+     "It",
+     1.4,
+     1.42
+    ],
+    [
+     "has",
+     1.42,
+     1.62
+    ],
+    [
+     "a",
+     1.62,
+     1.82
+    ],
+    [
+     "nickname?",
+     1.82,
+     2.2
+    ],
+    [
+     "Does",
+     2.88,
+     2.98
+    ],
+    [
+     "it",
+     2.98,
+     3.08
+    ],
+    [
+     "have",
+     3.08,
+     3.26
+    ],
+    [
+     "a",
+     3.26,
+     3.4
+    ],
+    [
+     "FANDOM?",
+     3.4,
+     3.7
+    ]
+   ]
+  }
+ ],
+ "short": {},
+ "out_long": "instagram/ig_shark_long.mp4",
+ "out_short": "instagram/ig_shark_reel.mp4",
+ "full_episode_where": "on YouTube"
+}
