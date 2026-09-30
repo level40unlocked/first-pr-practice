@@ -25,3 +25,6 @@ Which Korean dish almost took you out? And what should Master K decode next? �
 - Category: Entertainment (or Education) · Audience: not made for kids · Altered/synthetic content: yes (AI-made voices)
 - Related video (Shorts): link EP.1 manually in Studio
 - End card says "on YouTube"; fine to keep, or re-render with "Subscribe"
+
+## 업로드 기록
+- 2026-10-01 07:57 KST 공개 업로드: https://youtu.be/dhOdkadwgaU (API, public, 카테고리 24)
