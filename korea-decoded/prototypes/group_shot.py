@@ -3,6 +3,7 @@ raised back row), for the channel intro and thumbnails.
 
     python3 group_shot.py row out.jpg       # run from korea-decoded/ (cast images: cast/fetch.sh)
     python3 group_shot.py tiers out.jpg
+    python3 group_shot.py supper out.jpg    # Last Supper composition: one long table, K in the middle
 
 Each character is drawn once at full size by dialog.Puppet (same rig as the episodes), then scaled and
 placed so its collar sits on the row's collar line; the desk covers everything below the desk top.
@@ -39,13 +40,14 @@ LAYOUTS = {
 }
 
 
-def cutout(key):
-    """The character drawn at full rig size, on a transparent frame whose collar line is y = COLLAR_Y."""
+def cutout(key, gaze=(0.0, 0.1), env=0.0, mood=None):
+    """The character drawn at full rig size, on a transparent frame whose collar line is y = COLLAR_Y.
+    gaze also leans the head that way; env > 0.45 opens the mouth."""
     spec = {**CAST[key], "head": f"{C}{key}_head.png", "body": f"{C}{key}_body.png", "ref": f"{C}{key}_ref.png",
             "x": 450}
     p = dg.Puppet(spec)
     frame = Image.new("RGBA", (900, H), (0, 0, 0, 0))
-    p.draw(frame, 0.0, (0.0, 0.1), 0.0, 0.0, 0.0, mood=spec.get("mood"))
+    p.draw(frame, 0.0, gaze, 0.0, env, 0.0, mood=mood or spec.get("mood"))
     return frame, p.label
 
 
@@ -80,5 +82,92 @@ def make(layout):
     return img.convert("RGB")
 
 
+# Last Supper: groups of two or three lean toward each other, K sits alone in the middle under the big
+# window. (key, x, scale, lean in degrees (+ = toward the right), gaze x, mouth open, mood)
+SUPPER = [
+    ("tech", 175, 0.47, 3, 0.6, 0.0, None), ("money", 305, 0.47, -2, 0.5, 0.6, None),
+    ("news", 435, 0.47, -5, 0.7, 0.0, None),
+    ("hidden", 615, 0.47, 4, 0.7, 0.0, None), ("kangfree", 775, 0.48, -6, 0.9, 0.9, None),
+    ("k", 960, 0.54, 0, 0.0, 0.0, None),
+    ("joe", 1135, 0.48, 6, -0.9, 0.9, None), ("chef", 1310, 0.49, 3, -0.6, 0.0, None),
+    ("kpop", 1500, 0.47, 5, -0.7, 0.9, None), ("travel", 1640, 0.47, -3, -0.5, 0.0, None),
+]
+TABLE_TOP, TABLE_FRONT = 850, 935
+
+
+def room(bg):
+    """Dark back wall with three windows onto the skyline; the middle one, behind K, is the largest."""
+    wall = Image.new("RGBA", bg.size, (14, 18, 34, 230))
+    d = ImageDraw.Draw(wall)
+    windows = [(760, 250, 1160, 800), (470, 360, 690, 760), (1230, 360, 1450, 760)]
+    for x0, y0, x1, y1 in windows:
+        d.rectangle((x0, y0 + (x1 - x0) // 2, x1, y1), fill=(0, 0, 0, 0))
+        d.pieslice((x0, y0, x1, y0 + (x1 - x0)), 180, 360, fill=(0, 0, 0, 0))  # arched top
+    for x0, y0, x1, y1 in windows:  # frames
+        d.arc((x0 - 6, y0 - 6, x1 + 6, y0 + (x1 - x0) + 6), 180, 360, fill=(70, 60, 50, 255), width=12)
+        d.line((x0, y0 + (x1 - x0) // 2, x0, y1), fill=(70, 60, 50, 255), width=12)
+        d.line((x1, y0 + (x1 - x0) // 2, x1, y1), fill=(70, 60, 50, 255), width=12)
+    for x in (0, 1920):  # side walls in perspective, like the painting's tapestries
+        s = 1 if x == 0 else -1
+        d.polygon([(x, 0), (x + s * 400, 200), (x + s * 400, 820), (x, 900)], fill=(24, 28, 46, 255))
+        for k in range(1, 4):  # wall panels
+            px = x + s * 100 * k
+            d.line((px, 50 * k, px, 900 - 20 * k), fill=(40, 46, 70, 255), width=4)
+    d.polygon([(0, 0), (1920, 0), (1520, 200), (400, 200)], fill=(20, 24, 40, 255))  # ceiling
+    for k in range(1, 8):  # coffered ceiling lines toward the vanishing point behind K
+        d.line((k * 240, 0, 400 + k * 140, 200), fill=(40, 46, 70, 255), width=3)
+    d.line((400, 200, 1520, 200), fill=(40, 46, 70, 255), width=4)
+    bg.alpha_composite(wall)
+
+
+def table(img, plates):
+    d = ImageDraw.Draw(img)
+    d.polygon([(40, TABLE_TOP), (1880, TABLE_TOP), (1920, TABLE_FRONT), (0, TABLE_FRONT)], fill=(236, 232, 220))
+    d.rectangle((0, TABLE_FRONT, 1920, H), fill=(214, 208, 192))
+    for x in range(60, 1920, 160):  # cloth folds
+        d.line((x, TABLE_FRONT + 6, x + 10, H), fill=(196, 188, 170), width=3)
+    d.rectangle((0, TABLE_FRONT - 4, 1920, TABLE_FRONT + 4), fill=nr.YELLOW)
+    # Korean dinner: rice bowls, ramen, kimchi, green soju bottles
+    for i, (x, _) in enumerate(plates):
+        y = TABLE_TOP + 40
+        d.ellipse((x - 46, y - 14, x + 46, y + 14), fill=(250, 250, 250), outline=(120, 120, 120), width=2)
+        if i % 3 == 0:  # ramen
+            d.ellipse((x - 36, y - 10, x + 36, y + 8), fill=(214, 90, 40))
+            d.arc((x - 24, y - 8, x + 24, y + 4), 180, 360, fill=(250, 214, 120), width=4)
+        elif i % 3 == 1:  # kimchi
+            d.ellipse((x - 30, y - 9, x + 30, y + 7), fill=(200, 40, 30))
+        else:  # rice
+            d.ellipse((x - 30, y - 16, x + 30, y + 8), fill=(255, 255, 255), outline=(200, 200, 200))
+        d.line((x + 52, y - 4, x + 88, y + 20), fill=(160, 160, 160), width=4)  # chopsticks
+        d.line((x + 58, y - 8, x + 94, y + 16), fill=(160, 160, 160), width=4)
+    for x in (380, 1045, 1560):  # soju bottles
+        d.rounded_rectangle((x - 16, TABLE_TOP - 70, x + 16, TABLE_TOP + 30), 10, fill=(40, 150, 80))
+        d.rectangle((x - 7, TABLE_TOP - 100, x + 7, TABLE_TOP - 66), fill=(40, 150, 80))
+        d.rectangle((x - 14, TABLE_TOP - 40, x + 14, TABLE_TOP - 10), fill=(240, 240, 230))
+    f = nr.font(20)
+    for x, label in plates:  # place cards on the front edge
+        tw = d.textlength(label, font=f)
+        d.rounded_rectangle((x - tw / 2 - 10, TABLE_FRONT + 22, x + tw / 2 + 10, TABLE_FRONT + 58), 7, fill=nr.YELLOW)
+        d.text((x, TABLE_FRONT + 40), label, font=f, fill=nr.BLACK, anchor="mm")
+
+
+def make_supper():
+    bg = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 1.0, 0.8)
+    x0 = (bg.width - W) // 2
+    img = bg.crop((x0, 0, x0 + W, H)).convert("RGBA")
+    room(img)
+    plates = []
+    for key, x, scale, lean, gx, env, mood in SUPPER:
+        frame, label = cutout(key, (gx, 0.05), env, mood)
+        pivot = (450, dg.COLLAR_Y + 300)  # lean from the seat, below the table top
+        frame = frame.rotate(-lean, resample=Image.BICUBIC, center=pivot)
+        f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
+        collar = TABLE_TOP - 130 * scale / 0.47
+        img.alpha_composite(f, (round(x - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
+        plates.append((x, label))
+    table(img, plates)
+    return img.convert("RGB")
+
+
 if __name__ == "__main__":
-    make(sys.argv[1]).save(sys.argv[2], quality=92)
+    (make_supper() if sys.argv[1] == "supper" else make(sys.argv[1])).save(sys.argv[2], quality=92)
