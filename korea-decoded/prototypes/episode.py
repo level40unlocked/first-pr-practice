@@ -26,7 +26,9 @@ WORLD_W = 2700  # studio wider than the frame: room for the anchor close-up and 
 OX = (WORLD_W - W) // 2  # scene x (0..1920) -> world x
 DESK_Y = dg.DESK_Y
 
-SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide", "still")
+SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide", "still", "cam")
+# "cam": the line names its own camera, "cam": [x, y, zoom] in scene coordinates (x 0..1920, y ~470, zoom >= 1),
+# and optionally "ease" (share of the way the camera moves per frame; low = a slow pan, 0.3 = a snap).
 # "still": the line plays over a picture from scene["still"] (e.g. the whole cast), slowly pushing in; the
 # Short shows it whole (fit to width) instead of cropped. A line's "tags" pop name labels onto it.
 ANCHOR_CAMERA = {"anchor_solo"}  # the anchor close-up; every other shot keeps the whole desk in view
@@ -497,7 +499,9 @@ def main():
 
     def cam_target(ln, t):
         shot, p = ln["shot"], puppets[ln["who"]]
-        if shot == "anchor_solo":
+        if shot == "cam":
+            target = [ln["cam"][0] + OX, ln["cam"][1], ln["cam"][2]]
+        elif shot == "anchor_solo":
             target = [ax, 480, 1.25]
         elif shot == "anchor_screen":
             target = [ax - ANCHOR_VIEW_X + W / 2, 540, 1.0]
@@ -543,7 +547,7 @@ def main():
         cut = prev_line is not None and ln is not prev_line and (prev_line["shot"] in ANCHOR_CAMERA) != anchor_cam
         if cut:
             cam = [tx, ty, tz]
-        a = 0.14
+        a = ln.get("ease", 0.14)
         cam = [cam[0] + (tx - cam[0]) * a, cam[1] + (ty - cam[1]) * a, cam[2] + (tz - cam[2]) * a]
         prev_line = ln
 

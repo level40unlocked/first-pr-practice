@@ -10,7 +10,7 @@
    "head": "../../cast/kangfree_head.png",
    "body": "../../cast/kangfree_body.png",
    "ref": "../../cast/kangfree_ref.png",
-   "x": 600,
+   "x": 500,
    "label": "DR. KANGFREE",
    "energy": 1.8,
    "head_ratio": 0.74,
@@ -21,7 +21,7 @@
    "head": "../../cast/chef_head.png",
    "body": "../../cast/chef_body.png",
    "ref": "../../cast/chef_ref.png",
-   "x": 960,
+   "x": 1460,
    "label": "CHEF CLAMSAY",
    "shoulders": 520,
    "white_lens": true,
@@ -33,7 +33,7 @@
    "head": "../../cast/k_head.png",
    "body": "../../cast/k_body.png",
    "ref": "../../cast/k_ref.png",
-   "x": 1320,
+   "x": 880,
    "label": "MASTER K"
   }
  },
@@ -164,7 +164,13 @@
      8.46
     ]
    ],
-   "shot": "still"
+   "shot": "cam",
+   "cam": [
+    690,
+    500,
+    1.22
+   ],
+   "ease": 0.14
   },
   {
    "who": "panel",
@@ -272,7 +278,13 @@
      7.86
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    690,
+    500,
+    1.22
+   ],
+   "ease": 0.14
   },
   {
    "who": "chef",
@@ -320,7 +332,13 @@
      2.48
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    1460,
+    470,
+    1.28
+   ],
+   "ease": 0.06
   },
   {
    "who": "chef",
@@ -353,7 +371,13 @@
      2.2
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    1460,
+    470,
+    1.15
+   ],
+   "ease": 0.1
   },
   {
    "who": "anchor",
@@ -391,7 +415,13 @@
      2.86
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    880,
+    470,
+    1.3
+   ],
+   "ease": 0.12
   },
   {
    "who": "chef",
@@ -449,7 +479,13 @@
      2.96
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    1170,
+    500,
+    1.12
+   ],
+   "ease": 0.08
   },
   {
    "who": "anchor",
@@ -462,7 +498,13 @@
      0.34
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    880,
+    470,
+    1.3
+   ],
+   "ease": 0.14
   },
   {
    "who": "chef",
@@ -515,7 +557,13 @@
      2.32
     ]
    ],
-   "shot": "speaker_close"
+   "shot": "cam",
+   "cam": [
+    1460,
+    470,
+    1.35
+   ],
+   "ease": 0.12
   },
   {
    "who": "panel",
@@ -528,7 +576,13 @@
      0.72
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    500,
+    470,
+    1.35
+   ],
+   "ease": 0.3
   },
   {
    "who": "chef",
@@ -621,7 +675,13 @@
      5.84
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    1460,
+    470,
+    1.2
+   ],
+   "ease": 0.1
   },
   {
    "who": "anchor",
@@ -679,7 +739,13 @@
      2.64
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    880,
+    470,
+    1.3
+   ],
+   "ease": 0.12
   },
   {
    "who": "chef",
@@ -732,7 +798,13 @@
      1.76
     ]
    ],
-   "shot": "speaker_close",
+   "shot": "cam",
+   "cam": [
+    1460,
+    470,
+    1.4
+   ],
+   "ease": 0.1,
    "mood": {
     "chef": "neutral"
    }
@@ -763,7 +835,13 @@
      2.5
     ]
    ],
-   "shot": "speaker_close"
+   "shot": "cam",
+   "cam": [
+    500,
+    470,
+    1.35
+   ],
+   "ease": 0.3
   },
   {
    "who": "chef",
@@ -781,7 +859,13 @@
      0.64
     ]
    ],
-   "shot": "speaker_close"
+   "shot": "cam",
+   "cam": [
+    1460,
+    470,
+    1.2
+   ],
+   "ease": 0.04
   },
   {
    "who": "panel",
@@ -829,7 +913,13 @@
      1.94
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    690,
+    500,
+    1.22
+   ],
+   "ease": 0.1
   },
   {
    "who": "anchor",
@@ -912,7 +1002,13 @@
      5.94
     ]
    ],
-   "shot": "two_shot"
+   "shot": "cam",
+   "cam": [
+    980,
+    510,
+    1.0
+   ],
+   "ease": 0.08
   },
   {
    "who": "panel",
