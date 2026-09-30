@@ -1,15 +1,12 @@
-"""Whole-cast still: every character seated at one long desk (one row) or on two tiers (front desk +
-raised back row), for the channel intro and thumbnails.
+"""Whole-cast still: every character seated behind one long, gently curved news desk with the channel logo
+on its front, for the channel intro, the banner and thumbnails.
 
-    python3 group_shot.py row out.jpg       # run from korea-decoded/ (cast images: cast/fetch.sh)
-    python3 group_shot.py tiers out.jpg
-    python3 group_shot.py supper out.jpg    # Last Supper composition: one long table, K in the middle
-    python3 group_shot.py round out.jpg     # big round table: everyone on the far half, facing the camera
+    python3 group_shot.py out.jpg       # run from korea-decoded/ (cast images: cast/fetch.sh)
 
 Each character is drawn once at full size by dialog.Puppet (same rig as the episodes), then scaled and
-placed so its collar sits on the row's collar line; the desk covers everything below the desk top.
+placed so its collar sits just above the desk; the desk covers everything below its top. The desk bulges
+toward the camera in the middle, so Master K (centre) is nearest and the ends sit a little farther back.
 """
-import math
 import sys
 
 from PIL import Image, ImageDraw
@@ -18,7 +15,8 @@ import dialog as dg
 import episode as ep
 import newsrig as nr
 
-W, H = nr.W, nr.H
+H = nr.H
+WIDTH = ep.WORLD_W  # the whole studio: a still for the banner, and the camera can pan across it
 C = "cast/"
 EXPERT = {"shoulders": 520, "white_lens": True}
 CAST = {  # key: rig spec + nameplate
@@ -33,202 +31,73 @@ CAST = {  # key: rig spec + nameplate
     "tech": {"label": "BILL DUSK", **EXPERT, "head_ratio": 0.68, "chin_drop": 0.08},
     "travel": {"label": "TRAVEL", **EXPERT},
 }
-LAYOUTS = {
-    # rows back to front: (keys left to right, scale, collar y, desk top y, x spacing)
-    "row": [(["travel", "money", "news", "kangfree", "k", "joe", "chef", "kpop", "hidden", "tech"],
-             0.56, 700, 885, 186)],
-    "tiers": [(["news", "hidden", "kpop", "tech", "travel"], 0.46, 330, 480, 365),
-              (["chef", "kangfree", "k", "joe", "money"], 0.6, 720, 895, 365)],
-}
+SEATS = ["tech", "money", "news", "hidden", "kangfree", "k", "joe", "chef", "kpop", "travel"]  # left to right
+# Size: the source drawings differ (big glasses, small faces), so the scale moves halfway (square root)
+# toward equal eye spacing, and SIZE nudges what is left. K, in the middle, is a touch bigger.
+BASE, SEP_REF = 0.47, 125
+SIZE = {"k": 1.05, "kangfree": 1.07, "chef": 0.95}
+REACT = {"kangfree": 0.9, "joe": 0.9, "kpop": 0.9}  # mouths open: the rest of the desk reacting
+DESK_TOP, BULGE, HALF = 850, 45, 1250  # front edge at the ends, how far the middle comes forward, half width
+DESK_DEPTH = 45  # desk top surface, back edge to front edge
 
 
-def cutout(key, gaze=(0.0, 0.1), env=0.0, mood=None):
+def cutout(key, gaze=(0.0, 0.1), env=0.0):
     """The character drawn at full rig size, on a transparent frame whose collar line is y = COLLAR_Y.
     gaze also leans the head that way; env > 0.45 opens the mouth."""
     spec = {**CAST[key], "head": f"{C}{key}_head.png", "body": f"{C}{key}_body.png", "ref": f"{C}{key}_ref.png",
             "x": 450}
     p = dg.Puppet(spec)
     frame = Image.new("RGBA", (900, H), (0, 0, 0, 0))
-    p.draw(frame, 0.0, gaze, 0.0, env, 0.0, mood=mood or spec.get("mood"))
+    p.draw(frame, 0.0, gaze, 0.0, env, 0.0, mood=spec.get("mood"))
     return frame, p.label, p.rig["sep"]
 
 
-def desk(img, top, bottom, x0, x1, plates, size):
+def front_edge(dx):
+    """y of the desk's front edge at dx from the middle: lowest (nearest) in the middle."""
+    u = min(1.0, abs(dx) / HALF)
+    return DESK_TOP + BULGE * (1 - u * u)
+
+
+def desk(img, cx, plates):
+    w = img.width
     d = ImageDraw.Draw(img)
-    d.polygon([(x0, top), (x1, top), (x1 + 40, bottom), (x0 - 40, bottom)], fill=(22, 26, 36))
-    d.rectangle((x0, top, x1, top + 10), fill=nr.YELLOW)
-    f = nr.font(size)
+    front = [(x, front_edge(x - cx)) for x in range(0, w + 1, 20)]
+    back = [(x, y - DESK_DEPTH) for x, y in front]
+    d.polygon(back + front[::-1], fill=(44, 52, 72))  # top surface
+    d.polygon(front + [(w, H), (0, H)], fill=(22, 26, 36))  # front panel
+    d.line(front, fill=nr.YELLOW, width=12)
+    nr.logo_mark(img, cx, round((front_edge(0) + H) / 2 + 45), 120)  # channel mark in the middle of the front
+    d = ImageDraw.Draw(img)
+    f = nr.font(24)
     for x, label in plates:
+        y = front_edge(x - cx) + 40
         tw = d.textlength(label, font=f)
-        y = top + 18 + size * 0.9
-        d.rounded_rectangle((x - tw / 2 - 12, y - size * 0.85, x + tw / 2 + 12, y + size * 0.85), 8, fill=nr.YELLOW)
+        d.rounded_rectangle((x - tw / 2 - 14, y - 20, x + tw / 2 + 14, y + 20), 8, fill=nr.YELLOW)
         d.text((x, y), label, font=f, fill=nr.BLACK, anchor="mm")
 
 
-def make(layout):
-    bg = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 0.8, 1.5)
-    x0 = (bg.width - W) // 2
-    img = bg.crop((x0, 0, x0 + W, H)).convert("RGBA")
-    rows = LAYOUTS[layout]
-    for i, (keys, scale, collar, top, gap) in enumerate(rows):
-        left = W / 2 - gap * (len(keys) - 1) / 2
-        plates = []
-        for j, key in enumerate(keys):
-            frame, label, _ = cutout(key)
-            f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
-            cx = left + j * gap
-            img.alpha_composite(f, (round(cx - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
-            plates.append((cx, label))
-        bottom = rows[i + 1][3] if i + 1 < len(rows) else H
-        desk(img, top, bottom, left - gap * 0.55, left + gap * (len(keys) - 0.45), plates, round(34 * scale))
-    return img.convert("RGB")
-
-
-# Last Supper: groups of two or three lean toward each other, K sits alone in the middle under the big
-# window. (key, x, scale, lean in degrees (+ = toward the right), gaze x, mouth open, mood)
-SUPPER_W = ep.WORLD_W  # the whole studio width: a still for banners, and the camera can pan across it
-# Size: the source drawings differ (big glasses, small faces), so eye spacing is only half the story: the
-# scale moves halfway (square root) toward equal eye spacing, and "size" nudges what is left.
-BASE, SEP_REF = 0.47, 125
-SUPPER = [  # x is the offset from the middle of the table; size is relative to SEP
-    ("tech", -1180, 1.0, 3, 0.6, 0.0, None), ("money", -960, 1.0, -2, 0.5, 0.6, None),
-    ("news", -740, 1.0, -5, 0.7, 0.0, None),
-    ("hidden", -480, 1.0, 4, 0.7, 0.0, None), ("kangfree", -260, 1.07, -6, 0.9, 0.9, None),
-    ("k", 0, 1.05, 0, 0.0, 0.0, None),
-    ("joe", 260, 1.0, 6, -0.9, 0.9, None), ("chef", 485, 0.95, 3, -0.6, 0.0, None),
-    ("kpop", 800, 1.0, 5, -0.7, 0.9, None), ("travel", 1060, 1.0, -3, -0.5, 0.0, None),
-]
-TABLE_TOP, TABLE_FRONT = 850, 935
-FRAME = (70, 60, 50, 255)
-
-
-def room(bg):
-    """Dark back wall with three arched windows onto the skyline; the middle one, behind K, is the largest."""
-    w, cx = bg.width, bg.width // 2
-    wall = Image.new("RGBA", bg.size, (14, 18, 34, 230))
-    d = ImageDraw.Draw(wall)
-    windows = [(cx - 200, 250, cx + 200, 800), (cx - 690, 360, cx - 450, 760), (cx + 450, 360, cx + 690, 760)]
-    for x0, y0, x1, y1 in windows:
-        d.rectangle((x0, y0 + (x1 - x0) // 2, x1, y1), fill=(0, 0, 0, 0))
-        d.pieslice((x0, y0, x1, y0 + (x1 - x0)), 180, 360, fill=(0, 0, 0, 0))  # arched top
-    for x0, y0, x1, y1 in windows:  # frames
-        d.arc((x0 - 6, y0 - 6, x1 + 6, y0 + (x1 - x0) + 6), 180, 360, fill=FRAME, width=12)
-        d.line((x0, y0 + (x1 - x0) // 2, x0, y1), fill=FRAME, width=12)
-        d.line((x1, y0 + (x1 - x0) // 2, x1, y1), fill=FRAME, width=12)
-    side = w * 0.2
-    for x, sgn in ((0, 1), (w, -1)):  # side walls in perspective, like the painting's tapestries
-        d.polygon([(x, 0), (x + sgn * side, 200), (x + sgn * side, 820), (x, 900)], fill=(24, 28, 46, 255))
-        for k in range(1, 5):  # wall panels
-            px = x + sgn * side * k / 5
-            d.line((px, 40 * k, px, 900 - 16 * k), fill=(40, 46, 70, 255), width=4)
-    d.polygon([(0, 0), (w, 0), (w - side, 200), (side, 200)], fill=(20, 24, 40, 255))  # ceiling
-    for k in range(1, 10):  # coffered ceiling lines toward the vanishing point behind K
-        d.line((k * w / 10, 0, side + k * (w - 2 * side) / 10, 200), fill=(40, 46, 70, 255), width=3)
-    d.line((side, 200, w - side, 200), fill=(40, 46, 70, 255), width=4)
-    bg.alpha_composite(wall)
-
-
-def table(img, plates, bottles):
-    w = img.width
-    d = ImageDraw.Draw(img)
-    d.polygon([(40, TABLE_TOP), (w - 40, TABLE_TOP), (w, TABLE_FRONT), (0, TABLE_FRONT)], fill=(236, 232, 220))
-    d.rectangle((0, TABLE_FRONT, w, H), fill=(214, 208, 192))
-    for x in range(60, w, 160):  # cloth folds
-        d.line((x, TABLE_FRONT + 6, x + 10, H), fill=(196, 188, 170), width=3)
-    d.rectangle((0, TABLE_FRONT - 4, w, TABLE_FRONT + 4), fill=nr.YELLOW)
-    # Korean dinner: ramen, kimchi or rice in front of everyone, chopsticks, green soju bottles
-    for i, (x, _) in enumerate(plates):
-        y = TABLE_TOP + 40
-        d.ellipse((x - 46, y - 14, x + 46, y + 14), fill=(250, 250, 250), outline=(120, 120, 120), width=2)
-        if i % 3 == 0:  # ramen
-            d.ellipse((x - 36, y - 10, x + 36, y + 8), fill=(214, 90, 40))
-            d.arc((x - 24, y - 8, x + 24, y + 4), 180, 360, fill=(250, 214, 120), width=4)
-        elif i % 3 == 1:  # kimchi
-            d.ellipse((x - 30, y - 9, x + 30, y + 7), fill=(200, 40, 30))
-        else:  # rice
-            d.ellipse((x - 30, y - 16, x + 30, y + 8), fill=(255, 255, 255), outline=(200, 200, 200))
-        d.line((x + 52, y - 4, x + 88, y + 20), fill=(160, 160, 160), width=4)  # chopsticks
-        d.line((x + 58, y - 8, x + 94, y + 16), fill=(160, 160, 160), width=4)
-    for x in bottles:  # soju
-        d.rounded_rectangle((x - 16, TABLE_TOP - 70, x + 16, TABLE_TOP + 30), 10, fill=(40, 150, 80))
-        d.rectangle((x - 7, TABLE_TOP - 100, x + 7, TABLE_TOP - 66), fill=(40, 150, 80))
-        d.rectangle((x - 14, TABLE_TOP - 40, x + 14, TABLE_TOP - 10), fill=(240, 240, 230))
-    f = nr.font(22)
-    for x, label in plates:  # place cards on the front edge
-        tw = d.textlength(label, font=f)
-        d.rounded_rectangle((x - tw / 2 - 10, TABLE_FRONT + 22, x + tw / 2 + 10, TABLE_FRONT + 60), 7, fill=nr.YELLOW)
-        d.text((x, TABLE_FRONT + 41), label, font=f, fill=nr.BLACK, anchor="mm")
-
-
-def make_supper(width=SUPPER_W):
-    img = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 1.0, 0.8).convert("RGBA")
+def make(width=WIDTH):
+    img = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 0.8, 1.5).convert("RGBA")
     if img.width != width:
         img = img.resize((width, H))
-    room(img)
     cx = width // 2
-    plates = []
-    for key, dx, size, lean, gx, env, mood in SUPPER:
-        frame, label, sep = cutout(key, (gx, 0.05), env, mood)
-        scale = BASE * size * (SEP_REF / sep) ** 0.5
-        pivot = (450, dg.COLLAR_Y + 300)  # lean from the seat, below the table top
-        frame = frame.rotate(-lean, resample=Image.BICUBIC, center=pivot)
-        f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
-        collar = TABLE_TOP - 130 * scale / 0.47
-        img.alpha_composite(f, (round(cx + dx - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
+    n = len(SEATS)
+    plates, placed = [], []
+    for i, key in enumerate(SEATS):
+        dx = (i - (n - 1) / 2) * (2 * HALF * 0.92 / (n - 1))
+        u = abs(dx) / HALF
+        gx = max(-0.8, min(0.8, -dx / HALF * 1.2))  # everyone glances toward the middle
+        frame, label, sep = cutout(key, (gx, 0.05), REACT.get(key, 0.0))
+        scale = BASE * SIZE.get(key, 1.0) * (SEP_REF / sep) ** 0.5 * (1.04 - 0.1 * u * u)  # ends a bit farther
+        placed.append((u, dx, frame, scale))
         plates.append((cx + dx, label))
-    table(img, plates, [cx - 610, cx + 130, cx + 645])  # in the gaps between the groups
-    return img.convert("RGB")
-
-
-# Round table seen from the front: the cast sits around the far half (the rig only draws faces from the
-# front), so the middle seats are farther away and smaller, the ends nearer and bigger.
-ROUND = ["tech", "money", "news", "hidden", "kangfree", "k", "joe", "chef", "kpop", "travel"]
-ROUND_SIZE = {"k": 1.05, "kangfree": 1.07, "chef": 0.95}
-TABLE_C, TABLE_R = (1350, 900), (1180, 190)  # ellipse of the table top (centre, radii)
-
-
-def make_round(width=SUPPER_W):
-    img = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 1.0, 0.8).convert("RGBA")
-    if img.width != width:
-        img = img.resize((width, H))
-    room(img)
-    (cx, cy), (rx, ry) = TABLE_C, TABLE_R
-    seats = []
-    for i, key in enumerate(ROUND):  # evenly spaced across the width, from the left end round the back
-        u = -0.93 + 1.86 * i / (len(ROUND) - 1)
-        a = math.pi + math.acos(-u)
-        depth = -math.sin(a)  # 1 = back of the table, ~0.35 = the ends
-        seats.append((depth, key, cx + rx * math.cos(a), cy + ry * math.sin(a), a))
-    plates = []
-    for depth, key, x, edge_y, a in sorted(seats, reverse=True):  # far seats first
-        gx = max(-0.9, min(0.9, (cx - x) / rx))  # everyone looks toward the middle of the table
-        frame, label, sep = cutout(key, (gx, 0.05), 0.9 if key in ("kangfree", "joe", "kpop") else 0.0)
-        scale = BASE * ROUND_SIZE.get(key, 1.0) * (SEP_REF / sep) ** 0.5 * (1.3 - 0.4 * depth)
+    for u, dx, frame, scale in sorted(placed, key=lambda p: -p[0]):  # farther (ends) first
         f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
-        collar = edge_y - 130 * scale / 0.47
-        img.alpha_composite(f, (round(x - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
-        plates.append((x, edge_y, label, a))
-    d = ImageDraw.Draw(img)
-    d.ellipse((cx - rx - 40, cy - ry - 10, cx + rx + 40, cy + ry + 60), fill=(214, 208, 192))  # cloth edge
-    d.ellipse((cx - rx - 40, cy - ry - 16, cx + rx + 40, cy + ry + 40), fill=(236, 232, 220))
-    d.arc((cx - rx - 40, cy - ry - 16, cx + rx + 40, cy + ry + 40), 0, 180, fill=nr.YELLOW, width=8)
-    f = nr.font(22)
-    for x, y, label, a in plates:
-        px, py = cx + (x - cx) * 0.86, cy + (y - cy) * 0.55  # dish a little in from the seat
-        d.ellipse((px - 46, py - 14, px + 46, py + 14), fill=(250, 250, 250), outline=(120, 120, 120), width=2)
-        d.ellipse((px - 34, py - 10, px + 34, py + 8), fill=(214, 90, 40) if len(label) % 2 else (200, 40, 30))
-        tw = d.textlength(label, font=f)
-        ty = py + 42
-        d.rounded_rectangle((px - tw / 2 - 10, ty - 18, px + tw / 2 + 10, ty + 18), 7, fill=nr.YELLOW)
-        d.text((px, ty), label, font=f, fill=nr.BLACK, anchor="mm")
-    for bx in (cx - 420, cx, cx + 420):  # soju in the middle of the table, in front of the name cards
-        by = cy + 150
-        d.rounded_rectangle((bx - 16, by - 70, bx + 16, by + 30), 10, fill=(40, 150, 80))
-        d.rectangle((bx - 7, by - 100, bx + 7, by - 66), fill=(40, 150, 80))
-        d.rectangle((bx - 14, by - 40, bx + 14, by - 10), fill=(240, 240, 230))
+        collar = front_edge(dx) - DESK_DEPTH - 170 * scale / 0.47
+        img.alpha_composite(f, (round(cx + dx - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
+    desk(img, cx, plates)
     return img.convert("RGB")
 
 
 if __name__ == "__main__":
-    builders = {"supper": make_supper, "round": make_round}
-    (builders[sys.argv[1]]() if sys.argv[1] in builders else make(sys.argv[1])).save(sys.argv[2], quality=92)
+    make().save(sys.argv[1], quality=92)
