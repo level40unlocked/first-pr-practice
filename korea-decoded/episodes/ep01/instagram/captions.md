@@ -32,7 +32,8 @@ New episodes every Friday ↓
 A 3.5-meter shark swam into a canal in Busan, Korea… and refused to leave. 🦈
 Korea gave it a nickname within days. Then 600,000 people showed up.
 
-Full episode on YouTube: Four Eyes Report (link in bio)
+Full episode on YouTube (link in bio):
+youtube.com/@foureyesreport
 #korea #busan #shark #koreanews #weirdnews
 ```
 > 3.5m 상어가 한국 부산의 수로로 들어와서… 나가길 거부했다. 한국은 며칠 만에 별명을 붙였고, 60만 명이 보러 왔다. 전체 에피소드는 유튜브에서 (프로필 링크)
@@ -53,7 +54,8 @@ Hello, world. 👓
 Meet Master K, the very serious anchor of Four Eyes Report:
 an animated news show about Korea, for everyone who isn't in Korea.
 
-New episodes every Friday on YouTube (link in bio).
+New episodes every Friday on YouTube (link in bio):
+youtube.com/@foureyesreport
 Stay curious. Keep your lenses clean.
 #korea #southkorea #koreanculture #animation #news
 ```
