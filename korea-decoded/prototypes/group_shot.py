@@ -30,7 +30,7 @@ CAST = {  # key: rig spec + nameplate
     "hidden": {"label": "DR. H", **EXPERT},
     "money": {"label": "MAX RISE", **EXPERT, "head_ratio": 0.68},
     "tech": {"label": "BILL DUSK", **EXPERT, "head_ratio": 0.68, "chin_drop": 0.08},
-    "travel": {"label": "TRAVEL", **EXPERT},
+    "travel": {"label": "PROF. INDOOR", **EXPERT},
 }
 SEATS = ["tech", "money", "news", "hidden", "kangfree", "k", "joe", "chef", "kpop", "travel"]  # left to right
 # Size: the source drawings differ (big glasses, small faces), so the scale moves halfway (square root)

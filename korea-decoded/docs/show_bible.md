@@ -143,7 +143,7 @@ A 캐릭터의 가장 멋진 버전. 굵은 검은 원형 안경, 볼륨 있게 
 | money_business | 머니 애널리스트 → **Max Rise** (`characters.md`) | 40대 남성. 올백 머리, 얇은 금테 사각 안경, 초록 조끼 + 크림 터틀넥, 행커치프, 복고 계산기 | 모든 주제를 결국 돈 얘기로 끌고 감 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094129_b35c18d3-ba65-4127-82d5-0321defeb384.png) |
 | tech | 테크·로봇 전문가 → **Bill Dusk** (남성으로 변경, `characters.md`) | 젊은 여성(원래 컨셉). 청록 브릿지 픽시컷, 굵은 청록테 안경, 하이넥 테크웨어, 어깨 위 작은 로봇 | 무표정 천재. 로봇이 대신 리액션 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_35bc69bf-8144-48e8-8632-7b5e6d0d057b.png) |
 | food_life | 푸드 셰프 | 50대 통통한 셰프. 주황 반다나, 큰 검은 원형 안경, 하이넥 셰프복 + 주황 스카프, 쇠젓가락, 라면 그릇 | 음식 얘기에 황홀. 항상 배고픔 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_6068923f-3ebd-4b71-bbc2-60fcf7b9a9eb.png) |
-| travel | 여행 백패커 | 활발한 젊은 여성. 웨이브 머리에 머스터드 비니, 대모갑 원형 안경, 턱까지 채운 틸색 바람막이, 카메라, 지도 | "저 거기 가봤어요!" 현장파 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_0672aa18-1557-4d65-bb85-efe2500ff30c.png) |
+| travel | 여행 백패커 → **Professor Indoor** (집순이 반전, `characters.md`) | 활발한 젊은 여성. 웨이브 머리에 머스터드 비니, 대모갑 원형 안경, 턱까지 채운 틸색 바람막이, 카메라, 지도 | "저 거기 가봤어요!" 현장파 | [이미지](https://d8j0ntlcm91z4.cloudfront.net/user_3EqGMSR4UWAmjj632i5YewaH0hU/hf_20260928_094128_0672aa18-1557-4d65-bb85-efe2500ff30c.png) |
 
 ### 스포츠 겸임 비교 심판: 애니메이션용 원본 (2026-09-28)
 - KOREA VS WORLD 비교 심판을 스포츠 담당으로 겸임하는 안. 컨셉 `d2d5cb84-8332-485d-8a9f-df2405c4d4d4`를 참조로 gpt_image_2_5, 1:1, 회색 배경
