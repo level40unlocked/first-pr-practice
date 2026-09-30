@@ -26,7 +26,9 @@ WORLD_W = 2700  # studio wider than the frame: room for the anchor close-up and 
 OX = (WORLD_W - W) // 2  # scene x (0..1920) -> world x
 DESK_Y = dg.DESK_Y
 
-SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide")
+SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide", "still")
+# "still": the line plays over a picture from scene["still"] (e.g. the whole cast), slowly pushing in; the
+# Short shows it whole (fit to width) instead of cropped. A line's "tags" pop name labels onto it.
 ANCHOR_CAMERA = {"anchor_solo"}  # the anchor close-up; every other shot keeps the whole desk in view
 SCREEN_SHOTS = ("anchor_screen", "screen_full")
 SCREEN_OTS = (1190, 230, 1880, 618)  # explainer box to the anchor's right (view coords, 16:9), the panel stays
@@ -102,8 +104,10 @@ def world_background(scene=None):
 def desk_layer(puppets):
     img = Image.new("RGBA", (WORLD_W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    d.polygon([(OX + 300, DESK_Y), (OX + 1620, DESK_Y), (OX + 1680, H), (OX + 240, H)], fill=(22, 26, 36))
-    d.rectangle((OX + 300, DESK_Y, OX + 1620, DESK_Y + 12), fill=nr.YELLOW)
+    xs = [p.x for p in puppets]
+    left, right = min([300] + [x - 300 for x in xs]), max([1620] + [x + 300 for x in xs])  # wider for a third seat
+    d.polygon([(OX + left, DESK_Y), (OX + right, DESK_Y), (OX + right + 60, H), (OX + left - 60, H)], fill=(22, 26, 36))
+    d.rectangle((OX + left, DESK_Y, OX + right, DESK_Y + 12), fill=nr.YELLOW)
     f = nr.font(30)
     for p in puppets:
         tw = d.textlength(p.label, font=f)
@@ -127,17 +131,19 @@ FADE = 0.3  # crossfade between screens inside one line
 END_CARD = 2.5  # seconds a Short holds its "full episode on the channel" card after the last line
 
 
-def end_card(last, t, where="on our channel"):
+def end_card(last, t, where="on our channel", card=None):
     """The Short's closing card over its frozen last frame; fades in over 0.35 s. `where` names the place of
-    the full episode ("on YouTube" when the clip is posted on another platform)."""
+    the full episode ("on YouTube" when the clip is posted on another platform). `card` = {"title", "line"}
+    replaces the two texts (the channel intro says FOLLOW FOR MORE instead)."""
+    title, line = (card["title"], card["line"]) if card else ("WANT THE FULL STORY?", f"Full episode {where}")
     u = ease(min(1.0, t / 0.35))
     frame = Image.blend(last, Image.new("RGB", last.size, nr.BRAND_NAVY), 0.6 * u)
     card = Image.new("RGBA", last.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(card)
     d.rectangle((0, 600, SW, 1410), fill=nr.BRAND_NAVY)  # hide the frozen caption and screen behind the text
     cx = SW / 2
-    d.text((cx, 760), "WANT THE FULL STORY?", font=nr.font(64), fill=nr.YELLOW, anchor="mm")
-    d.text((cx, 870), f"Full episode {where}", font=nr.font(50), fill=nr.WHITE, anchor="mm")
+    d.text((cx, 760), title, font=nr.font(64), fill=nr.YELLOW, anchor="mm")
+    d.text((cx, 870), line, font=nr.font(50 if len(line) < 34 else 40), fill=nr.WHITE, anchor="mm")
     d.rounded_rectangle((cx - 330, 950, cx + 330, 1050), 50, fill=nr.YELLOW)
     d.text((cx, 1000), nr.HANDLE, font=nr.font(48), fill=nr.NAVY, anchor="mm")
     card.putalpha(card.getchannel("A").point(lambda a: int(a * u)))
@@ -433,6 +439,38 @@ def main():
     where = scene.get("full_episode_where")  # e.g. "on YouTube" for a Reels / TikTok copy
     nr.shorts_promo(short_static, sd, where or "on the channel")
 
+    still_img = None  # a picture for "still" shots (bigger than the frame, room for the slow push)
+    if scene.get("still"):
+        still_img = fit_cover(Image.open(scene["still"]).convert("RGB"), int(W * 1.2), int(H * 1.2))
+        if scene.get("still_credit"):
+            sd_ = ImageDraw.Draw(still_img)
+            sd_.text((36, still_img.height - 30), scene["still_credit"], font=nr.font(26), fill=(230, 235, 245),
+                     anchor="lm", stroke_width=3, stroke_fill=(0, 0, 0))
+
+    def still_frames(ln, t, tags):
+        """(long view, Short crop) of the still at t: slow push, name tags popped in so far."""
+        img = still_img
+        if tags:
+            img = still_img.copy()
+            td = ImageDraw.Draw(img)
+            tf = nr.font(30)
+            for at, tg in tags:
+                if t >= at:
+                    tx_, ty_ = tg["x"] * img.width, tg["y"] * img.height
+                    tw_ = td.textlength(tg["text"], font=tf)
+                    td.rounded_rectangle((tx_ - tw_ / 2 - 14, ty_ - 22, tx_ + tw_ / 2 + 14, ty_ + 22), 9,
+                                         fill=nr.YELLOW, outline=nr.BLACK, width=3)
+                    td.text((tx_, ty_), tg["text"], font=tf, fill=nr.BLACK, anchor="mm")
+        z = 1.0 + min(0.06, 0.012 * max(0.0, t - (ln["start"] - 0.15)))
+        cw_, ch_ = img.width / z, img.height / z
+        box = ((img.width - cw_) / 2, (img.height - ch_) / 2, (img.width + cw_) / 2, (img.height + ch_) / 2)
+        long_view = img.resize((W, H), Image.BILINEAR, box=box)
+        fit = img.resize((SHORT_W, SHORT_W * H // W), Image.BILINEAR, box=box)  # whole picture, not cropped
+        crop = Image.new("RGB", (SHORT_W, 1080), nr.BRAND_NAVY)
+        crop.paste(fit, (0, (1080 - fit.height) // 2))
+        return long_view, crop
+
+    still_tags, tags_line = [], None
     blinks = {k: dg.blink_schedule(duration, i * 11 + 3) for i, k in enumerate(puppets)}
     rnd = random.Random(5)
     sacc = {k: {} for k in puppets}
@@ -555,12 +593,20 @@ def main():
                                       ease(fade))
             piece, xy = screen_piece(content, rect, alpha, scr.get("label", ""), scr.get("credit", ""))
             view.paste(piece, xy, piece)
+        still_crop = None
+        if ln["shot"] == "still" and still_img is not None:
+            if ln.get("tags") and ln is not tags_line:  # a run of still lines keeps the tags that popped in
+                still_tags = [(ln["start"] + tg.get("at", 0.0), tg) for tg in ln["tags"]]
+                tags_line = ln
+            view, still_crop = still_frames(ln, t, still_tags)
+        else:
+            still_tags, tags_line = [], None
         short_crop = None
         if sp is not None and s_from <= t <= s_to:
             goal_x = SHORT_X.get(ln["shot"], (W - SHORT_W) / 2)
             short_x = goal_x if cut else short_x + (goal_x - short_x) * 0.2  # pans with the screen box
             x0 = int(round(short_x))
-            short_crop = view.crop((x0, 0, x0 + SHORT_W, 1080))
+            short_crop = still_crop if still_crop is not None else view.crop((x0, 0, x0 + SHORT_W, 1080))
             # tags and lower third are laid out for the centered crop; keep them fixed in the Short
             for piece, (px, py) in over_short:
                 short_crop.paste(piece, (px - (W - SHORT_W) // 2, py), piece)
@@ -583,7 +629,8 @@ def main():
 
     if sp is not None and last_short is not None:
         for i in range(int(END_CARD * FPS)):
-            sp.stdin.write(np.asarray(end_card(last_short, i / FPS, where or "on our channel")).tobytes())
+            sp.stdin.write(np.asarray(end_card(last_short, i / FPS, where or "on our channel",
+                                               scene.get("end_card"))).tobytes())
     for p in (lp, sp):
         if p is not None:
             p.stdin.close()

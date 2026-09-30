@@ -59,7 +59,7 @@ def shorts_promo(canvas, draw, where="on the channel"):
 def episode_tag(draw, x, y, episode, h=50):
     """Top-left broadcast tag, e.g. "EP.12" (brand yellow; we never claim to be live). Returns right edge."""
     f = font(30)
-    text = f"EP.{episode}"
+    text = episode if isinstance(episode, str) else f"EP.{episode}"  # a word ("INTRO") for non-numbered videos
     w = draw.textlength(text, font=f) + 40
     draw.rounded_rectangle((x, y, x + w, y + h), 12, fill=YELLOW)
     draw.text((x + w / 2, y + h / 2), text, font=f, fill=NAVY, anchor="mm")
