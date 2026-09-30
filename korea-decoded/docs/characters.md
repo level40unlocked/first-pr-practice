@@ -108,7 +108,7 @@
 | 외모 | 기존 K-POP 분석가 원본 그대로: 파스텔 핑크 머리, 큰 투명테 원형 안경, 하이넥 무대 재킷, 하트 응원봉. 설정 `"shoulders": 520, "white_lens": true` (head_ratio 자동) |
 | 성격·개그 | 과몰입 팬보이, 컴백 얘기만 나오면 폭주. "I was *this* close to debuting." / Ms. Nonfic "You were half a beat late." 팬픽 개그: "I wrote a fanfic about it!" / "...Of course you did." |
 | 조심할 것 | 실제 아이돌·소속사 실명 비하 금지, 뮤직비디오·방송 영상 사용 금지 (저작권) |
-| 목소리 | 미정 (남성, 20대, 밝고 들뜬 톤) |
+| 목소리 | ✅ **Bram** (Higgsfield 프리셋, `549ff70a-3ee7-4f04-a4d9-89a24fab7709`, 2026-09-30 운영자 선택). 밝고 들뜬 20대 톤이 나오는지 첫 생성 때 확인하고, 안 맞으면 다시 고름 |
 
 ## 데스크 전문가: Professor Indoor (프로페서 인도어) · TRAVEL ✅ 이름 확정 (2026-09-30)
 

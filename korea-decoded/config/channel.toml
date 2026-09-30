@@ -127,6 +127,11 @@ provider = "higgsfield"
 variant = "elevenlabs"
 voice_id = "563f728c-e249-5a85-97ab-8461e8c09da6"
 
+[voices.bram]                # Offbeat (2026-09-30, 운영자 선택). 음성 생성 때 변형(elevenlabs 등)을 시험해서 정함
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "549ff70a-3ee7-4f04-a4d9-89a24fab7709"
+
 [voices.miles]
 provider = "higgsfield"
 variant = "elevenlabs"
@@ -188,3 +193,8 @@ voice = "chloe"
 name = "Chef Garden Clamsay"
 label = "CHEF CLAMSAY"
 voice = "desmond"
+
+[cast.kpop]
+name = "Offbeat"
+label = "OFFBEAT"
+voice = "bram"
