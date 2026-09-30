@@ -25,7 +25,7 @@ CAST = {  # key: rig spec + nameplate
     "kangfree": {"label": "DR. KANGFREE", "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
     "joe": {"label": "WHISTLE JOE", **EXPERT, "head_ratio": 0.68, "chin_drop": 0.16},
     "chef": {"label": "CHEF CLAMSAY", **EXPERT, "head_ratio": 0.74, "chin_drop": 0.16, "mood": "frown"},
-    "news": {"label": "NEWS", **EXPERT},
+    "news": {"label": "MS. NONFIC", **EXPERT},
     "kpop": {"label": "K-POP", **EXPERT},
     "hidden": {"label": "DR. H", **EXPERT},
     "money": {"label": "MAX RISE", **EXPERT, "head_ratio": 0.68},
