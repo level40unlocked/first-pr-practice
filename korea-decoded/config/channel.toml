@@ -122,6 +122,11 @@ provider = "higgsfield"
 variant = "elevenlabs"
 voice_id = "e9cfbbf0-4476-46be-b396-596eb774b165"
 
+[voices.desmond]             # Chef Garden Clamsay (2026-09-30, 운영자 선택). 다른 후보: Bob, Sterling, Grady
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "563f728c-e249-5a85-97ab-8461e8c09da6"
+
 [voices.miles]
 provider = "higgsfield"
 variant = "elevenlabs"
@@ -178,3 +183,8 @@ voice = "miles"
 name = "Dr. Kangfree"
 label = "DR. KANGFREE"
 voice = "chloe"
+
+[cast.chef]
+name = "Chef Garden Clamsay"
+label = "CHEF CLAMSAY"
+voice = "desmond"
