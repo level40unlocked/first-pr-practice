@@ -4,10 +4,12 @@ raised back row), for the channel intro and thumbnails.
     python3 group_shot.py row out.jpg       # run from korea-decoded/ (cast images: cast/fetch.sh)
     python3 group_shot.py tiers out.jpg
     python3 group_shot.py supper out.jpg    # Last Supper composition: one long table, K in the middle
+    python3 group_shot.py round out.jpg     # big round table: everyone on the far half, facing the camera
 
 Each character is drawn once at full size by dialog.Puppet (same rig as the episodes), then scaled and
 placed so its collar sits on the row's collar line; the desk covers everything below the desk top.
 """
+import math
 import sys
 
 from PIL import Image, ImageDraw
@@ -178,5 +180,55 @@ def make_supper(width=SUPPER_W):
     return img.convert("RGB")
 
 
+# Round table seen from the front: the cast sits around the far half (the rig only draws faces from the
+# front), so the middle seats are farther away and smaller, the ends nearer and bigger.
+ROUND = ["tech", "money", "news", "hidden", "kangfree", "k", "joe", "chef", "kpop", "travel"]
+ROUND_SIZE = {"k": 1.05, "kangfree": 1.07, "chef": 0.95}
+TABLE_C, TABLE_R = (1350, 900), (1180, 190)  # ellipse of the table top (centre, radii)
+
+
+def make_round(width=SUPPER_W):
+    img = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 1.0, 0.8).convert("RGBA")
+    if img.width != width:
+        img = img.resize((width, H))
+    room(img)
+    (cx, cy), (rx, ry) = TABLE_C, TABLE_R
+    seats = []
+    for i, key in enumerate(ROUND):  # evenly spaced across the width, from the left end round the back
+        u = -0.93 + 1.86 * i / (len(ROUND) - 1)
+        a = math.pi + math.acos(-u)
+        depth = -math.sin(a)  # 1 = back of the table, ~0.35 = the ends
+        seats.append((depth, key, cx + rx * math.cos(a), cy + ry * math.sin(a), a))
+    plates = []
+    for depth, key, x, edge_y, a in sorted(seats, reverse=True):  # far seats first
+        gx = max(-0.9, min(0.9, (cx - x) / rx))  # everyone looks toward the middle of the table
+        frame, label, sep = cutout(key, (gx, 0.05), 0.9 if key in ("kangfree", "joe", "kpop") else 0.0)
+        scale = BASE * ROUND_SIZE.get(key, 1.0) * (SEP_REF / sep) ** 0.5 * (1.3 - 0.4 * depth)
+        f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
+        collar = edge_y - 130 * scale / 0.47
+        img.alpha_composite(f, (round(x - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
+        plates.append((x, edge_y, label, a))
+    d = ImageDraw.Draw(img)
+    d.ellipse((cx - rx - 40, cy - ry - 10, cx + rx + 40, cy + ry + 60), fill=(214, 208, 192))  # cloth edge
+    d.ellipse((cx - rx - 40, cy - ry - 16, cx + rx + 40, cy + ry + 40), fill=(236, 232, 220))
+    d.arc((cx - rx - 40, cy - ry - 16, cx + rx + 40, cy + ry + 40), 0, 180, fill=nr.YELLOW, width=8)
+    f = nr.font(22)
+    for x, y, label, a in plates:
+        px, py = cx + (x - cx) * 0.86, cy + (y - cy) * 0.55  # dish a little in from the seat
+        d.ellipse((px - 46, py - 14, px + 46, py + 14), fill=(250, 250, 250), outline=(120, 120, 120), width=2)
+        d.ellipse((px - 34, py - 10, px + 34, py + 8), fill=(214, 90, 40) if len(label) % 2 else (200, 40, 30))
+        tw = d.textlength(label, font=f)
+        ty = py + 42
+        d.rounded_rectangle((px - tw / 2 - 10, ty - 18, px + tw / 2 + 10, ty + 18), 7, fill=nr.YELLOW)
+        d.text((px, ty), label, font=f, fill=nr.BLACK, anchor="mm")
+    for bx in (cx - 420, cx, cx + 420):  # soju in the middle of the table, in front of the name cards
+        by = cy + 150
+        d.rounded_rectangle((bx - 16, by - 70, bx + 16, by + 30), 10, fill=(40, 150, 80))
+        d.rectangle((bx - 7, by - 100, bx + 7, by - 66), fill=(40, 150, 80))
+        d.rectangle((bx - 14, by - 40, bx + 14, by - 10), fill=(240, 240, 230))
+    return img.convert("RGB")
+
+
 if __name__ == "__main__":
-    (make_supper() if sys.argv[1] == "supper" else make(sys.argv[1])).save(sys.argv[2], quality=92)
+    builders = {"supper": make_supper, "round": make_round}
+    (builders[sys.argv[1]]() if sys.argv[1] in builders else make(sys.argv[1])).save(sys.argv[2], quality=92)
