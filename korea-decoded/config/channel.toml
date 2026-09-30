@@ -132,6 +132,11 @@ provider = "higgsfield"
 variant = "elevenlabs"
 voice_id = "549ff70a-3ee7-4f04-a4d9-89a24fab7709"
 
+[voices.marcus]              # Bill Dusk (2026-09-30, 운영자 선택). 음성 생성 때 변형을 시험해서 정함
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+
 [voices.miles]
 provider = "higgsfield"
 variant = "elevenlabs"
@@ -198,3 +203,8 @@ voice = "desmond"
 name = "Offbeat"
 label = "OFFBEAT"
 voice = "bram"
+
+[cast.tech]
+name = "Bill Dusk"
+label = "BILL DUSK"
+voice = "marcus"
