@@ -147,6 +147,38 @@ def stage(img, cx):
     d.line((0, FLOOR_Y, w, FLOOR_Y), fill=(12, 15, 28), width=2)
 
 
+def desk_props(img, x, y, near, label, left):
+    """What sits in front of one seat: a name stand (dark acrylic, white name, yellow foot), a gooseneck
+    microphone and a mug with the channel mark. near (0 far .. 1 near) scales everything a little."""
+    s = 0.68 + 0.4 * near
+    d = ImageDraw.Draw(img)
+    f = nr.font(round(16 * s))
+    tw = d.textlength(label, font=f)
+    hw, h = tw / 2 + 12 * s, 30 * s
+    shadow = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).ellipse((x - hw - 6, y + h * 0.35, x + hw + 6, y + h * 0.75), fill=(0, 0, 0, 110))
+    img.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(4)))
+    d = ImageDraw.Draw(img)
+    d.polygon([(x - hw + 4 * s, y - h / 2), (x + hw - 4 * s, y - h / 2), (x + hw, y + h / 2), (x - hw, y + h / 2)],
+              fill=(16, 20, 34), outline=(90, 104, 140))  # tent card, leaning back a little
+    d.rectangle((x - hw, y + h / 2 - 4 * s, x + hw, y + h / 2), fill=nr.YELLOW)
+    d.text((x, y - 2 * s), label, font=f, fill=(240, 244, 255), anchor="mm")
+    side = -1 if left else 1  # mic on the side toward the middle of the table, mug on the outer side
+    mx, my = x + side * (hw + 22 * s), y + 8 * s
+    d.ellipse((mx - 10 * s, my - 3 * s, mx + 10 * s, my + 4 * s), fill=(30, 32, 40))  # mic base
+    stem = [(mx, my), (mx - side * 4 * s, my - 22 * s), (mx - side * 14 * s, my - 38 * s)]
+    d.line(stem, fill=(30, 32, 40), width=max(2, round(3 * s)), joint="curve")
+    hx, hy = stem[-1]
+    d.rounded_rectangle((hx - 6 * s, hy - 5 * s, hx + 6 * s, hy + 5 * s), 3, fill=(20, 22, 28))
+    d.ellipse((hx - 2 * s, hy - 2 * s, hx + 2 * s, hy + 2 * s), fill=(220, 40, 40))  # "on air" dot
+    if near < 0.35:  # the far seats sit close together: no room for a mug
+        return
+    ux, uy = x - side * (hw + 24 * s), y + 2 * s
+    d.rounded_rectangle((ux - 9 * s, uy - 12 * s, ux + 9 * s, uy + 10 * s), 3, fill=(236, 238, 244))  # mug
+    d.arc((ux + 5 * s, uy - 7 * s, ux + 15 * s, uy + 5 * s), 270, 90, fill=(236, 238, 244), width=max(2, round(3 * s)))
+    d.ellipse((ux - 4 * s, uy - 4 * s, ux + 4 * s, uy + 4 * s), fill=nr.YELLOW)
+
+
 def make_debate():
     w, cx = nr.W, nr.W // 2
     bg = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 0.75, 2.0)
@@ -186,15 +218,14 @@ def make_debate():
     d.polygon(HEX, fill=top)
     inner = [(cx + (x - cx) * 0.55, 705 + (y - 705) * 0.55) for x, y in HEX]  # glass centre panel
     d.polygon(inner, fill=(66, 80, 118), outline=(92, 108, 150))
+    glow = Image.new("RGBA", img.size, (0, 0, 0, 0))  # the channel mark etched into the glass
+    nr.glasses_logo(ImageDraw.Draw(glow), cx, 705, 330, (150, 175, 230, 45))
+    img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(1.5)))
+    d = ImageDraw.Draw(img)
     d.line(HEX[2:6] + [HEX[0]], fill=nr.YELLOW, width=5)  # edge trim toward the camera
     nr.logo_mark(img, cx, oy + HEX_DROP // 2, 110)
-    d = ImageDraw.Draw(img)
-    f = nr.font(15)
-    for y, x, _, _, label in seats:  # name cards on the table in front of each seat
-        nx, ny = cx + (x - cx) * 0.9, y + 34
-        tw = d.textlength(label, font=f)
-        d.rounded_rectangle((nx - tw / 2 - 6, ny - 12, nx + tw / 2 + 6, ny + 12), 5, fill=nr.YELLOW)
-        d.text((nx, ny), label, font=f, fill=nr.BLACK, anchor="mm")
+    for y, x, _, _, label in seats:
+        desk_props(img, cx + (x - cx) * 0.9, y + 30, (y - 560) / 155, label, x < cx)
     vignette = Image.new("L", img.size, 0)
     ImageDraw.Draw(vignette).ellipse((-300, -250, w + 300, H + 350), fill=255)
     dark = Image.new("RGBA", img.size, (6, 8, 18, 255))
