@@ -103,7 +103,7 @@ def make(width=WIDTH):
 # Debate set (like a TV debate show): a hexagonal table seen from slightly above, the side toward the camera
 # open, K at the far end, the rest along the two far sides. The rig only draws faces from the front, so
 # nobody turns sideways; they look toward the middle instead. Nearer seats are lower and bigger.
-HEX = [(760, 560), (1160, 560), (1660, 700), (1300, 840), (620, 840), (260, 700)]  # table top, 1920 x 1080
+HEX = [(700, 560), (1220, 560), (1720, 715), (1320, 845), (600, 845), (200, 715)]  # table top, 1920 x 1080
 HEX_DROP = 170  # height of the table's front faces
 DEBATE = ["travel", "tech", "money", "news", "hidden", "k", "kangfree", "joe", "chef", "kpop"]  # far side, L to R
 
@@ -129,11 +129,11 @@ def make_debate():
     far = [HEX[5], HEX[0], HEX[1], HEX[2]]  # the far half of the table edge, left to right
     length = sum(((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** 0.5 for a, b in zip(far, far[1:]))
     k_at = DEBATE.index("k")
-    step = 148
+    step = 128  # the end seats stay well inside the corners
     seats = []
     for i, key in enumerate(DEBATE):
         x, y = along(far, length / 2 + (i - k_at) * step)
-        near = (y - 560) / 140  # 0 at the far edge, 1 at the widest corners
+        near = (y - 560) / 155  # 0 at the far edge, 1 at the widest corners
         gx = max(-0.9, min(0.9, (cx - x) / 500))
         frame, label, sep = cutout(key, (gx, 0.15), REACT.get(key, 0.0))
         scale = BASE * SIZE.get(key, 1.0) * (SEP_REF / sep) ** 0.5 * (0.56 + 0.2 * near)
@@ -143,21 +143,21 @@ def make_debate():
         collar = y - 95 * scale / 0.33
         img.alpha_composite(f, (round(x - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
     d = ImageDraw.Draw(img)
-    top = (232, 236, 244)
+    top = (52, 62, 94)  # dark navy like the set, so the table does not glare against the dusk
     (ax, ay), (bx, by), (qx, qy), (px, py), (ox, oy), (lx, ly) = HEX
     faces = [[(lx, ly), (ox, oy), (ox, oy + HEX_DROP), (lx, ly + HEX_DROP)],  # front-left
              [(ox, oy), (px, py), (px, py + HEX_DROP), (ox, oy + HEX_DROP)],  # front
              [(px, py), (qx, qy), (qx, qy + HEX_DROP), (px, py + HEX_DROP)]]  # front-right
-    for face, shade in zip(faces, ((178, 188, 206), (206, 214, 228), (178, 188, 206))):
+    for face, shade in zip(faces, ((28, 34, 56), (38, 46, 74), (28, 34, 56))):
         d.polygon(face, fill=shade)
         for t in (0.25, 0.5, 0.75):  # panel seams
             sx = face[0][0] + (face[1][0] - face[0][0]) * t
             sy = face[0][1] + (face[1][1] - face[0][1]) * t
-            d.line((sx, sy, sx, sy + HEX_DROP), fill=(160, 170, 190), width=3)
+            d.line((sx, sy, sx, sy + HEX_DROP), fill=(54, 64, 96), width=3)
     d.polygon(HEX, fill=top)
-    inner = [(cx + (x - cx) * 0.55, 700 + (y - 700) * 0.55) for x, y in HEX]  # glass centre panel
-    d.polygon(inner, fill=(214, 224, 240), outline=(190, 200, 220))
-    d.line(HEX[2:6] + [HEX[0]], fill=nr.YELLOW, width=6)  # edge trim toward the camera
+    inner = [(cx + (x - cx) * 0.55, 705 + (y - 705) * 0.55) for x, y in HEX]  # glass centre panel
+    d.polygon(inner, fill=(66, 80, 118), outline=(92, 108, 150))
+    d.line(HEX[2:6] + [HEX[0]], fill=nr.YELLOW, width=5)  # edge trim toward the camera
     nr.logo_mark(img, cx, oy + HEX_DROP // 2, 110)
     d = ImageDraw.Draw(img)
     f = nr.font(15)
