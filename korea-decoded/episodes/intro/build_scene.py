@@ -39,7 +39,7 @@ LINES = [
 STILL_LINES = {19, 20, 22}  # over the picture of the whole cast (the reveal at the end)
 # Camera per line: (x, y, zoom, ease). K and Kangfree sit close together, the chef a little apart to the right;
 # the camera opens on the two hosts and turns to catch whoever speaks (low ease = a slow turn, 0.3 = a snap).
-KF, K, CH = 500, 880, 1460  # seat x (scene coordinates)
+KF, K, CH = 330, 900, 1560  # seat x (scene coordinates): 570 px between the hosts so shoulders (~500 px) do not overlap
 PAIR = ((KF + K) // 2, 500, 1.22)  # the two hosts
 CAMS = {
     1: (*PAIR, 0.14), 2: (*PAIR, 0.14),
@@ -56,7 +56,7 @@ CAMS = {
     14: (KF, 470, 1.35, 0.30),
     15: (CH, 470, 1.20, 0.04),  # ...Great question. (slow pull back)
     17: (*PAIR, 0.10),
-    18: ((KF + CH) // 2, 510, 1.0, 0.08),  # all three, for "the three of us"
+    18: (*PAIR, 0.08),  # the hosts again; all three no longer fit the Short's width
 }
 # name tags that pop onto the cast picture during line 19 (x, y = share of the picture)
 TAGS = [("PROF. INDOOR", 0.085, 0.50), ("BILL DUSK", 0.178, 0.56), ("MAX RISE", 0.275, 0.50),
@@ -65,12 +65,12 @@ TAGS = [("PROF. INDOOR", 0.085, 0.50), ("BILL DUSK", 0.178, 0.56), ("MAX RISE", 
 CAST = "../../cast/"
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
-              "x": 500, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
+              "x": 330, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
     "chef": {"head": CAST + "chef_head.png", "body": CAST + "chef_body.png", "ref": CAST + "chef_ref.png",
-             "x": 1460, "label": "CHEF CLAMSAY", "shoulders": 520, "white_lens": True, "head_ratio": 0.74,
+             "x": 1560, "label": "CHEF CLAMSAY", "shoulders": 520, "white_lens": True, "head_ratio": 0.74,
              "chin_drop": 0.16, "mood": "frown"},
     "anchor": {"head": CAST + "k_head.png", "body": CAST + "k_body.png", "ref": CAST + "k_ref.png",
-               "x": 880, "label": "MASTER K"},
+               "x": 900, "label": "MASTER K"},
 }
 
 
