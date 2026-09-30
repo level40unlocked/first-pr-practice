@@ -1,7 +1,8 @@
 """Whole-cast still: every character seated behind one long, gently curved news desk with the channel logo
 on its front, for the channel intro, the banner and thumbnails.
 
-    python3 group_shot.py out.jpg       # run from korea-decoded/ (cast images: cast/fetch.sh)
+    python3 group_shot.py out.jpg            # run from korea-decoded/ (cast images: cast/fetch.sh)
+    python3 group_shot.py out.jpg debate     # debate-show set: hexagonal table seen from slightly above
 
 Each character is drawn once at full size by dialog.Puppet (same rig as the episodes), then scaled and
 placed so its collar sits just above the desk; the desk covers everything below its top. The desk bulges
@@ -99,5 +100,75 @@ def make(width=WIDTH):
     return img.convert("RGB")
 
 
+# Debate set (like a TV debate show): a hexagonal table seen from slightly above, the side toward the camera
+# open, K at the far end, the rest along the two far sides. The rig only draws faces from the front, so
+# nobody turns sideways; they look toward the middle instead. Nearer seats are lower and bigger.
+HEX = [(760, 560), (1160, 560), (1660, 700), (1300, 840), (620, 840), (260, 700)]  # table top, 1920 x 1080
+HEX_DROP = 170  # height of the table's front faces
+DEBATE = ["travel", "tech", "money", "news", "hidden", "k", "kangfree", "joe", "chef", "kpop"]  # far side, L to R
+
+
+def along(points, s):
+    """Point at distance s along a polyline."""
+    for (x0, y0), (x1, y1) in zip(points, points[1:]):
+        seg = ((x1 - x0) ** 2 + (y1 - y0) ** 2) ** 0.5
+        if s <= seg:
+            return x0 + (x1 - x0) * s / seg, y0 + (y1 - y0) * s / seg
+        s -= seg
+    return points[-1]
+
+
+def make_debate():
+    w, cx = nr.W, nr.W // 2
+    bg = ep.studio_backdrop("assets/studio/seoul_dusk.jpg", 0.75, 2.0)
+    x0 = (bg.width - w) // 2
+    img = bg.crop((x0, 0, x0 + w, H)).convert("RGBA")
+    d = ImageDraw.Draw(img)
+    d.rectangle((0, 610, w, H), fill=(26, 34, 58))  # stage floor
+    d.ellipse((cx - 1050, 640, cx + 1050, 1180), fill=(34, 46, 78))  # lit circle under the table
+    far = [HEX[5], HEX[0], HEX[1], HEX[2]]  # the far half of the table edge, left to right
+    length = sum(((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** 0.5 for a, b in zip(far, far[1:]))
+    k_at = DEBATE.index("k")
+    step = 148
+    seats = []
+    for i, key in enumerate(DEBATE):
+        x, y = along(far, length / 2 + (i - k_at) * step)
+        near = (y - 560) / 140  # 0 at the far edge, 1 at the widest corners
+        gx = max(-0.9, min(0.9, (cx - x) / 500))
+        frame, label, sep = cutout(key, (gx, 0.15), REACT.get(key, 0.0))
+        scale = BASE * SIZE.get(key, 1.0) * (SEP_REF / sep) ** 0.5 * (0.56 + 0.2 * near)
+        seats.append((y, x, frame, scale, label))
+    for y, x, frame, scale, label in sorted(seats, key=lambda s: s[0]):  # far first
+        f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
+        collar = y - 95 * scale / 0.33
+        img.alpha_composite(f, (round(x - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
+    d = ImageDraw.Draw(img)
+    top = (232, 236, 244)
+    (ax, ay), (bx, by), (qx, qy), (px, py), (ox, oy), (lx, ly) = HEX
+    faces = [[(lx, ly), (ox, oy), (ox, oy + HEX_DROP), (lx, ly + HEX_DROP)],  # front-left
+             [(ox, oy), (px, py), (px, py + HEX_DROP), (ox, oy + HEX_DROP)],  # front
+             [(px, py), (qx, qy), (qx, qy + HEX_DROP), (px, py + HEX_DROP)]]  # front-right
+    for face, shade in zip(faces, ((178, 188, 206), (206, 214, 228), (178, 188, 206))):
+        d.polygon(face, fill=shade)
+        for t in (0.25, 0.5, 0.75):  # panel seams
+            sx = face[0][0] + (face[1][0] - face[0][0]) * t
+            sy = face[0][1] + (face[1][1] - face[0][1]) * t
+            d.line((sx, sy, sx, sy + HEX_DROP), fill=(160, 170, 190), width=3)
+    d.polygon(HEX, fill=top)
+    inner = [(cx + (x - cx) * 0.55, 700 + (y - 700) * 0.55) for x, y in HEX]  # glass centre panel
+    d.polygon(inner, fill=(214, 224, 240), outline=(190, 200, 220))
+    d.line(HEX[2:6] + [HEX[0]], fill=nr.YELLOW, width=6)  # edge trim toward the camera
+    nr.logo_mark(img, cx, oy + HEX_DROP // 2, 110)
+    d = ImageDraw.Draw(img)
+    f = nr.font(15)
+    for y, x, _, _, label in seats:  # name cards on the table in front of each seat
+        nx, ny = cx + (x - cx) * 0.9, y + 34
+        tw = d.textlength(label, font=f)
+        d.rounded_rectangle((nx - tw / 2 - 6, ny - 12, nx + tw / 2 + 6, ny + 12), 5, fill=nr.YELLOW)
+        d.text((nx, ny), label, font=f, fill=nr.BLACK, anchor="mm")
+    # frame it tighter: less empty sky above the set
+    return img.crop((120, 135, 1800, 1080)).resize((w, H), Image.LANCZOS).convert("RGB")
+
+
 if __name__ == "__main__":
-    make().save(sys.argv[1], quality=92)
+    (make_debate() if sys.argv[2:] == ["debate"] else make()).save(sys.argv[1], quality=92)
