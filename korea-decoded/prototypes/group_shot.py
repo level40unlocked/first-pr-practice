@@ -48,7 +48,7 @@ def cutout(key, gaze=(0.0, 0.1), env=0.0, mood=None):
     p = dg.Puppet(spec)
     frame = Image.new("RGBA", (900, H), (0, 0, 0, 0))
     p.draw(frame, 0.0, gaze, 0.0, env, 0.0, mood=mood or spec.get("mood"))
-    return frame, p.label
+    return frame, p.label, p.rig["sep"]
 
 
 def desk(img, top, bottom, x0, x1, plates, size):
@@ -72,7 +72,7 @@ def make(layout):
         left = W / 2 - gap * (len(keys) - 1) / 2
         plates = []
         for j, key in enumerate(keys):
-            frame, label = cutout(key)
+            frame, label, _ = cutout(key)
             f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
             cx = left + j * gap
             img.alpha_composite(f, (round(cx - f.width / 2), round(collar - dg.COLLAR_Y * scale)))
@@ -85,13 +85,16 @@ def make(layout):
 # Last Supper: groups of two or three lean toward each other, K sits alone in the middle under the big
 # window. (key, x, scale, lean in degrees (+ = toward the right), gaze x, mouth open, mood)
 SUPPER_W = ep.WORLD_W  # the whole studio width: a still for banners, and the camera can pan across it
-SUPPER = [  # x is the offset from the middle of the table
-    ("tech", -1180, 0.47, 3, 0.6, 0.0, None), ("money", -960, 0.47, -2, 0.5, 0.6, None),
-    ("news", -740, 0.47, -5, 0.7, 0.0, None),
-    ("hidden", -480, 0.47, 4, 0.7, 0.0, None), ("kangfree", -260, 0.48, -6, 0.9, 0.9, None),
-    ("k", 0, 0.54, 0, 0.0, 0.0, None),
-    ("joe", 260, 0.48, 6, -0.9, 0.9, None), ("chef", 485, 0.49, 3, -0.6, 0.0, None),
-    ("kpop", 800, 0.47, 5, -0.7, 0.9, None), ("travel", 1060, 0.47, -3, -0.5, 0.0, None),
+# Size: the source drawings differ (big glasses, small faces), so eye spacing is only half the story: the
+# scale moves halfway (square root) toward equal eye spacing, and "size" nudges what is left.
+BASE, SEP_REF = 0.47, 125
+SUPPER = [  # x is the offset from the middle of the table; size is relative to SEP
+    ("tech", -1180, 1.0, 3, 0.6, 0.0, None), ("money", -960, 1.0, -2, 0.5, 0.6, None),
+    ("news", -740, 1.0, -5, 0.7, 0.0, None),
+    ("hidden", -480, 1.0, 4, 0.7, 0.0, None), ("kangfree", -260, 1.07, -6, 0.9, 0.9, None),
+    ("k", 0, 1.05, 0, 0.0, 0.0, None),
+    ("joe", 260, 1.0, 6, -0.9, 0.9, None), ("chef", 485, 0.95, 3, -0.6, 0.0, None),
+    ("kpop", 800, 1.0, 5, -0.7, 0.9, None), ("travel", 1060, 1.0, -3, -0.5, 0.0, None),
 ]
 TABLE_TOP, TABLE_FRONT = 850, 935
 FRAME = (70, 60, 50, 255)
@@ -162,8 +165,9 @@ def make_supper(width=SUPPER_W):
     room(img)
     cx = width // 2
     plates = []
-    for key, dx, scale, lean, gx, env, mood in SUPPER:
-        frame, label = cutout(key, (gx, 0.05), env, mood)
+    for key, dx, size, lean, gx, env, mood in SUPPER:
+        frame, label, sep = cutout(key, (gx, 0.05), env, mood)
+        scale = BASE * size * (SEP_REF / sep) ** 0.5
         pivot = (450, dg.COLLAR_Y + 300)  # lean from the seat, below the table top
         frame = frame.rotate(-lean, resample=Image.BICUBIC, center=pivot)
         f = frame.resize((round(frame.width * scale), round(frame.height * scale)), Image.LANCZOS)
