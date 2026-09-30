@@ -28,7 +28,7 @@ CAST = {  # key: rig spec + nameplate
     "kpop": {"label": "K-POP", **EXPERT},
     "hidden": {"label": "HISTORY", **EXPERT},
     "money": {"label": "MONEY", **EXPERT, "head_ratio": 0.68},
-    "tech": {"label": "TECH", **EXPERT, "head_ratio": 0.68, "chin_drop": 0.08},
+    "tech": {"label": "BILLIE DUSK", **EXPERT, "head_ratio": 0.68, "chin_drop": 0.08},
     "travel": {"label": "TRAVEL", **EXPERT},
 }
 LAYOUTS = {
