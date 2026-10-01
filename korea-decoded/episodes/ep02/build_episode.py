@@ -84,9 +84,10 @@ SCREEN_AT = {
     "I have a strategy": "jeon",
 }
 # Seats (scene x). With the chef on set he sits well apart, so a close-up of Master K never catches him in a
-# two-shot (K's camera at zoom 1.3 ends at x ~1440, the chef's left shoulder starts at ~1490).
+# two-shot (K's camera at zoom 1.3 ends at K+740; the explainer-screen view ends at K+990; the chef's left
+# shoulder starts at 1640, i.e. beyond both), and no half-cut faces show up beside an explainer screen.
 SEAT_HOSTS = {"panel": 330, "anchor": 900}
-SEAT_CHEF = {"panel": 150, "anchor": 700, "chef": 1750}
+SEAT_CHEF = {"panel": 100, "anchor": 650, "chef": 1900}
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
               "x": 330, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
@@ -120,16 +121,21 @@ def build():
         PAIR = ((SEAT["panel"] + SEAT["anchor"]) // 2, 500, 1.22)
         chars = {k: {**CHARACTERS[k], "x": SEAT[k]} for k in ("anchor", "panel", "chef")
                  if k in ("anchor", "panel") or has_chef}
+        carry = None  # the chef is off camera during an explainer screen, so his picture waits for the next host line
         for l in seg_in:
             who = WHO[l["who"]]
             ln = {"who": who, "text": l["text"], "audio": f"audio/v5/ep02_{l['index']:02d}.mp3"}
             key = screen_for(l["text"])
+            if who == "chef":
+                carry = key or carry
+                key = None
+            elif carry and not key:
+                key, carry = carry, None
             if key:
+                ln["shot"] = "anchor_screen"  # the screen sits to the right of the hosts, nobody half-cut at its sides
                 ln["screen"] = key
                 if isinstance(key, list):
                     ln["screen_split"] = [0.45]
-                if who == "anchor":
-                    ln["big"] = True
             else:
                 cx = SEAT[who]
                 zoom = 1.30 + (0.06 if l["index"] % 3 == 0 else 0.0)
