@@ -85,9 +85,9 @@ SCREEN_AT = {
 }
 # Seats (scene x). With the chef on set he sits well apart, so a close-up of Master K never catches him in a
 # two-shot (K's camera at zoom 1.3 ends at K+740; the explainer-screen view ends at K+990; the chef's left
-# shoulder starts at 1640, i.e. beyond both), and no half-cut faces show up beside an explainer screen.
+# shoulder starts at 1700, i.e. beyond both), and no half-cut faces show up beside an explainer screen.
 SEAT_HOSTS = {"panel": 330, "anchor": 900}
-SEAT_CHEF = {"panel": 100, "anchor": 650, "chef": 1900}
+SEAT_CHEF = {"panel": 100, "anchor": 650, "chef": 1960}
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
               "x": 330, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},

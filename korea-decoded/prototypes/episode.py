@@ -200,9 +200,9 @@ def ken_burns(src, w, h, u, move):
     else:
         z, fx = 1.12, 0.38 + 0.24 * u
     cw = min(sw, sh * w / h) / z
-    ch = cw * h / w
-    x0 = (sw - cw) * fx
-    y0 = (sh - ch) * 0.5
+    ch = min(sh, cw * h / w)  # never taller than the picture (an odd box shape mid-slide used to push y0 below 0)
+    x0 = max(0.0, (sw - cw) * fx)
+    y0 = max(0.0, (sh - ch) * 0.5)
     return src.resize((w, h), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch))
 
 
@@ -216,7 +216,7 @@ def card_image(card, w, h, t):
     """Number card on the brand navy: title, then stats that count up one after another."""
     img = Image.new("RGB", (w, h), nr.BRAND_NAVY)
     d = ImageDraw.Draw(img)
-    s = w / 1320  # layout was designed at full-screen size
+    s = max(w / 1320, 0.78)  # layout was designed at full-screen size; the small box beside the hosts keeps readable text
     if card.get("title"):
         d.text((w / 2, 70 * s), card["title"], font=nr.font(int(40 * s)), fill=nr.YELLOW, anchor="mm")
     stats = card["stats"]
