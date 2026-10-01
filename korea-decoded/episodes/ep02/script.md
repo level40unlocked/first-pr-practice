@@ -1,20 +1,19 @@
-# EP.2 전체 대본 초안 v2 (2026-10-01)
+# EP.2 전체 대본 초안 v3 (2026-10-01)
 
-- **순서: 운영자 대본(술·혼술바 → 분식)을 맨 앞에 배치** (운영자 지시 2026-10-01)
-- 제목 후보: Things That Confuse Every Foreigner in Korea, Explained (운영자 대본 앞배치로 오프닝 문구 수정)
-- 출연: K, Kangfree, Chef Clamsay (분식·혼밥 꼭지) · 날짜 표현 없음(에버그린), 공개 직전 팩트 재확인
-- 술 꼭지 상세 팩트체크: `segment4_drinking.md` / 분식: `segment6_bunsik.md`
+- 구성: 운영자 확정 2꼭지(술·혼술바, 분식)를 앞에 두고, 고깃집(A)은 뺌. 새 꼭지 2개(태기·말랑이·거북이 / 추석)는 2026년 9월 보도 기반
+- 제목은 대본 완성 후 운영자와 정함. 날짜 표현 없음(에버그린), 통계는 보도 기준이라 공개 직전 재확인
+- 출연: K, Kangfree, Chef Clamsay (분식·태기 꼭지)
 
 
 ## 0. 오프닝 (약 0:30)
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 1 | K | Hello, world. Welcome back to the Four Eyes Report. Today: how Koreans drink, what they snack on, and a few things that confuse every foreigner in Korea. | 헬로, 월드. 포 아이즈 리포트에 다시 오신 걸 환영합니다. 오늘은 한국인이 어떻게 마시는지, 뭘 간식으로 먹는지, 그리고 외국인이 다 헷갈리는 몇 가지를 다룹니다. |
-| 2 | Kangfree | Including me, and I'm a doctor! | 저도 포함이에요, 의사인데도요! |
-| 3 | K | Especially you. Let's go. | 특히 박사님이죠. 시작합시다. |
+| 1 | K | Hello, world. Welcome back to the Four Eyes Report. Today: how Koreans drink, what they snack on, and what's changing in Korea right now. | 헬로, 월드. 포 아이즈 리포트에 다시 오신 걸 환영합니다. 오늘은 한국인이 어떻게 마시는지, 뭘 간식으로 먹는지, 그리고 지금 한국에서 무엇이 바뀌고 있는지를 다룹니다. |
+| 2 | Kangfree | I'm only here for the snacks! | 저는 간식 때문에 왔어요! |
+| 3 | K | Then let's start with the drinks. | 그럼 술부터 시작합시다. |
 
-## 1. 술 문화 변화 + 혼술바 (운영자 대본, 약 2:20)
+## 1. 술 문화 변화 + 혼술바 (운영자 확정 대본)
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
@@ -36,7 +35,7 @@
 | 19 | Kangfree | Don't worry, Master K. I'll vouch for you at the door. | 걱정 마세요, 마스터 K. 문 앞에서 제가 보증할게요. |
 | 20 | K | Thank you. I'll just drink at home. | 고마워요. 그냥 집에서 마시겠습니다. |
 
-## 2. 분식 (운영자 대본, 클램지 합류, 약 1:50)
+## 2. 분식 (운영자 확정 대본, 클램지 합류)
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
@@ -61,78 +60,67 @@
 | 39 | K | The only face control at a bunsik shop is the face you make when someone takes the last fish cake. | 분식집의 유일한 외모 심사는 누가 마지막 어묵을 가져갈 때 짓는 표정이에요. |
 | 40 | Chef | I remember that face. | 그 표정 기억나요. |
 | 41 | Kangfree | ...Sorry about the fish cake. | …어묵은 미안해요. |
-| 42 | K | Now, back to the things that confuse every foreigner. First: why does everyone ask your age? | 자, 외국인이 헷갈리는 것들로 돌아가죠. 첫째, 왜 다들 나이를 물을까요? |
+| 42 | K | Enough food. Let's talk about how young Koreans are feeling. Spoiler: bored. | 음식 얘기는 그만하고, 요즘 한국 젊은이들 기분을 얘기해 봅시다. 스포일러: 지루해요. |
 
-## 3. 왜 한국인은 나이부터 물을까 (약 2:00)
-
-| # | 누가 | 대사 (영어) | 번역 |
-|---|---|---|---|
-| 43 | K | Because in Korea, strangers ask your age within minutes of meeting you. | 한국에선 처음 만난 사람이 몇 분 안에 나이를 묻거든요. |
-| 44 | Kangfree | Not "What do you do?" Not "Where are you from?" "How old are you?" | "무슨 일 하세요?"도, "어디서 왔어요?"도 아니고 "몇 살이에요?"예요. |
-| 45 | K | Because age decides how you speak. Korean has speech levels, and who is older decides which one you use. | 나이가 말투를 정하기 때문이에요. 한국어에는 말의 높임 단계가 있고, 누가 더 나이 많은지에 따라 골라 씁니다. |
-| 46 | Kangfree | So I can't even say hello until I know who is older? | 그럼 누가 형인지 알기 전엔 인사도 못 해요? |
-| 47 | K | Exactly. It's not rude. It's grammar. | 맞아요. 무례한 게 아니라 문법입니다. |
-| 48 | Kangfree | And the titles! Oppa, unnie, hyung. Older brother, older sister, for people who aren't even your family! | 호칭도 있죠! 오빠, 언니, 형. 가족도 아닌 사람한테 친오빠, 친언니 같은 말을 써요! |
-| 49 | K | You join a giant family tree at the bar. | 술자리에서 거대한 가족 나무에 들어가는 셈이죠. |
-| 50 | Kangfree | And Korea even counted age its own way. Babies were born one year old! | 한국은 나이 세는 방식도 달랐죠. 아기가 태어나자마자 한 살이었어요! |
-| 51 | K | Until June 2023, when Korea moved to the international system. Everyone got one or two years younger overnight. | 2023년 6월에 국제 기준으로 바뀌었어요. 하룻밤에 모두가 한두 살 어려졌습니다. |
-| 52 | Kangfree | The best anti-aging program ever. No cream needed! | 역대 최고의 안티에이징이네요. 크림도 필요 없고요! |
-| 53 | Kangfree | One more. Koreans say "our wife." Not "my wife." | 하나 더요. 한국 사람들은 "my wife"가 아니라 "our wife"라고 해요. |
-| 54 | K | "Our" comes from group culture. Our house, our school, our mom. | "우리"는 집단 문화에서 와요. 우리 집, 우리 학교, 우리 엄마. |
-| 55 | Kangfree | So when a Korean man says "our wife"... | 그럼 한국 남자가 "our wife"라고 하면... |
-| 56 | K | He is not sharing. Please do not ask. | 공유하겠다는 뜻이 아닙니다. 묻지 마세요. |
-
-## 4. 한국엔 팁이 없다 (약 1:30)
+## 3. 지루한 한국의 젊은이들: 태기, 말랑이, 행운의 거북이 (클램지 추임새)
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 57 | K | Second: tipping. In Korea, there isn't any. | 둘째, 팁. 한국에는 팁이 없습니다. |
-| 58 | Kangfree | None?! In America, I do math at every meal. Fifteen percent, twenty percent... | 하나도요?! 미국에선 식사마다 계산을 하는데. 15%, 20%... |
-| 59 | K | In Korea, the price on the menu is the price. You pay at the counter on your way out. | 한국은 메뉴판 가격이 곧 가격이에요. 나갈 때 카운터에서 계산합니다. |
-| 60 | Kangfree | So great service is just... service? | 그럼 서비스가 아주 좋아도 그냥... 서비스인 거예요? |
-| 61 | K | Included. People have tried bringing tipping to Korea. It never took hold. | 포함이에요. 한국에 팁 문화를 들여오려는 시도가 있었지만 자리 잡지 못했어요. |
-| 62 | Kangfree | What if I leave money on the table anyway? | 그래도 테이블에 돈을 두고 나오면요? |
-| 63 | K | Don't be surprised if someone runs after you to give it back. | 누가 쫓아와서 돌려줘도 놀라지 마세요. |
-| 64 | Kangfree | So I leave with my wallet AND my dignity. | 그럼 지갑도 지키고 체면도 지키네요. |
-| 65 | K | Tipping isn't expected. But "thank you" always is. | 팁은 기대하지 않지만 "감사합니다"는 늘 기대합니다. |
+| 43 | K | Korea has a word for the moment a hobby suddenly stops being fun. "Taegi." | 한국어엔 하던 취미가 갑자기 재미없어지는 순간을 가리키는 말이 있어요. "태기." |
+| 44 | Kangfree | A word for that? Like, "I used to love running, now I hate my shoes"? | 그걸 가리키는 말이 있다고요? "러닝이 좋았는데 이젠 신발도 꼴보기 싫다" 같은 거요? |
+| 45 | K | Exactly. Golf-taegi. Running-taegi. Reading-taegi. Add it to anything that stopped being fun. | 맞아요. 골프 태기, 러닝 태기, 독서 태기. 재미없어진 건 뭐든 붙이면 됩니다. |
+| 46 | Clamsay | Cooking-taegi. | 요리 태기. |
+| 47 | Kangfree | Chef! You can't have cooking-taegi! | 셰프! 요리 태기는 안 돼요! |
+| 48 | Clamsay | Only for one lunch. I'm better now. | 점심 한 끼 동안만요. 이제 괜찮아요. |
+| 49 | K | A Seoul trend forecaster even named "the age of boredom" the first trend of 2027. Too much stimulation, so nothing feels interesting. | 서울의 한 트렌드 전문가는 "지루함의 시대"를 2027년 첫 번째 트렌드로 꼽았어요. 자극이 너무 많아서 아무것도 재밌지 않다는 거죠. |
+| 50 | Kangfree | So what do bored Koreans do? | 그럼 지루한 한국인들은 뭘 해요? |
+| 51 | K | They squeeze things. "Mallang-i," soft squishy toys. One type jumped seven hundred seventy-four percent in a single month. | 주물러요. "말랑이", 말랑한 장난감이요. 한 종류는 한 달 만에 774%가 늘었어요. |
+| 52 | Kangfree | Seven hundred seventy-four percent?! | 774%요?! |
+| 53 | K | And wax-crushing balls. You crush the hard shell with your hand. Sales jumped five hundred percent. | 그리고 왁스 부수는 공도 있어요. 단단한 겉면을 손으로 부수는 거죠. 판매가 500% 늘었고요. |
+| 54 | Clamsay | So it's cracking an egg without the egg. | 그러니까 달걀 없이 달걀 깨는 거네요. |
+| 55 | K | About half of the people surveyed, aged thirteen to fifty-nine, had tried something like it. | 13세에서 59세 응답자의 절반쯤이 비슷한 걸 해 봤대요. |
+| 56 | Kangfree | And I heard about lucky turtles! | 행운의 거북이 얘기도 들었어요! |
+| 57 | K | Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing. | 손톱보다 작은 거북이예요. 젊은 한국인들이 연애, 시험, 직장, 심지어 투자 운을 위해 들고 다닙니다. |
+| 58 | Kangfree | Investing?! My portfolio needs a turtle. | 투자요?! 제 포트폴리오에도 거북이가 필요해요. |
+| 59 | K | Slow and steady. Honestly, that's good financial advice. | 느리지만 꾸준히. 솔직히 좋은 재테크 조언이죠. |
+| 60 | Clamsay | Is the turtle edible? | 그 거북이, 먹을 수 있나요? |
+| 61 | K | No. Chef. | 아니요. 셰프. |
 
-## 5. 고정 코너 "Is This Normal in Korea?" (약 1:30)
-
-| # | 누가 | 대사 (영어) | 번역 |
-|---|---|---|---|
-| 66 | K | Now our new corner: "Is This Normal in Korea?" | 이제 새 코너, "이거 한국에서 정상이야?"입니다. |
-| 67 | Kangfree | Case one. Everyone walks very, very fast. Normal? | 첫 번째. 모두가 아주아주 빨리 걸어요. 정상인가요? |
-| 68 | K | Normal. "Ppalli-ppalli." Hurry, hurry. A national sport. | 정상. "빨리빨리." 국민 스포츠입니다. |
-| 69 | Kangfree | Case two. An older lady you've never met fixes your jacket collar on the subway. | 두 번째. 지하철에서 모르는 아주머니가 내 옷깃을 정리해 줘요. |
-| 70 | K | Normal. She isn't judging you. She is helping you. Okay, she is judging a little. | 정상. 판단하는 게 아니라 도와주는 거예요. 좀 판단하긴 하겠지만요. |
-| 71 | Kangfree | Case three. A stranger starts a conversation and asks where you're from. | 세 번째. 모르는 사람이 말을 걸어 어디서 왔냐고 물어요. |
-| 72 | K | Normal and friendly. Answer with a smile. Or pretend to sleep. Both are valid. | 정상이고 친절한 거예요. 웃으며 답하세요. 아니면 자는 척하든가요. 둘 다 유효합니다. |
-| 73 | Kangfree | Verdict? | 결론은요? |
-| 74 | K | Normal, normal, normal. Welcome to Korea. | 정상, 정상, 정상. 한국에 오신 걸 환영합니다. |
-
-## 6. 혼밥 (약 1:30)
+## 4. 추석이 바뀌고 있다
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 75 | K | Next: eating alone. Korea even has a word for it: "honbap." | 다음은 혼자 먹기. 한국엔 이를 가리키는 말도 있어요. "혼밥". |
-| 76 | Clamsay | Chef Garden Clamsay, back for my solo dinner. | 가든 클램지 셰프, 혼자 저녁 먹으러 다시 왔습니다. |
-| 77 | K | Chef! How was last night? | 셰프! 어젯밤은 어땠나요? |
-| 78 | Clamsay | Great. I ate alone. Nobody died. | 좋았어요. 혼자 먹었고, 아무도 안 죽었어요. |
-| 79 | K | Honbap used to feel awkward. Korean food is made for sharing: stew in the middle, side dishes for everyone. | 혼밥은 예전엔 어색했어요. 한국 음식은 나눠 먹게 만들어졌죠. 가운데 찌개, 모두를 위한 반찬. |
-| 80 | Clamsay | A whole stew for one person is lonely. | 혼자 찌개 한 냄비는 외로워요. |
-| 81 | K | So restaurants changed. Single seats, small portions, solo menus. | 그래서 식당이 바뀌었어요. 1인석, 작은 양, 1인 메뉴. |
-| 82 | Clamsay | Even barbecue for one. Finally, nobody steals my last piece. | 혼자 먹는 고기구이도 있어요. 드디어 마지막 한 점을 뺏기지 않죠. |
-| 83 | K | Today, honbap is just an everyday word. | 오늘날 혼밥은 그냥 일상적인 말이 됐습니다. |
-| 84 | Clamsay | Eating alone isn't sad. The food doesn't judge me. Unlike my critics. | 혼자 먹는 건 슬픈 게 아니에요. 음식은 나를 평가하지 않죠. 평론가들과 달리. |
+| 62 | K | One more change. Chuseok. Korean Thanksgiving, the biggest family holiday of the year. | 변화가 하나 더 있어요. 추석. 한국의 추수감사절, 1년 중 가장 큰 가족 명절이죠. |
+| 63 | Kangfree | Everyone goes home, eats a mountain of food, and does the ancestral rites, right? | 다들 고향 가서 산더미 같은 음식을 먹고 차례를 지내잖아요, 맞죠? |
+| 64 | K | Less and less. In 2016, about seventy-four percent of households planned ancestral rites. This year, about twenty-seven percent. | 점점 줄고 있어요. 2016년엔 약 74% 가구가 차례를 계획했는데, 올해는 약 27%예요. |
+| 65 | Kangfree | From three-quarters to one-quarter! | 4분의 3에서 4분의 1로요! |
+| 66 | K | And forty-three percent planned only a family gathering. No rites, no grave visits. | 그리고 43%는 가족 모임만 계획했어요. 차례도, 성묘도 없이요. |
+| 67 | Kangfree | Some families don't even go home. They book a hotel in Seoul. A "hotel vacation." | 어떤 가족은 고향에도 안 가요. 서울 호텔을 잡아요. "호캉스 추석"이죠. |
+| 68 | K | Because the stress isn't the food. It's the questions. | 스트레스는 음식이 아니라 질문이니까요. |
+| 69 | Kangfree | "When are you getting married? Do you have a job? How much do you make?" | "결혼은 언제 하니? 취직은 했니? 얼마 버니?" |
+| 70 | K | Three questions. Same relatives. Every year. | 질문 세 개. 같은 친척. 매년. |
+| 71 | Kangfree | So the new Chuseok is a hotel, a movie, and silence? | 그럼 새 추석은 호텔, 영화, 그리고 침묵이에요? |
+| 72 | K | Not exactly. Most people still gather. The ritual is changing. The reunion stays. | 꼭 그렇진 않아요. 대부분은 여전히 모여요. 의식은 바뀌고, 모임은 남죠. |
+| 73 | Kangfree | Even Chuseok has a skip button now. | 이제 추석에도 건너뛰기 버튼이 있네요. |
+| 74 | K | Just don't skip the call to Grandma. | 할머니께 거는 전화만은 건너뛰지 마세요. |
 
-## 7. K's Take + 엔딩 (약 0:40)
+## 5. K's Take + 엔딩
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 85 | K | So here's my take. Every Korean habit has a reason: respect, community, speed. And now, space for yourself. | 제 생각은 이렇습니다. 한국의 모든 습관에는 이유가 있어요. 존중, 공동체, 속도. 그리고 이제는 나만의 공간. |
-| 86 | Kangfree | Send us your "Is This Normal in Korea?" moments in the comments! | 댓글로 여러분의 "이거 한국에서 정상이야?" 순간을 보내 주세요! |
-| 87 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
+| 75 | K | So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel. | 제 생각은 이렇습니다. 한국은 빠르게 변해요. 하지만 사람들이 원하는 건 같아요. 함께 나눌 접시, 함께 마실 술, 함께 보낼 명절. 그 명절이 호텔에서라도요. |
+| 76 | Kangfree | Tell us in the comments: which Korean habit confuses you most? | 댓글로 알려 주세요. 한국의 어떤 습관이 가장 헷갈리나요? |
+| 77 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
 
 
 ## 집계
-- 총 87줄, 약 1029단어 → 약 7.9분 (분당 130단어 기준) + 화면 전환 → 약 8분 안팎
+- 총 77줄, 약 929단어 → 약 7.1분 (분당 130단어) + 화면 전환 → 약 7.9분
+
+## 사실 확인 (출처는 2026-09 보도, 공개 직전 원문 재확인)
+| 대사 | 근거 | 상태 |
+|---|---|---|
+| 태기 신조어, 2027 첫 트렌드 "지루함의 시대" | Seoul Economic Daily 2026-09-30 | 보도 확인, 원문 재확인 필요 |
+| 말랑이 774%(6/14~7/12 한 달), 왁스 공 500%, 13~59세 51.9% 경험 | Korea Herald | 보도 확인 |
+| 행운의 거북이(1cm 이하, 연애·시험·직장·투자 운) | Korea Herald | 보도 확인 |
+| 추석 차례 74.4%(2016) → 27.3%, 가족 모임만 43%, 호캉스 | Seoul Economic Daily 2026-09-19, 09-24 | 보도 확인, "올해"는 "As of 2026"로 바꿀지 결정 |
+| 3·4번 개그(요리 태기, 달걀 없이 달걀 깨기) | 제작 아이디어 | 사실 아님, 개그 |
