@@ -1,4 +1,4 @@
-# EP.2 전체 대본 초안 v3 (2026-10-01)
+# EP.2 전체 대본 초안 v4 (8분 넘기기: "Is This Normal" 코너 추가) (2026-10-01)
 
 - 구성: 운영자 확정 2꼭지(술·혼술바, 분식)를 앞에 두고, 고깃집(A)은 뺌. 새 꼭지 2개(태기·말랑이·거북이 / 추석)는 2026년 9월 보도 기반
 - 제목은 대본 완성 후 운영자와 정함. 날짜 표현 없음(에버그린), 통계는 보도 기준이라 공개 직전 재확인
@@ -111,18 +111,31 @@
 | 80 | K | Not exactly. Most people still gather. The ritual is changing. The reunion stays. | 꼭 그렇진 않아요. 대부분은 여전히 모여요. 의식은 바뀌고, 모임은 남죠. |
 | 81 | Kangfree | Even Chuseok has a skip button now. | 이제 추석에도 건너뛰기 버튼이 있네요. |
 | 82 | K | Just don't skip the call to Grandma. | 할머니께 거는 전화만은 건너뛰지 마세요. |
+| 83 | K | Time for a new corner: "Is This Normal in Korea?" | 새 코너를 하겠습니다. "이거 한국에서 정상이야?" |
+| 84 | Kangfree | You send us your questions. We tell you: normal, or not normal. | 여러분이 질문을 보내면, 저희가 답해 드려요. 정상인지, 아닌지. |
+| 85 | K | Case one. Everyone walks very, very fast. Normal? | 첫 번째. 다들 아주아주 빨리 걸어요. 정상일까요? |
+| 86 | Kangfree | Even when they're early, they walk like they're late. | 일찍 나왔을 때도 늦은 사람처럼 걸어요. |
+| 87 | K | Normal. "Palli-palli." Hurry, hurry. A national sport. | 정상입니다. "빨리빨리." 국민 스포츠예요. |
+| 88 | Kangfree | Case two. A stranger sits next to you and asks where you're from. | 두 번째. 모르는 사람이 옆에 앉아서 어디서 왔냐고 물어요. |
+| 89 | K | Normal, and friendly. Smile and answer. Or pretend to sleep. Both are valid. | 정상이고, 친절한 거예요. 웃으며 답하세요. 아니면 자는 척하든가요. 둘 다 유효합니다. |
+| 90 | Clamsay | Case three. You leave your phone on a cafe table, go to the restroom, and it's still there. | 세 번째. 카페 테이블에 폰을 두고 화장실에 다녀왔는데, 그대로 있어요. |
+| 91 | K | Mostly normal. Koreans often hold a seat with a phone or a laptop. Mostly. Don't test it with your passport. | 대체로 정상이에요. 한국 사람들은 폰이나 노트북으로 자리를 맡곤 하죠. 대체로요. 여권으로는 시험하지 마세요. |
+| 92 | Kangfree | Wait. Why are you testing things with passports? | 잠깐, 왜 여권으로 시험을 해요? |
+| 93 | Clamsay | Don't ask. I'm better now. | 묻지 마세요. 이제 괜찮아요. |
+| 94 | Kangfree | So, the verdict? | 그래서, 결론은요? |
+| 95 | K | Normal, normal, mostly normal. Welcome to Korea. | 정상, 정상, 대체로 정상. 한국에 오신 걸 환영합니다. |
 
 ## 5. K's Take + 엔딩
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 83 | K | So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel. | 제 생각은 이렇습니다. 한국은 빠르게 변해요. 하지만 사람들이 원하는 건 같아요. 함께 나눌 접시, 함께 마실 술, 함께 보낼 명절. 그 명절이 호텔에서라도요. |
-| 84 | Kangfree | Tell us in the comments: which Korean habit confuses you most? | 댓글로 알려 주세요. 한국의 어떤 습관이 가장 헷갈리나요? |
-| 85 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
+| 96 | K | So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel. | 제 생각은 이렇습니다. 한국은 빠르게 변해요. 하지만 사람들이 원하는 건 같아요. 함께 나눌 접시, 함께 마실 술, 함께 보낼 명절. 그 명절이 호텔에서라도요. |
+| 97 | Kangfree | Tell us in the comments: which Korean habit confuses you most? | 댓글로 알려 주세요. 한국의 어떤 습관이 가장 헷갈리나요? |
+| 98 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
 
 
 ## 집계
-- 총 85줄, 약 1009단어 → 약 7.8분 (분당 130단어) + 화면 전환 → 약 8.6분
+- 총 98줄, 약 1142단어 (v4: "Is This Normal" 코너 13줄 추가). 이전 음성 비율 0.41초/단어 → 말하기 약 7.8분 + 줄 간격 → 약 8분 20~30초 예상
 
 ## 사실 확인 (출처는 2026-09 보도, 공개 직전 원문 재확인)
 | 대사 | 근거 | 상태 |
@@ -132,3 +145,4 @@
 | 행운의 거북이(1cm 이하, 연애·시험·직장·투자 운) | Korea Herald | 보도 확인 |
 | 추석 차례 74.4%(2016) → 27.3%, 가족 모임만 43%, 호캉스 | Seoul Economic Daily 2026-09-19, 09-24 | 보도 확인, "올해"는 "As of 2026"로 바꿀지 결정 |
 | 3·4번 개그(요리 태기, 달걀 없이 달걀 깨기), 추석 친척 개그(전, 사촌, 의사도 친척한테 짐) | 제작 아이디어 | 사실 아님, 개그. 친척 질문(결혼·취업·소득)은 설문 보도의 "간섭성 대화 스트레스"를 일반화한 표현 |
+
