@@ -22,7 +22,7 @@ import dialog as dg
 import newsrig as nr
 
 W, H, FPS, SW, SH = nr.W, nr.H, nr.FPS, nr.SW, nr.SH
-WORLD_W = 4100  # studio wider than the frame: room for a panel seat far left and a guest seat far right, so a close-up never catches the neighbour
+WORLD_W = 4700  # studio wider than the frame: room for a panel seat far left and a guest seat far right, so a close-up never catches the neighbour
 OX = (WORLD_W - W) // 2  # scene x (0..1920) -> world x
 DESK_Y = dg.DESK_Y
 
@@ -523,7 +523,7 @@ def main():
         else:  # wide
             target = [WORLD_W / 2, 540, 1.0]
         held = t - (ln["start"] - 0.15)
-        if held > 4 and shot not in SCREEN_SHOTS:  # the side screen is laid out for this exact framing  # slow push so a long shot doesn't sit still
+        if held > 4 and shot not in SCREEN_SHOTS and ln.get("push", True):  # the side screen is laid out for this exact framing  # slow push so a long shot doesn't sit still
             target[2] += min(0.06, 0.015 * (held - 4))
         return target
 
@@ -553,6 +553,8 @@ def main():
         # camera: cut when switching between the anchor camera and the desk camera, otherwise ease
         tx, ty, tz = cam_target(ln, t)
         cut = prev_line is not None and ln is not prev_line and (prev_line["shot"] in ANCHOR_CAMERA) != anchor_cam
+        if prev_line is not None and ln is not prev_line and ln.get("cam_id") and prev_line.get("cam_id"):
+            cut = ln["cam_id"] != prev_line["cam_id"]  # a different "camera" is a hard cut, never a pan
         if cut:
             cam = [tx, ty, tz]
         a = ln.get("ease", 0.14)

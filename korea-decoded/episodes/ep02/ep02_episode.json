@@ -51,14 +51,14 @@
      "head": "../../cast/k_head.png",
      "body": "../../cast/k_body.png",
      "ref": "../../cast/k_ref.png",
-     "x": 650,
+     "x": 1290,
      "label": "MASTER K"
     },
     "panel": {
      "head": "../../cast/kangfree_head.png",
      "body": "../../cast/kangfree_body.png",
      "ref": "../../cast/kangfree_ref.png",
-     "x": -350,
+     "x": 630,
      "label": "DR. KANGFREE",
      "energy": 1.8,
      "head_ratio": 0.74,
@@ -94,11 +94,13 @@
      "audio": "audio/v5/ep02_01.mp3",
      "shot": "cam",
      "cam": [
-      150,
+      960,
       500,
-      1.22
+      1.1
      ],
-     "ease": 0.14
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -106,11 +108,13 @@
      "audio": "audio/v5/ep02_02.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -118,11 +122,13 @@
      "audio": "audio/v5/ep02_03.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -130,11 +136,13 @@
      "audio": "audio/v5/ep02_04.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -142,17 +150,21 @@
      "audio": "audio/v5/ep02_05.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "But that's changing. In OECD data, Korea has dropped to twenty-first as of 2021, and soju output has fallen three years in a row.",
      "audio": "audio/v5/ep02_06.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "oecd"
     },
     {
@@ -161,11 +173,13 @@
      "audio": "audio/v5/ep02_07.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -173,11 +187,13 @@
      "audio": "audio/v5/ep02_08.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -185,11 +201,13 @@
      "audio": "audio/v5/ep02_09.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -197,11 +215,13 @@
      "audio": "audio/v5/ep02_10.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -209,11 +229,13 @@
      "audio": "audio/v5/ep02_11.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -221,11 +243,13 @@
      "audio": "audio/v5/ep02_12.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -233,11 +257,13 @@
      "audio": "audio/v5/ep02_13.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -245,11 +271,13 @@
      "audio": "audio/v5/ep02_14.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -257,11 +285,13 @@
      "audio": "audio/v5/ep02_15.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -269,11 +299,13 @@
      "audio": "audio/v5/ep02_16.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -281,11 +313,13 @@
      "audio": "audio/v5/ep02_17.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -293,11 +327,13 @@
      "audio": "audio/v5/ep02_18.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -305,11 +341,13 @@
      "audio": "audio/v5/ep02_19.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -317,11 +355,13 @@
      "audio": "audio/v5/ep02_20.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     }
    ]
   },
@@ -335,14 +375,14 @@
      "head": "../../cast/k_head.png",
      "body": "../../cast/k_body.png",
      "ref": "../../cast/k_ref.png",
-     "x": 650,
+     "x": 1290,
      "label": "MASTER K"
     },
     "panel": {
      "head": "../../cast/kangfree_head.png",
      "body": "../../cast/kangfree_body.png",
      "ref": "../../cast/kangfree_ref.png",
-     "x": -350,
+     "x": 630,
      "label": "DR. KANGFREE",
      "energy": 1.8,
      "head_ratio": 0.74,
@@ -353,7 +393,7 @@
      "head": "../../cast/chef_head.png",
      "body": "../../cast/chef_body.png",
      "ref": "../../cast/chef_ref.png",
-     "x": 2080,
+     "x": 2700,
      "label": "CHEF CLAMSAY",
      "shoulders": 520,
      "white_lens": true,
@@ -395,14 +435,16 @@
     {
      "who": "chef",
      "text": "Did somebody say \"home\"? I brought snacks. Do you know bunsik? Korean snack food. And here's the thing: Koreans are shocked that it's popular overseas.",
-     "audio": "audio/v5/ep02_21.mp3",
+     "audio": "audio/v5_pitched/ep02_21.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
-      1.36
+      1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -410,17 +452,21 @@
      "audio": "audio/v5/ep02_22.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "Because bunsik is classic street food. Spicy, salty, sweet, and you can find it almost anywhere in Korea.",
      "audio": "audio/v5/ep02_23.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": [
       "street",
       "kimbap"
@@ -435,30 +481,36 @@
      "audio": "audio/v5/ep02_24.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "Every corner. And it's cheap.",
      "audio": "audio/v5/ep02_25.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "tteok_chilli"
     },
     {
      "who": "chef",
      "text": "Mostly students. After school, they pool their allowance and share one plate of tteokbokki.",
-     "audio": "audio/v5/ep02_26.mp3",
+     "audio": "audio/v5_pitched/ep02_26.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -466,17 +518,21 @@
      "audio": "audio/v5/ep02_27.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "So Koreans see a corner-stand snack become a global hit, and they're surprised. It's like Americans finding out the whole world loves a gas station hot dog.",
      "audio": "audio/v5/ep02_28.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": [
       "tteok_street",
       "tteok_after"
@@ -491,23 +547,27 @@
      "audio": "audio/v5/ep02_29.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Part of it, yes. Someone slurps ramen in a drama, and a thousand people run to buy ramen.",
-     "audio": "audio/v5/ep02_30.mp3",
+     "audio": "audio/v5_pitched/ep02_30.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
-      1.36
+      1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "anchor",
@@ -515,23 +575,27 @@
      "audio": "audio/v5/ep02_31.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Culture spreads, more people touch it, and then everyone chooses their own taste.",
-     "audio": "audio/v5/ep02_32.mp3",
+     "audio": "audio/v5_pitched/ep02_32.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -539,23 +603,27 @@
      "audio": "audio/v5/ep02_33.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Careful. Last time we ate spicy, one of us died.",
-     "audio": "audio/v5/ep02_34.mp3",
+     "audio": "audio/v5_pitched/ep02_34.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -563,11 +631,13 @@
      "audio": "audio/v5/ep02_35.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -575,11 +645,13 @@
      "audio": "audio/v5/ep02_36.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -587,23 +659,27 @@
      "audio": "audio/v5/ep02_37.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Seriously?",
-     "audio": "audio/v5/ep02_38.mp3",
+     "audio": "audio/v5_pitched/ep02_38.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "anchor",
@@ -611,23 +687,27 @@
      "audio": "audio/v5/ep02_39.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "I remember that face.",
-     "audio": "audio/v5/ep02_40.mp3",
+     "audio": "audio/v5_pitched/ep02_40.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -635,11 +715,13 @@
      "audio": "audio/v5/ep02_41.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -647,11 +729,13 @@
      "audio": "audio/v5/ep02_42.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     }
    ]
   },
@@ -665,14 +749,14 @@
      "head": "../../cast/k_head.png",
      "body": "../../cast/k_body.png",
      "ref": "../../cast/k_ref.png",
-     "x": 650,
+     "x": 1290,
      "label": "MASTER K"
     },
     "panel": {
      "head": "../../cast/kangfree_head.png",
      "body": "../../cast/kangfree_body.png",
      "ref": "../../cast/kangfree_ref.png",
-     "x": -350,
+     "x": 630,
      "label": "DR. KANGFREE",
      "energy": 1.8,
      "head_ratio": 0.74,
@@ -683,7 +767,7 @@
      "head": "../../cast/chef_head.png",
      "body": "../../cast/chef_body.png",
      "ref": "../../cast/chef_ref.png",
-     "x": 2080,
+     "x": 2700,
      "label": "CHEF CLAMSAY",
      "shoulders": 520,
      "white_lens": true,
@@ -765,11 +849,13 @@
      "audio": "audio/v5/ep02_43.mp3",
      "shot": "cam",
      "cam": [
-      150,
+      960,
       500,
-      1.22
+      1.1
      ],
-     "ease": 0.14
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -777,11 +863,13 @@
      "audio": "audio/v5/ep02_44.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -789,23 +877,27 @@
      "audio": "audio/v5/ep02_45.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Cooking-taegi.",
-     "audio": "audio/v5/ep02_46.mp3",
+     "audio": "audio/v5_pitched/ep02_46.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -813,29 +905,35 @@
      "audio": "audio/v5/ep02_47.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Only for one lunch. I'm better now.",
-     "audio": "audio/v5/ep02_48.mp3",
+     "audio": "audio/v5_pitched/ep02_48.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
-      1.36
+      1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "A Seoul trend forecaster even named \"the age of boredom\" the first trend of 2027. Too much stimulation, so nothing feels interesting.",
      "audio": "audio/v5/ep02_49.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "boredom"
     },
     {
@@ -844,17 +942,21 @@
      "audio": "audio/v5/ep02_50.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "They squeeze things. \"Mallang-i,\" soft squishy toys. One type jumped seven hundred seventy-four percent in a single month.",
      "audio": "audio/v5/ep02_51.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": [
       "squish_ai",
       "squish"
@@ -869,11 +971,13 @@
      "audio": "audio/v5/ep02_52.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -881,29 +985,35 @@
      "audio": "audio/v5/ep02_53.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "So it's cracking an egg without the egg.",
-     "audio": "audio/v5/ep02_54.mp3",
+     "audio": "audio/v5_pitched/ep02_54.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
-      1.36
+      1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "About half of the people surveyed, aged thirteen to fifty-nine, had tried something like it.",
      "audio": "audio/v5/ep02_55.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "tactile"
     },
     {
@@ -912,11 +1022,13 @@
      "audio": "audio/v5/ep02_56.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -924,11 +1036,13 @@
      "audio": "audio/v5/ep02_57.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -936,11 +1050,13 @@
      "audio": "audio/v5/ep02_58.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -948,17 +1064,21 @@
      "audio": "audio/v5/ep02_59.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing.",
      "audio": "audio/v5/ep02_60.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "turtle_ai"
     },
     {
@@ -967,11 +1087,13 @@
      "audio": "audio/v5/ep02_61.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -979,23 +1101,27 @@
      "audio": "audio/v5/ep02_62.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Is the turtle edible?",
-     "audio": "audio/v5/ep02_63.mp3",
+     "audio": "audio/v5_pitched/ep02_63.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
-      1.36
+      1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1003,11 +1129,13 @@
      "audio": "audio/v5/ep02_64.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -1015,17 +1143,21 @@
      "audio": "audio/v5/ep02_65.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "True. Seoul held a run called \"My Pace Morning.\" You finish at your own speed.",
      "audio": "audio/v5/ep02_66.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "run_ai"
     },
     {
@@ -1034,11 +1166,13 @@
      "audio": "audio/v5/ep02_67.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1046,23 +1180,27 @@
      "audio": "audio/v5/ep02_68.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "I'll be at the finish line. With snacks.",
-     "audio": "audio/v5/ep02_69.mp3",
+     "audio": "audio/v5_pitched/ep02_69.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
-      1.36
+      1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     }
    ]
   },
@@ -1076,14 +1214,14 @@
      "head": "../../cast/k_head.png",
      "body": "../../cast/k_body.png",
      "ref": "../../cast/k_ref.png",
-     "x": 650,
+     "x": 1290,
      "label": "MASTER K"
     },
     "panel": {
      "head": "../../cast/kangfree_head.png",
      "body": "../../cast/kangfree_body.png",
      "ref": "../../cast/kangfree_ref.png",
-     "x": -350,
+     "x": 630,
      "label": "DR. KANGFREE",
      "energy": 1.8,
      "head_ratio": 0.74,
@@ -1094,7 +1232,7 @@
      "head": "../../cast/chef_head.png",
      "body": "../../cast/chef_body.png",
      "ref": "../../cast/chef_ref.png",
-     "x": 2080,
+     "x": 2700,
      "label": "CHEF CLAMSAY",
      "shoulders": 520,
      "white_lens": true,
@@ -1159,11 +1297,13 @@
      "audio": "audio/v5/ep02_70.mp3",
      "shot": "cam",
      "cam": [
-      150,
+      960,
       500,
-      1.22
+      1.1
      ],
-     "ease": 0.14
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -1171,17 +1311,21 @@
      "audio": "audio/v5/ep02_71.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent.",
      "audio": "audio/v5/ep02_72.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "rites"
     },
     {
@@ -1190,17 +1334,21 @@
      "audio": "audio/v5/ep02_73.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "And forty-three percent planned only a family gathering. No rites, no grave visits.",
      "audio": "audio/v5/ep02_74.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "family"
     },
     {
@@ -1209,17 +1357,21 @@
      "audio": "audio/v5/ep02_75.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "Because the stress isn't the food. It's the questions.",
      "audio": "audio/v5/ep02_76.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "hotel_ai"
     },
     {
@@ -1228,11 +1380,13 @@
      "audio": "audio/v5/ep02_77.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1240,11 +1394,13 @@
      "audio": "audio/v5/ep02_78.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -1252,30 +1408,36 @@
      "audio": "audio/v5/ep02_79.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
      "text": "Jeon. Pan-fried treats, a Chuseok classic. A secret weapon.",
      "audio": "audio/v5/ep02_80.mp3",
      "shot": "k_screen",
+     "cam_id": "k_screen",
+     "push": false,
      "screen": "jeon"
     },
     {
      "who": "chef",
      "text": "Works every time. A full mouth asks no questions.",
-     "audio": "audio/v5/ep02_81.mp3",
+     "audio": "audio/v5_pitched/ep02_81.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
-      1.36
+      1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -1283,11 +1445,13 @@
      "audio": "audio/v5/ep02_82.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1295,11 +1459,13 @@
      "audio": "audio/v5/ep02_83.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -1307,11 +1473,13 @@
      "audio": "audio/v5/ep02_84.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1319,23 +1487,27 @@
      "audio": "audio/v5/ep02_85.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "I just bring more jeon.",
-     "audio": "audio/v5/ep02_86.mp3",
+     "audio": "audio/v5_pitched/ep02_86.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -1343,11 +1515,13 @@
      "audio": "audio/v5/ep02_87.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1355,11 +1529,13 @@
      "audio": "audio/v5/ep02_88.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -1367,11 +1543,13 @@
      "audio": "audio/v5/ep02_89.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1379,23 +1557,27 @@
      "audio": "audio/v5/ep02_90.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "chef",
      "text": "Finally, my department. Pine needles. The whole kitchen smells like a forest.",
-     "audio": "audio/v5/ep02_91.mp3",
+     "audio": "audio/v5_pitched/ep02_91.mp3",
      "shot": "cam",
      "cam": [
-      2080,
+      2700,
       470,
       1.3
      ],
-     "ease": 0.12
+     "ease": 0.12,
+     "cam_id": "chef",
+     "push": false
     },
     {
      "who": "panel",
@@ -1403,11 +1585,13 @@
      "audio": "audio/v5/ep02_92.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1415,11 +1599,13 @@
      "audio": "audio/v5/ep02_93.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1427,11 +1613,13 @@
      "audio": "audio/v5/ep02_94.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "panel",
@@ -1439,11 +1627,13 @@
      "audio": "audio/v5/ep02_95.mp3",
      "shot": "cam",
      "cam": [
-      -350,
-      470,
-      1.3
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     },
     {
      "who": "anchor",
@@ -1451,11 +1641,13 @@
      "audio": "audio/v5/ep02_96.mp3",
      "shot": "cam",
      "cam": [
-      650,
-      470,
-      1.36
+      960,
+      500,
+      1.1
      ],
-     "ease": 0.12
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     }
    ]
   }

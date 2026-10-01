@@ -84,7 +84,7 @@ SCREEN_AT = {  # only the anchor presents pictures, so every key sits on a Maste
 # is centered when she is alone in frame, the explainer-screen view (Master K and the screen, zoom 1.5, ends at
 # K+990) never shows the chef, and the chef's close-up never shows Master K.
 SEAT_HOSTS = {"panel": 330, "anchor": 900}
-SEAT_CHEF = {"panel": -350, "anchor": 650, "chef": 2080}
+SEAT_CHEF = {"panel": 630, "anchor": 1290, "chef": 2700}  # hosts as in EP.1; the guest sits far to the right
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
               "x": 330, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
@@ -120,21 +120,18 @@ def build():
                  if k in ("anchor", "panel") or has_chef}
         for l in seg_in:
             who = WHO[l["who"]]
-            ln = {"who": who, "text": l["text"], "audio": f"audio/v5/ep02_{l['index']:02d}.mp3"}
+            ln = {"who": who, "text": l["text"], "audio": f"audio/{'v5_pitched' if WHO[l['who']] == 'chef' else 'v5'}/ep02_{l['index']:02d}.mp3"}
             key = screen_for(l["text"])
             assert not key or who == "anchor", f"line {l['index']}: a picture on a non-anchor line"
             if key:
-                ln["shot"] = "k_screen"  # Master K and the screen, nobody else in frame
+                ln["shot"], ln["cam_id"], ln["push"] = "k_screen", "k_screen", False  # Master K and the screen, nobody else in frame
                 ln["screen"] = key
                 if isinstance(key, list):
                     ln["screen_split"] = [0.45]
-            else:
-                cx = SEAT[who]
-                zoom = 1.30 + (0.06 if l["index"] % 3 == 0 else 0.0)
-                if prev_key is None and not seg_lines and who != "chef":  # open on the two hosts (unless the chef speaks first)
-                    ln["shot"], ln["cam"], ln["ease"] = "cam", list(PAIR), 0.14
-                else:
-                    ln["shot"], ln["cam"], ln["ease"] = "cam", [cx, 470, round(zoom, 2)], 0.12
+            elif who == "chef":  # guest: own camera, hard cut in and out
+                ln["shot"], ln["cam"], ln["ease"], ln["cam_id"], ln["push"] = "cam", [SEAT["chef"], 470, 1.30], 0.12, "chef", False
+            else:  # K <-> Kangfree: one static two-shot
+                ln["shot"], ln["cam"], ln["ease"], ln["cam_id"], ln["push"] = "cam", [960, 500, 1.1], 0.14, "two", False
             seg_lines.append(ln)
             prev_key = key
         # a screen needs its own screens dict entry
