@@ -214,13 +214,13 @@
   "who": "K",
   "file": "ep02_16.mp3",
   "text": "One warning. There's no age limit. But Korea has \"ip-ppaen\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it.",
-  "tts_text": "One warning. There's no age limit. But Korea has \"eep-pan\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it.",
+  "tts_text": "One warning. There's no age limit. But Korea has \"ip-pen\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it.",
   "params": {
    "model": "text2speech_v2",
    "variant": "elevenlabs",
    "voice_type": "preset",
    "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
-   "prompt": "One warning. There's no age limit. But Korea has \"eep-pan\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it."
+   "prompt": "One warning. There's no age limit. But Korea has \"ip-pen\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it."
   }
  },
  {
@@ -508,13 +508,13 @@
   "who": "Kangfree",
   "file": "ep02_37.mp3",
   "text": "One last question. Do bunsik shops have ip-ppaen too?",
-  "tts_text": "One last question. Do boon-sick shops have eep-pan too?",
+  "tts_text": "One last question. Do boon-sick shops have ip-pen too?",
   "params": {
    "model": "text2speech_v2",
    "variant": "elevenlabs",
    "voice_type": "preset",
    "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
-   "prompt": "One last question. Do boon-sick shops have eep-pan too?"
+   "prompt": "One last question. Do boon-sick shops have ip-pen too?"
   }
  },
  {
