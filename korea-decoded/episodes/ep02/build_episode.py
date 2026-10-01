@@ -46,7 +46,7 @@ SCREENS = {
     "tteok_chilli": photo("rice_cake_chilli.jpg", "TTEOK ON A STICK"),
     "tteok_street": photo("tteokbokki_street.jpg", "TTEOKBOKKI"),
     "tteok_after": photo("tteokbokki_after.jpg", "TTEOKBOKKI"),
-    "boredom": card("TREND KOREA 2027", [{"value": "AGE OF BOREDOM", "label": "trend #1"}],
+    "boredom": card("TREND KOREA 2027", [{"value": "BOREDOM", "label": "trend #1: \"the age of boredom\""}],
                     "Source: Seoul Economic Daily, 2026"),
     "squish_ai": ai("ai_squish.jpg", "MALLANG-I"),
     "squish": card("ONE MONTH, MID-2026", [{"value": 774, "suffix": "%", "label": "squishy toy sales"},
