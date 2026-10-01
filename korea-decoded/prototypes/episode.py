@@ -22,21 +22,24 @@ import dialog as dg
 import newsrig as nr
 
 W, H, FPS, SW, SH = nr.W, nr.H, nr.FPS, nr.SW, nr.SH
-WORLD_W = 2700  # studio wider than the frame: room for the anchor close-up and the screen beside the anchor
+WORLD_W = 4100  # studio wider than the frame: room for a panel seat far left and a guest seat far right, so a close-up never catches the neighbour
 OX = (WORLD_W - W) // 2  # scene x (0..1920) -> world x
 DESK_Y = dg.DESK_Y
 
-SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide", "still", "cam")
+SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide", "still", "cam", "k_screen")
+# "k_screen": the anchor on the left and the explainer screen on the right, nobody else in frame (the camera is
+# zoomed in and starts right of the panel seat). Used when the anchor presents a picture.
 # "cam": the line names its own camera, "cam": [x, y, zoom] in scene coordinates (x 0..1920, y ~470, zoom >= 1),
 # and optionally "ease" (share of the way the camera moves per frame; low = a slow pan, 0.3 = a snap).
 # "still": the line plays over a picture from scene["still"] (e.g. the whole cast), slowly pushing in; the
 # Short shows it whole (fit to width) instead of cropped. A line's "tags" pop name labels onto it.
 ANCHOR_CAMERA = {"anchor_solo"}  # the anchor close-up; every other shot keeps the whole desk in view
-SCREEN_SHOTS = ("anchor_screen", "screen_full")
+SCREEN_SHOTS = ("anchor_screen", "screen_full", "k_screen")
 SCREEN_OTS = (1190, 230, 1880, 618)  # explainer box to the anchor's right (view coords, 16:9), the panel stays
 ANCHOR_VIEW_X = 930  # where the anchor sits in the view during screen shots
 SHORT_W = 1440  # a Short shows this much of the 1920-wide view
 SHORT_X = {"anchor_screen": 480}  # left edge of the Short's crop per shot (anchor + side screen); else centered
+SCREEN_K = (880, 210, 1840, 750)  # explainer box for "k_screen" (960 x 540)
 SCREEN_FULL = (300, 128, 1620, 885)  # big, below the top tags, above the lower third, inside the Shorts crop;
 # the bottom edge also hides the nameplates on the desk
 
@@ -505,6 +508,8 @@ def main():
             target = [ax, 480, 1.25]
         elif shot == "anchor_screen":
             target = [ax - ANCHOR_VIEW_X + W / 2, 540, 1.0]
+        elif shot == "k_screen":  # view starts 290 px left of the anchor, 1.5x zoom: his left neighbour stays out
+            target = [ax + 350, 470, 1.5]
         elif shot == "screen_full":  # desk center, so the big screen covers everyone instead of cutting a face
             target = [WORLD_W / 2, 540, 1.0]
         elif shot == "two_shot":
@@ -555,7 +560,7 @@ def main():
         if ln.get("screen") and ln["shot"] in SCREEN_SHOTS:
             key, since, prev_key, fade = screen_at(ln, t)
             shown_screen = (key, since, prev_key, fade)
-            goal, goal_a = (SCREEN_FULL if ln["shot"] == "screen_full" else SCREEN_OTS), 1.0
+            goal, goal_a = (SCREEN_FULL if ln["shot"] == "screen_full" else SCREEN_K if ln["shot"] == "k_screen" else SCREEN_OTS), 1.0
         else:
             goal, goal_a = rect, 0.0
             if shown_screen is not None:  # keep the last picture moving while it fades out

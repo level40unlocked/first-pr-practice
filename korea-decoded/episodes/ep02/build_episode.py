@@ -65,14 +65,11 @@ SCREENS = {
     "jeon": photo("pa_jeon.jpg", "JEON (PAN-FRIED PANCAKE)"),
 }
 # a line (found by the start of its text) -> screen key(s); a list switches inside the line
-SCREEN_AT = {
+SCREEN_AT = {  # only the anchor presents pictures, so every key sits on a Master K line
     "But that's changing. In OECD data": "oecd",
-    "Did somebody say \"home\"": "street",
-    "Wait. Almost anywhere": "kimbap",
+    "Because bunsik is classic street food": ["street", "kimbap"],
     "Every corner. And it's cheap": "tteok_chilli",
-    "Mostly students. After school": "tteok_street",
-    "Mine is tuck-bo-kee": "tteok_after",
-    "Mine is tteokbokki": "tteok_after",
+    "So Koreans see a corner-stand snack": ["tteok_street", "tteok_after"],
     "A Seoul trend forecaster": "boredom",
     "They squeeze things": ["squish_ai", "squish"],
     "About half of the people surveyed": "tactile",
@@ -80,14 +77,14 @@ SCREEN_AT = {
     "True. Seoul held a run": "run_ai",
     "Less and less. In 2016": "rites",
     "And forty-three percent": "family",
-    "Some families don't even go home": "hotel_ai",
-    "I have a strategy": "jeon",
+    "Because the stress isn't the food": "hotel_ai",
+    "Jeon. Pan-fried treats": "jeon",
 }
-# Seats (scene x). With the chef on set he sits well apart, so a close-up of Master K never catches him in a
-# two-shot (K's camera at zoom 1.3 ends at K+740; the explainer-screen view ends at K+990; the chef's left
-# shoulder starts at 1700, i.e. beyond both), and no half-cut faces show up beside an explainer screen.
+# Seats (scene x): about 1000 px between neighbours, so a close-up (+-740 px) never catches the next person: Dr. Kangfree
+# is centered when she is alone in frame, the explainer-screen view (Master K and the screen, zoom 1.5, ends at
+# K+990) never shows the chef, and the chef's close-up never shows Master K.
 SEAT_HOSTS = {"panel": 330, "anchor": 900}
-SEAT_CHEF = {"panel": 100, "anchor": 650, "chef": 1960}
+SEAT_CHEF = {"panel": -350, "anchor": 650, "chef": 2080}
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
               "x": 330, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
@@ -121,25 +118,20 @@ def build():
         PAIR = ((SEAT["panel"] + SEAT["anchor"]) // 2, 500, 1.22)
         chars = {k: {**CHARACTERS[k], "x": SEAT[k]} for k in ("anchor", "panel", "chef")
                  if k in ("anchor", "panel") or has_chef}
-        carry = None  # the chef is off camera during an explainer screen, so his picture waits for the next host line
         for l in seg_in:
             who = WHO[l["who"]]
             ln = {"who": who, "text": l["text"], "audio": f"audio/v5/ep02_{l['index']:02d}.mp3"}
             key = screen_for(l["text"])
-            if who == "chef":
-                carry = key or carry
-                key = None
-            elif carry and not key:
-                key, carry = carry, None
+            assert not key or who == "anchor", f"line {l['index']}: a picture on a non-anchor line"
             if key:
-                ln["shot"] = "anchor_screen"  # the screen sits to the right of the hosts, nobody half-cut at its sides
+                ln["shot"] = "k_screen"  # Master K and the screen, nobody else in frame
                 ln["screen"] = key
                 if isinstance(key, list):
                     ln["screen_split"] = [0.45]
             else:
                 cx = SEAT[who]
                 zoom = 1.30 + (0.06 if l["index"] % 3 == 0 else 0.0)
-                if prev_key is None and not seg_lines:  # open on the two hosts
+                if prev_key is None and not seg_lines and who != "chef":  # open on the two hosts (unless the chef speaks first)
                     ln["shot"], ln["cam"], ln["ease"] = "cam", list(PAIR), 0.14
                 else:
                     ln["shot"], ln["cam"], ln["ease"] = "cam", [cx, 470, round(zoom, 2)], 0.12
