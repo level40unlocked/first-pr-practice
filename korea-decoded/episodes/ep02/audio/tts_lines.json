@@ -592,13 +592,13 @@
   "who": "K",
   "file": "ep02_43.mp3",
   "text": "Korea has a word for the moment a hobby suddenly stops being fun. \"Taegi.\"",
-  "tts_text": "Korea has a word for the moment a hobby suddenly stops being fun. \"Teh-gee.\"",
+  "tts_text": "Korea has a word for the moment a hobby suddenly stops being fun. \"Teh-kee.\"",
   "params": {
    "model": "text2speech_v2",
    "variant": "elevenlabs",
    "voice_type": "preset",
    "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
-   "prompt": "Korea has a word for the moment a hobby suddenly stops being fun. \"Teh-gee.\""
+   "prompt": "Korea has a word for the moment a hobby suddenly stops being fun. \"Teh-kee.\""
   }
  },
  {
@@ -620,13 +620,13 @@
   "who": "K",
   "file": "ep02_45.mp3",
   "text": "Exactly. Golf-taegi. Running-taegi. Reading-taegi. Add it to anything that stopped being fun.",
-  "tts_text": "Exactly. Golf-teh-gee. Running-teh-gee. Reading-teh-gee. Add it to anything that stopped being fun.",
+  "tts_text": "Exactly. Golf-teh-kee. Running-teh-kee. Reading-teh-kee. Add it to anything that stopped being fun.",
   "params": {
    "model": "text2speech_v2",
    "variant": "elevenlabs",
    "voice_type": "preset",
    "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
-   "prompt": "Exactly. Golf-teh-gee. Running-teh-gee. Reading-teh-gee. Add it to anything that stopped being fun."
+   "prompt": "Exactly. Golf-teh-kee. Running-teh-kee. Reading-teh-kee. Add it to anything that stopped being fun."
   }
  },
  {
@@ -634,13 +634,13 @@
   "who": "Clamsay",
   "file": "ep02_46.mp3",
   "text": "Cooking-taegi.",
-  "tts_text": "Cooking-teh-gee.",
+  "tts_text": "Cooking-teh-kee.",
   "params": {
    "model": "text2speech_v2",
    "variant": "elevenlabs",
    "voice_type": "preset",
    "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
-   "prompt": "Cooking-teh-gee."
+   "prompt": "Cooking-teh-kee."
   }
  },
  {
@@ -648,13 +648,13 @@
   "who": "Kangfree",
   "file": "ep02_47.mp3",
   "text": "Chef! You can't have cooking-taegi!",
-  "tts_text": "Chef! You can't have cooking-teh-gee!",
+  "tts_text": "Chef! You can't have cooking-teh-kee!",
   "params": {
    "model": "text2speech_v2",
    "variant": "elevenlabs",
    "voice_type": "preset",
    "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
-   "prompt": "Chef! You can't have cooking-teh-gee!"
+   "prompt": "Chef! You can't have cooking-teh-kee!"
   }
  },
  {
