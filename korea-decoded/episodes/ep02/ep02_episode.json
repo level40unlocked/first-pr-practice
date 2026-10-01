@@ -1,0 +1,1315 @@
+{
+ "episode": 2,
+ "name": "render/ep02",
+ "anchor": "anchor",
+ "characters": {
+  "panel": {
+   "head": "../../cast/kangfree_head.png",
+   "body": "../../cast/kangfree_body.png",
+   "ref": "../../cast/kangfree_ref.png",
+   "x": 330,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  },
+  "chef": {
+   "head": "../../cast/chef_head.png",
+   "body": "../../cast/chef_body.png",
+   "ref": "../../cast/chef_ref.png",
+   "x": 1560,
+   "label": "CHEF CLAMSAY",
+   "shoulders": 520,
+   "white_lens": true,
+   "head_ratio": 0.74,
+   "chin_drop": 0.16,
+   "mood": "frown"
+  },
+  "anchor": {
+   "head": "../../cast/k_head.png",
+   "body": "../../cast/k_body.png",
+   "ref": "../../cast/k_ref.png",
+   "x": 900,
+   "label": "MASTER K"
+  }
+ },
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "outro_ticker": "Stay curious. Keep your lenses clean.",
+ "segments": [
+  {
+   "category": "food_life",
+   "desk": "DRINKING",
+   "headline": "Korea's drinking culture is changing",
+   "hook": "Korea used to drink like champions.\nNow?",
+   "screens": {
+    "oecd": {
+     "card": {
+      "title": "ALCOHOL PER PERSON: OECD RANK",
+      "stats": [
+       {
+        "value": "10th",
+        "label": "1981"
+       },
+       {
+        "value": "21st",
+        "label": "2021"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: OECD data, via Korean press reports"
+    }
+   },
+   "short": false,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Hello, world. Welcome back to the Four Eyes Report. Today: how Koreans drink, what they snack on, and what's changing in Korea right now.",
+     "audio": "audio/v5/ep02_01.mp3",
+     "shot": "cam",
+     "cam": [
+      615,
+      500,
+      1.22
+     ],
+     "ease": 0.14
+    },
+    {
+     "who": "panel",
+     "text": "I'm only here for the snacks!",
+     "audio": "audio/v5/ep02_02.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Then let's start with the drinks.",
+     "audio": "audio/v5/ep02_03.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Let's talk about drinking. By some statistics, Korea once ranked near the top of the world in alcohol per person. Numbers differ by source, but Koreans drank a LOT.",
+     "audio": "audio/v5/ep02_04.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "I believe it! Korean restaurants never turn their lights off. Twenty-four hours!",
+     "audio": "audio/v5/ep02_05.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "But that's changing. In OECD data, Korea has dropped to twenty-first as of 2021, and soju output has fallen three years in a row.",
+     "audio": "audio/v5/ep02_06.mp3",
+     "screen": "oecd",
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "Wait, soju is down?! Soju is SO hot overseas right now!",
+     "audio": "audio/v5/ep02_07.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Koreans still drink. Just not like before. It went from a marathon to a brisk walk.",
+     "audio": "audio/v5/ep02_08.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "And the taste changed too. First everyone loved wine, and now whisky is the cool one, right?",
+     "audio": "audio/v5/ep02_09.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Yes. \"A bottle of soju for the lady at the next table!\" is out. \"A glass of whisky\" has more style.",
+     "audio": "audio/v5/ep02_10.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Smooth. Very smooth.",
+     "audio": "audio/v5/ep02_11.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "The biggest change is the honsul bar. Koreans used to drink in big groups. Now younger people enjoy a good drink alone.",
+     "audio": "audio/v5/ep02_12.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "But everyone there is single, and hot, so it turns into a place to meet people!",
+     "audio": "audio/v5/ep02_13.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "You sit alone, you use a nickname, and you talk only if you want to.",
+     "audio": "audio/v5/ep02_14.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Okay, next time I'm in Korea, I'm going!",
+     "audio": "audio/v5/ep02_15.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "One warning. There's no age limit. But Korea has \"ip-ppaen\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it.",
+     "audio": "audio/v5/ep02_16.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Feel what?",
+     "audio": "audio/v5/ep02_17.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Every head turning to say, \"Sir... are you lost?\"",
+     "audio": "audio/v5/ep02_18.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Don't worry, Master K. I'll vouch for you at the door.",
+     "audio": "audio/v5/ep02_19.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Thank you. I'll just drink at home.",
+     "audio": "audio/v5/ep02_20.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    }
+   ]
+  },
+  {
+   "category": "food_life",
+   "desk": "STREET FOOD",
+   "headline": "Bunsik: the street snack that went global",
+   "hook": "Koreans are shocked\nthis street food went global.",
+   "screens": {
+    "kimbap": {
+     "image": "../../assets/stock/ep02/kimbap_2.jpg",
+     "label": "KIMBAP",
+     "credit": "Photo: manda_wong (BY 2.0)"
+    },
+    "street": {
+     "image": "../../assets/stock/ep02/street_food.jpg",
+     "label": "KOREAN STREET FOOD",
+     "credit": "Photo: JDKEUP (BY 2.0)"
+    },
+    "tteok_after": {
+     "image": "../../assets/stock/ep02/tteokbokki_after.jpg",
+     "label": "TTEOKBOKKI",
+     "credit": "Photo: Jon Åslund (BY 2.0)"
+    },
+    "tteok_chilli": {
+     "image": "../../assets/stock/ep02/rice_cake_chilli.jpg",
+     "label": "TTEOK ON A STICK",
+     "credit": "Photo: angusf (BY 2.0)"
+    },
+    "tteok_street": {
+     "image": "../../assets/stock/ep02/tteokbokki_street.jpg",
+     "label": "TTEOKBOKKI",
+     "credit": "Photo: Ten-ele-ven (BY 2.0)"
+    }
+   },
+   "short": false,
+   "lines": [
+    {
+     "who": "chef",
+     "text": "Did somebody say \"home\"? I brought snacks. Do you know bunsik? Korean snack food. And here's the thing: Koreans are shocked that it's popular overseas.",
+     "audio": "audio/v5/ep02_21.mp3",
+     "screen": "street"
+    },
+    {
+     "who": "panel",
+     "text": "Really? It's delicious! Of course it's popular. I don't understand why they don't understand!",
+     "audio": "audio/v5/ep02_22.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Because bunsik is classic street food. Spicy, salty, sweet, and you can find it almost anywhere in Korea.",
+     "audio": "audio/v5/ep02_23.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Wait. Almost anywhere? Like, every corner?",
+     "audio": "audio/v5/ep02_24.mp3",
+     "screen": "kimbap"
+    },
+    {
+     "who": "anchor",
+     "text": "Every corner. And it's cheap.",
+     "audio": "audio/v5/ep02_25.mp3",
+     "screen": "tteok_chilli",
+     "big": true
+    },
+    {
+     "who": "chef",
+     "text": "Mostly students. After school, they pool their allowance and share one plate of tteokbokki.",
+     "audio": "audio/v5/ep02_26.mp3",
+     "screen": "tteok_street"
+    },
+    {
+     "who": "panel",
+     "text": "So it's a group project. And everyone actually does their part: eating.",
+     "audio": "audio/v5/ep02_27.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "So Koreans see a corner-stand snack become a global hit, and they're surprised. It's like Americans finding out the whole world loves a gas station hot dog.",
+     "audio": "audio/v5/ep02_28.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "I bet it's the K-dramas. Everyone watches them overseas, and the food looks amazing.",
+     "audio": "audio/v5/ep02_29.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Part of it, yes. Someone slurps ramen in a drama, and a thousand people run to buy ramen.",
+     "audio": "audio/v5/ep02_30.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "K-drama is an advertisement money can't buy.",
+     "audio": "audio/v5/ep02_31.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Culture spreads, more people touch it, and then everyone chooses their own taste.",
+     "audio": "audio/v5/ep02_32.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Mine is tteokbokki. Spicy, chewy, and I can't stop.",
+     "audio": "audio/v5/ep02_33.mp3",
+     "screen": "tteok_after"
+    },
+    {
+     "who": "chef",
+     "text": "Careful. Last time we ate spicy, one of us died.",
+     "audio": "audio/v5/ep02_34.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "And we never found out who!",
+     "audio": "audio/v5/ep02_35.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "...Moving on.",
+     "audio": "audio/v5/ep02_36.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "One last question. Do bunsik shops have ip-ppaen too?",
+     "audio": "audio/v5/ep02_37.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Seriously?",
+     "audio": "audio/v5/ep02_38.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "The only face control at a bunsik shop is the face you make when someone takes the last fish cake.",
+     "audio": "audio/v5/ep02_39.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "I remember that face.",
+     "audio": "audio/v5/ep02_40.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "...Sorry about the fish cake.",
+     "audio": "audio/v5/ep02_41.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Enough food. Let's talk about how young Koreans are feeling. Spoiler: bored.",
+     "audio": "audio/v5/ep02_42.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    }
+   ]
+  },
+  {
+   "category": "hidden_korea",
+   "desk": "YOUNG KOREA",
+   "headline": "Young Koreans are bored (so they squeeze things)",
+   "hook": "Korea has a word for\nwhen a hobby stops being fun.",
+   "screens": {
+    "boredom": {
+     "card": {
+      "title": "TREND KOREA 2027",
+      "stats": [
+       {
+        "value": "AGE OF BOREDOM",
+        "label": "trend #1"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Seoul Economic Daily, 2026"
+    },
+    "run_ai": {
+     "image": "../../assets/stock/ep02/ai_run.jpg",
+     "label": "MY PACE MORNING",
+     "credit": "AI-generated illustration"
+    },
+    "squish": {
+     "card": {
+      "title": "ONE MONTH, MID-2026",
+      "stats": [
+       {
+        "value": 774,
+        "suffix": "%",
+        "label": "squishy toy sales"
+       },
+       {
+        "value": 500,
+        "suffix": "%",
+        "label": "wax-crushing balls"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea Herald"
+    },
+    "squish_ai": {
+     "image": "../../assets/stock/ep02/ai_squish.jpg",
+     "label": "MALLANG-I",
+     "credit": "AI-generated illustration"
+    },
+    "tactile": {
+     "card": {
+      "title": "TACTILE ITEMS",
+      "stats": [
+       {
+        "value": 51.9,
+        "decimals": 1,
+        "suffix": "%",
+        "label": "of Koreans aged 13-59 have tried them"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea Herald"
+    },
+    "turtle_ai": {
+     "image": "../../assets/stock/ep02/ai_turtle.jpg",
+     "label": "LUCKY TURTLES",
+     "credit": "AI-generated illustration"
+    }
+   },
+   "short": false,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Korea has a word for the moment a hobby suddenly stops being fun. \"Taegi.\"",
+     "audio": "audio/v5/ep02_43.mp3",
+     "shot": "cam",
+     "cam": [
+      615,
+      500,
+      1.22
+     ],
+     "ease": 0.14
+    },
+    {
+     "who": "panel",
+     "text": "A word for that? Like, \"I used to love running, now I hate my shoes\"?",
+     "audio": "audio/v5/ep02_44.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Exactly. Golf-taegi. Running-taegi. Reading-taegi. Add it to anything that stopped being fun.",
+     "audio": "audio/v5/ep02_45.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Cooking-taegi.",
+     "audio": "audio/v5/ep02_46.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Chef! You can't have cooking-taegi!",
+     "audio": "audio/v5/ep02_47.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Only for one lunch. I'm better now.",
+     "audio": "audio/v5/ep02_48.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "A Seoul trend forecaster even named \"the age of boredom\" the first trend of 2027. Too much stimulation, so nothing feels interesting.",
+     "audio": "audio/v5/ep02_49.mp3",
+     "screen": "boredom",
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "So what do bored Koreans do?",
+     "audio": "audio/v5/ep02_50.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "They squeeze things. \"Mallang-i,\" soft squishy toys. One type jumped seven hundred seventy-four percent in a single month.",
+     "audio": "audio/v5/ep02_51.mp3",
+     "screen": [
+      "squish_ai",
+      "squish"
+     ],
+     "screen_split": [
+      0.45
+     ],
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "Seven hundred seventy-four percent?!",
+     "audio": "audio/v5/ep02_52.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "And wax-crushing balls. You crush the hard shell with your hand. Sales jumped five hundred percent.",
+     "audio": "audio/v5/ep02_53.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "So it's cracking an egg without the egg.",
+     "audio": "audio/v5/ep02_54.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "About half of the people surveyed, aged thirteen to fifty-nine, had tried something like it.",
+     "audio": "audio/v5/ep02_55.mp3",
+     "screen": "tactile",
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "I tried one at the airport. It's squishy. It's very squishy.",
+     "audio": "audio/v5/ep02_56.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "That's your review?",
+     "audio": "audio/v5/ep02_57.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Five stars.",
+     "audio": "audio/v5/ep02_58.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "And I heard about lucky turtles!",
+     "audio": "audio/v5/ep02_59.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing.",
+     "audio": "audio/v5/ep02_60.mp3",
+     "screen": "turtle_ai",
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "Investing?! My portfolio needs a turtle.",
+     "audio": "audio/v5/ep02_61.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Slow and steady. Honestly, that's good financial advice.",
+     "audio": "audio/v5/ep02_62.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Is the turtle edible?",
+     "audio": "audio/v5/ep02_63.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "No. Chef.",
+     "audio": "audio/v5/ep02_64.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Speaking of turtles: I heard even running is slowing down in Korea.",
+     "audio": "audio/v5/ep02_65.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "True. Seoul held a run called \"My Pace Morning.\" You finish at your own speed.",
+     "audio": "audio/v5/ep02_66.mp3",
+     "screen": "run_ai",
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "A race where nobody loses?",
+     "audio": "audio/v5/ep02_67.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Nobody wins, nobody checks the clock. Maybe that's the cure for running-taegi.",
+     "audio": "audio/v5/ep02_68.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "I'll be at the finish line. With snacks.",
+     "audio": "audio/v5/ep02_69.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    }
+   ]
+  },
+  {
+   "category": "hidden_korea",
+   "desk": "HOLIDAYS",
+   "headline": "Chuseok is changing",
+   "hook": "Fewer rites. More hotels.\nThe Chuseok shake-up.",
+   "screens": {
+    "family": {
+     "card": {
+      "title": "CHUSEOK 2026",
+      "stats": [
+       {
+        "value": 43,
+        "suffix": "%",
+        "label": "family gathering only, no rites"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Seoul Economic Daily, 2026"
+    },
+    "hotel_ai": {
+     "image": "../../assets/stock/ep02/ai_hotel.jpg",
+     "label": "HOTEL CHUSEOK",
+     "credit": "AI-generated illustration"
+    },
+    "jeon": {
+     "image": "../../assets/stock/ep02/pa_jeon.jpg",
+     "label": "JEON (PAN-FRIED PANCAKE)",
+     "credit": "Photo: Maggie Hoffman (BY 2.0)"
+    },
+    "rites": {
+     "card": {
+      "title": "HOUSEHOLDS PLANNING ANCESTRAL RITES",
+      "stats": [
+       {
+        "value": 74.4,
+        "decimals": 1,
+        "suffix": "%",
+        "label": "2016"
+       },
+       {
+        "value": 27.3,
+        "decimals": 1,
+        "suffix": "%",
+        "label": "2026"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Seoul Economic Daily, 2026"
+    }
+   },
+   "short": false,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "One more change. Chuseok. Korean Thanksgiving, the biggest family holiday of the year.",
+     "audio": "audio/v5/ep02_70.mp3",
+     "shot": "cam",
+     "cam": [
+      615,
+      500,
+      1.22
+     ],
+     "ease": 0.14
+    },
+    {
+     "who": "panel",
+     "text": "Everyone goes home, eats a mountain of food, and does the ancestral rites, right?",
+     "audio": "audio/v5/ep02_71.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent.",
+     "audio": "audio/v5/ep02_72.mp3",
+     "screen": "rites",
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "From three-quarters to one-quarter!",
+     "audio": "audio/v5/ep02_73.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "And forty-three percent planned only a family gathering. No rites, no grave visits.",
+     "audio": "audio/v5/ep02_74.mp3",
+     "screen": "family",
+     "big": true
+    },
+    {
+     "who": "panel",
+     "text": "Some families don't even go home. They book a hotel in Seoul. A \"hotel vacation.\"",
+     "audio": "audio/v5/ep02_75.mp3",
+     "screen": "hotel_ai"
+    },
+    {
+     "who": "anchor",
+     "text": "Because the stress isn't the food. It's the questions.",
+     "audio": "audio/v5/ep02_76.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "\"When are you getting married? Do you have a job? How much do you make?\"",
+     "audio": "audio/v5/ep02_77.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Three questions. Same relatives. Every year.",
+     "audio": "audio/v5/ep02_78.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "I have a strategy. When an aunt asks, \"When are you getting married?\" I say, \"Have you tried the jeon?\"",
+     "audio": "audio/v5/ep02_79.mp3",
+     "screen": "jeon"
+    },
+    {
+     "who": "anchor",
+     "text": "Jeon. Pan-fried treats, a Chuseok classic. A secret weapon.",
+     "audio": "audio/v5/ep02_80.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Works every time. A full mouth asks no questions.",
+     "audio": "audio/v5/ep02_81.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Then the cousin comes up. \"Your cousin just got promoted.\"",
+     "audio": "audio/v5/ep02_82.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "There is always a cousin. Always perfect.",
+     "audio": "audio/v5/ep02_83.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "I'm a doctor! And I still hear, \"But have you met someone nice?\"",
+     "audio": "audio/v5/ep02_84.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Doctor, even doctors lose to relatives.",
+     "audio": "audio/v5/ep02_85.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "I just bring more jeon.",
+     "audio": "audio/v5/ep02_86.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "So the new Chuseok is a hotel, a movie, and silence?",
+     "audio": "audio/v5/ep02_87.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Not exactly. Most people still gather. The ritual is changing. The reunion stays.",
+     "audio": "audio/v5/ep02_88.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "And the food? Please tell me the food survived.",
+     "audio": "audio/v5/ep02_89.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "It did. Songpyeon, half-moon rice cakes steamed on pine needles, are still a Chuseok classic.",
+     "audio": "audio/v5/ep02_90.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "chef",
+     "text": "Finally, my department. Pine needles. The whole kitchen smells like a forest.",
+     "audio": "audio/v5/ep02_91.mp3",
+     "shot": "cam",
+     "cam": [
+      1560,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Even Chuseok has a skip button now.",
+     "audio": "audio/v5/ep02_92.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Just don't skip the call to Grandma.",
+     "audio": "audio/v5/ep02_93.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel.",
+     "audio": "audio/v5/ep02_94.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "panel",
+     "text": "Tell us in the comments: which Korean habit confuses you most?",
+     "audio": "audio/v5/ep02_95.mp3",
+     "shot": "cam",
+     "cam": [
+      330,
+      470,
+      1.3
+     ],
+     "ease": 0.12
+    },
+    {
+     "who": "anchor",
+     "text": "Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean.",
+     "audio": "audio/v5/ep02_96.mp3",
+     "shot": "cam",
+     "cam": [
+      900,
+      470,
+      1.36
+     ],
+     "ease": 0.12
+    }
+   ]
+  }
+ ]
+}
