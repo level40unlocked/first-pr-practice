@@ -99,22 +99,30 @@
 | 68 | K | Because the stress isn't the food. It's the questions. | 스트레스는 음식이 아니라 질문이니까요. |
 | 69 | Kangfree | "When are you getting married? Do you have a job? How much do you make?" | "결혼은 언제 하니? 취직은 했니? 얼마 버니?" |
 | 70 | K | Three questions. Same relatives. Every year. | 질문 세 개. 같은 친척. 매년. |
-| 71 | Kangfree | So the new Chuseok is a hotel, a movie, and silence? | 그럼 새 추석은 호텔, 영화, 그리고 침묵이에요? |
-| 72 | K | Not exactly. Most people still gather. The ritual is changing. The reunion stays. | 꼭 그렇진 않아요. 대부분은 여전히 모여요. 의식은 바뀌고, 모임은 남죠. |
-| 73 | Kangfree | Even Chuseok has a skip button now. | 이제 추석에도 건너뛰기 버튼이 있네요. |
-| 74 | K | Just don't skip the call to Grandma. | 할머니께 거는 전화만은 건너뛰지 마세요. |
+| 71 | Kangfree | I have a strategy. When an aunt asks, "When are you getting married?" I say, "Have you tried the jeon?" | 저한테 작전이 있어요. 이모가 "결혼은 언제 하니?" 물으면 이렇게 말해요. "전 드셔 보셨어요?" |
+| 72 | K | Jeon. Pan-fried treats, a Chuseok classic. A secret weapon. | 전이요. 기름에 부친 음식, 추석 단골이죠. 비밀 병기예요. |
+| 73 | Clamsay | Works every time. A full mouth asks no questions. | 매번 통해요. 입이 차 있으면 질문을 못 하거든요. |
+| 74 | Kangfree | Then the cousin comes up. "Your cousin just got promoted." | 그다음엔 사촌이 나와요. "네 사촌은 승진했더라." |
+| 75 | K | There is always a cousin. Always perfect. | 사촌은 늘 있죠. 늘 완벽하고요. |
+| 76 | Kangfree | I'm a doctor! And I still hear, "But have you met someone nice?" | 저는 의사인데도요! 그래도 "좋은 사람은 만났니?" 소리를 들어요. |
+| 77 | K | Doctor, even doctors lose to relatives. | 박사님, 의사도 친척한테는 집니다. |
+| 78 | Clamsay | I just bring more jeon. | 저는 그냥 전을 더 가져가요. |
+| 79 | Kangfree | So the new Chuseok is a hotel, a movie, and silence? | 그럼 새 추석은 호텔, 영화, 그리고 침묵이에요? |
+| 80 | K | Not exactly. Most people still gather. The ritual is changing. The reunion stays. | 꼭 그렇진 않아요. 대부분은 여전히 모여요. 의식은 바뀌고, 모임은 남죠. |
+| 81 | Kangfree | Even Chuseok has a skip button now. | 이제 추석에도 건너뛰기 버튼이 있네요. |
+| 82 | K | Just don't skip the call to Grandma. | 할머니께 거는 전화만은 건너뛰지 마세요. |
 
 ## 5. K's Take + 엔딩
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 75 | K | So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel. | 제 생각은 이렇습니다. 한국은 빠르게 변해요. 하지만 사람들이 원하는 건 같아요. 함께 나눌 접시, 함께 마실 술, 함께 보낼 명절. 그 명절이 호텔에서라도요. |
-| 76 | Kangfree | Tell us in the comments: which Korean habit confuses you most? | 댓글로 알려 주세요. 한국의 어떤 습관이 가장 헷갈리나요? |
-| 77 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
+| 83 | K | So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel. | 제 생각은 이렇습니다. 한국은 빠르게 변해요. 하지만 사람들이 원하는 건 같아요. 함께 나눌 접시, 함께 마실 술, 함께 보낼 명절. 그 명절이 호텔에서라도요. |
+| 84 | Kangfree | Tell us in the comments: which Korean habit confuses you most? | 댓글로 알려 주세요. 한국의 어떤 습관이 가장 헷갈리나요? |
+| 85 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
 
 
 ## 집계
-- 총 77줄, 약 929단어 → 약 7.1분 (분당 130단어) + 화면 전환 → 약 7.9분
+- 총 85줄, 약 1009단어 → 약 7.8분 (분당 130단어) + 화면 전환 → 약 8.6분
 
 ## 사실 확인 (출처는 2026-09 보도, 공개 직전 원문 재확인)
 | 대사 | 근거 | 상태 |
@@ -123,4 +131,4 @@
 | 말랑이 774%(6/14~7/12 한 달), 왁스 공 500%, 13~59세 51.9% 경험 | Korea Herald | 보도 확인 |
 | 행운의 거북이(1cm 이하, 연애·시험·직장·투자 운) | Korea Herald | 보도 확인 |
 | 추석 차례 74.4%(2016) → 27.3%, 가족 모임만 43%, 호캉스 | Seoul Economic Daily 2026-09-19, 09-24 | 보도 확인, "올해"는 "As of 2026"로 바꿀지 결정 |
-| 3·4번 개그(요리 태기, 달걀 없이 달걀 깨기) | 제작 아이디어 | 사실 아님, 개그 |
+| 3·4번 개그(요리 태기, 달걀 없이 달걀 깨기), 추석 친척 개그(전, 사촌, 의사도 친척한테 짐) | 제작 아이디어 | 사실 아님, 개그. 친척 질문(결혼·취업·소득)은 설문 보도의 "간섭성 대화 스트레스"를 일반화한 표현 |
