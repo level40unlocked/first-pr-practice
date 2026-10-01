@@ -1,4 +1,4 @@
-# EP.2 전체 대본 초안 v4 (8분 넘기기: "Is This Normal" 코너 추가) (2026-10-01)
+# EP.2 전체 대본 초안 v5 (8분 넘기기: 기존 꼭지 늘림)
 
 - 구성: 운영자 확정 2꼭지(술·혼술바, 분식)를 앞에 두고, 고깃집(A)은 뺌. 새 꼭지 2개(태기·말랑이·거북이 / 추석)는 2026년 9월 보도 기반
 - 제목은 대본 완성 후 운영자와 정함. 날짜 표현 없음(에버그린), 통계는 보도 기준이라 공개 직전 재확인
@@ -79,63 +79,61 @@
 | 53 | K | And wax-crushing balls. You crush the hard shell with your hand. Sales jumped five hundred percent. | 그리고 왁스 부수는 공도 있어요. 단단한 겉면을 손으로 부수는 거죠. 판매가 500% 늘었고요. |
 | 54 | Clamsay | So it's cracking an egg without the egg. | 그러니까 달걀 없이 달걀 깨는 거네요. |
 | 55 | K | About half of the people surveyed, aged thirteen to fifty-nine, had tried something like it. | 13세에서 59세 응답자의 절반쯤이 비슷한 걸 해 봤대요. |
-| 56 | Kangfree | And I heard about lucky turtles! | 행운의 거북이 얘기도 들었어요! |
-| 57 | K | Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing. | 손톱보다 작은 거북이예요. 젊은 한국인들이 연애, 시험, 직장, 심지어 투자 운을 위해 들고 다닙니다. |
-| 58 | Kangfree | Investing?! My portfolio needs a turtle. | 투자요?! 제 포트폴리오에도 거북이가 필요해요. |
-| 59 | K | Slow and steady. Honestly, that's good financial advice. | 느리지만 꾸준히. 솔직히 좋은 재테크 조언이죠. |
-| 60 | Clamsay | Is the turtle edible? | 그 거북이, 먹을 수 있나요? |
-| 61 | K | No. Chef. | 아니요. 셰프. |
+| 56 | Kangfree | I tried one at the airport. It's squishy. It's very squishy. | 공항에서 하나 써 봤어요. 말랑해요. 아주 말랑해요. |
+| 57 | K | That's your review? | 그게 후기예요? |
+| 58 | Kangfree | Five stars. | 별 다섯 개요. |
+| 59 | Kangfree | And I heard about lucky turtles! | 행운의 거북이 얘기도 들었어요! |
+| 60 | K | Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing. | 손톱보다 작은 거북이예요. 젊은 한국인들이 연애, 시험, 직장, 심지어 투자 운을 위해 들고 다닙니다. |
+| 61 | Kangfree | Investing?! My portfolio needs a turtle. | 투자요?! 제 포트폴리오에도 거북이가 필요해요. |
+| 62 | K | Slow and steady. Honestly, that's good financial advice. | 느리지만 꾸준히. 솔직히 좋은 재테크 조언이죠. |
+| 63 | Clamsay | Is the turtle edible? | 그 거북이, 먹을 수 있나요? |
+| 64 | K | No. Chef. | 아니요. 셰프. |
+| 65 | Kangfree | Speaking of turtles: I heard even running is slowing down in Korea. | 거북이 얘기가 나왔으니, 한국에선 달리기도 느려지고 있다던데요. |
+| 66 | K | True. Seoul held a run called "My Pace Morning." You finish at your own speed. | 맞아요. 서울에서 "마이 페이스 모닝"이라는 달리기를 열었어요. 각자 속도로 완주하는 거예요. |
+| 67 | Kangfree | A race where nobody loses? | 아무도 안 지는 달리기요? |
+| 68 | K | Nobody wins, nobody checks the clock. Maybe that's the cure for running-taegi. | 이기는 사람도, 시계 보는 사람도 없어요. 어쩌면 그게 러닝 태기의 해법일지도요. |
+| 69 | Clamsay | I'll be at the finish line. With snacks. | 저는 결승선에 있을게요. 간식 들고요. |
 
 ## 4. 추석이 바뀌고 있다
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 62 | K | One more change. Chuseok. Korean Thanksgiving, the biggest family holiday of the year. | 변화가 하나 더 있어요. 추석. 한국의 추수감사절, 1년 중 가장 큰 가족 명절이죠. |
-| 63 | Kangfree | Everyone goes home, eats a mountain of food, and does the ancestral rites, right? | 다들 고향 가서 산더미 같은 음식을 먹고 차례를 지내잖아요, 맞죠? |
-| 64 | K | Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent. | 점점 줄고 있어요. 2016년엔 약 74% 가구가 차례를 계획했는데, 2026년 기준 약 27%예요. |
-| 65 | Kangfree | From three-quarters to one-quarter! | 4분의 3에서 4분의 1로요! |
-| 66 | K | And forty-three percent planned only a family gathering. No rites, no grave visits. | 그리고 43%는 가족 모임만 계획했어요. 차례도, 성묘도 없이요. |
-| 67 | Kangfree | Some families don't even go home. They book a hotel in Seoul. A "hotel vacation." | 어떤 가족은 고향에도 안 가요. 서울 호텔을 잡아요. "호캉스 추석"이죠. |
-| 68 | K | Because the stress isn't the food. It's the questions. | 스트레스는 음식이 아니라 질문이니까요. |
-| 69 | Kangfree | "When are you getting married? Do you have a job? How much do you make?" | "결혼은 언제 하니? 취직은 했니? 얼마 버니?" |
-| 70 | K | Three questions. Same relatives. Every year. | 질문 세 개. 같은 친척. 매년. |
-| 71 | Kangfree | I have a strategy. When an aunt asks, "When are you getting married?" I say, "Have you tried the jeon?" | 저한테 작전이 있어요. 이모가 "결혼은 언제 하니?" 물으면 이렇게 말해요. "전 드셔 보셨어요?" |
-| 72 | K | Jeon. Pan-fried treats, a Chuseok classic. A secret weapon. | 전이요. 기름에 부친 음식, 추석 단골이죠. 비밀 병기예요. |
-| 73 | Clamsay | Works every time. A full mouth asks no questions. | 매번 통해요. 입이 차 있으면 질문을 못 하거든요. |
-| 74 | Kangfree | Then the cousin comes up. "Your cousin just got promoted." | 그다음엔 사촌이 나와요. "네 사촌은 승진했더라." |
-| 75 | K | There is always a cousin. Always perfect. | 사촌은 늘 있죠. 늘 완벽하고요. |
-| 76 | Kangfree | I'm a doctor! And I still hear, "But have you met someone nice?" | 저는 의사인데도요! 그래도 "좋은 사람은 만났니?" 소리를 들어요. |
-| 77 | K | Doctor, even doctors lose to relatives. | 박사님, 의사도 친척한테는 집니다. |
-| 78 | Clamsay | I just bring more jeon. | 저는 그냥 전을 더 가져가요. |
-| 79 | Kangfree | So the new Chuseok is a hotel, a movie, and silence? | 그럼 새 추석은 호텔, 영화, 그리고 침묵이에요? |
-| 80 | K | Not exactly. Most people still gather. The ritual is changing. The reunion stays. | 꼭 그렇진 않아요. 대부분은 여전히 모여요. 의식은 바뀌고, 모임은 남죠. |
-| 81 | Kangfree | Even Chuseok has a skip button now. | 이제 추석에도 건너뛰기 버튼이 있네요. |
-| 82 | K | Just don't skip the call to Grandma. | 할머니께 거는 전화만은 건너뛰지 마세요. |
-| 83 | K | Time for a new corner: "Is This Normal in Korea?" | 새 코너를 하겠습니다. "이거 한국에서 정상이야?" |
-| 84 | Kangfree | You send us your questions. We tell you: normal, or not normal. | 여러분이 질문을 보내면, 저희가 답해 드려요. 정상인지, 아닌지. |
-| 85 | K | Case one. Everyone walks very, very fast. Normal? | 첫 번째. 다들 아주아주 빨리 걸어요. 정상일까요? |
-| 86 | Kangfree | Even when they're early, they walk like they're late. | 일찍 나왔을 때도 늦은 사람처럼 걸어요. |
-| 87 | K | Normal. "Palli-palli." Hurry, hurry. A national sport. | 정상입니다. "빨리빨리." 국민 스포츠예요. |
-| 88 | Kangfree | Case two. A stranger sits next to you and asks where you're from. | 두 번째. 모르는 사람이 옆에 앉아서 어디서 왔냐고 물어요. |
-| 89 | K | Normal, and friendly. Smile and answer. Or pretend to sleep. Both are valid. | 정상이고, 친절한 거예요. 웃으며 답하세요. 아니면 자는 척하든가요. 둘 다 유효합니다. |
-| 90 | Clamsay | Case three. You leave your phone on a cafe table, go to the restroom, and it's still there. | 세 번째. 카페 테이블에 폰을 두고 화장실에 다녀왔는데, 그대로 있어요. |
-| 91 | K | Mostly normal. Koreans often hold a seat with a phone or a laptop. Mostly. Don't test it with your passport. | 대체로 정상이에요. 한국 사람들은 폰이나 노트북으로 자리를 맡곤 하죠. 대체로요. 여권으로는 시험하지 마세요. |
-| 92 | Kangfree | Wait. Why are you testing things with passports? | 잠깐, 왜 여권으로 시험을 해요? |
-| 93 | Clamsay | Don't ask. I'm better now. | 묻지 마세요. 이제 괜찮아요. |
-| 94 | Kangfree | So, the verdict? | 그래서, 결론은요? |
-| 95 | K | Normal, normal, mostly normal. Welcome to Korea. | 정상, 정상, 대체로 정상. 한국에 오신 걸 환영합니다. |
+| 70 | K | One more change. Chuseok. Korean Thanksgiving, the biggest family holiday of the year. | 변화가 하나 더 있어요. 추석. 한국의 추수감사절, 1년 중 가장 큰 가족 명절이죠. |
+| 71 | Kangfree | Everyone goes home, eats a mountain of food, and does the ancestral rites, right? | 다들 고향 가서 산더미 같은 음식을 먹고 차례를 지내잖아요, 맞죠? |
+| 72 | K | Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent. | 점점 줄고 있어요. 2016년엔 약 74% 가구가 차례를 계획했는데, 2026년 기준 약 27%예요. |
+| 73 | Kangfree | From three-quarters to one-quarter! | 4분의 3에서 4분의 1로요! |
+| 74 | K | And forty-three percent planned only a family gathering. No rites, no grave visits. | 그리고 43%는 가족 모임만 계획했어요. 차례도, 성묘도 없이요. |
+| 75 | Kangfree | Some families don't even go home. They book a hotel in Seoul. A "hotel vacation." | 어떤 가족은 고향에도 안 가요. 서울 호텔을 잡아요. "호캉스 추석"이죠. |
+| 76 | K | Because the stress isn't the food. It's the questions. | 스트레스는 음식이 아니라 질문이니까요. |
+| 77 | Kangfree | "When are you getting married? Do you have a job? How much do you make?" | "결혼은 언제 하니? 취직은 했니? 얼마 버니?" |
+| 78 | K | Three questions. Same relatives. Every year. | 질문 세 개. 같은 친척. 매년. |
+| 79 | Kangfree | I have a strategy. When an aunt asks, "When are you getting married?" I say, "Have you tried the jeon?" | 저한테 작전이 있어요. 이모가 "결혼은 언제 하니?" 물으면 이렇게 말해요. "전 드셔 보셨어요?" |
+| 80 | K | Jeon. Pan-fried treats, a Chuseok classic. A secret weapon. | 전이요. 기름에 부친 음식, 추석 단골이죠. 비밀 병기예요. |
+| 81 | Clamsay | Works every time. A full mouth asks no questions. | 매번 통해요. 입이 차 있으면 질문을 못 하거든요. |
+| 82 | Kangfree | Then the cousin comes up. "Your cousin just got promoted." | 그다음엔 사촌이 나와요. "네 사촌은 승진했더라." |
+| 83 | K | There is always a cousin. Always perfect. | 사촌은 늘 있죠. 늘 완벽하고요. |
+| 84 | Kangfree | I'm a doctor! And I still hear, "But have you met someone nice?" | 저는 의사인데도요! 그래도 "좋은 사람은 만났니?" 소리를 들어요. |
+| 85 | K | Doctor, even doctors lose to relatives. | 박사님, 의사도 친척한테는 집니다. |
+| 86 | Clamsay | I just bring more jeon. | 저는 그냥 전을 더 가져가요. |
+| 87 | Kangfree | So the new Chuseok is a hotel, a movie, and silence? | 그럼 새 추석은 호텔, 영화, 그리고 침묵이에요? |
+| 88 | K | Not exactly. Most people still gather. The ritual is changing. The reunion stays. | 꼭 그렇진 않아요. 대부분은 여전히 모여요. 의식은 바뀌고, 모임은 남죠. |
+| 89 | Kangfree | And the food? Please tell me the food survived. | 음식은요? 음식은 살아남았다고 말해 주세요. |
+| 90 | K | It did. Songpyeon, half-moon rice cakes steamed on pine needles, are still a Chuseok classic. | 살아남았어요. 솔잎 위에 찐 반달 모양 떡, 송편은 여전히 추석의 단골이에요. |
+| 91 | Clamsay | Finally, my department. Pine needles. The whole kitchen smells like a forest. | 드디어 제 분야네요. 솔잎이요. 주방 전체가 숲 냄새가 나요. |
+| 92 | Kangfree | Even Chuseok has a skip button now. | 이제 추석에도 건너뛰기 버튼이 있네요. |
+| 93 | K | Just don't skip the call to Grandma. | 할머니께 거는 전화만은 건너뛰지 마세요. |
 
 ## 5. K's Take + 엔딩
 
 | # | 누가 | 대사 (영어) | 번역 |
 |---|---|---|---|
-| 96 | K | So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel. | 제 생각은 이렇습니다. 한국은 빠르게 변해요. 하지만 사람들이 원하는 건 같아요. 함께 나눌 접시, 함께 마실 술, 함께 보낼 명절. 그 명절이 호텔에서라도요. |
-| 97 | Kangfree | Tell us in the comments: which Korean habit confuses you most? | 댓글로 알려 주세요. 한국의 어떤 습관이 가장 헷갈리나요? |
-| 98 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
+| 94 | K | So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel. | 제 생각은 이렇습니다. 한국은 빠르게 변해요. 하지만 사람들이 원하는 건 같아요. 함께 나눌 접시, 함께 마실 술, 함께 보낼 명절. 그 명절이 호텔에서라도요. |
+| 95 | Kangfree | Tell us in the comments: which Korean habit confuses you most? | 댓글로 알려 주세요. 한국의 어떤 습관이 가장 헷갈리나요? |
+| 96 | K | Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean. | 구독하시고, 다음 금요일에 만나요. 계속 궁금해하세요. 렌즈는 깨끗하게. |
 
 
 ## 집계
-- 총 98줄, 약 1142단어 (v4: "Is This Normal" 코너 13줄 추가). 이전 음성 비율 0.41초/단어 → 말하기 약 7.8분 + 줄 간격 → 약 8분 20~30초 예상
+- 총 96줄, 약 1113단어 (v5: 새 코너 대신 기존 꼭지(지루한 젊은이들·추석)에 11줄 추가). 이전 음성 비율 0.41초/단어 → 말하기 약 7.6분 + 줄 간격 → 약 8분 20~30초 예상
 
 ## 사실 확인 (출처는 2026-09 보도, 공개 직전 원문 재확인)
 | 대사 | 근거 | 상태 |
@@ -145,4 +143,5 @@
 | 행운의 거북이(1cm 이하, 연애·시험·직장·투자 운) | Korea Herald | 보도 확인 |
 | 추석 차례 74.4%(2016) → 27.3%, 가족 모임만 43%, 호캉스 | Seoul Economic Daily 2026-09-19, 09-24 | 보도 확인, "올해"는 "As of 2026"로 바꿀지 결정 |
 | 3·4번 개그(요리 태기, 달걀 없이 달걀 깨기), 추석 친척 개그(전, 사촌, 의사도 친척한테 짐) | 제작 아이디어 | 사실 아님, 개그. 친척 질문(결혼·취업·소득)은 설문 보도의 "간섭성 대화 스트레스"를 일반화한 표현 |
+
 
