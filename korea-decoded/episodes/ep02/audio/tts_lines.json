@@ -1,0 +1,1192 @@
+[
+ {
+  "index": 1,
+  "who": "K",
+  "file": "ep02_01.mp3",
+  "text": "Hello, world. Welcome back to the Four Eyes Report. Today: how Koreans drink, what they snack on, and what's changing in Korea right now.",
+  "tts_text": "Hello, world. Welcome back to the Four Eyes Report. Today: how Koreans drink, what they snack on, and what's changing in Korea right now.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Hello, world. Welcome back to the Four Eyes Report. Today: how Koreans drink, what they snack on, and what's changing in Korea right now."
+  }
+ },
+ {
+  "index": 2,
+  "who": "Kangfree",
+  "file": "ep02_02.mp3",
+  "text": "I'm only here for the snacks!",
+  "tts_text": "I'm only here for the snacks!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "I'm only here for the snacks!"
+  }
+ },
+ {
+  "index": 3,
+  "who": "K",
+  "file": "ep02_03.mp3",
+  "text": "Then let's start with the drinks.",
+  "tts_text": "Then let's start with the drinks.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Then let's start with the drinks."
+  }
+ },
+ {
+  "index": 4,
+  "who": "K",
+  "file": "ep02_04.mp3",
+  "text": "Let's talk about drinking. By some statistics, Korea once ranked near the top of the world in alcohol per person. Numbers differ by source, but Koreans drank a LOT.",
+  "tts_text": "Let's talk about drinking. By some statistics, Korea once ranked near the top of the world in alcohol per person. Numbers differ by source, but Koreans drank a LOT.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Let's talk about drinking. By some statistics, Korea once ranked near the top of the world in alcohol per person. Numbers differ by source, but Koreans drank a LOT."
+  }
+ },
+ {
+  "index": 5,
+  "who": "Kangfree",
+  "file": "ep02_05.mp3",
+  "text": "I believe it! Korean restaurants never turn their lights off. Twenty-four hours!",
+  "tts_text": "I believe it! Korean restaurants never turn their lights off. Twenty-four hours!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "I believe it! Korean restaurants never turn their lights off. Twenty-four hours!"
+  }
+ },
+ {
+  "index": 6,
+  "who": "K",
+  "file": "ep02_06.mp3",
+  "text": "But that's changing. In OECD data, Korea has dropped to twenty-first as of 2021, and soju output has fallen three years in a row.",
+  "tts_text": "But that's changing. In OECD data, Korea has dropped to twenty-first as of 2021, and soju output has fallen three years in a row.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "But that's changing. In OECD data, Korea has dropped to twenty-first as of 2021, and soju output has fallen three years in a row."
+  }
+ },
+ {
+  "index": 7,
+  "who": "Kangfree",
+  "file": "ep02_07.mp3",
+  "text": "Wait, soju is down?! Soju is SO hot overseas right now!",
+  "tts_text": "Wait, soju is down?! Soju is SO hot overseas right now!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Wait, soju is down?! Soju is SO hot overseas right now!"
+  }
+ },
+ {
+  "index": 8,
+  "who": "K",
+  "file": "ep02_08.mp3",
+  "text": "Koreans still drink. Just not like before. It went from a marathon to a brisk walk.",
+  "tts_text": "Koreans still drink. Just not like before. It went from a marathon to a brisk walk.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Koreans still drink. Just not like before. It went from a marathon to a brisk walk."
+  }
+ },
+ {
+  "index": 9,
+  "who": "Kangfree",
+  "file": "ep02_09.mp3",
+  "text": "And the taste changed too. First everyone loved wine, and now whisky is the cool one, right?",
+  "tts_text": "And the taste changed too. First everyone loved wine, and now whisky is the cool one, right?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "And the taste changed too. First everyone loved wine, and now whisky is the cool one, right?"
+  }
+ },
+ {
+  "index": 10,
+  "who": "K",
+  "file": "ep02_10.mp3",
+  "text": "Yes. \"A bottle of soju for the lady at the next table!\" is out. \"A glass of whisky\" has more style.",
+  "tts_text": "Yes. \"A bottle of soju for the lady at the next table!\" is out. \"A glass of whisky\" has more style.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Yes. \"A bottle of soju for the lady at the next table!\" is out. \"A glass of whisky\" has more style."
+  }
+ },
+ {
+  "index": 11,
+  "who": "Kangfree",
+  "file": "ep02_11.mp3",
+  "text": "Smooth. Very smooth.",
+  "tts_text": "Smooth. Very smooth.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Smooth. Very smooth."
+  }
+ },
+ {
+  "index": 12,
+  "who": "K",
+  "file": "ep02_12.mp3",
+  "text": "The biggest change is the honsul bar. Koreans used to drink in big groups. Now younger people enjoy a good drink alone.",
+  "tts_text": "The biggest change is the hone-sool bar. Koreans used to drink in big groups. Now younger people enjoy a good drink alone.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "The biggest change is the hone-sool bar. Koreans used to drink in big groups. Now younger people enjoy a good drink alone."
+  }
+ },
+ {
+  "index": 13,
+  "who": "Kangfree",
+  "file": "ep02_13.mp3",
+  "text": "But everyone there is single, and hot, so it turns into a place to meet people!",
+  "tts_text": "But everyone there is single, and hot, so it turns into a place to meet people!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "But everyone there is single, and hot, so it turns into a place to meet people!"
+  }
+ },
+ {
+  "index": 14,
+  "who": "K",
+  "file": "ep02_14.mp3",
+  "text": "You sit alone, you use a nickname, and you talk only if you want to.",
+  "tts_text": "You sit alone, you use a nickname, and you talk only if you want to.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "You sit alone, you use a nickname, and you talk only if you want to."
+  }
+ },
+ {
+  "index": 15,
+  "who": "Kangfree",
+  "file": "ep02_15.mp3",
+  "text": "Okay, next time I'm in Korea, I'm going!",
+  "tts_text": "Okay, next time I'm in Korea, I'm going!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Okay, next time I'm in Korea, I'm going!"
+  }
+ },
+ {
+  "index": 16,
+  "who": "K",
+  "file": "ep02_16.mp3",
+  "text": "One warning. There's no age limit. But Korea has \"ip-ppaen\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it.",
+  "tts_text": "One warning. There's no age limit. But Korea has \"eep-pan\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "One warning. There's no age limit. But Korea has \"eep-pan\": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it."
+  }
+ },
+ {
+  "index": 17,
+  "who": "Kangfree",
+  "file": "ep02_17.mp3",
+  "text": "Feel what?",
+  "tts_text": "Feel what?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Feel what?"
+  }
+ },
+ {
+  "index": 18,
+  "who": "K",
+  "file": "ep02_18.mp3",
+  "text": "Every head turning to say, \"Sir... are you lost?\"",
+  "tts_text": "Every head turning to say, \"Sir... are you lost?\"",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Every head turning to say, \"Sir... are you lost?\""
+  }
+ },
+ {
+  "index": 19,
+  "who": "Kangfree",
+  "file": "ep02_19.mp3",
+  "text": "Don't worry, Master K. I'll vouch for you at the door.",
+  "tts_text": "Don't worry, Master Kay. I'll vouch for you at the door.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Don't worry, Master Kay. I'll vouch for you at the door."
+  }
+ },
+ {
+  "index": 20,
+  "who": "K",
+  "file": "ep02_20.mp3",
+  "text": "Thank you. I'll just drink at home.",
+  "tts_text": "Thank you. I'll just drink at home.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Thank you. I'll just drink at home."
+  }
+ },
+ {
+  "index": 21,
+  "who": "Chef",
+  "file": "ep02_21.mp3",
+  "text": "Did somebody say \"home\"? I brought snacks. Do you know bunsik? Korean snack food. And here's the thing: Koreans are shocked that it's popular overseas.",
+  "tts_text": "Did somebody say \"home\"? I brought snacks. Do you know boon-sick? Korean snack food. And here's the thing: Koreans are shocked that it's popular overseas.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Did somebody say \"home\"? I brought snacks. Do you know boon-sick? Korean snack food. And here's the thing: Koreans are shocked that it's popular overseas."
+  }
+ },
+ {
+  "index": 22,
+  "who": "Kangfree",
+  "file": "ep02_22.mp3",
+  "text": "Really? It's delicious! Of course it's popular. I don't understand why they don't understand!",
+  "tts_text": "Really? It's delicious! Of course it's popular. I don't understand why they don't understand!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Really? It's delicious! Of course it's popular. I don't understand why they don't understand!"
+  }
+ },
+ {
+  "index": 23,
+  "who": "K",
+  "file": "ep02_23.mp3",
+  "text": "Because bunsik is classic street food. Spicy, salty, sweet, and you can find it almost anywhere in Korea.",
+  "tts_text": "Because boon-sick is classic street food. Spicy, salty, sweet, and you can find it almost anywhere in Korea.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Because boon-sick is classic street food. Spicy, salty, sweet, and you can find it almost anywhere in Korea."
+  }
+ },
+ {
+  "index": 24,
+  "who": "Kangfree",
+  "file": "ep02_24.mp3",
+  "text": "Wait. Almost anywhere? Like, every corner?",
+  "tts_text": "Wait. Almost anywhere? Like, every corner?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Wait. Almost anywhere? Like, every corner?"
+  }
+ },
+ {
+  "index": 25,
+  "who": "K",
+  "file": "ep02_25.mp3",
+  "text": "Every corner. And it's cheap.",
+  "tts_text": "Every corner. And it's cheap.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Every corner. And it's cheap."
+  }
+ },
+ {
+  "index": 26,
+  "who": "Chef",
+  "file": "ep02_26.mp3",
+  "text": "Mostly students. After school, they pool their allowance and share one plate of tteokbokki.",
+  "tts_text": "Mostly students. After school, they pool their allowance and share one plate of tuck-bo-kee.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Mostly students. After school, they pool their allowance and share one plate of tuck-bo-kee."
+  }
+ },
+ {
+  "index": 27,
+  "who": "Kangfree",
+  "file": "ep02_27.mp3",
+  "text": "So it's a group project. And everyone actually does their part: eating.",
+  "tts_text": "So it's a group project. And everyone actually does their part: eating.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "So it's a group project. And everyone actually does their part: eating."
+  }
+ },
+ {
+  "index": 28,
+  "who": "K",
+  "file": "ep02_28.mp3",
+  "text": "So Koreans see a corner-stand snack become a global hit, and they're surprised. It's like Americans finding out the whole world loves a gas station hot dog.",
+  "tts_text": "So Koreans see a corner-stand snack become a global hit, and they're surprised. It's like Americans finding out the whole world loves a gas station hot dog.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "So Koreans see a corner-stand snack become a global hit, and they're surprised. It's like Americans finding out the whole world loves a gas station hot dog."
+  }
+ },
+ {
+  "index": 29,
+  "who": "Kangfree",
+  "file": "ep02_29.mp3",
+  "text": "I bet it's the K-dramas. Everyone watches them overseas, and the food looks amazing.",
+  "tts_text": "I bet it's the K-dramas. Everyone watches them overseas, and the food looks amazing.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "I bet it's the K-dramas. Everyone watches them overseas, and the food looks amazing."
+  }
+ },
+ {
+  "index": 30,
+  "who": "Chef",
+  "file": "ep02_30.mp3",
+  "text": "Part of it, yes. Someone slurps ramen in a drama, and a thousand people run to buy ramen.",
+  "tts_text": "Part of it, yes. Someone slurps ramen in a drama, and a thousand people run to buy ramen.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Part of it, yes. Someone slurps ramen in a drama, and a thousand people run to buy ramen."
+  }
+ },
+ {
+  "index": 31,
+  "who": "K",
+  "file": "ep02_31.mp3",
+  "text": "K-drama is an advertisement money can't buy.",
+  "tts_text": "K-drama is an advertisement money can't buy.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "K-drama is an advertisement money can't buy."
+  }
+ },
+ {
+  "index": 32,
+  "who": "Chef",
+  "file": "ep02_32.mp3",
+  "text": "Culture spreads, more people touch it, and then everyone chooses their own taste.",
+  "tts_text": "Culture spreads, more people touch it, and then everyone chooses their own taste.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Culture spreads, more people touch it, and then everyone chooses their own taste."
+  }
+ },
+ {
+  "index": 33,
+  "who": "Kangfree",
+  "file": "ep02_33.mp3",
+  "text": "Mine is tteokbokki. Spicy, chewy, and I can't stop.",
+  "tts_text": "Mine is tuck-bo-kee. Spicy, chewy, and I can't stop.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Mine is tuck-bo-kee. Spicy, chewy, and I can't stop."
+  }
+ },
+ {
+  "index": 34,
+  "who": "Chef",
+  "file": "ep02_34.mp3",
+  "text": "Careful. Last time we ate spicy, one of us died.",
+  "tts_text": "Careful. Last time we ate spicy, one of us died.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Careful. Last time we ate spicy, one of us died."
+  }
+ },
+ {
+  "index": 35,
+  "who": "Kangfree",
+  "file": "ep02_35.mp3",
+  "text": "And we never found out who!",
+  "tts_text": "And we never found out who!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "And we never found out who!"
+  }
+ },
+ {
+  "index": 36,
+  "who": "K",
+  "file": "ep02_36.mp3",
+  "text": "...Moving on.",
+  "tts_text": "...Moving on.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "...Moving on."
+  }
+ },
+ {
+  "index": 37,
+  "who": "Kangfree",
+  "file": "ep02_37.mp3",
+  "text": "One last question. Do bunsik shops have ip-ppaen too?",
+  "tts_text": "One last question. Do boon-sick shops have eep-pan too?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "One last question. Do boon-sick shops have eep-pan too?"
+  }
+ },
+ {
+  "index": 38,
+  "who": "Chef",
+  "file": "ep02_38.mp3",
+  "text": "Seriously?",
+  "tts_text": "Seriously?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Seriously?"
+  }
+ },
+ {
+  "index": 39,
+  "who": "K",
+  "file": "ep02_39.mp3",
+  "text": "The only face control at a bunsik shop is the face you make when someone takes the last fish cake.",
+  "tts_text": "The only face control at a boon-sick shop is the face you make when someone takes the last fish cake.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "The only face control at a boon-sick shop is the face you make when someone takes the last fish cake."
+  }
+ },
+ {
+  "index": 40,
+  "who": "Chef",
+  "file": "ep02_40.mp3",
+  "text": "I remember that face.",
+  "tts_text": "I remember that face.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "I remember that face."
+  }
+ },
+ {
+  "index": 41,
+  "who": "Kangfree",
+  "file": "ep02_41.mp3",
+  "text": "...Sorry about the fish cake.",
+  "tts_text": "...Sorry about the fish cake.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "...Sorry about the fish cake."
+  }
+ },
+ {
+  "index": 42,
+  "who": "K",
+  "file": "ep02_42.mp3",
+  "text": "Enough food. Let's talk about how young Koreans are feeling. Spoiler: bored.",
+  "tts_text": "Enough food. Let's talk about how young Koreans are feeling. Spoiler: bored.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Enough food. Let's talk about how young Koreans are feeling. Spoiler: bored."
+  }
+ },
+ {
+  "index": 43,
+  "who": "K",
+  "file": "ep02_43.mp3",
+  "text": "Korea has a word for the moment a hobby suddenly stops being fun. \"Taegi.\"",
+  "tts_text": "Korea has a word for the moment a hobby suddenly stops being fun. \"Teh-gee.\"",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Korea has a word for the moment a hobby suddenly stops being fun. \"Teh-gee.\""
+  }
+ },
+ {
+  "index": 44,
+  "who": "Kangfree",
+  "file": "ep02_44.mp3",
+  "text": "A word for that? Like, \"I used to love running, now I hate my shoes\"?",
+  "tts_text": "A word for that? Like, \"I used to love running, now I hate my shoes\"?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "A word for that? Like, \"I used to love running, now I hate my shoes\"?"
+  }
+ },
+ {
+  "index": 45,
+  "who": "K",
+  "file": "ep02_45.mp3",
+  "text": "Exactly. Golf-taegi. Running-taegi. Reading-taegi. Add it to anything that stopped being fun.",
+  "tts_text": "Exactly. Golf-teh-gee. Running-teh-gee. Reading-teh-gee. Add it to anything that stopped being fun.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Exactly. Golf-teh-gee. Running-teh-gee. Reading-teh-gee. Add it to anything that stopped being fun."
+  }
+ },
+ {
+  "index": 46,
+  "who": "Clamsay",
+  "file": "ep02_46.mp3",
+  "text": "Cooking-taegi.",
+  "tts_text": "Cooking-teh-gee.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Cooking-teh-gee."
+  }
+ },
+ {
+  "index": 47,
+  "who": "Kangfree",
+  "file": "ep02_47.mp3",
+  "text": "Chef! You can't have cooking-taegi!",
+  "tts_text": "Chef! You can't have cooking-teh-gee!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Chef! You can't have cooking-teh-gee!"
+  }
+ },
+ {
+  "index": 48,
+  "who": "Clamsay",
+  "file": "ep02_48.mp3",
+  "text": "Only for one lunch. I'm better now.",
+  "tts_text": "Only for one lunch. I'm better now.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Only for one lunch. I'm better now."
+  }
+ },
+ {
+  "index": 49,
+  "who": "K",
+  "file": "ep02_49.mp3",
+  "text": "A Seoul trend forecaster even named \"the age of boredom\" the first trend of 2027. Too much stimulation, so nothing feels interesting.",
+  "tts_text": "A Seoul trend forecaster even named \"the age of boredom\" the first trend of 2027. Too much stimulation, so nothing feels interesting.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "A Seoul trend forecaster even named \"the age of boredom\" the first trend of 2027. Too much stimulation, so nothing feels interesting."
+  }
+ },
+ {
+  "index": 50,
+  "who": "Kangfree",
+  "file": "ep02_50.mp3",
+  "text": "So what do bored Koreans do?",
+  "tts_text": "So what do bored Koreans do?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "So what do bored Koreans do?"
+  }
+ },
+ {
+  "index": 51,
+  "who": "K",
+  "file": "ep02_51.mp3",
+  "text": "They squeeze things. \"Mallang-i,\" soft squishy toys. One type jumped seven hundred seventy-four percent in a single month.",
+  "tts_text": "They squeeze things. \"Mal-lang-ee,\" soft squishy toys. One type jumped seven hundred seventy-four percent in a single month.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "They squeeze things. \"Mal-lang-ee,\" soft squishy toys. One type jumped seven hundred seventy-four percent in a single month."
+  }
+ },
+ {
+  "index": 52,
+  "who": "Kangfree",
+  "file": "ep02_52.mp3",
+  "text": "Seven hundred seventy-four percent?!",
+  "tts_text": "Seven hundred seventy-four percent?!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Seven hundred seventy-four percent?!"
+  }
+ },
+ {
+  "index": 53,
+  "who": "K",
+  "file": "ep02_53.mp3",
+  "text": "And wax-crushing balls. You crush the hard shell with your hand. Sales jumped five hundred percent.",
+  "tts_text": "And wax-crushing balls. You crush the hard shell with your hand. Sales jumped five hundred percent.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "And wax-crushing balls. You crush the hard shell with your hand. Sales jumped five hundred percent."
+  }
+ },
+ {
+  "index": 54,
+  "who": "Clamsay",
+  "file": "ep02_54.mp3",
+  "text": "So it's cracking an egg without the egg.",
+  "tts_text": "So it's cracking an egg without the egg.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "So it's cracking an egg without the egg."
+  }
+ },
+ {
+  "index": 55,
+  "who": "K",
+  "file": "ep02_55.mp3",
+  "text": "About half of the people surveyed, aged thirteen to fifty-nine, had tried something like it.",
+  "tts_text": "About half of the people surveyed, aged thirteen to fifty-nine, had tried something like it.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "About half of the people surveyed, aged thirteen to fifty-nine, had tried something like it."
+  }
+ },
+ {
+  "index": 56,
+  "who": "Kangfree",
+  "file": "ep02_56.mp3",
+  "text": "And I heard about lucky turtles!",
+  "tts_text": "And I heard about lucky turtles!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "And I heard about lucky turtles!"
+  }
+ },
+ {
+  "index": 57,
+  "who": "K",
+  "file": "ep02_57.mp3",
+  "text": "Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing.",
+  "tts_text": "Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Tiny turtles, smaller than a fingernail. Young Koreans carry them for luck in love, school, work, even investing."
+  }
+ },
+ {
+  "index": 58,
+  "who": "Kangfree",
+  "file": "ep02_58.mp3",
+  "text": "Investing?! My portfolio needs a turtle.",
+  "tts_text": "Investing?! My portfolio needs a turtle.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Investing?! My portfolio needs a turtle."
+  }
+ },
+ {
+  "index": 59,
+  "who": "K",
+  "file": "ep02_59.mp3",
+  "text": "Slow and steady. Honestly, that's good financial advice.",
+  "tts_text": "Slow and steady. Honestly, that's good financial advice.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Slow and steady. Honestly, that's good financial advice."
+  }
+ },
+ {
+  "index": 60,
+  "who": "Clamsay",
+  "file": "ep02_60.mp3",
+  "text": "Is the turtle edible?",
+  "tts_text": "Is the turtle edible?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Is the turtle edible?"
+  }
+ },
+ {
+  "index": 61,
+  "who": "K",
+  "file": "ep02_61.mp3",
+  "text": "No. Chef.",
+  "tts_text": "No. Chef.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "No. Chef."
+  }
+ },
+ {
+  "index": 62,
+  "who": "K",
+  "file": "ep02_62.mp3",
+  "text": "One more change. Chuseok. Korean Thanksgiving, the biggest family holiday of the year.",
+  "tts_text": "One more change. Choo-suk. Korean Thanksgiving, the biggest family holiday of the year.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "One more change. Choo-suk. Korean Thanksgiving, the biggest family holiday of the year."
+  }
+ },
+ {
+  "index": 63,
+  "who": "Kangfree",
+  "file": "ep02_63.mp3",
+  "text": "Everyone goes home, eats a mountain of food, and does the ancestral rites, right?",
+  "tts_text": "Everyone goes home, eats a mountain of food, and does the ancestral rites, right?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Everyone goes home, eats a mountain of food, and does the ancestral rites, right?"
+  }
+ },
+ {
+  "index": 64,
+  "who": "K",
+  "file": "ep02_64.mp3",
+  "text": "Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent.",
+  "tts_text": "Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent."
+  }
+ },
+ {
+  "index": 65,
+  "who": "Kangfree",
+  "file": "ep02_65.mp3",
+  "text": "From three-quarters to one-quarter!",
+  "tts_text": "From three-quarters to one-quarter!",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "From three-quarters to one-quarter!"
+  }
+ },
+ {
+  "index": 66,
+  "who": "K",
+  "file": "ep02_66.mp3",
+  "text": "And forty-three percent planned only a family gathering. No rites, no grave visits.",
+  "tts_text": "And forty-three percent planned only a family gathering. No rites, no grave visits.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "And forty-three percent planned only a family gathering. No rites, no grave visits."
+  }
+ },
+ {
+  "index": 67,
+  "who": "Kangfree",
+  "file": "ep02_67.mp3",
+  "text": "Some families don't even go home. They book a hotel in Seoul. A \"hotel vacation.\"",
+  "tts_text": "Some families don't even go home. They book a hotel in Seoul. A \"hotel vacation.\"",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Some families don't even go home. They book a hotel in Seoul. A \"hotel vacation.\""
+  }
+ },
+ {
+  "index": 68,
+  "who": "K",
+  "file": "ep02_68.mp3",
+  "text": "Because the stress isn't the food. It's the questions.",
+  "tts_text": "Because the stress isn't the food. It's the questions.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Because the stress isn't the food. It's the questions."
+  }
+ },
+ {
+  "index": 69,
+  "who": "Kangfree",
+  "file": "ep02_69.mp3",
+  "text": "\"When are you getting married? Do you have a job? How much do you make?\"",
+  "tts_text": "\"When are you getting married? Do you have a job? How much do you make?\"",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "\"When are you getting married? Do you have a job? How much do you make?\""
+  }
+ },
+ {
+  "index": 70,
+  "who": "K",
+  "file": "ep02_70.mp3",
+  "text": "Three questions. Same relatives. Every year.",
+  "tts_text": "Three questions. Same relatives. Every year.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Three questions. Same relatives. Every year."
+  }
+ },
+ {
+  "index": 71,
+  "who": "Kangfree",
+  "file": "ep02_71.mp3",
+  "text": "I have a strategy. When an aunt asks, \"When are you getting married?\" I say, \"Have you tried the jeon?\"",
+  "tts_text": "I have a strategy. When an aunt asks, \"When are you getting married?\" I say, \"Have you tried the juhn?\"",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "I have a strategy. When an aunt asks, \"When are you getting married?\" I say, \"Have you tried the juhn?\""
+  }
+ },
+ {
+  "index": 72,
+  "who": "K",
+  "file": "ep02_72.mp3",
+  "text": "Jeon. Pan-fried treats, a Chuseok classic. A secret weapon.",
+  "tts_text": "Juhn. Pan-fried treats, a Choo-suk classic. A secret weapon.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Juhn. Pan-fried treats, a Choo-suk classic. A secret weapon."
+  }
+ },
+ {
+  "index": 73,
+  "who": "Clamsay",
+  "file": "ep02_73.mp3",
+  "text": "Works every time. A full mouth asks no questions.",
+  "tts_text": "Works every time. A full mouth asks no questions.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "Works every time. A full mouth asks no questions."
+  }
+ },
+ {
+  "index": 74,
+  "who": "Kangfree",
+  "file": "ep02_74.mp3",
+  "text": "Then the cousin comes up. \"Your cousin just got promoted.\"",
+  "tts_text": "Then the cousin comes up. \"Your cousin just got promoted.\"",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Then the cousin comes up. \"Your cousin just got promoted.\""
+  }
+ },
+ {
+  "index": 75,
+  "who": "K",
+  "file": "ep02_75.mp3",
+  "text": "There is always a cousin. Always perfect.",
+  "tts_text": "There is always a cousin. Always perfect.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "There is always a cousin. Always perfect."
+  }
+ },
+ {
+  "index": 76,
+  "who": "Kangfree",
+  "file": "ep02_76.mp3",
+  "text": "I'm a doctor! And I still hear, \"But have you met someone nice?\"",
+  "tts_text": "I'm a doctor! And I still hear, \"But have you met someone nice?\"",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "I'm a doctor! And I still hear, \"But have you met someone nice?\""
+  }
+ },
+ {
+  "index": 77,
+  "who": "K",
+  "file": "ep02_77.mp3",
+  "text": "Doctor, even doctors lose to relatives.",
+  "tts_text": "Doctor, even doctors lose to relatives.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Doctor, even doctors lose to relatives."
+  }
+ },
+ {
+  "index": 78,
+  "who": "Clamsay",
+  "file": "ep02_78.mp3",
+  "text": "I just bring more jeon.",
+  "tts_text": "I just bring more juhn.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "563f728c-e249-5a85-97ab-8461e8c09da6",
+   "prompt": "I just bring more juhn."
+  }
+ },
+ {
+  "index": 79,
+  "who": "Kangfree",
+  "file": "ep02_79.mp3",
+  "text": "So the new Chuseok is a hotel, a movie, and silence?",
+  "tts_text": "So the new Choo-suk is a hotel, a movie, and silence?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "So the new Choo-suk is a hotel, a movie, and silence?"
+  }
+ },
+ {
+  "index": 80,
+  "who": "K",
+  "file": "ep02_80.mp3",
+  "text": "Not exactly. Most people still gather. The ritual is changing. The reunion stays.",
+  "tts_text": "Not exactly. Most people still gather. The ritual is changing. The reunion stays.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Not exactly. Most people still gather. The ritual is changing. The reunion stays."
+  }
+ },
+ {
+  "index": 81,
+  "who": "Kangfree",
+  "file": "ep02_81.mp3",
+  "text": "Even Chuseok has a skip button now.",
+  "tts_text": "Even Choo-suk has a skip button now.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Even Choo-suk has a skip button now."
+  }
+ },
+ {
+  "index": 82,
+  "who": "K",
+  "file": "ep02_82.mp3",
+  "text": "Just don't skip the call to Grandma.",
+  "tts_text": "Just don't skip the call to Grandma.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Just don't skip the call to Grandma."
+  }
+ },
+ {
+  "index": 83,
+  "who": "K",
+  "file": "ep02_83.mp3",
+  "text": "So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel.",
+  "tts_text": "So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "So here's my take. Korea changes fast. But people still want the same thing: someone to share a plate with, a drink with, a holiday with. Even if the holiday is in a hotel."
+  }
+ },
+ {
+  "index": 84,
+  "who": "Kangfree",
+  "file": "ep02_84.mp3",
+  "text": "Tell us in the comments: which Korean habit confuses you most?",
+  "tts_text": "Tell us in the comments: which Korean habit confuses you most?",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165",
+   "prompt": "Tell us in the comments: which Korean habit confuses you most?"
+  }
+ },
+ {
+  "index": 85,
+  "who": "K",
+  "file": "ep02_85.mp3",
+  "text": "Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean.",
+  "tts_text": "Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean.",
+  "params": {
+   "model": "text2speech_v2",
+   "variant": "elevenlabs",
+   "voice_type": "preset",
+   "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366",
+   "prompt": "Subscribe, and we'll see you next Friday. Stay curious. Keep your lenses clean."
+  }
+ }
+]
