@@ -106,7 +106,7 @@ def world_background(scene=None):
     return bg
 
 
-def desk_layer(puppets):
+def desk_layer(puppets, nameplates=True):
     img = Image.new("RGBA", (WORLD_W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     xs = [p.x for p in puppets]
@@ -114,7 +114,7 @@ def desk_layer(puppets):
     d.polygon([(OX + left, DESK_Y), (OX + right, DESK_Y), (OX + right + 60, H), (OX + left - 60, H)], fill=(22, 26, 36))
     d.rectangle((OX + left, DESK_Y, OX + right, DESK_Y + 12), fill=nr.YELLOW)
     f = nr.font(30)
-    for p in puppets:
+    for p in puppets if nameplates else []:  # with "name_chips" the names are drawn above the lower third instead
         tw = d.textlength(p.label, font=f)
         x = p.x + OX
         d.rounded_rectangle((x - tw / 2 - 18, DESK_Y + 30, x + tw / 2 + 18, DESK_Y + 80), 10, fill=nr.YELLOW)
@@ -414,7 +414,10 @@ def main():
         groups.append(cur)
 
     bg = world_background(scene)
-    desks = {"all": bands(desk_layer(puppets.values())), "anchor": bands(desk_layer([puppets[anchor_key]]))}
+    chips_on = bool(scene.get("name_chips"))
+    desks = {"all": bands(desk_layer(puppets.values(), not chips_on)),
+             "anchor": bands(desk_layer([puppets[anchor_key]], not chips_on))}
+    chip_font = nr.font(30)
     over = bands(broadcast_overlay(scene))
     over_short = bands(broadcast_overlay(scene, TAG_X_SHORT))
     ticker, ticker_w = ticker_strip(scene.get("up_next", ["More stories after this"]))
@@ -621,6 +624,17 @@ def main():
             # tags and lower third are laid out for the centered crop; keep them fixed in the Short
             for piece, (px, py) in over_short:
                 short_crop.paste(piece, (px - (W - SHORT_W) // 2, py), piece)
+        if chips_on and ln["shot"] not in ("still",):
+            # name chips just above the lower third, centered under whoever is in frame (never hidden by the bar)
+            cd = ImageDraw.Draw(view)
+            for k in visible:
+                vx = (puppets[k].x + OX - (cx - cw / 2)) * cam[2]
+                if not 150 < vx < 1770:
+                    continue
+                lab = puppets[k].label
+                tw_ = cd.textlength(lab, font=chip_font)
+                cd.rounded_rectangle((vx - tw_ / 2 - 18, 878, vx + tw_ / 2 + 18, 922), 10, fill=nr.YELLOW)
+                cd.text((vx, 900), lab, font=chip_font, fill=nr.BLACK, anchor="mm")
         paste_bands(view, over)
 
         if short_crop is not None:

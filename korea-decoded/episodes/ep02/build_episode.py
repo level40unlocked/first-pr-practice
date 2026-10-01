@@ -142,7 +142,7 @@ def build():
         for ln in seg_lines:
             if ln.get("screen"):
                 used.update(ln["screen"] if isinstance(ln["screen"], list) else [ln["screen"]])
-        segments.append({**meta, "characters": chars, "screens": {k: SCREENS[k] for k in sorted(used)}, "short": False, "lines": seg_lines})
+        segments.append({**meta, "characters": chars, "screens": {k: SCREENS[k] for k in sorted(used)}, "short": False, "name_chips": True, "lines": seg_lines})
     ep = {"episode": 2, "name": "render/ep02", "anchor": "anchor", "characters": CHARACTERS,
           "background": {"image": "../../assets/studio/seoul_dusk.jpg", "dim": 0.8, "blur": 1.5},
           "outro_ticker": "Stay curious. Keep your lenses clean.", "segments": segments}
