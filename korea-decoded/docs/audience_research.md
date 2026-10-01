@@ -41,3 +41,41 @@
 - [Korea.net: Avg. user spends 14 hours on Korean content](https://www.korea.net/NewsFocus/Culture/view?articleId=269356)
 - [Korea Foundation: Hallyu fans exceed 156.6 million](https://asianews.network/hallyu-fans-exceed-156-6-million-korea-foundation-report/)
 - [Diasporic Hallyu (Canada)](https://link.springer.com/book/10.1007/978-3-030-94964-8)
+
+---
+# 추가 조사 1: 구글 트렌드 (2026-10-01, 최근 12개월 검색 관심도)
+방법: pytrends로 7개국 각각 호출 (미국 US, 영국 GB, 캐나다 CA, 호주 AU, 싱가포르 SG, 말레이시아 MY, 필리핀 PH). **숫자는 한 번의 호출 안에서 가장 큰 검색어를 100으로 맞춘 상대값**이라 같은 묶음끼리만 비교 가능. 국가끼리, 묶음끼리 숫자를 직접 비교하면 안 됨.
+
+| 묶음 | 국가 | 결과 (평균 관심도) |
+|---|---|---|
+| 분야 (K-pop / K-drama / Korean food / K-beauty / travel to Korea) | 미국 | K-pop 63.5 > food 42.9 > travel 13.9 |
+| | 영국 | K-pop 45.2 > food 21.0 > travel 8.8 |
+| | 캐나다 | K-pop 56.3 > food 43.2 > travel 14.7 |
+| | 호주 | **food 66.4** > K-pop 54.1 > **travel 34.8** |
+| | 싱가포르 | **food 73.7** >> travel 17.0 > K-pop 12.9 |
+| | 말레이시아 | **food 76.1** > K-pop 26.0 > travel 11.6 |
+| | 필리핀 | K-pop 45.8 > food 38.7 > travel 17.6 > **K-drama 17.2** |
+| 세부 1 (language / culture / BBQ / skincare / street food) | 미국·캐나다·호주·싱가포르·말레이시아 | Korean BBQ가 1위 (68~73) |
+| | 영국 | **Korean skincare 72.2** ≈ BBQ 64.4 |
+| | 필리핀 | **Korean language 81.5** > BBQ 35.4 (※ "english to korean" 같은 번역 검색이 섞였을 가능성) |
+| 세부 2 (ramen / kimchi / soju / convenience store / etiquette) | 전 국가 | kimchi 1위 (34~79), soju 2위 (7~26), 편의점·예절·라면은 거의 검색 없음 |
+
+해석
+1. **음식이 압도적**: 특히 싱가포르·말레이시아·호주는 K-pop보다 음식 검색이 큼. BBQ와 김치가 대표 검색어
+2. **호주만 여행이 두드러짐** (34.8), 영국은 스킨케어, 필리핀은 한국어·K-드라마
+3. "Korean etiquette", "Korean convenience store", "Korean culture"는 검색량이 거의 없음 → **일반적인 문화 해설은 검색으로 찾는 주제가 아님**. 문화 이야기는 검색보다 **추천 영상**(쇼츠·피드)으로 퍼지는 쪽이라는 뜻
+4. 말레이시아·싱가포르: "halal korean food" 연관 검색이 상위 (싱가포르). 할랄 소재는 동남아 관심 포인트
+5. 한계: 연관 검색어(rising)는 대부분 비어 있음 (지역 표본 부족), 여행 연관어는 "travel news today" 같은 일반어가 섞임. "K-drama"처럼 검색어 형태가 어떻게 쓰이는지에 따라 값이 낮게 나옴(드라마 제목으로 검색하기 때문)
+
+# 추가 조사 2: 유튜브 조회수 상위 영상 (YouTube Data API, 2025-10 이후/2025-01 이후)
+방법: 검색어 "Korea explained", "Korean culture", "Korean food explained", "living in Korea" 등을 조회수순으로 조회. **regionCode를 바꿔도 결과가 거의 같아 국가별 비교는 불가능** (이 API는 시청자 국가별 순위를 주지 않음). 국가 구분 없이 영어 사용자 전체의 반응으로만 읽어야 함. 힌디어·인도 시청자 영상이 섞여 있음.
+
+- 쇼츠 (수천만 조회): 한국인 흉내 개그("These days Korean people be like"), 일본 vs 한국 비교, 한국에서 외국인이 한식 먹는 반응·챌린지, K-pop 멤버가 한국어 배우는 장면, 남북한 설명 숏츠
+- 롱폼 4~16분 (수백만 조회) 반복되는 형식:
+  - **"○○ explained by a Korean"** (Korean Comic 채널: Squid Game 370만, K-팝 데몬 헌터스 640만) → 우리 채널과 맞닿은 "한국인이 풀어 주는" 형식
+  - 한국 인구 위기·사회 문제 (Kurzgesagt "South Korea Is Over" 1,577만, 다른 채널 성형·초저출생 240만대)
+  - 한국에서 외국인이 지내며 겪는 것(Living like a Korean 24시간, 한국 음식 챌린지, 하우스 투어: 200~1,100만)
+  - 북한 영상이 압도적으로 많음 (우리 채널 톤과 안 맞아 제외)
+- 시사점: **한국인(캐릭터)이 외국인에게 설명해 주는 형식**, **음식 챌린지/반응**, **한국 사회 문제의 이유 설명(인구, 성형)**이 조회가 큼
+
+## 종합 후보 (운영자가 고르기 위한 갱신본은 채팅 참고)
