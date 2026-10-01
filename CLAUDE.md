@@ -7,7 +7,7 @@
 
 ## 프로젝트
 - Four Eyes Report(@FourEyesReport): 한국 뉴스를 영어권 시청자에게 전하는 2D 애니메이션 뉴스쇼. 작업 폴더 `korea-decoded/`
-- 먼저 읽을 것: `korea-decoded/docs/show_bible.md`(전체 현황·결정 사항), `docs/characters.md`(캐릭터), `docs/marketing.md`(업로드·홍보 운영)
+- 먼저 읽을 것: `korea-decoded/docs/show_bible.md`(전체 현황·결정 사항), `docs/characters.md`(캐릭터), `docs/marketing.md`(업로드·홍보 운영), `docs/camera_framing.md`(**화면 구도·좌석·설명 화면 규칙 — 영상 화면을 짤 때 반드시 따른다**)
 
 ## 채널 규칙 (운영자 확정)
 - 유튜브에 들어가는 글(제목·설명·태그·자막·채널 설정·커뮤니티 글)은 **전부 영어**. 다른 외국어는 가능, **한국어는 금지**. 예외: 썸네일 그림 속 한글은 필요할 때만
