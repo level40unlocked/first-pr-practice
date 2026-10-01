@@ -15,9 +15,9 @@
 | 10 | Kangfree | But everyone there is single, and hot, so it turns into a place to meet people! | 근데 거기 오는 사람들이 다 혼자고 훤칠하니까 자연스럽게 만남의 장소가 되더라고요! |
 | 11 | K | You sit alone, you use a nickname, and you talk only if you want to. | 혼자 앉고, 닉네임을 쓰고, 말하고 싶을 때만 말하면 됩니다. |
 | 12 | Kangfree | Okay, next time I'm in Korea, I'm going! | 좋아요, 다음에 한국 가면 저도 갈래요! |
-| 13 | K | One warning. There's no age limit. But Korea has "ip-ppaen." Some places quietly turn people away at the door, for being too old. | 한 가지 주의할 점. 나이 제한은 없지만 한국엔 입뺀이라는 게 있어요. 어떤 곳은 문 앞에서 나이가 많다며 조용히 돌려보냅니다. |
-| 14 | Kangfree | Too old?! How old is too old? | 나이가 많다고요?! 몇 살부터요? |
-| 15 | K | Nobody will tell you. That's the scary part. | 아무도 말해 주지 않아요. 그게 무서운 부분이죠. |
+| 13 | K | One warning. There's no age limit. But Korea has "ip-ppaen": getting turned away at the door. Officially, never. In a bar full of young people, you can feel it. | 한 가지 주의. 나이 제한은 없지만 한국엔 입뺀이라는 게 있어요, 문 앞에서 돌려보내는 거요. 공식적으로는 절대 없죠. 하지만 젊은 사람들로 꽉 찬 술집에선 느껴져요. |
+| 14 | Kangfree | Feel what? | 뭘 느껴요? |
+| 15 | K | Every head turning to say, "Sir... are you lost?" | 모든 고개가 돌아가서 말하는 거죠. "저기요... 길 잃으셨어요?" |
 | 16 | Kangfree | Don't worry, Master K. I'll vouch for you at the door. | 걱정 마세요, 마스터 K. 문 앞에서 제가 보증할게요. |
 | 17 | K | Thank you. I'll just drink at home. | 고마워요. 그냥 집에서 마시겠습니다. |
 
@@ -29,7 +29,7 @@
 | 소주 생산량 3년 연속 감소 | 확인 (2022 86.2만㎘ → 2023 79.3만㎘ 기사) | 2023년 자료 → 공개 직전 최신 확인 |
 | 와인 → 위스키 | 통계는 확인 안 함 | 6번을 "취향의 흐름" 대사로만 처리, 숫자 없음 |
 | 혼술바 트렌드, 닉네임, 혼자 온 손님끼리 대화 | 확인 | JoongAng Daily, inews24 |
-| 입뺀 | 클럽 입구에서 나이·외모 등으로 입장을 막는 관행으로 확인 (아시아경제 2018). **혼술바에 있다는 근거는 못 찾음** | "Some places"로 완화 |
+| 입뺀 | 클럽 관행으로 확인 (아시아경제 2018). 혼술바 실제 관행은 아님 | 사실 주장이 아니라 **개그**로 처리: "공식적으론 없다 / 젊은 사람들 사이에서 느껴진다" (운영자 의도: 젊은이들 만남의 장소에 가도 나는 힘들다는 유머) |
 
 ## 메모
 - 10번 "hot"은 한 번만 쓰고 특정 성별에 돌리지 않음
