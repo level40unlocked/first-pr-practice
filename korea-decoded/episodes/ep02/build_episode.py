@@ -83,8 +83,10 @@ SCREEN_AT = {
     "Some families don't even go home": "hotel_ai",
     "I have a strategy": "jeon",
 }
-SEAT = {"panel": 330, "anchor": 900, "chef": 1560}
-PAIR = (615, 500, 1.22)
+# Seats (scene x). With the chef on set he sits well apart, so a close-up of Master K never catches him in a
+# two-shot (K's camera at zoom 1.3 ends at x ~1440, the chef's left shoulder starts at ~1490).
+SEAT_HOSTS = {"panel": 330, "anchor": 900}
+SEAT_CHEF = {"panel": 150, "anchor": 700, "chef": 1750}
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
               "x": 330, "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12},
@@ -94,6 +96,10 @@ CHARACTERS = {
     "anchor": {"head": CAST + "k_head.png", "body": CAST + "k_body.png", "ref": CAST + "k_ref.png",
                "x": 900, "label": "MASTER K"},
 }
+
+
+def seats_for(has_chef):
+    return SEAT_CHEF  # same seats in every segment so nobody jumps at a cut (the chef's seat stays empty when he is absent)
 
 
 def screen_for(text):
@@ -108,7 +114,13 @@ def build():
     segments = []
     for (a, b), meta in zip(SEG_EDGES, SEGS):
         seg_lines, prev_key = [], None
-        for l in [x for x in lines if a <= x["index"] <= b]:
+        seg_in = [x for x in lines if a <= x["index"] <= b]
+        has_chef = any(WHO[x["who"]] == "chef" for x in seg_in)
+        SEAT = seats_for(has_chef)
+        PAIR = ((SEAT["panel"] + SEAT["anchor"]) // 2, 500, 1.22)
+        chars = {k: {**CHARACTERS[k], "x": SEAT[k]} for k in ("anchor", "panel", "chef")
+                 if k in ("anchor", "panel") or has_chef}
+        for l in seg_in:
             who = WHO[l["who"]]
             ln = {"who": who, "text": l["text"], "audio": f"audio/v5/ep02_{l['index']:02d}.mp3"}
             key = screen_for(l["text"])
@@ -132,7 +144,7 @@ def build():
         for ln in seg_lines:
             if ln.get("screen"):
                 used.update(ln["screen"] if isinstance(ln["screen"], list) else [ln["screen"]])
-        segments.append({**meta, "screens": {k: SCREENS[k] for k in sorted(used)}, "short": False, "lines": seg_lines})
+        segments.append({**meta, "characters": chars, "screens": {k: SCREENS[k] for k in sorted(used)}, "short": False, "lines": seg_lines})
     ep = {"episode": 2, "name": "render/ep02", "anchor": "anchor", "characters": CHARACTERS,
           "background": {"image": "../../assets/studio/seoul_dusk.jpg", "dim": 0.8, "blur": 1.5},
           "outro_ticker": "Stay curious. Keep your lenses clean.", "segments": segments}
