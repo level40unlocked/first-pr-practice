@@ -92,7 +92,7 @@
 |---|---|---|---|
 | 62 | K | One more change. Chuseok. Korean Thanksgiving, the biggest family holiday of the year. | 변화가 하나 더 있어요. 추석. 한국의 추수감사절, 1년 중 가장 큰 가족 명절이죠. |
 | 63 | Kangfree | Everyone goes home, eats a mountain of food, and does the ancestral rites, right? | 다들 고향 가서 산더미 같은 음식을 먹고 차례를 지내잖아요, 맞죠? |
-| 64 | K | Less and less. In 2016, about seventy-four percent of households planned ancestral rites. This year, about twenty-seven percent. | 점점 줄고 있어요. 2016년엔 약 74% 가구가 차례를 계획했는데, 올해는 약 27%예요. |
+| 64 | K | Less and less. In 2016, about seventy-four percent of households planned ancestral rites. As of 2026, about twenty-seven percent. | 점점 줄고 있어요. 2016년엔 약 74% 가구가 차례를 계획했는데, 2026년 기준 약 27%예요. |
 | 65 | Kangfree | From three-quarters to one-quarter! | 4분의 3에서 4분의 1로요! |
 | 66 | K | And forty-three percent planned only a family gathering. No rites, no grave visits. | 그리고 43%는 가족 모임만 계획했어요. 차례도, 성묘도 없이요. |
 | 67 | Kangfree | Some families don't even go home. They book a hotel in Seoul. A "hotel vacation." | 어떤 가족은 고향에도 안 가요. 서울 호텔을 잡아요. "호캉스 추석"이죠. |
