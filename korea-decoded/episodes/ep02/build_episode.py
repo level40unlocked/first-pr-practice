@@ -120,7 +120,7 @@ def build():
                  if k in ("anchor", "panel") or has_chef}
         for l in seg_in:
             who = WHO[l["who"]]
-            ln = {"who": who, "text": l["text"], "audio": f"audio/{'v5_calm' if WHO[l['who']] == 'chef' else 'v5'}/ep02_{l['index']:02d}.mp3"}
+            ln = {"who": who, "text": l["text"], "audio": f"audio/{'v5_match' if WHO[l['who']] == 'chef' else 'v5'}/ep02_{l['index']:02d}.mp3"}
             key = screen_for(l["text"])
             assert not key or who == "anchor", f"line {l['index']}: a picture on a non-anchor line"
             if key:
