@@ -26,3 +26,9 @@
 | 10/3 토 18:57 | 10/3 05:57 | 쇼츠: Typhoons (U6NnZqlbLag) |
 | 10/4 일 06:57 | 10/3 17:57 | 쇼츠: Air conditioner subscription (DuZr9hhxYbQ) |
 - 편의점 라면 "(upload test)" 비공개 영상은 삭제함
+
+| 10/4 일 18:57 KST | 10/4 05:57 EDT | EP.2 쇼츠 혼술바 (DjN005_ddJ8) |
+| 10/5 월 06:57 | 10/4 17:57 | EP.2 쇼츠 분식 (OFDSiGAs-PU) |
+| 10/5 월 18:57 | 10/5 05:57 | EP.2 쇼츠 지루함 (5fizXFB_erU) |
+| 10/6 화 06:57 | 10/5 17:57 | EP.2 쇼츠 추석 (a5YxxzEaMs4) |
+- 위 4개는 위 표 마지막 줄 다음에 이어지는 슬롯 (2026-10-02 업로드·예약 완료, 설명문은 `episodes/ep02/post/shorts/*.txt`)
