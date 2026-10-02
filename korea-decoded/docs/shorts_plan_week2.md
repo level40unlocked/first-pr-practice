@@ -6,7 +6,7 @@
 | 10/6 화 | 편의점에서 라면 끓여 먹는 나라 | Korean Convenience Stores Have a Ramen Cooking Station | "In Korea, the convenience store has a kitchen." | K, 캉프리 | 편의점 먹방 CC 영상 수백~천만 조회, EP.1 소재와 연결 |
 | 10/7 수 | 한국 음식은 사실 안 맵다 | Most Korean Food Isn't Spicy. Here's the Proof. | "Technically, most Korean food isn't spicy." (소개 영상 대사) | K, 클램지 | 음식 3종 조사 1위, 소개 릴스와 이어짐 |
 | 10/8 목 | 한국엔 팁이 없다 | Why Nobody Tips in Korea | "Leave money on the table in Korea, and someone chases you." | K, 캉프리 | 레딧 팁 글 1229점 |
-| 10/9 금 | 한국인은 왜 나이부터 물을까 (EP.2 공개일) | Why Koreans Ask Your Age Within 5 Minutes | "In Korea, 'How old are you?' is grammar." | K, 캉프리 | 레딧 나이 글 339점 / 롱폼 EP.2 연결 |
+| 10/9 금 | 한국인은 왜 나이부터 물을까 (EP.2는 10/3 토 06:57 KST에 이미 공개 → 이 칸은 EP.2 조각으로 교체 검토) | Why Koreans Ask Your Age Within 5 Minutes | "In Korea, 'How old are you?' is grammar." | K, 캉프리 | 레딧 나이 글 339점 / 롱폼 EP.2 연결 |
 | 10/10 토 | 혼밥 | Eating Alone in Korea Used to Be Weird. Now It's Normal. | "Korean food is made for sharing. So how do you eat alone?" | K, 클램지 | 레딧 혼밥 글 484점 |
 | 10/11 일 | 분식이 해외에서 인기라 놀란다 | Koreans Are Shocked This Street Food Went Global | "A 2-dollar school snack is conquering the world." (숫자 확인 후) | K, 클램지, 캉프리 | 분식 꼭지, 한식 1위 |
 | 10/12 월 | 소주는 줄고 위스키는 늘었다 | Soju Is Losing Ground in Korea | "Soju is hot overseas. In Korea, it's losing ground." | K, 캉프리 | 술 꼭지(OECD 21위, 소주 3년 연속 감소) |

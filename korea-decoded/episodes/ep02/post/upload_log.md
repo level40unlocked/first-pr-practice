@@ -3,4 +3,5 @@
 - Title: Korea Is Bored: Soju Slump, Squishy Toys & Hotel Chuseok | EP.2
 - Thumbnail thumb_A set; description with chapters + photo credits; tags set
 - English subtitles (ep02_en.srt): API upload failed (403, token lacks youtube.force-ssl scope) → upload by hand in Studio (Subtitles → Add language → English → Upload file)
+- Scheduled (operator chose plan A): private until 2026-10-03 06:57 KST (= Fri 10-02 17:57 EDT), then public automatically; embeddable + public stats on
 - TODO: pinned comment, related-video links, final fact re-check (OECD, soju, 51.9%, 43%)
