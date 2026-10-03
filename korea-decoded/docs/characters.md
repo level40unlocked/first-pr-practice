@@ -78,7 +78,7 @@
 | 이름 | **Dr. H**. 이름표 **DR. H**. 본명은 밝히지 않는 한 글자 코드명 (007의 M, Q 느낌). H = History, Hidden. Master K와 한 글자 이름끼리 짝 |
 | 외모 | 기존 비밀 기록 연구가 원본 그대로: 30대 여성, 비녀로 묶은 긴 머리, 작은 금테 원형 안경, 보라색 한복풍 재킷, 두루마리. 설정 `"shoulders": 520, "white_lens": true` (head_ratio 자동) |
 | 성격·개그 | 음모론 폭로하듯 속삭이며 "Actually..." 로 숨겨진 역사를 꺼냄. 고정 개그: Kangfree "What does the H stand for?" / H "...That's classified." |
-| 목소리 | 미정 (여성, 낮고 속삭이는 톤이 잘 나오는 목소리) |
+| 목소리 | ✅ **Daisy** (Higgsfield 프리셋, `032386ec-491b-5bdc-81ac-49e9a6a2c89d`, text2speech_v2 variant elevenlabs, 2026-10-03 운영자 선택. 시험은 Indoor용 밝은 문장으로만 해 봄 → 속삭이는 "Actually..." 톤은 첫 생성 때 확인) |
 
 ## 데스크 전문가: Max Rise (맥스 라이즈) · MONEY & BUSINESS ✅ 이름 확정 (2026-09-30)
 
