@@ -47,6 +47,7 @@
 | 말버릇 | "Let's go to the replay!" / "And the point goes to… KOREA!" / "That's a foul." |
 | 반복 개그 | ① 흥분하면 말보다 호루라기가 먼저. K: "Joe. Indoors." ② K가 TMI를 말하면 판정 패들을 들며 "Offside!" ③ 비기면 본인이 더 괴로워함 |
 | 목소리 방향 | 20대 후반 남성. 스포츠 중계 톤, 빠르고 크게, 판정할 때 한 박자 멈춤. 자연스러운 북미 영어 |
+| 목소리 | ✅ **Julian** (Higgsfield 프리셋, `95429266-c0ac-4137-a209-63b8812b0f23`, text2speech_v2 variant elevenlabs, 2026-10-03 운영자 선택. 시험은 Max Rise용 문장으로만 해 봄 → 스포츠 중계 톤은 첫 생성 때 확인) |
 | 리그 설정 | `"shoulders": 520, "head_ratio": 0.68, "chin_drop": 0.16, "white_lens": true` (원본은 `show_bible.md`) |
 
 ## 데스크 전문가: Garden Clamsay (가든 클램지) · K-FOOD & LIFE ✅ 이름 확정 (2026-09-29)
