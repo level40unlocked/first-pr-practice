@@ -97,7 +97,7 @@
 | 외모 | 기존 시사 베테랑 원본 그대로: 50대 후반 여성, 은발 단발, 사각 안경, 진홍 블레이저 + 검은 터틀넥, 포스트잇 붙은 서류 더미. 설정 `"shoulders": 520, "white_lens": true` (head_ratio 자동) |
 | 성격·개그 | 모든 스캔들을 다 봐서 무심함. 건조한 한마디. 입버릇 "I don't do fiction." K-팝 팬보이와 대비: "I wrote a fanfic about it!" / "...Of course you did." |
 | 조심할 것 | 정치·실제 사건을 개그 소재로 쓰지 않음 (채널 민감도 규칙) |
-| 목소리 | 미정 (여성, 50대, 낮고 건조한 톤) |
+| 목소리 | ✅ **Helena** (Higgsfield 프리셋, `3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd`, text2speech_v2 variant elevenlabs, 2026-10-03 운영자 선택. 후보 Vera / Vesper / Elena / Tamsin / Imogen과 비교) |
 
 ## 데스크 전문가: Offbeat (오프비트) · K-POP & ENTERTAINMENT ✅ 이름 확정 (2026-09-30)
 
