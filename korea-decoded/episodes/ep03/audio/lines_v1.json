@@ -1,0 +1,688 @@
+[
+ {
+  "index": 1,
+  "who": "K",
+  "text": "Fifteen million foreigners visited Korea in just eight months. A record.",
+  "tts_text": "Fifteen million foreigners visited Korea in just eight months. A record.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 2,
+  "who": "Kangfree",
+  "text": "And they didn't just visit. They caught something.",
+  "tts_text": "And they didn't just visit. They caught something.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 3,
+  "who": "K",
+  "text": "It's called \"Seoul fever.\"",
+  "tts_text": "It's called \"Seoul fever.\"",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 4,
+  "who": "K",
+  "text": "Hello, world. I'm Master K, and this is the Four Eyes Report.",
+  "tts_text": "Hello, world. I'm Master Kay, and this is the Four Eyes Report.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 5,
+  "who": "Kangfree",
+  "text": "Coming up: a fever, a chip boom, a holiday for an alphabet, a very fast country, and why Koreans ask your age.",
+  "tts_text": "Coming up: a fever, a chip boom, a holiday for an alphabet, a very fast country, and why Koreans ask your age.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 6,
+  "who": "K",
+  "text": "Let's start with the fever. Our current affairs correspondent, Ms. Nonfic. She reads the corrections page for fun.",
+  "tts_text": "Let's start with the fever. Our current affairs correspondent, Miss Non-fick. She reads the corrections page for fun.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 7,
+  "who": "Nonfic",
+  "text": "Good evening. From January to August, fifteen point oh five million foreign visitors came to Korea. A record. That is more people than live in Pennsylvania. Pennsylvania has not commented.",
+  "tts_text": "Good evening. From January to August, fifteen point oh five million foreign visitors came to Korea. A record. That is more people than live in Pennsylvania. Pennsylvania has not commented.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 8,
+  "who": "Kangfree",
+  "text": "Somebody call Pennsylvania!",
+  "tts_text": "Somebody call Pennsylvania!",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 9,
+  "who": "Nonfic",
+  "text": "August alone: two point two five million. Another record. Much of the growth came from Southeast Asia, thanks to easier entry rules and higher spending.",
+  "tts_text": "August alone: two point two five million. Another record. Much of the growth came from Southeast Asia, thanks to easier entry rules and higher spending.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 10,
+  "who": "Kangfree",
+  "text": "Hello, Singapore, Malaysia, and the Philippines! We see you!",
+  "tts_text": "Hello, Singapore, Malaysia, and the Philippines! We see you!",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 11,
+  "who": "K",
+  "text": "And a new word came with them. \"Seoul fever,\" and its cousin, \"Busan fever.\"",
+  "tts_text": "And a new word came with them. \"Seoul fever,\" and its cousin, \"Busan fever.\"",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 12,
+  "who": "Nonfic",
+  "text": "Both words describe travelers who miss the city after they go home. In other words: repeat customers.",
+  "tts_text": "Both words describe travelers who miss the city after they go home. In other words: repeat customers.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 13,
+  "who": "Kangfree",
+  "text": "I'm a doctor. Not that kind. But I have a diagnosis: it's good for the Seoul.",
+  "tts_text": "I'm a doctor. Not that kind. But I have a diagnosis: it's good for the soul.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 14,
+  "who": "K",
+  "text": "Please don't.",
+  "tts_text": "Please don't.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 15,
+  "who": "Kangfree",
+  "text": "Seoul-searching. Seoul food. Seoul mate. I have a whole list.",
+  "tts_text": "Soul-searching. Soul food. Soul mate. I have a whole list.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 16,
+  "who": "Nonfic",
+  "text": "For the record, I heard all of that. Now, rankings. Agoda's booking data for the first half of the year puts Seoul fourth in Asia for repeat visits.",
+  "tts_text": "For the record, I heard all of that. Now, rankings. Uh-go-da's booking data for the first half of the year puts Seoul fourth in Asia for repeat visits.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 17,
+  "who": "Kangfree",
+  "text": "Fourth! Who beat us?",
+  "tts_text": "Fourth! Who beat us?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 18,
+  "who": "Nonfic",
+  "text": "Tokyo, Bangkok, and Bali. Osaka is fifth.",
+  "tts_text": "Tokyo, Bangkok, and Bali. Osaka is fifth.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 19,
+  "who": "Kangfree",
+  "text": "Fourth place. The saddest number at the Olympics.",
+  "tts_text": "Fourth place. The saddest number at the Olympics.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 20,
+  "who": "Nonfic",
+  "text": "Analysts credit the range: K-content, festivals, food, beauty, shopping, and convenience stores that never close.",
+  "tts_text": "Analysts credit the range: K-content, festivals, food, beauty, shopping, and convenience stores that never close.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 21,
+  "who": "K",
+  "text": "So the fever has a cause: a lot going on, and a snack at every hour.",
+  "tts_text": "So the fever has a cause: a lot going on, and a snack at every hour.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 22,
+  "who": "Kangfree",
+  "text": "Symptoms include booking your second trip before the first one ends.",
+  "tts_text": "Symptoms include booking your second trip before the first one ends.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 23,
+  "who": "Nonfic",
+  "text": "Treatment: none known.",
+  "tts_text": "Treatment: none known.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 24,
+  "who": "K",
+  "text": "If you catch it, where do you go? Our travel expert: Professor Indoor. Self-certified. Online.",
+  "tts_text": "If you catch it, where do you go? Our travel expert: Professor Indoor. Self-certified. Online.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 25,
+  "who": "Indoor",
+  "text": "I've been there!",
+  "tts_text": "I've been there!",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 26,
+  "who": "K",
+  "text": "Physically?",
+  "tts_text": "Physically?",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 27,
+  "who": "Indoor",
+  "text": "...Emotionally.",
+  "tts_text": "...Emotionally.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 28,
+  "who": "Indoor",
+  "text": "Okay, facts. Seoul is running a welcome campaign for tourists through October eleventh, with a help desk near Myeongdong Station that offers interpretation in English, Chinese, and Japanese.",
+  "tts_text": "Okay, facts. Seoul is running a welcome campaign for tourists through October eleventh, with a help desk near Myung-dong Station that offers interpretation in English, Chinese, and Japanese.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 29,
+  "who": "Kangfree",
+  "text": "Help desks and interpreters. That's service.",
+  "tts_text": "Help desks and interpreters. That's service.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 30,
+  "who": "Indoor",
+  "text": "From October seventh to eleventh, the K-Royal Culture Festival turns the five grand palaces and Jongmyo Shrine into stages.",
+  "tts_text": "From October seventh to eleventh, the K Royal Culture Festival turns the five grand palaces and Jong-myo Shrine into stages.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 31,
+  "who": "Indoor",
+  "text": "There is also a moonlight tour of Changdeokgung Palace, with sessions in English for foreign visitors.",
+  "tts_text": "There is also a moonlight tour of Chang-duk-goong Palace, with sessions in English for foreign visitors.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 32,
+  "who": "Kangfree",
+  "text": "A palace at night. That's so romantic.",
+  "tts_text": "A palace at night. That's so romantic.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 33,
+  "who": "Indoor",
+  "text": "I watched the whole thing on a live stream. Best seat in the house. No line, no crowds, and the snacks are twelve feet away.",
+  "tts_text": "I watched the whole thing on a live stream. Best seat in the house. No line, no crowds, and the snacks are twelve feet away.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 34,
+  "who": "K",
+  "text": "That is... one way to travel.",
+  "tts_text": "That is... one way to travel.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 35,
+  "who": "Indoor",
+  "text": "Now, the souvenir of the season: a cap. Seoul's city brand teamed up with a traditional-knot design brand, and one post about it got two point seven million views on Japanese social media. No ads.",
+  "tts_text": "Now, the souvenir of the season: a cap. Seoul's city brand teamed up with a traditional-knot design brand, and one post about it got two point seven million views on Japanese social media. No ads.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 36,
+  "who": "Kangfree",
+  "text": "Let me guess. It's Seoul-d out.",
+  "tts_text": "Let me guess. It's sold out.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 37,
+  "who": "Indoor",
+  "text": "I wouldn't know. I've never been there.",
+  "tts_text": "I wouldn't know. I've never been there.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 38,
+  "who": "K",
+  "text": "Emotionally?",
+  "tts_text": "Emotionally?",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 39,
+  "who": "Indoor",
+  "text": "Emotionally, I own three.",
+  "tts_text": "Emotionally, I own three.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 40,
+  "who": "K",
+  "text": "Now, another record. Max Rise, our money and business analyst.",
+  "tts_text": "Now, another record. Max Rise, our money and business analyst.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 41,
+  "who": "Rise",
+  "text": "Good news. The line went up.",
+  "tts_text": "Good news. The line went up.",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ {
+  "index": 42,
+  "who": "Rise",
+  "text": "September exports: a hundred twenty-one billion dollars. A record. Up eighty-three percent.",
+  "tts_text": "September exports: a hundred twenty-one billion dollars. A record. Up eighty-three percent.",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ {
+  "index": 43,
+  "who": "Kangfree",
+  "text": "That's almost double!",
+  "tts_text": "That's almost double!",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 44,
+  "who": "Rise",
+  "text": "Chips did the heavy lifting. Over sixty billion dollars. Almost half of everything Korea sold.",
+  "tts_text": "Chips did the heavy lifting. Over sixty billion dollars. Almost half of everything Korea sold.",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ {
+  "index": 45,
+  "who": "Kangfree",
+  "text": "Finally, a chip Americans and Koreans both love.",
+  "tts_text": "Finally, a chip Americans and Koreans both love.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 46,
+  "who": "K",
+  "text": "Different chips.",
+  "tts_text": "Different chips.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 47,
+  "who": "Kangfree",
+  "text": "Mine come with dip.",
+  "tts_text": "Mine come with dip.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 48,
+  "who": "Rise",
+  "text": "AI is hungry. Korea makes the memory chips it eats. And Korean chips remember everything.",
+  "tts_text": "AI is hungry. Korea makes the memory chips it eats. And Korean chips remember everything.",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ {
+  "index": 49,
+  "who": "Kangfree",
+  "text": "Unlike me at the grocery store.",
+  "tts_text": "Unlike me at the grocery store.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 50,
+  "who": "Rise",
+  "text": "Nine months in, Korea has already beaten all of last year. A trillion dollars is next. Limit up!",
+  "tts_text": "Nine months in, Korea has already beaten all of last year. A trillion dollars is next. Limit up!",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ {
+  "index": 51,
+  "who": "Kangfree",
+  "text": "A trillion! How many zeros is that?",
+  "tts_text": "A trillion! How many zeros is that?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 52,
+  "who": "K",
+  "text": "Twelve. Thank you for the math.",
+  "tts_text": "Twelve. Thank you for the math.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 53,
+  "who": "Rise",
+  "text": "Seoul fever. Chip fever. Limit up!",
+  "tts_text": "Seoul fever. Chip fever. Limit up!",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ {
+  "index": 54,
+  "who": "Kangfree",
+  "text": "Is there a cure?",
+  "tts_text": "Is there a cure?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 55,
+  "who": "Rise",
+  "text": "Not on my chart.",
+  "tts_text": "Not on my chart.",
+  "voice_id": "f1e8226e-2248-4d5f-b43c-0a79e9949dbf"
+ },
+ {
+  "index": 56,
+  "who": "K",
+  "text": "Next, a holiday you might not know: Hangul Day, October ninth. To explain it, our historian, Dr. H.",
+  "tts_text": "Next, a holiday you might not know: Hahn-gool Day, October ninth. To explain it, our historian, Doctor H.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 57,
+  "who": "Kangfree",
+  "text": "Dr. H, what does the H stand for?",
+  "tts_text": "Doctor H, what does the H stand for?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 58,
+  "who": "Hidden",
+  "text": "...That's classified.",
+  "tts_text": "...That's classified.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 59,
+  "who": "Hidden",
+  "text": "Actually, Hangul Day is a public holiday. Korea takes a day off to celebrate its writing system.",
+  "tts_text": "Actually, Hahn-gool Day is a public holiday. Korea takes a day off to celebrate its writing system.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 60,
+  "who": "Kangfree",
+  "text": "A holiday for an alphabet? In America, we just get a song.",
+  "tts_text": "A holiday for an alphabet? In America, we just get a song.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 61,
+  "who": "K",
+  "text": "The ABC song is not a holiday.",
+  "tts_text": "The ABC song is not a holiday.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 62,
+  "who": "Kangfree",
+  "text": "It should be. It has a really good tune.",
+  "tts_text": "It should be. It has a really good tune.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 63,
+  "who": "Hidden",
+  "text": "Before the fourteen-forties, writing in Korea meant Chinese characters, and learning them took years.",
+  "tts_text": "Before the fourteen-forties, writing in Korea meant Chinese characters, and learning them took years.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 64,
+  "who": "Hidden",
+  "text": "King Sejong the Great created Hangul in the fourteen-forties so that ordinary people could read and write.",
+  "tts_text": "King Say-jong the Great created Hahn-gool in the fourteen-forties so that ordinary people could read and write.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 65,
+  "who": "Hidden",
+  "text": "And here is the secret. The consonants copy the shape your mouth and tongue make when you say them.",
+  "tts_text": "And here is the secret. The consonants copy the shape your mouth and tongue make when you say them.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 66,
+  "who": "Kangfree",
+  "text": "The letters are diagrams? So it's basically the first user-friendly interface.",
+  "tts_text": "The letters are diagrams? So it's basically the first user-friendly interface.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 67,
+  "who": "Hidden",
+  "text": "Version one. Still no patch notes after five hundred eighty years.",
+  "tts_text": "Version one. Still no patch notes after five hundred eighty years.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 68,
+  "who": "Hidden",
+  "text": "Today it has twenty-four letters: fourteen consonants and ten vowels.",
+  "tts_text": "Today it has twenty-four letters: fourteen consonants and ten vowels.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 69,
+  "who": "Kangfree",
+  "text": "Learners say you can learn to read it in a day.",
+  "tts_text": "Learners say you can learn to read it in a day.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 70,
+  "who": "K",
+  "text": "Let me test that. Write your name.",
+  "tts_text": "Let me test that. Write your name.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 71,
+  "who": "Kangfree",
+  "text": "Done!",
+  "tts_text": "Done!",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 72,
+  "who": "Hidden",
+  "text": "It says \"Kang-peu-ri.\" Close enough.",
+  "tts_text": "It says \"Kang-puh-ree.\" Close enough.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 73,
+  "who": "Kangfree",
+  "text": "Time for a new segment: \"Is This Normal in Korea?\" Our expert witness is back: Ms. Nonfic.",
+  "tts_text": "Time for a new segment: \"Is This Normal in Korea?\" Our expert witness is back: Miss Non-fick.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 74,
+  "who": "Nonfic",
+  "text": "Exhibit A: the sidewalk. Everyone in Seoul walks like they're late for a flight. They might be.",
+  "tts_text": "Exhibit A: the sidewalk. Everyone in Seoul walks like they're late for a flight. They might be.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 75,
+  "who": "K",
+  "text": "That's \"ppalli-ppalli.\" It means \"hurry, hurry.\"",
+  "tts_text": "That's \"pali pali.\" It means \"hurry, hurry.\"",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 76,
+  "who": "Nonfic",
+  "text": "It's less a habit than an operating system. Delivery apps promise food in minutes. Some people press the elevator's close button before the doors finish opening.",
+  "tts_text": "It's less a habit than an operating system. Delivery apps promise food in minutes. Some people press the elevator's close button before the doors finish opening.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 77,
+  "who": "Kangfree",
+  "text": "They're not impatient. They're optimistic.",
+  "tts_text": "They're not impatient. They're optimistic.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 78,
+  "who": "Nonfic",
+  "text": "In America, you wait for the pizza. In Korea, the pizza waits for you.",
+  "tts_text": "In America, you wait for the pizza. In Korea, the pizza waits for you.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 79,
+  "who": "Kangfree",
+  "text": "So, is this normal in Korea?",
+  "tts_text": "So, is this normal in Korea?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 80,
+  "who": "Nonfic",
+  "text": "Verdict: normal. Please keep moving.",
+  "tts_text": "Verdict: normal. Please keep moving.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 81,
+  "who": "K",
+  "text": "Welcome to Korea.",
+  "tts_text": "Welcome to Korea.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 82,
+  "who": "Kangfree",
+  "text": "Last topic. A question every foreigner hears within five minutes.",
+  "tts_text": "Last topic. A question every foreigner hears within five minutes.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 83,
+  "who": "K",
+  "text": "\"How old are you?\"",
+  "tts_text": "\"How old are you?\"",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 84,
+  "who": "Kangfree",
+  "text": "In Korea, that's grammar.",
+  "tts_text": "In Korea, that's grammar.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 85,
+  "who": "Nonfic",
+  "text": "Korean has speech levels. To pick the right one, you need to know who is older. So the question is not nosy. It is a setting.",
+  "tts_text": "Korean has speech levels. To pick the right one, you need to know who is older. So the question is not nosy. It is a setting.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 86,
+  "who": "Nonfic",
+  "text": "Until 2023, Korea also had \"Korean age\": you are one at birth, and everyone gets a year older every January first. A baby born on December thirty-first turns two the next day.",
+  "tts_text": "Until 2023, Korea also had \"Korean age\": you are one at birth, and everyone gets a year older every January first. A baby born on December thirty-first turns two the next day.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 87,
+  "who": "Kangfree",
+  "text": "Two days old and already two!",
+  "tts_text": "Two days old and already two!",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 88,
+  "who": "Nonfic",
+  "text": "In June 2023, Korea switched official documents to international age. Everyone became one or two years younger.",
+  "tts_text": "In June 2023, Korea switched official documents to international age. Everyone became one or two years younger.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 89,
+  "who": "Kangfree",
+  "text": "Korea invented the cheapest anti-aging treatment in history: legislation.",
+  "tts_text": "Korea invented the cheapest anti-aging treatment in history: legislation.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 90,
+  "who": "Nonfic",
+  "text": "Social life did not change. People still ask.",
+  "tts_text": "Social life did not change. People still ask.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 91,
+  "who": "Kangfree",
+  "text": "One more thing. Koreans say \"our.\" Our mom, our house, our school. Even \"our wife.\"",
+  "tts_text": "One more thing. Koreans say \"our.\" Our mom, our house, our school. Even \"our wife.\"",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 92,
+  "who": "Nonfic",
+  "text": "\"Our\" signals belonging, not ownership. It means: we share this.",
+  "tts_text": "\"Our\" signals belonging, not ownership. It means: we share this.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 93,
+  "who": "Kangfree",
+  "text": "So he's not sharing his wife. He's sharing the word.",
+  "tts_text": "So he's not sharing his wife. He's sharing the word.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 94,
+  "who": "K",
+  "text": "Please don't say that in English.",
+  "tts_text": "Please don't say that in English.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 95,
+  "who": "K",
+  "text": "So here's my take. Fifteen million visitors, a record chip boom, an alphabet with its own holiday. Different stories, same pattern: the world is showing up for Korea.",
+  "tts_text": "So here's my take. Fifteen million visitors, a record chip boom, an alphabet with its own holiday. Different stories, same pattern: the world is showing up for Korea.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 96,
+  "who": "K",
+  "text": "And Korea's answer is very Korean: \"Welcome. Our home is your home. Please hurry.\"",
+  "tts_text": "And Korea's answer is very Korean: \"Welcome. Our home is your home. Please hurry.\"",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 97,
+  "who": "Kangfree",
+  "text": "Tell us in the comments: what's the first thing you'd ask a Korean?",
+  "tts_text": "Tell us in the comments: what's the first thing you'd ask a Korean?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 98,
+  "who": "K",
+  "text": "Subscribe, and we'll see you Wednesday. Stay curious. Keep your lenses clean.",
+  "tts_text": "Subscribe, and we'll see you Wednesday. Stay curious. Keep your lenses clean.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ }
+]
