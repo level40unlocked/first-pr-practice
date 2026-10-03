@@ -1,0 +1,210 @@
+# Four Eyes Report 채널 설정. 코드 수정 없이 이 파일만 바꿔서 운영 방침을 조정합니다.
+
+[channel]
+name = "Four Eyes Report"
+language = "en"
+translation_language = "ko"
+tone = "casual"
+target_seconds = 50
+
+# 콘텐츠 축과 비중. 주제 점수 계산에 weight가 곱해집니다.
+[pillars.business_tech]
+label = "Korean Business & Tech"
+weight = 1.35
+keywords = ["samsung", "hyundai", "lg", "sk hynix", "naver", "kakao", "coupang", "chaebol",
+            "semiconductor", "chip", "startup", "tech", "internet", "app",
+            "삼성", "현대", "네이버", "카카오", "쿠팡", "반도체", "재벌", "스타트업"]
+
+[pillars.economy_money]
+label = "Korean Economy & Money"
+weight = 1.30
+keywords = ["salary", "rent", "jeonse", "apartment", "price", "cost", "won", "economy",
+            "tax", "pension", "housing", "birth rate",
+            "연봉", "월세", "전세", "아파트", "물가", "경제", "세금", "연금", "집값", "출산"]
+
+[pillars.society]
+label = "Korean Society Explained"
+weight = 1.15
+keywords = ["culture", "school", "suneung", "work", "age", "drinking", "food", "convenience store",
+            "etiquette", "why do koreans",
+            "문화", "학교", "수능", "직장", "음식", "편의점", "예절"]
+
+[pillars.travel]
+label = "Korea Travel"
+weight = 1.05
+keywords = ["travel", "trip", "tourist", "seoul", "busan", "jeju", "subway", "visa", "t-money",
+            "여행", "관광", "서울", "부산", "제주", "지하철"]
+
+# 한국 vs 세계 비교 포맷. 시청자가 "우리나라는?" 하고 클릭하게 만드는 축.
+# include_countries = true 이면 아래 [countries]의 나라 이름도 이 축의 키워드로 쓰입니다.
+[pillars.korea_vs_world]
+label = "Korea vs the World"
+weight = 1.25
+include_countries = true
+keywords = ["vs", "versus", "compared", "comparison", "difference", "foreigner", "abroad",
+            "비교", "외국인", "해외", "차이"]
+
+# 비교 대상 나라 (유튜브 시청자가 많은 영어권, 신흥 시장 위주). 코드 = 표기 이름들.
+[countries]
+US = ["america", "american", "americans", "united states", "u.s.", "미국"]
+GB = ["uk", "britain", "british", "england", "영국"]
+CA = ["canada", "canadian", "캐나다"]
+AU = ["australia", "australian", "호주"]
+IN = ["india", "indian", "indians", "인도"]
+PH = ["philippines", "filipino", "필리핀"]
+ID = ["indonesia", "indonesian", "인도네시아"]
+VN = ["vietnam", "vietnamese", "베트남"]
+JP = ["japan", "japanese", "일본"]
+CN = ["china", "chinese", "중국"]
+BR = ["brazil", "brazilian", "브라질"]
+MX = ["mexico", "mexican", "멕시코"]
+DE = ["germany", "german", "독일"]
+FR = ["france", "french", "프랑스"]
+
+# 민감도 규칙
+# - 아래 키워드가 들어간 주제는 "review"로 분류되어 자동 제작 대기열에서 빠집니다.
+# - review 주제는 사람이 approve 하기 전까지 대본을 만들지 않습니다.
+[sensitivity]
+negative_keywords = [
+  # 범죄, 사기, 사건사고
+  "fraud", "scam", "crime", "murder", "killed", "assault", "arrest", "prison", "trafficking",
+  "disaster", "tragedy", "accident", "crash", "fire", "death", "died",
+  "사기", "범죄", "살인", "폭행", "구속", "체포", "참사", "사고", "화재", "사망",
+  # 스캔들, 비리, 정치 갈등
+  "scandal", "corruption", "bribery", "impeach", "protest", "martial law", "lawsuit",
+  "스캔들", "비리", "부패", "뇌물", "탄핵", "시위", "계엄", "소송",
+  # 사회 문제 (민감도 높음)
+  "suicide", "depression", "bullying", "abuse", "discrimination", "racism", "inequality",
+  "birth rate", "fertility", "dark side", "problem with", "worst",
+  "자살", "우울", "왕따", "학폭", "학대", "갑질", "차별", "양극화", "저출산", "출산율", "n포",
+  # 외교, 안보 갈등
+  "missile", "nuclear", "war", "dispute",
+  "미사일", "핵무기", "북핵", "전쟁", "분쟁",
+]
+
+# 자동 수집 소스
+[sources]
+# 외국인이 실제로 궁금해하는 것 (수요 측)
+reddit_subreddits = ["korea", "southkorea", "Living_in_Korea", "koreatravel"]
+reddit_timeframe = "week"  # hour, day, week, month, year, all
+
+# 한국 뉴스 RSS (소재 측). 주소는 언론사 사정으로 바뀔 수 있으니 주기적으로 확인하세요.
+rss_feeds = [
+  "https://en.yna.co.kr/RSS/news.xml",
+  "https://www.koreaherald.com/rss/newsAll",
+]
+
+# 네이버 뉴스 검색 API 검색어 (NAVER_CLIENT_ID/SECRET 필요)
+naver_queries = ["외국인 한국 문화", "K-푸드 해외 반응", "삼성 반도체", "서울 생활비", "한국 여행 외국인"]
+
+# ── 음성 ──────────────────────────────────────────────
+# 메인은 Skye. 콘텐츠 축별로 서브 목소리를 배정합니다.
+[voice_assignment]
+default = "skye"            # 아래에 없는 축, 또는 축이 정해지지 않은 주제
+society = "skye"
+travel = "skye"
+economy_money = "miles"     # 차분하고 신뢰감 있는 톤 → 돈, 경제
+business_tech = "fenrir"    # 빠르고 에너지 있는 톤 → 기업, 기술
+korea_vs_world = "skye"
+
+[voices.skye]
+provider = "higgsfield"
+variant = "seed_speech"     # elevenlabs | minimax | seed_speech
+voice_id = "1fb253b8-928b-4d29-a349-f242a71eaddf"
+
+[voices.juno]                # Dr. Kangfree (2026-09-29, Skye 대신: 억양이 가장 큼). 앵커보다 약 5.7 dB 작게 나와서 올려서 씀
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "a3ce02fe-4d3e-55bc-b4d4-a4801b9acdb4"
+
+[voices.chloe]               # Dr. Kangfree (2026-09-29, 운영자 선택: Skye → Juno → Chloe). 음량은 줄마다 앵커에 맞춤
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "e9cfbbf0-4476-46be-b396-596eb774b165"
+
+[voices.desmond]             # Chef Garden Clamsay (2026-09-30, 운영자 선택). 다른 후보: Bob, Sterling, Grady
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "563f728c-e249-5a85-97ab-8461e8c09da6"
+
+[voices.bram]                # Offbeat (2026-09-30, 운영자 선택). 음성 생성 때 변형(elevenlabs 등)을 시험해서 정함
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "549ff70a-3ee7-4f04-a4d9-89a24fab7709"
+
+[voices.marcus]              # Bill Dusk (2026-09-30, 운영자 선택). 음성 생성 때 변형을 시험해서 정함
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+
+[voices.miles]
+provider = "higgsfield"
+variant = "elevenlabs"
+voice_id = "e18664a7-ee4f-5273-acf8-533eb24cd366"
+
+[voices.fenrir]
+provider = "kokoro"         # 무료, 내 PC에서 실행
+voice = "am_fenrir"
+speed = 1.05
+
+[higgsfield]
+# Higgsfield API의 음성 생성(text2speech_v2) 애플리케이션 경로.
+# 문서(https://docs.higgsfield.ai)에서 확인해 채워주세요. 비어 있으면 Higgsfield 목소리는 에러로 멈춥니다.
+tts_application = ""
+
+[kokoro]
+# 모델 파일 (약 350MB): https://github.com/thewh1teagle/kokoro-onnx/releases/tag/model-files-v1.0
+model_path = "models/kokoro-v1.0.onnx"
+voices_path = "models/voices-v1.0.bin"
+
+# ── 편집 ──────────────────────────────────────────────
+[editor]
+# Montserrat ExtraBold 권장 (Google Fonts, OFL 라이선스). 없으면 Pillow 기본 폰트로 대체됩니다.
+font_path = "assets/fonts/Montserrat-ExtraBold.ttf"
+whisper_model = "base.en"
+
+# ── 배경 이미지 ────────────────────────────────────────
+# 대본 한 줄 = 이미지 한 장. 출처 우선순위: 스톡 사진(무료) → AI 이미지(유료) → 텍스트 카드(무료, 항상 성공)
+[visuals]
+allow_ai = true   # false 로 두면 크레딧을 쓰지 않고 스톡 사진과 텍스트 카드만 씁니다
+# Higgsfield SDK 문서에 예시로 나오는 이미지 생성 경로입니다.
+ai_application = "bytedance/seedream/v4/text-to-image"
+
+[visuals.ai_arguments]
+resolution = "2K"
+aspect_ratio = "9:16"
+
+# 음성이 잘못 읽는 이름 교정: 대본 표기 = "음성이 읽을 표기"
+[pronunciation]
+"Master K" = "Master Kay"
+"K's Take" = "Kay's Take"
+"It's K" = "It's Kay"
+"Bukang-i" = "Boo-kahng-ee"
+"Psy" = "Sigh"
+"Chuseok" = "Choo-suk"
+
+# 출연진: 캐릭터마다 목소리 고정 (에피소드 대본의 "who"와 같은 키)
+[cast.anchor]
+name = "Master K"
+label = "MASTER K"
+voice = "miles"
+
+[cast.panel]
+name = "Dr. Kangfree"
+label = "DR. KANGFREE"
+voice = "chloe"
+
+[cast.chef]
+name = "Chef Garden Clamsay"
+label = "CHEF CLAMSAY"
+voice = "desmond"
+
+[cast.kpop]
+name = "Offbeat"
+label = "OFFBEAT"
+voice = "bram"
+
+[cast.tech]
+name = "Bill Dusk"
+label = "BILL DUSK"
+voice = "marcus"

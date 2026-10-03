@@ -1,0 +1,8 @@
+# 음성, 편집 단계에 필요한 패키지 (수집, 대본 단계만 쓸 때는 필요 없음)
+moviepy>=2.1
+faster-whisper>=1.0
+kokoro-onnx>=0.4
+soundfile>=0.12
+higgsfield-client>=0.1
+numpy
+Pillow>=10.1

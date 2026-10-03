@@ -1,0 +1,8 @@
+*.mp3
+*.wav
+list_*.txt
+urls.txt
+seg/
+named_*.mp4
+l_*.txt
+chk.png

@@ -1,0 +1,1194 @@
+{
+ "episode": "INTRO",
+ "anchor": "anchor",
+ "category": "food_life",
+ "desk": "MEET THE CREW",
+ "headline": "Meet the Four Eyes Report crew",
+ "hook": "Korean food is spicy.\nOne of us died.",
+ "characters": {
+  "panel": {
+   "head": "../../cast/kangfree_head.png",
+   "body": "../../cast/kangfree_body.png",
+   "ref": "../../cast/kangfree_ref.png",
+   "x": 330,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  },
+  "chef": {
+   "head": "../../cast/chef_head.png",
+   "body": "../../cast/chef_body.png",
+   "ref": "../../cast/chef_ref.png",
+   "x": 1560,
+   "label": "CHEF CLAMSAY",
+   "shoulders": 520,
+   "white_lens": true,
+   "head_ratio": 0.74,
+   "chin_drop": 0.16,
+   "mood": "frown"
+  },
+  "anchor": {
+   "head": "../../cast/k_head.png",
+   "body": "../../cast/k_body.png",
+   "ref": "../../cast/k_ref.png",
+   "x": 900,
+   "label": "MASTER K"
+  }
+ },
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "still": "../../assets/group/cast_debate.jpg",
+ "still_credit": "AI-generated illustration",
+ "end_card": {
+  "title": "FOLLOW FOR MORE",
+  "line": "New episodes every Friday on YouTube"
+ },
+ "full_episode_where": "on YouTube",
+ "up_next": [
+  "Stay curious. Keep your lenses clean."
+ ],
+ "lines": [
+  {
+   "who": "anchor",
+   "text": "Hello, world. I'm Master K, and this is the Four Eyes Report: Korea's stories, decoded for everyone who isn't in Korea.",
+   "audio": "audio/intro_01.mp3",
+   "words": [
+    [
+     "Hello",
+     0.0,
+     0.28
+    ],
+    [
+     "world,",
+     0.28,
+     0.6
+    ],
+    [
+     "I'm",
+     0.96,
+     1.26
+    ],
+    [
+     "Master",
+     1.26,
+     1.58
+    ],
+    [
+     "K,",
+     1.58,
+     1.9
+    ],
+    [
+     "and",
+     2.18,
+     2.42
+    ],
+    [
+     "this",
+     2.42,
+     2.66
+    ],
+    [
+     "is",
+     2.66,
+     2.8
+    ],
+    [
+     "the",
+     2.8,
+     2.96
+    ],
+    [
+     "Four",
+     2.96,
+     3.26
+    ],
+    [
+     "Eyes",
+     3.26,
+     3.5
+    ],
+    [
+     "Report,",
+     3.5,
+     3.92
+    ],
+    [
+     "Korea's",
+     4.6,
+     5.04
+    ],
+    [
+     "stories,",
+     5.04,
+     5.46
+    ],
+    [
+     "decoded",
+     5.9,
+     6.3
+    ],
+    [
+     "for",
+     6.3,
+     6.54
+    ],
+    [
+     "everyone",
+     6.54,
+     7.08
+    ],
+    [
+     "who",
+     7.08,
+     7.44
+    ],
+    [
+     "isn't",
+     7.44,
+     7.98
+    ],
+    [
+     "in",
+     7.98,
+     8.18
+    ],
+    [
+     "Korea.",
+     8.18,
+     8.46
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    615,
+    500,
+    1.22
+   ],
+   "ease": 0.14
+  },
+  {
+   "who": "panel",
+   "text": "I'm Dr. Kangfree, the co-host! I LOVE Korean food, so today we have a very special guest: Chef Garden Clamsay!",
+   "audio": "audio/intro_02.mp3",
+   "words": [
+    [
+     "I'm",
+     0.0,
+     0.24
+    ],
+    [
+     "Dr.",
+     0.24,
+     0.48
+    ],
+    [
+     "Kangfree,",
+     0.66,
+     0.94
+    ],
+    [
+     "the",
+     1.08,
+     1.14
+    ],
+    [
+     "co-host!",
+     1.14,
+     1.58
+    ],
+    [
+     "I",
+     2.12,
+     2.36
+    ],
+    [
+     "LOVE",
+     2.36,
+     2.84
+    ],
+    [
+     "Korean",
+     2.84,
+     3.26
+    ],
+    [
+     "food,",
+     3.26,
+     3.62
+    ],
+    [
+     "so",
+     4.0,
+     4.06
+    ],
+    [
+     "today",
+     4.06,
+     4.34
+    ],
+    [
+     "we",
+     4.44,
+     4.66
+    ],
+    [
+     "have",
+     4.66,
+     4.78
+    ],
+    [
+     "a",
+     4.78,
+     4.92
+    ],
+    [
+     "very",
+     4.92,
+     5.22
+    ],
+    [
+     "special",
+     5.22,
+     5.58
+    ],
+    [
+     "guest:",
+     5.58,
+     5.88
+    ],
+    [
+     "Chef",
+     6.58,
+     6.68
+    ],
+    [
+     "Garden",
+     6.68,
+     7.18
+    ],
+    [
+     "Clamsay!",
+     7.18,
+     7.86
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    615,
+    500,
+    1.22
+   ],
+   "ease": 0.14
+  },
+  {
+   "who": "chef",
+   "text": "Thanks for having me. Korean food is spicy.",
+   "audio": "audio/intro_03.mp3",
+   "words": [
+    [
+     "Thanks",
+     0.0,
+     0.3
+    ],
+    [
+     "for",
+     0.3,
+     0.46
+    ],
+    [
+     "having",
+     0.46,
+     0.68
+    ],
+    [
+     "me.",
+     0.68,
+     0.94
+    ],
+    [
+     "Korean",
+     1.24,
+     1.44
+    ],
+    [
+     "food",
+     1.44,
+     1.84
+    ],
+    [
+     "is",
+     1.84,
+     2.18
+    ],
+    [
+     "spicy.",
+     2.18,
+     2.48
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    1560,
+    470,
+    1.28
+   ],
+   "ease": 0.06
+  },
+  {
+   "who": "chef",
+   "text": "Koreans are obsessed with spicy.",
+   "audio": "audio/intro_05.mp3",
+   "words": [
+    [
+     "Koreans",
+     0.0,
+     0.52
+    ],
+    [
+     "are",
+     0.52,
+     0.86
+    ],
+    [
+     "obsessed",
+     0.86,
+     1.4
+    ],
+    [
+     "with",
+     1.4,
+     1.88
+    ],
+    [
+     "spicy.",
+     1.88,
+     2.2
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    1560,
+    470,
+    1.15
+   ],
+   "ease": 0.1
+  },
+  {
+   "who": "anchor",
+   "text": "Technically, most Korean food isn't spicy.",
+   "audio": "audio/intro_06.mp3",
+   "words": [
+    [
+     "Technically,",
+     0.0,
+     0.7
+    ],
+    [
+     "most",
+     1.06,
+     1.26
+    ],
+    [
+     "Korean",
+     1.26,
+     1.66
+    ],
+    [
+     "food",
+     1.66,
+     2.02
+    ],
+    [
+     "isn't",
+     2.02,
+     2.58
+    ],
+    [
+     "spicy.",
+     2.58,
+     2.86
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    900,
+    470,
+    1.3
+   ],
+   "ease": 0.12
+  },
+  {
+   "who": "chef",
+   "text": "Then explain last night. Three of us boiled fire noodles.",
+   "audio": "audio/intro_07.mp3",
+   "words": [
+    [
+     "Then",
+     0.0,
+     0.22
+    ],
+    [
+     "explain",
+     0.22,
+     0.56
+    ],
+    [
+     "last",
+     0.56,
+     0.8
+    ],
+    [
+     "night.",
+     0.8,
+     1.38
+    ],
+    [
+     "Three",
+     1.68,
+     1.84
+    ],
+    [
+     "of",
+     1.84,
+     1.92
+    ],
+    [
+     "us",
+     1.92,
+     2.08
+    ],
+    [
+     "boiled",
+     2.08,
+     2.32
+    ],
+    [
+     "fire",
+     2.32,
+     2.7
+    ],
+    [
+     "noodles.",
+     2.7,
+     2.96
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    1230,
+    500,
+    1.12
+   ],
+   "ease": 0.08
+  },
+  {
+   "who": "anchor",
+   "text": "And?",
+   "audio": "audio/intro_08.mp3",
+   "words": [
+    [
+     "And?",
+     0.0,
+     0.34
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    900,
+    470,
+    1.3
+   ],
+   "ease": 0.14
+  },
+  {
+   "who": "chef",
+   "text": "One of us died. Nobody noticed for an hour.",
+   "audio": "audio/intro_09.mp3",
+   "words": [
+    [
+     "One",
+     0.0,
+     0.18
+    ],
+    [
+     "of",
+     0.18,
+     0.26
+    ],
+    [
+     "us",
+     0.26,
+     0.36
+    ],
+    [
+     "died.",
+     0.36,
+     0.74
+    ],
+    [
+     "Nobody",
+     1.28,
+     1.46
+    ],
+    [
+     "noticed",
+     1.46,
+     1.86
+    ],
+    [
+     "for",
+     1.86,
+     2.08
+    ],
+    [
+     "an",
+     2.08,
+     2.18
+    ],
+    [
+     "hour.",
+     2.18,
+     2.32
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    1560,
+    470,
+    1.35
+   ],
+   "ease": 0.12
+  },
+  {
+   "who": "panel",
+   "text": "WHAT?!",
+   "audio": "audio/intro_10.mp3",
+   "words": [
+    [
+     "WHAT?!",
+     0.0,
+     0.72
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    330,
+    470,
+    1.35
+   ],
+   "ease": 0.3
+  },
+  {
+   "who": "chef",
+   "text": "So I looked it up. Koreans say, \"Two people eat, one drops dead, the other won't notice.\"",
+   "audio": "audio/intro_11.mp3",
+   "words": [
+    [
+     "So",
+     0.0,
+     0.2
+    ],
+    [
+     "I",
+     0.2,
+     0.3
+    ],
+    [
+     "looked",
+     0.3,
+     0.4
+    ],
+    [
+     "it",
+     0.4,
+     0.56
+    ],
+    [
+     "up.",
+     0.56,
+     0.88
+    ],
+    [
+     "Koreans",
+     1.54,
+     1.64
+    ],
+    [
+     "say,",
+     1.64,
+     1.98
+    ],
+    [
+     "\"Two",
+     1.98,
+     2.7
+    ],
+    [
+     "people",
+     2.7,
+     2.98
+    ],
+    [
+     "eat,",
+     2.98,
+     3.3
+    ],
+    [
+     "one",
+     3.72,
+     3.9
+    ],
+    [
+     "drops",
+     3.9,
+     4.16
+    ],
+    [
+     "dead,",
+     4.16,
+     4.52
+    ],
+    [
+     "the",
+     4.94,
+     5.04
+    ],
+    [
+     "other",
+     5.04,
+     5.18
+    ],
+    [
+     "won't",
+     5.18,
+     5.56
+    ],
+    [
+     "notice.\"",
+     5.56,
+     5.84
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    1560,
+    470,
+    1.2
+   ],
+   "ease": 0.1
+  },
+  {
+   "who": "anchor",
+   "text": "It's a compliment. It means the food is that good.",
+   "audio": "audio/intro_12.mp3",
+   "words": [
+    [
+     "It's",
+     0.0,
+     0.28
+    ],
+    [
+     "a",
+     0.28,
+     0.36
+    ],
+    [
+     "compliment.",
+     0.36,
+     0.7
+    ],
+    [
+     "It",
+     1.16,
+     1.28
+    ],
+    [
+     "means",
+     1.28,
+     1.5
+    ],
+    [
+     "the",
+     1.5,
+     1.72
+    ],
+    [
+     "food",
+     1.72,
+     1.94
+    ],
+    [
+     "is",
+     1.94,
+     2.14
+    ],
+    [
+     "that",
+     2.14,
+     2.38
+    ],
+    [
+     "good.",
+     2.38,
+     2.64
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    900,
+    470,
+    1.3
+   ],
+   "ease": 0.12
+  },
+  {
+   "who": "chef",
+   "text": "Then it was the best noodles of my life.",
+   "audio": "audio/intro_13.mp3",
+   "words": [
+    [
+     "Then",
+     0.0,
+     0.18
+    ],
+    [
+     "it",
+     0.18,
+     0.26
+    ],
+    [
+     "was",
+     0.26,
+     0.36
+    ],
+    [
+     "the",
+     0.36,
+     0.54
+    ],
+    [
+     "best",
+     0.54,
+     0.8
+    ],
+    [
+     "noodles",
+     0.8,
+     1.14
+    ],
+    [
+     "of",
+     1.14,
+     1.36
+    ],
+    [
+     "my",
+     1.36,
+     1.52
+    ],
+    [
+     "life.",
+     1.52,
+     1.76
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    1560,
+    470,
+    1.4
+   ],
+   "ease": 0.1,
+   "mood": {
+    "chef": "neutral"
+   }
+  },
+  {
+   "who": "panel",
+   "text": "Wait. WAIT. Who died?!",
+   "audio": "audio/intro_14.mp3",
+   "words": [
+    [
+     "Wait.",
+     0.0,
+     0.4
+    ],
+    [
+     "WAIT.",
+     1.0,
+     1.22
+    ],
+    [
+     "Who",
+     1.94,
+     2.04
+    ],
+    [
+     "died?!",
+     2.04,
+     2.5
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    330,
+    470,
+    1.35
+   ],
+   "ease": 0.3
+  },
+  {
+   "who": "chef",
+   "text": "...Great question.",
+   "audio": "audio/intro_15.mp3",
+   "words": [
+    [
+     "...Great",
+     0.0,
+     0.26
+    ],
+    [
+     "question.",
+     0.26,
+     0.64
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    1560,
+    470,
+    1.2
+   ],
+   "ease": 0.04
+  },
+  {
+   "who": "panel",
+   "text": "And Korea has a lot of hot news!",
+   "audio": "audio/intro_17.mp3",
+   "words": [
+    [
+     "And",
+     0.0,
+     0.18
+    ],
+    [
+     "Korea",
+     0.18,
+     0.48
+    ],
+    [
+     "has",
+     0.48,
+     0.88
+    ],
+    [
+     "a",
+     0.88,
+     1.0
+    ],
+    [
+     "lot",
+     1.0,
+     1.24
+    ],
+    [
+     "of",
+     1.24,
+     1.42
+    ],
+    [
+     "hot",
+     1.42,
+     1.64
+    ],
+    [
+     "news!",
+     1.64,
+     1.94
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    615,
+    500,
+    1.22
+   ],
+   "ease": 0.1
+  },
+  {
+   "who": "anchor",
+   "text": "Maybe the three of us aren't enough. We explain Korea's news and culture, with charts.",
+   "audio": "audio/intro_18.mp3",
+   "words": [
+    [
+     "Maybe",
+     0.0,
+     0.34
+    ],
+    [
+     "the",
+     0.34,
+     0.6
+    ],
+    [
+     "three",
+     0.6,
+     0.88
+    ],
+    [
+     "of",
+     0.88,
+     1.04
+    ],
+    [
+     "us",
+     1.04,
+     1.26
+    ],
+    [
+     "aren't",
+     1.26,
+     1.7
+    ],
+    [
+     "enough.",
+     1.7,
+     2.04
+    ],
+    [
+     "We",
+     2.84,
+     3.02
+    ],
+    [
+     "explain",
+     3.02,
+     3.46
+    ],
+    [
+     "Korea's",
+     3.46,
+     4.02
+    ],
+    [
+     "news",
+     4.02,
+     4.24
+    ],
+    [
+     "and",
+     4.24,
+     4.5
+    ],
+    [
+     "culture,",
+     4.5,
+     4.92
+    ],
+    [
+     "with",
+     4.92,
+     5.56
+    ],
+    [
+     "charts.",
+     5.56,
+     5.94
+    ]
+   ],
+   "shot": "cam",
+   "cam": [
+    615,
+    500,
+    1.22
+   ],
+   "ease": 0.08
+  },
+  {
+   "who": "panel",
+   "text": "Curious about the rest of the desk?",
+   "audio": "audio/intro_19.mp3",
+   "words": [
+    [
+     "Curious",
+     0.0,
+     0.38
+    ],
+    [
+     "about",
+     0.38,
+     0.64
+    ],
+    [
+     "the",
+     0.64,
+     0.78
+    ],
+    [
+     "rest",
+     0.78,
+     0.94
+    ],
+    [
+     "of",
+     0.94,
+     1.1
+    ],
+    [
+     "the",
+     1.1,
+     1.18
+    ],
+    [
+     "desk?",
+     1.18,
+     1.48
+    ]
+   ],
+   "shot": "still",
+   "tags": [
+    {
+     "text": "PROF. INDOOR",
+     "x": 0.085,
+     "y": 0.5,
+     "at": 0.15
+    },
+    {
+     "text": "BILL DUSK",
+     "x": 0.178,
+     "y": 0.56,
+     "at": 0.44999999999999996
+    },
+    {
+     "text": "MAX RISE",
+     "x": 0.275,
+     "y": 0.5,
+     "at": 0.75
+    },
+    {
+     "text": "MS. NONFIC",
+     "x": 0.36,
+     "y": 0.56,
+     "at": 1.0499999999999998
+    },
+    {
+     "text": "DR. H",
+     "x": 0.42,
+     "y": 0.5,
+     "at": 1.3499999999999999
+    },
+    {
+     "text": "WHISTLE JOE",
+     "x": 0.7,
+     "y": 0.56,
+     "at": 1.65
+    },
+    {
+     "text": "OFFBEAT",
+     "x": 0.91,
+     "y": 0.5,
+     "at": 1.9499999999999997
+    }
+   ]
+  },
+  {
+   "who": "anchor",
+   "text": "Then visit our YouTube channel. New episodes every Friday.",
+   "audio": "audio/intro_20.mp3",
+   "words": [
+    [
+     "Then",
+     0.0,
+     0.22
+    ],
+    [
+     "visit",
+     0.22,
+     0.54
+    ],
+    [
+     "our",
+     0.54,
+     0.74
+    ],
+    [
+     "YouTube",
+     0.74,
+     1.02
+    ],
+    [
+     "channel.",
+     1.02,
+     1.5
+    ],
+    [
+     "New",
+     1.9,
+     2.12
+    ],
+    [
+     "episodes",
+     2.12,
+     2.58
+    ],
+    [
+     "every",
+     2.58,
+     3.2
+    ],
+    [
+     "Friday.",
+     3.2,
+     3.6
+    ]
+   ],
+   "shot": "still"
+  },
+  {
+   "who": "anchor",
+   "text": "Stay curious. Keep your lenses clean.",
+   "audio": "audio/intro_22.mp3",
+   "words": [
+    [
+     "Stay",
+     0.0,
+     0.4
+    ],
+    [
+     "curious.",
+     0.4,
+     0.88
+    ],
+    [
+     "Keep",
+     1.52,
+     1.62
+    ],
+    [
+     "your",
+     1.62,
+     1.84
+    ],
+    [
+     "lenses",
+     1.84,
+     2.18
+    ],
+    [
+     "clean.",
+     2.18,
+     2.68
+    ]
+   ],
+   "shot": "still"
+  }
+ ],
+ "out_long": "render/intro_long.mp4",
+ "out_short": "render/intro_reel.mp4"
+}

@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+output/
+models/
+assets/fonts/*.ttf
+!assets/fonts/Poppins-Bold.ttf

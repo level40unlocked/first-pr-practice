@@ -1,0 +1,95 @@
+{
+ "episode": 12,
+ "category": "food_life",
+ "desk": "K-FOOD",
+ "topic": [
+  2,
+  5
+ ],
+ "headline": "Korean convenience stores have a ramen machine",
+ "hook": "A ramen MACHINE?!\nOnly in Korea",
+ "up_next": [
+  "Seoul's 24-hour libraries",
+  "Why every Korean app has a mascot",
+  "The 1,000-won coffee war"
+ ],
+ "characters": {
+  "anchor": {
+   "head": "a_head.png",
+   "body": "a_body.png",
+   "ref": "a_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "panel": {
+   "head": "p_head.png",
+   "body": "p_body.png",
+   "ref": "p_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "chin_drop": 0.12,
+   "shoulders": 500
+  }
+ },
+ "screens": {
+  "s1": {
+   "image": "store_street.png",
+   "label": "BY THE NUMBERS",
+   "credit": "AI-generated image"
+  },
+  "s2": {
+   "image": "ramen_station.png",
+   "label": "THE MACHINE",
+   "credit": "AI-generated image"
+  }
+ },
+ "lines": [
+  {
+   "who": "anchor",
+   "audio": "l1.mp3",
+   "text": "Good evening. This is the Four Eyes Report. Tonight: Korean convenience stores."
+  },
+  {
+   "who": "anchor",
+   "audio": "l2.mp3",
+   "screen": "s1",
+   "text": "Korea has over fifty thousand of them. In some neighborhoods, you can see one store from the door of another."
+  },
+  {
+   "who": "anchor",
+   "audio": "l3.mp3",
+   "screen": "s2",
+   "big": true,
+   "text": "And inside some of them... is this. A ramen cooking machine."
+  },
+  {
+   "who": "panel",
+   "audio": "l4.mp3",
+   "text": "Wait. A machine? That cooks ramen? For you?!"
+  },
+  {
+   "who": "anchor",
+   "audio": "l5.mp3",
+   "text": "Statistically speaking, yes. You press one button."
+  },
+  {
+   "who": "panel",
+   "audio": "l6.mp3",
+   "text": "I have been boiling water like a caveman my entire life."
+  },
+  {
+   "who": "anchor",
+   "audio": "l7.mp3",
+   "text": "Doctor Jiyoung, please stay calm. This is a serious news program."
+  },
+  {
+   "who": "panel",
+   "audio": "l8.mp3",
+   "text": "I am NOT calm! I'm booking a flight to Seoul!"
+  }
+ ],
+ "out_long": "episode_long.mp4",
+ "out_short": "episode_short.mp4"
+}

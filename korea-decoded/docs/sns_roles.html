@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SNS 역할 분담</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#16202e;--sub:#5b6676;--line:#e3e7ec;--me:#1f5fbf;--me-bg:#eaf1fc;--you:#b4540a;--you-bg:#fdf1e6;--hi:#1b8a4b;--mid:#b07d00;--lo:#8a93a0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151b;--card:#1a2029;--ink:#e8ecf2;--sub:#9aa5b4;--line:#2b3441;--me:#7fb0ff;--me-bg:#1b2a42;--you:#ffb36b;--you-bg:#3a2a1a;--hi:#4cc987;--mid:#e0b84a;--lo:#7d8794}}
+:root[data-theme="dark"]{--bg:#11151b;--card:#1a2029;--ink:#e8ecf2;--sub:#9aa5b4;--line:#2b3441;--me:#7fb0ff;--me-bg:#1b2a42;--you:#ffb36b;--you-bg:#3a2a1a;--hi:#4cc987;--mid:#e0b84a;--lo:#7d8794}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;padding:24px 16px}
+.wrap{max-width:1040px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px}
+p.lead{color:var(--sub);margin:0 0 18px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px;font-size:13px;color:var(--sub)}
+.legend b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:middle}
+.grid{display:grid;grid-template-columns:150px 1fr 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.h{font-weight:700;font-size:13px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.h.me{color:var(--me);background:var(--me-bg)}.h.you{color:var(--you);background:var(--you-bg)}
+.p,.c{padding:12px 14px;border-bottom:1px solid var(--line)}
+.row:last-child>div{border-bottom:0}
+.row{display:contents}
+.p{font-weight:700}
+.p small{display:block;font-weight:600;font-size:12px;margin-top:4px}
+.c ul{margin:0;padding-left:18px}.c li{margin:2px 0}
+.c.me{border-left:3px solid var(--me)}.c.you{border-left:3px solid var(--you)}
+.hi{color:var(--hi)}.mid{color:var(--mid)}.lo{color:var(--lo)}
+.note{font-size:12px;color:var(--sub)}
+@media (max-width:720px){
+ .grid{grid-template-columns:1fr}
+ .h.plat{display:none}.h.me,.h.you{display:none}
+ .p{background:var(--bg);border-top:1px solid var(--line)}
+ .c.me::before{content:"Claude가 할 수 있는 것";display:block;font-size:12px;font-weight:700;color:var(--me);margin-bottom:4px}
+ .c.you::before{content:"운영자가 할 것";display:block;font-size:12px;font-weight:700;color:var(--you);margin-bottom:4px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>SNS별 역할 분담</h1>
+<p class="lead">Four Eyes Report · 영상 하나(세로 9:16)를 여러 곳에 재사용하는 기준</p>
+<div class="legend"><span><b style="background:var(--me)"></b>Claude가 할 수 있는 것</span><span><b style="background:var(--you)"></b>운영자가 해야 하는 것</span><span>자동화: <span class="hi">●높음</span> <span class="mid">●중간</span> <span class="lo">●낮음</span></span></div>
+
+<div class="grid">
+ <div class="h plat">SNS</div><div class="h me">Claude가 할 수 있는 것</div><div class="h you">운영자가 해야 하는 것</div>
+
+ <div class="row">
+  <div class="p">YouTube<small class="hi">● 높음 (지금 운영 중)</small></div>
+  <div class="c me"><ul><li>롱폼·쇼츠 렌더</li><li>업로드 + 예약 공개 + 썸네일</li><li>제목·설명·태그 작성과 수정</li><li>자막 파일(SRT), 썸네일 2~3안</li><li>매주 성과 분석 <span class="note">(토큰 범위 추가 시)</span></li></ul></div>
+  <div class="c you"><ul><li>썸네일·제목 A/B 테스트 등록</li><li>쇼츠 "관련 동영상" 지정</li><li>자막 업로드 <span class="note">(토큰 범위 추가 전까지)</span></li><li>토큰 재발급 <span class="note">(약 7일마다)</span></li><li>첫 1시간 댓글 응대, 고정 댓글</li></ul></div>
+ </div>
+
+ <div class="row">
+  <div class="p">TikTok<small class="hi">● 높음 (연결 후)</small></div>
+  <div class="c me"><ul><li>틱톡용 영상 버전 (끝 화면 문구 교체)</li><li>캡션·해시태그</li><li>유행 음악 찾기</li><li>게시 <span class="note">(Higgsfield 틱톡 연결 후, 아직 미검증)</span></li></ul></div>
+  <div class="c you"><ul><li>계정 만들기, @FourEyesReport 선점</li><li>Higgsfield 틱톡 연결 승인 (1회)</li><li>댓글 응대</li></ul></div>
+ </div>
+
+ <div class="row">
+  <div class="p">Instagram<small class="mid">● 중간 (준비하면 높음)</small></div>
+  <div class="c me"><ul><li>릴스 영상 (쇼츠 재활용)</li><li>카드뉴스 이미지 5~8장 자동 생성</li><li>캡션·해시태그</li><li>API 자동 게시 <span class="note">(아래 준비 끝나면)</span></li></ul></div>
+  <div class="c you"><ul><li>계정 만들기 → 크리에이터 계정 전환</li><li>페이스북 페이지 연결</li><li>Meta 개발자 앱·토큰 발급 → 환경 변수 등록</li><li>그 전까진 직접 게시</li><li>스토리, 댓글·DM 응대</li></ul></div>
+ </div>
+
+ <div class="row">
+  <div class="p">Facebook<small class="lo">● 낮음 (자동 공유로 충분)</small></div>
+  <div class="c me"><ul><li>따로 할 일 거의 없음</li></ul></div>
+  <div class="c you"><ul><li>페이지 만들기</li><li>인스타 → 페이스북 자동 공유 켜기</li></ul></div>
+ </div>
+
+ <div class="row">
+  <div class="p">Reddit<small class="lo">● 낮음 (클라우드 접속 차단)</small></div>
+  <div class="c me"><ul><li>주제 리서치 (레딧 아카이브 분석)</li><li>글·첫 댓글 초안 (<code>promo.md</code>)</li><li>커뮤니티별 규칙 정리</li></ul></div>
+  <div class="c you"><ul><li>게시 (오래된 계정일수록 유리)</li><li>댓글 대화</li><li>자기 홍보 규칙 지키기</li></ul></div>
+ </div>
+
+ <div class="row">
+  <div class="p">X · Threads<small class="lo">● 낮음 (나중에)</small></div>
+  <div class="c me"><ul><li>글 초안</li></ul></div>
+  <div class="c you"><ul><li>지금은 이름만 선점</li><li>나중에 게시</li></ul></div>
+ </div>
+</div>
+<p class="note" style="margin-top:12px">공통 규칙: 모든 글은 영어(한국어 금지) · 계정 로그인과 비밀번호는 운영자만 · API 키·토큰은 채팅이 아니라 환경 변수에</p>
+</div>
+</body>
+</html>
