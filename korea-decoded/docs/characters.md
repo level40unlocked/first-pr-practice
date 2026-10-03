@@ -119,7 +119,7 @@
 | 외모 | 기존 여행 백패커 원본 그대로: 젊은 여성, 웨이브 머리에 머스터드 비니, 대모갑 원형 안경, 틸색 바람막이, 카메라. 설정 `"shoulders": 520, "white_lens": true` (head_ratio 자동) |
 | 성격·개그 | 정보는 정확하고 열정적. 고정 개그: "I've been there!" / K "Physically?" / "...Emotionally." |
 | 역할 | 여행 꼭지의 정보(교통, 비용, 꿀팁)는 사실대로 전달. 개그는 본인이 안 가 봤다는 것만 |
-| 목소리 | 미정 (여성, 20대, 밝고 수다스러운 톤) |
+| 목소리 | ✅ **Annie** (Higgsfield 프리셋, `f2801b0f-e345-598e-86f5-8364d886d96b`, text2speech_v2 variant elevenlabs, 2026-10-03 운영자 선택. 후보 Pixie / Daisy / Evie / Kayla / Zoe와 비교) |
 
 ## 두 사람의 관계
 - 대학원 시절 같은 연구실 선후배. K는 "정리하는 사람", Dr. Kangfree는 "어지르는 사람". Dr. Kangfree가 "Core" 별명을 가장 열심히 퍼뜨림
