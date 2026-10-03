@@ -18,11 +18,12 @@ import sys
 import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
 
+import charts
 import dialog as dg
 import newsrig as nr
 
 W, H, FPS, SW, SH = nr.W, nr.H, nr.FPS, nr.SW, nr.SH
-WORLD_W = 4700  # studio wider than the frame: room for a panel seat far left and a guest seat far right, so a close-up never catches the neighbour
+WORLD_W = 5300  # studio wider than the frame: room for a panel seat far left and a guest seat far right, so a close-up never catches the neighbour
 OX = (WORLD_W - W) // 2  # scene x (0..1920) -> world x
 DESK_Y = dg.DESK_Y
 
@@ -173,7 +174,7 @@ def ease(u):
 def prepare_screen(key, spec):
     """Loads one screen: a picture (with baked-in text overlays) or a number card."""
     out = {**spec, "key": key}
-    if "card" in spec:
+    if "card" in spec or "chart" in spec:
         return out
     img = Image.open(spec["image"]).convert("RGB")
     img = fit_cover(img, 1650, 929)  # a bit bigger than the full-size box, room for the slow push
@@ -241,6 +242,8 @@ def card_image(card, w, h, t):
 
 
 def screen_content(scr, w, h, t_local):
+    if "chart" in scr:
+        return charts.draw(scr["chart"], w, h, t_local)
     if "card" in scr:
         return card_image(scr["card"], w, h, t_local)
     return ken_burns(scr["img"], w, h, t_local / KB_SECONDS, scr["kb"])
@@ -511,8 +514,8 @@ def main():
             target = [ax, 480, 1.25]
         elif shot == "anchor_screen":
             target = [ax - ANCHOR_VIEW_X + W / 2, 540, 1.0]
-        elif shot == "k_screen":  # view starts 290 px left of the anchor, 1.5x zoom: his left neighbour stays out
-            target = [ax + 350, 470, 1.5]
+        elif shot == "k_screen":  # the speaker (anchor or a guest) on the left, the screen on the right, 1.5x zoom
+            target = [p.x + OX + 350, 470, 1.5]
         elif shot == "screen_full":  # desk center, so the big screen covers everyone instead of cutting a face
             target = [WORLD_W / 2, 540, 1.0]
         elif shot == "two_shot":
@@ -626,7 +629,7 @@ def main():
             # tags and lower third are laid out for the centered crop; keep them fixed in the Short
             for piece, (px, py) in over_short:
                 short_crop.paste(piece, (px - (W - SHORT_W) // 2, py), piece)
-        if chips_on and ln["shot"] not in ("still",):
+        if chips_on and ln["shot"] not in ("still", "screen_full"):
             # name chips just above the lower third, centered under whoever is in frame (never hidden by the bar)
             cd = ImageDraw.Draw(view)
             for k in visible:

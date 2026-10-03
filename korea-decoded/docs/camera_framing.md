@@ -47,3 +47,10 @@
 - **게스트(클램지)는 멀리**(x 2700) 앉혀서 한 화면에 3명 이상이 어색하게 잡히지 않게 한다. 월드 폭 4700(OX 1390).
 - **카메라 이동 금지:** 게스트로 넘어가거나 설명 화면(`k_screen`)으로 갈 때는 팬 없이 **하드 컷**(다른 카메라로 잡은 것처럼). 줄마다 `cam_id`(two / chef / k_screen)를 넣고, `cam_id`가 바뀌면 episode.py가 즉시 컷. 느린 푸시(`push`)는 꺼서 컷 뒤에 줌이 튀지 않게 함.
 - **클램지 목소리:** 한 톤 높임(rubberband pitch 1.09, 길이 유지). 원본은 `audio/v5/`, 처리본은 `audio/v5_pitched/`(둘 다 gitignore).
+
+## 8. 게스트 + 설명 화면, 차트 (EP.3, 2026-10-03)
+- **게스트 시트:** 꼭지마다 게스트 1명, 항상 같은 먼 자리(scene x 2560). K 1290, Kangfree 630. 월드 폭 5300(OX 1690).
+- **설명 화면 구도(`k_screen`)는 말하는 사람 기준**: 말하는 사람(K, Kangfree, 게스트)이 왼쪽, 화면이 오른쪽. 호스트 줄에도 쓸 수 있음(Kangfree가 말하면 K는 화면 뒤에 가려짐).
+- **하드 컷:** `cam_id`가 바뀌면 즉시 컷(two, guest, screen_<누구>). 오프닝 숫자는 `screen_full`(이름 칩 숨김).
+- **차트 모듈 `prototypes/charts.py`:** bars(+badge), hbars(순위), donut, timeline, icons, bigtext(+thermo, hangul), letters, steps, words. 화면 스펙은 `{"chart": {...}, "credit": "Source: ..."}`. 카운터는 기존 `card`.
+- **출처 표기:** 모든 차트·사진에 `credit`(영어)으로 출처를 화면 아래에 표시. 언론사 사진·영상은 쓰지 않음(`docs/media_rules.md`).

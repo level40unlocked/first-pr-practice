@@ -1,0 +1,2114 @@
+{
+ "episode": 3,
+ "name": "render/ep03",
+ "anchor": "anchor",
+ "characters": {
+  "panel": {
+   "head": "../../cast/kangfree_head.png",
+   "body": "../../cast/kangfree_body.png",
+   "ref": "../../cast/kangfree_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  },
+  "anchor": {
+   "head": "../../cast/k_head.png",
+   "body": "../../cast/k_body.png",
+   "ref": "../../cast/k_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "guest": {
+   "head": "../../cast/news_head.png",
+   "body": "../../cast/news_body.png",
+   "ref": "../../cast/news_ref.png",
+   "label": "MS. NONFIC",
+   "shoulders": 520,
+   "white_lens": true,
+   "x": 2560
+  }
+ },
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "outro_ticker": "Stay curious. Keep your lenses clean.",
+ "segments": [
+  {
+   "category": "current_affairs",
+   "desk": "VISITORS",
+   "headline": "Seoul fever: a record year for visitors",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/news_head.png",
+     "body": "../../cast/news_body.png",
+     "ref": "../../cast/news_ref.png",
+     "label": "MS. NONFIC",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "august": {
+     "card": {
+      "title": "AUGUST 2026",
+      "stats": [
+       {
+        "value": 2.25,
+        "decimals": 2,
+        "suffix": " MILLION",
+        "label": "visitors in one month: a record"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Seoul Economic Daily, Sep 28, 2026"
+    },
+    "fever": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "SEOUL",
+       "FEVER"
+      ],
+      "thermo": true
+     },
+     "label": "",
+     "credit": ""
+    },
+    "fevers": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "SEOUL FEVER",
+       "BUSAN FEVER"
+      ],
+      "size": 90
+     },
+     "label": "",
+     "credit": ""
+    },
+    "open_count": {
+     "card": {
+      "title": "FOREIGN VISITORS, JAN–AUG 2026",
+      "stats": [
+       {
+        "value": 15.05,
+        "decimals": 2,
+        "suffix": " MILLION",
+        "label": "a record"
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea JoongAng Daily, Seoul Economic Daily"
+    },
+    "puns": {
+     "chart": {
+      "type": "words",
+      "title": "DR. KANGFREE'S LIST",
+      "words": [
+       "SEOUL-SEARCHING",
+       "SEOUL FOOD",
+       "SEOUL MATE"
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "rank": {
+     "chart": {
+      "type": "hbars",
+      "title": "ASIA'S MOST REVISITED CITIES, H1 2026",
+      "bars": [
+       {
+        "label": "1 Tokyo",
+        "value": 10
+       },
+       {
+        "label": "2 Bangkok",
+        "value": 9
+       },
+       {
+        "label": "3 Bali",
+        "value": 8
+       },
+       {
+        "label": "4 Seoul",
+        "value": 7,
+        "hl": true
+       },
+       {
+        "label": "5 Osaka",
+        "value": 6
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Agoda booking data, via Korea Herald"
+    },
+    "repeat": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "REPEAT",
+       "CUSTOMERS"
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "vs_penn": {
+     "chart": {
+      "type": "bars",
+      "title": "FOREIGN VISITORS (MILLIONS)",
+      "bars": [
+       {
+        "label": "Pennsylvania (people)",
+        "value": 13.0,
+        "text": "≈13M"
+       },
+       {
+        "label": "Korea visitors, Jan–Aug",
+        "value": 15.05,
+        "hl": true,
+        "text": "15.05M"
+       }
+      ],
+      "suffix": "M",
+      "decimals": 2
+     },
+     "label": "",
+     "credit": "Source: Korea JoongAng Daily; U.S. Census Bureau"
+    },
+    "why": {
+     "chart": {
+      "type": "icons",
+      "title": "WHY PEOPLE COME BACK",
+      "items": [
+       [
+        "🎤",
+        "K-content"
+       ],
+       [
+        "🎪",
+        "Festivals"
+       ],
+       [
+        "🍜",
+        "Food"
+       ],
+       [
+        "💄",
+        "Beauty"
+       ],
+       [
+        "🛍️",
+        "Shopping"
+       ],
+       [
+        "🏪",
+        "24h stores"
+       ]
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea Herald"
+    }
+   },
+   "short": false,
+   "hook": "Seoul fever: a record year for visitors",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Fifteen million foreigners visited Korea in just eight months. A record.",
+     "audio": "audio/v1/ep03_01.mp3",
+     "shot": "screen_full",
+     "cam_id": "full",
+     "push": false,
+     "screen": "open_count"
+    },
+    {
+     "who": "panel",
+     "text": "And they didn't just visit. They caught something.",
+     "audio": "audio/v1/ep03_02.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "It's called \"Seoul fever.\"",
+     "audio": "audio/v1/ep03_03.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "fever"
+    },
+    {
+     "who": "anchor",
+     "text": "Hello, world. I'm Master K, and this is the Four Eyes Report.",
+     "audio": "audio/v1/ep03_04.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Coming up: a fever, a chip boom, a holiday for an alphabet, a very fast country, and why Koreans ask your age.",
+     "audio": "audio/v1/ep03_05.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Let's start with the fever. Our current affairs correspondent, Ms. Nonfic. She reads the corrections page for fun.",
+     "audio": "audio/v1/ep03_06.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Good evening. From January to August, fifteen point oh five million foreign visitors came to Korea. A record. That is more people than live in Pennsylvania. Pennsylvania has not commented.",
+     "audio": "audio/v1/ep03_07.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "vs_penn"
+    },
+    {
+     "who": "panel",
+     "text": "Somebody call Pennsylvania!",
+     "audio": "audio/v1/ep03_08.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "August alone: two point two five million. Another record. Much of the growth came from Southeast Asia, thanks to easier entry rules and higher spending.",
+     "audio": "audio/v1/ep03_09.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "august"
+    },
+    {
+     "who": "panel",
+     "text": "Hello, Singapore, Malaysia, and the Philippines! We see you!",
+     "audio": "audio/v1/ep03_10.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And a new word came with them. \"Seoul fever,\" and its cousin, \"Busan fever.\"",
+     "audio": "audio/v1/ep03_11.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "fevers"
+    },
+    {
+     "who": "guest",
+     "text": "Both words describe travelers who miss the city after they go home. In other words: repeat customers.",
+     "audio": "audio/v1/ep03_12.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "repeat"
+    },
+    {
+     "who": "panel",
+     "text": "I'm a doctor. Not that kind. But I have a diagnosis: it's good for the Seoul.",
+     "audio": "audio/v1/ep03_13.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Please don't.",
+     "audio": "audio/v1/ep03_14.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Seoul-searching. Seoul food. Seoul mate. I have a whole list.",
+     "audio": "audio/v1/ep03_15.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "puns"
+    },
+    {
+     "who": "guest",
+     "text": "For the record, I heard all of that. Now, rankings. Agoda's booking data for the first half of the year puts Seoul fourth in Asia for repeat visits.",
+     "audio": "audio/v1/ep03_16.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "rank"
+    },
+    {
+     "who": "panel",
+     "text": "Fourth! Who beat us?",
+     "audio": "audio/v1/ep03_17.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Tokyo, Bangkok, and Bali. Osaka is fifth.",
+     "audio": "audio/v1/ep03_18.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "rank"
+    },
+    {
+     "who": "panel",
+     "text": "Fourth place. The saddest number at the Olympics.",
+     "audio": "audio/v1/ep03_19.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Analysts credit the range: K-content, festivals, food, beauty, shopping, and convenience stores that never close.",
+     "audio": "audio/v1/ep03_20.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "why"
+    },
+    {
+     "who": "anchor",
+     "text": "So the fever has a cause: a lot going on, and a snack at every hour.",
+     "audio": "audio/v1/ep03_21.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Symptoms include booking your second trip before the first one ends.",
+     "audio": "audio/v1/ep03_22.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Treatment: none known.",
+     "audio": "audio/v1/ep03_23.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "travel",
+   "desk": "TRAVEL",
+   "headline": "What to see in Seoul right now",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/travel_head.png",
+     "body": "../../cast/travel_body.png",
+     "ref": "../../cast/travel_ref.png",
+     "label": "PROF. INDOOR",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "cap": {
+     "card": {
+      "title": "SEOUL SOUVENIR CAP",
+      "stats": [
+       {
+        "value": 2.7,
+        "decimals": 1,
+        "suffix": "M",
+        "label": "views on Japanese social media"
+       },
+       {
+        "value": "NO ADS",
+        "label": ""
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Sep 23, 2026"
+    },
+    "moonlight": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "MOONLIGHT TOUR",
+       "ENGLISH SESSIONS"
+      ],
+      "size": 80
+     },
+     "label": "",
+     "credit": "Source: Seoul tourism notices"
+    },
+    "myeongdong": {
+     "image": "../../assets/stock/ep03/myeongdong.jpg",
+     "label": "MYEONGDONG",
+     "credit": "Photo: sunbeams879 (BY 2.0)"
+    },
+    "palaces": {
+     "image": "../../assets/stock/ep03/palace.jpg",
+     "label": "ROYAL PALACES",
+     "credit": "Photo: Kimmo Räisänen (BY 2.0)"
+    },
+    "palaces2": {
+     "image": "../../assets/stock/ep03/palace2.jpg",
+     "label": "GYEONGBOKGUNG",
+     "credit": "Photo: Katie Haugland Bowen (BY 2.0)"
+    },
+    "welcome": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "SEOUL",
+       "WELCOME WEEK"
+      ],
+      "sub": "Sep 19 – Oct 11",
+      "size": 90
+     },
+     "label": "",
+     "credit": "Source: Seoul Metropolitan Government"
+    }
+   },
+   "short": false,
+   "hook": "What to see in Seoul right now",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "If you catch it, where do you go? Our travel expert: Professor Indoor. Self-certified. Online.",
+     "audio": "audio/v1/ep03_24.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I've been there!",
+     "audio": "audio/v1/ep03_25.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Physically?",
+     "audio": "audio/v1/ep03_26.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "...Emotionally.",
+     "audio": "audio/v1/ep03_27.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Okay, facts. Seoul is running a welcome campaign for tourists through October eleventh, with a help desk near Myeongdong Station that offers interpretation in English, Chinese, and Japanese.",
+     "audio": "audio/v1/ep03_28.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": [
+      "welcome",
+      "myeongdong"
+     ],
+     "screen_split": [
+      0.5
+     ]
+    },
+    {
+     "who": "panel",
+     "text": "Help desks and interpreters. That's service.",
+     "audio": "audio/v1/ep03_29.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "From October seventh to eleventh, the K-Royal Culture Festival turns the five grand palaces and Jongmyo Shrine into stages.",
+     "audio": "audio/v1/ep03_30.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": [
+      "palaces",
+      "palaces2"
+     ],
+     "screen_split": [
+      0.5
+     ]
+    },
+    {
+     "who": "guest",
+     "text": "There is also a moonlight tour of Changdeokgung Palace, with sessions in English for foreign visitors.",
+     "audio": "audio/v1/ep03_31.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "moonlight"
+    },
+    {
+     "who": "panel",
+     "text": "A palace at night. That's so romantic.",
+     "audio": "audio/v1/ep03_32.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I watched the whole thing on a live stream. Best seat in the house. No line, no crowds, and the snacks are twelve feet away.",
+     "audio": "audio/v1/ep03_33.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "That is... one way to travel.",
+     "audio": "audio/v1/ep03_34.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Now, the souvenir of the season: a cap. Seoul's city brand teamed up with a traditional-knot design brand, and one post about it got two point seven million views on Japanese social media. No ads.",
+     "audio": "audio/v1/ep03_35.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": [
+      "cap"
+     ]
+    },
+    {
+     "who": "panel",
+     "text": "Let me guess. It's Seoul-d out.",
+     "audio": "audio/v1/ep03_36.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I wouldn't know. I've never been there.",
+     "audio": "audio/v1/ep03_37.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Emotionally?",
+     "audio": "audio/v1/ep03_38.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Emotionally, I own three.",
+     "audio": "audio/v1/ep03_39.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "money_business",
+   "desk": "EXPORTS",
+   "headline": "Korea's exports just hit a record",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/money_head.png",
+     "body": "../../cast/money_body.png",
+     "ref": "../../cast/money_ref.png",
+     "label": "MAX RISE",
+     "shoulders": 520,
+     "head_ratio": 0.68,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "chips": {
+     "chart": {
+      "type": "donut",
+      "title": "CHIPS: SHARE OF EXPORTS, SEP 2026",
+      "value": 49.9,
+      "center": "49.9%",
+      "label": "ALMOST HALF",
+      "legend": "$60.3B of $120.9B  (+263%)"
+     },
+     "label": "",
+     "credit": "Source: Seoul Economic Daily, Oct 1, 2026"
+    },
+    "datacenter": {
+     "image": "../../assets/stock/ep03/datacenter.jpg",
+     "label": "DATA CENTER (ILLUSTRATIVE)",
+     "credit": "Photo: NeoSpire (BY 2.0)"
+    },
+    "exports": {
+     "chart": {
+      "type": "bars",
+      "title": "KOREA'S EXPORTS ($ BILLION)",
+      "bars": [
+       {
+        "label": "Sep 2025",
+        "value": 65.95
+       },
+       {
+        "label": "Sep 2026",
+        "value": 120.94,
+        "hl": true
+       }
+      ],
+      "prefix": "$",
+      "suffix": "B",
+      "decimals": 1,
+      "badge": "+83.5%"
+     },
+     "label": "",
+     "credit": "Source: Seoul Economic Daily, Oct 1, 2026"
+    },
+    "trillion": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "$1 TRILLION",
+       "NEXT?"
+      ],
+      "size": 100
+     },
+     "label": "",
+     "credit": ""
+    },
+    "ytd": {
+     "chart": {
+      "type": "bars",
+      "title": "EXPORTS ($ BILLION)",
+      "bars": [
+       {
+        "label": "All of 2025",
+        "value": 709.3
+       },
+       {
+        "label": "Jan–Sep 2026",
+        "value": 814.5,
+        "hl": true
+       }
+      ],
+      "prefix": "$",
+      "suffix": "B",
+      "decimals": 1
+     },
+     "label": "",
+     "credit": "Source: Seoul Economic Daily, Oct 1, 2026"
+    }
+   },
+   "short": false,
+   "hook": "Korea's exports just hit a record",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Now, another record. Max Rise, our money and business analyst.",
+     "audio": "audio/v1/ep03_40.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Good news. The line went up.",
+     "audio": "audio/v1/ep03_41.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "September exports: a hundred twenty-one billion dollars. A record. Up eighty-three percent.",
+     "audio": "audio/v1/ep03_42.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "exports"
+    },
+    {
+     "who": "panel",
+     "text": "That's almost double!",
+     "audio": "audio/v1/ep03_43.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Chips did the heavy lifting. Over sixty billion dollars. Almost half of everything Korea sold.",
+     "audio": "audio/v1/ep03_44.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "chips"
+    },
+    {
+     "who": "panel",
+     "text": "Finally, a chip Americans and Koreans both love.",
+     "audio": "audio/v1/ep03_45.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Different chips.",
+     "audio": "audio/v1/ep03_46.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Mine come with dip.",
+     "audio": "audio/v1/ep03_47.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "AI is hungry. Korea makes the memory chips it eats. And Korean chips remember everything.",
+     "audio": "audio/v1/ep03_48.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "datacenter"
+    },
+    {
+     "who": "panel",
+     "text": "Unlike me at the grocery store.",
+     "audio": "audio/v1/ep03_49.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Nine months in, Korea has already beaten all of last year. A trillion dollars is next. Limit up!",
+     "audio": "audio/v1/ep03_50.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": [
+      "ytd",
+      "trillion"
+     ],
+     "screen_split": [
+      0.5
+     ]
+    },
+    {
+     "who": "panel",
+     "text": "A trillion! How many zeros is that?",
+     "audio": "audio/v1/ep03_51.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Twelve. Thank you for the math.",
+     "audio": "audio/v1/ep03_52.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Seoul fever. Chip fever. Limit up!",
+     "audio": "audio/v1/ep03_53.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Is there a cure?",
+     "audio": "audio/v1/ep03_54.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Not on my chart.",
+     "audio": "audio/v1/ep03_55.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "hidden_korea",
+   "desk": "HANGUL",
+   "headline": "A holiday for an alphabet: Hangul Day",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/hidden_head.png",
+     "body": "../../cast/hidden_body.png",
+     "ref": "../../cast/hidden_ref.png",
+     "label": "DR. H",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "day_off": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "A DAY OFF FOR",
+       "A WRITING SYSTEM"
+      ],
+      "size": 80
+     },
+     "label": "",
+     "credit": ""
+    },
+    "hangul_day": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "HANGUL DAY",
+       "OCT 9"
+      ],
+      "size": 100
+     },
+     "label": "",
+     "credit": ""
+    },
+    "hanja": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "CHINESE CHARACTERS",
+       "YEARS TO LEARN"
+      ],
+      "size": 80
+     },
+     "label": "",
+     "credit": ""
+    },
+    "kangfree_name": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "강프리"
+      ],
+      "hangul": true,
+      "size": 150
+     },
+     "label": "",
+     "credit": ""
+    },
+    "letters": {
+     "chart": {
+      "type": "letters",
+      "title": "HANGUL COPIES THE MOUTH",
+      "items": [
+       [
+        "ㄱ",
+        "back of the tongue"
+       ],
+       [
+        "ㄴ",
+        "tongue tip"
+       ],
+       [
+        "ㅁ",
+        "the lips"
+       ]
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "patch": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "580 YEARS",
+       "0 PATCH NOTES"
+      ],
+      "size": 90
+     },
+     "label": "",
+     "credit": ""
+    },
+    "sejong": {
+     "image": "../../assets/stock/ep03/sejong_statue.jpg",
+     "label": "KING SEJONG THE GREAT",
+     "credit": "Photo: Katie Haugland Bowen (BY 2.0)"
+    },
+    "t1446": {
+     "chart": {
+      "type": "timeline",
+      "title": "HANGUL",
+      "events": [
+       {
+        "year": "1446",
+        "label": "created",
+        "hl": true
+       },
+       {
+        "year": "2026",
+        "label": "580 years later"
+       }
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "twenty4": {
+     "card": {
+      "title": "HANGUL TODAY",
+      "stats": [
+       {
+        "value": 14,
+        "label": "consonants"
+       },
+       {
+        "value": 10,
+        "label": "vowels"
+       },
+       {
+        "value": 24,
+        "label": "letters in all"
+       }
+      ]
+     },
+     "label": "",
+     "credit": ""
+    }
+   },
+   "short": false,
+   "hook": "A holiday for an alphabet: Hangul Day",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Next, a holiday you might not know: Hangul Day, October ninth. To explain it, our historian, Dr. H.",
+     "audio": "audio/v1/ep03_56.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "hangul_day"
+    },
+    {
+     "who": "panel",
+     "text": "Dr. H, what does the H stand for?",
+     "audio": "audio/v1/ep03_57.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "...That's classified.",
+     "audio": "audio/v1/ep03_58.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Actually, Hangul Day is a public holiday. Korea takes a day off to celebrate its writing system.",
+     "audio": "audio/v1/ep03_59.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "day_off"
+    },
+    {
+     "who": "panel",
+     "text": "A holiday for an alphabet? In America, we just get a song.",
+     "audio": "audio/v1/ep03_60.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "The ABC song is not a holiday.",
+     "audio": "audio/v1/ep03_61.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "It should be. It has a really good tune.",
+     "audio": "audio/v1/ep03_62.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Before the fourteen-forties, writing in Korea meant Chinese characters, and learning them took years.",
+     "audio": "audio/v1/ep03_63.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "hanja"
+    },
+    {
+     "who": "guest",
+     "text": "King Sejong the Great created Hangul in the fourteen-forties so that ordinary people could read and write.",
+     "audio": "audio/v1/ep03_64.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": [
+      "sejong",
+      "t1446"
+     ],
+     "screen_split": [
+      0.5
+     ]
+    },
+    {
+     "who": "guest",
+     "text": "And here is the secret. The consonants copy the shape your mouth and tongue make when you say them.",
+     "audio": "audio/v1/ep03_65.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "letters"
+    },
+    {
+     "who": "panel",
+     "text": "The letters are diagrams? So it's basically the first user-friendly interface.",
+     "audio": "audio/v1/ep03_66.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Version one. Still no patch notes after five hundred eighty years.",
+     "audio": "audio/v1/ep03_67.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "patch"
+    },
+    {
+     "who": "guest",
+     "text": "Today it has twenty-four letters: fourteen consonants and ten vowels.",
+     "audio": "audio/v1/ep03_68.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "twenty4"
+    },
+    {
+     "who": "panel",
+     "text": "Learners say you can learn to read it in a day.",
+     "audio": "audio/v1/ep03_69.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Let me test that. Write your name.",
+     "audio": "audio/v1/ep03_70.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Done!",
+     "audio": "audio/v1/ep03_71.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "kangfree_name"
+    },
+    {
+     "who": "guest",
+     "text": "It says \"Kang-peu-ri.\" Close enough.",
+     "audio": "audio/v1/ep03_72.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "current_affairs",
+   "desk": "IS THIS NORMAL?",
+   "headline": "Is this normal in Korea? Ppalli-ppalli",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/news_head.png",
+     "body": "../../cast/news_body.png",
+     "ref": "../../cast/news_ref.png",
+     "label": "MS. NONFIC",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "exhibit": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "EXHIBIT A:",
+       "THE SIDEWALK"
+      ],
+      "size": 90
+     },
+     "label": "",
+     "credit": ""
+    },
+    "normal": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "NORMAL"
+      ],
+      "size": 130,
+      "color": [
+       80,
+       220,
+       120
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "normal_q": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "IS THIS NORMAL",
+       "IN KOREA?"
+      ],
+      "size": 90
+     },
+     "label": "",
+     "credit": ""
+    },
+    "os": {
+     "chart": {
+      "type": "icons",
+      "cols": 2,
+      "title": "SPEED, KOREAN STYLE",
+      "items": [
+       [
+        "⏱️",
+        "Food in minutes"
+       ],
+       [
+        "🛗",
+        "Close button first"
+       ]
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "ppalli": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "PPALLI-PPALLI",
+       "= HURRY, HURRY"
+      ],
+      "size": 90
+     },
+     "label": "",
+     "credit": ""
+    }
+   },
+   "short": false,
+   "hook": "Is this normal in Korea? Ppalli-ppalli",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "panel",
+     "text": "Time for a new segment: \"Is This Normal in Korea?\" Our expert witness is back: Ms. Nonfic.",
+     "audio": "audio/v1/ep03_73.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "normal_q"
+    },
+    {
+     "who": "guest",
+     "text": "Exhibit A: the sidewalk. Everyone in Seoul walks like they're late for a flight. They might be.",
+     "audio": "audio/v1/ep03_74.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "exhibit"
+    },
+    {
+     "who": "anchor",
+     "text": "That's \"ppalli-ppalli.\" It means \"hurry, hurry.\"",
+     "audio": "audio/v1/ep03_75.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "ppalli"
+    },
+    {
+     "who": "guest",
+     "text": "It's less a habit than an operating system. Delivery apps promise food in minutes. Some people press the elevator's close button before the doors finish opening.",
+     "audio": "audio/v1/ep03_76.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "os"
+    },
+    {
+     "who": "panel",
+     "text": "They're not impatient. They're optimistic.",
+     "audio": "audio/v1/ep03_77.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "In America, you wait for the pizza. In Korea, the pizza waits for you.",
+     "audio": "audio/v1/ep03_78.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "So, is this normal in Korea?",
+     "audio": "audio/v1/ep03_79.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Verdict: normal. Please keep moving.",
+     "audio": "audio/v1/ep03_80.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "normal"
+    },
+    {
+     "who": "anchor",
+     "text": "Welcome to Korea.",
+     "audio": "audio/v1/ep03_81.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "current_affairs",
+   "desk": "LANGUAGE",
+   "headline": "Why Koreans ask your age",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/news_head.png",
+     "body": "../../cast/news_body.png",
+     "ref": "../../cast/news_ref.png",
+     "label": "MS. NONFIC",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "anti": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "ANTI-AGING",
+       "TREATMENT:",
+       "LEGISLATION"
+      ],
+      "size": 80
+     },
+     "label": "",
+     "credit": ""
+    },
+    "how_old": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "HOW OLD",
+       "ARE YOU?"
+      ],
+      "size": 110
+     },
+     "label": "",
+     "credit": ""
+    },
+    "june23": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "JUNE 2023",
+       "INTERNATIONAL AGE"
+      ],
+      "size": 90
+     },
+     "label": "",
+     "credit": ""
+    },
+    "kage": {
+     "chart": {
+      "type": "timeline",
+      "title": "KOREAN AGE (UNTIL 2023)",
+      "events": [
+       {
+        "year": "DEC 31",
+        "label": "born: age 1"
+       },
+       {
+        "year": "JAN 1",
+        "label": "age 2",
+        "hl": true
+       }
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "levels": {
+     "chart": {
+      "type": "steps",
+      "title": "KOREAN SPEECH LEVELS",
+      "items": [
+       "Casual",
+       "Polite",
+       "Formal"
+      ],
+      "caption": "pick one by who is older"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "our": {
+     "chart": {
+      "type": "words",
+      "title": "KOREANS SAY…",
+      "words": [
+       "our mom",
+       "our house",
+       "our school",
+       "our wife"
+      ]
+     },
+     "label": "",
+     "credit": ""
+    }
+   },
+   "short": false,
+   "hook": "Why Koreans ask your age",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "panel",
+     "text": "Last topic. A question every foreigner hears within five minutes.",
+     "audio": "audio/v1/ep03_82.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "\"How old are you?\"",
+     "audio": "audio/v1/ep03_83.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "how_old"
+    },
+    {
+     "who": "panel",
+     "text": "In Korea, that's grammar.",
+     "audio": "audio/v1/ep03_84.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Korean has speech levels. To pick the right one, you need to know who is older. So the question is not nosy. It is a setting.",
+     "audio": "audio/v1/ep03_85.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "levels"
+    },
+    {
+     "who": "guest",
+     "text": "Until 2023, Korea also had \"Korean age\": you are one at birth, and everyone gets a year older every January first. A baby born on December thirty-first turns two the next day.",
+     "audio": "audio/v1/ep03_86.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "kage"
+    },
+    {
+     "who": "panel",
+     "text": "Two days old and already two!",
+     "audio": "audio/v1/ep03_87.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "In June 2023, Korea switched official documents to international age. Everyone became one or two years younger.",
+     "audio": "audio/v1/ep03_88.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "june23"
+    },
+    {
+     "who": "panel",
+     "text": "Korea invented the cheapest anti-aging treatment in history: legislation.",
+     "audio": "audio/v1/ep03_89.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "anti"
+    },
+    {
+     "who": "guest",
+     "text": "Social life did not change. People still ask.",
+     "audio": "audio/v1/ep03_90.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "One more thing. Koreans say \"our.\" Our mom, our house, our school. Even \"our wife.\"",
+     "audio": "audio/v1/ep03_91.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "our"
+    },
+    {
+     "who": "guest",
+     "text": "\"Our\" signals belonging, not ownership. It means: we share this.",
+     "audio": "audio/v1/ep03_92.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "So he's not sharing his wife. He's sharing the word.",
+     "audio": "audio/v1/ep03_93.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Please don't say that in English.",
+     "audio": "audio/v1/ep03_94.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "current_affairs",
+   "desk": "K'S TAKE",
+   "headline": "K's Take: the world is showing up",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    }
+   },
+   "screens": {},
+   "short": false,
+   "hook": "K's Take: the world is showing up",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "So here's my take. Fifteen million visitors, a record chip boom, an alphabet with its own holiday. Different stories, same pattern: the world is showing up for Korea.",
+     "audio": "audio/v1/ep03_95.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And Korea's answer is very Korean: \"Welcome. Our home is your home. Please hurry.\"",
+     "audio": "audio/v1/ep03_96.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Tell us in the comments: what's the first thing you'd ask a Korean?",
+     "audio": "audio/v1/ep03_97.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Subscribe, and we'll see you Wednesday. Stay curious. Keep your lenses clean.",
+     "audio": "audio/v1/ep03_98.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    }
+   ]
+  }
+ ]
+}
