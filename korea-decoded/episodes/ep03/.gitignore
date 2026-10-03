@@ -3,3 +3,4 @@
 *.mp4
 render/
 audio/batch_*.json
+chk/
