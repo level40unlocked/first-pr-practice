@@ -87,7 +87,7 @@
 | 이름 | **Max Rise**. 이름표 **MAX RISE**. Max(최대) + Rise(상승) = 상한가(limit up). 유명인 패러디가 아닌 말장난 이름이라 실존 인물과 헷갈릴 일 없음 |
 | 외모 | 기존 머니 애널리스트 원본 그대로: 40대 남성, 올백 머리, 얇은 금테 사각 안경, 초록 조끼 + 크림 터틀넥, 행커치프, 복고 계산기. 설정 `"shoulders": 520, "head_ratio": 0.68, "white_lens": true` |
 | 성격·개그 | 모든 주제를 결국 돈 얘기로 끌고 감. 흥분하면 **"Limit up!"**(상한가!) 예: "Kimchi prices? Limit up!" 워런 버핏을 존경한다는 설정 가능 |
-| 목소리 | 미정 (남성, 40대, 매끄럽고 자신만만한 톤) |
+| 목소리 | ✅ **Andre** (Higgsfield 프리셋, `f1e8226e-2248-4d5f-b43c-0a79e9949dbf`, text2speech_v2 variant elevenlabs, 2026-10-03 운영자 선택. 후보 Julian / Harrison / Alistair / Caspian / Gideon과 비교) |
 
 ## 데스크 전문가: Ms. Nonfic (미즈 논픽) · CURRENT AFFAIRS ✅ 이름 확정 (2026-09-30)
 
