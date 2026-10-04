@@ -9,8 +9,8 @@
   - Exports ($121B): https://youtu.be/T9gruys7bvM — scheduled 2026-10-07 18:57 KST
   - Hangul Day: https://youtu.be/if-pJS5pCgY — scheduled 2026-10-08 18:57 KST
   - Why Koreans ask your age: https://youtu.be/AQOzdAS_PIE — scheduled 2026-10-12 06:57 KST
-- English subtitles (ep03_en.srt, generated, 141 cues, 510.08s total — matches final render): NOT uploaded via API (same known block as EP.2 — 403, token lacks sufficient scope for captions.insert) → upload by hand in Studio (Subtitles → Add language → English → Upload file) before each video goes public, or any time before — captions can attach to a private/scheduled video.
-- Thumbnail (thumbs/thumb_A.jpg, 1280x720, Dr. Kangfree + Gyeongbokgung photo + "SEOUL FEVER?!"): NOT uploaded via API (same known block as EP.2 — pending Google's API audit) → set by hand in Studio before the longform goes public.
+- English subtitles (ep03_en.srt, 141 cues, 510.08s total — matches final render): uploaded via API (`captions.insert`) on 2026-10-04, caption id `AUieDaYaffzaZ2s4FhtSwNguRffKfvFXk6h47LFmh6-wCjRir9drvSfp`, status `serving`. **Correction to the note below**: the EP.2-era "403, token lacks force-ssl" block does NOT apply to the current `secrets/youtube_token_foureyes.json` — that token already carries `youtube.force-ssl`, it just hadn't been tried against this endpoint yet. No manual Studio step needed.
+- Thumbnail (thumbs/thumb_A.jpg, 1280x720, Dr. Kangfree + Gyeongbokgung photo + "SEOUL FEVER?!"): uploaded via API (`thumbnails.set`) on 2026-10-04 — also succeeded, so the "pending API audit" block from EP.2 no longer applies to this OAuth client either. No manual Studio step needed.
 - TODO: pinned comment, related-video links on the longform once public.
 
 ## Build notes (for whoever picks this up next, cloud or local)
