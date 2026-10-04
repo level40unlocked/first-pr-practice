@@ -247,8 +247,8 @@
      "who": "anchor",
      "text": "Fifteen million foreigners visited Korea in just eight months. A record.",
      "audio": "audio/v1/ep03_01.mp3",
-     "shot": "screen_full",
-     "cam_id": "full",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
      "push": false,
      "screen": "open_count"
     },
@@ -1191,6 +1191,7 @@
      "label": "DR. H",
      "shoulders": 520,
      "white_lens": true,
+     "chin_drop": 0.1,
      "x": 2560
     }
    },

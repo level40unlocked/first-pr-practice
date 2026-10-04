@@ -29,7 +29,7 @@ GUEST = {
     "Nonfic": {"head": CAST + "news_head.png", "body": CAST + "news_body.png", "ref": CAST + "news_ref.png", "label": "MS. NONFIC", "shoulders": 520, "white_lens": True},
     "Indoor": {"head": CAST + "travel_head.png", "body": CAST + "travel_body.png", "ref": CAST + "travel_ref.png", "label": "PROF. INDOOR", "shoulders": 520, "white_lens": True},
     "Rise": {"head": CAST + "money_head.png", "body": CAST + "money_body.png", "ref": CAST + "money_ref.png", "label": "MAX RISE", "shoulders": 520, "head_ratio": 0.68, "white_lens": True},
-    "Hidden": {"head": CAST + "hidden_head.png", "body": CAST + "hidden_body.png", "ref": CAST + "hidden_ref.png", "label": "DR. H", "shoulders": 520, "white_lens": True},
+    "Hidden": {"head": CAST + "hidden_head.png", "body": CAST + "hidden_body.png", "ref": CAST + "hidden_ref.png", "label": "DR. H", "shoulders": 520, "white_lens": True, "chin_drop": 0.10},
 }
 CHARACTERS = {
     "panel": {"head": CAST + "kangfree_head.png", "body": CAST + "kangfree_body.png", "ref": CAST + "kangfree_ref.png",
@@ -116,10 +116,7 @@ def build():
             who = WHO[l["who"]]
             ln = {"who": who, "text": l["text"], "audio": f"audio/v1/ep03_{l['index']:02d}.mp3"}
             key = SCREEN_AT.get(l["index"])
-            if l["index"] == 1:
-                ln["shot"], ln["cam_id"], ln["push"] = "screen_full", "full", False
-                ln["screen"] = key
-            elif key:
+            if key:
                 ln["shot"], ln["cam_id"], ln["push"] = "k_screen", f"screen_{who}", False
                 ln["screen"] = key
                 if isinstance(key, list) and len(key) > 1:
