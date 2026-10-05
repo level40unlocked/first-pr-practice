@@ -304,6 +304,8 @@ def broadcast_overlay(scene, tag_x=TAG_X_LONG):
     if topic:
         d.text((380, 965), f"TOPIC {topic[0]}/{topic[1]}", font=nr.font(34), fill=nr.WHITE, anchor="mm")
         d.text((380, 1003), scene.get("desk", label.split(" ")[0]), font=nr.font(24), fill=nr.WHITE, anchor="mm")
+    else:  # a stand-alone clip has no topic count: the desk name alone fills the colored chip
+        d.text((380, 980), scene.get("desk", label.split(" ")[0]), font=nr.font(30), fill=nr.WHITE, anchor="mm")
     f = nr.font(40)
     while d.textlength(scene["headline"], font=f) > 1100:
         f = nr.font(f.size - 2)
