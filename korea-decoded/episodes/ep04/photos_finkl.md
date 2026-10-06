@@ -27,4 +27,4 @@ Source/credit of all photos: unknown, supplied by the operator (operator accepts
 | yuqi.jpg (555x832, copied) | 18-21 | Photo: Seoul Economic Daily |
 | sunghanbin.jpg (582x832, copied) | 22-23 | Photo: Sports Chosun |
 | lisa.jpg (466x832, copied; small, use as a card) | 25-26 | Photo: Ilgan Sports |
-| illit.jpg (746x512, copied) | 27-28 | pending |
+| illit.jpg (746x512, copied) | 27-28 | Image: courtesy of the agency (operator, 2026-10-06) |
