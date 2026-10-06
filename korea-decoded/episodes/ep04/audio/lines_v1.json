@@ -1062,5 +1062,26 @@
   "text": "He is holding a light stick in each hand.",
   "tts_text": "He is holding a light stick in each hand.",
   "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 163,
+  "who": "Kangfree",
+  "text": "That's the show. Subscribe, and we'll see you next week.",
+  "tts_text": "That's the show. Subscribe, and we'll see you next week.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 164,
+  "who": "Offbeat",
+  "text": "Bye! Drink water! I'm calm!",
+  "tts_text": "Bye! Drink water! I'm calm!",
+  "voice_id": "549ff70a-3ee7-4f04-a4d9-89a24fab7709"
+ },
+ {
+  "index": 165,
+  "who": "K",
+  "text": "Stay curious. Keep your lenses clean.",
+  "tts_text": "Stay curious. Keep your lenses clean.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
  }
 ]

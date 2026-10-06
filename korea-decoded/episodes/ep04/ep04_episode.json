@@ -2251,6 +2251,48 @@
      "ease": 0.14,
      "cam_id": "two",
      "push": false
+    },
+    {
+     "who": "panel",
+     "text": "That's the show. Subscribe, and we'll see you next week.",
+     "audio": "audio/v1/ep04_163.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Bye! Drink water! I'm calm!",
+     "audio": "audio/v1/ep04_164.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Stay curious. Keep your lenses clean.",
+     "audio": "audio/v1/ep04_165.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
     }
    ]
   }

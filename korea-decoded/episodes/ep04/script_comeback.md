@@ -65,6 +65,9 @@ Cast: K, Dr. Kangfree, Offbeat.
 | 60 | K | 🆕 That was K-Culture. Thanks for watching. | K-컬처였습니다. 시청해 주셔서 감사합니다. |
 | 61 | Offbeat | 🆕 I'm calm. | 저는 차분해요. |
 | 62 | Kangfree | 🆕 He is holding a light stick in each hand. | 양손에 응원봉을 하나씩 들고 있어요. |
+| 63 | Kangfree | 🆕 That's the show. Subscribe, and we'll see you next week. | 오늘 방송은 여기까지예요. 구독하시고, 다음 주에 만나요. |
+| 64 | Offbeat | 🆕 Bye! Drink water! I'm calm! | 안녕히 계세요! 물 마셔요! 저는 차분해요! |
+| 65 | K | 🆕 Stay curious. Keep your lenses clean. | 계속 궁금해하세요. 렌즈는 깨끗하게. |
 
 ## 사실 확인 목록
 - 10월 컴백 52건 = KpopComebacks(kpopcomebacks.com/calendar/2026/10/) 집계. 대본은 "one release tracker counts"로 표현

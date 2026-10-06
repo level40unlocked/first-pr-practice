@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CAST = "../../cast/"
 WHO = {"K": "anchor", "Kangfree": "panel", "Offbeat": "guest"}
 SEAT = {"panel": 630, "anchor": 1290, "guest": 2560}
-SEG_EDGES = [(1, 90), (101, 162)]
+SEG_EDGES = [(1, 90), (101, 165)]
 SEGS = [
     {"category": "kpop", "desk": "K-POP", "headline": "Fin.K.L is back after 21 years"},
     {"category": "kpop", "desk": "COMEBACKS", "headline": "October: a new K-pop release every day"},
