@@ -7,7 +7,8 @@ Labels given by the operator, in upload order:
 | 1 | Lee Jin (이진) | line 8 name card | "STARNEWS" watermark: **keep** (operator confirmed 2026-10-06), never crop it out |
 | 2 | Sung Yuri (성유리) | line 8 name card | looks like a personal selfie: operator decides |
 | 3 | Ok Joo-hyun (옥주현) | line 8 name card | low resolution (~300 px wide) |
-| 4 | Lee Hyori (이효리) | line 8 name card, face crop only | revealing fashion shoot: use a tight face crop or skip |
+| 4 | Lee Hyori (이효리) | superseded by hyori_solo.jpg | revealing fashion shoot: not used |
+| 10 | Lee Hyori (이효리), black-and-white selfie (operator, 2026-10-06) | line 8 name card, FACE CROP ONLY (hyori_face_crop.png, 275 px) | uncropped photo shows bare shoulders: never use uncropped |
 | 5 | Camping Club (캠핑클럽) | line 24 | broadcaster promo art with title logo |
 | 6 | 2005 cover | line 17 "Forever Fin.K.L" | confirm it is the actual single cover |
 | 7 | old group photo (1990s) | line 8 "1998" | |
