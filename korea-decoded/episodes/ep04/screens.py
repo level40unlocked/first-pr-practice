@@ -29,4 +29,12 @@ SCREENS = {
     "plans": chart({"type": "icons", "cols": 4, "title": "THE NEXT TWO YEARS", "items": [
         ["🎬", "Documentary"], ["📺", "Variety shows"], ["🖼️", "Exhibitions"], ["☕", "Merch"],
         ["🤝", "Brand collabs"], ["📣", "Ads"], ["💛", "Fan projects"]]}, "Source: Gemstone E&M, via Kyunghyang"),
+    # October comebacks
+    "c_count": chart({"type": "bigtext", "lines": ["52 NEW RELEASES"], "size": 110, "sub": "IN OCTOBER, ONE TRACKER'S COUNT"}, "Source: KpopComebacks, Oct 2026"),
+    "c_onew_zico": card("c_onew_zico", credit="Photo: Griffin Entertainment"),
+    "c_yuqi": card("c_yuqi", credit="Photo: Seoul Economic Daily"),
+    "c_hanbin": card("c_hanbin", credit="Photo: Sports Chosun"),
+    "c_lisa": card("c_lisa", credit="Photo: Ilgan Sports"),
+    "c_illit": card("c_illit", credit="Image: courtesy of the agency"),
+    "c_ive": card("c_ive", credit="Image: Starship Entertainment"),
 }

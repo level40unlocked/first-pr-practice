@@ -1,0 +1,2213 @@
+{
+ "episode": 4,
+ "name": "render/ep04",
+ "anchor": "anchor",
+ "characters": {
+  "panel": {
+   "head": "../../cast/kangfree_head.png",
+   "body": "../../cast/kangfree_body.png",
+   "ref": "../../cast/kangfree_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  },
+  "anchor": {
+   "head": "../../cast/k_head.png",
+   "body": "../../cast/k_body.png",
+   "ref": "../../cast/k_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "guest": {
+   "head": "../../cast/kpop_head.png",
+   "body": "../../cast/kpop_body.png",
+   "ref": "../../cast/kpop_ref.png",
+   "label": "OFFBEAT",
+   "shoulders": 520,
+   "white_lens": true,
+   "x": 2560
+  }
+ },
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "outro_ticker": "Stay curious. Keep your lenses clean.",
+ "segments": [
+  {
+   "category": "kpop",
+   "desk": "K-POP",
+   "headline": "Fin.K.L is back after 21 years",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/kpop_head.png",
+     "body": "../../cast/kpop_body.png",
+     "ref": "../../cast/kpop_ref.png",
+     "label": "OFFBEAT",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "camping": {
+     "image": "../../assets/stock/ep04/cards/camping.png",
+     "label": "",
+     "credit": "Image: JTBC \"Camping Club\" promo",
+     "kb": "in"
+    },
+    "cover_2005": {
+     "image": "../../assets/stock/ep04/cards/cover_2005.png",
+     "label": "",
+     "credit": "Image: single cover, as supplied",
+     "kb": "in"
+    },
+    "debut_1998": {
+     "image": "../../assets/stock/ep04/cards/debut_1998.png",
+     "label": "",
+     "credit": "Photo: as supplied",
+     "kb": "in"
+    },
+    "name_hyori": {
+     "image": "../../assets/stock/ep04/cards/name_hyori.png",
+     "label": "",
+     "credit": "Photo: as supplied",
+     "kb": "in"
+    },
+    "name_jin": {
+     "image": "../../assets/stock/ep04/cards/name_jin.png",
+     "label": "",
+     "credit": "Photo: Starnews",
+     "kb": "in"
+    },
+    "name_ock": {
+     "image": "../../assets/stock/ep04/cards/name_ock.png",
+     "label": "",
+     "credit": "Photo: as supplied",
+     "kb": "in"
+    },
+    "name_yuri": {
+     "image": "../../assets/stock/ep04/cards/name_yuri.png",
+     "label": "",
+     "credit": "Photo: as supplied",
+     "kb": "in"
+    },
+    "plans": {
+     "chart": {
+      "type": "icons",
+      "cols": 4,
+      "title": "THE NEXT TWO YEARS",
+      "items": [
+       [
+        "🎬",
+        "Documentary"
+       ],
+       [
+        "📺",
+        "Variety shows"
+       ],
+       [
+        "🖼️",
+        "Exhibitions"
+       ],
+       [
+        "☕",
+        "Merch"
+       ],
+       [
+        "🤝",
+        "Brand collabs"
+       ],
+       [
+        "📣",
+        "Ads"
+       ],
+       [
+        "💛",
+        "Fan projects"
+       ]
+      ]
+     },
+     "label": "",
+     "credit": "Source: Gemstone E&M, via Kyunghyang"
+    },
+    "recent": {
+     "image": "../../assets/stock/ep04/cards/recent.png",
+     "label": "",
+     "credit": "Photo: as supplied",
+     "kb": "in"
+    },
+    "timeline": {
+     "chart": {
+      "type": "timeline",
+      "title": "FIN.K.L, A TIMELINE",
+      "events": [
+       {
+        "year": "1998",
+        "label": "Debut"
+       },
+       {
+        "year": "2005",
+        "label": "Last single"
+       },
+       {
+        "year": "2019",
+        "label": "Camping Club"
+       },
+       {
+        "year": "2026",
+        "label": "Full-group return",
+        "hl": true
+       }
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "title": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "FIN.K.L"
+      ],
+      "size": 150,
+      "sub": "FOUR MEMBERS · DEBUTED 1998"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "years21": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "21 YEARS"
+      ],
+      "size": 170,
+      "sub": "FROM 2005 TO 2026"
+     },
+     "label": "",
+     "credit": ""
+    }
+   },
+   "short": false,
+   "hook": "Fin.K.L is back after 21 years",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Time for K-Culture. And I'm told someone here is very excited. Offbeat, our K-pop and entertainment desk.",
+     "audio": "audio/v1/ep04_001.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I'm not excited. I'm calm. I'm so calm. FIN.K.L IS BACK!",
+     "audio": "audio/v1/ep04_002.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "title"
+    },
+    {
+     "who": "panel",
+     "text": "There it is.",
+     "audio": "audio/v1/ep04_003.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Offbeat, you've been vibrating since this morning.",
+     "audio": "audio/v1/ep04_004.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "That's not vibrating. That's my heart doing choreography.",
+     "audio": "audio/v1/ep04_005.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Medically speaking, he's fine. Emotionally, he's a disaster.",
+     "audio": "audio/v1/ep04_006.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I made a vision board. It's just the word \"FIN.K.L\" in twelve fonts.",
+     "audio": "audio/v1/ep04_007.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Is that a vision?",
+     "audio": "audio/v1/ep04_008.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "It's a lifestyle.",
+     "audio": "audio/v1/ep04_009.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "For viewers who didn't grow up in the nineties: who is Fin.K.L?",
+     "audio": "audio/v1/ep04_010.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "First-generation K-pop royalty. A four-member girl group that debuted in 1998. Their big rival back then was S.E.S.",
+     "audio": "audio/v1/ep04_011.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "debut_1998"
+    },
+    {
+     "who": "panel",
+     "text": "Nineteen ninety-eight. So, K-pop before it went global?",
+     "audio": "audio/v1/ep04_012.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "debut_1998"
+    },
+    {
+     "who": "guest",
+     "text": "Back when \"going viral\" meant staying home with a cold.",
+     "audio": "audio/v1/ep04_013.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And \"streaming\" meant a leaky pipe.",
+     "audio": "audio/v1/ep04_014.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Back when your phone flipped open, and your whole personality lived on a website called Cyworld.",
+     "audio": "audio/v1/ep04_015.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "I had a MySpace page. It was a crime scene.",
+     "audio": "audio/v1/ep04_016.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Let's meet them. Starting with Lee Hyori.",
+     "audio": "audio/v1/ep04_017.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "name_hyori"
+    },
+    {
+     "who": "guest",
+     "text": "Lee Hyori went solo and became one of Korea's biggest stars, and a variety-show favorite too.",
+     "audio": "audio/v1/ep04_018.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "name_hyori"
+    },
+    {
+     "who": "anchor",
+     "text": "Next, Ock Joo-hyun.",
+     "audio": "audio/v1/ep04_019.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "name_ock"
+    },
+    {
+     "who": "guest",
+     "text": "She became one of Korea's top musical theater stars.",
+     "audio": "audio/v1/ep04_020.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "name_ock"
+    },
+    {
+     "who": "panel",
+     "text": "Singing and acting live, every night. I can barely finish one shift.",
+     "audio": "audio/v1/ep04_021.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "name_ock"
+    },
+    {
+     "who": "anchor",
+     "text": "Lee Jin?",
+     "audio": "audio/v1/ep04_022.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "name_jin"
+    },
+    {
+     "who": "guest",
+     "text": "Lee Jin moved into acting.",
+     "audio": "audio/v1/ep04_023.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "name_jin"
+    },
+    {
+     "who": "anchor",
+     "text": "And Sung Yuri.",
+     "audio": "audio/v1/ep04_024.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "name_yuri"
+    },
+    {
+     "who": "guest",
+     "text": "Sung Yuri became a drama lead, in hits like \"Romance Town\" and \"Feast of the Gods.\"",
+     "audio": "audio/v1/ep04_025.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "name_yuri"
+    },
+    {
+     "who": "panel",
+     "text": "One pop queen, one stage star, two actresses. Four careers, one group chat.",
+     "audio": "audio/v1/ep04_026.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Skills: singing, acting, dancing, and surviving a camper van.",
+     "audio": "audio/v1/ep04_027.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Weakness: none. Hobbies: none. Fear: Wi-Fi.",
+     "audio": "audio/v1/ep04_028.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Now the news. On September twenty-first, their agency announced that all four members will return as a group.",
+     "audio": "audio/v1/ep04_029.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "recent"
+    },
+    {
+     "who": "guest",
+     "text": "Four members. One agency. Zero spoilers.",
+     "audio": "audio/v1/ep04_030.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "recent"
+    },
+    {
+     "who": "panel",
+     "text": "Wait. When was the last time all four did something together?",
+     "audio": "audio/v1/ep04_031.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "The last full-group release was a digital single in 2005. It was called \"Forever Fin.K.L.\" After that, the group went quiet.",
+     "audio": "audio/v1/ep04_032.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "cover_2005"
+    },
+    {
+     "who": "panel",
+     "text": "Forever lasted twenty-one years. That's one damn long intermission.",
+     "audio": "audio/v1/ep04_033.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "years21"
+    },
+    {
+     "who": "anchor",
+     "text": "Somebody born in 2005 is now twenty-one.",
+     "audio": "audio/v1/ep04_034.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Old enough to vote, drink, and be disappointed by group projects.",
+     "audio": "audio/v1/ep04_035.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "And a fan who was fourteen in 2005 is thirty-five now. They have jobs. And credit cards.",
+     "audio": "audio/v1/ep04_036.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Oh no. That's the real news.",
+     "audio": "audio/v1/ep04_037.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "They did get together in 2019, right?",
+     "audio": "audio/v1/ep04_038.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "timeline"
+    },
+    {
+     "who": "guest",
+     "text": "A TV show called \"Camping Club.\" They made music for it. But that was a one-off, built around a broadcast.",
+     "audio": "audio/v1/ep04_039.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "camping"
+    },
+    {
+     "who": "anchor",
+     "text": "What was the show about?",
+     "audio": "audio/v1/ep04_040.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "camping"
+    },
+    {
+     "who": "guest",
+     "text": "Four old friends, one camper van, a road trip around Korea. They talked about life after the group, and whether to perform together again for their twenty-first anniversary.",
+     "audio": "audio/v1/ep04_041.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "camping"
+    },
+    {
+     "who": "panel",
+     "text": "A road trip with a very big question in the glove box.",
+     "audio": "audio/v1/ep04_042.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "It premiered in July 2019 to strong ratings. People loved it.",
+     "audio": "audio/v1/ep04_043.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "So, a high school reunion. With cameras. And tents.",
+     "audio": "audio/v1/ep04_044.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "This time is different. Their agency says no one-off. About two years of meeting fans, with music, performances, and more.",
+     "audio": "audio/v1/ep04_045.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "More, meaning what?",
+     "audio": "audio/v1/ep04_046.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "plans"
+    },
+    {
+     "who": "guest",
+     "text": "Documentaries, variety shows, exhibitions, official merchandise, brand collabs, ads, and fan projects.",
+     "audio": "audio/v1/ep04_047.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "plans"
+    },
+    {
+     "who": "panel",
+     "text": "Translation: there will be a mug. And damn right I'm buying the mug.",
+     "audio": "audio/v1/ep04_048.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Nobody's buying just one mug.",
+     "audio": "audio/v1/ep04_049.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "They'll buy the mug, a second mug, and the mug's cousin.",
+     "audio": "audio/v1/ep04_050.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "The mug has a cousin?",
+     "audio": "audio/v1/ep04_051.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Everything has a cousin. It's called a limited edition.",
+     "audio": "audio/v1/ep04_052.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Let's pitch some documentary titles.",
+     "audio": "audio/v1/ep04_053.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "\"Fin.K.L: The Sequel.\"",
+     "audio": "audio/v1/ep04_054.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "\"Fast and Fin.K.L.\"",
+     "audio": "audio/v1/ep04_055.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "\"Fin.K.L and the Temple of Doom.\"",
+     "audio": "audio/v1/ep04_056.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "\"Fin.K.L Two: Electric Boogaloo.\"",
+     "audio": "audio/v1/ep04_057.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Please stop. That is not how any of this works.",
+     "audio": "audio/v1/ep04_058.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I wrote a fanfic about it!",
+     "audio": "audio/v1/ep04_059.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "...Of course you did.",
+     "audio": "audio/v1/ep04_060.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "It's four hundred pages. It has a prologue. And a map.",
+     "audio": "audio/v1/ep04_061.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "A map?!",
+     "audio": "audio/v1/ep04_062.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Fandom lore needs geography, Doctor.",
+     "audio": "audio/v1/ep04_063.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Offbeat, you used to train to be an idol, right?",
+     "audio": "audio/v1/ep04_064.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I was this close to debuting.",
+     "audio": "audio/v1/ep04_065.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "How close?",
+     "audio": "audio/v1/ep04_066.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Close enough to know a practice room smells like sweat and ambition.",
+     "audio": "audio/v1/ep04_067.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And you were half a beat late.",
+     "audio": "audio/v1/ep04_068.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Half a beat. Every time.",
+     "audio": "audio/v1/ep04_069.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Okay. Let's play Reunion Bingo.",
+     "audio": "audio/v1/ep04_070.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Free space: somebody cries. Everybody cries.",
+     "audio": "audio/v1/ep04_071.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Square two: somebody says, \"We never really left.\"",
+     "audio": "audio/v1/ep04_072.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Square three: a brand announces a collab within the hour.",
+     "audio": "audio/v1/ep04_073.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Square four: a coworker says, \"My mom loves them.\"",
+     "audio": "audio/v1/ep04_074.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Bingo. I won a game I didn't know I was playing.",
+     "audio": "audio/v1/ep04_075.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Why does this matter outside Korea?",
+     "audio": "audio/v1/ep04_076.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Because it shows how Korean fandom works. Fans don't just grow up with a group. They grow old with a group. In a very loud, glowing way.",
+     "audio": "audio/v1/ep04_077.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Glowing?",
+     "audio": "audio/v1/ep04_078.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Light sticks. Every group has an official one. Thousands of them in the dark look like a galaxy that bought merch.",
+     "audio": "audio/v1/ep04_079.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "In America, we get nostalgia tours. A guy in a leather jacket, a lot of knees.",
+     "audio": "audio/v1/ep04_080.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Knees?",
+     "audio": "audio/v1/ep04_081.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Doctor's observation. Reunion tours are mostly knees.",
+     "audio": "audio/v1/ep04_082.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Not these knees. These knees have a choreographer.",
+     "audio": "audio/v1/ep04_083.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Fun fact?",
+     "audio": "audio/v1/ep04_084.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "The name stands for \"Fine Killing Liability.\" [VERIFY]",
+     "audio": "audio/v1/ep04_085.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Sounds like a law firm.",
+     "audio": "audio/v1/ep04_086.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "A very stylish law firm.",
+     "audio": "audio/v1/ep04_087.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Anyway. The comeback is real. I'm calm. I'm calm!",
+     "audio": "audio/v1/ep04_088.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "He is not calm.",
+     "audio": "audio/v1/ep04_089.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Which group would you bring back? Tell us in the comments.",
+     "audio": "audio/v1/ep04_090.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "kpop",
+   "desk": "COMEBACKS",
+   "headline": "October: a new K-pop release every day",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/kpop_head.png",
+     "body": "../../cast/kpop_body.png",
+     "ref": "../../cast/kpop_ref.png",
+     "label": "OFFBEAT",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "c_count": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "52 NEW RELEASES"
+      ],
+      "size": 110,
+      "sub": "IN OCTOBER, ONE TRACKER'S COUNT"
+     },
+     "label": "",
+     "credit": "Source: KpopComebacks, Oct 2026"
+    },
+    "c_hanbin": {
+     "image": "../../assets/stock/ep04/cards/c_hanbin.png",
+     "label": "",
+     "credit": "Photo: Sports Chosun",
+     "kb": "in"
+    },
+    "c_illit": {
+     "image": "../../assets/stock/ep04/cards/c_illit.png",
+     "label": "",
+     "credit": "Image: courtesy of the agency",
+     "kb": "in"
+    },
+    "c_ive": {
+     "image": "../../assets/stock/ep04/cards/c_ive.png",
+     "label": "",
+     "credit": "Image: Starship Entertainment",
+     "kb": "in"
+    },
+    "c_lisa": {
+     "image": "../../assets/stock/ep04/cards/c_lisa.png",
+     "label": "",
+     "credit": "Photo: Ilgan Sports",
+     "kb": "in"
+    },
+    "c_onew_zico": {
+     "image": "../../assets/stock/ep04/cards/c_onew_zico.png",
+     "label": "",
+     "credit": "Photo: Griffin Entertainment",
+     "kb": "in"
+    },
+    "c_yuqi": {
+     "image": "../../assets/stock/ep04/cards/c_yuqi.png",
+     "label": "",
+     "credit": "Photo: Seoul Economic Daily",
+     "kb": "in"
+    }
+   },
+   "short": false,
+   "hook": "October: a new K-pop release every day",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Next, the K-pop calendar. Because in October, it's a lot.",
+     "audio": "audio/v1/ep04_101.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I made a spreadsheet. It has colors. It has tabs. It has a tab for the tabs.",
+     "audio": "audio/v1/ep04_102.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Doctor's note: very healthy hobby. I'm proud of the tabs.",
+     "audio": "audio/v1/ep04_103.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Quick vocabulary check. In K-pop, what does \"comeback\" mean?",
+     "audio": "audio/v1/ep04_104.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "A new release. New music, new concept, new promotions.",
+     "audio": "audio/v1/ep04_105.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "So you can come back without ever leaving?",
+     "audio": "audio/v1/ep04_106.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "That's the best part. You can come back on Monday, and again in March.",
+     "audio": "audio/v1/ep04_107.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "In America, a comeback means you disappeared for ten years and a reality show saved you.",
+     "audio": "audio/v1/ep04_108.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "So how many new releases this month?",
+     "audio": "audio/v1/ep04_109.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "One tracker lists fifty-two scheduled for October. Albums, mini albums, EPs, from groups and solo artists.",
+     "audio": "audio/v1/ep04_110.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_count"
+    },
+    {
+     "who": "panel",
+     "text": "Fifty-two? October has thirty-one days.",
+     "audio": "audio/v1/ep04_111.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_count"
+    },
+    {
+     "who": "anchor",
+     "text": "So that's more than one new release every single day.",
+     "audio": "audio/v1/ep04_112.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "c_count"
+    },
+    {
+     "who": "panel",
+     "text": "I have fewer appointments than that. And I'm a doctor.",
+     "audio": "audio/v1/ep04_113.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Okay, let's go. This week, according to that tracker. October sixth: KickFlip, X:IN, and Yesung.",
+     "audio": "audio/v1/ep04_114.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "X:IN. Is that a band or a Wi-Fi password?",
+     "audio": "audio/v1/ep04_115.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "October seventh: ONEW and ZICO team up. The song is called \"Tic Tac Toe.\"",
+     "audio": "audio/v1/ep04_116.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_onew_zico"
+    },
+    {
+     "who": "panel",
+     "text": "Finally, a K-pop song I can play on a napkin.",
+     "audio": "audio/v1/ep04_117.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_onew_zico"
+    },
+    {
+     "who": "guest",
+     "text": "ONEW is from SHINee, one of K-pop's veteran boy groups. ZICO is a rapper and producer who started in Block B.",
+     "audio": "audio/v1/ep04_118.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_onew_zico"
+    },
+    {
+     "who": "panel",
+     "text": "A singer and a rapper. Is this a duet or a negotiation?",
+     "audio": "audio/v1/ep04_119.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_onew_zico"
+    },
+    {
+     "who": "guest",
+     "text": "Two seasoned pros. I trained for years in a practice room. They actually debuted.",
+     "audio": "audio/v1/ep04_120.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_onew_zico"
+    },
+    {
+     "who": "guest",
+     "text": "October eighth: N.Flying, plus YUQI of i-dle with a mini album called \"27.\"",
+     "audio": "audio/v1/ep04_121.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_yuqi"
+    },
+    {
+     "who": "anchor",
+     "text": "Just \"27\"? The whole title is a number?",
+     "audio": "audio/v1/ep04_122.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "c_yuqi"
+    },
+    {
+     "who": "guest",
+     "text": "That's it. Minimalism.",
+     "audio": "audio/v1/ep04_123.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_yuqi"
+    },
+    {
+     "who": "panel",
+     "text": "I respect a short title. Like my patients' attention span.",
+     "audio": "audio/v1/ep04_124.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_yuqi"
+    },
+    {
+     "who": "anchor",
+     "text": "Quick K-pop culture question. Why do idols get photographed just for walking into an airport?",
+     "audio": "audio/v1/ep04_125.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Because airport fashion is a thing. Photographers wait there, and the walk becomes a runway.",
+     "audio": "audio/v1/ep04_126.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "I walk through airports all the time. Nobody photographs me.",
+     "audio": "audio/v1/ep04_127.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Give it time.",
+     "audio": "audio/v1/ep04_128.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Next week. October twelfth: Sung Han-bin of ZEROBASEONE makes his solo debut with an EP called \"DEAD:ALIVE.\"",
+     "audio": "audio/v1/ep04_129.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "c_hanbin"
+    },
+    {
+     "who": "panel",
+     "text": "Dead or alive? That's not a title. That's a triage question.",
+     "audio": "audio/v1/ep04_130.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_hanbin"
+    },
+    {
+     "who": "guest",
+     "text": "K-pop idols also learn heart signs. Finger heart, arm heart, big heart.",
+     "audio": "audio/v1/ep04_131.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "I know one heart. The anatomical one.",
+     "audio": "audio/v1/ep04_132.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Also on the twelfth: Xdinary Heroes with \"IMPULSE.\"",
+     "audio": "audio/v1/ep04_133.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And near the end of the month, October twenty-third: LISA of BLACKPINK with \"PRESS PLAY.\"",
+     "audio": "audio/v1/ep04_134.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "c_lisa"
+    },
+    {
+     "who": "panel",
+     "text": "Finally, a title that's also an instruction.",
+     "audio": "audio/v1/ep04_135.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_lisa"
+    },
+    {
+     "who": "anchor",
+     "text": "October twenty-sixth: ILLIT with \"BREAK EVEN,\" and IVE with \"Looks Can Kill.\"",
+     "audio": "audio/v1/ep04_136.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "c_illit"
+    },
+    {
+     "who": "panel",
+     "text": "\"Break Even.\" The only financial goal my clinic has ever hit.",
+     "audio": "audio/v1/ep04_137.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_illit"
+    },
+    {
+     "who": "guest",
+     "text": "ILLIT is one of K-pop's newer groups. They debuted in 2024. [VERIFY]",
+     "audio": "audio/v1/ep04_138.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_illit"
+    },
+    {
+     "who": "guest",
+     "text": "And \"Looks Can Kill\" is basically a warning label. I'll sign the waiver.",
+     "audio": "audio/v1/ep04_139.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_ive"
+    },
+    {
+     "who": "anchor",
+     "text": "And IVE is going full superhero movie. Six members, six hero names: Captain Purple, Wonder Green, Jean Yellow, Bat Pink, Super Blue, Spider Red.",
+     "audio": "audio/v1/ep04_140.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "c_ive"
+    },
+    {
+     "who": "panel",
+     "text": "Bat Pink. I'd read that comic.",
+     "audio": "audio/v1/ep04_141.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "push": false,
+     "screen": "c_ive"
+    },
+    {
+     "who": "guest",
+     "text": "Pre-release is October nineteenth. The album comes out October twenty-sixth.",
+     "audio": "audio/v1/ep04_142.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "c_ive"
+    },
+    {
+     "who": "guest",
+     "text": "And it's a close race! IVE on the inside, LISA coming up fast on the outside!",
+     "audio": "audio/v1/ep04_143.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Please stop commentating.",
+     "audio": "audio/v1/ep04_144.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I can't. It's live.",
+     "audio": "audio/v1/ep04_145.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Offbeat, how do fans survive fifty-two releases?",
+     "audio": "audio/v1/ep04_146.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Simple. You stream. You vote. You buy the album. Then you buy the other version of the album.",
+     "audio": "audio/v1/ep04_147.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "The same album? Again?",
+     "audio": "audio/v1/ep04_148.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Different cover. Different photocard. It's called collecting.",
+     "audio": "audio/v1/ep04_149.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "So that's where the mug's cousin comes from.",
+     "audio": "audio/v1/ep04_150.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "The mug's cousin has a photocard.",
+     "audio": "audio/v1/ep04_151.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Damn. I knew it.",
+     "audio": "audio/v1/ep04_152.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Fun fact: if you listened to one release a day, October would take you nearly two months.",
+     "audio": "audio/v1/ep04_153.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "That's without sleeping. Or repeats.",
+     "audio": "audio/v1/ep04_154.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Repeats are mandatory. That's the whole point.",
+     "audio": "audio/v1/ep04_155.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Who's your pick of the month?",
+     "audio": "audio/v1/ep04_156.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I can't choose. I love them all equally. Ask me again after I've heard them.",
+     "audio": "audio/v1/ep04_157.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Tell us your pick in the comments. And please tell Offbeat to drink water.",
+     "audio": "audio/v1/ep04_158.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I'm calm. I'm hydrated. I'm calm!",
+     "audio": "audio/v1/ep04_159.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "That was K-Culture. Thanks for watching.",
+     "audio": "audio/v1/ep04_160.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I'm calm.",
+     "audio": "audio/v1/ep04_161.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "He is holding a light stick in each hand.",
+     "audio": "audio/v1/ep04_162.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    }
+   ]
+  }
+ ]
+}

@@ -82,6 +82,12 @@ CARDS = {
     "debut_1998": lambda: caption_card("img_7.jpg", "1998: THE DEBUT", "FIN.K.L, FOUR MEMBERS, FIRST-GENERATION K-POP"),
     "cover_2005": lambda: caption_card("img_6.webp", "2005: \"FOREVER FIN.K.L\"", "THE LAST FULL-GROUP RELEASE"),
     "camping": lambda: caption_card("img_5.jpg", "CAMPING CLUB (JTBC, 2019)", "FOUR FRIENDS, ONE CAMPER VAN, ONE ROAD TRIP"),
+    "c_onew_zico": lambda: name_card("onew_zico.jpg", "ONEW & ZICO", "\"TIC TAC TOE\" · OCT 7"),
+    "c_yuqi": lambda: name_card("yuqi.jpg", "YUQI (I-DLE)", "MINI ALBUM \"27\" · OCT 8"),
+    "c_hanbin": lambda: name_card("sunghanbin.jpg", "SUNG HAN-BIN", "SOLO EP \"DEAD:ALIVE\" · OCT 12"),
+    "c_lisa": lambda: name_card("lisa.jpg", "LISA", "EP \"PRESS PLAY\" · OCT 23"),
+    "c_illit": lambda: caption_card("illit.jpg", "ILLIT: \"BREAK EVEN\"", "OCT 26"),
+    "c_ive": lambda: name_card("ive_poster.jpg", "IVE", "\"LOOKS CAN KILL\" · PRE-RELEASE OCT 19 · ALBUM OCT 26"),
     "recent": lambda: caption_card("recent_4.jpg", "SEPTEMBER 21, 2026", "ALL FOUR MEMBERS ANNOUNCED AS RETURNING"),
 }
 
