@@ -148,7 +148,7 @@ def timeline(spec, w, h, t):
         rr = 16 * s * min(u, 1.1)
         d.ellipse((x - rr, y - rr, x + rr, y + rr), fill=nr.YELLOW if e.get("hl") else nr.WHITE)
         up = k % 2 == 0
-        ty = y - 70 * s if up else y + 70 * s
+        ty = y - 105 * s if up else y + 70 * s
         d.text((x, ty), e["year"], font=nr.font(int(46 * s * min(u, 1.05))), fill=nr.YELLOW, anchor="mm")
         d.text((x, ty + (46 if up else 44) * s * (1 if up else 1)), e["label"], font=nr.font(int(24 * s)), fill=nr.WHITE, anchor="mm")
     return img
