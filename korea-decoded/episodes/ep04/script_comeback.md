@@ -26,11 +26,11 @@ Cast: K, Dr. Kangfree, Offbeat. Dates from one tracker (kpopcomebacks.com) + the
 | 21 | Offbeat | October eighth: N.Flying, plus YUQI of i-dle with a mini album called "27." | 10월 8일: N.Flying, 그리고 아이들의 우기가 "27"이라는 미니앨범으로 나옵니다. |
 | 22 | K | Just "27"? The whole title is a number? | "27"이요? 제목이 숫자 하나예요? |
 | 23 | Offbeat | That's it. Minimalism. | 그게 다예요. 미니멀리즘이죠. |
-| 24 | K | 🆕 Why are so many of these photos just people walking? | 왜 이 사진들은 다 그냥 걷는 모습이죠? |
-| 25 | Offbeat | 🆕 Because in K-pop, the walk is the runway. Photographers wait everywhere. | K-팝에서는 걷는 게 런웨이니까요. 사진기자들이 어디서든 기다려요. |
-| 26 | Kangfree | 🆕 I have a walk. Nobody has ever photographed it. | 저도 걸음걸이가 있는데 아무도 안 찍어 줬어요. |
-| 27 | Offbeat | 🆕 Give it time. | 시간을 주세요. |
-| 28 | Kangfree | I respect a short title. Like my patients' attention span. | 짧은 제목은 존중합니다. 제 환자들의 집중 시간처럼요. |
+| 24 | Kangfree | I respect a short title. Like my patients' attention span. | 짧은 제목은 존중합니다. 제 환자들의 집중 시간처럼요. |
+| 25 | K | 🆕 Why are so many of these photos just people walking? | 왜 이 사진들은 다 그냥 걷는 모습이죠? |
+| 26 | Offbeat | 🆕 Because in K-pop, the walk is the runway. Photographers wait everywhere. | K-팝에서는 걷는 게 런웨이니까요. 사진기자들이 어디서든 기다려요. |
+| 27 | Kangfree | 🆕 I have a walk. Nobody has ever photographed it. | 저도 걸음걸이가 있는데 아무도 안 찍어 줬어요. |
+| 28 | Offbeat | 🆕 Give it time. | 시간을 주세요. |
 | 29 | K | Next week. October twelfth: Sung Han-bin of ZEROBASEONE makes his solo debut with an EP called "DEAD:ALIVE." | 다음 주. 10월 12일: 제로베이스원의 성한빈이 EP "DEAD:ALIVE"로 솔로 데뷔합니다. |
 | 30 | Kangfree | Dead or alive? That's not a title. That's a triage question. | 죽었나 살았나? 제목이 아니라 응급 분류 질문이네요. |
 | 31 | Offbeat | 🆕 And that's the heart pose. An idol must know at least three kinds of heart. | 그리고 이게 하트 포즈예요. 아이돌은 하트를 최소 세 가지는 알아야 하죠. |
