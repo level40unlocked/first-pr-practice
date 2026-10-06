@@ -23,8 +23,8 @@ Source/credit of all photos: unknown, supplied by the operator (operator accepts
 |---|---|---|---|
 | assets/stock/ep04/ive_poster.jpg (3277x4096, copied) | "LOOKS CAN KILL" movie-style poster; text on it: pre-release 2026.10.19, album release 2026.10.26 (matches the tracker), (c) Starship Entertainment | 27, 29 | Image: Starship Entertainment |
 | ive_1..5.jpg (copied) | IVE concept photos (hero costumes) | 27, 29 (backgrounds) | Image: Starship Entertainment |
-| ONEW & ZICO (operator label, source: agency) | NOT copied yet: file sits in the sandbox images/ folder, outside the allowed copy rule | 16-17 | agency name pending |
-| YUQI (source: Seoul Economic Daily, watermark kept) | NOT copied yet (same reason) | 18-21 | Photo: Seoul Economic Daily |
-| Sung Han-bin (source: Sports Chosun, watermark kept) | NOT copied yet (same reason) | 22-23 | Photo: Sports Chosun |
-| LISA (source: Ilgan Sports, watermark kept) | NOT copied yet (same reason) | 25-26 | Photo: Ilgan Sports |
-| ILLIT concept image (no watermark, source unknown) | NOT copied yet (same reason) | 27-28 | pending |
+| onew_zico.jpg (1600x1853, copied) | 16-17 | agency name pending |
+| yuqi.jpg (555x832, copied) | 18-21 | Photo: Seoul Economic Daily |
+| sunghanbin.jpg (582x832, copied) | 22-23 | Photo: Sports Chosun |
+| lisa.jpg (466x832, copied; small, use as a card) | 25-26 | Photo: Ilgan Sports |
+| illit.jpg (746x512, copied) | 27-28 | pending |
