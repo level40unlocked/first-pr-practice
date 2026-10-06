@@ -17,3 +17,14 @@ Labels given by the operator, in upload order:
 | 9 | recent photo of the four (operator: "최근 이미지") | lines 14, 26 | file: assets/stock/ep04/recent_4.jpg (~640x420, small: use as an inset card, not full screen) |
 
 Source/credit of all photos: unknown, supplied by the operator (operator accepts the risk, 2026-10-06).
+
+## October comebacks segment (script_comeback.md) — images supplied by the operator
+| File / status | Content | Line(s) | Credit |
+|---|---|---|---|
+| assets/stock/ep04/ive_poster.jpg (3277x4096, copied) | "LOOKS CAN KILL" movie-style poster; text on it: pre-release 2026.10.19, album release 2026.10.26 (matches the tracker), (c) Starship Entertainment | 27, 29 | Image: Starship Entertainment |
+| ive_1..5.jpg (copied) | IVE concept photos (hero costumes) | 27, 29 (backgrounds) | Image: Starship Entertainment |
+| ONEW & ZICO (operator label, source: agency) | NOT copied yet: file sits in the sandbox images/ folder, outside the allowed copy rule | 16-17 | agency name pending |
+| YUQI (source: Seoul Economic Daily, watermark kept) | NOT copied yet (same reason) | 18-21 | Photo: Seoul Economic Daily |
+| Sung Han-bin (source: Sports Chosun, watermark kept) | NOT copied yet (same reason) | 22-23 | Photo: Sports Chosun |
+| LISA (source: Ilgan Sports, watermark kept) | NOT copied yet (same reason) | 25-26 | Photo: Ilgan Sports |
+| ILLIT concept image (no watermark, source unknown) | NOT copied yet (same reason) | 27-28 | pending |
