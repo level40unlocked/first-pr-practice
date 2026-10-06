@@ -81,13 +81,13 @@
     "cover_2005": {
      "image": "../../assets/stock/ep04/cards/cover_2005.png",
      "label": "",
-     "credit": "Image: single cover, as supplied",
+     "credit": "",
      "kb": "in"
     },
     "debut_1998": {
      "image": "../../assets/stock/ep04/cards/debut_1998.png",
      "label": "",
-     "credit": "Photo: as supplied",
+     "credit": "",
      "kb": "in"
     },
     "lightstick": {
@@ -99,7 +99,7 @@
     "name_hyori": {
      "image": "../../assets/stock/ep04/cards/name_hyori.png",
      "label": "",
-     "credit": "Photo: as supplied",
+     "credit": "",
      "kb": "in"
     },
     "name_jin": {
@@ -111,13 +111,13 @@
     "name_ock": {
      "image": "../../assets/stock/ep04/cards/name_ock.png",
      "label": "",
-     "credit": "Photo: as supplied",
+     "credit": "",
      "kb": "in"
     },
     "name_yuri": {
      "image": "../../assets/stock/ep04/cards/name_yuri.png",
      "label": "",
-     "credit": "Photo: as supplied",
+     "credit": "",
      "kb": "in"
     },
     "plans": {
@@ -162,7 +162,7 @@
     "recent": {
      "image": "../../assets/stock/ep04/cards/recent.png",
      "label": "",
-     "credit": "Photo: as supplied",
+     "credit": "",
      "kb": "in"
     },
     "timeline": {
