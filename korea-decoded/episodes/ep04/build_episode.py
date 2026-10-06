@@ -64,11 +64,8 @@ def build():
             ln = {"who": who, "text": l["text"], "audio": f"audio/v1/ep04_{l['index']:03d}.mp3"}
             key = SCREEN_AT.get(l["index"])
             if key:
-                side = side_of[l["index"]]
-                if who == "guest":  # the guest in close-up on the left, the small box in the same place as for the hosts' lines
-                    ln["shot"], ln["cam_id"], ln["box"] = "k_screen", "screen_guest", "small"
-                else:  # both hosts stay in frame, the box on one side of them for the whole run
-                    ln["shot"], ln["cam_id"], ln["side"] = "host_screen", f"host_screen_{side}", side
+                # the speaker alone on the left, the box on the right (never a two-shot with a box); a speaker change = hard cut, box stays put
+                ln["shot"], ln["cam_id"] = "k_screen", f"screen_{who}"
                 ln["push"], ln["screen"] = False, key
                 used.add(key)
             elif who == "guest":
