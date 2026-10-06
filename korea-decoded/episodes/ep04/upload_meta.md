@@ -26,3 +26,7 @@ Four Eyes Report is an animated news show about Korea. The characters and voices
 
 ## Tags
 Fin.K.L, FinKL, K-pop, K-pop comebacks, October 2026 comebacks, girl group reunion, 1st generation K-pop, IVE, ILLIT, LISA, ONEW, ZICO, YUQI, Sung Han-bin, Korean news, Korea explained, K-culture, Four Eyes Report
+
+## Thumbnail
+- Final (mine): thumbs/thumb_A.jpg "FIN.K.L IS BACK?!"
+- Two more variants for the A/B test: operator makes them (in Studio).
