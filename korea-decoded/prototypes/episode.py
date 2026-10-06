@@ -41,6 +41,7 @@ SCREEN_SHOTS = ("anchor_screen", "screen_full", "k_screen", "host_screen")
 # picture, so a change of speaker is a plain change of who talks: no cut, no moving box. A line may also set "box": "small" on a k_screen line
 # (the guest in close-up) so the box stays at the same place when the camera cuts to or from the guest.
 SCREEN_LEFT = (50, 230, 740, 618)  # the small box on the left
+SCREEN_K_LEFT = (80, 210, 1040, 750)  # k_screen mirrored: the speaker on the right, the explainer box on the left
 SCREEN_OTS = (1190, 230, 1880, 618)  # explainer box to the anchor's right (view coords, 16:9), the panel stays
 ANCHOR_VIEW_X = 930  # where the anchor sits in the view during screen shots
 SHORT_W = 1440  # a Short shows this much of the 1920-wide view
@@ -284,7 +285,9 @@ def box_goal(ln):
         return SCREEN_OTS if ln.get("side", "right") == "right" else SCREEN_LEFT
     if ln.get("box") == "small":
         return SCREEN_OTS
-    return SCREEN_K if ln["shot"] == "k_screen" else SCREEN_OTS
+    if ln["shot"] == "k_screen":
+        return SCREEN_K_LEFT if ln.get("side") == "left" else SCREEN_K
+    return SCREEN_OTS
 
 
 def one_key(ln):
@@ -540,7 +543,7 @@ def main():
         elif shot == "anchor_screen":
             target = [ax - ANCHOR_VIEW_X + W / 2, 540, 1.0]
         elif shot == "k_screen":  # the speaker (anchor or a guest) on the left, the screen on the right, 1.5x zoom
-            target = [p.x + OX + 350, 470, 1.5]
+            target = [p.x + OX + (-350 if ln.get("side") == "left" else 350), 470, 1.5]
         elif shot == "host_screen":  # two hosts side by side, the box beside them: hosts on the right of the box ("left") or on the left ("right")
             left = min(puppets.values(), key=lambda q: q.x)
             target = [left.x + OX + (730 if ln.get("side", "right") == "right" else -60), 540, 1.0]
@@ -579,7 +582,7 @@ def main():
         ln = line_at(t)
         if ln is not prev_line:  # same picture, same box position as the previous line: it keeps running (no flicker on a speaker change)
             cont = bool(prev_line is not None and one_key(ln) and one_key(prev_line) == one_key(ln) and ln["shot"] in SCREEN_SHOTS
-                        and prev_line["shot"] in SCREEN_SHOTS and box_goal(prev_line) == box_goal(ln))
+                        and prev_line["shot"] in SCREEN_SHOTS and (box_goal(prev_line) == box_goal(ln) or ln["shot"] == prev_line["shot"] == "k_screen"))
             run_t0 = run_t0 if cont else ln["start"]
             ln["_cont"], ln["_run"] = cont, run_t0
         spk = speaking(t)
@@ -608,7 +611,7 @@ def main():
             if shown_screen is not None:  # keep the last picture moving while it fades out
                 key, since, prev_key, fade = shown_screen
                 shown_screen = (key, since + 1 / FPS, None, 1.0)
-        rect = [r + (g - r) * 0.2 for r, g in zip(rect, goal)]
+        rect = list(goal) if (cut and ln.get("_cont")) else [r + (g - r) * 0.2 for r, g in zip(rect, goal)]  # a cut inside one picture puts the box straight on its new side
         alpha += (goal_a - alpha) * (0.3 if goal_a else 0.5)
         if cut and not ln.get("_cont"):
             alpha = 0.0  # a camera cut takes the box with it (unless the same box continues over the cut)

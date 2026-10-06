@@ -66,6 +66,8 @@ def build():
             if key:
                 # the speaker alone on the left, the box on the right (never a two-shot with a box); a speaker change = hard cut, box stays put
                 ln["shot"], ln["cam_id"] = "k_screen", f"screen_{who}"
+                if who == "panel":  # Kangfree sits on the left: she is framed on the right and the box goes to her left
+                    ln["side"] = "left"
                 ln["push"], ln["screen"] = False, key
                 used.add(key)
             elif who == "guest":

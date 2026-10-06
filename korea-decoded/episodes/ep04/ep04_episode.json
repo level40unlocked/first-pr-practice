@@ -365,6 +365,7 @@
      "audio": "audio/v1/ep04_012.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "debut_1998"
     },
@@ -466,6 +467,7 @@
      "audio": "audio/v1/ep04_021.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "name_ock"
     },
@@ -594,6 +596,7 @@
      "audio": "audio/v1/ep04_033.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "years21"
     },
@@ -1595,6 +1598,7 @@
      "audio": "audio/v1/ep04_111.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_count"
     },
@@ -1664,6 +1668,7 @@
      "audio": "audio/v1/ep04_117.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_onew_zico"
     },
@@ -1682,6 +1687,7 @@
      "audio": "audio/v1/ep04_119.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_onew_zico"
     },
@@ -1727,6 +1733,7 @@
      "audio": "audio/v1/ep04_124.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_yuqi"
     },
@@ -1801,6 +1808,7 @@
      "audio": "audio/v1/ep04_130.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_hanbin"
     },
@@ -1861,6 +1869,7 @@
      "audio": "audio/v1/ep04_135.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_lisa"
     },
@@ -1879,6 +1888,7 @@
      "audio": "audio/v1/ep04_137.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_illit"
     },
@@ -1915,6 +1925,7 @@
      "audio": "audio/v1/ep04_141.mp3",
      "shot": "k_screen",
      "cam_id": "screen_panel",
+     "side": "left",
      "push": false,
      "screen": "c_ive"
     },
