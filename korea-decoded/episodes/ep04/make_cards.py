@@ -54,7 +54,7 @@ def name_card(photo_path, name, role, crop=None):
     x = 140 + f.width + 90
     d.rectangle((x, 380, x + 18, 700), fill=nr.YELLOW)
     nf = nr.font(112)
-    while d.textlength(name, font=nf) > W - x - 50 - 70 and nf.size > 40: nf = nr.font(nf.size - 4)
+    while d.textlength(name, font=nf) > W - x - 50 - 190 and nf.size > 40: nf = nr.font(nf.size - 4)
     d.text((x + 50, 440), name, font=nf, fill=nr.WHITE, anchor="lm", stroke_width=4, stroke_fill=nr.BRAND_NAVY)
     for k, ln in enumerate(wrap_text(d, role, nr.font(54), W - x - 120)):
         d.text((x + 50, 560 + 66 * k), ln, font=nr.font(54), fill=nr.YELLOW, anchor="lm")

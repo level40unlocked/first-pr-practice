@@ -272,13 +272,27 @@ def screen_piece(content, rect, alpha, label, credit):
     return piece, (x0 - 8, y0 - top)
 
 
+def box_goal(ln):
+    if ln["shot"] == "screen_full":
+        return SCREEN_FULL
+    return SCREEN_K if ln["shot"] == "k_screen" else SCREEN_OTS
+
+
+def one_key(ln):
+    k = ln.get("screen")
+    if isinstance(k, list):
+        return k[0] if len(k) == 1 else None
+    return k
+
+
 def screen_at(ln, t):
     """(current screen key, seconds it has been up, previous key, crossfade progress) inside one line.
     A line's "screen" is one key or a list; "screen_split" gives the switch points as fractions."""
     keys = ln["screen"] if isinstance(ln["screen"], list) else [ln["screen"]]
     span = max(ln["end"] - ln["start"], 0.1)
     cuts = ln.get("screen_split") or [k / len(keys) for k in range(1, len(keys))]
-    starts = [ln["start"] - 0.15] + [ln["start"] + c * span for c in cuts]
+    base = ln.get("_run", ln["start"]) if len(keys) == 1 else ln["start"]  # one picture over several lines keeps running
+    starts = [base - 0.15] + [ln["start"] + c * span for c in cuts]
     k = max(i for i, s0 in enumerate(starts) if t >= s0 or i == 0)
     since = t - starts[k]
     prev = keys[k - 1] if k > 0 and since < FADE else None
@@ -546,14 +560,20 @@ def main():
     cam = cam_target(lines[0], 0)
     rect, alpha = list(SCREEN_OTS), 0.0
     short_x = (W - SHORT_W) / 2
-    shown_screen, prev_line = None, None
+    shown_screen, prev_line, run_t0 = None, None, 0.0
     base_gaze = {k: (0.0, 0.0) for k in puppets}
     for i in range(n):
         t = i / FPS
         ln = line_at(t)
+        if ln is not prev_line:  # same picture, same box position as the previous line: it keeps running (no flicker on a speaker change)
+            cont = bool(prev_line is not None and one_key(ln) and one_key(prev_line) == one_key(ln) and ln["shot"] in SCREEN_SHOTS
+                        and prev_line["shot"] in SCREEN_SHOTS and box_goal(prev_line) == box_goal(ln))
+            run_t0 = run_t0 if cont else ln["start"]
+            ln["_cont"], ln["_run"] = cont, run_t0
         spk = speaking(t)
         anchor_cam = ln["shot"] in ANCHOR_CAMERA
-        visible = [anchor_key] if anchor_cam else list(puppets)
+        visible = [anchor_key] if anchor_cam else [ln["who"]] if ln["shot"] == "k_screen" else list(puppets)
+        # k_screen: only the speaker is drawn (left of the box); a listener behind the box would peek out around it
 
         # camera: cut when switching between the anchor camera and the desk camera, otherwise ease
         tx, ty, tz = cam_target(ln, t)
@@ -570,7 +590,7 @@ def main():
         if ln.get("screen") and ln["shot"] in SCREEN_SHOTS:
             key, since, prev_key, fade = screen_at(ln, t)
             shown_screen = (key, since, prev_key, fade)
-            goal, goal_a = (SCREEN_FULL if ln["shot"] == "screen_full" else SCREEN_K if ln["shot"] == "k_screen" else SCREEN_OTS), 1.0
+            goal, goal_a = box_goal(ln), 1.0
         else:
             goal, goal_a = rect, 0.0
             if shown_screen is not None:  # keep the last picture moving while it fades out
@@ -578,8 +598,8 @@ def main():
                 shown_screen = (key, since + 1 / FPS, None, 1.0)
         rect = [r + (g - r) * 0.2 for r, g in zip(rect, goal)]
         alpha += (goal_a - alpha) * (0.3 if goal_a else 0.5)
-        if cut:
-            alpha = 0.0  # a camera cut takes the box with it
+        if cut and not ln.get("_cont"):
+            alpha = 0.0  # a camera cut takes the box with it (unless the same box continues over the cut)
 
         world = bg.copy()
         for k in visible:

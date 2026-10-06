@@ -46,7 +46,7 @@ def build():
             who = WHO[l["who"]]
             ln = {"who": who, "text": l["text"], "audio": f"audio/v1/ep04_{l['index']:03d}.mp3"}
             key = SCREEN_AT.get(l["index"])
-            if key:
+            if key:  # k_screen for every speaker: the speaker on the left, the box on the right, nobody else drawn; the box stays put across speaker changes
                 ln["shot"], ln["cam_id"], ln["push"], ln["screen"] = "k_screen", f"screen_{who}", False, key
                 used.add(key)
             elif who == "guest":
