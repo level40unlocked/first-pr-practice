@@ -33,7 +33,7 @@ SCREEN_AT = {
     110: "c_count", 111: "c_count", 112: "c_count",
     116: "c_onew_zico", 117: "c_onew_zico", 118: "c_onew_zico", 119: "c_onew_zico", 120: "c_onew_zico",
     121: "c_yuqi", 122: "c_yuqi", 123: "c_yuqi", 124: "c_yuqi", 129: "c_hanbin", 130: "c_hanbin", 134: "c_lisa", 135: "c_lisa",
-    136: "c_illit", 137: "c_illit", 138: "c_illit", 139: "c_ive", 140: ["m_yujin", "m_gaeul", "m_rei", "m_wonyoung", "m_liz", "m_leeseo"], 141: "c_ive", 142: "c_ive",
+    131: "heart", 132: "heart", 136: "c_illit", 137: "c_illit", 138: "c_illit", 139: "c_ive", 140: ["m_yujin", "m_gaeul", "m_rei", "m_wonyoung", "m_liz", "m_leeseo"], 141: "c_ive", 142: "c_ive",
 }
 
 

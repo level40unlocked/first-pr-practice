@@ -1453,6 +1453,12 @@
      "credit": "Photo: Seoul Economic Daily",
      "kb": "in"
     },
+    "heart": {
+     "image": "../../assets/stock/ep04/cards/heart.png",
+     "label": "",
+     "credit": "Illustration: Wikimedia Commons",
+     "kb": "in"
+    },
     "lightstick": {
      "image": "../../assets/stock/ep04/cards/lightstick.png",
      "label": "",
@@ -1859,29 +1865,20 @@
      "who": "guest",
      "text": "K-pop idols also learn heart signs. Finger heart, arm heart, big heart.",
      "audio": "audio/v1/ep04_131.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "heart"
     },
     {
      "who": "panel",
      "text": "I know one heart. The anatomical one.",
      "audio": "audio/v1/ep04_132.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "heart"
     },
     {
      "who": "guest",
