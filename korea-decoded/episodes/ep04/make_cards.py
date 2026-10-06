@@ -88,10 +88,18 @@ CARDS = {
     "c_lisa": lambda: name_card("lisa.jpg", "LISA", "EP \"PRESS PLAY\" · OCT 23"),
     "c_illit": lambda: caption_card("illit.jpg", "ILLIT: \"BREAK EVEN\"", "OCT 26"),
     "c_ive": lambda: name_card("ive_poster.jpg", "IVE", "\"LOOKS CAN KILL\" · PRE-RELEASE OCT 19 · ALBUM OCT 26"),
+    "m_yujin": lambda: name_card("ive_yujin.jpg", "AN YUJIN", "IVE"),
+    "m_gaeul": lambda: name_card("ive_5.jpg", "GAEUL", "IVE"),
+    "m_rei": lambda: name_card("ive_2.jpg", "REI", "IVE"),
+    "m_wonyoung": lambda: name_card("ive_4.jpg", "JANG WONYOUNG", "IVE"),
+    "m_liz": lambda: name_card("ive_3.jpg", "LIZ", "IVE"),
+    "m_leeseo": lambda: name_card("ive_1.jpg", "LEESEO", "IVE"),
     "recent": lambda: caption_card("recent_4.jpg", "SEPTEMBER 21, 2026", "ALL FOUR MEMBERS ANNOUNCED AS RETURNING"),
 }
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
+    import sys
     for k, fn in CARDS.items():
+        if len(sys.argv) > 1 and k not in sys.argv[1:]: continue
         fn().save(os.path.join(OUT, k + ".png")); print(k)
