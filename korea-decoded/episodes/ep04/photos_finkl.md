@@ -23,7 +23,7 @@ Source/credit of all photos: unknown, supplied by the operator (operator accepts
 |---|---|---|---|
 | assets/stock/ep04/ive_poster.jpg (3277x4096, copied) | "LOOKS CAN KILL" movie-style poster; text on it: pre-release 2026.10.19, album release 2026.10.26 (matches the tracker), (c) Starship Entertainment | 27, 29 | Image: Starship Entertainment |
 | ive_1..5.jpg (copied) | IVE concept photos (hero costumes) | 27, 29 (backgrounds) | Image: Starship Entertainment |
-| onew_zico.jpg (1600x1853, copied) | 16-17 | agency name pending |
+| onew_zico.jpg (1600x1853, copied) | 16-17 | Photo: Griffin Entertainment (operator, 2026-10-06) |
 | yuqi.jpg (555x832, copied) | 18-21 | Photo: Seoul Economic Daily |
 | sunghanbin.jpg (582x832, copied) | 22-23 | Photo: Sports Chosun |
 | lisa.jpg (466x832, copied; small, use as a card) | 25-26 | Photo: Ilgan Sports |
