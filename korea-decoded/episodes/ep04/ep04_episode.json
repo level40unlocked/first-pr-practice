@@ -90,6 +90,12 @@
      "credit": "Photo: as supplied",
      "kb": "in"
     },
+    "lightstick": {
+     "image": "../../assets/stock/ep04/cards/lightstick.png",
+     "label": "",
+     "credit": "Illustration: AI-generated",
+     "kb": "in"
+    },
     "name_hyori": {
      "image": "../../assets/stock/ep04/cards/name_hyori.png",
      "label": "",
@@ -1204,15 +1210,10 @@
      "who": "guest",
      "text": "Light sticks. Every group has an official one. Thousands of them in the dark look like a galaxy that bought merch.",
      "audio": "audio/v1/ep04_079.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "lightstick"
     },
     {
      "who": "panel",
@@ -1450,6 +1451,12 @@
      "image": "../../assets/stock/ep04/cards/c_yuqi.png",
      "label": "",
      "credit": "Photo: Seoul Economic Daily",
+     "kb": "in"
+    },
+    "lightstick": {
+     "image": "../../assets/stock/ep04/cards/lightstick.png",
+     "label": "",
+     "credit": "Illustration: AI-generated",
      "kb": "in"
     },
     "m_gaeul": {
@@ -2251,15 +2258,11 @@
      "who": "panel",
      "text": "He is holding a light stick in each hand.",
      "audio": "audio/v1/ep04_162.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "lightstick"
     },
     {
      "who": "panel",

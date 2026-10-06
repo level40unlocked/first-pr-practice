@@ -94,6 +94,7 @@ CARDS = {
     "m_wonyoung": lambda: name_card("ive_4.jpg", "JANG WONYOUNG", "IVE"),
     "m_liz": lambda: name_card("ive_3.jpg", "LIZ", "IVE"),
     "m_leeseo": lambda: name_card("ive_1.jpg", "LEESEO", "IVE"),
+    "lightstick": lambda: name_card("lightstick.png", "LIGHT STICKS", "ONE OFFICIAL STICK PER FAN CLUB"),
     "recent": lambda: caption_card("recent_4.jpg", "SEPTEMBER 21, 2026", "ALL FOUR MEMBERS ANNOUNCED AS RETURNING"),
 }
 

@@ -37,5 +37,6 @@ SCREENS = {
     "c_lisa": card("c_lisa", credit="Photo: Ilgan Sports"),
     "c_illit": card("c_illit", credit="Image: courtesy of the agency"),
     **{f"m_{n}": card(f"m_{n}", credit="Image: Starship Entertainment") for n in ("yujin", "gaeul", "rei", "wonyoung", "liz", "leeseo")},
+    "lightstick": card("lightstick", credit="Illustration: AI-generated"),
     "c_ive": card("c_ive", credit="Image: Starship Entertainment"),
 }

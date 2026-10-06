@@ -29,7 +29,7 @@ CHARACTERS = {
 SCREEN_AT = {
     2: "title", 11: "debut_1998", 12: "debut_1998",
     17: "name_hyori", 18: "name_hyori", 19: "name_ock", 20: "name_ock", 21: "name_ock", 22: "name_jin", 23: "name_jin", 24: "name_yuri", 25: "name_yuri",
-    29: "recent", 30: "recent", 32: "cover_2005", 33: "years21", 38: "timeline", 39: "camping", 40: "camping", 41: "camping", 46: "plans", 47: "plans",
+    29: "recent", 30: "recent", 32: "cover_2005", 33: "years21", 38: "timeline", 39: "camping", 40: "camping", 41: "camping", 46: "plans", 47: "plans", 79: "lightstick", 162: "lightstick",
     110: "c_count", 111: "c_count", 112: "c_count",
     116: "c_onew_zico", 117: "c_onew_zico", 118: "c_onew_zico", 119: "c_onew_zico", 120: "c_onew_zico",
     121: "c_yuqi", 122: "c_yuqi", 123: "c_yuqi", 124: "c_yuqi", 129: "c_hanbin", 130: "c_hanbin", 134: "c_lisa", 135: "c_lisa",
