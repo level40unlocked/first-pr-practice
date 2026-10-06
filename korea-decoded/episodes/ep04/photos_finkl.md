@@ -13,4 +13,6 @@ Labels given by the operator, in upload order:
 | 7 | old group photo (1990s) | line 8 "1998" | |
 | 8 | Lee Hyori (이효리) | **not used** | excluded (operator confirmed 2026-10-06) |
 
-Still missing: a recent photo of all four (lines 14, 26).
+| 9 | recent photo of the four (operator: "최근 이미지") | lines 14, 26 | file: assets/stock/ep04/recent_4.jpg (~640x420, small: use as an inset card, not full screen) |
+
+Source/credit of all photos: unknown, supplied by the operator (operator accepts the risk, 2026-10-06).
