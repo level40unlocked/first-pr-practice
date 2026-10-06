@@ -7,3 +7,6 @@ output/
 models/
 assets/fonts/*.ttf
 !assets/fonts/Poppins-Bold.ttf
+
+# EP.4 operator-supplied copyrighted photos: never commit
+assets/stock/ep04/
