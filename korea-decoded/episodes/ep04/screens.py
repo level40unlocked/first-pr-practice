@@ -14,13 +14,13 @@ def chart(spec, credit="", label=""):
 
 SCREENS = {
     "title": chart({"type": "bigtext", "lines": ["FIN.K.L"], "size": 150, "sub": "FOUR MEMBERS · DEBUTED 1998"}),
-    "debut_1998": card("debut_1998", credit="Photo: as supplied"),
-    "name_hyori": card("name_hyori", credit="Photo: as supplied"),
-    "name_ock": card("name_ock", credit="Photo: as supplied"),
+    "debut_1998": card("debut_1998", credit=""),
+    "name_hyori": card("name_hyori", credit=""),
+    "name_ock": card("name_ock", credit=""),
     "name_jin": card("name_jin", credit="Photo: Starnews"),
-    "name_yuri": card("name_yuri", credit="Photo: as supplied"),
-    "recent": card("recent", credit="Photo: as supplied"),
-    "cover_2005": card("cover_2005", credit="Image: single cover, as supplied"),
+    "name_yuri": card("name_yuri", credit=""),
+    "recent": card("recent", credit=""),
+    "cover_2005": card("cover_2005", credit=""),
     "years21": chart({"type": "bigtext", "lines": ["21 YEARS"], "size": 170, "sub": "FROM 2005 TO 2026"}),
     "timeline": chart({"type": "timeline", "title": "FIN.K.L, A TIMELINE", "events": [
         {"year": "1998", "label": "Debut"}, {"year": "2005", "label": "Last single"},
