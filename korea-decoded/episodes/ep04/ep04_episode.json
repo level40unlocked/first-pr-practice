@@ -1451,6 +1451,42 @@
      "label": "",
      "credit": "Photo: Seoul Economic Daily",
      "kb": "in"
+    },
+    "m_gaeul": {
+     "image": "../../assets/stock/ep04/cards/m_gaeul.png",
+     "label": "",
+     "credit": "Image: Starship Entertainment",
+     "kb": "in"
+    },
+    "m_leeseo": {
+     "image": "../../assets/stock/ep04/cards/m_leeseo.png",
+     "label": "",
+     "credit": "Image: Starship Entertainment",
+     "kb": "in"
+    },
+    "m_liz": {
+     "image": "../../assets/stock/ep04/cards/m_liz.png",
+     "label": "",
+     "credit": "Image: Starship Entertainment",
+     "kb": "in"
+    },
+    "m_rei": {
+     "image": "../../assets/stock/ep04/cards/m_rei.png",
+     "label": "",
+     "credit": "Image: Starship Entertainment",
+     "kb": "in"
+    },
+    "m_wonyoung": {
+     "image": "../../assets/stock/ep04/cards/m_wonyoung.png",
+     "label": "",
+     "credit": "Image: Starship Entertainment",
+     "kb": "in"
+    },
+    "m_yujin": {
+     "image": "../../assets/stock/ep04/cards/m_yujin.png",
+     "label": "",
+     "credit": "Image: Starship Entertainment",
+     "kb": "in"
     }
    },
    "short": false,
@@ -1917,7 +1953,14 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "c_ive"
+     "screen": [
+      "m_yujin",
+      "m_gaeul",
+      "m_rei",
+      "m_wonyoung",
+      "m_liz",
+      "m_leeseo"
+     ]
     },
     {
      "who": "panel",
