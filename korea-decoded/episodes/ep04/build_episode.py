@@ -14,6 +14,7 @@ CAST = "../../cast/"
 WHO = {"K": "anchor", "Kangfree": "panel", "Offbeat": "guest"}
 SEAT = {"panel": 630, "anchor": 1290, "guest": 2560}
 SEG_EDGES = [(1, 90), (101, 165)]
+SKIP = {84, 85, 86, 87}  # the 'Fine Killing Liability' name-meaning bit: the real expansion is disputed/likely 'Liberty', so it is cut (see script_finkl.md notes)
 SEGS = [
     {"category": "kpop", "desk": "K-POP", "headline": "Fin.K.L is back after 21 years"},
     {"category": "kpop", "desk": "COMEBACKS", "headline": "October: a new K-pop release every day"},
@@ -42,7 +43,7 @@ def build():
     segments = []
     for (a, b), meta in zip(SEG_EDGES, SEGS):
         seg_lines, used = [], set()
-        seg_in = [x for x in lines if a <= x["index"] <= b]
+        seg_in = [x for x in lines if a <= x["index"] <= b and x["index"] not in SKIP]
         # runs of consecutive lines with the same picture: the box side is fixed per run (right if the guest speaks in it, else by who speaks first)
         side_of = {}
         i = 0
