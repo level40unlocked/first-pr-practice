@@ -42,12 +42,34 @@ def build():
     segments = []
     for (a, b), meta in zip(SEG_EDGES, SEGS):
         seg_lines, used = [], set()
-        for l in [x for x in lines if a <= x["index"] <= b]:
+        seg_in = [x for x in lines if a <= x["index"] <= b]
+        # runs of consecutive lines with the same picture: the box side is fixed per run (right if the guest speaks in it, else by who speaks first)
+        side_of = {}
+        i = 0
+        while i < len(seg_in):
+            key = SCREEN_AT.get(seg_in[i]["index"])
+            if not key:
+                i += 1
+                continue
+            j = i
+            while j + 1 < len(seg_in) and SCREEN_AT.get(seg_in[j + 1]["index"]) == key:
+                j += 1
+            run = seg_in[i:j + 1]
+            side = "right" if any(WHO[x["who"]] == "guest" for x in run) or WHO[run[0]["who"]] != "panel" else "left"
+            for x in run:
+                side_of[x["index"]] = side
+            i = j + 1
+        for l in seg_in:
             who = WHO[l["who"]]
             ln = {"who": who, "text": l["text"], "audio": f"audio/v1/ep04_{l['index']:03d}.mp3"}
             key = SCREEN_AT.get(l["index"])
-            if key:  # k_screen for every speaker: the speaker on the left, the box on the right, nobody else drawn; the box stays put across speaker changes
-                ln["shot"], ln["cam_id"], ln["push"], ln["screen"] = "k_screen", f"screen_{who}", False, key
+            if key:
+                side = side_of[l["index"]]
+                if who == "guest":  # the guest in close-up on the left, the small box in the same place as for the hosts' lines
+                    ln["shot"], ln["cam_id"], ln["box"] = "k_screen", "screen_guest", "small"
+                else:  # both hosts stay in frame, the box on one side of them for the whole run
+                    ln["shot"], ln["cam_id"], ln["side"] = "host_screen", f"host_screen_{side}", side
+                ln["push"], ln["screen"] = False, key
                 used.add(key)
             elif who == "guest":
                 ln["shot"], ln["cam"], ln["ease"], ln["cam_id"], ln["push"] = "cam", [SEAT["guest"], 470, 1.30], 0.12, "guest", False

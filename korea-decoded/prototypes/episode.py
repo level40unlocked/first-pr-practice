@@ -27,7 +27,7 @@ WORLD_W = 5300  # studio wider than the frame: room for a panel seat far left an
 OX = (WORLD_W - W) // 2  # scene x (0..1920) -> world x
 DESK_Y = dg.DESK_Y
 
-SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide", "still", "cam", "k_screen")
+SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_close", "wide", "still", "cam", "k_screen", "host_screen")
 # "k_screen": the anchor on the left and the explainer screen on the right, nobody else in frame (the camera is
 # zoomed in and starts right of the panel seat). Used when the anchor presents a picture.
 # "cam": the line names its own camera, "cam": [x, y, zoom] in scene coordinates (x 0..1920, y ~470, zoom >= 1),
@@ -35,7 +35,12 @@ SHOTS = ("anchor_solo", "anchor_screen", "screen_full", "two_shot", "speaker_clo
 # "still": the line plays over a picture from scene["still"] (e.g. the whole cast), slowly pushing in; the
 # Short shows it whole (fit to width) instead of cropped. A line's "tags" pop name labels onto it.
 ANCHOR_CAMERA = {"anchor_solo"}  # the anchor close-up; every other shot keeps the whole desk in view
-SCREEN_SHOTS = ("anchor_screen", "screen_full", "k_screen")
+SCREEN_SHOTS = ("anchor_screen", "screen_full", "k_screen", "host_screen")
+# "host_screen": the leftmost two people (the hosts) both stay in frame and the small box goes to ONE side of them, never over anybody:
+# line["side"] = "right" (hosts on the left) or "left" (hosts on the right). The side is kept for a whole run of lines with the same
+# picture, so a change of speaker is a plain change of who talks: no cut, no moving box. A line may also set "box": "small" on a k_screen line
+# (the guest in close-up) so the box stays at the same place when the camera cuts to or from the guest.
+SCREEN_LEFT = (50, 230, 740, 618)  # the small box on the left
 SCREEN_OTS = (1190, 230, 1880, 618)  # explainer box to the anchor's right (view coords, 16:9), the panel stays
 ANCHOR_VIEW_X = 930  # where the anchor sits in the view during screen shots
 SHORT_W = 1440  # a Short shows this much of the 1920-wide view
@@ -275,6 +280,10 @@ def screen_piece(content, rect, alpha, label, credit):
 def box_goal(ln):
     if ln["shot"] == "screen_full":
         return SCREEN_FULL
+    if ln["shot"] == "host_screen":
+        return SCREEN_OTS if ln.get("side", "right") == "right" else SCREEN_LEFT
+    if ln.get("box") == "small":
+        return SCREEN_OTS
     return SCREEN_K if ln["shot"] == "k_screen" else SCREEN_OTS
 
 
@@ -532,6 +541,9 @@ def main():
             target = [ax - ANCHOR_VIEW_X + W / 2, 540, 1.0]
         elif shot == "k_screen":  # the speaker (anchor or a guest) on the left, the screen on the right, 1.5x zoom
             target = [p.x + OX + 350, 470, 1.5]
+        elif shot == "host_screen":  # two hosts side by side, the box beside them: hosts on the right of the box ("left") or on the left ("right")
+            left = min(puppets.values(), key=lambda q: q.x)
+            target = [left.x + OX + (730 if ln.get("side", "right") == "right" else -60), 540, 1.0]
         elif shot == "screen_full":  # desk center, so the big screen covers everyone instead of cutting a face
             target = [WORLD_W / 2, 540, 1.0]
         elif shot == "two_shot":
