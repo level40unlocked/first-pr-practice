@@ -1,0 +1,59 @@
+# EP.5 이벤트 꼭지 v1 (게스트 Professor Indoor, 약 45줄)
+
+방송 가정: 10/10(토) 06:57 KST 공개 → 미국 금요일 저녁. 아래 사실은 2026-10-07 검색 기준이며 업로드 직전 재확인.
+
+| # | 화자 | 영어 | 한국어 | 화면 |
+|---|---|---|---|---|
+| 1 | K | Now, a segment for people who like leaving the house. Here to walk us through four events in Korea: our travel expert, Professor Indoor. | 이제 집 밖으로 나가는 걸 좋아하는 분들을 위한 꼭지입니다. 한국에서 열리는 행사 네 가지를 안내해 줄 여행 전문가, Professor Indoor입니다. | 카드: 한국 이벤트 가이드 → 게스트샷 하드 컷, 이름표 PROF. INDOOR |
+| 2 | Indoor | Professor of Travel. Self-certified. Online. I've been to all four of these places. | 여행학 교수. 자칭입니다. 온라인으로요. 이 네 곳 다 가 봤어요. | 게스트샷 |
+| 3 | K | Physically? | 몸으로요? | 투샷 |
+| 4 | Indoor | ...Emotionally. I watched a lot of street view. | ...감정적으로요. 스트리트뷰를 많이 봤어요. | 게스트샷 |
+| 5 | Kangfree | That counts. Somebody tell me that counts. | 그것도 가는 거죠. 누가 가는 거라고 말해 줘요. | 투샷 |
+| 6 | K | It does not count. But the information is real, so let's go. First stop: music. | 안 칩니다. 하지만 정보는 진짜니까 가 봅시다. 첫 번째는 음악입니다. | 투샷 |
+| 7 | Indoor | The Jarasum International Jazz Festival. October ninth to eleventh, on a river island in Gapyeong, about seventy kilometers northeast of Seoul. | 자라섬 국제 재즈 페스티벌이에요. 10월 9일부터 11일까지, 서울에서 북동쪽으로 약 70킬로미터 떨어진 가평의 강 위 섬에서 열립니다. | 게스트+화면: 큰 글자 JARASUM JAZZ FESTIVAL / OCT 9-11 (카드) |
+| 8 | Kangfree | Jazz on an island. Fancy. | 섬에서 재즈라니. 고급지네요. | 게스트+화면 유지 |
+| 9 | Indoor | It's the twenty-third edition. This year, France is the focus country, to mark one hundred forty years of diplomatic ties between Korea and France. | 올해로 23회예요. 올해는 프랑스가 주목 국가인데, 한국과 프랑스 수교 140주년을 기념해서예요. | 게스트+화면: 아이콘 KOREA·FRANCE 140 YEARS |
+| 10 | K | One hundred forty years. That is a very long first date. | 140년이라. 아주 긴 첫 데이트네요. | 게스트+화면 유지 |
+| 11 | Indoor | Headliners: drummer Nate Smith, a two-time Grammy winner. Cuban pianist Alfredo Rodriguez. And Armenian pianist Tigran Hamasyan closes it out on Sunday. | 헤드라이너는 그래미를 두 번 받은 드러머 네이트 스미스, 쿠바 피아니스트 알프레도 로드리게스예요. 일요일 마지막은 아르메니아 피아니스트 티그란 하마시안이 장식합니다. | 게스트+화면: 타임라인형 카드 FRI NATE SMITH / SAT ALFREDO RODRIGUEZ / SUN TIGRAN HAMASYAN |
+| 12 | Kangfree | I know a Nate. He plays drums on my desk during meetings. Less Grammy. More coffee spilled. | 저도 네이트를 알아요. 회의 시간에 제 책상에서 드럼을 쳐요. 그래미는 없고 커피만 쏟죠. | 투샷 |
+| 13 | Indoor | Getting there: the ITX train from Yongsan to Gapyeong takes about fifty-five minutes. From the station, it's a twenty-minute walk, or a shuttle bus. | 가는 방법은 이래요. 용산에서 가평까지 ITX로 약 55분이고, 역에서 걸어서 20분이거나 셔틀버스를 타요. | 게스트+화면: 아이콘 용산 → 가평 55 MIN → WALK 20 MIN |
+| 14 | K | Tickets are sold through Yes24. Kids in elementary school and younger get in free. Middle and high schoolers get half off. | 티켓은 예스24에서 팔아요. 초등학생 이하는 무료, 중고등학생은 50% 할인입니다. | 게스트+화면 유지(큰 글자 FREE UNDER ELEMENTARY AGE) |
+| 15 | Indoor | And this year it lands on the Hangul Day long weekend, so people bring blankets and picnic on the grass. | 올해는 한글날 연휴와 겹쳐서, 사람들이 돗자리를 들고 와서 잔디밭에서 피크닉을 해요. | 게스트샷 |
+| 16 | Kangfree | A picnic and a Grammy winner. That's my kind of Friday. | 피크닉에 그래미 수상자까지. 제 취향의 금요일이에요. | 투샷 |
+| 17 | K | Next: film. The Busan International Film Festival, October sixth to fifteenth, is one of the biggest in Asia. | 다음은 영화입니다. 10월 6일부터 15일까지 열리는 부산국제영화제는 아시아에서 가장 큰 영화제 중 하나입니다. | 게스트+화면: 큰 글자 BUSAN INTERNATIONAL FILM FESTIVAL / OCT 6-15 |
+| 18 | Indoor | Three hundred sixteen films from fifty-nine countries, including ninety-three world premieres. On thirty-one screens in eight theaters. | 59개국의 316편, 그중 93편이 월드 프리미어예요. 극장 8곳의 31개 스크린에서 상영합니다. | 게스트+화면: 카운터 316 FILMS · 59 COUNTRIES · 93 WORLD PREMIERES |
+| 19 | Kangfree | Ninety-three world premieres. So there's a movie nobody has spoiled on the internet yet. | 월드 프리미어가 93편이라니. 아직 인터넷에서 스포일러가 안 나온 영화가 있다는 거네요. | 투샷 |
+| 20 | K | This year's opening film is Kim Jong-kwan's "The Table: Day and Night." Four love stories in a cafe. | 올해 개막작은 김종관 감독의 "The Table: Day and Night"입니다. 한 카페에서 펼쳐지는 네 가지 사랑 이야기요. | 카드: 개막작 THE TABLE: DAY AND NIGHT |
+| 21 | Kangfree | Four love stories, one cafe. That's also my Tuesday. | 카페 하나에 사랑 이야기가 네 개. 제 화요일이랑 똑같네요. | 투샷 |
+| 22 | Indoor | Guests include directors Alfonso Cuaron and Lee Chang-dong, and actress Isabelle Huppert. And Michelle Yeoh receives the Asian Filmmaker of the Year award. | 초청 손님으로는 알폰소 쿠아론, 이창동 감독과 배우 이자벨 위페르가 있고, 미셸 여는 올해의 아시아 영화인상을 받아요. | 게스트+화면: 아이콘 CUARON · LEE CHANG-DONG · HUPPERT · MICHELLE YEOH |
+| 23 | Indoor | Tickets are open to everyone, not just industry people. You book on the festival's ticket site, and leftover seats may be sold at ticket boxes on site. | 티켓은 업계 사람만이 아니라 누구에게나 열려 있어요. 영화제 예매 사이트에서 예매하고, 남은 좌석은 현장 매표소에서 팔기도 해요. | 게스트+화면: 아이콘 BOOK ONLINE / BOX OFFICE ON SITE |
+| 24 | K | Busan is about two and a half hours from Seoul by KTX. | 부산은 서울에서 KTX로 약 두 시간 반 거리입니다. | 투샷 |
+| 25 | Indoor | I once rode a train for two and a half hours. It was a video of a train. | 저도 기차를 두 시간 반 탄 적이 있어요. 기차 영상이었지만요. | 게스트샷 |
+| 26 | K | Now, something free. The Hangang Drone Light Show. | 이제 무료인 걸 보죠. 한강 드론 라이트쇼입니다. | 게스트+화면: 큰 글자 HANGANG DRONE LIGHT SHOW / FREE |
+| 27 | Indoor | It's at Ttukseom Hangang Park in Seoul. The main show starts at eight thirty p.m. and runs about fifteen minutes, with around fifteen hundred drones. | 서울 뚝섬한강공원에서 열려요. 메인 쇼는 저녁 8시 30분에 시작해서 15분쯤 이어지고, 드론이 약 1,500대 날아요. | 게스트+화면: 카운터 1,500 DRONES · 8:30 PM · 15 MIN |
+| 28 | Kangfree | Fifteen hundred drones. The biggest group project in Seoul that didn't need a meeting. | 드론이 1,500대라니. 회의 한 번 없이 끝나는 서울 최대의 조별 과제네요. | 투샷 |
+| 29 | Indoor | And on October thirty-first, there's a special show with Disney Korea. The theme is Marvel, with two thousand drones, a record scale for this series. | 그리고 10월 31일에는 디즈니 코리아와 함께하는 특별 공연이 있어요. 주제는 마블이고, 드론이 2,000대로 이 시리즈에서 가장 큰 규모예요. | 게스트+화면: 카운터 OCT 31 · MARVEL · 2,000 DRONES |
+| 30 | K | Two thousand drones. Avengers, assemble. | 드론 2,000대. 어벤저스, 어셈블. | 투샷 |
+| 31 | Indoor | It's free. But rain or strong wind can cancel it, so check before you go. | 무료예요. 하지만 비나 강풍이 불면 취소될 수 있으니 가기 전에 꼭 확인하세요. | 게스트+화면: 아이콘 FREE / CHECK THE WEATHER |
+| 32 | Kangfree | Free, but the weather gets a vote. | 무료지만 날씨한테도 투표권이 있네요. | 투샷 |
+| 33 | K | Last stop: a bridge. Every Sunday until October twenty-fifth, Seoul closes Jamsu Bridge to cars. | 마지막은 다리입니다. 10월 25일까지 매주 일요일, 서울은 잠수교에서 차를 막습니다. | 게스트+화면: 큰 글자 CAR-FREE JAMSU BRIDGE / SUNDAYS UNTIL OCT 25 |
+| 34 | Indoor | The bridge is closed to traffic from noon to midnight, and the festival runs from two to ten p.m. at the bridge and Banpo Hangang Park. | 다리는 낮 12시부터 자정까지 차량이 통제되고, 축제는 오후 2시부터 10시까지 다리와 반포한강공원에서 열려요. | 게스트+화면: 타임라인형 카드 NOON-MIDNIGHT NO CARS / 2-10 PM FESTIVAL |
+| 35 | Kangfree | They close a bridge for fun. In America, we close bridges for repairs. And for a year. | 재미로 다리를 닫는다고요. 미국에서는 수리 때문에 닫아요. 그것도 1년 동안요. | 투샷 |
+| 36 | Indoor | Each Sunday has a theme. October eleventh is media art. October eighteenth is a Refresh Day, with yoga, stretching, and meditation. | 일요일마다 주제가 있어요. 10월 11일은 미디어 아트, 10월 18일은 요가와 스트레칭, 명상이 있는 리프레시 데이예요. | 게스트+화면: 아이콘 OCT 11 MEDIA ART / OCT 18 REFRESH DAY (YOGA) |
+| 37 | K | Yoga above a river. For the record, I would fall in. | 강 위에서 요가라니. 참고로 저는 빠질 겁니다. | 투샷 |
+| 38 | Indoor | More than six point four seven million people have visited so far. And Seoul plans to make Jamsu Bridge pedestrian-only in the first half of next year. | 지금까지 647만 명이 넘게 다녀갔어요. 그리고 서울시는 내년 상반기에 잠수교를 보행 전용으로 만들 계획이에요. | 게스트+화면: 카운터 6.47 MILLION VISITORS → PEDESTRIAN-ONLY: 2027 (PLANNED) |
+| 39 | K | Six point four seven million. I am moved by the precision. | 647만. 그 정밀함에 감동했습니다. | 투샷 |
+| 40 | Kangfree | So the weekend plan is jazz on an island, a film in Busan, drones over the river, and a bridge with no cars. | 그러니까 주말 계획은 섬에서 재즈, 부산에서 영화, 강 위의 드론, 그리고 차 없는 다리네요. | 투샷 |
+| 41 | Indoor | I recommend all of them. From my couch. | 다 추천해요. 제 소파에서요. | 게스트샷 |
+| 42 | K | Professor. You are allowed to leave the house. | 교수님. 집 밖으로 나가셔도 됩니다. | 투샷 |
+| 43 | Indoor | ...I'll bring a blanket. | ...돗자리는 챙길게요. | 게스트샷 |
+| 44 | Kangfree | Dates and plans can change, so check each festival's official site before you go. | 일정과 계획은 바뀔 수 있으니, 가기 전에 각 행사의 공식 사이트를 꼭 확인하세요. | 투샷 |
+| 45 | K | That was your Korea events guide. Thanks for watching. | 한국 이벤트 가이드였습니다. 시청해 주셔서 감사합니다. | 투샷 |
+
+## 사실 확인 목록 (출처, 업로드 직전 재확인)
+- 자라섬재즈페스티벌: 제23회, 10/9~11, 경기 가평, 서울 북동쪽 약 70km. 프랑스 주목 국가(한불 수교 140주년). 네이트 스미스(그래미 2회, 금요일 헤드라이너), 알프레도 로드리게스(토), 티그란 하마시안(일 폐막). 예스24 예매, 초등 이하 무료·중고생 50%. 용산→가평 ITX 약 55분, 역에서 도보 약 20분 또는 셔틀. 한글날 연휴. → Korea JoongAng Daily, Sports Kyunghyang(영문), korea.net
+- 부산국제영화제(제31회): 10/6~15, 316편·59개국·월드 프리미어 93편, 극장 8곳 31개 스크린, 개막작 김종관 "The Table: Day and Night", 초청: 알폰소 쿠아론, 이창동, 이자벨 위페르, 미셸 여 아시아영화인상. 일반 관객 예매(영화제 사이트), 남은 좌석 현장 매표소. → Korea Times 10/6. (검색 결과 하나는 10/1~10이라고 틀리게 적음: 10/6~15가 맞음)
+- 한강 드론 라이트쇼(뚝섬한강공원): 10/9, 10/31, 20:30~20:45 메인쇼, 약 1,500대, 무료, 기상 악화 시 취소·연기. 10/31은 디즈니 코리아 협업 마블 테마 2,000대(시리즈 최대 규모). → 서울시 쇼 안내(검색 요약), Korea Times, 경향신문. (공식 사이트는 이 환경에서 열리지 않아 요약만 확인)
+- 잠수교 뚜벅뚜벅 축제: 9/6~10/25 매주 일요일 14~22시(다리 차량 통제 낮 12시~자정), 잠수교·반포한강공원, 10/11 미디어 아트, 10/18 리프레시 데이(요가·스트레칭·명상), 누적 647만 명, 2027년 상반기 보행 전용화 계획. → 서울시 영문 보도자료(검색 요약). 10/25 프로그램 상세는 확인 못 함
+- 부산 KTX 약 2시간 반은 일반 상식 수치(대략)
+- 농담(네이트 드럼, 미국 다리 공사, 조별 과제, 요가에서 빠짐 등)은 사실 주장이 아님
