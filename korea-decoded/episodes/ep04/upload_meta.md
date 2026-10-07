@@ -8,7 +8,7 @@ Fin.K.L Is Back. October Has a K-pop Release Every Day.
 Fin.K.L, one of K-pop's first girl groups, is returning after 21 years. And October brings a K-pop release almost every day. Master K, Dr. Kangfree, and Offbeat break it down.
 
 0:00 Fin.K.L is back after 21 years
-6:03 October: a new K-pop release every day
+5:53 October: a new K-pop release every day
 
 What we cover:
 - The four members of Fin.K.L, what they have been doing, and what the reunion plans look like
@@ -30,3 +30,16 @@ Fin.K.L, FinKL, K-pop, K-pop comebacks, October 2026 comebacks, girl group reuni
 ## Thumbnail
 - Final (mine): thumbs/thumb_A.jpg "FIN.K.L IS BACK?!"
 - Two more variants for the A/B test: operator makes them (in Studio).
+
+## Shorts (title / description). Each description ends with: "Full episode on the channel. Four Eyes Report: an animated news show about Korea. Characters and voices are animated and AI-generated."
+| file | title | credit line |
+|---|---|---|
+| ep04_short_ive.mp4 | IVE Is Going Full Superhero Movie #Shorts | Image: Starship Entertainment |
+| ep04_short_meet.mp4 | Meet the Four Women Behind Fin.K.L #Shorts | Photo: Starnews (Lee Jin) |
+| ep04_short_years.mp4 | Fin.K.L Waited 21 Years for This #Shorts | (none) |
+| ep04_short_onewzico.mp4 | ONEW & ZICO: A Duet or a Negotiation? #Shorts | Photo: Griffin Entertainment |
+
+## Schedule (KST), per docs/weekly_plan.md
+- Long: 2026-10-08 06:57 (+09:00) = 10/7 17:57 US Eastern
+- Shorts: 10/9 06:57 (ive), 10/9 18:57 (meet), 10/10 18:57 (years); onewzico slot TBD (operator)
+- Upload as private + scheduled. Captions (SRT) need the youtube.force-ssl scope: upload in Studio if the token lacks it.
