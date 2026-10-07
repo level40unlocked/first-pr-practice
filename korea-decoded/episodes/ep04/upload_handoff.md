@@ -3,16 +3,23 @@
 이 클라우드 세션의 YouTube 토큰은 만료·취소됨(`invalid_grant`). 토큰이 살아 있는 다른 세션에서 올린다.
 토큰은 채팅에 붙여넣지 않는다. 영상 파일과 업로드 정보만 넘긴다.
 
-## 1. 준비물
-| 파일 | 위치 | 비고 |
-|---|---|---|
-| 롱폼 최종본(1080p) | (운영자가 내려받아 둔 폴더) | 핑클 꼭지 재렌더 후 별도 전달. 저장소에는 없음 |
-| 썸네일 A | `episodes/ep04/thumbs/thumb_A.jpg` | "FIN.K.L IS BACK?!" |
-| 쇼츠 4편 | `ep04_short_ive/meet/years/onewzico.mp4` | 저장소에는 없음 (파일 전달) |
-| 영어 자막 | `episodes/ep04/ep04_en.srt` | 저장소에 있음 (184줄, 롱폼 10:52 기준) |
-| 제목·설명·태그·일정 | `episodes/ep04/upload_meta.md` | 저장소에 있음 (챕터 5:53 반영) |
+## 1. 준비물 (전부 이 채팅에 첨부해서 전달)
+| 파일 | 설명 |
+|---|---|
+| `ep04_part00.mp4` ~ `ep04_part10.mp4` (11개) | 롱폼 1080p 최종본을 재인코딩 없이 약 60초씩 자른 조각 (조각당 20~28MB). 합치면 10:52.4, 19,571프레임 |
+| `list.txt` | 합치기용 목록 |
+| `sha256.txt` | 조각별 체크섬 (내려받은 파일이 손상되지 않았는지 확인용) |
+| `ep04_short_ive/meet/years/onewzico.mp4` | 쇼츠 4편 (한 파일로 전달) |
+| `thumb_A.jpg` | 썸네일 "FIN.K.L IS BACK?!" |
+| `ep04_en.srt` | 영어 자막 (롱폼 10:52 기준, 184줄) |
+| `upload_handoff.md` | 이 문서 |
+| 저장소 `episodes/ep04/upload_meta.md` | 제목·설명·태그·쇼츠 제목·일정 (브랜치 `claude/happy-hawking-cgmcjm`, git pull) |
 
-브랜치: `claude/happy-hawking-cgmcjm` (git pull)
+### 롱폼 조각 합치기 (ffmpeg 필요)
+1. 조각 11개와 `list.txt`, `sha256.txt`를 한 폴더에 모은다.
+2. 체크섬 확인: `sha256sum -c sha256.txt` (윈도우는 PowerShell `Get-FileHash -Algorithm SHA256 ep04_part00.mp4` 등으로 sha256.txt와 비교)
+3. 합치기: `ffmpeg -f concat -safe 0 -i list.txt -c copy ep04_long_final.mp4`
+4. 확인: 길이 10:52.4. 조각 하나라도 없으면 영상이 중간에서 끊긴다.
 
 ## 2. 일정 (한국 시간)
 | 공개 | 내용 |
