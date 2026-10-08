@@ -143,13 +143,13 @@ def timeline(spec, w, h, t):
         if prog * (n - 1) + 1e-6 < k:
             continue
         u = pop((t - 0.2 - (0.7 + 0.5 * n) * (k / max(1, n - 1)) * 0.75) / 0.5)
-        if u <= 0:
+        if u <= 0.05:
             continue
         rr = 16 * s * min(u, 1.1)
         d.ellipse((x - rr, y - rr, x + rr, y + rr), fill=nr.YELLOW if e.get("hl") else nr.WHITE)
         up = k % 2 == 0
         ty = y - 105 * s if up else y + 70 * s
-        d.text((x, ty), e["year"], font=nr.font(int(46 * s * min(u, 1.05))), fill=nr.YELLOW, anchor="mm")
+        d.text((x, ty), e["year"], font=nr.font(max(10, int(46 * s * min(u, 1.05)))), fill=nr.YELLOW, anchor="mm")
         d.text((x, ty + (46 if up else 44) * s * (1 if up else 1)), e["label"], font=nr.font(int(24 * s)), fill=nr.WHITE, anchor="mm")
     return img
 
