@@ -679,6 +679,25 @@
      "credit": "Photo: Minseong Kim (CC BY-SA 4.0)",
      "kb": "in"
     },
+    "michelle": {
+     "image": "../../assets/stock/ep05/cards/michelle.png",
+     "label": "",
+     "credit": "",
+     "kb": "in"
+    },
+    "michelle_prog": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "EVERYTHING EVERYWHERE",
+       "ALL FOR MICHELLE"
+      ],
+      "size": 78,
+      "sub": "A SPECIAL PROGRAM FOR MICHELLE YEOH"
+     },
+     "label": "",
+     "credit": "Source: Wikipedia, Korea Times"
+    },
     "outdoor": {
      "image": "../../assets/stock/ep05/cards/outdoor.png",
      "label": "",
@@ -716,17 +735,11 @@
      "label": "",
      "credit": "Source: Korea Times, festival site"
     },
-    "yeoh": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "MICHELLE YEOH"
-      ],
-      "size": 110,
-      "sub": "ASIAN FILMMAKER OF THE YEAR"
-     },
+    "zhang": {
+     "image": "../../assets/stock/ep05/cards/zhang.png",
      "label": "",
-     "credit": "Source: Korea Times, Oct 6, 2026"
+     "credit": "",
+     "kb": "in"
     }
    },
    "short": false,
@@ -901,7 +914,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "yeoh"
+     "screen": "michelle"
     },
     {
      "who": "anchor",
@@ -910,7 +923,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "yeoh"
+     "screen": "michelle_prog"
     },
     {
      "who": "panel",
@@ -920,7 +933,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "yeoh"
+     "screen": "michelle_prog"
     },
     {
      "who": "anchor",
@@ -929,7 +942,10 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "cuaron"
+     "screen": [
+      "zhang",
+      "cuaron"
+     ]
     },
     {
      "who": "anchor",

@@ -9,6 +9,32 @@ mc = importlib.util.module_from_spec(spec); spec.loader.exec_module(mc)
 mc.STOCK = os.path.join(HERE, "../../assets/stock/ep05")
 mc.OUT = os.path.join(mc.STOCK, "cards")
 
+from PIL import Image, ImageDraw
+
+
+def framed_capped(photo, box_w, box_h):  # never blow a small photo up more than 3x
+    r = min(box_w / photo.width, box_h / photo.height, 3.0)
+    p = photo.resize((int(photo.width * r), int(photo.height * r)), Image.LANCZOS)
+    f = Image.new("RGB", (p.width + 24, p.height + 24), (255, 255, 255)); f.paste(p, (12, 12))
+    return f
+
+
+def caption_card_safe(photo_path, big, small):  # same look, text block higher: the box zoom crops the bottom edge
+    photo = Image.open(os.path.join(mc.STOCK, photo_path)).convert("RGB")
+    img = mc.backdrop(photo)
+    f = framed_capped(photo, 1700, 800)
+    img.paste(f, ((mc.W - f.width) // 2, 40))
+    d = ImageDraw.Draw(img)
+    d.rectangle((0, mc.H - 215, mc.W, mc.H), fill=mc.nr.BRAND_NAVY)
+    d.rectangle((0, mc.H - 215, mc.W, mc.H - 207), fill=mc.nr.YELLOW)
+    d.text((mc.W / 2, mc.H - 150), big, font=mc.nr.font(72), fill=mc.nr.WHITE, anchor="mm")
+    d.text((mc.W / 2, mc.H - 82), small, font=mc.nr.font(40), fill=(190, 200, 225), anchor="mm")
+    return img
+
+
+mc.framed = framed_capped
+mc.caption_card = caption_card_safe
+
 CARDS = {
     "jarasum_poster": lambda: mc.name_card("poster_jarasum.jpg", "JARASUM JAZZ", "THE 23RD · OCT 9-11"),
     "jarasum_autumn": lambda: mc.caption_card("jarasum_free_01.jpg", "GAPYEONG IN AUTUMN", "ABOUT 70 KM NORTHEAST OF SEOUL"),
@@ -21,6 +47,8 @@ CARDS = {
     "drone_heart": lambda: mc.caption_card("drone_free_03.jpg", "1,500 DRONES, ONE SKY", "SEOUL MY SOUL"),
     "drone_roses": lambda: mc.caption_card("drone_free_06.jpg", "FREE TO WATCH", "BUT THE WEATHER GETS A VOTE"),
     "nate_smith": lambda: mc.caption_card("nate_smith.jpg", "NATE SMITH", "DRUMMER · TWO-TIME GRAMMY WINNER"),
+    "michelle": lambda: mc.name_card("michelle.jpg", "MICHELLE YEOH", "ASIAN FILMMAKER OF THE YEAR"),
+    "zhang": lambda: mc.name_card("zhang.jpg", "ZHANG YIMOU", "COMPETITION JURY PRESIDENT"),
     "turtle": lambda: mc.caption_card("turtle.jpg", "A SOFTSHELL TURTLE", "\"JARA\" IN JARASUM: A TURTLE ISLAND"),
     "france_flag": lambda: mc.name_card("france_flag.jpg", "FRANCE", "COUNTRY IN FOCUS · 140 YEARS OF TIES"),
     "rodriguez": lambda: mc.caption_card("rodriguez.jpg", "ALFREDO RODRIGUEZ", "CUBAN PIANIST · SATURDAY"),
