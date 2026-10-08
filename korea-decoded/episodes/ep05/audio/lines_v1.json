@@ -1,0 +1,450 @@
+[
+ {
+  "index": 1,
+  "who": "K",
+  "text": "Time for a different kind of news. Two festivals happening right now in Korea. One has jazz on an island. The other has movies in Korea's second-largest city.",
+  "tts_text": "Time for a different kind of news. Two festivals happening right now in Korea. One has jazz on an island. The other has movies in Korea's second-largest city.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 2,
+  "who": "Kangfree",
+  "text": "I'm in. Both. Where do I sign?",
+  "tts_text": "I'm in. Both. Where do I sign?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 3,
+  "who": "K",
+  "text": "To help us plan, our travel expert, Professor Indoor.",
+  "tts_text": "To help us plan, our travel expert, Professor Indoor.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 4,
+  "who": "Indoor",
+  "text": "I've been to both.",
+  "tts_text": "I've been to both.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 5,
+  "who": "K",
+  "text": "Physically?",
+  "tts_text": "Physically?",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 6,
+  "who": "Indoor",
+  "text": "...Emotionally. I watched a lot of street view.",
+  "tts_text": "...Emotionally. I watched a lot of street view.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 7,
+  "who": "K",
+  "text": "We'll take it. Let's start with the jazz.",
+  "tts_text": "We'll take it. Let's start with the jazz.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 8,
+  "who": "K",
+  "text": "The Jarasum International Jazz Festival. October ninth to eleventh, in Gapyeong, about seventy kilometers northeast of Seoul.",
+  "tts_text": "The Jah-rah-sum International Jazz Festival. October ninth to eleventh, in Gah-pyung, about seventy kilometers northeast of Seoul.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 9,
+  "who": "Kangfree",
+  "text": "Jarasum. That sounds like a dinosaur.",
+  "tts_text": "Jah-rah-sum. That sounds like a dinosaur.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 10,
+  "who": "K",
+  "text": "It's not a dinosaur. \"Jarasum\" means \"terrapin island.\" A terrapin is a kind of turtle.",
+  "tts_text": "It's not a dinosaur. \"Jah-rah-sum\" means \"terrapin island.\" A terrapin is a kind of turtle.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 11,
+  "who": "Kangfree",
+  "text": "A jazz festival on Turtle Island. So the tempo is... slow?",
+  "tts_text": "A jazz festival on Turtle Island. So the tempo is... slow?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 12,
+  "who": "K",
+  "text": "Technically, it's a group of four small islands in the Bukhan River: East, West, Middle, and South.",
+  "tts_text": "Technically, it's a group of four small islands in the Book-han River: East, West, Middle, and South.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 13,
+  "who": "Kangfree",
+  "text": "East, West, Middle, South. Whoever named those islands did it on a lunch break.",
+  "tts_text": "East, West, Middle, South. Whoever named those islands did it on a lunch break.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 14,
+  "who": "K",
+  "text": "It started in two thousand four, with thirty teams of musicians from twelve countries.",
+  "tts_text": "It started in two thousand four, with thirty teams of musicians from twelve countries.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 15,
+  "who": "Kangfree",
+  "text": "Two thousand four. Back then my biggest problem was burning a CD without it skipping.",
+  "tts_text": "Two thousand four. Back then my biggest problem was burning a CD without it skipping.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 16,
+  "who": "K",
+  "text": "This year is the twenty-third edition. And the government has noticed: it was named a \"Representative Festival of Korea\" in twenty sixteen and again in twenty eighteen.",
+  "tts_text": "This year is the twenty-third edition. And the government has noticed: it was named a \"Representative Festival of Korea\" in twenty sixteen and again in twenty eighteen.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 17,
+  "who": "Kangfree",
+  "text": "So it got a gold star. Twice.",
+  "tts_text": "So it got a gold star. Twice.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 18,
+  "who": "K",
+  "text": "In twenty twenty-three, it joined the Europe Jazz Network. And each year it puts one country in the spotlight. Poland, then Hungary last year.",
+  "tts_text": "In twenty twenty-three, it joined the Europe Jazz Network. And each year it puts one country in the spotlight. Poland, then Hungary last year.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 19,
+  "who": "Kangfree",
+  "text": "Poland, Hungary... and this year?",
+  "tts_text": "Poland, Hungary... and this year?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 20,
+  "who": "K",
+  "text": "France. It marks one hundred forty years of diplomatic ties between Korea and France.",
+  "tts_text": "France. It marks one hundred forty years of diplomatic ties between Korea and France.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 21,
+  "who": "Kangfree",
+  "text": "One hundred forty years. I can't keep a houseplant alive for one.",
+  "tts_text": "One hundred forty years. I can't keep a houseplant alive for one.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 22,
+  "who": "K",
+  "text": "The poster is by a French illustrator, Agathe Briot. Two dancers, a lot of color.",
+  "tts_text": "The poster is by a French illustrator, Ah-gat Bree-oh. Two dancers, a lot of color.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 23,
+  "who": "Kangfree",
+  "text": "Okay, nice poster. But who's actually playing?",
+  "tts_text": "Okay, nice poster. But who's actually playing?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 24,
+  "who": "K",
+  "text": "Headliners include drummer Nate Smith. He won two Grammys this year, and this is his first time back at Jarasum in seventeen years.",
+  "tts_text": "Headliners include drummer Nate Smith. He won two Grammys this year, and this is his first time back at Jah-rah-sum in seventeen years.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 25,
+  "who": "Kangfree",
+  "text": "Seventeen years. That's the longest rest in music history.",
+  "tts_text": "Seventeen years. That's the longest rest in music history.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 26,
+  "who": "K",
+  "text": "Cuban pianist Alfredo Rodriguez plays Saturday. And Armenian pianist Tigran Hamasyan closes the festival on Sunday.",
+  "tts_text": "Cuban pianist Alfredo Rod-ree-gez plays Saturday. And Armenian pianist Tee-gran Ha-ma-see-an closes the festival on Sunday.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 27,
+  "who": "Kangfree",
+  "text": "Closing on a piano. Smooth. Now, how do I get to a turtle island?",
+  "tts_text": "Closing on a piano. Smooth. Now, how do I get to a turtle island?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 28,
+  "who": "K",
+  "text": "The ITX train from Yongsan to Gapyeong takes about fifty-five minutes. Then it's a twenty-minute walk from the station, or a shuttle bus.",
+  "tts_text": "The I T X train from Yong-san to Gah-pyung takes about fifty-five minutes. Then it's a twenty-minute walk from the station, or a shuttle bus.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 29,
+  "who": "Indoor",
+  "text": "I've walked that route. ...On a map.",
+  "tts_text": "I've walked that route. ...On a map.",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 30,
+  "who": "K",
+  "text": "Tickets are sold through Yes24. Kids in elementary school and younger get in free. Middle and high schoolers get half off.",
+  "tts_text": "Tickets are sold through Yes twenty-four. Kids in elementary school and younger get in free. Middle and high schoolers get half off.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 31,
+  "who": "Kangfree",
+  "text": "And it lands on the Hangul Day long weekend. Everyone's bringing a blanket and a snack.",
+  "tts_text": "And it lands on the Hahn-gul Day long weekend. Everyone's bringing a blanket and a snack.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 32,
+  "who": "K",
+  "text": "The whole festival is outdoors, with seating on the grass. It's mid-October, so the leaves are at their peak.",
+  "tts_text": "The whole festival is outdoors, with seating on the grass. It's mid-October, so the leaves are at their peak.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 33,
+  "who": "Kangfree",
+  "text": "Blanket, snacks, a Grammy winner, a turtle island. Ten out of ten weekend.",
+  "tts_text": "Blanket, snacks, a Grammy winner, a turtle island. Ten out of ten weekend.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 34,
+  "who": "K",
+  "text": "But if you like your art with subtitles, head south. The Busan International Film Festival, October sixth to fifteenth.",
+  "tts_text": "But if you like your art with subtitles, head south. The Boo-san International Film Festival, October sixth to fifteenth.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 35,
+  "who": "Kangfree",
+  "text": "BIFF. Like Biff from Back to the Future? The bully?",
+  "tts_text": "Biff. Like Biff from Back to the Future? The bully?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 36,
+  "who": "K",
+  "text": "No relation. It used to be called PIFF, with a P, from the old spelling, Pusan.",
+  "tts_text": "No relation. It used to be called Piff, with a P, from the old spelling, Poo-san.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 37,
+  "who": "Kangfree",
+  "text": "One letter. Somebody had to reprint every T-shirt.",
+  "tts_text": "One letter. Somebody had to reprint every T-shirt.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 38,
+  "who": "K",
+  "text": "It began in nineteen ninety-six, with a hundred seventy-three films from thirty-one countries. About a hundred eighty-four thousand people came.",
+  "tts_text": "It began in nineteen ninety-six, with a hundred seventy-three films from thirty-one countries. About a hundred eighty-four thousand people came.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 39,
+  "who": "Kangfree",
+  "text": "That's a lot of popcorn.",
+  "tts_text": "That's a lot of popcorn.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 40,
+  "who": "K",
+  "text": "It was the first international film festival in Korea. The opening film was \"Secrets and Lies,\" by the British director Mike Leigh.",
+  "tts_text": "It was the first international film festival in Korea. The opening film was \"Secrets and Lies,\" by the British director Mike Leigh.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 41,
+  "who": "Kangfree",
+  "text": "A British family drama to open a festival in Korea. That's range.",
+  "tts_text": "A British family drama to open a festival in Korea. That's range.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 42,
+  "who": "K",
+  "text": "In twenty eleven, it moved to its permanent home, the Busan Cinema Center, in a district called Centum City.",
+  "tts_text": "In twenty eleven, it moved to its permanent home, the Boo-san Cinema Center, in a district called Centum City.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 43,
+  "who": "Kangfree",
+  "text": "A permanent home. For a festival, that's basically a mortgage.",
+  "tts_text": "A permanent home. For a festival, that's basically a mortgage.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 44,
+  "who": "K",
+  "text": "In twenty fourteen, Busan was named a UNESCO City of Film. And in twenty twenty, during the pandemic, the festival showed a hundred ninety-two films to a total audience of about twenty thousand.",
+  "tts_text": "In twenty fourteen, Boo-san was named a UNESCO City of Film. And in twenty twenty, during the pandemic, the festival showed a hundred ninety-two films to a total audience of about twenty thousand.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 45,
+  "who": "Kangfree",
+  "text": "Twenty thousand. The popcorn must have been lonely.",
+  "tts_text": "Twenty thousand. The popcorn must have been lonely.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 46,
+  "who": "K",
+  "text": "Last year, for the thirtieth edition, it moved to September and added a competition section. The Grand Prize winner now closes the festival.",
+  "tts_text": "Last year, for the thirtieth edition, it moved to September and added a competition section. The Grand Prize winner now closes the festival.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 47,
+  "who": "Kangfree",
+  "text": "So the festival ends with the winner. A festival with a built-in happy ending.",
+  "tts_text": "So the festival ends with the winner. A festival with a built-in happy ending.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 48,
+  "who": "K",
+  "text": "This year, it's back in October. Three hundred sixteen films from fifty-nine countries, including ninety-three world premieres.",
+  "tts_text": "This year, it's back in October. Three hundred sixteen films from fifty-nine countries, including ninety-three world premieres.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 49,
+  "who": "Kangfree",
+  "text": "Three hundred sixteen films in ten days. That's more than thirty films a day. Even I can't binge that.",
+  "tts_text": "Three hundred sixteen films in ten days. That's more than thirty films a day. Even I can't binge that.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 50,
+  "who": "K",
+  "text": "The opening ceremony was on October sixth, at the outdoor theater. Michelle Yeoh received the Asian Filmmaker of the Year award.",
+  "tts_text": "The opening ceremony was on October sixth, at the outdoor theater. Michelle Yoh received the Asian Filmmaker of the Year award.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 51,
+  "who": "K",
+  "text": "And there's a special program called \"Everything Everywhere All for Michelle.\"",
+  "tts_text": "And there's a special program called \"Everything Everywhere All for Michelle.\"",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 52,
+  "who": "Kangfree",
+  "text": "Everything Everywhere All for Michelle. That's the best title I've heard all week.",
+  "tts_text": "Everything Everywhere All for Michelle. That's the best title I've heard all week.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 53,
+  "who": "K",
+  "text": "The competition jury is presided over by the director Zhang Yimou. And among the guests are Alfonso Cuaron and Charlotte Gainsbourg.",
+  "tts_text": "The competition jury is presided over by the director Jahng Yee-moh. And among the guests are Alfonso Kwah-rohn and Charlotte Gains-boor.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 54,
+  "who": "K",
+  "text": "There's also a program called \"Those Beautiful Years, Ahn Sung-ki,\" with six films of the late actor.",
+  "tts_text": "There's also a program called \"Those Beautiful Years, Ahn Sung-gee,\" with six films of the late actor.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 55,
+  "who": "Kangfree",
+  "text": "That's a lovely way to remember him.",
+  "tts_text": "That's a lovely way to remember him.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 56,
+  "who": "K",
+  "text": "Some screenings are outdoors, at the Open Cinema. In October. So bring a jacket.",
+  "tts_text": "Some screenings are outdoors, at the Open Cinema. In October. So bring a jacket.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 57,
+  "who": "Kangfree",
+  "text": "A movie under the sky, in a jacket. That's my kind of date night.",
+  "tts_text": "A movie under the sky, in a jacket. That's my kind of date night.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 58,
+  "who": "K",
+  "text": "Tickets are open to everyone, not just industry people. You book on the festival's ticket site, and leftover seats may be sold at ticket boxes on site.",
+  "tts_text": "Tickets are open to everyone, not just industry people. You book on the festival's ticket site, and leftover seats may be sold at ticket boxes on site.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 59,
+  "who": "Indoor",
+  "text": "I once booked a ticket to a movie about travel. Does that count?",
+  "tts_text": "I once booked a ticket to a movie about travel. Does that count?",
+  "voice_id": "f2801b0f-e345-598e-86f5-8364d886d96b"
+ },
+ {
+  "index": 60,
+  "who": "K",
+  "text": "No. Busan is about two and a half hours from Seoul by KTX.",
+  "tts_text": "No. Boo-san is about two and a half hours from Seoul by K T X.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 61,
+  "who": "Kangfree",
+  "text": "So your weekend is jazz on a turtle island, or films in a port city. Or both, if you have a jet pack.",
+  "tts_text": "So your weekend is jazz on a turtle island, or films in a port city. Or both, if you have a jet pack.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 62,
+  "who": "K",
+  "text": "Dates can change, so check each festival's official site before you go.",
+  "tts_text": "Dates can change, so check each festival's official site before you go.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 63,
+  "who": "Kangfree",
+  "text": "Core, which one are you going to?",
+  "tts_text": "Core, which one are you going to?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 64,
+  "who": "K",
+  "text": "I will be at home. With a spreadsheet. That was your Korea events guide. Thanks for watching.",
+  "tts_text": "I will be at home. With a spreadsheet. That was your Korea events guide. Thanks for watching.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ }
+]
