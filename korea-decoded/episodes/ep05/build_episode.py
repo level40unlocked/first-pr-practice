@@ -28,12 +28,13 @@ CHARACTERS = {
 # global line index -> screen key
 SCREEN_AT = {
     1: "two_fest",
-    8: "jarasum_poster", 9: "jarasum_poster", 10: "jarasum_autumn", 11: "jarasum_autumn", 12: "jarasum_autumn", 13: "jarasum_autumn",
-    14: "y2004", 15: "y2004", 16: "jarasum_time", 17: "jarasum_time", 18: "jarasum_time", 19: "france", 20: "france", 21: "france",
-    22: "jarasum_poster", 23: "jarasum_poster", 24: "years17", 25: "years17", 26: "days", 27: "days", 28: "route", 29: "route", 30: "kids",
+    8: "jarasum_autumn", 9: "turtle", 10: "turtle", 11: "turtle", 12: "jarasum_autumn", 13: "jarasum_autumn",
+    14: "y2004", 15: "y2004", 16: "jarasum_time", 17: "jarasum_time", 18: "jarasum_time", 19: "france_flag", 20: "france_flag", 21: "france_flag",
+    22: "jarasum_poster", 23: "jarasum_poster", 24: "years17", 25: "years17", 26: ["rodriguez", "hamasyan"], 27: "hamasyan", 28: "itx", 29: "itx", 30: "kids",
     32: "jarasum_autumn", 33: "jarasum_autumn",
-    34: "biff_poster", 35: "biff_poster", 36: "biff_poster", 37: "biff_poster", 38: "y1996", 39: "y1996", 42: "biff_center", 43: "biff_center",
-    44: "biff_time", 45: "biff_time", 48: "films316", 49: "films316", 50: "yeoh", 51: "yeoh", 52: "yeoh", 58: "tickets", 59: "tickets",
+    34: "biff_poster", 35: "biff_poster", 36: "piff2007", 37: "piff2007", 38: "biff1996", 39: "biff1996", 42: "biff_center", 43: "bcc_night",
+    44: "biff_time", 45: "seats2020", 46: "biff2025", 47: "biff2025", 48: "films316", 49: "films316", 50: "yeoh", 51: "yeoh", 52: "yeoh",
+    53: "cuaron", 54: "ahn", 55: "ahn", 56: "outdoor", 57: "outdoor", 58: "tickets", 59: "tickets", 60: "ktx", 61: "ktx",
 }
 
 

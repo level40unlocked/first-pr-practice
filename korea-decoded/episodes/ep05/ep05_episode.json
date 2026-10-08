@@ -72,40 +72,23 @@
     }
    },
    "screens": {
-    "days": {
-     "chart": {
-      "type": "timeline",
-      "title": "THE WEEKEND LINEUP",
-      "events": [
-       {
-        "year": "FRI",
-        "label": "Nate Smith"
-       },
-       {
-        "year": "SAT",
-        "label": "Alfredo Rodriguez"
-       },
-       {
-        "year": "SUN",
-        "label": "Tigran Hamasyan",
-        "hl": true
-       }
-      ]
-     },
+    "france_flag": {
+     "image": "../../assets/stock/ep05/cards/france_flag.png",
      "label": "",
-     "credit": "Source: Korea JoongAng Daily"
+     "credit": "Photo: Acediscovery (CC BY 4.0)",
+     "kb": "in"
     },
-    "france": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "FRANCE"
-      ],
-      "size": 170,
-      "sub": "COUNTRY IN FOCUS · 140 YEARS OF KOREA-FRANCE TIES"
-     },
+    "hamasyan": {
+     "image": "../../assets/stock/ep05/cards/hamasyan.png",
      "label": "",
-     "credit": ""
+     "credit": "Photo: Vahan Stepanyan (CC BY 3.0)",
+     "kb": "in"
+    },
+    "itx": {
+     "image": "../../assets/stock/ep05/cards/itx.png",
+     "label": "",
+     "credit": "Photo: Takeshi Aida (CC BY-SA 2.0)",
+     "kb": "in"
     },
     "jarasum_autumn": {
      "image": "../../assets/stock/ep05/cards/jarasum_autumn.png",
@@ -158,28 +141,17 @@
      "label": "",
      "credit": "Source: Korea JoongAng Daily"
     },
-    "route": {
-     "chart": {
-      "type": "icons",
-      "cols": 3,
-      "title": "HOW TO GET TO JARASUM",
-      "items": [
-       [
-        "🚆",
-        "ITX · 55 min"
-       ],
-       [
-        "🚶",
-        "Walk · 20 min"
-       ],
-       [
-        "🚌",
-        "Shuttle bus"
-       ]
-      ]
-     },
+    "rodriguez": {
+     "image": "../../assets/stock/ep05/cards/rodriguez.png",
      "label": "",
-     "credit": "Source: festival site"
+     "credit": "Photo: Withmany30 (CC BY-SA 3.0)",
+     "kb": "in"
+    },
+    "turtle": {
+     "image": "../../assets/stock/ep05/cards/turtle.png",
+     "label": "",
+     "credit": "Photo: 2ndPeter (CC BY 2.0)",
+     "kb": "in"
     },
     "two_fest": {
      "chart": {
@@ -329,7 +301,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "jarasum_poster"
+     "screen": "jarasum_autumn"
     },
     {
      "who": "panel",
@@ -339,7 +311,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "jarasum_poster"
+     "screen": "turtle"
     },
     {
      "who": "anchor",
@@ -348,7 +320,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "jarasum_autumn"
+     "screen": "turtle"
     },
     {
      "who": "panel",
@@ -358,7 +330,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "jarasum_autumn"
+     "screen": "turtle"
     },
     {
      "who": "anchor",
@@ -434,7 +406,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "france"
+     "screen": "france_flag"
     },
     {
      "who": "anchor",
@@ -443,7 +415,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "france"
+     "screen": "france_flag"
     },
     {
      "who": "panel",
@@ -453,7 +425,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "france"
+     "screen": "france_flag"
     },
     {
      "who": "anchor",
@@ -500,7 +472,10 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "days"
+     "screen": [
+      "rodriguez",
+      "hamasyan"
+     ]
     },
     {
      "who": "panel",
@@ -510,7 +485,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "days"
+     "screen": "hamasyan"
     },
     {
      "who": "anchor",
@@ -519,7 +494,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "route"
+     "screen": "itx"
     },
     {
      "who": "guest",
@@ -528,7 +503,7 @@
      "shot": "k_screen",
      "cam_id": "screen_guest",
      "push": false,
-     "screen": "route"
+     "screen": "itx"
     },
     {
      "who": "anchor",
@@ -608,6 +583,30 @@
     }
    },
    "screens": {
+    "ahn": {
+     "image": "../../assets/stock/ep05/cards/ahn.png",
+     "label": "",
+     "credit": "Photo: LG Electronics (CC BY 2.0)",
+     "kb": "in"
+    },
+    "bcc_night": {
+     "image": "../../assets/stock/ep05/cards/bcc_night.png",
+     "label": "",
+     "credit": "Photo: Raja Syazwina RS (CC BY 2.0)",
+     "kb": "in"
+    },
+    "biff1996": {
+     "image": "../../assets/stock/ep05/cards/biff1996.png",
+     "label": "",
+     "credit": "Photo: Jens-Olaf (CC BY-SA 2.0)",
+     "kb": "in"
+    },
+    "biff2025": {
+     "image": "../../assets/stock/ep05/cards/biff2025.png",
+     "label": "",
+     "credit": "Photo: Jennifer 8. Lee (CC BY-SA 4.0)",
+     "kb": "in"
+    },
     "biff_center": {
      "image": "../../assets/stock/ep05/cards/biff_center.png",
      "label": "",
@@ -647,6 +646,12 @@
      "label": "",
      "credit": "Source: Wikipedia"
     },
+    "cuaron": {
+     "image": "../../assets/stock/ep05/cards/cuaron.png",
+     "label": "",
+     "credit": "Photo: Adam Chitayat (CC BY-SA 4.0)",
+     "kb": "in"
+    },
     "films316": {
      "chart": {
       "type": "bigtext",
@@ -658,6 +663,30 @@
      },
      "label": "",
      "credit": "Source: Korea Times, Oct 6, 2026"
+    },
+    "ktx": {
+     "image": "../../assets/stock/ep05/cards/ktx.png",
+     "label": "",
+     "credit": "Photo: Minseong Kim (CC BY-SA 4.0)",
+     "kb": "in"
+    },
+    "outdoor": {
+     "image": "../../assets/stock/ep05/cards/outdoor.png",
+     "label": "",
+     "credit": "Photo: Raja Syazwina RS (CC BY 2.0)",
+     "kb": "in"
+    },
+    "piff2007": {
+     "image": "../../assets/stock/ep05/cards/piff2007.png",
+     "label": "",
+     "credit": "Photo: Jens-Olaf (CC BY-SA 2.0)",
+     "kb": "in"
+    },
+    "seats2020": {
+     "image": "../../assets/stock/ep05/cards/seats2020.png",
+     "label": "",
+     "credit": "Photo: Bapputtegi (CC BY-SA 4.0)",
+     "kb": "in"
     },
     "tickets": {
      "chart": {
@@ -677,18 +706,6 @@
      },
      "label": "",
      "credit": "Source: Korea Times, festival site"
-    },
-    "y1996": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "1996"
-      ],
-      "size": 170,
-      "sub": "173 FILMS FROM 31 COUNTRIES"
-     },
-     "label": "",
-     "credit": "Source: Wikipedia"
     },
     "yeoh": {
      "chart": {
@@ -733,7 +750,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "biff_poster"
+     "screen": "piff2007"
     },
     {
      "who": "panel",
@@ -743,7 +760,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "biff_poster"
+     "screen": "piff2007"
     },
     {
      "who": "anchor",
@@ -752,7 +769,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "y1996"
+     "screen": "biff1996"
     },
     {
      "who": "panel",
@@ -762,7 +779,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "y1996"
+     "screen": "biff1996"
     },
     {
      "who": "anchor",
@@ -809,7 +826,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "biff_center"
+     "screen": "bcc_night"
     },
     {
      "who": "anchor",
@@ -828,35 +845,26 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "biff_time"
+     "screen": "seats2020"
     },
     {
      "who": "anchor",
      "text": "Last year, for the thirtieth edition, it moved to September and added a competition section. The Grand Prize winner now closes the festival.",
      "audio": "audio/v1/ep05_046.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "biff2025"
     },
     {
      "who": "panel",
      "text": "So the festival ends with the winner. A festival with a built-in happy ending.",
      "audio": "audio/v1/ep05_047.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "biff2025"
     },
     {
      "who": "anchor",
@@ -909,71 +917,48 @@
      "who": "anchor",
      "text": "The competition jury is presided over by the director Zhang Yimou. And among the guests are Alfonso Cuaron and Charlotte Gainsbourg.",
      "audio": "audio/v1/ep05_053.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "cuaron"
     },
     {
      "who": "anchor",
      "text": "There's also a program called \"Those Beautiful Years, Ahn Sung-ki,\" with six films of the late actor.",
      "audio": "audio/v1/ep05_054.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "ahn"
     },
     {
      "who": "panel",
      "text": "That's a lovely way to remember him.",
      "audio": "audio/v1/ep05_055.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "ahn"
     },
     {
      "who": "anchor",
      "text": "Some screenings are outdoors, at the Open Cinema. In October. So bring a jacket.",
      "audio": "audio/v1/ep05_056.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "outdoor"
     },
     {
      "who": "panel",
      "text": "A movie under the sky, in a jacket. That's my kind of date night.",
      "audio": "audio/v1/ep05_057.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "outdoor"
     },
     {
      "who": "anchor",
@@ -997,29 +982,20 @@
      "who": "anchor",
      "text": "No. Busan is about two and a half hours from Seoul by KTX.",
      "audio": "audio/v1/ep05_060.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "ktx"
     },
     {
      "who": "panel",
      "text": "So your weekend is jazz on a turtle island, or films in a port city. Or both, if you have a jet pack.",
      "audio": "audio/v1/ep05_061.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "ktx"
     },
     {
      "who": "anchor",
