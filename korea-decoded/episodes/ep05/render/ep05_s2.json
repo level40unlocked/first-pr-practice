@@ -1,0 +1,507 @@
+{
+ "episode": 5,
+ "anchor": "anchor",
+ "characters": {
+  "panel": {
+   "head": "../../cast/kangfree_head.png",
+   "body": "../../cast/kangfree_body.png",
+   "ref": "../../cast/kangfree_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  },
+  "anchor": {
+   "head": "../../cast/k_head.png",
+   "body": "../../cast/k_body.png",
+   "ref": "../../cast/k_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "guest": {
+   "head": "../../cast/travel_head.png",
+   "body": "../../cast/travel_body.png",
+   "ref": "../../cast/travel_ref.png",
+   "label": "PROF. INDOOR",
+   "shoulders": 520,
+   "white_lens": true,
+   "x": 2560
+  }
+ },
+ "topic": [
+  2,
+  2
+ ],
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "up_next": [
+  "Stay curious. Keep your lenses clean."
+ ],
+ "category": "travel",
+ "desk": "TRAVEL",
+ "headline": "Busan International Film Festival: 31st edition",
+ "screens": {
+  "biff_center": {
+   "image": "../../assets/stock/ep05/cards/biff_center.png",
+   "label": "",
+   "credit": "Photo: 399scout (CC BY-SA 4.0)",
+   "kb": "in"
+  },
+  "biff_poster": {
+   "image": "../../assets/stock/ep05/cards/biff_poster.png",
+   "label": "",
+   "credit": "Poster: Busan International Film Festival",
+   "kb": "in"
+  },
+  "biff_time": {
+   "chart": {
+    "type": "timeline",
+    "title": "BIFF, A TIMELINE",
+    "events": [
+     {
+      "year": "1996",
+      "label": "First festival"
+     },
+     {
+      "year": "2011",
+      "label": "Busan Cinema Center"
+     },
+     {
+      "year": "2014",
+      "label": "UNESCO City of Film"
+     },
+     {
+      "year": "2026",
+      "label": "31st edition",
+      "hl": true
+     }
+    ]
+   },
+   "label": "",
+   "credit": "Source: Wikipedia"
+  },
+  "films316": {
+   "chart": {
+    "type": "bigtext",
+    "lines": [
+     "316 FILMS"
+    ],
+    "size": 150,
+    "sub": "59 COUNTRIES · 93 WORLD PREMIERES"
+   },
+   "label": "",
+   "credit": "Source: Korea Times, Oct 6, 2026"
+  },
+  "tickets": {
+   "chart": {
+    "type": "icons",
+    "cols": 2,
+    "title": "HOW TO GET TICKETS",
+    "items": [
+     [
+      "💻",
+      "Book on the festival site"
+     ],
+     [
+      "🎫",
+      "Box office on site"
+     ]
+    ]
+   },
+   "label": "",
+   "credit": "Source: Korea Times, festival site"
+  },
+  "y1996": {
+   "chart": {
+    "type": "bigtext",
+    "lines": [
+     "1996"
+    ],
+    "size": 170,
+    "sub": "173 FILMS FROM 31 COUNTRIES"
+   },
+   "label": "",
+   "credit": "Source: Wikipedia"
+  },
+  "yeoh": {
+   "chart": {
+    "type": "bigtext",
+    "lines": [
+     "MICHELLE YEOH"
+    ],
+    "size": 110,
+    "sub": "ASIAN FILMMAKER OF THE YEAR"
+   },
+   "label": "",
+   "credit": "Source: Korea Times, Oct 6, 2026"
+  }
+ },
+ "short": false,
+ "hook": "Busan International Film Festival: 31st edition",
+ "name_chips": true,
+ "lines": [
+  {
+   "who": "anchor",
+   "text": "But if you like your art with subtitles, head south. The Busan International Film Festival, October sixth to fifteenth.",
+   "audio": "audio/v1/ep05_034.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "biff_poster"
+  },
+  {
+   "who": "panel",
+   "text": "BIFF. Like Biff from Back to the Future? The bully?",
+   "audio": "audio/v1/ep05_035.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_panel",
+   "side": "left",
+   "push": false,
+   "screen": "biff_poster"
+  },
+  {
+   "who": "anchor",
+   "text": "No relation. It used to be called PIFF, with a P, from the old spelling, Pusan.",
+   "audio": "audio/v1/ep05_036.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "biff_poster"
+  },
+  {
+   "who": "panel",
+   "text": "One letter. Somebody had to reprint every T-shirt.",
+   "audio": "audio/v1/ep05_037.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_panel",
+   "side": "left",
+   "push": false,
+   "screen": "biff_poster"
+  },
+  {
+   "who": "anchor",
+   "text": "It began in nineteen ninety-six, with a hundred seventy-three films from thirty-one countries. About a hundred eighty-four thousand people came.",
+   "audio": "audio/v1/ep05_038.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "y1996"
+  },
+  {
+   "who": "panel",
+   "text": "That's a lot of popcorn.",
+   "audio": "audio/v1/ep05_039.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_panel",
+   "side": "left",
+   "push": false,
+   "screen": "y1996"
+  },
+  {
+   "who": "anchor",
+   "text": "It was the first international film festival in Korea. The opening film was \"Secrets and Lies,\" by the British director Mike Leigh.",
+   "audio": "audio/v1/ep05_040.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "panel",
+   "text": "A British family drama to open a festival in Korea. That's range.",
+   "audio": "audio/v1/ep05_041.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "anchor",
+   "text": "In twenty eleven, it moved to its permanent home, the Busan Cinema Center, in a district called Centum City.",
+   "audio": "audio/v1/ep05_042.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "biff_center"
+  },
+  {
+   "who": "panel",
+   "text": "A permanent home. For a festival, that's basically a mortgage.",
+   "audio": "audio/v1/ep05_043.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_panel",
+   "side": "left",
+   "push": false,
+   "screen": "biff_center"
+  },
+  {
+   "who": "anchor",
+   "text": "In twenty fourteen, Busan was named a UNESCO City of Film. And in twenty twenty, during the pandemic, the festival showed a hundred ninety-two films to a total audience of about twenty thousand.",
+   "audio": "audio/v1/ep05_044.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "biff_time"
+  },
+  {
+   "who": "panel",
+   "text": "Twenty thousand. The popcorn must have been lonely.",
+   "audio": "audio/v1/ep05_045.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_panel",
+   "side": "left",
+   "push": false,
+   "screen": "biff_time"
+  },
+  {
+   "who": "anchor",
+   "text": "Last year, for the thirtieth edition, it moved to September and added a competition section. The Grand Prize winner now closes the festival.",
+   "audio": "audio/v1/ep05_046.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "panel",
+   "text": "So the festival ends with the winner. A festival with a built-in happy ending.",
+   "audio": "audio/v1/ep05_047.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "anchor",
+   "text": "This year, it's back in October. Three hundred sixteen films from fifty-nine countries, including ninety-three world premieres.",
+   "audio": "audio/v1/ep05_048.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "films316"
+  },
+  {
+   "who": "panel",
+   "text": "Three hundred sixteen films in ten days. That's more than thirty films a day. Even I can't binge that.",
+   "audio": "audio/v1/ep05_049.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_panel",
+   "side": "left",
+   "push": false,
+   "screen": "films316"
+  },
+  {
+   "who": "anchor",
+   "text": "The opening ceremony was on October sixth, at the outdoor theater. Michelle Yeoh received the Asian Filmmaker of the Year award.",
+   "audio": "audio/v1/ep05_050.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "yeoh"
+  },
+  {
+   "who": "anchor",
+   "text": "And there's a special program called \"Everything Everywhere All for Michelle.\"",
+   "audio": "audio/v1/ep05_051.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "yeoh"
+  },
+  {
+   "who": "panel",
+   "text": "Everything Everywhere All for Michelle. That's the best title I've heard all week.",
+   "audio": "audio/v1/ep05_052.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_panel",
+   "side": "left",
+   "push": false,
+   "screen": "yeoh"
+  },
+  {
+   "who": "anchor",
+   "text": "The competition jury is presided over by the director Zhang Yimou. And among the guests are Alfonso Cuaron and Charlotte Gainsbourg.",
+   "audio": "audio/v1/ep05_053.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "anchor",
+   "text": "There's also a program called \"Those Beautiful Years, Ahn Sung-ki,\" with six films of the late actor.",
+   "audio": "audio/v1/ep05_054.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "panel",
+   "text": "That's a lovely way to remember him.",
+   "audio": "audio/v1/ep05_055.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "anchor",
+   "text": "Some screenings are outdoors, at the Open Cinema. In October. So bring a jacket.",
+   "audio": "audio/v1/ep05_056.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "panel",
+   "text": "A movie under the sky, in a jacket. That's my kind of date night.",
+   "audio": "audio/v1/ep05_057.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "anchor",
+   "text": "Tickets are open to everyone, not just industry people. You book on the festival's ticket site, and leftover seats may be sold at ticket boxes on site.",
+   "audio": "audio/v1/ep05_058.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_anchor",
+   "push": false,
+   "screen": "tickets"
+  },
+  {
+   "who": "guest",
+   "text": "I once booked a ticket to a movie about travel. Does that count?",
+   "audio": "audio/v1/ep05_059.mp3",
+   "shot": "k_screen",
+   "cam_id": "screen_guest",
+   "push": false,
+   "screen": "tickets"
+  },
+  {
+   "who": "anchor",
+   "text": "No. Busan is about two and a half hours from Seoul by KTX.",
+   "audio": "audio/v1/ep05_060.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "panel",
+   "text": "So your weekend is jazz on a turtle island, or films in a port city. Or both, if you have a jet pack.",
+   "audio": "audio/v1/ep05_061.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "anchor",
+   "text": "Dates can change, so check each festival's official site before you go.",
+   "audio": "audio/v1/ep05_062.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "panel",
+   "text": "Core, which one are you going to?",
+   "audio": "audio/v1/ep05_063.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  },
+  {
+   "who": "anchor",
+   "text": "I will be at home. With a spreadsheet. That was your Korea events guide. Thanks for watching.",
+   "audio": "audio/v1/ep05_064.mp3",
+   "shot": "cam",
+   "cam": [
+    960,
+    500,
+    1.1
+   ],
+   "ease": 0.14,
+   "cam_id": "two",
+   "push": false
+  }
+ ],
+ "out_long": "render/ep05_s2_long.mp4",
+ "out_short": "render/ep05_s2_short.mp4"
+}

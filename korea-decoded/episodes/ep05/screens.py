@@ -6,7 +6,29 @@ def card(name, credit=""):
     return {"image": CARDS + name + ".png", "label": "", "credit": credit, "kb": "in"}
 
 
+def chart(spec, credit="", label=""):
+    return {"chart": spec, "label": label, "credit": credit}
+
+
 SCREENS = {
+    "two_fest": chart({"type": "icons", "cols": 2, "title": "TWO FESTIVALS, RIGHT NOW", "items": [["🎷", "Jarasum Jazz Festival"], ["🎬", "Busan Int'l Film Festival"]]}),
+    "y2004": chart({"type": "bigtext", "lines": ["2004"], "size": 170, "sub": "FIRST FESTIVAL: 30 TEAMS FROM 12 COUNTRIES"}, "Source: Jarasum Jazz Festival (via Wikipedia)"),
+    "jarasum_time": chart({"type": "timeline", "title": "JARASUM JAZZ, A TIMELINE", "events": [
+        {"year": "2004", "label": "First festival"}, {"year": "2016", "label": "Representative festival"},
+        {"year": "2023", "label": "Europe Jazz Network"}, {"year": "2026", "label": "23rd, France focus", "hl": True}]}, "Source: Wikipedia, festival site"),
+    "france": chart({"type": "bigtext", "lines": ["FRANCE"], "size": 170, "sub": "COUNTRY IN FOCUS · 140 YEARS OF KOREA-FRANCE TIES"}),
+    "years17": chart({"type": "bigtext", "lines": ["17 YEARS"], "size": 160, "sub": "NATE SMITH IS BACK AT JARASUM"}, "Source: Korea JoongAng Daily"),
+    "days": chart({"type": "timeline", "title": "THE WEEKEND LINEUP", "events": [
+        {"year": "FRI", "label": "Nate Smith"}, {"year": "SAT", "label": "Alfredo Rodriguez"}, {"year": "SUN", "label": "Tigran Hamasyan", "hl": True}]}, "Source: Korea JoongAng Daily"),
+    "route": chart({"type": "icons", "cols": 3, "title": "HOW TO GET TO JARASUM", "items": [["🚆", "ITX · 55 min"], ["🚶", "Walk · 20 min"], ["🚌", "Shuttle bus"]]}, "Source: festival site"),
+    "kids": chart({"type": "bigtext", "lines": ["KIDS FREE"], "size": 130, "sub": "ELEMENTARY AGE AND UNDER"}, "Source: Korea JoongAng Daily"),
+    "y1996": chart({"type": "bigtext", "lines": ["1996"], "size": 170, "sub": "173 FILMS FROM 31 COUNTRIES"}, "Source: Wikipedia"),
+    "biff_time": chart({"type": "timeline", "title": "BIFF, A TIMELINE", "events": [
+        {"year": "1996", "label": "First festival"}, {"year": "2011", "label": "Busan Cinema Center"},
+        {"year": "2014", "label": "UNESCO City of Film"}, {"year": "2026", "label": "31st edition", "hl": True}]}, "Source: Wikipedia"),
+    "films316": chart({"type": "bigtext", "lines": ["316 FILMS"], "size": 150, "sub": "59 COUNTRIES · 93 WORLD PREMIERES"}, "Source: Korea Times, Oct 6, 2026"),
+    "yeoh": chart({"type": "bigtext", "lines": ["MICHELLE YEOH"], "size": 110, "sub": "ASIAN FILMMAKER OF THE YEAR"}, "Source: Korea Times, Oct 6, 2026"),
+    "tickets": chart({"type": "icons", "cols": 2, "title": "HOW TO GET TICKETS", "items": [["💻", "Book on the festival site"], ["🎫", "Box office on site"]]}, "Source: Korea Times, festival site"),
     "jarasum_poster": card("jarasum_poster", "Poster: Jarasum Jazz Festival"),
     "jarasum_autumn": card("jarasum_autumn", "Photo: Katsujiro Maekawa (CC0)"),
     "biff_poster": card("biff_poster", "Poster: Busan International Film Festival"),
