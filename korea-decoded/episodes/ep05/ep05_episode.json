@@ -78,6 +78,24 @@
      "credit": "Photo: Acediscovery (CC BY 4.0)",
      "kb": "in"
     },
+    "gapyeong_dusk": {
+     "image": "../../assets/stock/ep05/cards/gapyeong_dusk.png",
+     "label": "",
+     "credit": "Photo: Katsujiro Maekawa (CC0)",
+     "kb": "in"
+    },
+    "gapyeong_grass": {
+     "image": "../../assets/stock/ep05/cards/gapyeong_grass.png",
+     "label": "",
+     "credit": "Photo: Katsujiro Maekawa (CC0)",
+     "kb": "in"
+    },
+    "gapyeong_river": {
+     "image": "../../assets/stock/ep05/cards/gapyeong_river.png",
+     "label": "",
+     "credit": "Photo: Katsujiro Maekawa (CC0)",
+     "kb": "in"
+    },
     "hamasyan": {
      "image": "../../assets/stock/ep05/cards/hamasyan.png",
      "label": "",
@@ -159,24 +177,11 @@
      "credit": "Photo: 2ndPeter (CC BY 2.0)",
      "kb": "in"
     },
-    "two_fest": {
-     "chart": {
-      "type": "icons",
-      "cols": 2,
-      "title": "TWO FESTIVALS, RIGHT NOW",
-      "items": [
-       [
-        "🎷",
-        "Jarasum Jazz Festival"
-       ],
-       [
-        "🎬",
-        "Busan Int'l Film Festival"
-       ]
-      ]
-     },
+    "two_posters": {
+     "image": "../../assets/stock/ep05/cards/two_posters.png",
      "label": "",
-     "credit": ""
+     "credit": "Posters: Jarasum Jazz Festival, Busan International Film Festival",
+     "kb": "in"
     },
     "y2004": {
      "chart": {
@@ -214,21 +219,17 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "two_fest"
+     "screen": "two_posters"
     },
     {
      "who": "panel",
      "text": "I'm in. Both. Where do I sign?",
      "audio": "audio/v1/ep05_002.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "two_posters"
     },
     {
      "who": "anchor",
@@ -307,7 +308,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "jarasum_autumn"
+     "screen": "gapyeong_river"
     },
     {
      "who": "panel",
@@ -345,7 +346,7 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "jarasum_autumn"
+     "screen": "gapyeong_dusk"
     },
     {
      "who": "panel",
@@ -355,7 +356,7 @@
      "cam_id": "screen_panel",
      "side": "left",
      "push": false,
-     "screen": "jarasum_autumn"
+     "screen": "gapyeong_dusk"
     },
     {
      "who": "anchor",
@@ -527,15 +528,11 @@
      "who": "panel",
      "text": "And it lands on the Hangul Day long weekend. Everyone's bringing a blanket and a snack.",
      "audio": "audio/v1/ep05_031.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "gapyeong_grass"
     },
     {
      "who": "anchor",
