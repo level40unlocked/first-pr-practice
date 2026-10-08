@@ -10,13 +10,13 @@ mc.STOCK = os.path.join(HERE, "../../assets/stock/ep05")
 mc.OUT = os.path.join(mc.STOCK, "cards")
 
 CARDS = {
-    "jarasum_poster": lambda: mc.name_card("poster_jarasum.jpg", "JARASUM JAZZ FESTIVAL", "THE 23RD · OCT 9-11 · GAPYEONG"),
+    "jarasum_poster": lambda: mc.name_card("poster_jarasum.jpg", "JARASUM JAZZ", "THE 23RD · OCT 9-11"),
     "jarasum_autumn": lambda: mc.caption_card("jarasum_free_01.jpg", "GAPYEONG IN AUTUMN", "ABOUT 70 KM NORTHEAST OF SEOUL"),
-    "biff_poster": lambda: mc.name_card("poster_biff.jpg", "BUSAN INTERNATIONAL FILM FESTIVAL", "THE 31ST · OCT 6-15"),
+    "biff_poster": lambda: mc.name_card("poster_biff.jpg", "BUSAN FILM FESTIVAL", "THE 31ST · OCT 6-15"),
     "biff_center": lambda: mc.caption_card("biff_free_07.jpg", "BUSAN CINEMA CENTER", "BUSAN INTERNATIONAL FILM FESTIVAL"),
     "biff_sign": lambda: mc.caption_card("biff_free_02.jpg", "BIFF AT THE CINEMA CENTER", "A SIGN FROM THE 2020 FESTIVAL"),
     "biff_building": lambda: mc.caption_card("biff_free_06.jpg", "THE RED CARPET ENTRANCE", "BUSAN CINEMA CENTER"),
-    "drone_poster": lambda: mc.name_card("poster_drone_series.jpg", "HANGANG DRONE LIGHT SHOW", "SEP 12 · OCT 9 · OCT 31 · TTUKSEOM PARK"),
+    "drone_poster": lambda: mc.name_card("poster_drone_series.jpg", "HANGANG DRONE SHOW", "OCT 31 · TTUKSEOM PARK"),
     "drone_show": lambda: mc.caption_card("drone_free_01.jpg", "HANGANG DRONE LIGHT SHOW", "A 2025 SHOW OVER THE RIVER"),
     "drone_heart": lambda: mc.caption_card("drone_free_03.jpg", "1,500 DRONES, ONE SKY", "SEOUL MY SOUL"),
     "drone_roses": lambda: mc.caption_card("drone_free_06.jpg", "FREE TO WATCH", "BUT THE WEATHER GETS A VOTE"),
