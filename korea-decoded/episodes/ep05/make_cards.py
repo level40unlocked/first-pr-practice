@@ -51,6 +51,14 @@ def two_posters():
     return img
 
 
+def plain_card(photo_path):  # for Shorts: the burned-in captions sit at the bottom of the box, so the card carries no caption bar
+    photo = Image.open(os.path.join(mc.STOCK, photo_path)).convert("RGB")
+    img = mc.backdrop(photo)
+    f = framed_capped(photo, 1700, 940)
+    img.paste(f, ((mc.W - f.width) // 2, (mc.H - f.height) // 2 - 20))
+    return img
+
+
 CARDS = {
     "jarasum_poster": lambda: mc.name_card("poster_jarasum.jpg", "JARASUM JAZZ", "THE 23RD · OCT 9-11"),
     "jarasum_autumn": lambda: mc.caption_card("jarasum_free_01.jpg", "GAPYEONG IN AUTUMN", "ABOUT 70 KM NORTHEAST OF SEOUL"),
@@ -69,6 +77,11 @@ CARDS = {
     "gapyeong_river": lambda: mc.caption_card("gapyeong_river.jpg", "THE BUKHAN RIVER, GAPYEONG", "ABOUT 70 KM NORTHEAST OF SEOUL"),
     "gapyeong_dusk": lambda: mc.caption_card("gapyeong_dusk.jpg", "GAPYEONG AT DUSK", "RIVER AND MOUNTAINS"),
     "gapyeong_grass": lambda: mc.caption_card("gapyeong_grass.jpg", "PINK GRASS IN GAPYEONG", "AUTUMN ON THE GRASS"),
+    "turtle_p": lambda: plain_card("turtle.jpg"),
+    "gapyeong_dusk_p": lambda: plain_card("gapyeong_dusk.jpg"),
+    "nate_smith_p": lambda: plain_card("nate_smith.jpg"),
+    "rodriguez_p": lambda: plain_card("rodriguez.jpg"),
+    "biff1996_p": lambda: plain_card("biff1996.jpg"),
     "turtle": lambda: mc.caption_card("turtle.jpg", "A SOFTSHELL TURTLE", "\"JARA\" IN JARASUM: A TURTLE ISLAND"),
     "france_flag": lambda: mc.name_card("france_flag.jpg", "FRANCE", "COUNTRY IN FOCUS · 140 YEARS OF TIES"),
     "rodriguez": lambda: mc.caption_card("rodriguez.jpg", "ALFREDO RODRIGUEZ", "CUBAN PIANIST · SATURDAY"),
