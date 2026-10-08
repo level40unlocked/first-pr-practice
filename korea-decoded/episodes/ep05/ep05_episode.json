@@ -141,6 +141,12 @@
      "label": "",
      "credit": "Source: Korea JoongAng Daily"
     },
+    "nate_smith": {
+     "image": "../../assets/stock/ep05/cards/nate_smith.png",
+     "label": "",
+     "credit": "",
+     "kb": "in"
+    },
     "rodriguez": {
      "image": "../../assets/stock/ep05/cards/rodriguez.png",
      "label": "",
@@ -453,7 +459,10 @@
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "years17"
+     "screen": [
+      "nate_smith",
+      "years17"
+     ]
     },
     {
      "who": "panel",

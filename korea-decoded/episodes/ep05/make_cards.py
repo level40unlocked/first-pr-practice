@@ -20,6 +20,7 @@ CARDS = {
     "drone_show": lambda: mc.caption_card("drone_free_01.jpg", "HANGANG DRONE LIGHT SHOW", "A 2025 SHOW OVER THE RIVER"),
     "drone_heart": lambda: mc.caption_card("drone_free_03.jpg", "1,500 DRONES, ONE SKY", "SEOUL MY SOUL"),
     "drone_roses": lambda: mc.caption_card("drone_free_06.jpg", "FREE TO WATCH", "BUT THE WEATHER GETS A VOTE"),
+    "nate_smith": lambda: mc.caption_card("nate_smith.jpg", "NATE SMITH", "DRUMMER · TWO-TIME GRAMMY WINNER"),
     "turtle": lambda: mc.caption_card("turtle.jpg", "A SOFTSHELL TURTLE", "\"JARA\" IN JARASUM: A TURTLE ISLAND"),
     "france_flag": lambda: mc.name_card("france_flag.jpg", "FRANCE", "COUNTRY IN FOCUS · 140 YEARS OF TIES"),
     "rodriguez": lambda: mc.caption_card("rodriguez.jpg", "ALFREDO RODRIGUEZ", "CUBAN PIANIST · SATURDAY"),

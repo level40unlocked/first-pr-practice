@@ -39,6 +39,7 @@ SCREENS = {
     "drone_show": card("drone_show", "Photo: KOREA.NET (CC BY-SA 2.0)"),
     "drone_heart": card("drone_heart", "Photo: KOREA.NET (CC BY-SA 2.0)"),
     "drone_roses": card("drone_roses", "Photo: KOREA.NET (CC BY-SA 2.0)"),
+    "nate_smith": card("nate_smith", ""),
     "turtle": card("turtle", "Photo: 2ndPeter (CC BY 2.0)"),
     "france_flag": card("france_flag", "Photo: Acediscovery (CC BY 4.0)"),
     "rodriguez": card("rodriguez", "Photo: Withmany30 (CC BY-SA 3.0)"),
