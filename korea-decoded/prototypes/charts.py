@@ -308,7 +308,7 @@ def paths(spec, w, h, t):
         d.text((w / 2, h * 0.17), spec.get("a_label", "BALLISTIC: A HIGH ARC"), font=f, fill=tuple(int(c * al + 20 * (1 - al)) for c in orange), anchor="mm")
     if t > 1.8:
         al = ease((t - 1.8) / 0.6)
-        d.text((w / 2, h * 0.74), spec.get("b_label", "GLIDER: LOW, AND IT WEAVES"), font=nr.font(int(28 * s)), fill=tuple(int(c * al + 20 * (1 - al)) for c in teal), anchor="mm")
+        d.text((w / 2, h * 0.455), spec.get("b_label", "GLIDER: LOW, AND IT WEAVES"), font=nr.font(int(28 * s)), fill=tuple(int(c * al + 20 * (1 - al)) for c in teal), anchor="mm")
     return img
 
 
