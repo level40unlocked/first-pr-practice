@@ -8,7 +8,7 @@ TTS = [("ga, gya, geo, gyeo", "gah, gyah, guh, gyuh"), ("NH Nonghyup", "N H Nong
        ("Hyundai Rotem", "Hyun-day Row-tem"), ("KB Kookmin", "K B Kook-min"), ("Shinhan", "Shin-han"), ("Yegaram", "Yeh-gah-ram"), ("Woori", "Woo-ree"),
        ("Hana", "Hah-na"), ("Coupang", "Koo-pang"), ("Kimbot", "Kim-bot"), ("Hyunmoo-5", "Hyun-moo five"), ("HyCore", "High-Core"), ("Gagya", "Gah-gya"),
        ("Hangul", "Hahn-gul"), ("Sejong", "Say-jong"), ("Joseon", "Joe-sun"), ("Marjan Haghi", "Mar-jahn Hah-ghee"), ("Nguyen Bao Chau", "Nwin Bow Chow"),
-       ("Amira Kamal Mohamed", "Ah-mee-rah Kah-mal Mo-ha-med"), ("EXO", "Ex-oh"), ("Taean", "Teh-ahn"), ("Yonhap", "Yon-hap"), ("Jae Myung", "Jay Myung"),
+       ("Amira Kamal Mohamed", "Ah-mee-rah Kah-mal Mo-ha-med"), ("EXO", "Ex-oh"), ("Taean", "Teh-ahn"), ("Yonhap", "Yon-hap"), ("Jae Myung", "Jeh-myung"), ("Lee Jeh-myung", "Ree Jeh-myung"),
        ("Ms. Nonfic", "Miss Nonfic"), ("Dr. H", "Doctor H")]
 RE = [(r"\bADD\b", "A D D"), (r"\bAI\b", "A I"), (r"\bIP\b", "I P")]
 def tts(t):
