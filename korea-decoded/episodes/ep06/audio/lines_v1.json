@@ -1,0 +1,737 @@
+[
+ {
+  "index": 1,
+  "who": "K",
+  "text": "Welcome to Four Eyes Report. Three stories this week: one about hackers, one about a missile, and one about an alphabet.",
+  "tts_text": "Welcome to Four Eyes Report. Three stories this week: one about hackers, one about a missile, and one about an alphabet.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 2,
+  "who": "Kangfree",
+  "text": "An alphabet? In the same sentence as a missile? Bold.",
+  "tts_text": "An alphabet? In the same sentence as a missile? Bold.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 3,
+  "who": "K",
+  "text": "It's that kind of week. Let's start with the one making Korean banks nervous. Our tech expert, Bill Dusk.",
+  "tts_text": "It's that kind of week. Let's start with the one making Korean banks nervous. Our tech expert, Bill Dusk.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 4,
+  "who": "Dusk",
+  "text": "...Hello.",
+  "tts_text": "...Hello.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 5,
+  "who": "Kangfree",
+  "text": "Kimbot just blinked. That's never good.",
+  "tts_text": "Kim-bot just blinked. That's never good.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 6,
+  "who": "K",
+  "text": "Early this month, customer data leaked from banks and lenders in Korea. Seven financial firms have reported breaches so far.",
+  "tts_text": "Early this month, customer data leaked from banks and lenders in Korea. Seven financial firms have reported breaches so far.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 7,
+  "who": "K",
+  "text": "Shinhan Bank, KB Kookmin Bank, Hana Bank, BNK Busan Bank, Yegaram Savings Bank, Welcome Savings Bank, and Hyundai Capital.",
+  "tts_text": "Shin-han Bank, K B Kook-min Bank, Hah-na Bank, B N K Boo-san Bank, Yeh-gah-ram Savings Bank, Welcome Savings Bank, and Hyun-day Capital.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 8,
+  "who": "Kangfree",
+  "text": "Seven. Is that a lot?",
+  "tts_text": "Seven. Is that a lot?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 9,
+  "who": "Dusk",
+  "text": "In one week? Yes.",
+  "tts_text": "In one week? Yes.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 10,
+  "who": "K",
+  "text": "Shinhan Bank says about twenty-five thousand customers had their names, phone numbers, and annual income exposed.",
+  "tts_text": "Shin-han Bank says about twenty-five thousand customers had their names, phone numbers, and annual income exposed.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 11,
+  "who": "Kangfree",
+  "text": "Annual income. That's the one number I don't even tell my mother.",
+  "tts_text": "Annual income. That's the one number I don't even tell my mother.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 12,
+  "who": "K",
+  "text": "Hana Bank reported eighty-nine customers. Woori Bank and NH Nonghyup Bank were targeted too, but they blocked the attempts.",
+  "tts_text": "Hah-na Bank reported eighty-nine customers. Woo-ree Bank and N H Nong-hyup Bank were targeted too, but they blocked the attempts.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 13,
+  "who": "Kangfree",
+  "text": "So some of the doors held.",
+  "tts_text": "So some of the doors held.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 14,
+  "who": "K",
+  "text": "Why are people calling it AI hacking? Bill?",
+  "tts_text": "Why are people calling it A I hacking? Bill?",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 15,
+  "who": "Dusk",
+  "text": "Authorities suspect the attackers used AI tools to scan many companies for weak spots, then went in where the lock was soft.",
+  "tts_text": "Authorities suspect the attackers used A I tools to scan many companies for weak spots, then went in where the lock was soft.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 16,
+  "who": "Kangfree",
+  "text": "So the burglar has an assistant.",
+  "tts_text": "So the burglar has an assistant.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 17,
+  "who": "Dusk",
+  "text": "A fast one.",
+  "tts_text": "A fast one.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 18,
+  "who": "K",
+  "text": "Reports say the weak spots were in systems used by staff and loan agents, like business support and information lookup services.",
+  "tts_text": "Reports say the weak spots were in systems used by staff and loan agents, like business support and information lookup services.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 19,
+  "who": "Kangfree",
+  "text": "The side door, not the front door.",
+  "tts_text": "The side door, not the front door.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 20,
+  "who": "K",
+  "text": "And it happened during the long October holiday, when offices are quiet.",
+  "tts_text": "And it happened during the long October holiday, when offices are quiet.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 21,
+  "who": "Kangfree",
+  "text": "Hackers love a long weekend too.",
+  "tts_text": "Hackers love a long weekend too.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 22,
+  "who": "K",
+  "text": "The Financial Supervisory Service traced around thirty IP addresses in a dozen countries. But officials say an IP location doesn't prove who is really behind it.",
+  "tts_text": "The Financial Supervisory Service traced around thirty I P addresses in a dozen countries. But officials say an I P location doesn't prove who is really behind it.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 23,
+  "who": "Kangfree",
+  "text": "So nobody knows who it is yet.",
+  "tts_text": "So nobody knows who it is yet.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 24,
+  "who": "K",
+  "text": "Right. The attackers' identity is still unknown.",
+  "tts_text": "Right. The attackers' identity is still unknown.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 25,
+  "who": "K",
+  "text": "On October sixth, regulators issued a caution-level alert and started a month-long special response period. President Lee Jae Myung called for a thorough investigation.",
+  "tts_text": "On October sixth, regulators issued a caution-level alert and started a month-long special response period. President Lee Jay Myung called for a thorough investigation.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 26,
+  "who": "K",
+  "text": "Officials say passwords were not leaked, and no financial losses have been confirmed so far.",
+  "tts_text": "Officials say passwords were not leaked, and no financial losses have been confirmed so far.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 27,
+  "who": "Kangfree",
+  "text": "Okay. So what do I do?",
+  "tts_text": "Okay. So what do I do?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 28,
+  "who": "Dusk",
+  "text": "First: if a caller knows your income, that does not make the call real. Scammers can use leaked details to sound convincing.",
+  "tts_text": "First: if a caller knows your income, that does not make the call real. Scammers can use leaked details to sound convincing.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 29,
+  "who": "Dusk",
+  "text": "Second: check through your bank's official website or main phone number. Not through the caller or a text message.",
+  "tts_text": "Second: check through your bank's official website or main phone number. Not through the caller or a text message.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 30,
+  "who": "Dusk",
+  "text": "Third: don't keep ID numbers, account passwords, or ID copies on your phone.",
+  "tts_text": "Third: don't keep ID numbers, account passwords, or ID copies on your phone.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 31,
+  "who": "Kangfree",
+  "text": "Wait. Coupang went down too, didn't it? Is that connected?",
+  "tts_text": "Wait. Koo-pang went down too, didn't it? Is that connected?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 32,
+  "who": "K",
+  "text": "On October ninth, around one a.m., Coupang's app and delivery services were down for about two hours. The cause is not confirmed, and no report links it to the bank breaches.",
+  "tts_text": "On October ninth, around one a.m., Koo-pang's app and delivery services were down for about two hours. The cause is not confirmed, and no report links it to the bank breaches.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 33,
+  "who": "Dusk",
+  "text": "Not every outage is an attack.",
+  "tts_text": "Not every outage is an attack.",
+  "voice_id": "6f98d3dd-324f-4845-8c28-c1d1647a06cd"
+ },
+ {
+  "index": 34,
+  "who": "Kangfree",
+  "text": "Kimbot disagrees. Kimbot thinks everything is an attack.",
+  "tts_text": "Kim-bot disagrees. Kim-bot thinks everything is an attack.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 35,
+  "who": "K",
+  "text": "Next, a different kind of speed. Ms. Nonfic.",
+  "tts_text": "Next, a different kind of speed. Miss Nonfic.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 36,
+  "who": "Nonfic",
+  "text": "Good evening. On October eighth, South Korea test-launched its first hypersonic glide vehicle, or H G V, developed by the Agency for Defense Development.",
+  "tts_text": "Good evening. On October eighth, South Korea test-launched its first hypersonic glide vehicle, or H G V, developed by the Agency for Defense Development.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 37,
+  "who": "Kangfree",
+  "text": "Hypersonic glide vehicle. That's three words I need explained.",
+  "tts_text": "Hypersonic glide vehicle. That's three words I need explained.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 38,
+  "who": "Nonfic",
+  "text": "Hypersonic means at least five times the speed of sound. Mach five. About six thousand one hundred kilometers an hour.",
+  "tts_text": "Hypersonic means at least five times the speed of sound. Mach five. About six thousand one hundred kilometers an hour.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 39,
+  "who": "Kangfree",
+  "text": "Wait. Don't ballistic missiles already go that fast?",
+  "tts_text": "Wait. Don't ballistic missiles already go that fast?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 40,
+  "who": "Nonfic",
+  "text": "Many do. The difference is the path. A ballistic missile flies a high arc, up and down, like a thrown ball. You can calculate where it lands.",
+  "tts_text": "Many do. The difference is the path. A ballistic missile flies a high arc, up and down, like a thrown ball. You can calculate where it lands.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 41,
+  "who": "Kangfree",
+  "text": "And the glider?",
+  "tts_text": "And the glider?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 42,
+  "who": "Nonfic",
+  "text": "A rocket booster carries it high up. Then it separates and glides down through the atmosphere at lower altitude, and it can change direction.",
+  "tts_text": "A rocket booster carries it high up. Then it separates and glides down through the atmosphere at lower altitude, and it can change direction.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 43,
+  "who": "Kangfree",
+  "text": "A thrown ball versus a paper airplane. A very fast, very serious paper airplane.",
+  "tts_text": "A thrown ball versus a paper airplane. A very fast, very serious paper airplane.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 44,
+  "who": "Nonfic",
+  "text": "I would not use the term paper airplane. But the physics is not wrong.",
+  "tts_text": "I would not use the term paper airplane. But the physics is not wrong.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 45,
+  "who": "Kangfree",
+  "text": "Why is that so hard to stop?",
+  "tts_text": "Why is that so hard to stop?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 46,
+  "who": "Nonfic",
+  "text": "Three reasons. One: it flies low, and the curve of the Earth is in the way of ground radar, so it can be spotted later.",
+  "tts_text": "Three reasons. One: it flies low, and the curve of the Earth is in the way of ground radar, so it can be spotted later.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 47,
+  "who": "Nonfic",
+  "text": "Two: missile defenses predict where a target will be, then aim there. If the target keeps changing course, the prediction keeps missing.",
+  "tts_text": "Two: missile defenses predict where a target will be, then aim there. If the target keeps changing course, the prediction keeps missing.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 48,
+  "who": "Nonfic",
+  "text": "Three: less time. By the time it is seen, the window to respond can be a matter of minutes.",
+  "tts_text": "Three: less time. By the time it is seen, the window to respond can be a matter of minutes.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 49,
+  "who": "Kangfree",
+  "text": "So it's impossible to stop?",
+  "tts_text": "So it's impossible to stop?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 50,
+  "who": "Nonfic",
+  "text": "Nobody serious says impossible. They say difficult. I prefer accurate to dramatic.",
+  "tts_text": "Nobody serious says impossible. They say difficult. I prefer accurate to dramatic.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 51,
+  "who": "Kangfree",
+  "text": "And what's hard about building one?",
+  "tts_text": "And what's hard about building one?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 52,
+  "who": "Nonfic",
+  "text": "Heat. At these speeds, friction with the air heats the surface far past a thousand degrees. It needs special heat-resistant materials.",
+  "tts_text": "Heat. At these speeds, friction with the air heats the surface far past a thousand degrees. It needs special heat-resistant materials.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 53,
+  "who": "Nonfic",
+  "text": "And a communication problem. The heat can turn the air around the vehicle into plasma, which can block radio signals.",
+  "tts_text": "And a communication problem. The heat can turn the air around the vehicle into plasma, which can block radio signals.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 54,
+  "who": "Kangfree",
+  "text": "So it's flying fast and can't call home.",
+  "tts_text": "So it's flying fast and can't call home.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 55,
+  "who": "Nonfic",
+  "text": "So what did Korea's test check? Officials listed flight path and speed, heat protection, guidance and control, and low-altitude maneuvering.",
+  "tts_text": "So what did Korea's test check? Officials listed flight path and speed, heat protection, guidance and control, and low-altitude maneuvering.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 56,
+  "who": "Nonfic",
+  "text": "The presidential office says the vehicle separated from its booster, followed its planned path, adjusted course horizontally and vertically at low altitude, and hit its target.",
+  "tts_text": "The presidential office says the vehicle separated from its booster, followed its planned path, adjusted course horizontally and vertically at low altitude, and hit its target.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 57,
+  "who": "Nonfic",
+  "text": "Speed and range were not disclosed. The site was not officially disclosed either. Yonhap reported a barge at a test center in Taean. That part is reported, not confirmed.",
+  "tts_text": "Speed and range were not disclosed. The site was not officially disclosed either. Yon-hap reported a barge at a test center in Teh-ahn. That part is reported, not confirmed.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 58,
+  "who": "Kangfree",
+  "text": "\"Reported, not confirmed.\" That's Ms. Nonfic's love language.",
+  "tts_text": "\"Reported, not confirmed.\" That's Miss Nonfic's love language.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 59,
+  "who": "Nonfic",
+  "text": "President Lee Jae Myung attended with the defense minister. He said the government will fully support the development and operational deployment of advanced weaponry.",
+  "tts_text": "President Lee Jay Myung attended with the defense minister. He said the government will fully support the development and operational deployment of advanced weaponry.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 60,
+  "who": "Nonfic",
+  "text": "He also said the team must not rest on today's success, and that national security should rest on Korea's own strength.",
+  "tts_text": "He also said the team must not rest on today's success, and that national security should rest on Korea's own strength.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 61,
+  "who": "Nonfic",
+  "text": "The same day, he inspected the Hyunmoo-5, a surface-to-surface missile nicknamed the monster missile. Officials used that name in a press statement for the first time.",
+  "tts_text": "The same day, he inspected the Hyun-moo five, a surface-to-surface missile nicknamed the monster missile. Officials used that name in a press statement for the first time.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 62,
+  "who": "Kangfree",
+  "text": "The monster missile. The naming department had a good day.",
+  "tts_text": "The monster missile. The naming department had a good day.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 63,
+  "who": "Nonfic",
+  "text": "The timing matters. On October third, North Korea test-fired what Seoul assessed as a hypersonic medium-range ballistic missile. Seoul put its range at seven hundred kilometers. North Korea claimed one thousand.",
+  "tts_text": "The timing matters. On October third, North Korea test-fired what Seoul assessed as a hypersonic medium-range ballistic missile. Seoul put its range at seven hundred kilometers. North Korea claimed one thousand.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 64,
+  "who": "Kangfree",
+  "text": "So it's a race.",
+  "tts_text": "So it's a race.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 65,
+  "who": "Nonfic",
+  "text": "I would not call it a race. I would call it a pattern.",
+  "tts_text": "I would not call it a race. I would call it a pattern.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 66,
+  "who": "K",
+  "text": "Is Korea building anything else in this area?",
+  "tts_text": "Is Korea building anything else in this area?",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 67,
+  "who": "Nonfic",
+  "text": "Yes. HyCore. It is a different type: a hypersonic cruise missile. It keeps its engine running the whole way, using a scramjet. ADD and Hyundai Rotem have worked on it since twenty eighteen.",
+  "tts_text": "Yes. High-Core. It is a different type: a hypersonic cruise missile. It keeps its engine running the whole way, using a scramjet. A D D and Hyun-day Row-tem have worked on it since twenty eighteen.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 68,
+  "who": "Kangfree",
+  "text": "Scramjet. What's that?",
+  "tts_text": "Scramjet. What's that?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 69,
+  "who": "Nonfic",
+  "text": "An engine that burns fuel in air rushing past faster than sound. Think of keeping a candle lit in a hurricane.",
+  "tts_text": "An engine that burns fuel in air rushing past faster than sound. Think of keeping a candle lit in a hurricane.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 70,
+  "who": "Nonfic",
+  "text": "In a twenty twenty-four test, HyCore passed Mach six at an altitude of twenty-three kilometers. The partners aim to begin mass production by twenty thirty-five.",
+  "tts_text": "In a twenty twenty-four test, High-Core passed Mach six at an altitude of twenty-three kilometers. The partners aim to begin mass production by twenty thirty-five.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 71,
+  "who": "Kangfree",
+  "text": "Twenty thirty-five. So the future is nine years away.",
+  "tts_text": "Twenty thirty-five. So the future is nine years away.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 72,
+  "who": "Nonfic",
+  "text": "I will update the facts as they change. I do not update opinions. I do not have any.",
+  "tts_text": "I will update the facts as they change. I do not update opinions. I do not have any.",
+  "voice_id": "3c2b83c0-2e0a-5ae8-998a-a5fe71b7eccd"
+ },
+ {
+  "index": 73,
+  "who": "K",
+  "text": "Last story, a softer one. Last Friday, October ninth, was Hangul Day. Our historian, Dr. H.",
+  "tts_text": "Last story, a softer one. Last Friday, October ninth, was Hahn-gul Day. Our historian, Doctor H.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 74,
+  "who": "Dr. H",
+  "text": "Last time, I told you who made Hangul. This time, the holiday itself has a birthday. It turned one hundred.",
+  "tts_text": "Last time, I told you who made Hahn-gul. This time, the holiday itself has a birthday. It turned one hundred.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 75,
+  "who": "Kangfree",
+  "text": "The holiday is a hundred? Who threw the first party?",
+  "tts_text": "The holiday is a hundred? Who threw the first party?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 76,
+  "who": "Dr. H",
+  "text": "In nineteen twenty-six, the Korean Language Society held the first celebration, for the four hundred eightieth anniversary of the fourteen forty-six text.",
+  "tts_text": "In nineteen twenty-six, the Korean Language Society held the first celebration, for the four hundred eightieth anniversary of the fourteen forty-six text.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 77,
+  "who": "Kangfree",
+  "text": "What was it called?",
+  "tts_text": "What was it called?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 78,
+  "who": "Dr. H",
+  "text": "\"Gagya Day.\" It comes from the opening syllables of the Korean alphabet chart: ga, gya, geo, gyeo.",
+  "tts_text": "\"Gah-gya Day.\" It comes from the opening syllables of the Korean alphabet chart: gah, gyah, guh, gyuh.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 79,
+  "who": "Kangfree",
+  "text": "So it was literally Alphabet Day. Like \"A-B-C Day.\"",
+  "tts_text": "So it was literally Alphabet Day. Like \"A-B-C Day.\"",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 80,
+  "who": "Dr. H",
+  "text": "Two years later, in nineteen twenty-eight, it was renamed Hangul Day. And the date moved several times before it settled on October ninth.",
+  "tts_text": "Two years later, in nineteen twenty-eight, it was renamed Hahn-gul Day. And the date moved several times before it settled on October ninth.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 81,
+  "who": "Dr. H",
+  "text": "It lost its day off in the early nineties. In the mid-two-thousands it became an official national day again, but still without a day off. The day off came back in twenty thirteen.",
+  "tts_text": "It lost its day off in the early nineties. In the mid-two-thousands it became an official national day again, but still without a day off. The day off came back in twenty thirteen.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 82,
+  "who": "Kangfree",
+  "text": "A holiday that got laid off and rehired.",
+  "tts_text": "A holiday that got laid off and rehired.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 83,
+  "who": "K",
+  "text": "Why is it in the news? Because of foreign learners. This week, the King Sejong Institute Foundation invited a record three hundred fifty-seven Korean learners to Korea.",
+  "tts_text": "Why is it in the news? Because of foreign learners. This week, the King Say-jong Institute Foundation invited a record three hundred fifty-seven Korean learners to Korea.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 84,
+  "who": "K",
+  "text": "A hundred eighty-one of them came to a speaking and writing contest, from seventy-one countries.",
+  "tts_text": "A hundred eighty-one of them came to a speaking and writing contest, from seventy-one countries.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 85,
+  "who": "Kangfree",
+  "text": "Seventy-one countries. That's more than I've visited, even in my head.",
+  "tts_text": "Seventy-one countries. That's more than I've visited, even in my head.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 86,
+  "who": "K",
+  "text": "The speaking contest had about two hundred eighty-four applicants for every finalist spot.",
+  "tts_text": "The speaking contest had about two hundred eighty-four applicants for every finalist spot.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 87,
+  "who": "Kangfree",
+  "text": "That's harder than getting concert tickets.",
+  "tts_text": "That's harder than getting concert tickets.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 88,
+  "who": "Dr. H",
+  "text": "The grand prize in speaking went to Marjan Haghi of Iran. In writing, it went to Nguyen Bao Chau of Vietnam.",
+  "tts_text": "The grand prize in speaking went to Mar-jahn Hah-ghee of Iran. In writing, it went to Nwin Bow Chow of Vietnam.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 89,
+  "who": "Dr. H",
+  "text": "The writing finalists wrote their essays wearing Joseon-era scholar robes.",
+  "tts_text": "The writing finalists wrote their essays wearing Joe-sun-era scholar robes.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 90,
+  "who": "Kangfree",
+  "text": "Finally, a dress code for homework.",
+  "tts_text": "Finally, a dress code for homework.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 91,
+  "who": "K",
+  "text": "Why do they learn Korean? A King Sejong Institute survey found \"Korean content, such as K-pop, dramas, and movies\" was the top reason, at fifty-three point four percent. It was the first time that answer ranked number one.",
+  "tts_text": "Why do they learn Korean? A King Say-jong Institute survey found \"Korean content, such as K-pop, dramas, and movies\" was the top reason, at fifty-three point four percent. It was the first time that answer ranked number one.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 92,
+  "who": "Kangfree",
+  "text": "So the idol songs were homework in disguise.",
+  "tts_text": "So the idol songs were homework in disguise.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 93,
+  "who": "K",
+  "text": "One learner from Cairo, Amira Kamal Mohamed, started with the K-pop group EXO. She has studied Korean for ten years. She said it feels like she's inside a K-drama.",
+  "tts_text": "One learner from Cairo, Ah-mee-rah Kah-mal Mo-ha-med, started with the K-pop group Ex-oh. She has studied Korean for ten years. She said it feels like she's inside a K-drama.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 94,
+  "who": "Dr. H",
+  "text": "A learner from Canada, who started with K-pop in twenty nineteen, said that being able to read it makes her feel her Korean has really improved.",
+  "tts_text": "A learner from Canada, who started with K-pop in twenty nineteen, said that being able to read it makes her feel her Korean has really improved.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 95,
+  "who": "Kangfree",
+  "text": "Reading is the real level-up. The first time I read a menu, I felt like I'd won a trophy.",
+  "tts_text": "Reading is the real level-up. The first time I read a menu, I felt like I'd won a trophy.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 96,
+  "who": "K",
+  "text": "And it's not only fandom. A foundation survey in twenty twenty-five found fifty point nine percent of foreign learners were preparing to study in Korea. Thirty-seven percent cited career goals.",
+  "tts_text": "And it's not only fandom. A foundation survey in twenty twenty-five found fifty point nine percent of foreign learners were preparing to study in Korea. Thirty-seven percent cited career goals.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 97,
+  "who": "Kangfree",
+  "text": "So it's not just a crush. It's a plan.",
+  "tts_text": "So it's not just a crush. It's a plan.",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 98,
+  "who": "Dr. H",
+  "text": "And that's the point of Hangul. King Sejong wanted ordinary people to read and write. Five hundred eighty years later, they're still learning it, sometimes from a song.",
+  "tts_text": "And that's the point of Hahn-gul. King Say-jong wanted ordinary people to read and write. Five hundred eighty years later, they're still learning it, sometimes from a song.",
+  "voice_id": "032386ec-491b-5bdc-81ac-49e9a6a2c89d"
+ },
+ {
+  "index": 99,
+  "who": "K",
+  "text": "Let's wrap up. Hackers, a hypersonic test, and an alphabet.",
+  "tts_text": "Let's wrap up. Hackers, a hypersonic test, and an alphabet.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 100,
+  "who": "Kangfree",
+  "text": "Core, what's your take?",
+  "tts_text": "Core, what's your take?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 101,
+  "who": "K",
+  "text": "My take: AI is making attacks faster. So the best defense is slow. Hang up, then call your bank yourself.",
+  "tts_text": "My take: A I is making attacks faster. So the best defense is slow. Hang up, then call your bank yourself.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 102,
+  "who": "Kangfree",
+  "text": "And the missile?",
+  "tts_text": "And the missile?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 103,
+  "who": "K",
+  "text": "I'll leave that one to Ms. Nonfic. She doesn't have opinions.",
+  "tts_text": "I'll leave that one to Miss Nonfic. She doesn't have opinions.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ },
+ {
+  "index": 104,
+  "who": "Kangfree",
+  "text": "And the alphabet?",
+  "tts_text": "And the alphabet?",
+  "voice_id": "e9cfbbf0-4476-46be-b396-596eb774b165"
+ },
+ {
+  "index": 105,
+  "who": "K",
+  "text": "The alphabet wins. One hundred years of a holiday, and people are still learning it. Thanks for watching.",
+  "tts_text": "The alphabet wins. One hundred years of a holiday, and people are still learning it. Thanks for watching.",
+  "voice_id": "e18664a7-ee4f-5273-acf8-533eb24cd366"
+ }
+]
