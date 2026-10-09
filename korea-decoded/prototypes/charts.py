@@ -255,6 +255,120 @@ def words(spec, w, h, t):
     return img
 
 
+def _rocket(d, x, y, ang, size, body=(235, 240, 250), glow=None):
+    """Small pointed missile icon at (x, y) pointing along ang (radians)."""
+    if glow:
+        d.ellipse((x - size * 1.1, y - size * 1.1, x + size * 1.1, y + size * 1.1), fill=glow)
+    pts = [(1.0, 0.0), (0.25, 0.22), (-0.7, 0.34), (-0.5, 0.0), (-0.7, -0.34), (0.25, -0.22)]
+    c, s_ = math.cos(ang), math.sin(ang)
+    d.polygon([(x + size * (px * c - py * s_), y + size * (px * s_ + py * c)) for px, py in pts], fill=body)
+
+
+def _bez(a, c, b, u):
+    return ((1 - u) ** 2 * a[0] + 2 * u * (1 - u) * c[0] + u * u * b[0], (1 - u) ** 2 * a[1] + 2 * u * (1 - u) * c[1] + u * u * b[1])
+
+
+def paths(spec, w, h, t):
+    """Ballistic arc (orange) vs low weaving glide (teal) over the curve of the Earth, both missiles flying."""
+    img, d, s = _base(w, h)
+    _title(d, spec, w, s)
+    R = w * 0.95
+    top = h * 0.84
+    cy0 = top + R
+    surf = lambda x: cy0 - math.sqrt(max(R * R - (x - w / 2) ** 2, 1.0))
+    for gx in range(0, w, int(60 * s)):
+        d.line((gx, 0, gx, h), fill=(24, 40, 88), width=1)
+    for gy in range(0, h, int(60 * s)):
+        d.line((0, gy, w, gy), fill=(24, 40, 88), width=1)
+    d.ellipse((w / 2 - R, cy0 - R, w / 2 + R, cy0 + R), fill=(18, 60, 110), outline=(90, 160, 235), width=max(2, int(5 * s)))
+    xa, xb = w * 0.12, w * 0.88
+    a, b = (xa, surf(xa)), (xb, surf(xb))
+    orange, teal = (255, 150, 50), (70, 220, 230)
+    ball = lambda u: _bez(a, (w / 2, h * -0.28), b, u)
+
+    def glide(u):
+        x = xa + (xb - xa) * u
+        lift = h * 0.20 * math.sin(math.pi * min(u * 1.0, 1.0)) ** 0.7
+        weave = h * 0.045 * math.sin(u * 5.2 * math.pi) * math.sin(math.pi * u) ** 0.5
+        return x, surf(x) - lift - weave
+
+    for fn, col, t0, dur_ in ((ball, orange, 0.3, 3.4), (glide, teal, 1.0, 3.8)):
+        u = ease((t - t0) / dur_)
+        n = 90
+        pts = [fn(k / n * u) for k in range(n + 1)] if u > 0 else []
+        if len(pts) > 1:
+            d.line(pts, fill=col, width=max(3, int(7 * s)), joint="curve")
+            hx, hy = pts[-1]
+            px, py = pts[-2]
+            ang = math.atan2(hy - py, hx - px) if (hx, hy) != (px, py) else 0
+            _rocket(d, hx, hy, ang, 24 * s, glow=tuple(int(c * 0.35) for c in col))
+    if t > 0.8:
+        al = ease((t - 0.8) / 0.6)
+        f = nr.font(int(28 * s))
+        d.text((w / 2, h * 0.17), spec.get("a_label", "BALLISTIC: A HIGH ARC"), font=f, fill=tuple(int(c * al + 20 * (1 - al)) for c in orange), anchor="mm")
+    if t > 1.8:
+        al = ease((t - 1.8) / 0.6)
+        d.text((w / 2, h * 0.74), spec.get("b_label", "GLIDER: LOW, AND IT WEAVES"), font=nr.font(int(28 * s)), fill=tuple(int(c * al + 20 * (1 - al)) for c in teal), anchor="mm")
+    return img
+
+
+def flight(spec, w, h, t):
+    """Booster lifts the glider up, they separate, the glider weaves down to the target and hits."""
+    img = Image.new("RGB", (w, h), nr.BRAND_NAVY)
+    d = ImageDraw.Draw(img)
+    s = w / 960
+    hz = h * 0.80
+    for y in range(int(hz)):
+        k = y / hz
+        d.line((0, y, w, y), fill=(int(14 + 30 * k), int(26 + 40 * k), int(66 + 60 * k)))
+    d.rectangle((0, hz, w, h), fill=(16, 84, 110))
+    for k in range(6):
+        d.line((w * (0.1 + 0.16 * k), hz + 14 * s * (1 + k % 3), w * (0.2 + 0.16 * k), hz + 14 * s * (1 + k % 3)), fill=(40, 130, 150), width=max(1, int(2 * s)))
+    tgt = (w * 0.82, hz + 40 * s)
+    ts_, tup = 1.9, 0.9
+    up = ease(min(t / 1.9, 1.0))
+    sep = (w * 0.20, h * 0.26)
+    base = (w * 0.20, hz)
+    if t < ts_ + 0.01:
+        bx, by = base[0], base[1] + (sep[1] - base[1]) * up
+        d.polygon([(bx - 8 * s, by + 30 * s), (bx + 8 * s, by + 30 * s), (bx + 8 * s + (14 * s) * (1 - up), by + 90 * s * (1 + 0.5 * up)), (bx - 8 * s - (14 * s) * (1 - up), by + 90 * s * (1 + 0.5 * up))], fill=(255, 190, 70))
+        _rocket(d, bx, by, -math.pi / 2, 44 * s, glow=(60, 70, 110))
+    else:
+        tt = t - ts_
+        fx, fy = sep[0] - 20 * s * tt, sep[1] + 160 * s * tt * tt + 30 * s * tt
+        if fy < hz + 30 * s:
+            _rocket(d, fx, fy, -math.pi / 2 + 1.8 * tt, 34 * s, body=(150, 160, 185))
+        dur_ = 3.6
+        u = ease((t - ts_) / dur_)
+
+        def gp(v):
+            x = sep[0] + (tgt[0] - sep[0]) * v
+            y = sep[1] + (tgt[1] - sep[1]) * (v ** 0.75) + h * 0.05 * math.sin(v * 4.6 * math.pi) * math.sin(math.pi * v) ** 0.6
+            return x, y
+        n = 80
+        pts = [gp(k / n * u) for k in range(n + 1)]
+        for k in range(0, len(pts) - 1, 2):
+            d.line((pts[k], pts[min(k + 1, len(pts) - 1)]), fill=(70, 220, 230), width=max(3, int(5 * s)))
+        hx, hy = pts[-1]
+        px, py = pts[-2]
+        ang = math.atan2(hy - py, hx - px)
+        if t < ts_ + dur_ + 0.1:
+            _rocket(d, hx, hy, ang, 26 * s, body=(235, 245, 255), glow=(25, 80, 100))
+    if t > ts_ + 3.5:
+        k = ease((t - ts_ - 3.5) / 0.5)
+        r = (18 + 40 * k) * s
+        d.ellipse((tgt[0] - r, tgt[1] - r * 0.5, tgt[0] + r, tgt[1] + r * 0.5), outline=(255, 160, 60), width=max(3, int(5 * s)))
+        d.ellipse((tgt[0] - r * 0.45, tgt[1] - r * 0.25, tgt[0] + r * 0.45, tgt[1] + r * 0.25), fill=(255, 220, 120))
+    else:
+        d.ellipse((tgt[0] - 18 * s, tgt[1] - 9 * s, tgt[0] + 18 * s, tgt[1] + 9 * s), outline=(255, 160, 60), width=max(2, int(3 * s)))
+    steps_ = [(0.0, "BOOSTER LIFTS IT UP"), (ts_, "SEPARATES"), (ts_ + 0.9, "GLIDES AND MANEUVERS"), (ts_ + 3.5, "HITS ITS TARGET")]
+    lab = [lbl for tm, lbl in steps_ if t >= tm][-1]
+    f = nr.font(int(34 * s))
+    d.rounded_rectangle((w / 2 - d.textlength(lab, font=f) / 2 - 24 * s, 18 * s, w / 2 + d.textlength(lab, font=f) / 2 + 24 * s, 76 * s), 14 * s, fill=(12, 22, 56))
+    d.text((w / 2, 47 * s), lab, font=f, fill=nr.YELLOW, anchor="mm")
+    return img
+
+
 def draw(spec, w, h, t):
     return {"bars": bars, "hbars": hbars, "donut": donut, "timeline": timeline, "icons": icons, "bigtext": bigtext,
-            "letters": letters, "steps": steps, "words": words}[spec["type"]](spec, w, h, t)
+            "letters": letters, "steps": steps, "words": words, "paths": paths, "flight": flight}[spec["type"]](spec, w, h, t)
