@@ -1,4 +1,4 @@
-# EP.6 Korea Now (AI 해킹 · 극초음속 시험발사 · 한글날 100주년과 외국인 학습자) — 초안 v2, 105줄
+# EP.6 Korea Now (AI 해킹 · 극초음속 시험발사 · 한글날 100주년과 외국인 학습자) — 초안 v3 (정리본), 105줄 · 약 10분
 
 공개 가정: 10/12(월) 17:57 동부 = 10/13(화) 06:57 KST. 출연: K, Kangfree + Bill Dusk(해킹) / Ms. Nonfic(미사일) / Dr. H(한글날). 날짜·숫자는 업로드 직전 재확인. 방송 시점이 한글날(10/9) 사흘 뒤라 "지난 금요일"로 표현.
 
@@ -77,31 +77,31 @@
 | 71 | Kangfree | Twenty thirty-five. So the future is nine years away. | 2035년이라니. 미래가 9년 남았네요. | 투샷 |
 | 72 | Nonfic | I will update the facts as they change. I do not update opinions. I do not have any. | 사실은 바뀌는 대로 갱신하겠습니다. 의견은 갱신하지 않습니다. 의견이 없으니까요. | 게스트샷 |
 | 73 | K | Last story, a softer one. Last Friday, October ninth, was Hangul Day. Our historian, Dr. H. | 마지막은 조금 부드러운 이야기예요. 지난 금요일 10월 9일은 한글날이었습니다. 역사학자 Dr. H입니다. | 게스트샷 하드 컷, 이름표 DR. H |
-| 74 | Hidden | Last time, I told you who made Hangul. This time, the holiday itself has a birthday. It turned one hundred. | 지난번엔 한글을 누가 만들었는지 얘기했죠. 이번엔 한글날 자체의 생일입니다. 100살이 됐어요. | 게스트+화면: 큰 글자 HANGUL DAY / 100 YEARS |
+| 74 | Dr. H | Last time, I told you who made Hangul. This time, the holiday itself has a birthday. It turned one hundred. | 지난번엔 한글을 누가 만들었는지 얘기했죠. 이번엔 한글날 자체의 생일입니다. 100살이 됐어요. | 게스트+화면: 큰 글자 HANGUL DAY / 100 YEARS |
 | 75 | Kangfree | The holiday is a hundred? Who threw the first party? | 기념일이 100살이라고요? 첫 파티는 누가 열었죠? | 투샷 |
-| 76 | Hidden | In nineteen twenty-six, the Korean Language Society held the first celebration, for the four hundred eightieth anniversary of the fourteen forty-six text. | 1926년 조선어 연구 단체인 한글학회의 전신이 첫 기념 행사를 열었습니다. 1446년 문헌이 나온 지 480주년이었어요. | 화면: 타임라인 1446 TEXT · 1926 FIRST CELEBRATION · 2026 100 YEARS |
+| 76 | Dr. H | In nineteen twenty-six, the Korean Language Society held the first celebration, for the four hundred eightieth anniversary of the fourteen forty-six text. | 1926년 한글학회의 전신인 국어 연구 단체가 첫 기념 행사를 열었습니다. 1446년 문헌이 나온 지 480주년이었어요. | 화면: 타임라인 1446 TEXT · 1926 FIRST CELEBRATION · 2026 100 YEARS |
 | 77 | Kangfree | What was it called? | 이름이 뭐였어요? | 투샷 |
-| 78 | Hidden | "Gagya Day." It comes from the opening syllables of the Korean alphabet chart: ga, gya, geo, gyeo. | "가갸날"입니다. 한글 자모표의 첫 음절인 가, 갸, 거, 겨에서 따온 이름이에요. | 게스트+화면: 카드 GA · GYA · GEO · GYEO |
+| 78 | Dr. H | "Gagya Day." It comes from the opening syllables of the Korean alphabet chart: ga, gya, geo, gyeo. | "가갸날"입니다. 한글 자모표의 첫 음절인 가, 갸, 거, 겨에서 따온 이름이에요. | 게스트+화면: 카드 GA · GYA · GEO · GYEO |
 | 79 | Kangfree | So it was literally Alphabet Day. Like "A-B-C Day." | 그러니까 말 그대로 알파벳의 날이었네요. "에이비씨 데이" 같은. | 투샷 |
-| 80 | Hidden | Two years later, in nineteen twenty-eight, it was renamed Hangul Day. And the date moved several times before it settled on October ninth. | 2년 뒤인 1928년에 한글날로 이름이 바뀌었습니다. 날짜도 몇 번 옮겨 다니다가 10월 9일로 자리 잡았어요. | 게스트샷 |
-| 81 | Hidden | It even lost its day off in the early nineties. It came back as a public holiday in twenty thirteen. | 90년대 초에는 쉬는 날 지위를 잃기도 했습니다. 2013년에 공휴일로 돌아왔어요. | 게스트+화면: 타임라인 EARLY 1990s LOST · 2013 BACK |
+| 80 | Dr. H | Two years later, in nineteen twenty-eight, it was renamed Hangul Day. And the date moved several times before it settled on October ninth. | 2년 뒤인 1928년에 한글날로 이름이 바뀌었습니다. 날짜도 몇 번 옮겨 다니다가 10월 9일로 자리 잡았어요. | 게스트샷 |
+| 81 | Dr. H | It even lost its day off in the early nineties. It came back as a public holiday in twenty thirteen. | 90년대 초에는 쉬는 날 지위를 잃기도 했습니다. 2013년에 공휴일로 돌아왔어요. | 게스트+화면: 타임라인 EARLY 1990s LOST · 2013 BACK |
 | 82 | Kangfree | A holiday that got laid off and rehired. | 해고됐다가 재고용된 기념일이네요. | 투샷 |
 | 83 | K | Why is it in the news? Because of foreign learners. This week, the King Sejong Institute Foundation invited a record three hundred fifty-seven Korean learners to Korea. | 왜 뉴스가 됐을까요? 외국인 학습자들 때문이에요. 이번 주 세종학당재단은 역대 최대인 357명의 한국어 학습자를 한국에 초청했습니다. | 화면: 큰 글자 357 LEARNERS INVITED |
 | 84 | K | A hundred eighty-one of them came to a speaking and writing contest, from seventy-one countries. | 그중 181명이 71개국에서 와서 말하기·글쓰기 대회에 참가했어요. | 화면: 큰 글자 181 LEARNERS / 71 COUNTRIES |
 | 85 | Kangfree | Seventy-one countries. That's more than I've visited, even in my head. | 71개국이라니. 머릿속으로 여행한 나라보다 많아요. | 투샷 |
 | 86 | K | The speaking contest had about two hundred eighty-four applicants for every finalist spot. | 말하기 대회는 결선 한 자리에 지원자가 약 284명이었습니다. | 화면: 큰 글자 284 : 1 |
 | 87 | Kangfree | That's harder than getting concert tickets. | 콘서트 티켓팅보다 어렵네요. | 투샷 |
-| 88 | Hidden | The grand prize in speaking went to Marjan Haghi of Iran. In writing, it went to Nguyen Bao Chau of Vietnam. | 말하기 대상은 이란의 마르잔 하기, 글쓰기 대상은 베트남의 응우옌 바오 쩌우가 받았습니다. | 게스트+화면: 카드 SPEAKING: IRAN · WRITING: VIETNAM |
-| 89 | Hidden | The writing finalists wrote their essays wearing Joseon-era scholar robes. | 글쓰기 결선 진출자들은 조선 시대 선비 복장을 입고 글을 썼습니다. | 게스트샷 |
+| 88 | Dr. H | The grand prize in speaking went to Marjan Haghi of Iran. In writing, it went to Nguyen Bao Chau of Vietnam. | 말하기 대상은 이란의 마르잔 하기, 글쓰기 대상은 베트남의 응우옌 바오 쩌우가 받았습니다. | 게스트+화면: 카드 SPEAKING: IRAN · WRITING: VIETNAM |
+| 89 | Dr. H | The writing finalists wrote their essays wearing Joseon-era scholar robes. | 글쓰기 결선 진출자들은 조선 시대 선비 복장을 입고 글을 썼습니다. | 게스트샷 |
 | 90 | Kangfree | Finally, a dress code for homework. | 드디어 숙제에도 드레스 코드가 생겼네요. | 투샷 |
 | 91 | K | Why do they learn Korean? A King Sejong Institute survey found "Korean content, such as K-pop, dramas, and movies" was the top reason, at fifty-three point four percent. It was the first time that answer ranked number one. | 왜 한국어를 배울까요? 세종학당 설문에서 "K팝, 드라마, 영화 같은 한국 콘텐츠"가 53.4%로 1위 이유였습니다. 이 답이 1위를 차지한 건 처음이에요. | 화면: 큰 글자 53.4% / K-CONTENT = #1 REASON |
 | 92 | Kangfree | So the idol songs were homework in disguise. | 아이돌 노래가 사실은 위장한 숙제였네요. | 투샷 |
 | 93 | K | One learner from Cairo, Amira Kamal Mohamed, started with the K-pop group EXO. She has studied Korean for ten years. She said it feels like she's inside a K-drama. | 카이로에서 온 학습자 아미라 카말 모하메드는 K팝 그룹 엑소로 시작해 10년째 한국어를 공부 중입니다. 마치 K드라마 속에 들어와 있는 기분이라고 했어요. | 투샷 |
-| 94 | Hidden | A learner from Canada, who started with K-pop in twenty nineteen, said that being able to read it makes her feel her Korean has really improved. | 2019년 K팝으로 시작한 캐나다 학습자는 한글을 읽을 수 있게 되니 한국어가 정말 늘었다고 느낀다고 했습니다. | 게스트샷 |
+| 94 | Dr. H | A learner from Canada, who started with K-pop in twenty nineteen, said that being able to read it makes her feel her Korean has really improved. | 2019년 K팝으로 시작한 캐나다 학습자는 한글을 읽을 수 있게 되니 한국어가 정말 늘었다고 느낀다고 했습니다. | 게스트샷 |
 | 95 | Kangfree | Reading is the real level-up. The first time I read a menu, I felt like I'd won a trophy. | 읽는 게 진짜 레벨업이에요. 처음 메뉴판을 읽었을 때 트로피를 받은 기분이었어요. | 투샷 |
 | 96 | K | And it's not only fandom. A foundation survey in twenty twenty-five found fifty point nine percent of foreign learners were preparing to study in Korea. Thirty-seven percent cited career goals. | 팬심만도 아닙니다. 2025년 재단 설문에서 외국인 학습자의 50.9%가 한국 유학 준비를, 37%가 경력 목표를 이유로 꼽았어요. | 화면: 막대 STUDY 50.9% · CAREER 37% |
 | 97 | Kangfree | So it's not just a crush. It's a plan. | 단순한 짝사랑이 아니라 계획이네요. | 투샷 |
-| 98 | Hidden | And that's the point of Hangul. King Sejong wanted ordinary people to read and write. Five hundred eighty years later, they're still learning it, sometimes from a song. | 그게 한글의 취지죠. 세종대왕은 평범한 사람들이 읽고 쓰기를 바랐습니다. 580년이 지난 지금도 사람들은 한글을 배우고 있어요. 가끔은 노래로요. | 게스트샷 |
+| 98 | Dr. H | And that's the point of Hangul. King Sejong wanted ordinary people to read and write. Five hundred eighty years later, they're still learning it, sometimes from a song. | 그게 한글의 취지죠. 세종대왕은 평범한 사람들이 읽고 쓰기를 바랐습니다. 580년이 지난 지금도 사람들은 한글을 배우고 있어요. 가끔은 노래로요. | 게스트샷 |
 | 99 | K | Let's wrap up. Hackers, a hypersonic test, and an alphabet. | 정리해 봅시다. 해커, 극초음속 시험, 그리고 문자. | 투샷 |
 | 100 | Kangfree | Core, what's your take? | 코어는 어떻게 생각해요? | 투샷 |
 | 101 | K | My take: AI is making attacks faster. So the best defense is slow. Hang up, then call your bank yourself. | 제 생각은 이래요. AI 때문에 공격은 빨라졌습니다. 그러니 최고의 방어는 느린 겁니다. 끊고, 직접 은행에 전화하세요. | 투샷 |
@@ -109,6 +109,8 @@
 | 103 | K | I'll leave that one to Ms. Nonfic. She doesn't have opinions. | 그건 Ms. Nonfic에게 맡길게요. 그분은 의견이 없으시니까요. | 투샷 |
 | 104 | Kangfree | And the alphabet? | 그럼 문자는요? | 투샷 |
 | 105 | K | The alphabet wins. One hundred years of a holiday, and people are still learning it. Thanks for watching. | 문자의 승리입니다. 기념일은 100년이 됐고, 사람들은 아직도 배우고 있으니까요. 시청해 주셔서 감사합니다. | 투샷 |
+
+구간: 1~5 오프닝 / 6~34 ① AI 해킹(Bill Dusk) / 35~72 ② 극초음속 시험(Ms. Nonfic) / 73~98 ③ 한글날 100주년(Dr. H) / 99~105 K's Take
 
 ## 사실 확인 목록 (VERIFY = 업로드 직전 필수 재확인)
 - AI 해킹: 7개 금융사(신한·KB국민·하나·BNK부산·예가람저축·웰컴저축·현대캐피탈), 신한 약 2만 5천 명(이름·전화·연소득), 하나 89명, 우리·NH농협 방어(Korea Times/Yonhap 10/6). 10/6 금융당국 "주의" 단계 경보, 한 달 특별 대응기간. IP: 기사별로 "약 30개"(FSS 요약) vs "28개, 12개국"(Yonhap) → 대본은 "약 30개, 12개국" **VERIFY**. 비밀번호 미유출·금전 피해 미확인(FSS 관계자) **VERIFY(진행 중 사건)**. AI 도구 사용은 "의심"(당국·소식통). 쿠팡: 10/9 새벽 1시경 약 2시간 장애, 원인 미확인, 은행 건과 연결 보도 없음(Korea Times 10/9). 대통령 "철저한 조사" 주문.
