@@ -17,7 +17,7 @@ def chart(spec, credit="", label=""):
 
 KT = "Source: Korea Times"
 SCREENS = {
-    "three": chart({"type": "bigtext", "lines": ["3 STORIES"], "size": 150, "sub": "HACKERS · A MISSILE · AN ALPHABET"}),
+    "three": chart({"type": "bigtext", "lines": ["2 STORIES"], "size": 150, "sub": "A MISSILE · AN ALPHABET"}),
     "firms7": chart({"type": "bigtext", "lines": ["7 FIRMS"], "size": 170, "sub": "REPORTED DATA BREACHES THIS MONTH"}, KT + ", Oct 6, 2026"),
     "banks": chart({"type": "words", "title": "THE SEVEN FIRMS", "words": ["SHINHAN BANK", "KB KOOKMIN", "HANA BANK", "BNK BUSAN", "YEGARAM SAVINGS", "WELCOME SAVINGS", "HYUNDAI CAPITAL"]}, KT + ", Oct 6, 2026"),
     "n25000": chart({"type": "bigtext", "lines": ["25,000"], "size": 170, "sub": "SHINHAN BANK CUSTOMERS EXPOSED"}, KT + "/Yonhap, Oct 6, 2026"),

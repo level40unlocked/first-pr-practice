@@ -2,7 +2,7 @@
 
     cd episodes/ep06 && python3 build_episode.py && ./run_segments.sh 1 2 3
 
-Three segments: 1 = AI hacking (lines 1-34, with the intro; guest Bill Dusk), 2 = hypersonic test (35-72; Ms. Nonfic), 3 = Hangul Day at 100 (73-105; Dr. H).
+Two segments (the AI hacking story was cut 2026-10-09): 1 = hypersonic test (with the intro; guest Ms. Nonfic), 2 = Hangul Day at 100 (guest Dr. H). Lines come from audio/lines_v2.json (old EP.6 lines reused + 4 new).
 Picture lines use "k_screen" (speaker on the left, picture on the right); a speaker change is a hard cut, the picture stays put.
 """
 import json
@@ -13,14 +13,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CAST = "../../cast/"
 WHO = {"K": "anchor", "Kangfree": "panel", "Dusk": "guest", "Nonfic": "guest", "Dr. H": "guest"}
 SEAT = {"panel": 630, "anchor": 1290, "guest": 2560}
-SEG_EDGES = [(1, 34), (35, 72), (73, 105)]
+SEG_EDGES = [(1, 40), (41, 73)]  # positions in audio/lines_v2.json (the hacking story was cut)
 SEGS = [
-    {"category": "tech", "desk": "TECH", "headline": "AI hackers hit Korean banks"},
     {"category": "current_affairs", "desk": "DEFENSE", "headline": "Korea's first hypersonic glide vehicle test"},
     {"category": "hidden_korea", "desk": "HANGUL", "headline": "Hangul Day turns 100"},
 ]
 GUESTS = [
-    {"head": CAST + "tech_head.png", "body": CAST + "tech_body.png", "ref": CAST + "tech_ref.png", "label": "BILL DUSK", "shoulders": 520, "head_ratio": 0.68, "chin_drop": 0.08, "white_lens": True},
     {"head": CAST + "news_head.png", "body": CAST + "news_body.png", "ref": CAST + "news_ref.png", "label": "MS. NONFIC", "shoulders": 520, "white_lens": True},
     {"head": CAST + "hidden_head.png", "body": CAST + "hidden_body.png", "ref": CAST + "hidden_ref.png", "label": "DR. H", "shoulders": 520, "white_lens": True, "chin_drop": 0.10},
 ]
@@ -40,15 +38,15 @@ SCREEN_AT = {
 
 
 def build():
-    lines = json.load(open(os.path.join(HERE, "audio", "lines_v1.json")))
+    lines = json.load(open(os.path.join(HERE, "audio", "lines_v2.json")))
     segments = []
     for (a, b), meta, guest in zip(SEG_EDGES, SEGS, GUESTS):
         chars = {**{k: dict(v) for k, v in BASE.items()}, "guest": {**guest, "x": SEAT["guest"]}}
         seg_lines, used = [], set()
-        for l in [x for x in lines if a <= x["index"] <= b]:
+        for l in [x for x in lines if a <= x["pos"] <= b]:
             who = WHO[l["who"]]
-            ln = {"who": who, "text": l["text"], "audio": f"audio/v1/ep06_{l['index']:03d}.mp3"}
-            key = SCREEN_AT.get(l["index"])
+            ln = {"who": who, "text": l["text"], "audio": l["audio"]}
+            key = SCREEN_AT.get(l["key"])
             if key:
                 ln["shot"], ln["cam_id"] = "k_screen", f"screen_{who}"
                 if who == "panel":

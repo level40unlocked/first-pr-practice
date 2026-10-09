@@ -22,13 +22,11 @@
    "label": "MASTER K"
   },
   "guest": {
-   "head": "../../cast/tech_head.png",
-   "body": "../../cast/tech_body.png",
-   "ref": "../../cast/tech_ref.png",
-   "label": "BILL DUSK",
+   "head": "../../cast/news_head.png",
+   "body": "../../cast/news_body.png",
+   "ref": "../../cast/news_ref.png",
+   "label": "MS. NONFIC",
    "shoulders": 520,
-   "head_ratio": 0.68,
-   "chin_drop": 0.08,
    "white_lens": true,
    "x": 2560
   }
@@ -40,614 +38,6 @@
  },
  "outro_ticker": "Stay curious. Keep your lenses clean.",
  "segments": [
-  {
-   "category": "tech",
-   "desk": "TECH",
-   "headline": "AI hackers hit Korean banks",
-   "characters": {
-    "panel": {
-     "head": "../../cast/kangfree_head.png",
-     "body": "../../cast/kangfree_body.png",
-     "ref": "../../cast/kangfree_ref.png",
-     "x": 630,
-     "label": "DR. KANGFREE",
-     "energy": 1.8,
-     "head_ratio": 0.74,
-     "shoulders": 500,
-     "chin_drop": 0.12
-    },
-    "anchor": {
-     "head": "../../cast/k_head.png",
-     "body": "../../cast/k_body.png",
-     "ref": "../../cast/k_ref.png",
-     "x": 1290,
-     "label": "MASTER K"
-    },
-    "guest": {
-     "head": "../../cast/tech_head.png",
-     "body": "../../cast/tech_body.png",
-     "ref": "../../cast/tech_ref.png",
-     "label": "BILL DUSK",
-     "shoulders": 520,
-     "head_ratio": 0.68,
-     "chin_drop": 0.08,
-     "white_lens": true,
-     "x": 2560
-    }
-   },
-   "screens": {
-    "alert": {
-     "chart": {
-      "type": "timeline",
-      "title": "THE RESPONSE",
-      "events": [
-       {
-        "year": "OCT 6",
-        "label": "Caution alert"
-       },
-       {
-        "year": "1 MONTH",
-        "label": "Month-long response",
-        "hl": true
-       }
-      ]
-     },
-     "label": "",
-     "credit": "Source: Korea Times, Oct 6, 2026"
-    },
-    "banks": {
-     "chart": {
-      "type": "words",
-      "title": "THE SEVEN FIRMS",
-      "words": [
-       "SHINHAN BANK",
-       "KB KOOKMIN",
-       "HANA BANK",
-       "BNK BUSAN",
-       "YEGARAM SAVINGS",
-       "WELCOME SAVINGS",
-       "HYUNDAI CAPITAL"
-      ]
-     },
-     "label": "",
-     "credit": "Source: Korea Times, Oct 6, 2026"
-    },
-    "coupang": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "COUPANG OUTAGE"
-      ],
-      "size": 110,
-      "sub": "OCT 9 · ~2 HOURS · CAUSE NOT CONFIRMED"
-     },
-     "label": "",
-     "credit": "Source: Korea Times, Oct 9, 2026"
-    },
-    "firms7": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "7 FIRMS"
-      ],
-      "size": 170,
-      "sub": "REPORTED DATA BREACHES THIS MONTH"
-     },
-     "label": "",
-     "credit": "Source: Korea Times, Oct 6, 2026"
-    },
-    "hana89": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "HANA: 89"
-      ],
-      "size": 130,
-      "sub": "WOORI AND NH NONGHYUP BLOCKED THE ATTEMPTS"
-     },
-     "label": "",
-     "credit": "Source: Korea Times/Yonhap, Oct 6, 2026"
-    },
-    "income": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "KNOWS YOUR INCOME?",
-       "STILL MIGHT BE A SCAM"
-      ],
-      "size": 78,
-      "sub": "LEAKED DETAILS MAKE SCAMMERS SOUND REAL"
-     },
-     "label": "",
-     "credit": "Source: Korea Times, Oct 6, 2026"
-    },
-    "ips": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "~30 IP ADDRESSES"
-      ],
-      "size": 96,
-      "sub": "12 COUNTRIES · LOCATION DOES NOT PROVE THE CULPRIT"
-     },
-     "label": "",
-     "credit": "Source: Korea Times, Oct 6, 2026"
-    },
-    "n25000": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "25,000"
-      ],
-      "size": 170,
-      "sub": "SHINHAN BANK CUSTOMERS EXPOSED"
-     },
-     "label": "",
-     "credit": "Source: Korea Times/Yonhap, Oct 6, 2026"
-    },
-    "scan": {
-     "chart": {
-      "type": "icons",
-      "cols": 3,
-      "title": "HOW AN AI-ASSISTED ATTACK WORKS",
-      "items": [
-       [
-        "🔍",
-        "SCAN MANY FIRMS"
-       ],
-       [
-        "🔓",
-        "FIND A WEAK SPOT"
-       ],
-       [
-        "🚪",
-        "GO IN"
-       ]
-      ]
-     },
-     "label": "",
-     "credit": "Source: Korea Times, Oct 6, 2026"
-    },
-    "three": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "3 STORIES"
-      ],
-      "size": 150,
-      "sub": "HACKERS · A MISSILE · AN ALPHABET"
-     },
-     "label": "",
-     "credit": ""
-    }
-   },
-   "short": false,
-   "hook": "AI hackers hit Korean banks",
-   "name_chips": true,
-   "lines": [
-    {
-     "who": "anchor",
-     "text": "Welcome to Four Eyes Report. Three stories this week: one about hackers, one about a missile, and one about an alphabet.",
-     "audio": "audio/v1/ep06_001.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "three"
-    },
-    {
-     "who": "panel",
-     "text": "An alphabet? In the same sentence as a missile? Bold.",
-     "audio": "audio/v1/ep06_002.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "It's that kind of week. Let's start with the one making Korean banks nervous. Our tech expert, Bill Dusk.",
-     "audio": "audio/v1/ep06_003.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "guest",
-     "text": "...Hello.",
-     "audio": "audio/v1/ep06_004.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
-    },
-    {
-     "who": "panel",
-     "text": "Kimbot just blinked. That's never good.",
-     "audio": "audio/v1/ep06_005.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "Early this month, customer data leaked from banks and lenders in Korea. Seven financial firms have reported breaches so far.",
-     "audio": "audio/v1/ep06_006.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "firms7"
-    },
-    {
-     "who": "anchor",
-     "text": "Shinhan Bank, KB Kookmin Bank, Hana Bank, BNK Busan Bank, Yegaram Savings Bank, Welcome Savings Bank, and Hyundai Capital.",
-     "audio": "audio/v1/ep06_007.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "banks"
-    },
-    {
-     "who": "panel",
-     "text": "Seven. Is that a lot?",
-     "audio": "audio/v1/ep06_008.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "guest",
-     "text": "In one week? Yes.",
-     "audio": "audio/v1/ep06_009.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "Shinhan Bank says about twenty-five thousand customers had their names, phone numbers, and annual income exposed.",
-     "audio": "audio/v1/ep06_010.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "n25000"
-    },
-    {
-     "who": "panel",
-     "text": "Annual income. That's the one number I don't even tell my mother.",
-     "audio": "audio/v1/ep06_011.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "Hana Bank reported eighty-nine customers. Woori Bank and NH Nonghyup Bank were targeted too, but they blocked the attempts.",
-     "audio": "audio/v1/ep06_012.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "hana89"
-    },
-    {
-     "who": "panel",
-     "text": "So some of the doors held.",
-     "audio": "audio/v1/ep06_013.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "Why are people calling it AI hacking? Bill?",
-     "audio": "audio/v1/ep06_014.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "guest",
-     "text": "Authorities suspect the attackers used AI tools to scan many companies for weak spots, then went in where the lock was soft.",
-     "audio": "audio/v1/ep06_015.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_guest",
-     "push": false,
-     "screen": "scan"
-    },
-    {
-     "who": "panel",
-     "text": "So the burglar has an assistant.",
-     "audio": "audio/v1/ep06_016.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "guest",
-     "text": "A fast one.",
-     "audio": "audio/v1/ep06_017.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "Reports say the weak spots were in systems used by staff and loan agents, like business support and information lookup services.",
-     "audio": "audio/v1/ep06_018.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "panel",
-     "text": "The side door, not the front door.",
-     "audio": "audio/v1/ep06_019.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "And it happened during the long October holiday, when offices are quiet.",
-     "audio": "audio/v1/ep06_020.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "panel",
-     "text": "Hackers love a long weekend too.",
-     "audio": "audio/v1/ep06_021.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "The Financial Supervisory Service traced around thirty IP addresses in a dozen countries. But officials say an IP location doesn't prove who is really behind it.",
-     "audio": "audio/v1/ep06_022.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "ips"
-    },
-    {
-     "who": "panel",
-     "text": "So nobody knows who it is yet.",
-     "audio": "audio/v1/ep06_023.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "Right. The attackers' identity is still unknown.",
-     "audio": "audio/v1/ep06_024.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "On October sixth, regulators issued a caution-level alert and started a month-long special response period. President Lee Jae Myung called for a thorough investigation.",
-     "audio": "audio/v1/ep06_025.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "alert"
-    },
-    {
-     "who": "anchor",
-     "text": "Officials say passwords were not leaked, and no financial losses have been confirmed so far.",
-     "audio": "audio/v1/ep06_026.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "alert"
-    },
-    {
-     "who": "panel",
-     "text": "Okay. So what do I do?",
-     "audio": "audio/v1/ep06_027.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "guest",
-     "text": "First: if a caller knows your income, that does not make the call real. Scammers can use leaked details to sound convincing.",
-     "audio": "audio/v1/ep06_028.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_guest",
-     "push": false,
-     "screen": "income"
-    },
-    {
-     "who": "guest",
-     "text": "Second: check through your bank's official website or main phone number. Not through the caller or a text message.",
-     "audio": "audio/v1/ep06_029.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
-    },
-    {
-     "who": "guest",
-     "text": "Third: don't keep ID numbers, account passwords, or ID copies on your phone.",
-     "audio": "audio/v1/ep06_030.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
-    },
-    {
-     "who": "panel",
-     "text": "Wait. Coupang went down too, didn't it? Is that connected?",
-     "audio": "audio/v1/ep06_031.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    },
-    {
-     "who": "anchor",
-     "text": "On October ninth, around one a.m., Coupang's app and delivery services were down for about two hours. The cause is not confirmed, and no report links it to the bank breaches.",
-     "audio": "audio/v1/ep06_032.mp3",
-     "shot": "k_screen",
-     "cam_id": "screen_anchor",
-     "push": false,
-     "screen": "coupang"
-    },
-    {
-     "who": "guest",
-     "text": "Not every outage is an attack.",
-     "audio": "audio/v1/ep06_033.mp3",
-     "shot": "cam",
-     "cam": [
-      2560,
-      470,
-      1.3
-     ],
-     "ease": 0.12,
-     "cam_id": "guest",
-     "push": false
-    },
-    {
-     "who": "panel",
-     "text": "Kimbot disagrees. Kimbot thinks everything is an attack.",
-     "audio": "audio/v1/ep06_034.mp3",
-     "shot": "cam",
-     "cam": [
-      960,
-      500,
-      1.1
-     ],
-     "ease": 0.14,
-     "cam_id": "two",
-     "push": false
-    }
-   ]
-  },
   {
    "category": "current_affairs",
    "desk": "DEFENSE",
@@ -885,6 +275,18 @@
      "credit": "AI-generated concept illustration",
      "kb": "in"
     },
+    "three": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "2 STORIES"
+      ],
+      "size": 150,
+      "sub": "A MISSILE · AN ALPHABET"
+     },
+     "label": "",
+     "credit": ""
+    },
     "time": {
      "chart": {
       "type": "bigtext",
@@ -904,8 +306,31 @@
    "lines": [
     {
      "who": "anchor",
-     "text": "Next, a different kind of speed. Ms. Nonfic.",
-     "audio": "audio/v1/ep06_035.mp3",
+     "text": "Welcome to Four Eyes Report. Two stories this week: one about a missile, and one about an alphabet.",
+     "audio": "audio/v2/new_001.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "three"
+    },
+    {
+     "who": "panel",
+     "text": "An alphabet? In the same sentence as a missile? Bold.",
+     "audio": "audio/v1/ep06_002.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "It's that kind of week. Let's start with the fast one. Ms. Nonfic.",
+     "audio": "audio/v2/new_003.mp3",
      "shot": "cam",
      "cam": [
       960,
@@ -1898,8 +1323,8 @@
     },
     {
      "who": "anchor",
-     "text": "Let's wrap up. Hackers, a hypersonic test, and an alphabet.",
-     "audio": "audio/v1/ep06_099.mp3",
+     "text": "Let's wrap up. A hypersonic test, and an alphabet.",
+     "audio": "audio/v2/new_099.mp3",
      "shot": "cam",
      "cam": [
       960,
@@ -1926,8 +1351,8 @@
     },
     {
      "who": "anchor",
-     "text": "My take: AI is making attacks faster. So the best defense is slow. Hang up, then call your bank yourself.",
-     "audio": "audio/v1/ep06_101.mp3",
+     "text": "My take: speed makes the headlines. But what people are still choosing to learn, five hundred eighty years later, is an alphabet.",
+     "audio": "audio/v2/new_101.mp3",
      "shot": "cam",
      "cam": [
       960,
