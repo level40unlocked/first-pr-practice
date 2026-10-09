@@ -72,6 +72,19 @@
     }
    },
    "screens": {
+    "amazing": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "AMAZING",
+       "K-DEFENSE"
+      ],
+      "size": 120,
+      "sub": "PLUS: AN ALPHABET"
+     },
+     "label": "",
+     "credit": ""
+    },
     "checks": {
      "chart": {
       "type": "icons",
@@ -129,6 +142,30 @@
      },
      "label": "",
      "credit": ""
+    },
+    "exports4x": {
+     "chart": {
+      "type": "bars",
+      "title": "KOREA'S DEFENSE EXPORTS (TRILLION WON)",
+      "bars": [
+       {
+        "label": "2015",
+        "value": 4.7,
+        "text": "4.7"
+       },
+       {
+        "label": "2025",
+        "value": 20.8,
+        "text": "20.8",
+        "hl": true
+       }
+      ],
+      "suffix": "",
+      "decimals": 1,
+      "badge": "4X+"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
     },
     "flight": {
      "chart": {
@@ -269,23 +306,23 @@
      "label": "",
      "credit": "Source: Korea Times, Oct 8, 2026"
     },
+    "rank4": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "#4"
+      ],
+      "size": 200,
+      "sub": "WORLD ARMS EXPORTER · ~6% OF THE MARKET (2025)"
+     },
+     "label": "",
+     "credit": "Source: SIPRI, via Korea Times, Oct 8, 2026"
+    },
     "scramjet": {
      "image": "../../assets/stock/ep06/missile_4_scramjet.png",
      "label": "",
      "credit": "AI-generated concept illustration",
      "kb": "in"
-    },
-    "three": {
-     "chart": {
-      "type": "bigtext",
-      "lines": [
-       "2 STORIES"
-      ],
-      "size": 150,
-      "sub": "A MISSILE · AN ALPHABET"
-     },
-     "label": "",
-     "credit": ""
     },
     "time": {
      "chart": {
@@ -306,17 +343,17 @@
    "lines": [
     {
      "who": "anchor",
-     "text": "Welcome to Four Eyes Report. Two stories this week: one about a missile, and one about an alphabet.",
-     "audio": "audio/v2/new_001.mp3",
+     "text": "Welcome to Four Eyes Report. This week: Amazing K-defense. And then, an alphabet.",
+     "audio": "audio/v3/new_001.mp3",
      "shot": "k_screen",
      "cam_id": "screen_anchor",
      "push": false,
-     "screen": "three"
+     "screen": "amazing"
     },
     {
      "who": "panel",
-     "text": "An alphabet? In the same sentence as a missile? Bold.",
-     "audio": "audio/v1/ep06_002.mp3",
+     "text": "Amazing K-defense. That sounds like a movie trailer.",
+     "audio": "audio/v3/new_002.mp3",
      "shot": "cam",
      "cam": [
       960,
@@ -329,8 +366,40 @@
     },
     {
      "who": "anchor",
-     "text": "It's that kind of week. Let's start with the fast one. Ms. Nonfic.",
-     "audio": "audio/v2/new_003.mp3",
+     "text": "The numbers are real, though. In twenty twenty-five, Korea was the world's fourth-largest arms exporter, with about six percent of the global market.",
+     "audio": "audio/v3/new_003.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "rank4"
+    },
+    {
+     "who": "panel",
+     "text": "Fourth in the world? That's higher than I guessed.",
+     "audio": "audio/v3/new_004.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And it's more than four times what Korea exported ten years ago. About twenty point eight trillion won last year.",
+     "audio": "audio/v3/new_005.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "exports4x"
+    },
+    {
+     "who": "anchor",
+     "text": "And this week came a new chapter. Ms. Nonfic.",
+     "audio": "audio/v3/new_006.mp3",
      "shot": "cam",
      "cam": [
       960,
@@ -1323,8 +1392,8 @@
     },
     {
      "who": "anchor",
-     "text": "Let's wrap up. A hypersonic test, and an alphabet.",
-     "audio": "audio/v2/new_099.mp3",
+     "text": "Let's wrap up. K-defense on the rise, and an alphabet.",
+     "audio": "audio/v3/new_099.mp3",
      "shot": "cam",
      "cam": [
       960,
@@ -1351,8 +1420,8 @@
     },
     {
      "who": "anchor",
-     "text": "My take: speed makes the headlines. But what people are still choosing to learn, five hundred eighty years later, is an alphabet.",
-     "audio": "audio/v2/new_101.mp3",
+     "text": "My take: both stories are about things built to be useful. A weapon that works, and an alphabet anyone can learn.",
+     "audio": "audio/v3/new_101.mp3",
      "shot": "cam",
      "cam": [
       960,

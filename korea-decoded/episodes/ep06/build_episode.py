@@ -2,7 +2,7 @@
 
     cd episodes/ep06 && python3 build_episode.py && ./run_segments.sh 1 2 3
 
-Two segments (the AI hacking story was cut 2026-10-09): 1 = hypersonic test (with the intro; guest Ms. Nonfic), 2 = Hangul Day at 100 (guest Dr. H). Lines come from audio/lines_v2.json (old EP.6 lines reused + 4 new).
+Two segments (the AI hacking story was cut 2026-10-09): 1 = hypersonic test (with the intro; guest Ms. Nonfic), 2 = Hangul Day at 100 (guest Dr. H). Lines come from audio/lines_v3.json (old EP.6 lines reused + 4 new).
 Picture lines use "k_screen" (speaker on the left, picture on the right); a speaker change is a hard cut, the picture stays put.
 """
 import json
@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CAST = "../../cast/"
 WHO = {"K": "anchor", "Kangfree": "panel", "Dusk": "guest", "Nonfic": "guest", "Dr. H": "guest"}
 SEAT = {"panel": 630, "anchor": 1290, "guest": 2560}
-SEG_EDGES = [(1, 40), (41, 73)]  # positions in audio/lines_v2.json (the hacking story was cut)
+SEG_EDGES = [(1, 43), (44, 76)]  # positions in audio/lines_v3.json (the hacking story was cut)
 SEGS = [
     {"category": "current_affairs", "desk": "DEFENSE", "headline": "Korea's first hypersonic glide vehicle test"},
     {"category": "hidden_korea", "desk": "HANGUL", "headline": "Hangul Day turns 100"},
@@ -29,7 +29,7 @@ BASE = {
 }
 # global line index -> screen key (a list = pictures shown one after another within the line)
 SCREEN_AT = {
-    1: "three", 6: "firms7", 7: "banks", 10: "n25000", 12: "hana89", 15: "scan", 22: "ips", 25: "alert", 26: "alert", 28: "income", 32: "coupang",
+    "n1": "amazing", "n3": "rank4", "n5": "exports4x",
     36: "launch", 38: "mach5", 40: "paths", 41: "paths", 42: "flight", 43: "flight", 46: "low", 47: "course", 48: "time", 52: "heat", 53: "plasma",
     55: "checks", 56: "flight", 59: "president", 61: "hyunmoo", 63: "kmbars", 67: "compare", 69: "scramjet", 70: "hycore_time",
     74: "y100", 76: ["haerye", "t1926"], 78: "gagya", 81: "tstatus", 83: ["sejong_poster", "n357"], 84: "n181", 86: ["speech", "ratio"], 88: "award_group",
@@ -38,7 +38,7 @@ SCREEN_AT = {
 
 
 def build():
-    lines = json.load(open(os.path.join(HERE, "audio", "lines_v2.json")))
+    lines = json.load(open(os.path.join(HERE, "audio", "lines_v3.json")))
     segments = []
     for (a, b), meta, guest in zip(SEG_EDGES, SEGS, GUESTS):
         chars = {**{k: dict(v) for k, v in BASE.items()}, "guest": {**guest, "x": SEAT["guest"]}}
@@ -46,7 +46,7 @@ def build():
         for l in [x for x in lines if a <= x["pos"] <= b]:
             who = WHO[l["who"]]
             ln = {"who": who, "text": l["text"], "audio": l["audio"]}
-            key = SCREEN_AT.get(l["key"])
+            key = SCREEN_AT.get(int(l["key"]) if l["key"].isdigit() else l["key"])
             if key:
                 ln["shot"], ln["cam_id"] = "k_screen", f"screen_{who}"
                 if who == "panel":

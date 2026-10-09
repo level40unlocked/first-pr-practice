@@ -1,0 +1,534 @@
+[
+ {
+  "pos": 1,
+  "key": "n1",
+  "who": "K",
+  "text": "Welcome to Four Eyes Report. This week: Amazing K-defense. And then, an alphabet.",
+  "audio": "audio/v3/new_001.mp3"
+ },
+ {
+  "pos": 2,
+  "key": "n2",
+  "who": "Kangfree",
+  "text": "Amazing K-defense. That sounds like a movie trailer.",
+  "audio": "audio/v3/new_002.mp3"
+ },
+ {
+  "pos": 3,
+  "key": "n3",
+  "who": "K",
+  "text": "The numbers are real, though. In twenty twenty-five, Korea was the world's fourth-largest arms exporter, with about six percent of the global market.",
+  "audio": "audio/v3/new_003.mp3"
+ },
+ {
+  "pos": 4,
+  "key": "n4",
+  "who": "Kangfree",
+  "text": "Fourth in the world? That's higher than I guessed.",
+  "audio": "audio/v3/new_004.mp3"
+ },
+ {
+  "pos": 5,
+  "key": "n5",
+  "who": "K",
+  "text": "And it's more than four times what Korea exported ten years ago. About twenty point eight trillion won last year.",
+  "audio": "audio/v3/new_005.mp3"
+ },
+ {
+  "pos": 6,
+  "key": "n6",
+  "who": "K",
+  "text": "And this week came a new chapter. Ms. Nonfic.",
+  "audio": "audio/v3/new_006.mp3"
+ },
+ {
+  "pos": 7,
+  "key": "36",
+  "who": "Nonfic",
+  "text": "Good evening. On October eighth, South Korea test-launched its first hypersonic glide vehicle, or H G V, developed by the Agency for Defense Development.",
+  "audio": "audio/v1/ep06_036.mp3"
+ },
+ {
+  "pos": 8,
+  "key": "37",
+  "who": "Kangfree",
+  "text": "Hypersonic glide vehicle. That's three words I need explained.",
+  "audio": "audio/v1/ep06_037.mp3"
+ },
+ {
+  "pos": 9,
+  "key": "38",
+  "who": "Nonfic",
+  "text": "Hypersonic means at least five times the speed of sound. Mach five. About six thousand one hundred kilometers an hour.",
+  "audio": "audio/v1/ep06_038.mp3"
+ },
+ {
+  "pos": 10,
+  "key": "39",
+  "who": "Kangfree",
+  "text": "Wait. Don't ballistic missiles already go that fast?",
+  "audio": "audio/v1/ep06_039.mp3"
+ },
+ {
+  "pos": 11,
+  "key": "40",
+  "who": "Nonfic",
+  "text": "Many do. The difference is the path. A ballistic missile flies a high arc, up and down, like a thrown ball. You can calculate where it lands.",
+  "audio": "audio/v1/ep06_040.mp3"
+ },
+ {
+  "pos": 12,
+  "key": "41",
+  "who": "Kangfree",
+  "text": "And the glider?",
+  "audio": "audio/v1/ep06_041.mp3"
+ },
+ {
+  "pos": 13,
+  "key": "42",
+  "who": "Nonfic",
+  "text": "A rocket booster carries it high up. Then it separates and glides down through the atmosphere at lower altitude, and it can change direction.",
+  "audio": "audio/v1/ep06_042.mp3"
+ },
+ {
+  "pos": 14,
+  "key": "43",
+  "who": "Kangfree",
+  "text": "A thrown ball versus a paper airplane. A very fast, very serious paper airplane.",
+  "audio": "audio/v1/ep06_043.mp3"
+ },
+ {
+  "pos": 15,
+  "key": "44",
+  "who": "Nonfic",
+  "text": "I would not use the term paper airplane. But the physics is not wrong.",
+  "audio": "audio/v1/ep06_044.mp3"
+ },
+ {
+  "pos": 16,
+  "key": "45",
+  "who": "Kangfree",
+  "text": "Why is that so hard to stop?",
+  "audio": "audio/v1/ep06_045.mp3"
+ },
+ {
+  "pos": 17,
+  "key": "46",
+  "who": "Nonfic",
+  "text": "Three reasons. One: it flies low, and the curve of the Earth is in the way of ground radar, so it can be spotted later.",
+  "audio": "audio/v1/ep06_046.mp3"
+ },
+ {
+  "pos": 18,
+  "key": "47",
+  "who": "Nonfic",
+  "text": "Two: missile defenses predict where a target will be, then aim there. If the target keeps changing course, the prediction keeps missing.",
+  "audio": "audio/v1/ep06_047.mp3"
+ },
+ {
+  "pos": 19,
+  "key": "48",
+  "who": "Nonfic",
+  "text": "Three: less time. By the time it is seen, the window to respond can be a matter of minutes.",
+  "audio": "audio/v1/ep06_048.mp3"
+ },
+ {
+  "pos": 20,
+  "key": "49",
+  "who": "Kangfree",
+  "text": "So it's impossible to stop?",
+  "audio": "audio/v1/ep06_049.mp3"
+ },
+ {
+  "pos": 21,
+  "key": "50",
+  "who": "Nonfic",
+  "text": "Nobody serious says impossible. They say difficult. I prefer accurate to dramatic.",
+  "audio": "audio/v1/ep06_050.mp3"
+ },
+ {
+  "pos": 22,
+  "key": "51",
+  "who": "Kangfree",
+  "text": "And what's hard about building one?",
+  "audio": "audio/v1/ep06_051.mp3"
+ },
+ {
+  "pos": 23,
+  "key": "52",
+  "who": "Nonfic",
+  "text": "Heat. At these speeds, friction with the air heats the surface far past a thousand degrees. It needs special heat-resistant materials.",
+  "audio": "audio/v1/ep06_052.mp3"
+ },
+ {
+  "pos": 24,
+  "key": "53",
+  "who": "Nonfic",
+  "text": "And a communication problem. The heat can turn the air around the vehicle into plasma, which can block radio signals.",
+  "audio": "audio/v1/ep06_053.mp3"
+ },
+ {
+  "pos": 25,
+  "key": "54",
+  "who": "Kangfree",
+  "text": "So it's flying fast and can't call home.",
+  "audio": "audio/v1/ep06_054.mp3"
+ },
+ {
+  "pos": 26,
+  "key": "55",
+  "who": "Nonfic",
+  "text": "So what did Korea's test check? Officials listed flight path and speed, heat protection, guidance and control, and low-altitude maneuvering.",
+  "audio": "audio/v1/ep06_055.mp3"
+ },
+ {
+  "pos": 27,
+  "key": "56",
+  "who": "Nonfic",
+  "text": "The presidential office says the vehicle separated from its booster, followed its planned path, adjusted course horizontally and vertically at low altitude, and hit its target.",
+  "audio": "audio/v1/ep06_056.mp3"
+ },
+ {
+  "pos": 28,
+  "key": "57",
+  "who": "Nonfic",
+  "text": "Speed and range were not disclosed. The site was not officially disclosed either. Yonhap reported a barge at a test center in Taean. That part is reported, not confirmed.",
+  "audio": "audio/v1/ep06_057.mp3"
+ },
+ {
+  "pos": 29,
+  "key": "58",
+  "who": "Kangfree",
+  "text": "\"Reported, not confirmed.\" That's Ms. Nonfic's love language.",
+  "audio": "audio/v1/ep06_058.mp3"
+ },
+ {
+  "pos": 30,
+  "key": "59",
+  "who": "Nonfic",
+  "text": "President Lee Jae Myung attended with the defense minister. He said the government will fully support the development and operational deployment of advanced weaponry.",
+  "audio": "audio/v1/ep06_059.mp3"
+ },
+ {
+  "pos": 31,
+  "key": "60",
+  "who": "Nonfic",
+  "text": "He also said the team must not rest on today's success, and that national security should rest on Korea's own strength.",
+  "audio": "audio/v1/ep06_060.mp3"
+ },
+ {
+  "pos": 32,
+  "key": "61",
+  "who": "Nonfic",
+  "text": "The same day, he inspected the Hyunmoo-5, a surface-to-surface missile nicknamed the monster missile. Officials used that name in a press statement for the first time.",
+  "audio": "audio/v1/ep06_061.mp3"
+ },
+ {
+  "pos": 33,
+  "key": "62",
+  "who": "Kangfree",
+  "text": "The monster missile. The naming department had a good day.",
+  "audio": "audio/v1/ep06_062.mp3"
+ },
+ {
+  "pos": 34,
+  "key": "63",
+  "who": "Nonfic",
+  "text": "The timing matters. On October third, North Korea test-fired what Seoul assessed as a hypersonic medium-range ballistic missile. Seoul put its range at seven hundred kilometers. North Korea claimed one thousand.",
+  "audio": "audio/v1/ep06_063.mp3"
+ },
+ {
+  "pos": 35,
+  "key": "64",
+  "who": "Kangfree",
+  "text": "So it's a race.",
+  "audio": "audio/v1/ep06_064.mp3"
+ },
+ {
+  "pos": 36,
+  "key": "65",
+  "who": "Nonfic",
+  "text": "I would not call it a race. I would call it a pattern.",
+  "audio": "audio/v1/ep06_065.mp3"
+ },
+ {
+  "pos": 37,
+  "key": "66",
+  "who": "K",
+  "text": "Is Korea building anything else in this area?",
+  "audio": "audio/v1/ep06_066.mp3"
+ },
+ {
+  "pos": 38,
+  "key": "67",
+  "who": "Nonfic",
+  "text": "Yes. HyCore. It is a different type: a hypersonic cruise missile. It keeps its engine running the whole way, using a scramjet. ADD and Hyundai Rotem have worked on it since twenty eighteen.",
+  "audio": "audio/v1/ep06_067.mp3"
+ },
+ {
+  "pos": 39,
+  "key": "68",
+  "who": "Kangfree",
+  "text": "Scramjet. What's that?",
+  "audio": "audio/v1/ep06_068.mp3"
+ },
+ {
+  "pos": 40,
+  "key": "69",
+  "who": "Nonfic",
+  "text": "An engine that burns fuel in air rushing past faster than sound. Think of keeping a candle lit in a hurricane.",
+  "audio": "audio/v1/ep06_069.mp3"
+ },
+ {
+  "pos": 41,
+  "key": "70",
+  "who": "Nonfic",
+  "text": "In a twenty twenty-four test, HyCore passed Mach six at an altitude of twenty-three kilometers. The partners aim to begin mass production by twenty thirty-five.",
+  "audio": "audio/v1/ep06_070.mp3"
+ },
+ {
+  "pos": 42,
+  "key": "71",
+  "who": "Kangfree",
+  "text": "Twenty thirty-five. So the future is nine years away.",
+  "audio": "audio/v1/ep06_071.mp3"
+ },
+ {
+  "pos": 43,
+  "key": "72",
+  "who": "Nonfic",
+  "text": "I will update the facts as they change. I do not update opinions. I do not have any.",
+  "audio": "audio/v1/ep06_072.mp3"
+ },
+ {
+  "pos": 44,
+  "key": "73",
+  "who": "K",
+  "text": "Last story, a softer one. Last Friday, October ninth, was Hangul Day. Our historian, Dr. H.",
+  "audio": "audio/v1/ep06_073.mp3"
+ },
+ {
+  "pos": 45,
+  "key": "74",
+  "who": "Dr. H",
+  "text": "Last time, I told you who made Hangul. This time, the holiday itself has a birthday. It turned one hundred.",
+  "audio": "audio/v1/ep06_074.mp3"
+ },
+ {
+  "pos": 46,
+  "key": "75",
+  "who": "Kangfree",
+  "text": "The holiday is a hundred? Who threw the first party?",
+  "audio": "audio/v1/ep06_075.mp3"
+ },
+ {
+  "pos": 47,
+  "key": "76",
+  "who": "Dr. H",
+  "text": "In nineteen twenty-six, the Korean Language Society held the first celebration, for the four hundred eightieth anniversary of the fourteen forty-six text.",
+  "audio": "audio/v1/ep06_076.mp3"
+ },
+ {
+  "pos": 48,
+  "key": "77",
+  "who": "Kangfree",
+  "text": "What was it called?",
+  "audio": "audio/v1/ep06_077.mp3"
+ },
+ {
+  "pos": 49,
+  "key": "78",
+  "who": "Dr. H",
+  "text": "\"Gagya Day.\" It comes from the opening syllables of the Korean alphabet chart: ga, gya, geo, gyeo.",
+  "audio": "audio/v1/ep06_078.mp3"
+ },
+ {
+  "pos": 50,
+  "key": "79",
+  "who": "Kangfree",
+  "text": "So it was literally Alphabet Day. Like \"A-B-C Day.\"",
+  "audio": "audio/v1/ep06_079.mp3"
+ },
+ {
+  "pos": 51,
+  "key": "80",
+  "who": "Dr. H",
+  "text": "Two years later, in nineteen twenty-eight, it was renamed Hangul Day. And the date moved several times before it settled on October ninth.",
+  "audio": "audio/v1/ep06_080.mp3"
+ },
+ {
+  "pos": 52,
+  "key": "81",
+  "who": "Dr. H",
+  "text": "It lost its day off in the early nineties. In the mid-two-thousands it became an official national day again, but still without a day off. The day off came back in twenty thirteen.",
+  "audio": "audio/v1/ep06_081.mp3"
+ },
+ {
+  "pos": 53,
+  "key": "82",
+  "who": "Kangfree",
+  "text": "A holiday that got laid off and rehired.",
+  "audio": "audio/v1/ep06_082.mp3"
+ },
+ {
+  "pos": 54,
+  "key": "83",
+  "who": "K",
+  "text": "Why is it in the news? Because of foreign learners. This week, the King Sejong Institute Foundation invited a record three hundred fifty-seven Korean learners to Korea.",
+  "audio": "audio/v1/ep06_083.mp3"
+ },
+ {
+  "pos": 55,
+  "key": "84",
+  "who": "K",
+  "text": "A hundred eighty-one of them came to a speaking and writing contest, from seventy-one countries.",
+  "audio": "audio/v1/ep06_084.mp3"
+ },
+ {
+  "pos": 56,
+  "key": "85",
+  "who": "Kangfree",
+  "text": "Seventy-one countries. That's more than I've visited, even in my head.",
+  "audio": "audio/v1/ep06_085.mp3"
+ },
+ {
+  "pos": 57,
+  "key": "86",
+  "who": "K",
+  "text": "The speaking contest had about two hundred eighty-four applicants for every finalist spot.",
+  "audio": "audio/v1/ep06_086.mp3"
+ },
+ {
+  "pos": 58,
+  "key": "87",
+  "who": "Kangfree",
+  "text": "That's harder than getting concert tickets.",
+  "audio": "audio/v1/ep06_087.mp3"
+ },
+ {
+  "pos": 59,
+  "key": "88",
+  "who": "Dr. H",
+  "text": "The grand prize in speaking went to Marjan Haghi of Iran. In writing, it went to Nguyen Bao Chau of Vietnam.",
+  "audio": "audio/v1/ep06_088.mp3"
+ },
+ {
+  "pos": 60,
+  "key": "89",
+  "who": "Dr. H",
+  "text": "The writing finalists wrote their essays wearing Joseon-era scholar robes.",
+  "audio": "audio/v1/ep06_089.mp3"
+ },
+ {
+  "pos": 61,
+  "key": "90",
+  "who": "Kangfree",
+  "text": "Finally, a dress code for homework.",
+  "audio": "audio/v1/ep06_090.mp3"
+ },
+ {
+  "pos": 62,
+  "key": "91",
+  "who": "K",
+  "text": "Why do they learn Korean? A King Sejong Institute survey found \"Korean content, such as K-pop, dramas, and movies\" was the top reason, at fifty-three point four percent. It was the first time that answer ranked number one.",
+  "audio": "audio/v1/ep06_091.mp3"
+ },
+ {
+  "pos": 63,
+  "key": "92",
+  "who": "Kangfree",
+  "text": "So the idol songs were homework in disguise.",
+  "audio": "audio/v1/ep06_092.mp3"
+ },
+ {
+  "pos": 64,
+  "key": "93",
+  "who": "K",
+  "text": "One learner from Cairo, Amira Kamal Mohamed, started with the K-pop group EXO. She has studied Korean for ten years. She said it feels like she's inside a K-drama.",
+  "audio": "audio/v1/ep06_093.mp3"
+ },
+ {
+  "pos": 65,
+  "key": "94",
+  "who": "Dr. H",
+  "text": "A learner from Canada, who started with K-pop in twenty nineteen, said that being able to read it makes her feel her Korean has really improved.",
+  "audio": "audio/v1/ep06_094.mp3"
+ },
+ {
+  "pos": 66,
+  "key": "95",
+  "who": "Kangfree",
+  "text": "Reading is the real level-up. The first time I read a menu, I felt like I'd won a trophy.",
+  "audio": "audio/v1/ep06_095.mp3"
+ },
+ {
+  "pos": 67,
+  "key": "96",
+  "who": "K",
+  "text": "And it's not only fandom. A foundation survey in twenty twenty-five found fifty point nine percent of foreign learners were preparing to study in Korea. Thirty-seven percent cited career goals.",
+  "audio": "audio/v1/ep06_096.mp3"
+ },
+ {
+  "pos": 68,
+  "key": "97",
+  "who": "Kangfree",
+  "text": "So it's not just a crush. It's a plan.",
+  "audio": "audio/v1/ep06_097.mp3"
+ },
+ {
+  "pos": 69,
+  "key": "98",
+  "who": "Dr. H",
+  "text": "And that's the point of Hangul. King Sejong wanted ordinary people to read and write. Five hundred eighty years later, they're still learning it, sometimes from a song.",
+  "audio": "audio/v1/ep06_098.mp3"
+ },
+ {
+  "pos": 70,
+  "key": "n99",
+  "who": "K",
+  "text": "Let's wrap up. K-defense on the rise, and an alphabet.",
+  "audio": "audio/v3/new_099.mp3"
+ },
+ {
+  "pos": 71,
+  "key": "100",
+  "who": "Kangfree",
+  "text": "Core, what's your take?",
+  "audio": "audio/v1/ep06_100.mp3"
+ },
+ {
+  "pos": 72,
+  "key": "n101",
+  "who": "K",
+  "text": "My take: both stories are about things built to be useful. A weapon that works, and an alphabet anyone can learn.",
+  "audio": "audio/v3/new_101.mp3"
+ },
+ {
+  "pos": 73,
+  "key": "102",
+  "who": "Kangfree",
+  "text": "And the missile?",
+  "audio": "audio/v1/ep06_102.mp3"
+ },
+ {
+  "pos": 74,
+  "key": "103",
+  "who": "K",
+  "text": "I'll leave that one to Ms. Nonfic. She doesn't have opinions.",
+  "audio": "audio/v1/ep06_103.mp3"
+ },
+ {
+  "pos": 75,
+  "key": "104",
+  "who": "Kangfree",
+  "text": "And the alphabet?",
+  "audio": "audio/v1/ep06_104.mp3"
+ },
+ {
+  "pos": 76,
+  "key": "105",
+  "who": "K",
+  "text": "The alphabet wins. One hundred years of a holiday, and people are still learning it. Thanks for watching.",
+  "audio": "audio/v1/ep06_105.mp3"
+ }
+]

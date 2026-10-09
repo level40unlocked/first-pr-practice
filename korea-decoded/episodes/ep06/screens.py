@@ -17,6 +17,9 @@ def chart(spec, credit="", label=""):
 
 KT = "Source: Korea Times"
 SCREENS = {
+    "amazing": chart({"type": "bigtext", "lines": ["AMAZING", "K-DEFENSE"], "size": 120, "sub": "PLUS: AN ALPHABET"}),
+    "rank4": chart({"type": "bigtext", "lines": ["#4"], "size": 200, "sub": "WORLD ARMS EXPORTER · ~6% OF THE MARKET (2025)"}, "Source: SIPRI, via Korea Times, Oct 8, 2026"),
+    "exports4x": chart({"type": "bars", "title": "KOREA'S DEFENSE EXPORTS (TRILLION WON)", "bars": [{"label": "2015", "value": 4.7, "text": "4.7"}, {"label": "2025", "value": 20.8, "text": "20.8", "hl": True}], "suffix": "", "decimals": 1, "badge": "4X+"}, "Source: Korea Times, Oct 8, 2026"),
     "three": chart({"type": "bigtext", "lines": ["2 STORIES"], "size": 150, "sub": "A MISSILE · AN ALPHABET"}),
     "firms7": chart({"type": "bigtext", "lines": ["7 FIRMS"], "size": 170, "sub": "REPORTED DATA BREACHES THIS MONTH"}, KT + ", Oct 6, 2026"),
     "banks": chart({"type": "words", "title": "THE SEVEN FIRMS", "words": ["SHINHAN BANK", "KB KOOKMIN", "HANA BANK", "BNK BUSAN", "YEGARAM SAVINGS", "WELCOME SAVINGS", "HYUNDAI CAPITAL"]}, KT + ", Oct 6, 2026"),
