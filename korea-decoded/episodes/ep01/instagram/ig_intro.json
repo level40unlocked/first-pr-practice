@@ -1,0 +1,403 @@
+{
+ "episode": 1,
+ "anchor": "anchor",
+ "characters": {
+  "anchor": {
+   "head": "cast/a_head.png",
+   "body": "cast/a_body.png",
+   "ref": "cast/a_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "panel": {
+   "head": "cast/p_head.png",
+   "body": "cast/p_body.png",
+   "ref": "cast/p_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  }
+ },
+ "topic": [
+  1,
+  4
+ ],
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "up_next": [
+  "No typhoon hit Korea this summer, and that is not all good news",
+  "Gangnam wants to be the world's K-festival, and Psy is closing the show",
+  "In Korea, you can subscribe to your air conditioner"
+ ],
+ "category": "travel",
+ "desk": "BUSAN",
+ "headline": "A shark moved into a Busan canal and half a million people came to see it",
+ "hook": "An animated news show\nabout Korea",
+ "screens": {
+  "menu_shark": {
+   "image": "screens/bukang/bukang_staycation.png",
+   "label": "TONIGHT",
+   "credit": "AI-generated illustration"
+  },
+  "menu_typhoon": {
+   "image": "screens/typhoon/bouncers.png",
+   "label": "TONIGHT",
+   "credit": "AI-generated illustration"
+  },
+  "menu_psy": {
+   "image": "screens/gangnam/gangnam_parade.png",
+   "label": "TONIGHT",
+   "credit": "AI-generated illustration"
+  },
+  "menu_fridge": {
+   "image": "screens/samsung/fridge_date.png",
+   "label": "TONIGHT",
+   "credit": "AI-generated illustration"
+  }
+ },
+ "lines": [
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_01.mp3",
+   "text": "Hello, world. Some news is big. Some news is weird. Tonight, most of it is both. I'm Master K, and this is the Four Eyes Report.",
+   "words": [
+    [
+     "Hello,",
+     0.0,
+     0.36
+    ],
+    [
+     "world.",
+     0.36,
+     0.76
+    ],
+    [
+     "Some",
+     1.58,
+     1.64
+    ],
+    [
+     "news",
+     1.64,
+     1.86
+    ],
+    [
+     "is",
+     1.86,
+     2.12
+    ],
+    [
+     "big.",
+     2.12,
+     2.4
+    ],
+    [
+     "Some",
+     2.92,
+     3.14
+    ],
+    [
+     "news",
+     3.14,
+     3.4
+    ],
+    [
+     "is",
+     3.4,
+     3.6
+    ],
+    [
+     "weird.",
+     3.6,
+     4.0
+    ],
+    [
+     "Tonight,",
+     4.66,
+     4.96
+    ],
+    [
+     "most",
+     5.36,
+     5.48
+    ],
+    [
+     "of",
+     5.48,
+     5.72
+    ],
+    [
+     "it",
+     5.72,
+     5.82
+    ],
+    [
+     "is",
+     5.82,
+     5.98
+    ],
+    [
+     "both.",
+     5.98,
+     6.28
+    ],
+    [
+     "I'm",
+     7.0,
+     7.34
+    ],
+    [
+     "Master",
+     7.34,
+     7.64
+    ],
+    [
+     "K,",
+     7.64,
+     7.96
+    ],
+    [
+     "and",
+     8.16,
+     8.38
+    ],
+    [
+     "this",
+     8.38,
+     8.68
+    ],
+    [
+     "is",
+     8.68,
+     9.0
+    ],
+    [
+     "the",
+     9.0,
+     9.18
+    ],
+    [
+     "Four",
+     9.18,
+     9.42
+    ],
+    [
+     "Eyes",
+     9.42,
+     9.68
+    ],
+    [
+     "Report.",
+     9.68,
+     10.1
+    ]
+   ]
+  },
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_02.mp3",
+   "screen": [
+    "menu_shark",
+    "menu_typhoon",
+    "menu_psy",
+    "menu_fridge"
+   ],
+   "big": true,
+   "text": "Coming up: a shark that won't leave, a typhoon that never came, Psy, and a refrigerator you can date. Let's begin.",
+   "words": [
+    [
+     "Coming",
+     0.0,
+     0.32
+    ],
+    [
+     "up:",
+     0.32,
+     0.62
+    ],
+    [
+     "a",
+     1.04,
+     1.04
+    ],
+    [
+     "shark",
+     1.04,
+     1.3
+    ],
+    [
+     "that",
+     1.3,
+     1.58
+    ],
+    [
+     "won't",
+     1.58,
+     1.92
+    ],
+    [
+     "leave,",
+     1.92,
+     2.28
+    ],
+    [
+     "a",
+     2.8,
+     2.84
+    ],
+    [
+     "typhoon",
+     2.84,
+     3.42
+    ],
+    [
+     "that",
+     3.42,
+     3.58
+    ],
+    [
+     "never",
+     3.58,
+     3.82
+    ],
+    [
+     "came,",
+     3.82,
+     4.36
+    ],
+    [
+     "Psy,",
+     4.36,
+     6.1
+    ],
+    [
+     "and",
+     6.1,
+     6.32
+    ],
+    [
+     "a",
+     6.32,
+     6.44
+    ],
+    [
+     "refrigerator",
+     6.44,
+     6.96
+    ],
+    [
+     "you",
+     6.96,
+     7.5
+    ],
+    [
+     "can",
+     7.5,
+     7.7
+    ],
+    [
+     "date.",
+     7.7,
+     8.08
+    ],
+    [
+     "Let's",
+     8.62,
+     8.86
+    ],
+    [
+     "begin.",
+     8.86,
+     9.16
+    ]
+   ]
+  },
+  {
+   "who": "anchor",
+   "audio": "audio/ep01_bukang_03.mp3",
+   "text": "Our top story: a shark. In a canal. In the middle of a city.",
+   "words": [
+    [
+     "Our",
+     0.0,
+     0.3
+    ],
+    [
+     "top",
+     0.3,
+     0.56
+    ],
+    [
+     "story:",
+     0.56,
+     1.1
+    ],
+    [
+     "a",
+     1.1,
+     1.58
+    ],
+    [
+     "shark.",
+     1.58,
+     1.96
+    ],
+    [
+     "In",
+     1.96,
+     2.56
+    ],
+    [
+     "a",
+     2.56,
+     2.68
+    ],
+    [
+     "canal.",
+     2.68,
+     3.1
+    ],
+    [
+     "In",
+     3.1,
+     3.84
+    ],
+    [
+     "the",
+     3.84,
+     3.98
+    ],
+    [
+     "middle",
+     3.98,
+     4.24
+    ],
+    [
+     "of",
+     4.24,
+     4.46
+    ],
+    [
+     "a",
+     4.46,
+     4.6
+    ],
+    [
+     "city.",
+     4.6,
+     4.84
+    ]
+   ]
+  }
+ ],
+ "short": {},
+ "out_long": "instagram/ig_intro_long.mp4",
+ "out_short": "instagram/ig_intro_reel.mp4",
+ "full_episode_where": "on YouTube"
+}

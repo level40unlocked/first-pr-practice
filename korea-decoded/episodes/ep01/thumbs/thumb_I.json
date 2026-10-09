@@ -1,0 +1,40 @@
+{
+ "background": "../../assets/studio/seoul_dusk.jpg",
+ "badge": "BUSAN, KOREA",
+ "character_height": 760,
+ "character_x": -30,
+ "picture_y": 80,
+ "picture": "screens/bukang/bukang_canal.png",
+ "character": {
+  "head": "cast/p_head.png",
+  "body": "cast/p_body.png",
+  "ref": "cast/p_ref.png",
+  "label": "DR. KANGFREE",
+  "head_ratio": 0.74,
+  "shoulders": 500,
+  "chin_drop": 0.12,
+  "mouth": "open",
+  "gaze": [
+   0.8,
+   0.0
+  ]
+ },
+ "tag": {
+  "hangul": "부캉이",
+  "roman": "BUKANG-I",
+  "at": [
+   0.48,
+   0.62
+  ]
+ },
+ "text": [
+  "A SHARK IN",
+  "THE CITY?!"
+ ],
+ "picture_size": [
+  640,
+  380
+ ],
+ "text_size": 100,
+ "character_image": "../../assets/poses/kangfree_omg.png"
+}

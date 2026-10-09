@@ -1,0 +1,6 @@
+render/
+*.mp4
+*.wav
+ep01_s*.json
+render_log.txt
+preview/

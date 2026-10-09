@@ -1,0 +1,664 @@
+1
+00:00:00,500 --> 00:00:05,546
+Welcome to Four Eyes Report.
+This week: Amazing K-defense.
+
+2
+00:00:05,546 --> 00:00:07,460
+And then, an alphabet.
+
+3
+00:00:07,810 --> 00:00:11,650
+Amazing K-defense. That
+sounds like a movie trailer.
+
+4
+00:00:12,000 --> 00:00:13,847
+The numbers are real, though.
+
+5
+00:00:13,847 --> 00:00:18,558
+In twenty twenty-five, Korea was the
+world's fourth-largest arms exporter,
+
+6
+00:00:18,558 --> 00:00:21,360
+with about six percent
+of the global market.
+
+7
+00:00:21,710 --> 00:00:24,590
+Fourth in the world? That's
+higher than I guessed.
+
+8
+00:00:24,940 --> 00:00:29,420
+And it's more than four times
+what Korea exported ten years ago.
+
+9
+00:00:29,420 --> 00:00:32,780
+About twenty point eight
+trillion won last year.
+
+10
+00:00:33,130 --> 00:00:36,650
+And this week came a
+new chapter. Ms. Nonfic.
+
+11
+00:00:37,000 --> 00:00:39,204
+Good evening. On October eighth,
+
+12
+00:00:39,204 --> 00:00:44,094
+South Korea test-launched its first
+hypersonic glide vehicle, or H G V,
+
+13
+00:00:44,094 --> 00:00:47,400
+developed by the Agency
+for Defense Development.
+
+14
+00:00:47,750 --> 00:00:52,150
+Hypersonic glide vehicle. That's
+three words I need explained.
+
+15
+00:00:52,500 --> 00:00:57,173
+Hypersonic means at least five
+times the speed of sound. Mach five.
+
+16
+00:00:57,173 --> 00:01:00,660
+About six thousand one
+hundred kilometers an hour.
+
+17
+00:01:01,010 --> 00:01:04,450
+Wait. Don't ballistic
+missiles already go that fast?
+
+18
+00:01:04,800 --> 00:01:07,535
+Many do. The difference is the path.
+
+19
+00:01:07,535 --> 00:01:12,853
+A ballistic missile flies a high
+arc, up and down, like a thrown ball.
+
+20
+00:01:12,853 --> 00:01:15,360
+You can calculate where it lands.
+
+21
+00:01:15,710 --> 00:01:16,350
+And the glider?
+
+22
+00:01:16,700 --> 00:01:19,021
+A rocket booster carries it high up.
+
+23
+00:01:19,021 --> 00:01:23,855
+Then it separates and glides down
+through the atmosphere at lower altitude,
+
+24
+00:01:23,855 --> 00:01:25,660
+and it can change direction.
+
+25
+00:01:26,010 --> 00:01:28,896
+A thrown ball versus a paper airplane.
+
+26
+00:01:28,896 --> 00:01:32,010
+A very fast, very serious paper airplane.
+
+27
+00:01:32,360 --> 00:01:37,160
+I would not use the term paper
+airplane. But the physics is not wrong.
+
+28
+00:01:37,510 --> 00:01:39,670
+Why is that so hard to stop?
+
+29
+00:01:40,020 --> 00:01:40,987
+Three reasons.
+
+30
+00:01:40,987 --> 00:01:46,235
+One: it flies low, and the curve of the
+Earth is in the way of ground radar,
+
+31
+00:01:46,235 --> 00:01:48,100
+so it can be spotted later.
+
+32
+00:01:48,450 --> 00:01:53,152
+Two: missile defenses predict where
+a target will be, then aim there.
+
+33
+00:01:53,152 --> 00:01:57,650
+If the target keeps changing course,
+the prediction keeps missing.
+
+34
+00:01:58,000 --> 00:01:59,375
+Three: less time.
+
+35
+00:01:59,375 --> 00:02:05,280
+By the time it is seen, the window to
+respond can be a matter of minutes.
+
+36
+00:02:05,630 --> 00:02:07,150
+So it's impossible to stop?
+
+37
+00:02:07,500 --> 00:02:11,882
+Nobody serious says
+impossible. They say difficult.
+
+38
+00:02:11,882 --> 00:02:14,460
+I prefer accurate to dramatic.
+
+39
+00:02:14,810 --> 00:02:16,570
+And what's hard about building one?
+
+40
+00:02:16,920 --> 00:02:18,480
+Heat. At these speeds,
+
+41
+00:02:18,480 --> 00:02:23,302
+friction with the air heats the
+surface far past a thousand degrees.
+
+42
+00:02:23,302 --> 00:02:26,280
+It needs special heat-resistant materials.
+
+43
+00:02:26,630 --> 00:02:28,539
+And a communication problem.
+
+44
+00:02:28,539 --> 00:02:32,425
+The heat can turn the air
+around the vehicle into plasma,
+
+45
+00:02:32,425 --> 00:02:34,470
+which can block radio signals.
+
+46
+00:02:34,820 --> 00:02:37,460
+So it's flying fast and can't call home.
+
+47
+00:02:37,810 --> 00:02:39,913
+So what did Korea's test check?
+
+48
+00:02:39,913 --> 00:02:43,711
+Officials listed flight path
+and speed, heat protection,
+
+49
+00:02:43,711 --> 00:02:47,170
+guidance and control, and
+low-altitude maneuvering.
+
+50
+00:02:47,520 --> 00:02:51,985
+The presidential office says the
+vehicle separated from its booster,
+
+51
+00:02:51,985 --> 00:02:53,692
+followed its planned path,
+
+52
+00:02:53,692 --> 00:02:57,632
+adjusted course horizontally
+and vertically at low altitude,
+
+53
+00:02:57,632 --> 00:02:58,880
+and hit its target.
+
+54
+00:02:59,230 --> 00:03:01,779
+Speed and range were not disclosed.
+
+55
+00:03:01,779 --> 00:03:05,055
+The site was not officially
+disclosed either.
+
+56
+00:03:05,055 --> 00:03:08,696
+Yonhap reported a barge
+at a test center in Taean.
+
+57
+00:03:08,696 --> 00:03:11,390
+That part is reported, not confirmed.
+
+58
+00:03:11,740 --> 00:03:15,740
+"Reported, not confirmed." That's
+Ms. Nonfic's love language.
+
+59
+00:03:16,090 --> 00:03:19,551
+President Lee Jae Myung attended
+with the defense minister.
+
+60
+00:03:19,551 --> 00:03:25,770
+He said the government will fully support the development
+and operational deployment of advanced weaponry.
+
+61
+00:03:26,120 --> 00:03:29,476
+He also said the team must
+not rest on today's success,
+
+62
+00:03:29,476 --> 00:03:33,320
+and that national security should
+rest on Korea's own strength.
+
+63
+00:03:33,670 --> 00:03:36,234
+The same day, he inspected the Hyunmoo-5,
+
+64
+00:03:36,234 --> 00:03:39,925
+a surface-to-surface missile
+nicknamed the monster missile.
+
+65
+00:03:39,925 --> 00:03:43,990
+Officials used that name in a
+press statement for the first time.
+
+66
+00:03:44,340 --> 00:03:48,100
+The monster missile. The naming
+department had a good day.
+
+67
+00:03:48,450 --> 00:03:50,997
+The timing matters. On October third,
+
+68
+00:03:50,997 --> 00:03:57,193
+North Korea test-fired what Seoul assessed as
+a hypersonic medium-range ballistic missile.
+
+69
+00:03:57,193 --> 00:04:00,498
+Seoul put its range at
+seven hundred kilometers.
+
+70
+00:04:00,498 --> 00:04:02,770
+North Korea claimed one thousand.
+
+71
+00:04:03,120 --> 00:04:04,160
+So it's a race.
+
+72
+00:04:04,510 --> 00:04:07,950
+I would not call it a race.
+I would call it a pattern.
+
+73
+00:04:08,300 --> 00:04:11,180
+Is Korea building anything
+else in this area?
+
+74
+00:04:11,530 --> 00:04:16,202
+Yes. HyCore. It is a different
+type: a hypersonic cruise missile.
+
+75
+00:04:16,202 --> 00:04:20,514
+It keeps its engine running the
+whole way, using a scramjet.
+
+76
+00:04:20,514 --> 00:04:24,970
+ADD and Hyundai Rotem have worked
+on it since twenty eighteen.
+
+77
+00:04:25,320 --> 00:04:27,160
+Scramjet. What's that?
+
+78
+00:04:27,510 --> 00:04:31,925
+An engine that burns fuel in air
+rushing past faster than sound.
+
+79
+00:04:31,925 --> 00:04:35,030
+Think of keeping a candle
+lit in a hurricane.
+
+80
+00:04:35,380 --> 00:04:37,201
+In a twenty twenty-four test,
+
+81
+00:04:37,201 --> 00:04:41,282
+HyCore passed Mach six at an
+altitude of twenty-three kilometers.
+
+82
+00:04:41,282 --> 00:04:45,300
+The partners aim to begin mass
+production by twenty thirty-five.
+
+83
+00:04:45,650 --> 00:04:49,170
+Twenty thirty-five. So the
+future is nine years away.
+
+84
+00:04:49,520 --> 00:04:53,968
+I will update the facts as they
+change. I do not update opinions.
+
+85
+00:04:53,968 --> 00:04:55,200
+I do not have any.
+
+86
+00:04:56,650 --> 00:05:02,661
+Last story, a softer one. Last
+Friday, October ninth, was Hangul Day.
+
+87
+00:05:02,661 --> 00:05:04,490
+Our historian, Dr. H.
+
+88
+00:05:04,840 --> 00:05:07,851
+Last time, I told you who made Hangul.
+
+89
+00:05:07,851 --> 00:05:13,240
+This time, the holiday itself has
+a birthday. It turned one hundred.
+
+90
+00:05:13,590 --> 00:05:16,470
+The holiday is a hundred?
+Who threw the first party?
+
+91
+00:05:16,820 --> 00:05:18,333
+In nineteen twenty-six,
+
+92
+00:05:18,333 --> 00:05:21,952
+the Korean Language Society
+held the first celebration,
+
+93
+00:05:21,952 --> 00:05:26,820
+for the four hundred eightieth anniversary
+of the fourteen forty-six text.
+
+94
+00:05:27,170 --> 00:05:28,130
+What was it called?
+
+95
+00:05:28,480 --> 00:05:36,264
+"Gagya Day." It comes from the opening
+syllables of the Korean alphabet chart:
+
+96
+00:05:36,264 --> 00:05:38,160
+ga, gya, geo, gyeo.
+
+97
+00:05:38,510 --> 00:05:42,830
+So it was literally Alphabet
+Day. Like "A-B-C Day."
+
+98
+00:05:43,180 --> 00:05:47,652
+Two years later, in nineteen
+twenty-eight, it was renamed Hangul Day.
+
+99
+00:05:47,652 --> 00:05:52,060
+And the date moved several times
+before it settled on October ninth.
+
+100
+00:05:52,410 --> 00:05:55,298
+It lost its day off in the early nineties.
+
+101
+00:05:55,298 --> 00:05:59,837
+In the mid-two-thousands it became
+an official national day again,
+
+102
+00:05:59,837 --> 00:06:04,650
+but still without a day off. The day
+off came back in twenty thirteen.
+
+103
+00:06:05,000 --> 00:06:07,640
+A holiday that got laid off and rehired.
+
+104
+00:06:07,990 --> 00:06:12,504
+Why is it in the news? Because
+of foreign learners. This week,
+
+105
+00:06:12,504 --> 00:06:20,150
+the King Sejong Institute Foundation invited a record
+three hundred fifty-seven Korean learners to Korea.
+
+106
+00:06:20,500 --> 00:06:24,222
+A hundred eighty-one of them came
+to a speaking and writing contest,
+
+107
+00:06:24,222 --> 00:06:25,700
+from seventy-one countries.
+
+108
+00:06:26,050 --> 00:06:30,210
+Seventy-one countries. That's more
+than I've visited, even in my head.
+
+109
+00:06:30,560 --> 00:06:35,360
+The speaking contest had about two hundred
+eighty-four applicants for every finalist spot.
+
+110
+00:06:35,710 --> 00:06:37,710
+That's harder than
+getting concert tickets.
+
+111
+00:06:38,060 --> 00:06:43,004
+The grand prize in speaking
+went to Marjan Haghi of Iran.
+
+112
+00:06:43,004 --> 00:06:47,340
+In writing, it went to
+Nguyen Bao Chau of Vietnam.
+
+113
+00:06:47,690 --> 00:06:52,570
+The writing finalists wrote their
+essays wearing Joseon-era scholar robes.
+
+114
+00:06:52,920 --> 00:06:55,080
+Finally, a dress code for homework.
+
+115
+00:06:55,430 --> 00:06:57,275
+Why do they learn Korean?
+
+116
+00:06:57,275 --> 00:07:02,883
+A King Sejong Institute survey found
+"Korean content, such as K-pop, dramas,
+
+117
+00:07:02,883 --> 00:07:07,753
+and movies" was the top reason,
+at fifty-three point four percent.
+
+118
+00:07:07,753 --> 00:07:11,590
+It was the first time that
+answer ranked number one.
+
+119
+00:07:11,940 --> 00:07:14,580
+So the idol songs were
+homework in disguise.
+
+120
+00:07:14,930 --> 00:07:18,406
+One learner from Cairo,
+Amira Kamal Mohamed,
+
+121
+00:07:18,406 --> 00:07:24,016
+started with the K-pop group EXO.
+She has studied Korean for ten years.
+
+122
+00:07:24,016 --> 00:07:27,650
+She said it feels like
+she's inside a K-drama.
+
+123
+00:07:28,000 --> 00:07:31,855
+A learner from Canada, who started
+with K-pop in twenty nineteen,
+
+124
+00:07:31,855 --> 00:07:36,480
+said that being able to read it makes
+her feel her Korean has really improved.
+
+125
+00:07:36,830 --> 00:07:38,570
+Reading is the real level-up.
+
+126
+00:07:38,570 --> 00:07:42,110
+The first time I read a menu,
+I felt like I'd won a trophy.
+
+127
+00:07:42,460 --> 00:07:44,073
+And it's not only fandom.
+
+128
+00:07:44,073 --> 00:07:52,200
+A foundation survey in twenty twenty-five found fifty point nine
+percent of foreign learners were preparing to study in Korea.
+
+129
+00:07:52,200 --> 00:07:54,780
+Thirty-seven percent cited career goals.
+
+130
+00:07:55,130 --> 00:07:57,770
+So it's not just a crush. It's a plan.
+
+131
+00:07:58,120 --> 00:08:00,450
+And that's the point of Hangul.
+
+132
+00:08:00,450 --> 00:08:04,433
+King Sejong wanted ordinary
+people to read and write.
+
+133
+00:08:04,433 --> 00:08:08,867
+Five hundred eighty years later,
+they're still learning it,
+
+134
+00:08:08,867 --> 00:08:10,520
+sometimes from a song.
+
+135
+00:08:10,870 --> 00:08:14,790
+Let's wrap up. K-defense on
+the rise, and an alphabet.
+
+136
+00:08:15,140 --> 00:08:16,260
+Core, what's your take?
+
+137
+00:08:16,610 --> 00:08:20,504
+My take: both stories are about
+things built to be useful.
+
+138
+00:08:20,504 --> 00:08:24,130
+A weapon that works, and an
+alphabet anyone can learn.
+
+139
+00:08:24,480 --> 00:08:25,200
+And the missile?
+
+140
+00:08:25,550 --> 00:08:29,470
+I'll leave that one to Ms.
+Nonfic. She doesn't have opinions.
+
+141
+00:08:29,820 --> 00:08:30,780
+And the alphabet?
+
+142
+00:08:31,130 --> 00:08:32,332
+The alphabet wins.
+
+143
+00:08:32,332 --> 00:08:36,674
+One hundred years of a holiday,
+and people are still learning it.
+
+144
+00:08:36,674 --> 00:08:38,010
+Thanks for watching.

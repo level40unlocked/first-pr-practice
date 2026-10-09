@@ -1,0 +1,19 @@
+{
+ "background": "../../assets/studio/seoul_dusk.jpg",
+ "badge": "SEOUL, KOREA",
+ "character_height": 820,
+ "character_x": -70,
+ "picture_y": 80,
+ "picture": "../../assets/stock/ep02/ai_squish.jpg",
+ "character": {
+  "head": "../../cast/kangfree_head.png",
+  "body": "../../cast/kangfree_body.png",
+  "ref": "../../cast/kangfree_ref.png",
+  "label": "DR. KANGFREE", "energy": 1.8, "head_ratio": 0.74, "shoulders": 500, "chin_drop": 0.12,
+  "mouth": "open",
+  "gaze": [0.8, 0.0]
+ },
+ "text": ["KOREA IS", "SO BORED?!"],
+ "picture_size": [640, 380],
+ "text_size": 100
+}

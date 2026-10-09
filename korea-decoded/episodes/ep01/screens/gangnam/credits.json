@@ -1,0 +1,114 @@
+{
+ "gangnam_street_2009.jpg": {
+  "line": 4,
+  "title": "Gangnam Seoul January 2009",
+  "creator": "Joop",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://commons.wikimedia.org/w/index.php?curid=9110267",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Gangnam_Seoul_January_2009.jpg",
+  "on_screen_credit": "Photo: Joop (CC BY 2.0)",
+  "note": "Wikimedia file relayed through the Higgsfield sandbox (this container's IP was rate-limited)",
+  "retrieved": "2026-09-29"
+ },
+ "gangnam_station_sign.jpg": {
+  "line": 5,
+  "title": "Gangnam Station sign",
+  "creator": "Aspere",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+  "source_page": "https://commons.wikimedia.org/w/index.php?curid=61333516",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gangnam_Station_sign.jpg",
+  "on_screen_credit": "Photo: Aspere (CC0 1.0)",
+  "note": "Wikimedia file relayed through the Higgsfield sandbox",
+  "retrieved": "2026-09-29"
+ },
+ "gangnam_parade.png": {
+  "line": 7,
+  "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
+  "license": "AI-generated for this channel",
+  "higgsfield_job": "75e173b8-b4a3-4c86-82c2-34c67a1b3bc0",
+  "on_screen_credit": "AI-generated illustration",
+  "note": "Invented balloon characters; real parade balloons are trademarked characters",
+  "retrieved": "2026-09-29"
+ },
+ "korean_marching_band.jpg": {
+  "line": 7,
+  "title": "PAVA World Korean Traditional Marching Band",
+  "creator": "Prayitno / Thank you for (12 millions +) view",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://www.flickr.com/photos/34128007@N04/8365962625",
+  "file_url": "https://live.staticflickr.com/8328/8365962625_674116c7c0_b.jpg",
+  "on_screen_credit": "Photo: Prayitno (CC BY 2.0)",
+  "note": "Traditional marching band at another event; don't caption as the Gangnam Festival",
+  "retrieved": "2026-09-29"
+ },
+ "gangnam_route.png": {
+  "line": 7,
+  "title": "Gangnam Festival parade route on Dosan-daero",
+  "creator": "Four Eyes Report (make_route_map.py)",
+  "license": "own work; map data ODbL",
+  "source_page": "https://www.openstreetmap.org/copyright",
+  "on_screen_credit": "Map © OpenStreetMap contributors",
+  "note": "Endpoints from Nominatim; road line from OSM ways 218723443 and 988283554 (dosan.json)",
+  "retrieved": "2026-09-29"
+ },
+ "apgujeong_rodeo_night.jpg": {
+  "line": 8,
+  "title": "Apgujeong Rodeo Street",
+  "creator": "sellyourseoul",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://www.flickr.com/photos/43846028@N05/4127535480",
+  "file_url": "https://live.staticflickr.com/2681/4127535480_80bcd92d26_b.jpg",
+  "on_screen_credit": "Photo: sellyourseoul (CC BY 2.0)",
+  "note": "",
+  "retrieved": "2026-09-29"
+ },
+ "ticket_frenzy.png": {
+  "line": 12,
+  "creator": "Four Eyes Report (Higgsfield gpt_image_2_5)",
+  "license": "AI-generated for this channel",
+  "higgsfield_job": "819c6f74-967f-4e27-b983-0ef70ff2e168",
+  "on_screen_credit": "AI-generated illustration",
+  "note": "Ticketing scramble; the calm one in round glasses is a nod to Master K",
+  "retrieved": "2026-09-29"
+ },
+ "nebuta_lantern.jpg": {
+  "line": 13,
+  "title": "Aomori Nebuta Festival",
+  "creator": "sodai gomi",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://www.flickr.com/photos/49774228@N00/28685129420",
+  "file_url": "https://live.staticflickr.com/8748/28685129420_0739c0c305_b.jpg",
+  "on_screen_credit": "Photo: sodai gomi (CC BY 2.0)",
+  "note": "",
+  "retrieved": "2026-09-29"
+ },
+ "nebuta_float.jpg": {
+  "line": 13,
+  "title": "Nebuta Festival, Aomori",
+  "creator": "x768",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://www.flickr.com/photos/129661249@N02/20818249840",
+  "file_url": "https://live.staticflickr.com/611/20818249840_e03c989916_b.jpg",
+  "on_screen_credit": "Photo: x768 (CC BY 2.0)",
+  "note": "",
+  "retrieved": "2026-09-29"
+ },
+ "dosan_park_gate.jpg": {
+  "line": 13,
+  "title": "Korea-Seoul-Dosan Park-01",
+  "creator": "pcamp",
+  "license": "BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "source_page": "https://commons.wikimedia.org/w/index.php?curid=4249510",
+  "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Korea-Seoul-Dosan_Park-01.jpg",
+  "on_screen_credit": "Photo: pcamp (CC BY 2.0)",
+  "note": "Where the parade ends. Wikimedia file relayed through the Higgsfield sandbox",
+  "retrieved": "2026-09-29"
+ }
+}

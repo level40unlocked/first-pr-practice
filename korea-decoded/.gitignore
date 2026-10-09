@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+output/
+models/
+assets/fonts/*.ttf
+!assets/fonts/Poppins-Bold.ttf
+
+# EP.4 operator-supplied copyrighted photos: never commit
+assets/stock/ep04/
+
+# EP.5 operator-supplied images: never commit
+assets/stock/ep05/

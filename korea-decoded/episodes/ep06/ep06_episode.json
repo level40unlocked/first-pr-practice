@@ -1,0 +1,1494 @@
+{
+ "episode": 6,
+ "name": "render/ep06",
+ "anchor": "anchor",
+ "characters": {
+  "panel": {
+   "head": "../../cast/kangfree_head.png",
+   "body": "../../cast/kangfree_body.png",
+   "ref": "../../cast/kangfree_ref.png",
+   "x": 630,
+   "label": "DR. KANGFREE",
+   "energy": 1.8,
+   "head_ratio": 0.74,
+   "shoulders": 500,
+   "chin_drop": 0.12
+  },
+  "anchor": {
+   "head": "../../cast/k_head.png",
+   "body": "../../cast/k_body.png",
+   "ref": "../../cast/k_ref.png",
+   "x": 1290,
+   "label": "MASTER K"
+  },
+  "guest": {
+   "head": "../../cast/news_head.png",
+   "body": "../../cast/news_body.png",
+   "ref": "../../cast/news_ref.png",
+   "label": "MS. NONFIC",
+   "shoulders": 520,
+   "white_lens": true,
+   "x": 2560
+  }
+ },
+ "background": {
+  "image": "../../assets/studio/seoul_dusk.jpg",
+  "dim": 0.8,
+  "blur": 1.5
+ },
+ "outro_ticker": "Stay curious. Keep your lenses clean.",
+ "segments": [
+  {
+   "category": "current_affairs",
+   "desk": "DEFENSE",
+   "headline": "Korea's first hypersonic glide vehicle test",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/news_head.png",
+     "body": "../../cast/news_body.png",
+     "ref": "../../cast/news_ref.png",
+     "label": "MS. NONFIC",
+     "shoulders": 520,
+     "white_lens": true,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "amazing": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "AMAZING",
+       "K-DEFENSE"
+      ],
+      "size": 120,
+      "sub": "PLUS: AN ALPHABET"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "checks": {
+     "chart": {
+      "type": "icons",
+      "cols": 2,
+      "title": "WHAT THE TEST CHECKED",
+      "items": [
+       [
+        "📈",
+        "PATH AND SPEED"
+       ],
+       [
+        "🔥",
+        "HEAT PROTECTION"
+       ],
+       [
+        "🎯",
+        "GUIDANCE AND CONTROL"
+       ],
+       [
+        "🌊",
+        "LOW-ALTITUDE MANEUVERS"
+       ]
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "compare": {
+     "chart": {
+      "type": "icons",
+      "cols": 2,
+      "title": "TWO KINDS OF HYPERSONIC WEAPON",
+      "items": [
+       [
+        "🪂",
+        "HGV: GLIDES"
+       ],
+       [
+        "🚀",
+        "HYCORE: ENGINE ON"
+       ]
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Mar 9, 2026"
+    },
+    "course": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "2  CHANGES COURSE"
+      ],
+      "size": 100,
+      "sub": "THE PREDICTED TARGET KEEPS MOVING"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "exports4x": {
+     "chart": {
+      "type": "bars",
+      "title": "KOREA'S DEFENSE EXPORTS (TRILLION WON)",
+      "bars": [
+       {
+        "label": "2015",
+        "value": 4.7,
+        "text": "4.7"
+       },
+       {
+        "label": "2025",
+        "value": 20.8,
+        "text": "20.8",
+        "hl": true
+       }
+      ],
+      "suffix": "",
+      "decimals": 1,
+      "badge": "4X+"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "flight": {
+     "chart": {
+      "type": "flight"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "heat": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "1,000°C+"
+      ],
+      "size": 150,
+      "thermo": true,
+      "sub": "AIR FRICTION HEATS THE SURFACE"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "hycore_time": {
+     "chart": {
+      "type": "timeline",
+      "title": "HYCORE",
+      "events": [
+       {
+        "year": "2018",
+        "label": "Work begins"
+       },
+       {
+        "year": "2024",
+        "label": "Mach 6+ at 23 km"
+       },
+       {
+        "year": "2035",
+        "label": "Mass production goal",
+        "hl": true
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Mar 9, 2026"
+    },
+    "hyunmoo": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "HYUNMOO-5"
+      ],
+      "size": 140,
+      "sub": "INSPECTED THE SAME DAY · 'MONSTER MISSILE'"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "kmbars": {
+     "chart": {
+      "type": "bars",
+      "title": "NORTH KOREA'S OCT 3 LAUNCH: RANGE",
+      "bars": [
+       {
+        "label": "SEOUL'S ASSESSMENT",
+        "value": 700,
+        "text": "700 KM"
+       },
+       {
+        "label": "PYONGYANG'S CLAIM",
+        "value": 1000,
+        "text": "1,000 KM",
+        "hl": true
+       }
+      ],
+      "suffix": " km"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "launch": {
+     "image": "../../assets/stock/ep06/missile_1_launch.png",
+     "label": "",
+     "credit": "AI-generated concept illustration",
+     "kb": "in"
+    },
+    "low": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "1  FLIES LOW"
+      ],
+      "size": 110,
+      "sub": "THE EARTH'S CURVE HIDES IT FROM GROUND RADAR"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "mach5": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "MACH 5+"
+      ],
+      "size": 190,
+      "sub": "5X THE SPEED OF SOUND · ~6,100 KM/H"
+     },
+     "label": "",
+     "credit": "Source: Korea Times"
+    },
+    "paths": {
+     "chart": {
+      "type": "paths",
+      "title": "TWO WAYS TO FLY"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "plasma": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "PLASMA"
+      ],
+      "size": 160,
+      "sub": "CAN BLOCK RADIO SIGNALS"
+     },
+     "label": "",
+     "credit": ""
+    },
+    "president": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "PRESIDENT LEE"
+      ],
+      "size": 120,
+      "sub": "ATTENDED THE TEST · OCT 8"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "rank4": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "#4"
+      ],
+      "size": 200,
+      "sub": "WORLD ARMS EXPORTER · ~6% OF THE MARKET (2025)"
+     },
+     "label": "",
+     "credit": "Source: SIPRI, via Korea Times, Oct 8, 2026"
+    },
+    "scramjet": {
+     "image": "../../assets/stock/ep06/missile_4_scramjet.png",
+     "label": "",
+     "credit": "AI-generated concept illustration",
+     "kb": "in"
+    },
+    "time": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "3  LESS TIME"
+      ],
+      "size": 120,
+      "sub": "THE WINDOW TO RESPOND CAN BE MINUTES"
+     },
+     "label": "",
+     "credit": ""
+    }
+   },
+   "short": false,
+   "hook": "Korea's first hypersonic glide vehicle test",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Welcome to Four Eyes Report. This week: Amazing K-defense. And then, an alphabet.",
+     "audio": "audio/v3/new_001.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "amazing"
+    },
+    {
+     "who": "panel",
+     "text": "Amazing K-defense. That sounds like a movie trailer.",
+     "audio": "audio/v3/new_002.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "The numbers are real, though. In twenty twenty-five, Korea was the world's fourth-largest arms exporter, with about six percent of the global market.",
+     "audio": "audio/v3/new_003.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "rank4"
+    },
+    {
+     "who": "panel",
+     "text": "Fourth in the world? That's higher than I guessed.",
+     "audio": "audio/v3/new_004.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And it's more than four times what Korea exported ten years ago. About twenty point eight trillion won last year.",
+     "audio": "audio/v3/new_005.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "exports4x"
+    },
+    {
+     "who": "anchor",
+     "text": "And this week came a new chapter. Ms. Nonfic.",
+     "audio": "audio/v3/new_006.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Good evening. On October eighth, South Korea test-launched its first hypersonic glide vehicle, or H G V, developed by the Agency for Defense Development.",
+     "audio": "audio/v1/ep06_036.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "launch"
+    },
+    {
+     "who": "panel",
+     "text": "Hypersonic glide vehicle. That's three words I need explained.",
+     "audio": "audio/v1/ep06_037.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Hypersonic means at least five times the speed of sound. Mach five. About six thousand one hundred kilometers an hour.",
+     "audio": "audio/v1/ep06_038.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "mach5"
+    },
+    {
+     "who": "panel",
+     "text": "Wait. Don't ballistic missiles already go that fast?",
+     "audio": "audio/v1/ep06_039.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Many do. The difference is the path. A ballistic missile flies a high arc, up and down, like a thrown ball. You can calculate where it lands.",
+     "audio": "audio/v1/ep06_040.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "paths"
+    },
+    {
+     "who": "panel",
+     "text": "And the glider?",
+     "audio": "audio/v1/ep06_041.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "paths"
+    },
+    {
+     "who": "guest",
+     "text": "A rocket booster carries it high up. Then it separates and glides down through the atmosphere at lower altitude, and it can change direction.",
+     "audio": "audio/v1/ep06_042.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "flight"
+    },
+    {
+     "who": "panel",
+     "text": "A thrown ball versus a paper airplane. A very fast, very serious paper airplane.",
+     "audio": "audio/v1/ep06_043.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_panel",
+     "side": "left",
+     "push": false,
+     "screen": "flight"
+    },
+    {
+     "who": "guest",
+     "text": "I would not use the term paper airplane. But the physics is not wrong.",
+     "audio": "audio/v1/ep06_044.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Why is that so hard to stop?",
+     "audio": "audio/v1/ep06_045.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Three reasons. One: it flies low, and the curve of the Earth is in the way of ground radar, so it can be spotted later.",
+     "audio": "audio/v1/ep06_046.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "low"
+    },
+    {
+     "who": "guest",
+     "text": "Two: missile defenses predict where a target will be, then aim there. If the target keeps changing course, the prediction keeps missing.",
+     "audio": "audio/v1/ep06_047.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "course"
+    },
+    {
+     "who": "guest",
+     "text": "Three: less time. By the time it is seen, the window to respond can be a matter of minutes.",
+     "audio": "audio/v1/ep06_048.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "time"
+    },
+    {
+     "who": "panel",
+     "text": "So it's impossible to stop?",
+     "audio": "audio/v1/ep06_049.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Nobody serious says impossible. They say difficult. I prefer accurate to dramatic.",
+     "audio": "audio/v1/ep06_050.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "And what's hard about building one?",
+     "audio": "audio/v1/ep06_051.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Heat. At these speeds, friction with the air heats the surface far past a thousand degrees. It needs special heat-resistant materials.",
+     "audio": "audio/v1/ep06_052.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "heat"
+    },
+    {
+     "who": "guest",
+     "text": "And a communication problem. The heat can turn the air around the vehicle into plasma, which can block radio signals.",
+     "audio": "audio/v1/ep06_053.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "plasma"
+    },
+    {
+     "who": "panel",
+     "text": "So it's flying fast and can't call home.",
+     "audio": "audio/v1/ep06_054.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "So what did Korea's test check? Officials listed flight path and speed, heat protection, guidance and control, and low-altitude maneuvering.",
+     "audio": "audio/v1/ep06_055.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "checks"
+    },
+    {
+     "who": "guest",
+     "text": "The presidential office says the vehicle separated from its booster, followed its planned path, adjusted course horizontally and vertically at low altitude, and hit its target.",
+     "audio": "audio/v1/ep06_056.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "flight"
+    },
+    {
+     "who": "guest",
+     "text": "Speed and range were not disclosed. The site was not officially disclosed either. Yonhap reported a barge at a test center in Taean. That part is reported, not confirmed.",
+     "audio": "audio/v1/ep06_057.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "\"Reported, not confirmed.\" That's Ms. Nonfic's love language.",
+     "audio": "audio/v1/ep06_058.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "President Lee Jae Myung attended with the defense minister. He said the government will fully support the development and operational deployment of advanced weaponry.",
+     "audio": "audio/v1/ep06_059.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "president"
+    },
+    {
+     "who": "guest",
+     "text": "He also said the team must not rest on today's success, and that national security should rest on Korea's own strength.",
+     "audio": "audio/v1/ep06_060.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "The same day, he inspected the Hyunmoo-5, a surface-to-surface missile nicknamed the monster missile. Officials used that name in a press statement for the first time.",
+     "audio": "audio/v1/ep06_061.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "hyunmoo"
+    },
+    {
+     "who": "panel",
+     "text": "The monster missile. The naming department had a good day.",
+     "audio": "audio/v1/ep06_062.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "The timing matters. On October third, North Korea test-fired what Seoul assessed as a hypersonic medium-range ballistic missile. Seoul put its range at seven hundred kilometers. North Korea claimed one thousand.",
+     "audio": "audio/v1/ep06_063.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "kmbars"
+    },
+    {
+     "who": "panel",
+     "text": "So it's a race.",
+     "audio": "audio/v1/ep06_064.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I would not call it a race. I would call it a pattern.",
+     "audio": "audio/v1/ep06_065.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Is Korea building anything else in this area?",
+     "audio": "audio/v1/ep06_066.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Yes. HyCore. It is a different type: a hypersonic cruise missile. It keeps its engine running the whole way, using a scramjet. ADD and Hyundai Rotem have worked on it since twenty eighteen.",
+     "audio": "audio/v1/ep06_067.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "compare"
+    },
+    {
+     "who": "panel",
+     "text": "Scramjet. What's that?",
+     "audio": "audio/v1/ep06_068.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "An engine that burns fuel in air rushing past faster than sound. Think of keeping a candle lit in a hurricane.",
+     "audio": "audio/v1/ep06_069.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "scramjet"
+    },
+    {
+     "who": "guest",
+     "text": "In a twenty twenty-four test, HyCore passed Mach six at an altitude of twenty-three kilometers. The partners aim to begin mass production by twenty thirty-five.",
+     "audio": "audio/v1/ep06_070.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "hycore_time"
+    },
+    {
+     "who": "panel",
+     "text": "Twenty thirty-five. So the future is nine years away.",
+     "audio": "audio/v1/ep06_071.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "I will update the facts as they change. I do not update opinions. I do not have any.",
+     "audio": "audio/v1/ep06_072.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    }
+   ]
+  },
+  {
+   "category": "hidden_korea",
+   "desk": "HANGUL",
+   "headline": "Hangul Day turns 100",
+   "characters": {
+    "panel": {
+     "head": "../../cast/kangfree_head.png",
+     "body": "../../cast/kangfree_body.png",
+     "ref": "../../cast/kangfree_ref.png",
+     "x": 630,
+     "label": "DR. KANGFREE",
+     "energy": 1.8,
+     "head_ratio": 0.74,
+     "shoulders": 500,
+     "chin_drop": 0.12
+    },
+    "anchor": {
+     "head": "../../cast/k_head.png",
+     "body": "../../cast/k_body.png",
+     "ref": "../../cast/k_ref.png",
+     "x": 1290,
+     "label": "MASTER K"
+    },
+    "guest": {
+     "head": "../../cast/hidden_head.png",
+     "body": "../../cast/hidden_body.png",
+     "ref": "../../cast/hidden_ref.png",
+     "label": "DR. H",
+     "shoulders": 520,
+     "white_lens": true,
+     "chin_drop": 0.1,
+     "x": 2560
+    }
+   },
+   "screens": {
+    "award_group": {
+     "image": "../../assets/stock/ep06/cards/award_group.png",
+     "label": "",
+     "credit": "Photo: King Sejong Institute Foundation",
+     "kb": "in"
+    },
+    "gagya": {
+     "chart": {
+      "type": "letters",
+      "title": "GAGYA DAY: THE FIRST SYLLABLES",
+      "items": [
+       [
+        "가",
+        "GA"
+       ],
+       [
+        "갸",
+        "GYA"
+       ],
+       [
+        "거",
+        "GEO"
+       ],
+       [
+        "겨",
+        "GYEO"
+       ]
+      ]
+     },
+     "label": "",
+     "credit": ""
+    },
+    "haerye": {
+     "image": "../../assets/stock/ep06/cards/haerye.png",
+     "label": "",
+     "credit": "Photo: Wikimedia Commons (public domain)",
+     "kb": "in"
+    },
+    "n181": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "181"
+      ],
+      "size": 190,
+      "sub": "LEARNERS FROM 71 COUNTRIES"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "n357": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "357"
+      ],
+      "size": 190,
+      "sub": "LEARNERS INVITED TO KOREA, A RECORD"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "night": {
+     "image": "../../assets/stock/ep06/cards/night.png",
+     "label": "",
+     "credit": "Photo: Wikimedia Commons (credit in description)",
+     "kb": "in"
+    },
+    "pct534": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "53.4%"
+      ],
+      "size": 190,
+      "sub": "K-CONTENT IS THE #1 REASON TO LEARN KOREAN"
+     },
+     "label": "",
+     "credit": "Source: King Sejong Institute survey (press reports)"
+    },
+    "ratio": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "284 : 1"
+      ],
+      "size": 170,
+      "sub": "SPEAKING CONTEST, PER FINALIST SPOT"
+     },
+     "label": "",
+     "credit": "Source: Korea Times, Oct 8, 2026"
+    },
+    "scholar": {
+     "image": "../../assets/stock/ep06/cards/scholar.png",
+     "label": "",
+     "credit": "Photo: King Sejong Institute Foundation",
+     "kb": "in"
+    },
+    "sejong_poster": {
+     "image": "../../assets/stock/ep06/cards/sejong_poster.png",
+     "label": "",
+     "credit": "Poster: Ministry of Culture, Sports and Tourism / King Sejong Institute Foundation",
+     "kb": "in"
+    },
+    "speech": {
+     "image": "../../assets/stock/ep06/cards/speech.png",
+     "label": "",
+     "credit": "Photo: King Sejong Institute Foundation",
+     "kb": "in"
+    },
+    "statue": {
+     "image": "../../assets/stock/ep06/cards/statue.png",
+     "label": "",
+     "credit": "Photo: Wikimedia Commons (credit in description)",
+     "kb": "in"
+    },
+    "study": {
+     "chart": {
+      "type": "bars",
+      "title": "WHY FOREIGNERS LEARN KOREAN (2025)",
+      "bars": [
+       {
+        "label": "STUDY IN KOREA",
+        "value": 50.9,
+        "text": "50.9%",
+        "hl": true
+       },
+       {
+        "label": "CAREER",
+        "value": 37.0,
+        "text": "37%"
+       }
+      ],
+      "suffix": "%",
+      "decimals": 1
+     },
+     "label": "",
+     "credit": "Source: King Sejong Institute Foundation survey"
+    },
+    "t1926": {
+     "chart": {
+      "type": "timeline",
+      "title": "HANGUL DAY",
+      "events": [
+       {
+        "year": "1446",
+        "label": "The text"
+       },
+       {
+        "year": "1926",
+        "label": "First celebration"
+       },
+       {
+        "year": "2026",
+        "label": "100 years",
+        "hl": true
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Wikipedia"
+    },
+    "tstatus": {
+     "chart": {
+      "type": "timeline",
+      "title": "THE DAY OFF",
+      "events": [
+       {
+        "year": "1990s",
+        "label": "No day off"
+       },
+       {
+        "year": "2000s",
+        "label": "National day"
+       },
+       {
+        "year": "2013",
+        "label": "Day off is back",
+        "hl": true
+       }
+      ]
+     },
+     "label": "",
+     "credit": "Source: Korean press, Wikipedia"
+    },
+    "y100": {
+     "chart": {
+      "type": "bigtext",
+      "lines": [
+       "100 YEARS"
+      ],
+      "size": 160,
+      "sub": "HANGUL DAY, 1926-2026"
+     },
+     "label": "",
+     "credit": "Source: Wikipedia, Korea Times"
+    }
+   },
+   "short": false,
+   "hook": "Hangul Day turns 100",
+   "name_chips": true,
+   "lines": [
+    {
+     "who": "anchor",
+     "text": "Last story, a softer one. Last Friday, October ninth, was Hangul Day. Our historian, Dr. H.",
+     "audio": "audio/v1/ep06_073.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Last time, I told you who made Hangul. This time, the holiday itself has a birthday. It turned one hundred.",
+     "audio": "audio/v1/ep06_074.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "y100"
+    },
+    {
+     "who": "panel",
+     "text": "The holiday is a hundred? Who threw the first party?",
+     "audio": "audio/v1/ep06_075.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "In nineteen twenty-six, the Korean Language Society held the first celebration, for the four hundred eightieth anniversary of the fourteen forty-six text.",
+     "audio": "audio/v1/ep06_076.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": [
+      "haerye",
+      "t1926"
+     ]
+    },
+    {
+     "who": "panel",
+     "text": "What was it called?",
+     "audio": "audio/v1/ep06_077.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "\"Gagya Day.\" It comes from the opening syllables of the Korean alphabet chart: ga, gya, geo, gyeo.",
+     "audio": "audio/v1/ep06_078.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "gagya"
+    },
+    {
+     "who": "panel",
+     "text": "So it was literally Alphabet Day. Like \"A-B-C Day.\"",
+     "audio": "audio/v1/ep06_079.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "Two years later, in nineteen twenty-eight, it was renamed Hangul Day. And the date moved several times before it settled on October ninth.",
+     "audio": "audio/v1/ep06_080.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "It lost its day off in the early nineties. In the mid-two-thousands it became an official national day again, but still without a day off. The day off came back in twenty thirteen.",
+     "audio": "audio/v1/ep06_081.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "tstatus"
+    },
+    {
+     "who": "panel",
+     "text": "A holiday that got laid off and rehired.",
+     "audio": "audio/v1/ep06_082.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Why is it in the news? Because of foreign learners. This week, the King Sejong Institute Foundation invited a record three hundred fifty-seven Korean learners to Korea.",
+     "audio": "audio/v1/ep06_083.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": [
+      "sejong_poster",
+      "n357"
+     ]
+    },
+    {
+     "who": "anchor",
+     "text": "A hundred eighty-one of them came to a speaking and writing contest, from seventy-one countries.",
+     "audio": "audio/v1/ep06_084.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "n181"
+    },
+    {
+     "who": "panel",
+     "text": "Seventy-one countries. That's more than I've visited, even in my head.",
+     "audio": "audio/v1/ep06_085.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "The speaking contest had about two hundred eighty-four applicants for every finalist spot.",
+     "audio": "audio/v1/ep06_086.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": [
+      "speech",
+      "ratio"
+     ]
+    },
+    {
+     "who": "panel",
+     "text": "That's harder than getting concert tickets.",
+     "audio": "audio/v1/ep06_087.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "The grand prize in speaking went to Marjan Haghi of Iran. In writing, it went to Nguyen Bao Chau of Vietnam.",
+     "audio": "audio/v1/ep06_088.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "award_group"
+    },
+    {
+     "who": "guest",
+     "text": "The writing finalists wrote their essays wearing Joseon-era scholar robes.",
+     "audio": "audio/v1/ep06_089.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": "scholar"
+    },
+    {
+     "who": "panel",
+     "text": "Finally, a dress code for homework.",
+     "audio": "audio/v1/ep06_090.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "Why do they learn Korean? A King Sejong Institute survey found \"Korean content, such as K-pop, dramas, and movies\" was the top reason, at fifty-three point four percent. It was the first time that answer ranked number one.",
+     "audio": "audio/v1/ep06_091.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "pct534"
+    },
+    {
+     "who": "panel",
+     "text": "So the idol songs were homework in disguise.",
+     "audio": "audio/v1/ep06_092.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "One learner from Cairo, Amira Kamal Mohamed, started with the K-pop group EXO. She has studied Korean for ten years. She said it feels like she's inside a K-drama.",
+     "audio": "audio/v1/ep06_093.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "A learner from Canada, who started with K-pop in twenty nineteen, said that being able to read it makes her feel her Korean has really improved.",
+     "audio": "audio/v1/ep06_094.mp3",
+     "shot": "cam",
+     "cam": [
+      2560,
+      470,
+      1.3
+     ],
+     "ease": 0.12,
+     "cam_id": "guest",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Reading is the real level-up. The first time I read a menu, I felt like I'd won a trophy.",
+     "audio": "audio/v1/ep06_095.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "And it's not only fandom. A foundation survey in twenty twenty-five found fifty point nine percent of foreign learners were preparing to study in Korea. Thirty-seven percent cited career goals.",
+     "audio": "audio/v1/ep06_096.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_anchor",
+     "push": false,
+     "screen": "study"
+    },
+    {
+     "who": "panel",
+     "text": "So it's not just a crush. It's a plan.",
+     "audio": "audio/v1/ep06_097.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "guest",
+     "text": "And that's the point of Hangul. King Sejong wanted ordinary people to read and write. Five hundred eighty years later, they're still learning it, sometimes from a song.",
+     "audio": "audio/v1/ep06_098.mp3",
+     "shot": "k_screen",
+     "cam_id": "screen_guest",
+     "push": false,
+     "screen": [
+      "statue",
+      "night"
+     ]
+    },
+    {
+     "who": "anchor",
+     "text": "Let's wrap up. K-defense on the rise, and an alphabet.",
+     "audio": "audio/v3/new_099.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "Core, what's your take?",
+     "audio": "audio/v1/ep06_100.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "My take: both stories are about things built to be useful. A weapon that works, and an alphabet anyone can learn.",
+     "audio": "audio/v3/new_101.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "And the missile?",
+     "audio": "audio/v1/ep06_102.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "I'll leave that one to Ms. Nonfic. She doesn't have opinions.",
+     "audio": "audio/v1/ep06_103.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "panel",
+     "text": "And the alphabet?",
+     "audio": "audio/v1/ep06_104.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    },
+    {
+     "who": "anchor",
+     "text": "The alphabet wins. One hundred years of a holiday, and people are still learning it. Thanks for watching.",
+     "audio": "audio/v1/ep06_105.mp3",
+     "shot": "cam",
+     "cam": [
+      960,
+      500,
+      1.1
+     ],
+     "ease": 0.14,
+     "cam_id": "two",
+     "push": false
+    }
+   ]
+  }
+ ]
+}

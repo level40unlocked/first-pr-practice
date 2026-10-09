@@ -1,0 +1,24 @@
+{
+ "background": "../../assets/studio/seoul_dusk.jpg",
+ "picture": "screens/bukang/bukang_canal.png",
+ "character": {
+  "head": "cast/p_head.png",
+  "body": "cast/p_body.png",
+  "ref": "cast/p_ref.png",
+  "label": "DR. KANGFREE",
+  "head_ratio": 0.74,
+  "shoulders": 500,
+  "chin_drop": 0.12,
+  "mouth": "open",
+  "gaze": [
+   0.8,
+   0.0
+  ]
+ },
+ "text": [
+  "570,000",
+  "FANS?!"
+ ],
+ "character_height": 820,
+ "character_x": -70
+}
